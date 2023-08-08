@@ -1,0 +1,669 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Sliced.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Sliced.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\400.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\400.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\404.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\404.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\500.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\500.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\503.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\503.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-1.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-1.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-10.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-10.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-11.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-11.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-12.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-12.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-13.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-13.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-14.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-14.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-15.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-15.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-16.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-16.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-17.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-17.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-18.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-18.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-19.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-19.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-2.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-2.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-20.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-20.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-21.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-21.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-22.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-22.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-23.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-23.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-24.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-24.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-25.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-25.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-26.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-26.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-27.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-27.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-3.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-3.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-4.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-4.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-5.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-5.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-6.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-6.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-7.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-7.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-8.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-8.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\avatar-9.png",
+      "PackagePath": "staticwebassets\\Sized-images\\avatar-9.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\badoo.png",
+      "PackagePath": "staticwebassets\\Sized-images\\badoo.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\behance.png",
+      "PackagePath": "staticwebassets\\Sized-images\\behance.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\bg-main.png",
+      "PackagePath": "staticwebassets\\Sized-images\\bg-main.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\bg-shape.png",
+      "PackagePath": "staticwebassets\\Sized-images\\bg-shape.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\bitbucket.png",
+      "PackagePath": "staticwebassets\\Sized-images\\bitbucket.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\blogger.png",
+      "PackagePath": "staticwebassets\\Sized-images\\blogger.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\chatgpt.png",
+      "PackagePath": "staticwebassets\\Sized-images\\chatgpt.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\dailymotion.png",
+      "PackagePath": "staticwebassets\\Sized-images\\dailymotion.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\dark.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\dark.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\digg.png",
+      "PackagePath": "staticwebassets\\Sized-images\\digg.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\dropbox.png",
+      "PackagePath": "staticwebassets\\Sized-images\\dropbox.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\favicon.ico",
+      "PackagePath": "staticwebassets\\Sized-images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\images-1.jpg",
+      "PackagePath": "staticwebassets\\Sized-images\\images-1.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\images-2.jpg",
+      "PackagePath": "staticwebassets\\Sized-images\\images-2.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\images-3.jpg",
+      "PackagePath": "staticwebassets\\Sized-images\\images-3.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\images-4.jpg",
+      "PackagePath": "staticwebassets\\Sized-images\\images-4.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\images-5.jpg",
+      "PackagePath": "staticwebassets\\Sized-images\\images-5.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\images-6.jpg",
+      "PackagePath": "staticwebassets\\Sized-images\\images-6.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\images-7.jpg",
+      "PackagePath": "staticwebassets\\Sized-images\\images-7.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\invision.png",
+      "PackagePath": "staticwebassets\\Sized-images\\invision.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\kickstarter.png",
+      "PackagePath": "staticwebassets\\Sized-images\\kickstarter.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\light.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\light.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\logo-dark.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\logo-dark.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\logo-icon.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\logo-icon.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\logo-light.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\logo-light.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\mail-banner.png",
+      "PackagePath": "staticwebassets\\Sized-images\\mail-banner.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\maintanance.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\maintanance.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\marvel.png",
+      "PackagePath": "staticwebassets\\Sized-images\\marvel.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\ok.png",
+      "PackagePath": "staticwebassets\\Sized-images\\ok.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\patreon.png",
+      "PackagePath": "staticwebassets\\Sized-images\\patreon.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\slack-logo.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\slack-logo.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\slack.png",
+      "PackagePath": "staticwebassets\\Sized-images\\slack.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\slack.svg",
+      "PackagePath": "staticwebassets\\Sized-images\\slack.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\user.png",
+      "PackagePath": "staticwebassets\\Sized-images\\user.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\Sized-images\\zendesk.png",
+      "PackagePath": "staticwebassets\\Sized-images\\zendesk.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\css\\fancybox.css",
+      "PackagePath": "staticwebassets\\css\\fancybox.css"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\css\\perfect-scrollbar.min.css",
+      "PackagePath": "staticwebassets\\css\\perfect-scrollbar.min.css"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\css\\remixicon.css",
+      "PackagePath": "staticwebassets\\css\\remixicon.css"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\cerebrisans-bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\cerebrisans-bold.woff"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\cerebrisans-medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\cerebrisans-medium.woff"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\cerebrisans-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\cerebrisans-regular.woff"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\cerebrisans-semibold.woff",
+      "PackagePath": "staticwebassets\\fonts\\cerebrisans-semibold.woff"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\remixicon.eot",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.eot"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\remixicon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.ttf"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\remixicon.woff",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.woff"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\fonts\\remixicon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.woff2"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\400.svg",
+      "PackagePath": "staticwebassets\\images\\400.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\404.svg",
+      "PackagePath": "staticwebassets\\images\\404.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\500.svg",
+      "PackagePath": "staticwebassets\\images\\500.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\503.svg",
+      "PackagePath": "staticwebassets\\images\\503.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-1.png",
+      "PackagePath": "staticwebassets\\images\\avatar-1.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-10.png",
+      "PackagePath": "staticwebassets\\images\\avatar-10.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-11.png",
+      "PackagePath": "staticwebassets\\images\\avatar-11.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-12.png",
+      "PackagePath": "staticwebassets\\images\\avatar-12.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-13.png",
+      "PackagePath": "staticwebassets\\images\\avatar-13.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-14.png",
+      "PackagePath": "staticwebassets\\images\\avatar-14.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-15.png",
+      "PackagePath": "staticwebassets\\images\\avatar-15.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-16.png",
+      "PackagePath": "staticwebassets\\images\\avatar-16.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-17.png",
+      "PackagePath": "staticwebassets\\images\\avatar-17.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-18.png",
+      "PackagePath": "staticwebassets\\images\\avatar-18.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-19.png",
+      "PackagePath": "staticwebassets\\images\\avatar-19.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-2.png",
+      "PackagePath": "staticwebassets\\images\\avatar-2.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-20.png",
+      "PackagePath": "staticwebassets\\images\\avatar-20.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-21.png",
+      "PackagePath": "staticwebassets\\images\\avatar-21.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-22.png",
+      "PackagePath": "staticwebassets\\images\\avatar-22.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-23.png",
+      "PackagePath": "staticwebassets\\images\\avatar-23.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-24.png",
+      "PackagePath": "staticwebassets\\images\\avatar-24.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-25.png",
+      "PackagePath": "staticwebassets\\images\\avatar-25.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-26.png",
+      "PackagePath": "staticwebassets\\images\\avatar-26.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-27.png",
+      "PackagePath": "staticwebassets\\images\\avatar-27.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-3.png",
+      "PackagePath": "staticwebassets\\images\\avatar-3.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-4.png",
+      "PackagePath": "staticwebassets\\images\\avatar-4.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-5.png",
+      "PackagePath": "staticwebassets\\images\\avatar-5.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-6.png",
+      "PackagePath": "staticwebassets\\images\\avatar-6.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-7.png",
+      "PackagePath": "staticwebassets\\images\\avatar-7.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-8.png",
+      "PackagePath": "staticwebassets\\images\\avatar-8.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\avatar-9.png",
+      "PackagePath": "staticwebassets\\images\\avatar-9.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\badoo.png",
+      "PackagePath": "staticwebassets\\images\\badoo.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\behance.png",
+      "PackagePath": "staticwebassets\\images\\behance.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\bg-main.png",
+      "PackagePath": "staticwebassets\\images\\bg-main.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\bg-shape.png",
+      "PackagePath": "staticwebassets\\images\\bg-shape.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\bitbucket.png",
+      "PackagePath": "staticwebassets\\images\\bitbucket.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\blogger.png",
+      "PackagePath": "staticwebassets\\images\\blogger.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\chatgpt.png",
+      "PackagePath": "staticwebassets\\images\\chatgpt.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\dailymotion.png",
+      "PackagePath": "staticwebassets\\images\\dailymotion.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\dark.svg",
+      "PackagePath": "staticwebassets\\images\\dark.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\digg.png",
+      "PackagePath": "staticwebassets\\images\\digg.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\dropbox.png",
+      "PackagePath": "staticwebassets\\images\\dropbox.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\images-1.jpg",
+      "PackagePath": "staticwebassets\\images\\images-1.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\images-2.jpg",
+      "PackagePath": "staticwebassets\\images\\images-2.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\images-3.jpg",
+      "PackagePath": "staticwebassets\\images\\images-3.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\images-4.jpg",
+      "PackagePath": "staticwebassets\\images\\images-4.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\images-5.jpg",
+      "PackagePath": "staticwebassets\\images\\images-5.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\images-6.jpg",
+      "PackagePath": "staticwebassets\\images\\images-6.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\images-7.jpg",
+      "PackagePath": "staticwebassets\\images\\images-7.jpg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\invision.png",
+      "PackagePath": "staticwebassets\\images\\invision.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\kickstarter.png",
+      "PackagePath": "staticwebassets\\images\\kickstarter.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\light.svg",
+      "PackagePath": "staticwebassets\\images\\light.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\logo-dark.svg",
+      "PackagePath": "staticwebassets\\images\\logo-dark.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\logo-icon.svg",
+      "PackagePath": "staticwebassets\\images\\logo-icon.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\logo-light.svg",
+      "PackagePath": "staticwebassets\\images\\logo-light.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\mail-banner.png",
+      "PackagePath": "staticwebassets\\images\\mail-banner.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\maintanance.svg",
+      "PackagePath": "staticwebassets\\images\\maintanance.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\marvel.png",
+      "PackagePath": "staticwebassets\\images\\marvel.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\ok.png",
+      "PackagePath": "staticwebassets\\images\\ok.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\patreon.png",
+      "PackagePath": "staticwebassets\\images\\patreon.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\slack-logo.svg",
+      "PackagePath": "staticwebassets\\images\\slack-logo.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\slack.png",
+      "PackagePath": "staticwebassets\\images\\slack.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\slack.svg",
+      "PackagePath": "staticwebassets\\images\\slack.svg"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\user.png",
+      "PackagePath": "staticwebassets\\images\\user.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\images\\zendesk.png",
+      "PackagePath": "staticwebassets\\images\\zendesk.png"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\alpine-collaspe.min.js",
+      "PackagePath": "staticwebassets\\js\\alpine-collaspe.min.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\alpine-persist.min.js",
+      "PackagePath": "staticwebassets\\js\\alpine-persist.min.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\alpine.min.js",
+      "PackagePath": "staticwebassets\\js\\alpine.min.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\apex.init.js",
+      "PackagePath": "staticwebassets\\js\\apex.init.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\apexcharts.js",
+      "PackagePath": "staticwebassets\\js\\apexcharts.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\appexchart-app.js",
+      "PackagePath": "staticwebassets\\js\\appexchart-app.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\data-search.js",
+      "PackagePath": "staticwebassets\\js\\data-search.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\datatable.js",
+      "PackagePath": "staticwebassets\\js\\datatable.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\fancybox.umd.js",
+      "PackagePath": "staticwebassets\\js\\fancybox.umd.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\form-editor.js",
+      "PackagePath": "staticwebassets\\js\\form-editor.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\js\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\sortable.min.js",
+      "PackagePath": "staticwebassets\\js\\sortable.min.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "E:\\Sliced\\Sliced_MVC_v1.0.0\\Sliced\\wwwroot\\js\\tippy.min.js",
+      "PackagePath": "staticwebassets\\js\\tippy.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Sliced.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Sliced.props",
+      "PackagePath": "build\\Sliced.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Sliced.props",
+      "PackagePath": "buildMultiTargeting\\Sliced.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Sliced.props",
+      "PackagePath": "buildTransitive\\Sliced.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

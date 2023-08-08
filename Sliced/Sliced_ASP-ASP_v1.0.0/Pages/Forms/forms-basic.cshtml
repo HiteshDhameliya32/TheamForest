@@ -1,0 +1,180 @@
+﻿@page
+@model Sliced.Pages.Forms.forms_basicModel
+@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Forms";
+    ViewData["ChildTitle"] = "Forms Input"; 
+    ViewData["x-data"] = "forms";
+    ViewBag.ActiveItem = "forms-basic";
+}
+
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Basic Input Text</h2>
+            <form class="space-y-4">
+                <input type="text" class="form-input" placeholder="Username" required>
+                <input type="button" class="btn bg-purple border border-purple rounded text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Email Text</h2>
+            <form class="space-y-4">
+                <input type="email" class="form-input" placeholder="Email Type" required>
+                <input type="button" class="btn bg-purple border border-purple rounded text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Lable Text</h2>
+            <form class="space-y-4">
+                <div class="space-y-2">
+                    <label>Type Username:</label>
+                    <input type="text" class="form-input" placeholder="Username" required>
+                </div>
+                <input type="button" class="btn bg-purple border border-purple rounded text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Password Input</h2>
+            <form class="space-y-4">
+                <input type="password" class="form-input" placeholder="Type Password" required>
+                <input type="button" class="btn bg-purple border border-purple rounded text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Url Input</h2>
+            <form class="space-y-4">
+                <input type="url" class="form-input" placeholder="https://dummyurl.com" required>
+                <input type="button" class="btn bg-purple border border-purple rounded text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Search Input</h2>
+            <form class="space-y-4">
+                <input type="search" class="form-input" placeholder="Search..." required>
+                <input type="button" class="btn bg-purple border border-purple rounded text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Telephone Input</h2>
+            <form class="space-y-4">
+                <input type="tel" class="form-input" placeholder="0-(000)-111-1111" required>
+                <input type="button" class="btn bg-purple border border-purple rounded text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Rounded Input</h2>
+            <form class="space-y-4">
+                <input type="text" class="form-input rounded-full" placeholder="Type Username" required>
+                <input type="button" class="btn bg-purple border border-purple rounded-full text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]" value="Submit">
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Fields Size</h2>
+            <form class="space-y-4">
+                <div class="space-y-2">
+                    <label>Large Input</label>
+                    <input type="text" class="form-input h-14" placeholder="Username" required>
+                </div>
+                <div class="space-y-2">
+                    <label>Default Input</label>
+                    <input type="text" class="form-input" placeholder="Username" required>
+                </div>
+                <div class="space-y-2">
+                    <label>Small Input</label>
+                    <input type="text" class="form-input h-10" placeholder="Username" required>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Fields Size</h2>
+            <form class="space-y-4">
+                <div class="space-y-2 sm:flex justify-between items-center gap-4">
+                    <label class="shrink-0 w-24">Large Input</label>
+                    <input type="text" class="form-input h-14" placeholder="Username" required>
+                </div>
+                <div class="space-y-2 sm:flex justify-between items-center gap-4">
+                    <label class="shrink-0 w-24">Default Input</label>
+                    <input type="text" class="form-input" placeholder="Username" required>
+                </div>
+                <div class="space-y-2 sm:flex justify-between items-center gap-4">
+                    <label class="shrink-0 w-24">Small Input</label>
+                    <input type="text" class="form-input h-10" placeholder="Username" required>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Select Menu</h2>
+            <form>
+                <select class="form-select">
+                    <option>Select Option</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                </select>
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Select Menu</h2>
+            <form>
+                <select size="4" multiple="multiple" class="form-multiselect h-auto">
+                    <option>Select menu</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                    <option>Four</option>
+                    <option>Five</option>
+                    <option>Six</option>
+                </select>
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Checkbox</h2>
+            <form class="space-y-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" class="form-checkbox" checked="checked">
+                    <span>Checkbox</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" class="form-checkbox" checked="checked">
+                    <span>Checkbox</span>
+                </label>
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Radio</h2>
+            <form class="space-y-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="radio-one" class="form-radio rounded-full" checked="checked">
+                    <span>One</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="radio-one" class="form-radio rounded-full">
+                    <span>Two</span>
+                </label>
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">disabled Radio & Checkbox</h2>
+            <form class="space-y-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="radio-one" disabled class="form-radio rounded-full" checked="checked">
+                    <span>One</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" class="form-checkbox" disabled checked="checked">
+                    <span>Checkbox</span>
+                </label>
+            </form>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">disabled Input</h2>
+            <form class="space-y-4">
+                <input type="text" class="form-input cursor-not-allowed" placeholder="Username" required="" disabled>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->

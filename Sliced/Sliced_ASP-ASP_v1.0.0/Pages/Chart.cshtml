@@ -1,0 +1,53 @@
+﻿@page
+@model Sliced.Pages.ChartModel
+@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Sliced";
+    ViewData["ChildTitle"] = "Chart";
+    ViewData["x-data"] = "chart";
+    ViewBag.ActiveItem = "chart";
+}
+
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Line Chart</h2>
+            <div id="linechart"></div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Area Chart</h2>
+            <div id="areachart"></div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Bar Chart</h2>
+            <div id="barchart"></div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Simple Bar</h2>
+            <div id="simplebarchart"></div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Bar Chart</h2>
+            <div id="barchartcenter"></div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Spline Area Charts</h2>
+            <div id="apex_area1"></div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Basic Donut</h2>
+            <div id="basicbonut"></div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Doughnut chart</h2>
+            <div id="doughnutchart"></div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->
+
+<!-- ApexCharts js -->
+<script src="~/js/apexcharts.js"></script>
+<script src="~/js/apex.init.js"></script>

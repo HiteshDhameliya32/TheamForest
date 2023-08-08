@@ -1,0 +1,257 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Sliced
+build_property.RootNamespace = Sliced
+build_property.ProjectDir = E:\Themforest Converted Products\Sliced\Sliced_MVC_v1.0.0\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Themforest Converted Products\Sliced\Sliced_MVC_v1.0.0
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Apps/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwc1xDaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Apps/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwc1xDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Apps/Email.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwc1xFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Apps/Invoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwc1xJbnZvaWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Authentication/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Authentication/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Authentication/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Accordions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xBY2NvcmRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Carousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDYXJvdXNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Clipboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDbGlwYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Countdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDb3VudGRvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Counter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDb3VudGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Lightbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xMaWdodGJveC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Modals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNb2RhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xOb3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Pricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xQcmljaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Components/Tabs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xUYWJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Alerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcQWxlcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Avatar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcQXZhdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Badge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcQmFkZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Breadcrumb.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcQnJlYWRjcnVtYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Buttons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcQnV0dG9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/ButtonsGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcQnV0dG9uc0dyb3VwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Dropdowns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcRHJvcGRvd25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Images.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcSW1hZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Loader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcTG9hZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Pagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcUGFnaW5hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/ProgressBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcUHJvZ3Jlc3NCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Tooltips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcVG9vbHRpcHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Typography.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcVHlwb2dyYXBoeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Elements/Videos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlbWVudHNcVmlkZW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Forms/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcQmFzaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Forms/Checkbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcQ2hlY2tib3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Forms/Editors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRWRpdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Forms/InputGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcSW5wdXRHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Forms/Radio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcUmFkaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Forms/Switches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcU3dpdGNoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Forms/Validation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcVmFsaWRhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Home/chart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjaGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Home/DragAndDrop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEcmFnQW5kRHJvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Home/FontIcons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb250SWNvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Layout/Creative.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XENyZWF0aXZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Layout/Detached.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XERldGFjaGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Pages/404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcNDA0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Pages/500.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcNTAwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Pages/503.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcNTAzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Pages/ComingSoon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ29taW5nU29vbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Pages/Maintenance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTWFpbnRlbmFuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Pages/StarterPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcU3RhcnRlclBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Tables/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVzXEJhc2ljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Tables/DataTables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVzXERhdGFUYWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Tables/Editable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVzXEVkaXRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Users/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Users/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Sliced/Sliced_MVC_v1.0.0/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-238v2wktmq

@@ -1,0 +1,129 @@
+﻿@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Elements";
+    ViewData["ChildTitle"] = "Progress Bar";
+    ViewData["x-data"] = "elements";
+    ViewBag.ActiveItem = "progress-bar";
+}
+
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Default Examples</h2>
+            <div class="flex flex-col items-center justify-center gap-3">
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-3/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-4/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-5/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-6/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-7/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-8/12"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Backgrounds</h2>
+            <div class="flex flex-col items-center justify-center gap-3">
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-3/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-info h-4 rounded-full w-4/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-success h-4 rounded-full w-5/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-warning h-4 rounded-full w-6/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-danger h-4 rounded-full w-7/12"></div>
+                </div>
+                <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                    <div class="bg-black h-4 rounded-full w-8/12"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Labels Example</h2>
+            <div class="w-full h-3 bg-light/80 dark:bg-white/10 rounded-full">
+                <div class="bg-black/80 h-3 rounded-full w-6/12 text-center flex justify-center items-center">
+                    <p class="text-[11px] text-white align-middle">50%</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Labels Example</h2>
+            <div class="w-full flex h-3 bg-light/80 dark:bg-white/10 rounded-full">
+                <div class="bg-purple h-3 rounded-l w-3/12"></div>
+                <div class="bg-success h-3 w-3/12"></div>
+                <div class="bg-black h-3 rounded-r w-3/12"></div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Sizes</h2>
+            <div class="flex flex-col items-center justify-center gap-3">
+                <div class="w-full">
+                    <h6 class="text-sm text-black mb-1 dark:text-white/80">Progress sm</h6>
+                    <div class="w-full h-1 bg-light/80 dark:bg-white/10 rounded-full">
+                        <div class="bg-purple h-1 rounded-full w-3/12"></div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <h6 class="text-sm text-black mb-1 dark:text-white/80">Progress md</h6>
+                    <div class="w-full h-2 bg-light/80 dark:bg-white/10 rounded-full">
+                        <div class="bg-success h-2 rounded-full w-4/12"></div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <h6 class="text-sm text-black mb-1 dark:text-white/80">Progress lg</h6>
+                    <div class="w-full h-3 bg-light/80 dark:bg-white/10 rounded-full">
+                        <div class="bg-black h-3 rounded-full w-5/12"></div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <h6 class="text-sm text-black mb-1 dark:text-white/80">Progress xl</h6>
+                    <div class="w-full h-4 bg-light/80 dark:bg-white/10 rounded-full">
+                        <div class="bg-danger h-4 rounded-full w-6/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Striped</h2>
+            <div class="flex flex-col items-center justify-center gap-3">
+                <div class="w-full h-4 bg-black/10 dark:bg-white/10 rounded-full">
+                    <div class="bg-purple h-4 rounded-full w-3/12" style="background-image: linear-gradient(45deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent); background-size: 1rem 1rem;"></div>
+                </div>
+                <div class="w-full h-4 bg-black/10 dark:bg-white/10 rounded-full">
+                    <div class="bg-info h-4 rounded-full w-4/12" style="background-image: linear-gradient(45deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent); background-size: 1rem 1rem;"></div>
+                </div>
+                <div class="w-full h-4 bg-black/10 dark:bg-white/10 rounded-full">
+                    <div class="bg-success h-4 rounded-full w-5/12" style="background-image: linear-gradient(45deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent); background-size: 1rem 1rem;"></div>
+                </div>
+                <div class="w-full h-4 bg-black/10 dark:bg-white/10 rounded-full">
+                    <div class="bg-black h-4 rounded-full w-6/12" style="background-image: linear-gradient(45deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent); background-size: 1rem 1rem;"></div>
+                </div>
+                <div class="w-full h-4 bg-black/10 dark:bg-white/10 rounded-full">
+                    <div class="bg-danger h-4 rounded-full w-7/12" style="background-image: linear-gradient(45deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent); background-size: 1rem 1rem;"></div>
+                </div>
+                <div class="w-full h-4 bg-black/10 dark:bg-white/10 rounded-full">
+                    <div class="bg-warning h-4 rounded-full w-8/12" style="background-image: linear-gradient(45deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent); background-size: 1rem 1rem;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->

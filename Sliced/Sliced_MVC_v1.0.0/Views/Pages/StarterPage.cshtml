@@ -1,0 +1,23 @@
+﻿@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Pages";
+    ViewData["ChildTitle"] = "Starter Page";
+    ViewData["x-data"] = "pages";
+    ViewBag.ActiveItem = "start-page";
+}
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 gap-4">
+        <div class="bg-white dark:bg-darklight dark:border-darkborder border md:col-span-2 xl:col-span-2 border-black/10 p-5 gap-6 rounded">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4">Card Title</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div>
+                    <img src="~/images/logo-dark.svg" class="mx-auto h-11 dark:hidden " alt="">
+                    <img src="~/images/logo-light.svg" class="mx-auto h-11 hidden dark:block" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->

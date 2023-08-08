@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Tailwind CSS ASP.Net Core 7 Admin & Dashboard Template" />
+    <meta name="author" content="SRBThemes" />
+
+    <!-- Site Tiltle -->
+    <title>Sliced - Tailwind CSS ASP.Net 7 Core Admin & Dashboard Template</title>
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body class="antialiased font-nunito text-black text-base">
+    <!-- Start Main Content -->
+    <div class="flex">
+        <!-- Start Sidebar -->
+        <nav class="sidebar fixed top-0 bottom-0 z-40 flex-none w-[240px] border-r border-black/10 transition-all duration-300 md:block hidden">
+            <div class="bg-white h-full">
+                <!-- Start Logo -->
+                <div class="flex px-4 py-4">
+                    <a href="../html/index.html" class="main-logo flex-1 w-full">
+                        <img src="assets/images/logo-dark.svg" class="h-7 mx-auto" alt="logo" />
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <!-- Start Menu -->
+                <ul class="relative h-[calc(100vh-74px)] flex flex-col gap-1 overflow-y-auto overflow-x-hidden p-4 py-0" x-data="{ activeMenu: 'apps' }">
+                    <li>
+                        <a href="#intro" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#insto" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#structure" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Structure</a>
+                    </li>
+                    <li>
+                        <a href="#layout" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">layout</a>
+                    </li>
+                    <li>
+                        <a href="#css" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Css & Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#cre" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Credit & Resources</a>
+                    </li>
+                    <li>
+                        <a href="#support" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Support</a>
+                    </li>
+                    <li>
+                        <a href="#change" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Change Log</a>
+                    </li>
+                </ul>
+                <!-- End Menu -->
+            </div>
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Start Content Area -->
+        <div class="flex-1 md:ml-[240px]">
+            <div class="border-b border-black/10 py-4 px-7 flex items-center justify-between">
+                <p class="font-bold text-lg">Sliced ASP.Net Core 7 Documentation 1.0.0</p>
+            </div>
+            <!-- Start Content -->
+            <div class="h-[calc(100vh-73px)] overflow-y-auto overflow-x-hidden">
+                <div class="p-4 sm:p-7 !pb-0 min-h-[calc(100vh-145px)]">
+                    <div class="grid grid-cols-1 gap-7">
+                        <div class="border border-black/10 p-5 rounded-md" id="intro">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Thank you very much for your purchase!</p>
+                            </div>
+                            <div class="rounded bg-[#01ba9a]/10 px-6 py-3 text-[#01ba9a]">
+                                <p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via our Support Page : <a href = "https://themeforest.net/user/srbthemes"><b>Support</b></a></p>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Introduction</p>
+                            </div>
+                            <div>
+                                <p class="text-base leading-[1.8]"><b>Sliced</b> is a powerful admin dashboard template built with Tailwind CSS. <b>Sliced</b> comes with dozens of functional designs to help you get started quickly. With a wide range of beautiful styles and a full-screen layout, it’s a perfect fit for admin dashboards, eCommerce, CRM, CMS, LMS panels and etc. If you are looking to take your app to the next level – <b>Sliced</b> is the way to go!</p>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="insto">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Installation</p>
+                            </div>
+                            <div>
+                                <p class="text-base font-semibold">To setup the admin theme, follow below-mentioned steps</p>
+                                <ul class="mt-3 list-decimal list-inside space-y-1.5">
+
+                                    <li><b>Visual Studio: </b> Make sure to have Visual Studio downloaded on your machine.</li>
+                                    <li>The zip file contains all files integrated with Landik, however you need to perform following steps to get node_modules etc.</li>
+                                    <li><b>Note :</b> Make sure this all installation process is done in command prompt.</li>
+                                    <li>make sure you have installed tailwindcss in your os. If not installed then please run the below command to install it globally. <code class="text-[#e83e8c]">npm install</code></li>
+                                    <li>After Completion of installation Run the following command in the command prompt to start tailwindcss development server. <code class="text-[#e83e8c]">npm run dev </code></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="structure">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">File Structure</p>
+                            </div>
+                            <div class="overflow-x-auto w-full">
+                                <pre class="prettyprint">
+<img src="assets/images/folder.svg" class="w-4 inline-block"> Sliced/
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> bin/
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> obj/
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Properties/
+│   └── <img src="assets/images/file.svg" class="w-4 inline-block">launchSettings.json
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> wwwroot/
+│   │   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> css/
+│   │   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> images/
+│   │   └── <img src="assets/images/folder.svg" class="w-4 inline-block"> js
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Pages/
+│   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Shared
+│   │   └── <img src="assets/images/file.svg" class="w-4 inline-block"> _Layout.cshtml
+│   ├── <img src="assets/images/file.svg" class="w-4 inline-block"> index.cshtml
+│   └── <img src="assets/images/file.svg" class="w-4 inline-block"> Chart.cshtml
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Documentation/
+│       └── index.html - Index file for documentation.
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> appsettings.Development.json
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> appsettings.json
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> Program.cs
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> Sliced.csproj
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> Sliced.csproj.user
+└── <img src="assets/images/file.svg" class="w-4 inline-block"> Sliced.sln
+</pre>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">CSHTML Structure</p>
+                            </div>
+                            <div class="text-sm">
+                              <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;body</span> <span style="color: #0000CC">x-data=</span><span style="background-color: #fff0f0">&quot;main&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;font-cerebri antialiased relative text-black dark:text-white text-sm font-normal overflow-x-hidden vertical @ViewData[&quot;</span><span style="color: #0000CC">detached</span><span style="color: #FF0000; background-color: #FFAAAA">&quot;]&quot;</span> <span style="color: #0000CC">:class=</span><span style="background-color: #fff0f0">&quot;[ $store.app.sidebar ? &#39;toggle-sidebar&#39; : &#39;&#39;, $store.app.fullscreen ? &#39;full&#39; : &#39;&#39;,$store.app.mode]&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #888888">&lt;!-- Start Layout --&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-[#f9fbfd] dark:bg-dark @ViewData[&quot;</span><span style="color: #0000CC">dark</span><span style="color: #FF0000; background-color: #FFAAAA">&quot;]</span> <span style="color: #0000CC">text-black</span><span style="color: #FF0000; background-color: #FFAAAA">&quot;</span><span style="color: #007700">&gt;</span>
+        <span style="color: #888888">&lt;!-- Start detached bg --&gt;</span>
+        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-[url(&#39;~/images/bg-main.png&#39;)] bg-black min-h-[220px] sm:min-h-[250px] bg-bottom fixed hidden w-full -z-50 detached-img&quot;</span><span style="color: #007700">&gt;&lt;/div&gt;</span>
+        <span style="color: #888888">&lt;!-- End detached bg --&gt;</span>
+        <span style="color: #888888">&lt;!-- Start Menu Sidebar Olverlay --&gt;</span>
+        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">x-cloak</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fixed inset-0 bg-black/60 dark:bg-dark/90 z-[999] lg:hidden&quot;</span> <span style="color: #0000CC">:class=</span><span style="background-color: #fff0f0">&quot;{&#39;hidden&#39; : !$store.app.sidebar}&quot;</span> <span style="color: #FF0000; background-color: #FFAAAA">@@</span><span style="color: #0000CC">click=</span><span style="background-color: #fff0f0">&quot;$store.app.toggleSidebar()&quot;</span><span style="color: #007700">&gt;&lt;/div&gt;</span>
+        <span style="color: #888888">&lt;!-- End Menu Sidebar Olverlay --&gt;</span>
+        <span style="color: #888888">&lt;!-- Start Main Content --&gt;</span>
+        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;main-container flex mx-auto&quot;</span><span style="color: #007700">&gt;</span>
+            <span style="color: #888888">&lt;!-- Start Sidebar --&gt;</span>
+            <span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;sidebar fixed z-[9999] flex-none w-[240px] border-r dark:bg-darkborder border-black/10 transition-all duration-300 overflow-hidden&quot;</span><span style="color: #007700">&gt;</span>
+                <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-white dark:bg-darklight h-full&quot;</span><span style="color: #007700">&gt;</span>
+                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;p-4&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;~/index&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;main-logo w-full&quot;</span><span style="color: #007700">&gt;</span>
+                            <span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;~/images/logo-dark.svg&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;mx-auto dark-logo h-7 logo dark:hidden&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;logo&quot;</span> <span style="color: #007700">/&gt;</span>
+                        <span style="color: #007700">&lt;/a&gt;</span>
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;h-[calc(100vh-60px)]  overflow-y-auto overflow-x-hidden px-5 pb-4 space-y-16 detached-menu&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;relative flex flex-col gap-1 &quot;</span> <span style="color: #0000CC">x-data=</span><span style="background-color: #fff0f0">&quot;{ activeMenu: &#39;@ViewData[&quot;</span><span style="color: #0000CC">x-data</span><span style="color: #FF0000; background-color: #FFAAAA">&quot;].</span><span style="color: #0000CC">ToString</span><span style="color: #FF0000; background-color: #FFAAAA">()&#39;</span> <span style="color: #FF0000; background-color: #FFAAAA">}&quot;</span><span style="color: #007700">&gt;</span>
+                            .. .. ..
+                        <span style="color: #007700">&lt;/ul&gt;</span>
+                        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-purple p-4 pt-0 text-center rounded-md relative help-box&quot;</span><span style="color: #007700">&gt;</span>
+                            .. .. ..
+                        <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                <span style="color: #007700">&lt;/div&gt;</span>
+            <span style="color: #007700">&lt;/nav&gt;</span>
+            <span style="color: #888888">&lt;!-- End sidebar --&gt;</span>
+            <span style="color: #888888">&lt;!-- Start Content Area --&gt;</span>
+            <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;main-content flex-1&quot;</span><span style="color: #007700">&gt;</span>
+                <span style="color: #888888">&lt;!-- Start Topbar --&gt;</span>
+                <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;bg-white dark:bg-darklight dark:border-darkborder flex gap-4 lg:z-10 items-center justify-between px-4 h-[60px] border-b border-black/10 detached-topbar relative&quot;</span><span style="color: #007700">&gt;</span>
+                   .. .. ..
+                <span style="color: #007700">&lt;/div&gt;</span>
+                <span style="color: #888888">&lt;!-- End Topbar --&gt;</span>
+                <span style="color: #888888">&lt;!-- Start Content --&gt;</span>
+                <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;h-[calc(100vh-60px)]  relative overflow-y-auto overflow-x-hidden p-4 space-y-4 detached-content&quot;</span><span style="color: #007700">&gt;</span>
+                    <span style="color: #888888">&lt;!-- Start Breadcrumb --&gt;</span>
+                    <span style="color: #007700">&lt;div&gt;</span>
+                        .. .. ..
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #888888">&lt;!-- End Breadcrumb --&gt;</span>
+                    <span style="color: #888888">&lt;!-- Start All Card --&gt;</span>
+                    @RenderBody()
+                    <span style="color: #888888">&lt;!-- End All Card --&gt;</span>
+                    <span style="color: #888888">&lt;!-- Start Footer --&gt;</span>
+                    <span style="color: #007700">&lt;footer</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;py-2 text-center text-black dark:text-darkmuted md:text-left&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #880000; font-weight: bold">&amp;copy;</span> 2023 Sliced.
+                    <span style="color: #007700">&lt;/footer&gt;</span>
+                    <span style="color: #888888">&lt;!-- End Footer --&gt;</span>
+                <span style="color: #007700">&lt;/div&gt;</span>
+                <span style="color: #888888">&lt;!-- End Content --&gt;</span>
+            <span style="color: #007700">&lt;/div&gt;</span>
+            <span style="color: #888888">&lt;!-- End Content Area --&gt;</span>
+        <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #888888">&lt;!-- End Layout --&gt;</span>
+
+    <span style="color: #888888">&lt;!-- All javascirpt --&gt;</span>
+    <span style="color: #888888">&lt;!-- Custom js --&gt;</span>
+    <span style="color: #007700">&lt;script </span><span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;~/js/custom.js&quot;</span><span style="color: #007700">&gt;&lt;/script&gt;</span>
+<span style="color: #007700">&lt;/body&gt;</span>
+</pre></div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="layout">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Layout</p>
+                            </div>
+                            <p class="font-semibold">Layouts covers all theme configuration settings if you want to apply manually in project. File Path: <code> Pages/Shared/_Layout.cshtml</code></p>
+                            <div class="overflow-x-auto w-full mt-4">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]">Layout Name</th>
+                                            <th class="p-3 border border-[#dee2e6]">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">Creative</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">You can set manually by adding layout class from <code class="text-[#e83e8c]">&lt;body class="detached"&gt;</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">Detached</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">You can set manually by adding layout class from <code class="text-[#e83e8c]">&lt;body class="detached detached-simple"&gt;</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="css">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">CSS</p>
+                            </div>
+                            <p class="font-semibold">Sliced Built with latest version of CSS3.</p>
+                            <div class="overflow-x-auto w-full mt-4">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]">File Name</th>
+                                            <th class="p-3 border border-[#dee2e6]">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">css/tailwind.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Tailwind CSS</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">css/swiper-bundle.min.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Swiper CSS</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">css/fancybox.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Fancybox CSS</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">css/accordion.min.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Accordion CSS</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Javascript</p>
+                            </div>
+                            <p class="font-semibold">Sliced Built with Javascript</p>
+                            <div class="overflow-x-auto w-full mt-4">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]">File Name</th>
+                                            <th class="p-3 border border-[#dee2e6]">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">js/alpine.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Alpine js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">js/swiper-bundle.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Swiper Js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">js/apexcharts.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">ApexCharts js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">js/fancybox.umd.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Facncybox Js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">js/custom.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">All Custom js files</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="cre">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Credit & Resources</p>
+                            </div>
+                            <p class="font-semibold">We have used the following plugins.</p>
+                            <div class="mt-3">
+                                <ul class="list-inside list-disc space-y-2 text-muted">
+                                    <li><a href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0">ASP .NET 7.0</a></li>
+                                    <li><a href="https://tailwindcss.com/">Tailwind Css</a></li>
+                                    <li><a href="https://fancyapps.com/fancybox/getting-started/#cdn">Fancybox</a></li>
+                                    <li><a href="https://remixicon.com/">Remix Icons</a></li>
+                                    <li><a href="https://alpinejs.dev/">Alpine JS</a></li>
+                                    <li><a href="https://apexcharts.com/">ApexCharts Js</a></li>
+                                    <li><a href="https://unsplash.com/">Unsplash Images</a></li>
+                                    <li><a href="https://swiperjs.com/">Swiper Js</a></li>
+                                    <li><a href="https://github.com/michu2k/Accordion">Accordion Js</a></li>
+                                    <li><a href="https://uifaces.co/">Ui Faces</a></li>
+                                    <li><a href="https://dribbble.com/">Dribbble</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="support">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Support</p>
+                            </div>
+                            <div class="mt-3">
+                                <p>Thank you for become a part of us. If you have any query, suggestion and complain. Contact us anytime.</p>
+                                <a class="mt-3 text-lg font-semibold text-black" target="_blank" href="https://themeforest.net/user/srbthemes">- Support</a>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="change">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Changelog</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl"><span class="text-purple">1.0.0</span> - 2<sup>nd</sup> Aug 2023</h4>
+                                <h5 class="mt-4 font-bold">General</h5>
+                                <p class="text-muted mt-1"><span class="bg-purple h-2 w-2 mr-2 relative -top-[2px] rounded-full inline-block"></span> Initial Released</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="p-7 bg-white flex items-center justify-between">
+                    <p class="text-xs text-black/40">&copy; 2023 Sliced</p>
+                </footer>
+            </div>
+            <!-- End Content -->
+        </div>
+        <!-- End Content Area -->
+    </div>
+    <!-- End Main Content -->
+</body>
+
+</html>

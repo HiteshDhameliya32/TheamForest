@@ -1,0 +1,40 @@
+﻿@page
+@model Sliced.Pages.Components.LightboxModel
+@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Components";
+    ViewData["ChildTitle"] = "Lightbox";
+    ViewData["x-data"] = "components";
+    ViewBag.ActiveItem = "lightbox";
+}
+
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Example</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a href="~/images/images-1.jpg" data-fancybox="gallery">
+                    <img src="~/images/images-1.jpg" class="rounded-xl" />
+                </a>
+                <a href="~/images/images-2.jpg" data-fancybox="gallery">
+                    <img src="~/images/images-2.jpg" class="rounded-xl" />
+                </a>
+                <a href="~/images/images-3.jpg" data-fancybox="gallery">
+                    <img src="~/images/images-3.jpg" class="rounded-xl" />
+                </a>
+                <a href="~/images/images-4.jpg" data-fancybox="gallery">
+                    <img src="~/images/images-4.jpg" class="rounded-xl" />
+                </a>
+                <a href="~/images/images-6.jpg" data-fancybox="gallery">
+                    <img src="~/images/images-6.jpg" class="rounded-xl" />
+                </a>
+                <a href="~/images/images-7.jpg" data-fancybox="gallery">
+                    <img src="~/images/images-7.jpg" class="rounded-xl" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->
