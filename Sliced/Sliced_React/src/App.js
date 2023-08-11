@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
-import Email from "./components/Apps/Email"
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "./context/AppContext";
+import Email from "./components/Apps/Email"
+import Index from "./components/Index";
 
 function App() {
   const context = useContext(AppContext);
@@ -16,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const body = document.body;
-    const root = document.getElementById('root');
+    //const root = document.getElementById('root');
   
     // Remove existing classes
     body.classList.remove(
@@ -71,6 +72,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
+              <Route exact index path="/" element={<Index />} />
               <Route exact path="/apps/email" element={<Email />} />
               {/* <Route exact index path="/" element={<Home />} />
               <Route exact path="/about" element={<About />} />

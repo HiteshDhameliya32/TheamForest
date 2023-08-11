@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Themforest Converted Products\Landik\Landik_ASP_v1.0.0\Landik
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Changelog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbmdlbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Documentation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdW1lbnRhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Faqs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFxcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +54,42 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Index4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXg0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Pricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpY2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/pwreset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHdyZXNldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Service.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Shared/_Layout3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/Testimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdGltb25pYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Themforest Converted Products/Landik/Landik_ASP_v1.0.0/Landik/Pages/_ViewImports.cshtml]

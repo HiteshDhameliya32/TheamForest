@@ -37,8 +37,8 @@
 .btn-custom:focus,
 .btn-custom:hover,
 .open>.dropdown-toggle.btn-custom {
-    background-color: #0aa195;
-    border: 2px solid #0aa195;
+    background-color: #0aa195 !important;
+    border: 2px solid #0aa195 !important;
     color: #fff !important;
 }
 
@@ -67,8 +67,8 @@
 .btn-white:focus,
 .btn-white:hover,
 .open>.dropdown-toggle.btn-white {
-    background-color: #fff;
-    border: 2px solid #fff;
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
     color: #0aa195 !important;
 }
 
@@ -93,8 +93,8 @@
 .btn-custom-light:focus,
 .btn-custom-light:hover,
 .open>.dropdown-toggle.btn-custom-light {
-    background-color: #0aa195;
-    border: 2px solid #0aa195;
+    background-color: #0aa195 !important;
+    border: 2px solid #0aa195 !important;
     color: #fff !important;
 }
 
@@ -118,7 +118,7 @@
 .btn-custom-outline:focus,
 .btn-custom-outline:hover,
 .open>.dropdown-toggle.btn-custom-outline {
-    background-color: #0aa195;
-    border: 2px solid #0aa195;
+    background-color: #0aa195 !important;
+    border: 2px solid #0aa195 !important;
     color: #fff !important;
 }

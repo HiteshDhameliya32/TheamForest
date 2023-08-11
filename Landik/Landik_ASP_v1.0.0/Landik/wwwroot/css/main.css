@@ -208,8 +208,8 @@ h6 {
 .btn-custom:focus,
 .btn-custom:hover,
 .open > .dropdown-toggle.btn-custom {
-  background-color: #0aa195;
-  border: 2px solid #0aa195;
+  background-color: #0aa195 !important;
+  border: 2px solid #0aa195 !important;
   color: #fff !important;
 }
 
@@ -237,8 +237,8 @@ h6 {
 .btn-white:focus,
 .btn-white:hover,
 .open > .dropdown-toggle.btn-white {
-  background-color: #fff;
-  border: 2px solid #fff;
+  background-color: #fff !important;
+  border: 2px solid #fff !important;
   color: #0aa195 !important;
 }
 
@@ -262,8 +262,8 @@ h6 {
 .btn-custom-light:focus,
 .btn-custom-light:hover,
 .open > .dropdown-toggle.btn-custom-light {
-  background-color: #0aa195;
-  border: 2px solid #0aa195;
+  background-color: #0aa195 !important;
+  border: 2px solid #0aa195 !important;
   color: #fff !important;
 }
 
@@ -287,8 +287,8 @@ h6 {
 .btn-custom-outline:focus,
 .btn-custom-outline:hover,
 .open > .dropdown-toggle.btn-custom-outline {
-  background-color: #0aa195;
-  border: 2px solid #0aa195;
+  background-color: #0aa195 !important;
+  border: 2px solid #0aa195 !important;
   color: #fff !important;
 }
 
@@ -904,6 +904,12 @@ header .navbar .navbar-brand img {
 .logo_img {
   padding: 36px;
 }
+.logo_img img {
+  transition: all 0.5s ease;
+}
+.logo_img img:hover {
+  transform: scale(1.05);
+}
 
 /*SERVICES*/
 .ser_fir_box .service_icon i {
@@ -1037,6 +1043,45 @@ header .navbar .navbar-brand img {
   padding: 40px 25px;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s;
+  border-radius: 6px;
+}
+.price_box_fir:hover {
+  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+  color: #fff;
+  background-color: #0aa195;
+}
+.price_box_fir:hover .lable {
+  background: #fff;
+  padding: 6px 0;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  top: 22px;
+  right: -62px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.price_box_fir:hover .lable h6 {
+  font-size: 12px;
+  color: #0aa195;
+}
+.price_box_fir:hover .price_name h6 {
+  color: rgba(255, 255, 255, 0.81);
+}
+.price_box_fir:hover .price_features {
+  color: rgba(255, 255, 255, 0.77);
+}
+.price_box_fir:hover .price_divider {
+  background-color: rgba(239, 239, 239, 0.17);
+}
+.price_box_fir:hover .plan_price h1 sub {
+  color: #ffffff;
+}
+.price_box_fir:hover .btn-custom-light {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: #0aa195 !important;
 }
 .price_box_fir.active {
   box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
@@ -1066,6 +1111,9 @@ header .navbar .navbar-brand img {
 .price_box_fir.active .price_divider {
   background-color: rgba(239, 239, 239, 0.17);
 }
+.price_box_fir.active .plan_price h1 sub {
+  color: #ffffff;
+}
 .price_box_fir .price_name h6 {
   color: rgba(0, 0, 0, 0.4);
 }
@@ -1078,6 +1126,7 @@ header .navbar .navbar-brand img {
 }
 .price_box_fir .plan_price h1 sub {
   font-size: 14px;
+  color: #0aa195;
 }
 .price_box_fir .price_divider {
   width: 100%;
@@ -2154,6 +2203,10 @@ header .navbar .navbar-brand img {
   color: rgba(255, 255, 255, 0.73);
 }
 
+.footer-text-color {
+  color: rgba(255, 255, 255, 0.73);
+}
+
 /*LOGIN PAGE*/
 .account_page_logo {
   background-image: url(../images/login_bg.jpg);
@@ -2225,7 +2278,7 @@ header .navbar .navbar-brand img {
 }
 
 /*DOCUMENTATION*/
-.doc_pages_custom .card, .doc_detail .card {
+.doc_pages_custom .card, .doc_pages_custom .doc_detail .card {
   border: 2px solid #f4f4f4;
 }
 
@@ -2233,18 +2286,16 @@ header .navbar .navbar-brand img {
   padding: 26px;
 }
 
+.doc_menu ul li.active a {
+  color: #0aa195;
+}
 .doc_menu ul li a {
   margin-bottom: 10px;
   display: inline-block;
   color: #000;
   transition: all 0.5s;
 }
-
 .doc_menu ul li a:hover {
-  color: #0aa195;
-}
-
-.doc_menu ul li.active a {
   color: #0aa195;
 }
 

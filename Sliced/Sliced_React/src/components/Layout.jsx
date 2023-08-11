@@ -3,6 +3,7 @@ import AppContext from "../context/AppContext";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Footer from "../components/Footer";
+import { Outlet } from "react-router";
 
 const Layout = () => {
   const context = useContext(AppContext);
@@ -56,29 +57,7 @@ const Layout = () => {
               {/* End Breadcrumb  */}
 
               {/* Start All Card  */}
-              <div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
-                <div class="grid grid-cols-1 gap-4">
-                  <div class="bg-white dark:bg-darklight dark:border-darkborder border md:col-span-2 xl:col-span-2 border-black/10 p-5 gap-6 rounded">
-                    <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4">
-                      Card Title
-                    </h2>
-                    <div class="grid grid-cols-1 gap-4">
-                      <div>
-                        <img
-                          src="assets/images/logo-dark.svg"
-                          class="mx-auto h-11 dark:hidden "
-                          alt=""
-                        />
-                        <img
-                          src="assets/images/logo-light.svg"
-                          class="mx-auto h-11 hidden dark:block"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Outlet />
               {/* End All Card  */}
 
               {/* Start Footer  */}

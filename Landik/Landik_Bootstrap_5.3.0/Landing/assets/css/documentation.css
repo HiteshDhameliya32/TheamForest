@@ -1,5 +1,5 @@
 /*DOCUMENTATION*/
-.doc_pages_custom .card, .doc_detail .card {
+.doc_pages_custom .card, .doc_pages_custom .doc_detail .card {
   border: 2px solid #f4f4f4;
 }
 
@@ -7,18 +7,16 @@
   padding: 26px;
 }
 
+.doc_menu ul li.active a {
+  color: #0aa195;
+}
 .doc_menu ul li a {
   margin-bottom: 10px;
   display: inline-block;
   color: #000;
   transition: all 0.5s;
 }
-
 .doc_menu ul li a:hover {
-  color: #0aa195;
-}
-
-.doc_menu ul li.active a {
   color: #0aa195;
 }
 

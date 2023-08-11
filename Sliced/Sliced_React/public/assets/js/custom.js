@@ -60,3 +60,31 @@ document.addEventListener("alpine:init", () => {
         },
     });
 });
+
+    const toggleButton = document.getElementById('toggleButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    toggleButton.addEventListener('click', function () {
+        console.log("toggle")
+        dropdownMenu.classList.toggle('hidden');
+        if (dropdownMenu) {
+            if (dropdownMenu.style.display === 'none') {
+                dropdownMenu.style.display = 'block';
+            } else {
+                dropdownMenu.style.display = 'none';
+            }
+          }
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!dropdownMenu.contains(event.target) && !toggleButton.contains(event.target)) {
+            dropdownMenu.classList.add('hidden');
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            dropdownMenu.classList.add('hidden');
+        }
+    });
+

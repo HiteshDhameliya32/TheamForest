@@ -50,6 +50,12 @@
 }
 
 .logo_img {
+    img {
+        transition: all .5s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
     padding: 36px;
 }
 
@@ -193,6 +199,51 @@
     padding: 40px 25px;
     position: relative;
     overflow: hidden;
+    transition: all .5s;
+    border-radius: 6px;
+    &:hover {
+        box-shadow: 0 0.75rem 6rem rgba(56,65,74,.03);
+        color: #fff;
+        background-color: #0aa195;
+        .lable {
+            background: #fff;
+            padding: 6px 0;
+            text-align: center;
+            width: 200px;
+            position: absolute;
+            top: 22px;
+            right: -62px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            h6 {
+                font-size: 12px;
+                color: #0aa195;
+            }
+        }
+        .price_name {
+            h6{
+                color: rgb(255 255 255 / 81%);
+            }
+        }
+        .price_features {
+            color: rgb(255 255 255 / 77%);
+        }
+        .price_divider{
+            background-color: rgb(239 239 239 / 17%);
+        }
+        .plan_price {
+            h1 {
+                sub {
+                    color: #ffffff;
+                }
+            }
+        }
+        .btn-custom-light {
+            background-color: #ffffff;
+            border: 2px solid #ffffff;
+            color: #0aa195 !important;
+        }
+    }
     &.active{
         box-shadow: 0 0.75rem 6rem rgba(56,65,74,.03);
         color: #fff;
@@ -222,6 +273,13 @@
         .price_divider{
             background-color: rgb(239 239 239 / 17%);
         }
+        .plan_price {
+            h1 {
+                sub {
+                    color: #ffffff;
+                }
+            }
+        }
     }
     .price_name {
         h6{
@@ -235,6 +293,7 @@
             font-weight: 600;
             sub {
                 font-size: 14px;
+                color: #0aa195;
             }
         }
     }
