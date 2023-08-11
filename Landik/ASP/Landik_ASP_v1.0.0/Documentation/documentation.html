@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Bootstrap 5 ASP.Net Core 7 Landing Template" />
+    <meta name="author" content="ThemesBoss" />
+
+    <!-- Site Tiltle -->
+    <title>Landik - Bootstrap ASP.Net 7 Core Landing Template</title>
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body class="antialiased font-nunito text-black text-base">
+    <!-- Start Main Content -->
+    <div class="flex">
+        <!-- Start Sidebar -->
+        <nav class="sidebar fixed top-0 bottom-0 z-40 flex-none w-[240px] border-r border-black/10 transition-all duration-300 md:block hidden">
+            <div class="bg-white h-full">
+                <!-- Start Logo -->
+                <div class="flex px-4 py-4">
+                    <a href="../html/index.html" class="main-logo flex-1 w-full">
+                        <img src="assets/images/logo-dark.png" class="h-7 mx-auto" alt="logo" />
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <!-- Start Menu -->
+                <ul class="relative h-[calc(100vh-74px)] flex flex-col gap-1 overflow-y-auto overflow-x-hidden p-4 py-0" x-data="{ activeMenu: 'apps' }">
+                    <li>
+                        <a href="#intro" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#insto" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#structure" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Structure</a>
+                    </li>
+                    <li>
+                        <a href="#css" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Css & Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#cre" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Credit & Resources</a>
+                    </li>
+                    <li>
+                        <a href="#support" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Support</a>
+                    </li>
+                    <li>
+                        <a href="#change" class="mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black px-2 hover:bg-purple/10 hover:text-purple">Change Log</a>
+                    </li>
+                </ul>
+                <!-- End Menu -->
+            </div>
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Start Content Area -->
+        <div class="flex-1 md:ml-[240px]">
+            <div class="border-b border-black/10 py-4 px-7 flex items-center justify-between">
+                <p class="font-bold text-lg">Landik ASP.Net Core 7 Documentation 1.0.0</p>
+            </div>
+            <!-- Start Content -->
+            <div class="h-[calc(100vh-73px)] overflow-y-auto overflow-x-hidden">
+                <div class="p-4 sm:p-7 !pb-0 min-h-[calc(100vh-145px)]">
+                    <div class="grid grid-cols-1 gap-7">
+                        <div class="border border-black/10 p-5 rounded-md" id="intro">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Thank you very much for your purchase!</p>
+                            </div>
+                            <div class="rounded bg-[#01ba9a]/10 px-6 py-3 text-[#01ba9a]">
+                                <p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via our Support Page : <a href = "https://themeforest.net/user/themesboss"><b>Support</b></a></p>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Introduction</p>
+                            </div>
+                            <div>
+                                <p class="text-base leading-[1.8]"><b>Landik</b> is a superb, one of a kind, and present day HTML5 Template having multi-choices for Startups, App Landing, and SaaS-based companies. It has 4 special points of arrival with multi internal pages for different purposes. – <b>Landik</b> is the way to go!</p>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="insto">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Installation</p>
+                            </div>
+                            <div>
+                                <p class="text-base font-semibold">To setup the landing template, follow below-mentioned steps</p>
+                                <ul class="mt-3 list-decimal list-inside space-y-1.5">
+                                    <li><b>Visual Studio: </b> Make sure to have Visual Studio downloaded on your machine.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="structure">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">File Structure</p>
+                            </div>
+                            <div class="overflow-x-auto w-full">
+                                <pre class="prettyprint">
+<img src="assets/images/folder.svg" class="w-4 inline-block"> Landik/
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> bin/
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> obj/
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Properties/
+│   └── <img src="assets/images/file.svg" class="w-4 inline-block">launchSettings.json
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> wwwroot/
+│   │   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> css/
+│   │   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> images/
+│   │   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> fonts/
+│   │   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> scss/
+│   │   └── <img src="assets/images/folder.svg" class="w-4 inline-block"> js/
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Pages/
+│   ├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Shared
+│   │   └── <img src="assets/images/file.svg" class="w-4 inline-block"> _Layout.cshtml
+│   ├── <img src="assets/images/file.svg" class="w-4 inline-block"> index.cshtml
+│   └── <img src="assets/images/file.svg" class="w-4 inline-block"> Contact.cshtml
+├── <img src="assets/images/folder.svg" class="w-4 inline-block"> Documentation/
+│       └── index.html - Index file for documentation.
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> appsettings.Development.json
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> appsettings.json
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> Program.cs
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> Landik.csproj
+├── <img src="assets/images/file.svg" class="w-4 inline-block"> Landik.csproj.user
+└── <img src="assets/images/file.svg" class="w-4 inline-block"> Landik.sln
+</pre>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">CSHTML Structure</p>
+                            </div>
+                            <div class="text-sm">
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;body&gt;</span>
+
+    <span style="color: #888888">&lt;!-- Header Start --&gt;</span>
+    <span style="color: #007700">&lt;header&gt;</span>
+        <span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar navbar-expand-lg navbar-light fixed-top horizontal-nav&quot;</span><span style="color: #007700">&gt;</span>
+            ... ... ...
+        <span style="color: #007700">&lt;/nav&gt;</span>
+    <span style="color: #007700">&lt;/header&gt;</span>
+    <span style="color: #888888">&lt;!-- Header End --&gt;</span>
+    <span style="color: #888888">&lt;!-- start all cards --&gt;</span>
+    @RenderBody()
+    <span style="color: #888888">&lt;!-- End all cards --&gt;</span>
+    <span style="color: #888888">&lt;!-- Start Footer --&gt;</span>
+    <span style="color: #007700">&lt;footer</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer_lan_two&quot;</span><span style="color: #007700">&gt;</span>
+        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+            <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+              ... ... ...
+            <span style="color: #007700">&lt;/div&gt;</span>
+        <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;/footer&gt;</span>
+    <span style="color: #888888">&lt;!-- End Footer --&gt;</span>
+
+
+    <span style="color: #888888">&lt;!-- end all cards --&gt;</span>
+    <span style="color: #888888">&lt;!-- All Javascript --&gt;</span>
+   
+    <span style="color: #888888">&lt;!-- Custom Js   --&gt;</span>
+    <span style="color: #007700">&lt;script </span><span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;~/js/custom.js&quot;</span><span style="color: #007700">&gt;&lt;/script&gt;</span>
+<span style="color: #007700">&lt;/body&gt;</span>
+</pre></div>
+
+
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="css">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">CSS</p>
+                            </div>
+                            <p class="font-semibold">Landik Built with latest version of CSS3.</p>
+                            <div class="overflow-x-auto w-full mt-4">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]">File Name</th>
+                                            <th class="p-3 border border-[#dee2e6]">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">bootstrap.min.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Bootstrap v5.3.1 css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">materialdesignicons.min.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Materialdesign icon css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">themify-icons.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Themify icon css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">magnific-popup.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Magnific Popup css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">owl.carousel.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Owl Corousel css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">owl.theme.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Owl Corousel Theme Default css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">owl.transitions.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Owl Transitions Theme Default css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">style.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Landik main css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">menu.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Landik menu css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">navbar.scss</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Landik navbar scss file</td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">login.scss</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Landik login scss file</td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">footer.scss</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Landik footer scss file</td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">about.scss</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Landik about scss file</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Javascript</p>
+                            </div>
+                            <p class="font-semibold">Landik Built with Javascript</p>
+                            <div class="overflow-x-auto w-full mt-4">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]">File Name</th>
+                                            <th class="p-3 border border-[#dee2e6]">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">jquery.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">jQuery v3.5.1 js file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">bootstrap.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Materialdesign icon css file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">jquery.magnific-popup.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Magnific Popup js file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">owl.carousel.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Owl Corousel js file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">scrollspy.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Scrollspy js file</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code class="text-[#e83e8c]">js/custom/*.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">All Custom js files</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="cre">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Credit & Resources</p>
+                            </div>
+                            <p class="font-semibold">We have used the following plugins.</p>
+                            <div class="mt-3">
+                                <ul class="list-inside list-disc space-y-2 text-muted">
+                                    <li><a href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0">ASP .NET 7.0</a></li>
+                                    <li><a href="https://jquery.com/">jQuery</a></li>
+                                    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                                    <li><a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a></li>
+                                    <li><a href="https://plugins.jquery.com/magnific-popup/">Magnific Popup</a></li>
+                                    <li><a href="https://getbootstrap.com/docs/4.0/components/scrollspy/">Scrollspy</a></li>
+                                    <li><a href="https://inorganik.github.io/countUp.js/">CountUp</a></li>
+                                    <li><a href="https://unsplash.com/">Unsplash</a></li>
+                                    <li><a href="https://undraw.co/">Undraw.co</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="support">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Support</p>
+                            </div>
+                            <div class="mt-3">
+                                <p>Thank you for become a part of us. If you have any query, suggestion and complain. Contact us anytime.</p>
+                                <a class="mt-3 text-lg font-semibold text-black" target="_blank" href="https://themeforest.net/user/themesboss">- Support</a>
+                            </div>
+                        </div>
+                        <div class="border border-black/10 p-5 rounded-md" id="change">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Changelog</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl"><span class="text-purple">1.0.0</span> - 11<sup>th</sup> Aug 2023</h4>
+                                <h5 class="mt-4 font-bold">General</h5>
+                                <p class="text-muted mt-1"><span class="bg-purple h-2 w-2 mr-2 relative -top-[2px] rounded-full inline-block"></span> Initial Released</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="p-7 bg-white flex items-center justify-between">
+                    <p class="text-xs text-black/40">&copy; 2023 Landik</p>
+                </footer>
+            </div>
+            <!-- End Content -->
+        </div>
+        <!-- End Content Area -->
+    </div>
+    <!-- End Main Content -->
+</body>
+
+</html>
