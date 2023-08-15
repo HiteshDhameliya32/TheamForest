@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Kerri
+build_property.RootNamespace = Kerri
+build_property.ProjectDir = E:\Themforest Converted Products\Kerri\ASP\Kerri_ASP_v1.0.0\Kerri\Light\Kerri\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Themforest Converted Products\Kerri\ASP\Kerri_ASP_v1.0.0\Kerri\Light\Kerri
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index10.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxMC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index11.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index12.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index13.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index14.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index15.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxNS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index16.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxNi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index17.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxNy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXg0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXg1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index6.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXg2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index7.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXg3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index8.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXg4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Index9.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXg5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Shared/_Layout - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQgLSBDb3B5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Kerri/ASP/Kerri_ASP_v1.0.0/Kerri/Light/Kerri/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wxdawly7ng
