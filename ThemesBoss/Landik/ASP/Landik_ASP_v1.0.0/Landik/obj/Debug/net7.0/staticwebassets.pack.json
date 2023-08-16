@@ -1,0 +1,1049 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Landik.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Landik.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\about.css.map",
+      "PackagePath": "staticwebassets\\css\\about.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\about.min.css",
+      "PackagePath": "staticwebassets\\css\\about.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\about.min.css.map",
+      "PackagePath": "staticwebassets\\css\\about.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\changelog.css",
+      "PackagePath": "staticwebassets\\css\\changelog.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\changelog.css.map",
+      "PackagePath": "staticwebassets\\css\\changelog.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\changelog.min.css",
+      "PackagePath": "staticwebassets\\css\\changelog.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\changelog.min.css.map",
+      "PackagePath": "staticwebassets\\css\\changelog.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\documentation.css",
+      "PackagePath": "staticwebassets\\css\\documentation.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\documentation.css.map",
+      "PackagePath": "staticwebassets\\css\\documentation.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\documentation.min.css",
+      "PackagePath": "staticwebassets\\css\\documentation.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\documentation.min.css.map",
+      "PackagePath": "staticwebassets\\css\\documentation.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\footer.css.map",
+      "PackagePath": "staticwebassets\\css\\footer.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\footer.min.css",
+      "PackagePath": "staticwebassets\\css\\footer.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\footer.min.css.map",
+      "PackagePath": "staticwebassets\\css\\footer.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\index.css.map",
+      "PackagePath": "staticwebassets\\css\\index.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\index.min.css",
+      "PackagePath": "staticwebassets\\css\\index.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\index.min.css.map",
+      "PackagePath": "staticwebassets\\css\\index.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\login.css.map",
+      "PackagePath": "staticwebassets\\css\\login.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\login.min.css",
+      "PackagePath": "staticwebassets\\css\\login.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\login.min.css.map",
+      "PackagePath": "staticwebassets\\css\\login.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\css\\main.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\main.min.css",
+      "PackagePath": "staticwebassets\\css\\main.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\main.min.css.map",
+      "PackagePath": "staticwebassets\\css\\main.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\menu.css",
+      "PackagePath": "staticwebassets\\css\\menu.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\navbar.css.map",
+      "PackagePath": "staticwebassets\\css\\navbar.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\navbar.min.css",
+      "PackagePath": "staticwebassets\\css\\navbar.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\navbar.min.css.map",
+      "PackagePath": "staticwebassets\\css\\navbar.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\owl.theme.css",
+      "PackagePath": "staticwebassets\\css\\owl.theme.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\owl.transitions.css",
+      "PackagePath": "staticwebassets\\css\\owl.transitions.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\pe-icon-7-stroke.css",
+      "PackagePath": "staticwebassets\\css\\pe-icon-7-stroke.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\responsive.css.map",
+      "PackagePath": "staticwebassets\\css\\responsive.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\responsive.min.css",
+      "PackagePath": "staticwebassets\\css\\responsive.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\responsive.min.css.map",
+      "PackagePath": "staticwebassets\\css\\responsive.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\Pe-icon-7-stroke.eot",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\Pe-icon-7-stroke.svg",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\Pe-icon-7-stroke.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\feather.eot",
+      "PackagePath": "staticwebassets\\fonts\\feather.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\feather.svg",
+      "PackagePath": "staticwebassets\\fonts\\feather.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\feather.ttf",
+      "PackagePath": "staticwebassets\\fonts\\feather.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\feather.woff",
+      "PackagePath": "staticwebassets\\fonts\\feather.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.eot",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.glyph.json",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.glyph.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.less",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.less"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.svg",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.symbol.svg",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.symbol.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.woff",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\remixicon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.woff2"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\theme-font\\CircularStd-Black.woff",
+      "PackagePath": "staticwebassets\\fonts\\theme-font\\CircularStd-Black.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\theme-font\\CircularStd-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\theme-font\\CircularStd-Bold.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\theme-font\\CircularStd-Book.woff",
+      "PackagePath": "staticwebassets\\fonts\\theme-font\\CircularStd-Book.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\theme-font\\CircularStd-BookItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\theme-font\\CircularStd-BookItalic.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\theme-font\\CircularStd-Medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\theme-font\\CircularStd-Medium.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\fonts\\themify.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\fonts\\themify.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\Stockholm-icons---Home---Deer.png",
+      "PackagePath": "staticwebassets\\images\\Stockholm-icons---Home---Deer.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\about_com.jpg",
+      "PackagePath": "staticwebassets\\images\\about_com.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\about_lap.jpg",
+      "PackagePath": "staticwebassets\\images\\about_lap.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\about_page_img.jpg",
+      "PackagePath": "staticwebassets\\images\\about_page_img.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\bg-cta-1.png",
+      "PackagePath": "staticwebassets\\images\\bg-cta-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\bg-pages.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-pages.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\client_side.png",
+      "PackagePath": "staticwebassets\\images\\client_side.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\1.png",
+      "PackagePath": "staticwebassets\\images\\clients\\1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\2.png",
+      "PackagePath": "staticwebassets\\images\\clients\\2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\3.png",
+      "PackagePath": "staticwebassets\\images\\clients\\3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\4.png",
+      "PackagePath": "staticwebassets\\images\\clients\\4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\5.png",
+      "PackagePath": "staticwebassets\\images\\clients\\5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\6.png",
+      "PackagePath": "staticwebassets\\images\\clients\\6.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\7.png",
+      "PackagePath": "staticwebassets\\images\\clients\\7.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\clients\\8.png",
+      "PackagePath": "staticwebassets\\images\\clients\\8.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\contact.jpg",
+      "PackagePath": "staticwebassets\\images\\contact.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\counter_bg.png",
+      "PackagePath": "staticwebassets\\images\\counter_bg.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\features\\1.png",
+      "PackagePath": "staticwebassets\\images\\features\\1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\features\\2.png",
+      "PackagePath": "staticwebassets\\images\\features\\2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\features\\3.png",
+      "PackagePath": "staticwebassets\\images\\features\\3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\features\\4.png",
+      "PackagePath": "staticwebassets\\images\\features\\4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\features\\5.png",
+      "PackagePath": "staticwebassets\\images\\features\\5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\features\\6.png",
+      "PackagePath": "staticwebassets\\images\\features\\6.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\heade_video_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\heade_video_bg.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\hero-4-bg.png",
+      "PackagePath": "staticwebassets\\images\\hero-4-bg.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\home-2.png",
+      "PackagePath": "staticwebassets\\images\\home-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\home-sass-third.png",
+      "PackagePath": "staticwebassets\\images\\home-sass-third.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\home_bg_2.png",
+      "PackagePath": "staticwebassets\\images\\home_bg_2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\home_sec_features.jpg",
+      "PackagePath": "staticwebassets\\images\\home_sec_features.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\home_sec_layer-2.png",
+      "PackagePath": "staticwebassets\\images\\home_sec_layer-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\home_sec_video.png",
+      "PackagePath": "staticwebassets\\images\\home_sec_video.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\active-call.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\active-call.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\bulb.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\bulb.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\chart-bar.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\chart-bar.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\clock.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\clock.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\code.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\code.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\dollar.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\dollar.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\features-1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\features-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\features-2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\features-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\features-3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\features-3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\flower.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\flower.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\groupchat.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\groupchat.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\headphones.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\headphones.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\heart.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\heart.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\lnterselect.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\lnterselect.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\mail.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\mail.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\pen&ruller.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\pen&ruller.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\settings-1.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\settings-1.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\sketch.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\sketch.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\substract.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\substract.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\icon\\time-schedule.svg",
+      "PackagePath": "staticwebassets\\images\\icon\\time-schedule.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\land_bg_four.jpg",
+      "PackagePath": "staticwebassets\\images\\land_bg_four.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\login_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\login_bg.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\logo-dark.png",
+      "PackagePath": "staticwebassets\\images\\logo-dark.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\logo-light.png",
+      "PackagePath": "staticwebassets\\images\\logo-light.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\overview.png",
+      "PackagePath": "staticwebassets\\images\\overview.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\screen-1.png",
+      "PackagePath": "staticwebassets\\images\\screen-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\screenshot\\1.png",
+      "PackagePath": "staticwebassets\\images\\screenshot\\1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\screenshot\\2.png",
+      "PackagePath": "staticwebassets\\images\\screenshot\\2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\screenshot\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\screenshot\\3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\screenshot\\4.png",
+      "PackagePath": "staticwebassets\\images\\screenshot\\4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\screenshot\\5.png",
+      "PackagePath": "staticwebassets\\images\\screenshot\\5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\screenshot\\6.png",
+      "PackagePath": "staticwebassets\\images\\screenshot\\6.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\team\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\team\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\team\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\team\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\team\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\team\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\team\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\testi\\testi-1.jpg",
+      "PackagePath": "staticwebassets\\images\\testi\\testi-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\testi\\testi-2.jpg",
+      "PackagePath": "staticwebassets\\images\\testi\\testi-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\testi\\testi-3.jpg",
+      "PackagePath": "staticwebassets\\images\\testi\\testi-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images\\wave-mask.png",
+      "PackagePath": "staticwebassets\\images\\wave-mask.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\Stockholm-icons---Home---Deer.png",
+      "PackagePath": "staticwebassets\\images_Client\\Stockholm-icons---Home---Deer.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\about_com.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\about_com.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\about_lap.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\about_lap.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\about_page_img.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\about_page_img.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\bg-cta-1.png",
+      "PackagePath": "staticwebassets\\images_Client\\bg-cta-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\bg-pages.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\bg-pages.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\client_side.png",
+      "PackagePath": "staticwebassets\\images_Client\\client_side.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\1.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\2.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\3.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\4.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\5.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\6.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\6.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\7.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\7.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\clients\\8.png",
+      "PackagePath": "staticwebassets\\images_Client\\clients\\8.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\contact.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\contact.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\counter_bg.png",
+      "PackagePath": "staticwebassets\\images_Client\\counter_bg.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\favicon.ico",
+      "PackagePath": "staticwebassets\\images_Client\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\features\\1.png",
+      "PackagePath": "staticwebassets\\images_Client\\features\\1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\features\\2.png",
+      "PackagePath": "staticwebassets\\images_Client\\features\\2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\features\\3.png",
+      "PackagePath": "staticwebassets\\images_Client\\features\\3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\features\\4.png",
+      "PackagePath": "staticwebassets\\images_Client\\features\\4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\features\\5.png",
+      "PackagePath": "staticwebassets\\images_Client\\features\\5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\features\\6.png",
+      "PackagePath": "staticwebassets\\images_Client\\features\\6.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\heade_video_bg.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\heade_video_bg.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\hero-4-bg.png",
+      "PackagePath": "staticwebassets\\images_Client\\hero-4-bg.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\home-2.png",
+      "PackagePath": "staticwebassets\\images_Client\\home-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\home-sass-third.png",
+      "PackagePath": "staticwebassets\\images_Client\\home-sass-third.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\home_bg_2.png",
+      "PackagePath": "staticwebassets\\images_Client\\home_bg_2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\home_sec_features.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\home_sec_features.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\home_sec_layer-2.png",
+      "PackagePath": "staticwebassets\\images_Client\\home_sec_layer-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\home_sec_video.png",
+      "PackagePath": "staticwebassets\\images_Client\\home_sec_video.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\active-call.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\active-call.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\bulb.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\bulb.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\chart-bar.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\chart-bar.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\clock.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\clock.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\code.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\code.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\dollar.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\dollar.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\features-1.png",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\features-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\features-2.png",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\features-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\features-3.png",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\features-3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\flower.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\flower.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\groupchat.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\groupchat.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\headphones.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\headphones.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\heart.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\heart.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\lnterselect.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\lnterselect.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\mail.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\mail.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\pen&ruller.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\pen&ruller.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\settings-1.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\settings-1.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\sketch.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\sketch.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\substract.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\substract.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\icon\\time-schedule.svg",
+      "PackagePath": "staticwebassets\\images_Client\\icon\\time-schedule.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\land_bg_four.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\land_bg_four.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\login_bg.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\login_bg.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\logo-dark.png",
+      "PackagePath": "staticwebassets\\images_Client\\logo-dark.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\logo-light.png",
+      "PackagePath": "staticwebassets\\images_Client\\logo-light.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\overview.png",
+      "PackagePath": "staticwebassets\\images_Client\\overview.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\screen-1.png",
+      "PackagePath": "staticwebassets\\images_Client\\screen-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\screenshot\\1.png",
+      "PackagePath": "staticwebassets\\images_Client\\screenshot\\1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\screenshot\\2.png",
+      "PackagePath": "staticwebassets\\images_Client\\screenshot\\2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\screenshot\\3.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\screenshot\\3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\screenshot\\4.png",
+      "PackagePath": "staticwebassets\\images_Client\\screenshot\\4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\screenshot\\5.png",
+      "PackagePath": "staticwebassets\\images_Client\\screenshot\\5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\screenshot\\6.png",
+      "PackagePath": "staticwebassets\\images_Client\\screenshot\\6.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\team\\1.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\team\\1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\team\\2.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\team\\2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\team\\3.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\team\\3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\team\\4.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\team\\4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\team\\5.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\team\\5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\team\\6.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\team\\6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\team\\7.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\team\\7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\testi\\testi-1.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\testi\\testi-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\testi\\testi-2.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\testi\\testi-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\testi\\testi-3.jpg",
+      "PackagePath": "staticwebassets\\images_Client\\testi\\testi-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\images_Client\\wave-mask.png",
+      "PackagePath": "staticwebassets\\images_Client\\wave-mask.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\TweenMax.min.js",
+      "PackagePath": "staticwebassets\\js\\TweenMax.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\counter.js",
+      "PackagePath": "staticwebassets\\js\\counter.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\jquery-twennmax.js",
+      "PackagePath": "staticwebassets\\js\\jquery-twennmax.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\scrollspy.min.js",
+      "PackagePath": "staticwebassets\\js\\scrollspy.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\about.scss",
+      "PackagePath": "staticwebassets\\scss\\about.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\changelog.scss",
+      "PackagePath": "staticwebassets\\scss\\changelog.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\components\\button.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\button.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\components\\helper.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\helper.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\button.css",
+      "PackagePath": "staticwebassets\\scss\\css\\button.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\button.css.map",
+      "PackagePath": "staticwebassets\\scss\\css\\button.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\button.min.css",
+      "PackagePath": "staticwebassets\\scss\\css\\button.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\button.min.css.map",
+      "PackagePath": "staticwebassets\\scss\\css\\button.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\helper.css",
+      "PackagePath": "staticwebassets\\scss\\css\\helper.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\helper.css.map",
+      "PackagePath": "staticwebassets\\scss\\css\\helper.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\helper.min.css",
+      "PackagePath": "staticwebassets\\scss\\css\\helper.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\css\\helper.min.css.map",
+      "PackagePath": "staticwebassets\\scss\\css\\helper.min.css.map"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\documentation.scss",
+      "PackagePath": "staticwebassets\\scss\\documentation.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\footer.scss",
+      "PackagePath": "staticwebassets\\scss\\footer.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\index.scss",
+      "PackagePath": "staticwebassets\\scss\\index.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\login.scss",
+      "PackagePath": "staticwebassets\\scss\\login.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\scss\\main.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\navbar.scss",
+      "PackagePath": "staticwebassets\\scss\\navbar.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Landik\\ASP\\Landik_ASP_v1.0.0\\Landik\\wwwroot\\scss\\responsive.scss",
+      "PackagePath": "staticwebassets\\scss\\responsive.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Landik.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Landik.props",
+      "PackagePath": "build\\Landik.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Landik.props",
+      "PackagePath": "buildMultiTargeting\\Landik.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Landik.props",
+      "PackagePath": "buildTransitive\\Landik.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

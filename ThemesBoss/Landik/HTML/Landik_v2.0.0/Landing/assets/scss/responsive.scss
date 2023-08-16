@@ -1,0 +1,191 @@
+
+@media (max-width: 768px) {
+    .home_fir_content h1{
+        font-size: 36px;
+    }
+    .section_title h2{
+        font-size: 32px;
+    }
+    .funfact_div_fir .fun_content h1 {
+        font-size: 38px;
+    }
+    .testi_content .testi .testi-desc {
+        margin-left: 20%;
+    }
+    .contact_section {
+        padding: 60px 20px;
+    }
+    .footer_fir .footer_menu li::after {
+        display: none;
+    }
+    .footer_fir .footer_menu li {
+        display: block;
+        text-align: center;
+    }
+    .footer_fir .foot_logo img{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer_fir .subcribe_foot form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer_fir .fot_social{
+        text-align: center;
+    }
+    .home_first{
+        background-position: right bottom;
+    }
+    .home_sec .home_sec_content h1 {
+        font-size: 34px;
+    }
+    .home_sec {
+        padding: 100px 0 120px 0;
+    }
+    .home_sec .home_top_brand_title img {
+        margin: 8px 12px;
+    }
+    .home_sec .home_divider {
+        margin: 40px 0;
+    }   
+    .home_sec .home_sec_side_form {
+        padding: 40px 20px;
+    }
+    .about_desc_sec .features-heading,.our_benifits .our_benifits_title h3 {
+        line-height: 1.4;
+        font-size: 24px;
+    }
+    .about_desc_sec .features .features-icon {
+        top: 10%;
+    }
+    .about_desc_sec .features .features-desc {
+        margin-left: 13%;
+    }
+    .video_sec_in_btn{
+        text-align: left;
+    }
+    .bg_fun_vid .vidoe_sec_img {
+        top: -100px;
+    }
+    .bg_fun_vid {
+        margin-top: 0 !important;
+    }
+    .video_head_title{
+        margin-top: 0 !important;
+    }
+    .cta_counter .count_custom {
+        font-size: 46px;
+        letter-spacing: 7px;
+    }
+    .lan_two_client_img .logo_img {
+        padding: 20px 15px;
+    }
+    .footer_lan_two .bg_footer_sub{
+        margin-bottom: 12px;
+    }
+    .footer_lan_two .text_copyright,.footer_lan_two .fot_social {
+        text-align: center;
+    }
+    .footer_lan_two{
+        margin-top: 60px;
+    }
+    .home_third {
+        padding: 90px 0px 20px;
+    }
+    .home_thi_full_content {
+        padding: 40px 10px;
+    }
+    .home_third .home_thi_full_content .sub_sec_third form button {
+        padding: 10px 20px;
+    }
+    .home_third .home_third_content h1 {
+        font-size: 32px;
+    }
+    .home_third .home_third_content p {
+        font-size: 16px;
+    }
+    .third_features_sec_main_title h2 {
+        font-size: 30px;
+    }
+    .home_four_content {
+        padding: 50px 12px;
+    }
+    .home_four_content h1 {
+        font-size: 32px;
+    }
+    .home_four_content .small_title {
+        letter-spacing: 2px;
+    }
+    .cta_bg_four .cta_img_bg h2 {
+        font-size: 30px;
+    }
+    .cta_bg_four .cta_img_bg{
+        padding: 80px 20px;
+    }  
+    .footer_four .footer_four_menu li::after {
+        display: none;
+    }
+    .footer_four .footer_four_menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    .footer_four .footer_divider {
+        margin: 20px 0 0;
+    }
+    .price_tab_detail {
+        padding: 60px 30px;
+    }
+    .content_main_title_third {
+        font-size: 32px;
+    }
+    .faq h6{
+        font-size: 16px;
+    }
+    .home_sec .home_sec_side_form h2 {
+        font-weight: 700;
+        font-size: 28px;
+    }    
+    .ab_page_title h2{
+        font-size: 28px;
+    }    
+    .bg-page-head {
+        padding: 120px 0 80px;
+    }
+    .feature_fir_content h2{
+        font-size: 26px;
+    }    
+    .pages_banner_content h1{
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 500px){
+    .responsive_none_float{
+        float: none !important;
+        text-align: center;
+    }
+    .responsive_none_float.price_plan {
+        margin-top: 14px;
+    }    
+    .four_sub_sec .form-inline  .form-control{
+        margin-right: 0px;
+    } 
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .testi_content .testi .testi-desc {
+        margin-left: 13% !important;
+    }
+    .about_desc_sec .features .features-icon {
+        top: 17% !important; 
+    }
+    .about_desc_sec .features .features-desc {
+        margin-left: 7% !important; 
+    }
+}
+
+@media (max-width: 991px){
+    .footer_four .fot_social{
+        margin-top: 10px;
+    }
+} 

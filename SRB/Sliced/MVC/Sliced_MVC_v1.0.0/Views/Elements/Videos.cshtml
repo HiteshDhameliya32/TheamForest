@@ -1,0 +1,33 @@
+﻿@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Elements";
+    ViewData["ChildTitle"] = "Videos";
+    ViewData["x-data"] = "elements";
+    ViewBag.ActiveItem = "videos";
+}
+
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Aspect Auto Videos</h2>
+            <div>
+                <iframe class="w-full md:aspect-video lg:aspect-auto" src="https://www.youtube.com/embed/-GfNEDs3ERw"></iframe>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Aspect Videos</h2>
+            <div>
+                <iframe class="w-full md:aspect-square lg:aspect-video" src="https://www.youtube.com/embed/-GfNEDs3ERw"></iframe>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Aspect Square Videos</h2>
+            <div>
+                <iframe class="w-full aspect-square" src="https://www.youtube.com/embed/-GfNEDs3ERw"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->

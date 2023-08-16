@@ -1,0 +1,183 @@
+﻿@page
+@model Sliced.Pages.Elements.AvatarModel
+@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Elements";
+    ViewData["ChildTitle"] = "Avatar";
+    ViewData["x-data"] = "elements";
+    ViewBag.ActiveItem = "avatar";
+}
+
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar Rounded</h2>
+            <div class="flex flex-wrap items-center gap-4">
+                <img src="~/images/avatar-1.png" class="h-24 w-24 flex-none rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-4.png" class="h-20 w-20 flex-none rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-11.png" class="h-16 w-16 flex-none rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-13.png" class="h-12 w-12 flex-none rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-19.png" class="h-10 w-10 flex-none rounded-full object-cover" alt="avatar">
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar Square</h2>
+            <div class="flex flex-wrap items-center gap-4">
+                <img src="~/images/avatar-2.png" class="h-24 w-24 flex-none rounded-md object-cover" alt="avatar">
+                <img src="~/images/avatar-3.png" class="h-20 w-20 flex-none rounded-md object-cover" alt="avatar">
+                <img src="~/images/avatar-5.png" class="h-16 w-16 flex-none rounded-md object-cover" alt="avatar">
+                <img src="~/images/avatar-6.png" class="h-12 w-12 flex-none rounded-md object-cover" alt="avatar">
+                <img src="~/images/avatar-8.png" class="h-10 w-10 flex-none rounded-md object-cover" alt="avatar">
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar With Dots</h2>
+            <div class="flex flex-wrap items-center gap-4">
+                <div class="relative h-24 w-24">
+                    <img src="~/images/avatar-1.png" class="h-24 w-24 flex-none rounded-full object-cover" alt="avatar">
+                    <span class="absolute bottom-0 h-7 w-7 rounded-full bg-danger ring-2 ring-white dark:ring-darkborder right-0"></span>
+                </div>
+                <div class="relative h-20 w-20">
+                    <img src="~/images/avatar-4.png" class="h-20 w-20 flex-none rounded-full object-cover" alt="avatar">
+                    <span class="absolute bottom-0 h-6 w-6 rounded-full bg-warning ring-2 ring-white dark:ring-darkborder right-0"></span>
+                </div>
+                <div class="relative h-16 w-16">
+                    <img src="~/images/avatar-11.png" class="h-16 w-16 flex-none rounded-full object-cover" alt="avatar">
+                    <span class="absolute bottom-0 h-5 w-5 rounded-full bg-success ring-2 ring-white dark:ring-darkborder right-0"></span>
+                </div>
+                <div class="relative h-12 w-12">
+                    <img src="~/images/avatar-13.png" class="h-12 w-12 flex-none rounded-full object-cover" alt="avatar">
+                    <span class="absolute bottom-0 h-4 w-4 rounded-full bg-muted ring-2 ring-white dark:ring-darkborder right-0"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar Square With Dots</h2>
+            <div class="flex flex-wrap items-center gap-4">
+                <div class="relative h-24 w-24">
+                    <img src="~/images/avatar-2.png" class="h-24 w-24 flex-none rounded-md object-cover" alt="avatar">
+                    <span class="absolute -bottom-2 -right-2 h-7 w-7 rounded-full bg-danger ring-2 ring-white dark:ring-darkborder"></span>
+                </div>
+                <div class="relative h-20 w-20">
+                    <img src="~/images/avatar-3.png" class="h-20 w-20 flex-none rounded-md object-cover" alt="avatar">
+                    <span class="absolute -bottom-2 -right-2 h-6 w-6 rounded-full bg-warning ring-2 ring-white dark:ring-darkborder"></span>
+                </div>
+                <div class="relative h-16 w-16">
+                    <img src="~/images/avatar-5.png" class="h-16 w-16 flex-none rounded-md object-cover" alt="avatar">
+                    <span class="absolute -bottom-2 -right-2 h-5 w-5 rounded-full bg-success ring-2 ring-white dark:ring-darkborder"></span>
+                </div>
+                <div class="relative h-12 w-12">
+                    <img src="~/images/avatar-6.png" class="h-12 w-12 flex-none rounded-md object-cover" alt="avatar">
+                    <span class="absolute -bottom-2 -right-2 h-4 w-4 rounded-full bg-muted ring-2 ring-white dark:ring-darkborder"></span>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar group</h2>
+            <div class="flex items-center justify-start -space-x-4">
+                <img src="~/images/avatar-2.png" class="h-10 w-10 flex-none rounded-full ring-2 ring-white dark:ring-darkborder object-cover" alt="avatar">
+                <img src="~/images/avatar-3.png" class="h-10 w-10 flex-none rounded-full ring-2 ring-white dark:ring-darkborder object-cover" alt="avatar">
+                <img src="~/images/avatar-5.png" class="h-10 w-10 flex-none rounded-full ring-2 ring-white dark:ring-darkborder object-cover" alt="avatar">
+                <img src="~/images/avatar-6.png" class="h-10 w-10 flex-none rounded-full ring-2 ring-white dark:ring-darkborder object-cover" alt="avatar">
+                <img src="~/images/avatar-8.png" class="h-10 w-10 flex-none rounded-full ring-2 ring-white dark:ring-darkborder object-cover" alt="avatar">
+                <span class="flex justify-center items-center w-10 h-10 text-center rounded-full object-cover bg-light font-bold text-xs ring-2 ring-white dark:ring-darkborder">+99</span>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar with text</h2>
+            <div class="flex items-center space-x-2">
+                <img class="w-10 h-10 rounded-full" src="~/images/avatar-1.png" alt="">
+                <div class="font-medium">
+                    <h6 class="text-sm dark:text-white">Stevens Lackson</h6>
+                    <p class="text-xs text-black/40 dark:text-darkmuted">Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar Square with alphabet</h2>
+            <div class="flex flex-wrap gap-4">
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-purple/20 text-base uppercase text-purple">Sl</div>
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-info/20 text-base uppercase text-info">Sl</div>
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-success/20 text-base uppercase text-success">Sl</div>
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-warning/20 text-base uppercase text-warning">Sl</div>
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-danger/20 text-base uppercase text-danger">Sl</div>
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-black/20 text-base uppercase text-black dark:bg-transparent dark:text-white">Sl</div>
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-muted/20 text-base uppercase text-muted dark:bg-darkmuted dark:text-white">Sl</div>
+                <div class="h-12 w-12 rounded-md flex items-center justify-center font-semibold bg-light/20 text-base uppercase text-black dark:text-white dark:bg-white/5">Sl</div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar Rounded with alphabet</h2>
+            <div class="flex flex-wrap gap-4">
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-purple/20 text-base uppercase text-purple">Sl</div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-info/20 text-base uppercase text-info">Sl</div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-success/20 text-base uppercase text-success">Sl</div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-warning/20 text-base uppercase text-warning">Sl</div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-danger/20 text-base uppercase text-danger">Sl</div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-black/20 text-base uppercase text-black dark:bg-transparent dark:text-white">Sl</div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-muted/20 text-base uppercase text-muted dark:bg-darkmuted dark:text-white">Sl</div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-light/20 text-base uppercase text-black dark:text-white dark:bg-white/5">Sl</div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar with Icon</h2>
+            <div class="flex flex-wrap gap-4">
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-purple/20 text-base uppercase text-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-info/20 text-base uppercase text-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-success/20 text-base uppercase text-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-warning/20 text-base uppercase text-warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-danger/20 text-base uppercase text-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-black/20 text-base uppercase text-black dark:bg-transparent dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-muted/20 text-base uppercase text-muted dark:bg-darkmuted dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <div class="h-12 w-12 rounded-full flex items-center justify-center font-semibold bg-light/20 text-base uppercase text-black dark:text-white dark:bg-white/5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Avatar With Border</h2>
+            <div class="flex flex-wrap items-center gap-4">
+                <img src="~/images/avatar-1.png" class="h-16 w-16 flex-none border border-purple p-1 rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-4.png" class="h-16 w-16 flex-none border border-success p-1 rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-11.png" class="h-16 w-16 flex-none border border-warning p-1 rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-13.png" class="h-16 w-16 flex-none border border-danger p-1 rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-19.png" class="h-16 w-16 flex-none border border-black p-1 rounded-full object-cover" alt="avatar">
+                <img src="~/images/avatar-24.png" class="h-16 w-16 flex-none border border-light p-1 rounded-full object-cover" alt="avatar">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->

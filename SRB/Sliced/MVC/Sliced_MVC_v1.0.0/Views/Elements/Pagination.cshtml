@@ -1,0 +1,198 @@
+﻿@{
+    // This block allows server-side C# code execution for dynamic content and logic.
+
+    ViewData["HeadTitle"] = "Elements";
+    ViewData["ChildTitle"] = "Pagination";
+    ViewData["x-data"] = "elements";
+    ViewBag.ActiveItem = "pagination";
+}
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Pagination Default</h2>
+            <div class="overflow-auto">
+                <div>
+                    <ul class="inline-flex items-center gap-1 m-auto mb-4">
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-muted hover:text-purple border border-black/10 hover:border-purple dark:border-darkborder dark:text-darkmuted dark:hover:text-purple dark:hover:border-purple">First</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-muted hover:text-purple border border-black/10 hover:border-purple dark:border-darkborder dark:text-darkmuted dark:hover:text-purple dark:hover:border-purple">Prev</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-muted hover:text-purple border border-black/10 hover:border-purple dark:border-darkborder dark:text-darkmuted dark:hover:text-purple dark:hover:border-purple">1</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple border border-purple">2</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-muted hover:text-purple border border-black/10 hover:border-purple dark:border-darkborder dark:text-darkmuted dark:hover:text-purple dark:hover:border-purple">3</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-muted hover:text-purple border border-black/10 hover:border-purple dark:border-darkborder dark:text-darkmuted dark:hover:text-purple dark:hover:border-purple">Next</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-muted hover:text-purple border border-black/10 hover:border-purple dark:border-darkborder dark:text-darkmuted dark:hover:text-purple dark:hover:border-purple">Last</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="inline-flex -space-x-px list-inside my-2">
+                        <li><a href="#" class="py-2 px-3 ml-0 text-black/50 bg-white rounded-l-lg border border-black/10 cursor-not-allowed dark:bg-transparent dark:text-darkmuted dark:border-darkborder">Previous</a></li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-white border border-black/10 hover:bg-purple hover:text-white dark:bg-transparent dark:text-white dark:border-darkborder dark:hover:bg-purple dark:hover:text-white dark:hover:border-purple">1</a></li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-white border border-black/10 hover:bg-purple hover:text-white dark:bg-transparent dark:text-white dark:border-darkborder dark:hover:bg-purple dark:hover:text-white dark:hover:border-purple">2</a></li>
+                        <li><a href="#" class="py-2 px-3 text-white bg-purple border border-black/10">3</a></li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-white border border-black/10 hover:bg-purple hover:text-white dark:bg-transparent dark:text-white dark:border-darkborder dark:hover:bg-purple dark:hover:text-white dark:hover:border-purple">4</a></li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-white border border-black/10 hover:bg-purple hover:text-white dark:bg-transparent dark:text-white dark:border-darkborder dark:hover:bg-purple dark:hover:text-white dark:hover:border-purple">5</a></li>
+                        <li>
+                            <a href="#" class="py-2 px-3 text-black bg-white rounded-r-lg border border-black/10 hover:bg-purple hover:text-white dark:bg-transparent dark:text-white dark:border-darkborder dark:hover:bg-purple dark:hover:text-white dark:hover:border-purple">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Pagination Solid</h2>
+            <div class="overflow-auto">
+                <div>
+                    <ul class="inline-flex items-center gap-1 m-auto mb-4">
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">First</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">Prev</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">1</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-white bg-purple border border-purple">2</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">3</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">Next</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">Last</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="inline-flex -space-x-px list-inside my-2">
+                        <li><a href="#" class="py-2 px-3 ml-0 text-purple/50 bg-purple/10 rounded-l-lg border border-purple/10 cursor-not-allowed">Previous</a></li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">1</a></li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">2</a></li>
+                        <li><a href="#" class="py-2 px-3 text-white bg-purple border border-purple/10">3</a></li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">4</a></li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">5</a></li>
+                        <li>
+                            <a href="#" class="py-2 px-3 text-purple bg-purple/10 rounded-r-lg border border-purple/10 hover:bg-purple hover:text-white">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Pagination With Icon</h2>
+            <div class="overflow-auto">
+                <div>
+                    <ul class="inline-flex items-center gap-1 m-auto mb-4">
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M4.83594 12.0001L11.043 18.2072L12.4573 16.793L7.66436 12.0001L12.4573 7.20718L11.043 5.79297L4.83594 12.0001ZM10.4858 12.0001L16.6929 18.2072L18.1072 16.793L13.3143 12.0001L18.1072 7.20718L16.6929 5.79297L10.4858 12.0001Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">1</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-white bg-purple border border-purple">2</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">3</button></li>
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M19.1643 12.0001L12.9572 5.79297L11.543 7.20718L16.3359 12.0001L11.543 16.793L12.9572 18.2072L19.1643 12.0001ZM13.5144 12.0001L7.30728 5.79297L5.89307 7.20718L10.686 12.0001L5.89307 16.793L7.30728 18.2072L13.5144 12.0001Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="inline-flex -space-x-px list-inside items-center my-2">
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded-l-lg transition text-purple/50 cursor-not-allowed border border-purple/10 bg-purple/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[18px] h-[18px] mx-auto">
+                                    <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">1</a></li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">2</a></li>
+                        <li><a href="#" class="py-2 px-3 text-white bg-purple border border-purple/10">3</a></li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">4</a></li>
+                        <li><a href="#" class="py-2 px-3 text-purple bg-purple/10 border border-purple/10 hover:bg-purple hover:text-white">5</a></li>
+                        <li>
+                            <button class="flex justify-center px-2 py-2 rounded-r-lg  transition text-purple hover:text-white hover:bg-purple border border-purple/5 hover:border-purple bg-purple/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[18px] h-[18px] mx-auto">
+                                    <path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Pagination With Icons and Rounded</h2>
+            <div class="overflow-auto">
+                <div>
+                    <ul class="inline-flex items-center gap-1 m-auto mb-4">
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded-full transition text-black hover:text-white hover:bg-purple border border-light hover:border-purple bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M4.83594 12.0001L11.043 18.2072L12.4573 16.793L7.66436 12.0001L12.4573 7.20718L11.043 5.79297L4.83594 12.0001ZM10.4858 12.0001L16.6929 18.2072L18.1072 16.793L13.3143 12.0001L18.1072 7.20718L16.6929 5.79297L10.4858 12.0001Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded-full transition text-black hover:text-white hover:bg-purple border border-light hover:border-purple bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded-full transition text-black hover:text-white hover:bg-purple border border-light hover:border-purple bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">1</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded-full transition text-white bg-purple border border-purple">2</button></li>
+                        <li><button type="button" class="flex justify-center px-3.5 py-2 rounded-full transition text-black hover:text-white hover:bg-purple border border-light hover:border-purple bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">3</button></li>
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded-full transition text-black hover:text-white hover:bg-purple border border-light hover:border-purple bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded-full transition text-black hover:text-white hover:bg-purple border border-light hover:border-purple bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M19.1643 12.0001L12.9572 5.79297L11.543 7.20718L16.3359 12.0001L11.543 16.793L12.9572 18.2072L19.1643 12.0001ZM13.5144 12.0001L7.30728 5.79297L5.89307 7.20718L10.686 12.0001L5.89307 16.793L7.30728 18.2072L13.5144 12.0001Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="inline-flex -space-x-px list-inside items-center my-2">
+                        <li>
+                            <button type="button" class="flex justify-center px-2 py-2 rounded-l-full transition text-black/50 cursor-not-allowed border border-light bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[18px] h-[18px] mx-auto">
+                                    <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-light/50 border border-light hover:bg-purple hover:border-purple hover:text-white dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">1</a></li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-light/50 border border-light hover:bg-purple hover:border-purple hover:text-white dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">2</a></li>
+                        <li><a href="#" class="py-2 px-3 text-white bg-purple border border-purple">3</a></li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-light/50 border border-light hover:bg-purple hover:border-purple hover:text-white dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">4</a></li>
+                        <li><a href="#" class="py-2 px-3 text-black bg-light/50 border border-light hover:bg-purple hover:border-purple hover:text-white dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">5</a></li>
+                        <li>
+                            <button class="flex justify-center px-2 py-2 rounded-r-full  transition text-black hover:text-white hover:bg-purple border border-light hover:border-purple bg-light/50 dark:bg-white/5 dark:border-darkborder dark:text-white dark:hover:bg-purple dark:hover:border-purple dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[18px] h-[18px] mx-auto">
+                                    <path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->

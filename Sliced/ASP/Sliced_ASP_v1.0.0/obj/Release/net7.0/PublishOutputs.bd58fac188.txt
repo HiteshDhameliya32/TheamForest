@@ -1,7 +1,0 @@
-E:\asp.net apps\Sliced - asp.net - 7\obj\Release\net7.0\PubTmp\Out\Sliced.exe
-E:\asp.net apps\Sliced - asp.net - 7\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
-E:\asp.net apps\Sliced - asp.net - 7\obj\Release\net7.0\PubTmp\Out\appsettings.json
-E:\asp.net apps\Sliced - asp.net - 7\obj\Release\net7.0\PubTmp\Out\Sliced.dll
-E:\asp.net apps\Sliced - asp.net - 7\obj\Release\net7.0\PubTmp\Out\Sliced.deps.json
-E:\asp.net apps\Sliced - asp.net - 7\obj\Release\net7.0\PubTmp\Out\Sliced.runtimeconfig.json
-E:\asp.net apps\Sliced - asp.net - 7\obj\Release\net7.0\PubTmp\Out\Sliced.pdb

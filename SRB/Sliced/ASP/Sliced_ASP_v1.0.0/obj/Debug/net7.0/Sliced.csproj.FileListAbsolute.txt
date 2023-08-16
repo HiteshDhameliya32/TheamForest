@@ -1,0 +1,93 @@
+E:\asp.net apps\Sliced\bin\Debug\net7.0\appsettings.Development.json
+E:\asp.net apps\Sliced\bin\Debug\net7.0\appsettings.json
+E:\asp.net apps\Sliced\bin\Debug\net7.0\Sliced.staticwebassets.runtime.json
+E:\asp.net apps\Sliced\bin\Debug\net7.0\Sliced.exe
+E:\asp.net apps\Sliced\bin\Debug\net7.0\Sliced.deps.json
+E:\asp.net apps\Sliced\bin\Debug\net7.0\Sliced.runtimeconfig.json
+E:\asp.net apps\Sliced\bin\Debug\net7.0\Sliced.dll
+E:\asp.net apps\Sliced\bin\Debug\net7.0\Sliced.pdb
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.csproj.AssemblyReference.cache
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.AssemblyInfoInputs.cache
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.AssemblyInfo.cs
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.csproj.CoreCompileInputs.cache
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.MvcApplicationPartsAssemblyInfo.cache
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.RazorAssemblyInfo.cache
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.RazorAssemblyInfo.cs
+E:\asp.net apps\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.Sliced.Microsoft.AspNetCore.StaticWebAssets.props
+E:\asp.net apps\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.build.Sliced.props
+E:\asp.net apps\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sliced.props
+E:\asp.net apps\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sliced.props
+E:\asp.net apps\Sliced\obj\Debug\net7.0\staticwebassets.pack.json
+E:\asp.net apps\Sliced\obj\Debug\net7.0\staticwebassets.build.json
+E:\asp.net apps\Sliced\obj\Debug\net7.0\staticwebassets.development.json
+E:\asp.net apps\Sliced\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+E:\asp.net apps\Sliced\obj\Debug\net7.0\scopedcss\bundle\Sliced.styles.css
+E:\asp.net apps\Sliced\obj\Debug\net7.0\scopedcss\projectbundle\Sliced.bundle.scp.css
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.dll
+E:\asp.net apps\Sliced\obj\Debug\net7.0\refint\Sliced.dll
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.pdb
+E:\asp.net apps\Sliced\obj\Debug\net7.0\Sliced.genruntimeconfig.cache
+E:\asp.net apps\Sliced\obj\Debug\net7.0\ref\Sliced.dll
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\appsettings.Development.json
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\appsettings.json
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\Sliced.staticwebassets.runtime.json
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\Sliced.exe
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\Sliced.deps.json
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\Sliced.runtimeconfig.json
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\Sliced.dll
+E:\asp.net apps\Sliced - asp.net - 7\bin\Debug\net7.0\Sliced.pdb
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.csproj.AssemblyReference.cache
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.AssemblyInfoInputs.cache
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.AssemblyInfo.cs
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.csproj.CoreCompileInputs.cache
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.MvcApplicationPartsAssemblyInfo.cache
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.RazorAssemblyInfo.cache
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.RazorAssemblyInfo.cs
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\staticwebassets\msbuild.Sliced.Microsoft.AspNetCore.StaticWebAssets.props
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\staticwebassets\msbuild.build.Sliced.props
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sliced.props
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sliced.props
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\staticwebassets.pack.json
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\staticwebassets.build.json
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\staticwebassets.development.json
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\scopedcss\bundle\Sliced.styles.css
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\scopedcss\projectbundle\Sliced.bundle.scp.css
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.dll
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\refint\Sliced.dll
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.pdb
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\Sliced.genruntimeconfig.cache
+E:\asp.net apps\Sliced - asp.net - 7\obj\Debug\net7.0\ref\Sliced.dll
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\appsettings.Development.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\appsettings.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\Sliced.staticwebassets.runtime.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\Sliced.exe
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\Sliced.deps.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\Sliced.runtimeconfig.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\Sliced.dll
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\bin\Debug\net7.0\Sliced.pdb
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.csproj.AssemblyReference.cache
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.AssemblyInfoInputs.cache
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.AssemblyInfo.cs
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.csproj.CoreCompileInputs.cache
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.MvcApplicationPartsAssemblyInfo.cache
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.RazorAssemblyInfo.cache
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.RazorAssemblyInfo.cs
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.Sliced.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.build.Sliced.props
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Sliced.props
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Sliced.props
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\staticwebassets.build.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\staticwebassets.development.json
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\scopedcss\bundle\Sliced.styles.css
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\scopedcss\projectbundle\Sliced.bundle.scp.css
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.dll
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\refint\Sliced.dll
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.pdb
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\Sliced.genruntimeconfig.cache
+E:\Sliced\Sliced_ASP_v1.0.0\Sliced\obj\Debug\net7.0\ref\Sliced.dll

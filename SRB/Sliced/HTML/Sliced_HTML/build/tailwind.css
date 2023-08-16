@@ -1,0 +1,459 @@
+/*
+-------------------------------------------------------------------------
+* Template Name    : Sliced - Tailwind CSS Admin & Dashboard Template   * 
+* Author           : SRBThemes                                          *
+* Version          : 1.0.0                                              *
+* Created          : May 2023                                           *
+* File Description : Main Css file of the template                      *
+*------------------------------------------------------------------------
+*/
+
+/*****************************
+    1. BASIC                 *
+    2. BUTTON                *
+    3. SCROLLBAR             *
+    4. LAYOUT                *
+       - CREATIVE            *
+       - DETACHED            *
+    5. SIDEBAR               *
+    6. DROPDOWN              *
+    7. PROFILE DROPDOWN      *
+    8. NOTIFICATION DROPDOWN *
+    9. TABLE                 *
+    10. FORMS                *
+    11. CHECKBOX             *
+    12. RADIO                *
+    13. SWITCHES             *
+******************************/
+
+@font-face {
+  font-family: 'Cerebri Sans,sans-serif';
+  src: url('../fonts/cerebrisans-regular.eot');
+  src: local('Cerebri-sans Regular'),
+    url('../fonts/cerebrisans-regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Cerebri Sans,sans-serif';
+  src: url('../fonts/cerebrisans-medium.eot');
+  src: local('Cerebri-sans Medium'),
+    url('../fonts/cerebrisans-medium.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Cerebri Sans,sans-serif';
+  src: url('../fonts/cerebrisans-semibold.eot');
+  src: local('Cerebri-sans Semibold'),
+    url('../fonts/cerebrisans-semibold.woff') format('woff');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Cerebri Sans,sans-serif';
+  src: url('../fonts/cerebrisans-bold.eot');
+  src: local('Cerebri-sans Bold'),
+    url('../fonts/cerebrisans-bold.woff') format('woff');
+  font-weight: 700;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* 1. BASIC */
+  html {
+    @apply scroll-smooth;
+  }
+  [x-cloak] {
+    display: none !important;
+  }
+  body {
+    @apply bg-white;
+  }
+
+  /* 2. BUTTON */
+
+  button{
+  @apply focus-visible:shadow-none focus-visible:ring-0 focus-visible:ring-transperent focus-visible:outline-none;
+  }
+
+  .btn-white {
+    @apply py-2.5 px-5 bg-white inline-block rounded-md font-medium hover:bg-white/90 transition-all duration-300;
+  }
+
+  .btn{
+    @apply py-2.5  px-5 capitalize inline-block;
+  }
+
+  /* 3.SCROLLBAR */
+  ::-webkit-scrollbar {
+    @apply bg-transparent w-1.5 h-1.5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-black/10;
+  }
+
+  /* 4. LAYOUT */
+  .main-container .main-content {
+    @apply transition-all duration-300 lg:ms-[240px];
+  }
+  
+  .vertical.toggle-sidebar .main-container .main-content {
+    @apply lg:ms-[72px];
+  }
+
+  .vertical.toggle-sidebar .sidebar:hover .help-box ,
+  .vertical.toggle-sidebar .sidebar,
+  .detached .detached-img{
+    @apply block;
+  }
+
+  .vertical .sidebar {
+    @apply hidden lg:block;
+  }
+
+  .vertical.toggle-sidebar .sidebar {
+    @apply lg:w-[72px];
+  }
+
+  .vertical.toggle-sidebar .sidebar:hover {
+    @apply w-[240px];
+  }
+
+  .vertical.toggle-sidebar .sidebar .sub-menu,
+  .vertical.toggle-sidebar .sidebar .nav-item a span,
+  .vertical.toggle-sidebar .sidebar .nav-item a .dropdown-icon,
+  .vertical.toggle-sidebar .sidebar h2 ,
+  .vertical.toggle-sidebar .sidebar .main-logo .logo,
+  .vertical.toggle-sidebar .sidebar:hover .main-logo .logo-icon,
+  .vertical.toggle-sidebar .sidebar .help-box {
+    @apply lg:hidden;
+  }  
+
+  .vertical.toggle-sidebar.dark .sidebar:hover .main-logo .logo.dark-logo,
+  .vertical.toggle-sidebar .sidebar:hover .main-logo .logo.light-logo{
+    @apply hidden;
+  }
+  
+  .vertical.toggle-sidebar.dark .sidebar:hover .main-logo .logo.light-logo{
+    @apply block;
+  }
+
+  .vertical.toggle-sidebar .sidebar:hover .nav-item a span,
+  .vertical.toggle-sidebar .sidebar:hover h2 ,
+  .vertical.toggle-sidebar .sidebar:hover .sub-menu ,
+  .vertical.toggle-sidebar .sidebar .main-logo .logo-icon,
+  .vertical.toggle-sidebar .sidebar:hover .main-logo .logo{
+    @apply lg:block;
+  }
+
+  .vertical.toggle-sidebar .sidebar .nav-item a {
+    @apply lg:justify-center;
+  }
+
+  .vertical.toggle-sidebar .sidebar:hover .nav-item a {
+    @apply lg:justify-between;
+  }
+
+  .vertical.toggle-sidebar .sidebar:hover .nav-item a .dropdown-icon {
+    @apply lg:flex;
+  }
+
+  .vertical.toggle-sidebar .sidebar ul {
+    @apply lg:gap-y-4;
+  }
+
+  .vertical.toggle-sidebar .sidebar:hover ul {
+    @apply lg:gap-1;
+  }
+  /* CREATIVE */
+  .detached .sidebar{
+    @apply border border-t-white border-black/10 rounded-md overflow-hidden inset-y-4;
+  }
+
+  .dark.detached .sidebar{
+    @apply border-darkborder;
+  }
+
+  .detached .main-container{
+    @apply flex lg:max-w-[96%] mx-auto;
+  }
+
+  .detached .sidebar .detached-menu{
+    @apply h-[calc(100vh-92px)];
+  }
+
+  .detached .main-content{
+    @apply p-4 pe-0;
+  }
+
+  .detached .detached-breadcrumb{
+    @apply mt-4;
+  }
+
+  .detached .detached-breadcrumb li:first-child{
+    @apply text-white/60 dark:text-white;
+  }
+  .detached .detached-breadcrumb li:last-child{
+    @apply text-white dark:text-white;
+  }
+
+  .detached .detache-card-area{
+    @apply min-h-[calc(100vh-246px)];
+  }
+
+  .detached .detached-content{
+    @apply p-0 h-[calc(100vh-92px)];
+  }
+
+  .detached .detached-topbar{
+    @apply sticky top-4 rounded z-10;
+  }
+
+  .detached .sidebar{
+    @apply max-[1024px]:inset-x-[15px];
+  }
+
+  .detached .detached-img{
+    @apply block z-0;
+  }
+
+  /* DETACHED */
+  .detached.detached-simple .detached-img{
+    @apply hidden;
+  }
+
+  .detached.detached-simple .detached-topbar{
+    @apply border border-black/10;
+  }
+
+  .dark.detached.detached-simple .detached-topbar{
+    @apply border border-darkborder;
+  }
+
+  .detached.detached-simple .sidebar{
+    @apply border-t-black/10
+  }
+
+  .detached.detached-simple .detached-breadcrumb li{
+    @apply text-black;
+  }
+
+  .detached.detached-simple.dark .detached-breadcrumb li{
+    @apply text-white;
+  }
+
+  /* 5. SIDEBAR */
+  .sidebar {
+    @apply transition-all duration-300;
+  }
+  .sidebar:hover .nav-item > a {
+    @apply w-auto;
+  }
+  .sidebar .nav-item > a {
+    @apply mb-1 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black dark:text-white hover:text-purple;
+  }
+
+  .sidebar .nav-item > a:last-child {
+    @apply mb-0;
+  }
+
+  .sidebar .nav-item > a.active {
+    @apply text-purple;
+  }
+  .sidebar ul.sub-menu li a {
+    @apply flex items-center capitalize relative pl-9 px-4 py-1 rounded-lg hover:text-purple hover:before:h-1.5 hover:before:w-1.5 hover:before:bg-purple hover:before:absolute hover:before:top-1/2 hover:before:-translate-y-1/2 hover:before:left-4 hover:before:rounded-full;
+  }
+  .sidebar ul.sub-menu li a.active {
+    @apply text-purple before:h-1.5 before:w-1.5 before:bg-purple before:absolute before:top-1/2 before:-translate-y-1/2 before:left-4 before:rounded-full;
+  }
+
+  /* 6. DROPDOWN */
+
+  .dropdown {
+    @apply relative;
+  }
+
+  .dropdown ul {
+    @apply absolute z-50 mt-0.5 min-w-[170px] dark:text-darkmuted dark:border-darkborder dark:bg-darklight rounded bg-white p-0 py-2 border border-black/10;
+  }
+
+  .dropdown ul li > a,
+  .dropdown ul li > button,
+  .dropdown ul li > div {
+    @apply flex items-center px-4 py-2 dark:hover:bg-white/5 dark:hover:text-white hover:bg-black/5 hover:text-black;
+  }
+
+  /* 7. PROFILE DROPDOWN */
+  .profile {
+    @apply relative z-50;
+  }
+  .profile ul {
+    @apply absolute mt-1 min-w-[190px] overflow-hidden rounded bg-white dark:text-darkmuted dark:border-darkborder dark:bg-darklight right-0 text-black/60 top-[39px] w-40 border border-black/10;
+  }
+  .profile ul li > a,
+  .profile ul li > button,
+  .profile ul li > div {
+    @apply flex items-center px-2 py-2.5 dark:hover:bg-white/5 dark:hover:text-white hover:bg-black/5 hover:text-black;
+  }
+
+  /* 8. NOTIFICATION DROPDOWN */
+  .notification{
+    @apply relative z-50;
+  }
+
+  .notification .noti-area {
+    @apply absolute mt-0 rounded bg-white dark:bg-darklight dark:border-darkborder dark:text-white/80 right-0 text-black/60 top-[39px] border border-black/10 min-w-[253px];
+  }
+  .notification ul li > a,
+  .notification ul li > button,
+  .notification ul li > div {
+    @apply flex items-center rounded px-2 py-2.5 hover:bg-black/5 hover:text-black;
+  }
+
+  /* 9. TABLE */
+
+  table {
+    @apply w-full !border-collapse;
+  }
+
+  table thead {
+    @apply bg-light/40 border-b border-black/10 dark:bg-white/5 dark:border-darkborder;
+  }
+
+  table thead tr,
+  table tbody tr {
+    @apply border-b border-black/10 whitespace-nowrap dark:border-darkborder;
+  }
+
+  table tbody tr:last-child {
+    @apply border-0;
+  }
+
+  table thead tr th,
+  table tfoot tr th,
+  table tbody tr td {
+    @apply py-3 px-4 whitespace-nowrap text-black dark:text-white;
+  }
+
+  table.table-striped tbody tr:nth-child(even) {
+    @apply bg-light/40 dark:bg-white/5;
+  }
+
+  table.table-hover tbody tr{
+    @apply hover:bg-light/40 dark:hover:bg-white/5;
+  }
+
+  table.table-borderless thead,
+  table.table-borderless thead tr,
+  table.table-borderless tbody tr,
+  table.table-borderless tfoot tr{
+    @apply border-0;
+  }
+
+  /* 10. FORMS */
+  .form-input,.form-textarea,.form-select,.form-multiselect{
+    @apply w-full border border-black/10 rounded bg-[#f9fbfd] dark:bg-dark dark:border-darkborder dark:placeholder:text-darkmuted dark:text-white dark:focus:border-purple text-black h-12 focus:!shadow-none focus:border-purple focus:ring-0 placeholder:text-black/50;
+  }
+
+  .text-editor body h1{
+    @apply text-white;
+  }
+
+  /* 11. CHECKBOX */
+  .form-radio, .form-checkbox {
+    @apply h-5 w-5 cursor-pointer rounded border-2 border-black/10 dark:border-darkmuted dark:checked:border-transparent bg-transparent text-purple checked:border-transparent !shadow-none !outline-none !ring-0 !ring-offset-0 checked:bg-[length:90%_90%] disabled:cursor-not-allowed disabled:bg-transparent disabled:!border-2 disabled:!border-black/10 dark:disabled:!border-darkmuted mr-1.5 hover:disabled:bg-muted hover:disabled:checked:bg-transparent;
+  }
+  .form-checkbox.outborder-purple:checked {
+    @apply !border-purple bg-transparent;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%236a69f5' xmlns='http://www.w3.org/2000/svg'><path d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/></svg>");
+  }
+  .form-checkbox.outborder-info:checked {
+    @apply border-info bg-transparent ;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23009ef7' xmlns='http://www.w3.org/2000/svg'><path d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/></svg>");
+  }
+  .form-checkbox.outborder-success:checked {
+    @apply border-success bg-transparent ;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%2350cd89' xmlns='http://www.w3.org/2000/svg'><path d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/></svg>");
+  }
+  .form-checkbox.outborder-warning:checked {
+    @apply border-warning bg-transparent ;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23ffc700' xmlns='http://www.w3.org/2000/svg'><path d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/></svg>");
+  }
+  .form-checkbox.outborder-danger:checked {
+    @apply border-danger bg-transparent ;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23f1416c' xmlns='http://www.w3.org/2000/svg'><path d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/></svg>");
+  }
+  .form-checkbox.outborder-black:checked {
+    @apply border-black bg-transparent ;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23323a46' xmlns='http://www.w3.org/2000/svg'><path d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/></svg>");
+  }
+  .form-checkbox.outborder-muted:checked {
+    @apply border-muted bg-transparent;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%2394989a' xmlns='http://www.w3.org/2000/svg'><path d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/></svg>");
+  }
+  
+  /* 12. RADIO */
+  .form-radio {
+    @apply rounded-full;
+  }
+  .form-radio.outborder-purple:checked {
+    @apply border-purple bg-transparent bg-none;
+  }
+  .form-radio.outborder-info:checked {
+    @apply border-info bg-transparent bg-none;
+  }
+  .form-radio.outborder-success:checked {
+    @apply border-success bg-transparent bg-none;
+  }
+  .form-radio.outborder-danger:checked {
+    @apply border-danger bg-transparent bg-none;
+  }
+  .form-radio.outborder-warning:checked {
+    @apply border-warning bg-transparent bg-none;
+  }
+  .form-radio.outborder-black:checked {
+    @apply border-black bg-transparent bg-none;
+  }
+  .form-radio.outborder-muted:checked {
+    @apply border-muted bg-transparent bg-none;
+  }
+
+  /* 13. SWITCHES*/
+  .togglebutton input:checked ~ .band {
+    @apply bg-purple;
+  }
+  .togglebutton input:checked ~ .dot {
+    @apply translate-x-full bg-white;
+  }
+  .togglebutton.out-line input:checked ~ .band {
+    @apply border-purple bg-transparent;
+  }
+  .togglebutton.out-line input:checked ~ .dot {
+    @apply translate-x-full bg-purple;
+  }
+
+  /* 14. CHART */
+
+  .dark .apexcharts-title-text {
+    @apply fill-white;
+  }
+
+  .dark .apexcharts-canvas .apexcharts-text.apexcharts-xaxis-label,
+  .dark .apexcharts-canvas .apexcharts-text.apexcharts-yaxis-label {
+    @apply fill-white;
+  }
+
+  .dark .apexcharts-canvas .apexcharts-text,
+  .dark .apexcharts-canvas .apexcharts-text {
+    @apply fill-white;
+  }
+
+  .dark .apexcharts-canvas .apexcharts-legend-text {
+    @apply text-white;
+  }
+
+  .dark .apexcharts-gridline{
+    @apply stroke-darkborder;
+  }
+}
