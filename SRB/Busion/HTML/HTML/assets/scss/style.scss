@@ -1,0 +1,26 @@
+/*
+-------------------------------------------------------------------------
+* Template Name    : ELVISH - Saas & Software Landing Page Template     * 
+* Author           : ThemesBoss                                         *
+* Version          : 1.0.1                                              *
+* Created          : July 2023                                          *
+* File Description : Main scss file of the template                      *
+*------------------------------------------------------------------------
+*/
+
+// components
+@import "./components/helper.scss";
+@import "./components/button.scss";
+
+@import "contact.scss";
+@import "cta.scss";
+@import "faqs.scss";
+@import "features.scss";
+@import "funfacts.scss";
+@import "index.scss";
+@import "navbar.scss";
+@import "pricing.scss";
+@import "responsive.scss";
+@import "service.scss";
+@import "team.scss";
+@import "testimonial.scss";
