@@ -1,0 +1,56 @@
+/*==========================
+        RESPONSIVE
+============================*/
+@media (max-width: 768px) {
+  .custom-nav {
+    margin-top: 0px;
+    padding: 10px 0px !important;
+    background-color: #1d1f25 !important;
+    border-bottom: 1px solid #2f2f2f;
+  }
+  .custom-nav .navbar-nav li a {
+    margin: 0 0px;
+    padding: 6px 0;
+  }
+  .custom-nav > .container {
+    width: 90%;
+  }
+  .custom-nav .navbar-nav li.active a {
+    border-color: transparent;
+  }
+  .login-btn {
+    padding-left: 10px;
+  }
+  .navbar-nav {
+    margin-top: 0px;
+  }
+  .navbar-toggler {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #ffffff;
+  }
+  .bus_home_title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .bus_home_subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .price_bus_box.active {
+    transform: scale(1);
+  }
+  .vertical-content {
+    display: inherit;
+  }
+  .h-100vh {
+    height: auto;
+  }
+  .bus_home_btn span {
+    display: block;
+  }
+  .home-half {
+    padding: 120px 0 80px 0 !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */
