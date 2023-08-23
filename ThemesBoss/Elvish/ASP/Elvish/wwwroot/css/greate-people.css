@@ -1,8 +1,0 @@
-.logo_img img {
-  max-height: 100px;
-  width: auto !important;
-  transition: all 0.5s;
-}
-.logo_img img:hover {
-  transform: scale(1.05);
-}/*# sourceMappingURL=greate-people.css.map */
