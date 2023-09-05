@@ -1,0 +1,257 @@
+.content-breadcrumb {
+    .btn {
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        transition: all .2s ease;
+        .btn-primary:hover:not(.disabled):not(:disabled),
+        .btn-primary:focus:not(.disabled):not(:disabled),
+        .btn-outline-primary:hover:not(.disabled):not(:disabled),
+        .btn-outline-primary:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $primary;
+        }
+        .btn-secondary:hover:not(.disabled):not(:disabled),
+        .btn-secondary:focus:not(.disabled):not(:disabled),
+        .btn-outline-secondary:hover:not(.disabled):not(:disabled),
+        .btn-outline-secondary:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $secondary;
+        }
+        .btn-success:hover:not(.disabled):not(:disabled),
+        .btn-success:focus:not(.disabled):not(:disabled),
+        .btn-outline-success:hover:not(.disabled):not(:disabled),
+        .btn-outline-success:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $success;
+        }
+        .btn-secondary:hover:not(.disabled):not(:disabled),
+        .btn-secondary:focus:not(.disabled):not(:disabled),
+        .btn-outline-secondary:hover:not(.disabled):not(:disabled),
+        .btn-outline-secondary:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $danger;
+        }
+        .btn-warning:hover:not(.disabled):not(:disabled),
+        .btn-warning:focus:not(.disabled):not(:disabled),
+        .btn-outline-warning:hover:not(.disabled):not(:disabled),
+        .btn-outline-warning:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $warning;
+        }
+        .btn-info:hover:not(.disabled):not(:disabled),
+        .btn-info:focus:not(.disabled):not(:disabled),
+        .btn-outline-info:hover:not(.disabled):not(:disabled),
+        .btn-outline-info:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $info;
+        }
+        .btn-light:hover:not(.disabled):not(:disabled),
+        .btn-light:focus:not(.disabled):not(:disabled),
+        .btn-outline-light:hover:not(.disabled):not(:disabled),
+        .btn-outline-light:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $white;
+        }
+        .btn-dark:hover:not(.disabled):not(:disabled),
+        .btn-dark:focus:not(.disabled):not(:disabled),
+        .btn-outline-dark:hover:not(.disabled):not(:disabled),
+        .btn-outline-dark:focus:not(.disabled):not(:disabled) {
+            box-shadow: 0 8px 25px -8px $black;
+        }
+        .btn-border,
+        .btn-inverse,
+        .btn-lg,
+        .btn-md,
+        .btn-sm,
+        .btn-icon-text,
+        .btn-outline-secondary {
+            box-shadow: none !important;
+        }
+    }
+}
+
+.btn-outline-facebook {
+    border: 1px solid $primary;
+    color: $primary !important;
+}
+
+.btn-outline-youtube {
+    border: 1px solid $secondary;
+    color: $secondary !important;
+}
+.btn-outline-twitter {
+    border: 1px solid $success;
+    color: $success !important;
+}
+.btn-outline-dribbble {
+    border: 1px solid $danger;
+    color: $danger !important;
+}
+.btn-outline-linkedin {
+    border: 1px solid $warning;
+    color: $warning !important;
+}
+.btn-outline-google {
+    border: 1px solid $info;
+    color: $info !important;
+}
+.btn-facebook {
+    background: $primary;
+    color: $white;
+    // &:focus,
+    &:hover {
+        color: $primary;
+    }
+}
+.btn-youtube {
+    background: $secondary;
+    color: $white;
+    // &:focus,
+    &:hover {
+        color: $secondary;
+    }
+}
+.btn-twitter {
+    background: $success;
+    color: $white;
+    // &:focus,
+    &:hover {
+        color: $success;
+    }
+}
+.btn-dribbble {
+    background: $danger;
+    color: $white;
+    // &:focus,
+    &:hover {
+        color: $danger;
+    }
+}
+.btn-linkedin {
+    background: $warning;
+    color: $white;
+    // &:focus,
+    &:hover {
+        color: $warning;
+    }
+}
+.btn-google {
+    background: $info;
+    color: $white;
+    // &:focus,
+    &:hover {
+        color: $info;
+    }
+}
+
+.btn-outline-icon {
+    color: rgb(139, 138, 138);
+    border: 1px solid rgb(139, 138, 138);
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(241, 241, 241, 0.5);
+        color: rgb(139, 138, 138);
+    }
+    &:active {
+        color: $black;
+    }
+    &:hover {
+        background: #F1F1F1;
+        color: rgb(139, 138, 138);
+    }
+}
+
+.btn-social-icon-text {
+    padding: 0 1.5rem 0 0;
+    box-shadow: none !important;
+    transition: all .2s ease;
+    &:hover,
+    &:active {
+        color: $white;
+    }
+    i {
+        width: 40px;
+        height: 40px;
+        padding: 0.75rem;
+        display: inline-block;
+        margin-right: 0.75rem;
+    }
+}
+
+.btn-facebook.btn-social-icon-text {
+    background: rgba($primary, 0.5);
+}
+
+.btn-facebook.btn-social-icon-text i {
+    border-radius: 4px 0 0px 4px;
+    background: $primary;
+}
+
+.btn-youtube.btn-social-icon-text {
+    background: rgba($secondary, 0.5);
+}
+
+.btn-youtube.btn-social-icon-text i {
+    border-radius: 4px 0 0px 4px;
+    background: $secondary;
+}
+
+.btn-twitter.btn-social-icon-text {
+    background: rgba($success, 0.5);
+}
+
+.btn-twitter.btn-social-icon-text i {
+    border-radius: 4px 0 0px 4px;
+    background: $success;
+}
+
+.btn-dribbble.btn-social-icon-text {
+    background: rgba($danger, 0.5);
+}
+
+.btn-dribbble.btn-social-icon-text i {
+    border-radius: 4px 0 0px 4px;
+    background: $danger;
+}
+
+.btn-linkedin.btn-social-icon-text {
+    background: rgba($warning, 0.5);
+}
+
+.btn-linkedin.btn-social-icon-text i {
+    border-radius: 4px 0 0px 4px;
+    background: $warning;
+}
+
+.btn-google.btn-social-icon-text {
+    background: rgba($info, 0.5);
+}
+
+.btn-google.btn-social-icon-text i {
+    border-radius: 4px 0 0px 4px;
+    background: $info;
+}
+
+.btn-gradient {
+    border-color: transparent !important;
+    transition: all .2s ease;
+}
+
+.btn-primary.btn-gradient:active:focus {
+    box-shadow: none;
+}
+
+.btn-gradient:hover,
+.btn-social-icon-text:hover {
+    transform: translateY(-2px);
+}
+
+.btn-relief:hover {
+    transform: translateY(3px);
+}
+
+.btn-relief {
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+    box-shadow: 0 5px 25px rgba(34, 41, 47, 0.1);
+    border: 1px solid rgba(34, 41, 47, .05);
+}
+
+.scheme-dark .btn-outline-dark.btn-icon-text {
+    color: $white;
+    border-color: $white;
+}

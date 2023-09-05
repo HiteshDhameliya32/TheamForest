@@ -1,0 +1,192 @@
+@@include('./partials/main.html')
+
+<head>
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Spinner
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Spinner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-md-6  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Border Spinners</h5>
+                            <p class="card-title-desc">Use the default <code>border</code> type spinners for a lightweight loading indicator.</p>
+                            <div class="template-demo">
+                                <span role="status" class="spinner-border"><span class="sr-only">Loading...</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Colored Spinners</h5>
+                            <p class="card-title-desc">You can customize the color using the standard text color variants using the <code>variant</code> prop.</p>
+                            <div class="template-demo">
+                                <span aria-hidden="true" class="me-3 spinner-border text-primary"></span>
+                                <span aria-hidden="true" class="me-3 spinner-border text-secondary"></span>
+                                <span aria-hidden="true" class="me-3 spinner-border text-danger"></span>
+                                <span aria-hidden="true" class="me-3 spinner-border text-warning"></span>
+                                <span aria-hidden="true" class="me-3 spinner-border text-success"></span>
+                                <span aria-hidden="true" class="me-3 spinner-border text-info"></span>
+                                <span aria-hidden="true" class="me-3 spinner-border text-light"></span>
+                                <span aria-hidden="true" class="me-3 spinner-border text-dark"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Growing Spinner</h5>
+                            <p class="card-title-desc">If you don't fancy a <code>border</code> spinner, switch to the <code>grow</code> spinner by setting the prop <code>type</code> to <code>'grow'</code>. While it doesn't technically spin, it does repeatedly grow!</p>
+                            <div class="template-demo">
+                                <span role="status" class="spinner-grow"><span class="sr-only">Loading...</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Colored Growing Spinners</h5>
+                            <p class="card-title-desc">The variant prop translates the variant name to the Bootstrap v4 class <code>.text-{variant}</code>, so if you have custom defined text color <code>variants</code>, feel free to use them via the variant prop.</p>
+                            <div class="template-demo">
+                                <span aria-hidden="true" class="me-3 spinner-grow text-primary"></span>
+                                <span aria-hidden="true" class="me-3 spinner-grow text-secondary"></span>
+                                <span aria-hidden="true" class="me-3 spinner-grow text-danger"></span>
+                                <span aria-hidden="true" class="me-3 spinner-grow text-warning"></span>
+                                <span aria-hidden="true" class="me-3 spinner-grow text-success"></span>
+                                <span aria-hidden="true" class="me-3 spinner-grow text-info"></span>
+                                <span aria-hidden="true" class="me-3 spinner-grow text-light"></span>
+                                <span aria-hidden="true" class="me-3 spinner-grow text-dark"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Flex</h5>
+                            <p class="card-title-desc">Using flex utility classes:</p>
+                            <div class="d-flex justify-content-center mb-1">
+                                <span role="status" class="spinner-border"><span class="sr-only">Loading...</span></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <strong data-v-aa799a9e="">Loading...</strong>
+                                <span aria-hidden="true" class="ml-auto spinner-border"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Float</h5>
+                            <p class="card-title-desc">Using float utility classes:</p>
+                            <div class="clearfix">
+                                <span role="status" class="float-end spinner-border"><span class="sr-only">Floated Right</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Text Alignment</h5>
+                            <p class="card-title-desc">Using text alignment utility classes:</p>
+                            <div class="text-center">
+                                <span role="status" class="spinner-border text-primary"><span class="sr-only">Text Centered</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Sizes</h5>
+                            <p class="card-title-desc">Set the prop <code>small</code> to <code>true</code> to make a smaller spinner that can quickly be used within other components.</p>
+                            <div class="align-items-center d-flex">
+                                <div class="me-3">
+                                    <span role="status" class="me-1 spinner-border spinner-border-sm">
+                                        <span class="sr-only">Small Spinner</span>
+                                    </span>
+                                    <span role="status" class="spinner-grow spinner-grow-sm">
+                                        <span class="sr-only">Small Spinner</span>
+                                    </span>
+                                </div>
+                                <div class="me-3">
+                                    <span role="status" class="me-1 spinner-border">
+                                        <span class="sr-only">Small Spinner</span>
+                                    </span>
+                                    <span role="status" class="spinner-grow">
+                                        <span class="sr-only">Small Spinner</span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span role="status" class="me-1 spinner-border" style="width: 3rem; height: 3rem;">
+                                        <span class="sr-only">Large Spinner</span>
+                                    </span>
+                                    <span role="status" class="spinner-grow" style="width: 3rem; height: 3rem;">
+                                        <span class="sr-only">Large Spinner</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Buttons</h5>
+                            <p class="card-title-desc">Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the label text out of the spinner element and utilize button text as needed.</p>
+                            <div class="demo-inline-spacing">
+                                <button type="button" disabled="disabled" class="btn btn-outline-primary disabled me-2">
+                                    <span aria-hidden="true" class="spinner-border spinner-border-sm"></span>
+                                    <span class="sr-only">Loading...</span>
+                                </button>
+                                <button type="button" disabled="disabled" class="btn btn-outline-primary disabled me-2">
+                                    <span aria-hidden="true" class="spinner-border spinner-border-sm"></span> Loading... 
+                                </button>
+                                <button type="button" disabled="disabled" class="btn btn-outline-primary disabled me-2">
+                                    <span aria-hidden="true" class="spinner-grow spinner-grow-sm"></span>
+                                    <span class="sr-only">Loading...</span>
+                                </button>
+                                <button type="button" disabled="disabled" class="btn btn-outline-primary disabled me-2">
+                                    <span aria-hidden="true" class="spinner-grow spinner-grow-sm"></span> Loading... 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+    
+        <!-- page-wrapper -->
+    
+        @@include('./partials/vendor-scripts.html')
+
+</body>
+
+</html>

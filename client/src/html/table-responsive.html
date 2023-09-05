@@ -1,0 +1,922 @@
+@@include('./partials/main.html')
+
+<head>
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+    <link rel="stylesheet" href="assets/css/plugins/tablesaw.css">
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+        
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Responsive
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Responsive</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Kitchen Sink</h5>
+                            <p class="card-title-desc">Swipe Mode, ModeSwitch, Minimap, Sortable, SortableSwitch</p>
+                            <table class="tablesaw table-bordered table-hover table no-wrap tablesaw-sortable tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-sortable="" data-tablesaw-sortable-switch="" data-tablesaw-minimap="" data-tablesaw-mode-switch="" id="tablesaw-1295">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="true" data-tablesaw-priority="3" class="border tablesaw-sortable-head tablesaw-sortable-ascending" data-tablesaw-sortable-numeric="">
+                                            Rank
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2" class="border tablesaw-sortable-head" data-tablesaw-sortable-numeric="">
+                                            Year</th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1" class="border tablesaw-sortable-head" data-tablesaw-sortable-numeric="">
+                                            <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4" class="border tablesaw-sortable-head" data-tablesaw-sortable-numeric="false">
+                                            Gross
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">1</td>
+                                        <td class="">2009</td>
+                                        <td class="">83%</td>
+                                        <td class="">$2.7B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">2</td>
+                                        <td class="">1997</td>
+                                        <td class="">88%</td>
+                                        <td class="">$2.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">3</td>
+                                        <td class="">2012</td>
+                                        <td class="">92%</td>
+                                        <td class="">$1.5B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">4</td>
+                                        <td class="">2011</td>
+                                        <td class="">96%</td>
+                                        <td class="">$1.3B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">5</td>
+                                        <td class="">2013</td>
+                                        <td class="">89%</td>
+                                        <td class="">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">6</td>
+                                        <td class="">2013</td>
+                                        <td class="">78%</td>
+                                        <td class="">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">7</td>
+                                        <td class="">2011</td>
+                                        <td class="">36%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">8</td>
+                                        <td class="">2003</td>
+                                        <td class="">95%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">9</td>
+                                        <td class="">2012</td>
+                                        <td class="">92%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">10</td>
+                                        <td class="">2014</td>
+                                        <td class="">18%</td>
+                                        <td class="">$1.0B</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Column Toggle Table</h5>
+                            <p class="card-title-desc">The Column Toggle Table allows the user to select which columns they want to be visible.</p>
+
+                            <table class="tablesaw table-striped table-hover table-bordered table no-wrap tablesaw-columntoggle" data-tablesaw-mode="columntoggle" id="tablesaw-6915">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="persist" class="border">
+                                            Movie Title
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3" class="border tablesaw-priority-3">
+                                            Rank
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2" class="border tablesaw-priority-2">
+                                            Year
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1" class="border tablesaw-priority-1">
+                                            <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4" class="border tablesaw-priority-4">
+                                            Gross
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Avatar</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">1</td>
+                                        <td class="tablesaw-priority-2">2009</td>
+                                        <td class="tablesaw-priority-1">83%</td>
+                                        <td class="tablesaw-priority-4">$2.7B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Titanic</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">2</td>
+                                        <td class="tablesaw-priority-2">1997</td>
+                                        <td class="tablesaw-priority-1">88%</td>
+                                        <td class="tablesaw-priority-4">$2.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">The Avengers</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">3</td>
+                                        <td class="tablesaw-priority-2">2012</td>
+                                        <td class="tablesaw-priority-1">92%</td>
+                                        <td class="tablesaw-priority-4">$1.5B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Harry Potter and the Deathly Hallows—Part 2</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">4</td>
+                                        <td class="tablesaw-priority-2">2011</td>
+                                        <td class="tablesaw-priority-1">96%</td>
+                                        <td class="tablesaw-priority-4">$1.3B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Frozen</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">5</td>
+                                        <td class="tablesaw-priority-2">2013</td>
+                                        <td class="tablesaw-priority-1">89%</td>
+                                        <td class="tablesaw-priority-4">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Iron Man 3</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">6</td>
+                                        <td class="tablesaw-priority-2">2013</td>
+                                        <td class="tablesaw-priority-1">78%</td>
+                                        <td class="tablesaw-priority-4">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Transformers: Dark of the Moon</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">7</td>
+                                        <td class="tablesaw-priority-2">2011</td>
+                                        <td class="tablesaw-priority-1">36%</td>
+                                        <td class="tablesaw-priority-4">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">The Lord of the Rings: The Return of the King</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">8</td>
+                                        <td class="tablesaw-priority-2">2003</td>
+                                        <td class="tablesaw-priority-1">95%</td>
+                                        <td class="tablesaw-priority-4">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Skyfall</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">9</td>
+                                        <td class="tablesaw-priority-2">2012</td>
+                                        <td class="tablesaw-priority-1">92%</td>
+                                        <td class="tablesaw-priority-4">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">
+                                            <a class="link" href="javascript:void(0)">Transformers: Age of Extinction</a>
+                                        </td>
+                                        <td class="tablesaw-priority-3">10</td>
+                                        <td class="tablesaw-priority-2">2014</td>
+                                        <td class="tablesaw-priority-1">18%</td>
+                                        <td class="tablesaw-priority-4">$1.0B</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Swipe Table</h5>
+                            <p class="card-title-desc">The Column Swipe Table allows the user to select which columns they want to be visible.</p>
+                            <table class="tablesaw table-bordered table-hover table no-wrap tablesaw-swipe" data-tablesaw-mode="swipe" id="tablesaw-1616">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3" class="border">
+                                            Rank
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2" class="border">
+                                            Year
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1" class="border">
+                                            <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4" class="border">
+                                            Gross
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">1</td>
+                                        <td class="">2009</td>
+                                        <td class="">83%</td>
+                                        <td class="">$2.7B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">2</td>
+                                        <td class="">1997</td>
+                                        <td class="">88%</td>
+                                        <td class="">$2.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">3</td>
+                                        <td class="">2012</td>
+                                        <td class="">92%</td>
+                                        <td class="">$1.5B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">4</td>
+                                        <td class="">2011</td>
+                                        <td class="">96%</td>
+                                        <td class="">$1.3B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">5</td>
+                                        <td class="">2013</td>
+                                        <td class="">89%</td>
+                                        <td class="">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">6</td>
+                                        <td class="">2013</td>
+                                        <td class="">78%</td>
+                                        <td class="">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">7</td>
+                                        <td class="">2011</td>
+                                        <td class="">36%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">8</td>
+                                        <td class="">2003</td>
+                                        <td class="">95%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">9</td>
+                                        <td class="">2012</td>
+                                        <td class="">92%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">10</td>
+                                        <td class="">2014</td>
+                                        <td class="">18%</td>
+                                        <td class="">$1.0B</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card link-h">
+                            <h5 class="card-title">Checkall Table</h5>
+                            <table class="tablesaw no-wrap table-bordered table-hover table tablesaw-stack" data-tablesaw="" id="tablesaw-1802">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="border">
+                                            <label><input type="checkbox" data-tablesaw-checkall=""><span class="sr-only"> Check All</span></label>
+                                        </th>
+                                        <th scope="col" class="border">
+                                            Movie Title
+                                            <a href="#" data-tablesaw-checkall="#checkall-target" class="text-primary">Toggle All Checkboxes</a>
+                                            <a href="#" data-tablesaw-checkall="#checkall-target" class="text-primary" data-tablesaw-checkall-checked="">Check All</a>
+                                            <a href="#" data-tablesaw-checkall="#checkall-target" class="text-primary" data-tablesaw-checkall-unchecked="">Uncheck All</a>
+                                        </th>
+                                        <th scope="col" class="border">Rank</th>
+                                        <th scope="col" class="border">Year</th>
+                                        <th scope="col" class="border">
+                                            <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                        </th>
+                                        <th scope="col" class="border">Gross</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="checkall-target">
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Avatar</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">1</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2009</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">83%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$2.7B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Titanic</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">2</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">1997</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">88%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$2.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">The Avengers</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">3</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2012</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">92%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.5B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Harry Potter and the Deathly Hallows—Part 2</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">4</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2011</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">96%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.3B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Frozen</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">5</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2013</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">89%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.2B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Iron Man 3</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">6</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2013</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">78%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.2B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Transformers: Dark of the Moon</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">7</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2011</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">36%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">The Lord of the Rings: The Return of the King</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">8</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2003</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">95%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Skyfall</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">9</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2012</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">92%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label><input type="checkbox"><span class="sr-only">
+                                          Select Row</span></label>
+                                        </td>
+                                        <td class="title">
+                                            <a href="javascript:void(0)">Transformers: Age of Extinction</a>
+                                        </td>
+                                        <td><b class="tablesaw-cell-label">Rank</b> <span class="tablesaw-cell-content">10</span></td>
+                                        <td><b class="tablesaw-cell-label">Year</b> <span class="tablesaw-cell-content">2014</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">18%</span></td>
+                                        <td><b class="tablesaw-cell-label">Gross</b> <span class="tablesaw-cell-content">$1.0B</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Stack Table</h5>
+                            <table class="tablesaw no-wrap table-bordered table-hover table tablesaw-stack" data-tablesaw-mode="stack" id="tablesaw-4518">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" data-tablesaw-priority="persist" class="border">
+                                            Movie Title
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3" class="border">
+                                            Rank
+                                        </th>
+                                        <th scope="col" data-tablesaw-priority="2" class="border">
+                                            Year
+                                        </th>
+                                        <th scope="col" data-tablesaw-priority="1" class="border">
+                                            <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                        </th>
+                                        <th scope="col" data-tablesaw-priority="4" class="border">
+                                            Gross
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Avatar</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">1</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2009</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">83%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$2.7B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Titanic</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">2</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">1997</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">88%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$2.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">The Avengers</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">3</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2012</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">92%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.5B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Harry Potter and the Deathly Hallows—Part 2</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">4</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2011</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">96%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.3B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Frozen</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">5</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2013</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">89%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.2B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Iron Man 3</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">6</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2013</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">78%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.2B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Transformers: Dark of the Moon</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">7</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2011</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">36%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">The Lord of the Rings: The Return of the King</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">8</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2003</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">95%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Skyfall</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">9</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2012</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">92%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.1B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><b class="tablesaw-cell-label">
+                                      Movie Title
+                                    </b> <span class="tablesaw-cell-content">
+                                      <a href="javascript:void(0)">Transformers: Age of Extinction</a>
+                                    </span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Rank
+                                    </b> <span class="tablesaw-cell-content">10</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Year
+                                    </b> <span class="tablesaw-cell-content">2014</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                    </b> <span class="tablesaw-cell-content">18%</span></td>
+                                        <td><b class="tablesaw-cell-label">
+                                      Gross
+                                    </b> <span class="tablesaw-cell-content">$1.0B</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Mode Switch</h5>
+                            <table class="tablesaw no-wrap table-bordered table-hover table tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-mode-switch="" data-tablesaw-minimap="" id="tablesaw-8905">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3" class="border">
+                                            Rank
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2" class="border">
+                                            Year
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1" class="border">
+                                            <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4" class="border">
+                                            Gross
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">1</td>
+                                        <td class="">2009</td>
+                                        <td class="">83%</td>
+                                        <td class="">$2.7B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">2</td>
+                                        <td class="">1997</td>
+                                        <td class="">88%</td>
+                                        <td class="">$2.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">3</td>
+                                        <td class="">2012</td>
+                                        <td class="">92%</td>
+                                        <td class="">$1.5B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">4</td>
+                                        <td class="">2011</td>
+                                        <td class="">96%</td>
+                                        <td class="">$1.3B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">5</td>
+                                        <td class="">2013</td>
+                                        <td class="">89%</td>
+                                        <td class="">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">6</td>
+                                        <td class="">2013</td>
+                                        <td class="">78%</td>
+                                        <td class="">$1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">7</td>
+                                        <td class="">2011</td>
+                                        <td class="">36%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">8</td>
+                                        <td class="">2003</td>
+                                        <td class="">95%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">9</td>
+                                        <td class="">2012</td>
+                                        <td class="">92%</td>
+                                        <td class="">$1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">10</td>
+                                        <td class="">2014</td>
+                                        <td class="">18%</td>
+                                        <td class="">$1.0B</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Exclude columntoggle Mode</h5>
+
+                            <table class="tablesaw no-wrap table-bordered table-hover table tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-mode-switch="" data-tablesaw-minimap="" data-tablesaw-mode-exclude="columntoggle" id="tablesaw-8706">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3" class="border">
+                                            Rank
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2" class="border">
+                                            Year
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1" class="border">
+                                            <abbr title="Rotten Tomato Rating">Rating</abbr>
+                                        </th>
+                                        <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4" class="border">
+                                            Gross
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class=""> 1</td>
+                                        <td class=""> 2009</td>
+                                        <td class=""> 83%</td>
+                                        <td class=""> $2.7B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 2</td>
+                                        <td class=""> 1997</td>
+                                        <td class=""> 88%</td>
+                                        <td class=""> $2.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 3</td>
+                                        <td class=""> 2012</td>
+                                        <td class=""> 92%</td>
+                                        <td class=""> $1.5B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 4</td>
+                                        <td class=""> 2011</td>
+                                        <td class=""> 96%</td>
+                                        <td class=""> $1.3B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 5</td>
+                                        <td class=""> 2013</td>
+                                        <td class=""> 89%</td>
+                                        <td class=""> $1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 6</td>
+                                        <td class=""> 2013</td>
+                                        <td class=""> 78%</td>
+                                        <td class=""> $1.2B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 7</td>
+                                        <td class=""> 2011</td>
+                                        <td class=""> 36%</td>
+                                        <td class=""> $1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 8</td>
+                                        <td class=""> 2003</td>
+                                        <td class=""> 95%</td>
+                                        <td class=""> $1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 9</td>
+                                        <td class=""> 2012</td>
+                                        <td class=""> 92%</td>
+                                        <td class=""> $1.1B</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=""> 10</td>
+                                        <td class=""> 2014</td>
+                                        <td class=""> 18%</td>
+                                        <td class=""> $1.0B</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script  src="assets/js/plugins/tablesaw.jquery.js"></script>
+    <script  src="assets/js/plugins/tablesaw-init.js"></script>
+</body>
+
+</html>

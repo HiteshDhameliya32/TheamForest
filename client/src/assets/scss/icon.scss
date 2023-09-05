@@ -1,0 +1,67 @@
+/**
+* Start: icons Page design css
+*/
+
+.icons-list {
+    color: var(--theme-dark-text-rgb);
+    div {
+        padding: 15px 15px;
+        display: flex;
+        align-items: center;
+        i {
+            display: inline-block;
+            color: var(--theme-primary-rgb);
+            width: 40px;
+            min-width: 40px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        .fa,
+        .wi {
+            font-size: 20px;
+        }
+        .mdi {
+            font-size: 24px;
+        }
+    }
+}
+
+.icons-list {
+    color: var(--theme-dark-text-rgb);
+  }
+  .icons-list div {
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+  }
+  .icons-list div img {
+    display: inline-block;
+    color: var(--theme-primary-rgb);
+    margin-right: 12px !important;
+    width: 20px;
+    min-width: 20px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .icons-list div i {
+    display: inline-block;
+    color: var(--theme-primary-rgb);
+    width: 40px;
+    min-width: 40px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .icons-list div .fa,
+  .icons-list div .wi {
+    font-size: 20px;
+  }
+  .icons-list div .mdi {
+    font-size: 24px;
+  }
+
+@import "plugins/icon/fontawesome";
+@import "plugins/icon/materialdesignicons.min";
+@import "plugins/icon/simple-line-icons";
+@import "plugins/icon/themify-icons";
+@import "plugins/icon/weather-icons.min";

@@ -1,0 +1,171 @@
+// apex chart scss
+.apexcharts-canvas {
+    margin: 0 auto;
+    .apexcharts-legend {
+      .apexcharts-legend-series {
+        .apexcharts-legend-text {
+          color: var(--theme-card-text-color)!important;
+          font-size: 14px !important;
+        }
+      }
+    }
+      .apexcharts-svg {
+        .apexcharts-yaxis {
+          .apexcharts-yaxis-texts-g {
+            color: var(--theme-card-text-color)!important;
+          }
+        }
+    }
+    .apexcharts-yaxis {
+      .apexcharts-yaxis-texts-g {
+          color: var(--theme-card-text-color)!important;
+      }
+    } 
+  }
+
+  #sales_activity,
+#dashboard-card-04,
+#dashboard-card-05,
+#revenue_chart {
+  .apexcharts-canvas .apexcharts-svg .apexcharts-yaxis .apexcharts-yaxis-texts-g tspan {
+    fill: var(--theme-card-text-color)!important;
+  }
+  .apexcharts-canvas .apexcharts-svg .apexcharts-xaxis .apexcharts-xaxis-texts-g tspan {
+    fill: var(--theme-card-text-color)!important;
+  }
+}
+
+#basic-bar-chart {
+  .apexcharts-inner {
+    .apexcharts-xaxis {
+      .apexcharts-xaxis-texts-g {
+        .apexcharts-text {
+          fill : var(--theme-card-text-color) !important;
+        }
+      }
+    }
+    .apexcharts-yaxis {
+      .apexcharts-yaxis-texts-g {
+        .apexcharts-text {
+          fill : var(--theme-card-text-color) !important;
+        }
+      }
+    }
+  }
+}
+
+#partyChart,
+#invoiceChart,
+#paymentChart,
+#visitorChart,
+#chart-line-with-data-label,
+#X-area-chart,
+#spline-area-chart,
+#stacked-bar-chart {
+  .apexcharts-tooltip {
+    background: #1e293b !important;
+  }
+  .apexcharts-tooltip-title {
+    background: #0f172a !important;
+  }
+}
+
+.apexcharts-tooltip {
+  background: var(--theme-light--bc) !important;
+}
+.apexcharts-tooltip-title {
+  background: var(--theme-body-rgb) !important;
+}
+
+.apexcharts-datalabel-value {
+  fill : var(--theme-card-text-color) !important;
+}
+
+.apexcharts-toolbar {
+  .apexcharts-menu {
+    background-color: var(--theme-light--bc) !important;
+    .apexcharts-menu-item {
+      &:hover {
+        color: $dark;
+        background-color: var(--theme-sidebar-hover-active--color) !important;
+      }
+    }
+  }
+}
+
+#multiple-radial-bar-chart {
+  .apexcharts-canvas {
+    .apexcharts-inner {
+      .apexcharts-datalabels-group {
+        .apexcharts-text {
+          fill : var(--theme-card-text-color) !important;
+        }
+      }
+    }
+  }
+}
+
+#barchart {
+  .apexcharts-yaxis-texts-g,
+  .apexcharts-xaxis {
+    .apexcharts-text {
+      fill : var(--theme-card-text-color) !important;
+    }
+  }
+}
+
+#revenue_chart {
+  .apexcharts-xcrosshairs {
+    display: none;
+  }
+}
+
+#success_chart {
+  padding: 0 !important;
+}
+
+#order-chart {
+  .apexcharts-legend {
+    inset: auto 0px -2px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  #order-chart {
+    position: relative;
+    .apexcharts-canvas {
+      position: absolute;
+      right: -5%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #order-chart {
+    position: relative;
+    .apexcharts-canvas {
+      position: absolute;
+      right: -15%;
+    }
+    .apexcharts-legend {
+      display: none;
+    }
+  }
+}
+
+[dir="rtl"] {
+  #revenue_chart,
+  #order-chart {
+    .apexcharts-theme-light {
+      .apexcharts-svg {
+        .apexcharts-legend {
+          .apexcharts-legend-series {
+            .apexcharts-legend-marker {
+              margin-left: 3px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

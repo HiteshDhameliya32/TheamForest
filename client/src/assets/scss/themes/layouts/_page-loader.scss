@@ -1,0 +1,106 @@
+/**
+ * Start: Loader design css
+ */
+
+ #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 999999;
+    transition: all 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #preloader #status {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .load {
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(135deg);
+    width: 50px;
+    height: 50px;
+  }
+  .load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: spin 2s ease infinite;
+  }
+  .load :first-child {
+    background: #198754;
+    animation-delay: -1.5s;
+  }
+  .load :nth-child(2) {
+    background: #0d6efd;
+    animation-delay: -1s;
+  }
+  .load :nth-child(3) {
+    background: #ffc107;
+    animation-delay: -0.5s;
+  }
+  .load :last-child {
+    background: #25272b;
+  }
+  @keyframes spin {
+    0%,
+    100% {
+      transform: translateX(200%);
+    }
+    25% {
+      transform: translateY(200%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateY(0);
+    }
+  }
+  
+  /**
+   * End: Loader design css
+   */
+
+  /**
+  * Start: buy-now button
+  */
+
+   .buy-now {
+    position: fixed;
+    bottom: 5%;
+    z-index: 1031;
+    right: 5%;
+    .button {
+      box-shadow: 0 1px 20px 1px #ea5455 !important;
+      &:focus {
+        background-color: $danger !important;
+      }
+    }
+  }
+
+    /**
+   * End: buy-now button
+   */
+
+   [dir="rtl"] {
+    .buy-now {
+      left: 5% !important;
+      right: auto;
+    }
+   }

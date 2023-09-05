@@ -1,0 +1,1807 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+    
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+         @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Basic Table
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Basic Table</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <!--Table Basic -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Table Basic</h5>
+                                <p class="card-title-desc m-0">Using the most basic table Leanne Grahamup, here’s how <code>.table-based</code> tables look in Bootstrap. You can use any example of below table for your table and it can be use with any type of bootstrap tables.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table customize-table mb-0 v-middle overflow-hidden">
+                                    <thead class="table-thead">
+                                        <tr>
+                                            <th class="border-bottom border-top">User</th>
+                                            <th class="border-bottom border-top">Project Name</th>
+                                            <th class="border-bottom border-top">Users</th>
+                                            <th class="border-bottom border-top">Status</th>
+                                            <th class="border-bottom border-top">Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Dark Table -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Dark Table</h5>
+                                <p class="card-title-desc m-0">You can also invert the colors—with light text on dark backgrounds—with <code>.table-dark</code> class with <code>.table</code> class.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table customize-table table-dark table-striped mb-0 v-middle overflow-hidden">
+                                    <thead>
+                                        <tr>
+                                            <th>User</th>
+                                            <th>Project Name</th>
+                                            <th>Users</th>
+                                            <th>Status</th>
+                                            <th>Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table head options -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Table head options</h5>
+                                <p class="card-title-desc m-0">Similar to tables and dark tables, use the modifier classes <code>.table-dark</code> to make thead appear dark.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table customize-table mb-0 v-middle overflow-hidden">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>User</th>
+                                            <th>Project Name</th>
+                                            <th>Users</th>
+                                            <th>Status</th>
+                                            <th>Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle"> Use the modifier class <code>.table-light</code> to make thead appear light.</h6>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table mb-0 overflow-hidden">
+                                    <thead class="table-thead">
+                                        <tr>
+                                            <th class="border-0">User</th>
+                                            <th class="border-0">Project Name</th>
+                                            <th class="border-0">Users</th>
+                                            <th class="border-0">Status</th>
+                                            <th class="border-0">Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h text-muted" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table Striped -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Table Striped</h5>
+                                <p class="card-title-desc m-0">Use <code>.table-striped</code> to add zebra-striping to any table row within the . This styling doesn't work in IE8 and below as :nth-child CSS selector isn't supported.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table mb-0 customize-table table-striped mb-0 v-middle overflow-hidden">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-bottom border-top">User</th>
+                                            <th class="border-bottom border-top">Project Name</th>
+                                            <th class="border-bottom border-top">Users</th>
+                                            <th class="border-bottom border-top">Status</th>
+                                            <th class="border-bottom border-top">Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table Bordered -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Table Bordered</h5>
+                                <p class="card-title-desc m-0">Add <code>.table-bordered</code> for borders on all sides of the table and cells. For Inverse Dark Table, add <code>.table-dark</code> along with .table-bordered.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered mb-0 overflow-hidden">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-bottom border-top">User</th>
+                                            <th class="border-bottom border-top">Project Name</th>
+                                            <th class="border-bottom border-top">Users</th>
+                                            <th class="border-bottom border-top">Status</th>
+                                            <th class="border-bottom border-top">Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table Borderless -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Table Borderless</h5>
+                                <p class="card-title-desc m-0">Add <code>.table-borderless</code> for a table without borders. It can also be used on dark tables.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table customize-table table-borderless mb-0 v-middle overflow-hidden">
+                                    <thead class="table-thead">
+                                        <tr>
+                                            <th>User</th>
+                                            <th>Project Name</th>
+                                            <th>Users</th>
+                                            <th>Status</th>
+                                            <th>Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table Hoverable -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Table Hoverable</h5>
+                                <p class="card-title-desc m-0">Add <code>.table-hover</code> to enable a hover state on table rows.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table customize-table table-hover mb-0 v-middle overflow-hidden">
+                                    <thead class="table-thead">
+                                        <tr>
+                                            <th class="border-0">User</th>
+                                            <th class="border-0">Project Name</th>
+                                            <th class="border-0">Users</th>
+                                            <th class="border-0">Status</th>
+                                            <th class="border-0">Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Small Table -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Small Table</h5>
+                                <p class="card-title-desc m-0">Add <code>.table-sm</code> class with .table to display small size table.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-sm mb-0 v-middle overflow-hidden">
+                                    <thead class="table-thead">
+                                        <tr>
+                                            <th class="border-bottom border-top">User</th>
+                                            <th class="border-bottom border-top">Project Name</th>
+                                            <th class="border-bottom border-top">Users</th>
+                                            <th class="border-bottom border-top">Status</th>
+                                            <th class="border-bottom border-top">Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="mb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-success text-success fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-info text-info fw-normal">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contextual classes -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Contextual classes</h5>
+                                <p class="card-title-desc m-0">Use <code>contextual</code> classes to color table rows or individual cells.</p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-sm mb-0 v-middle overflow-hidden">
+                                    <thead class="table-thead">
+                                        <tr>
+                                            <th class="border-bottom border-top">User</th>
+                                            <th class="border-bottom border-top">Project Name</th>
+                                            <th class="border-bottom border-top">Users</th>
+                                            <th class="border-bottom border-top">Status</th>
+                                            <th class="border-bottom border-top">Aection</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom border-success btn-inverse-success">
+                                            <td class="mb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img9.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">French</span>
+                                                </div>
+                                            </td>
+                                            <td>Axis Themes</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-primary text-primary fw-normal">Active</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-bottom border-info btn-inverse-info">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img10.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Brazil</span>
+                                                </div>
+                                            </td>
+                                            <td>Ruby admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-bottom border-primary btn-inverse-primary">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img11.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Dutch</span>
+                                                </div>
+                                            </td>
+                                            <td>Dev admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img14.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge fw-normal btn-inverse-info text-info">Completed</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-bottom border-danger btn-inverse-danger">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img12.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">German</span>
+                                                </div>
+                                            </td>
+                                            <td>Master admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img13.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-warning text-warning fw-normal">Pending</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-bottom border-warning btn-inverse-warning">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/img/admin-img13.jpg" class="rounded-circle" width="40" alt="">
+                                                    <span class="ms-3 fw-normal">Ninja</span>
+                                                </div>
+                                            </td>
+                                            <td>Robot admin</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                    <a href="#" class="me-n2"><img src="assets/img/admin-img12.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="35" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="badge btn-inverse-danger text-danger fw-normal">Cancel</span>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown dropstart">
+                                                    <a href="#" class="link" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#" class="dropdown-item">Edit</a></li>
+                                                        <li><a href="#" class="dropdown-item">Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Responsive table -->
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0">Responsive table</h5>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table customize-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">#</th>
+                                            <th scope="col" class="text-nowrap">Heading 1</th>
+                                            <th scope="col" class="text-nowrap">Heading 2</th>
+                                            <th scope="col" class="text-nowrap">Heading 3</th>
+                                            <th scope="col" class="text-nowrap">Heading 4</th>
+                                            <th scope="col" class="text-nowrap">Heading 5</th>
+                                            <th scope="col" class="text-nowrap">Heading 6</th>
+                                            <th scope="col" class="text-nowrap">Heading 7</th>
+                                            <th scope="col" class="text-nowrap">Heading 8</th>
+                                            <th scope="col" class="text-nowrap">Heading 9</th>
+                                            <th scope="col" class="text-nowrap">Heading 10</th>
+                                            <th scope="col" class="text-nowrap">Heading 11</th>
+                                            <th scope="col" class="text-nowrap">Heading 12</th>
+                                            <th scope="col" class="text-nowrap">Heading 13</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-nowrap">1</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap">1</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap">1</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap">1</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                            <td class="text-nowrap">Table cell</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+    
+
+    @@include('./partials/vendor-scripts.html')
+
+
+</body>
+
+</html>

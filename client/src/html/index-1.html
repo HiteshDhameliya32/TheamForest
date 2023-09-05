@@ -1,0 +1,730 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Dashboard 2
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 mb-30">
+                        <div class="mat-card rounded-3 bg-gradient-primary" data-hrefclick="#">
+                            <div class="dashboard_info_box_inner">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="text-white">
+                                            <span>Income Status</span>
+                                            <h4 class="my-1">$12,145</h4>
+                                            <i class="fa fa-arrow-circle-o-up"></i>
+                                            <span>15% Grow this month</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div id="line1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 mb-30">
+                        <div class="mat-card rounded-3 bg-gradient-success" data-hrefclick="#">
+                            <div class="dashboard_info_box_inner">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="text-white">
+                                            <span>Sales Status</span>
+                                            <h4 class="mb-1">$8020</h4>
+                                            <i class="fa fa-arrow-circle-o-up"></i>
+                                            <span>56% Grow this month</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div id="line2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 mb-30">
+                        <div class="mat-card rounded-3 bg-gradient-danger" data-hrefclick="#">
+                            <div class="dashboard_info_box_inner">
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <div class="text-white">
+                                            <span>Total Text</span>
+                                            <h4 class="mb-1">$5,295</h4>
+                                            <i class="fa fa-arrow-circle-o-up"></i>
+                                            <span>48% Grow this month</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div id="line3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 mb-30">
+                        <div class="mat-card">
+                            <div class="table_view_card rounded-3 general_table">
+                                <div class="dashboard_info_box_inner visitor_header d-flex flex-col">
+                                    <div class="box-header p-0">
+                                        <div class="with-border">
+                                            <h3 class="box-title m-0">Sales Activity</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="dashboard-card-04"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 mb-30">
+                        <div class="mat-card">
+                            <div class="table_view_card rounded-3 general_table">
+                                <div class="dashboard_info_box_inner visitor_header d-flex flex-col">
+                                    <div class="box-header p-0">
+                                        <div class="with-border">
+                                            <h3 class="box-title m-0">Real Time Value</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="dashboard-card-05"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 mb-30">
+                        <div class="mat-card table_view_card rounded-3 p-0 general_table">
+                            <div class="box-header with-border d-flex align-items-center justify-content-between">
+                                <div class="flex-grow-1 align-self-center">
+                                    <h3 class="box-title m-0">Transaction History</h3>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle text-muted d-none d-sm-block fs-14" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            01 Jun 2022 to 30 Oct 20212
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a class="dropdown-item" href="#">Yearly</a>
+                                            <a class="dropdown-item" href="#">Monthly</a>
+                                            <a class="dropdown-item" href="#">Weekly</a>
+                                            <a class="dropdown-item" href="#">Today</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-body table-responsive border-bottom-radius">
+                                <table
+                                    class="table table-centered table-nowrap table-hover table-bordered m-0 border_style">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0 header-cell">Name</th>
+                                            <th class="border-top-0 header-cell">Card</th>
+                                            <th class="border-top-0 header-cell">Date</th>
+                                            <th class="border-top-0 header-cell">Amount</th>
+                                            <th class="border-top-0 header-cell">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="cell">
+                                                <img src="assets/img/user/avatar-1.jpg" alt="user-pic"
+                                                    class="rounded rounded-2 avatar-sm bx-shadow-lg">
+                                                <span class="ms-2">Imelda Stanberry</span>
+                                            </td>
+                                            <td class="cell">
+                                                <img src="assets/img/card/amazon.png" alt="user-card" height="24">
+                                                <span class="ms-2">**** 3256</span>
+                                            </td>
+                                            <td class="cell">27.03.2018</td>
+                                            <td class="cell">$345.98</td>
+                                            <td class="cell"><span class="badge rounded-pill bg-danger">Failed</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="cell">
+                                                <img src="assets/img/user/avatar-2.jpg" alt="user-pic"
+                                                    class="rounded rounded-2 avatar-sm bx-shadow-lg">
+                                                <span class="ms-2">Francisca Lobb</span>
+                                            </td>
+                                            <td class="cell">
+                                                <img src="assets/img/card/american-express.png" alt="user-card"
+                                                    height="24">
+                                                <span class="ms-2">**** 8451</span>
+                                            </td>
+                                            <td class="cell">28.03.2018</td>
+                                            <td class="cell">$1,250</td>
+                                            <td class="cell"><span class="badge rounded-pill bg-success">Paid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cell">
+                                                <img src="assets/img/user/avatar-3.jpg" alt="user-pic"
+                                                    class="rounded rounded-2 avatar-sm bx-shadow-lg">
+                                                <span class="ms-2">James Wert</span>
+                                            </td>
+                                            <td class="cell">
+                                                <img src="assets/img/card/discover.png" alt="user-card" height="24">
+                                                <span class="ms-2">**** 2258</span>
+                                            </td>
+                                            <td class="cell">28.03.2018</td>
+                                            <td class="cell">$145</td>
+                                            <td class="cell"><span class="badge rounded-pill bg-success">Paid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cell">
+                                                <img src="assets/img/user/avatar-4.jpg" alt="user-pic"
+                                                    class="rounded rounded-2 avatar-sm bx-shadow-lg">
+                                                <span class="ms-2">Dolores Pooley</span>
+                                            </td>
+                                            <td class="cell">
+                                                <img src="assets/img/card/master.png" alt="user-card" height="24">
+                                                <span class="ms-2">**** 6950</span>
+                                            </td>
+                                            <td class="cell">29.03.2018</td>
+                                            <td class="cell">$2,005.89</td>
+                                            <td class="cell"><span class="badge rounded-pill bg-danger">Failed</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cell">
+                                                <img src="assets/img/user/avatar-5.jpg" alt="user-pic"
+                                                    class="rounded rounded-2 avatar-sm bx-shadow-lg">
+                                                <span class="ms-2">Karen McCluskey</span>
+                                            </td>
+                                            <td class="cell">
+                                                <img src="assets/img/card/visa.png" alt="user-card" height="24">
+                                                <span class="ms-2">**** 0021</span>
+                                            </td>
+                                            <td class="cell">31.03.2018</td>
+                                            <td class="cell">$24.95</td>
+                                            <td class="cell"><span class="badge rounded-pill bg-success">Paid</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- end table-responsive -->
+                        </div> <!-- end card-->
+                    </div>
+
+                    <div class="col-xl-6 mb-30">
+                        <div class="mat-card table_view_card rounded-3 p-0 general_table">
+                            <div class="box-header with-border header-padding d-flex align-items-center justify-content-between">
+                                <div class="with-border">
+                                    <h3 class="box-title m-0">Revenue History</h3>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="btn-color m-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Today</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Current Year</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-body table-responsive border-bottom-radius">
+                                <table
+                                    class="table table-centered table-nowrap table-hover table-bordered m-0 border_style">
+                                    <thead>
+                                        <tr>
+                                            <th class="header-cell">Marketplaces</th>
+                                            <th class="header-cell">Date</th>
+                                            <th class="header-cell">Payouts</th>
+                                            <th class="header-cell">Status</th>
+                                            <th class="header-cell">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="cell">
+                                                <h6 class="m-0 fw-normal">Themes Market</h6>
+                                            </td>
+
+                                            <td class="cell">
+                                                Oct 15, 2018
+                                            </td>
+
+                                            <td class="cell">
+                                                $5848.68
+                                            </td>
+
+                                            <td class="cell">
+                                                <span class="badge bg-soft-warning text-warning">Upcoming</span>
+                                            </td>
+
+                                            <td class="cell">
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-soft-secondary m-0">
+                                                    <i class="fa fa-pencil fs-12"></i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="cell">
+                                                <h6 class="m-0 fw-normal">Freelance</h6>
+                                            </td>
+
+                                            <td class="cell">
+                                                Oct 12, 2018
+                                            </td>
+
+                                            <td class="cell">
+                                                $1247.25
+                                            </td>
+
+                                            <td class="cell">
+                                                <span class="badge bg-soft-success text-success">Paid</span>
+                                            </td>
+
+                                            <td class="cell">
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-soft-secondary m-0"><i
+                                                        class="fa fa-pencil fs-12"></i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="cell">
+                                                <h6 class="m-0 fw-normal">Share Holding</h6>
+                                            </td>
+
+                                            <td class="cell">
+                                                Oct 10, 2018
+                                            </td>
+
+                                            <td class="cell">
+                                                $815.89
+                                            </td>
+
+                                            <td class="cell">
+                                                <span class="badge bg-soft-success text-success">Paid</span>
+                                            </td>
+
+                                            <td class="cell">
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-soft-secondary m-0"><i
+                                                        class="fa fa-pencil fs-12"></i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="cell">
+                                                <h6 class="m-0 fw-normal">Envato's Affiliates</h6>
+                                            </td>
+
+                                            <td class="cell">
+                                                Oct 03, 2018
+                                            </td>
+
+                                            <td class="cell">
+                                                $248.75
+                                            </td>
+
+                                            <td class="cell">
+                                                <span class="badge bg-soft-danger text-danger">Overdue</span>
+                                            </td>
+
+                                            <td class="cell">
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-soft-secondary m-0"><i
+                                                        class="fa fa-pencil fs-12"></i></a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="cell">
+                                                <h6 class="m-0 fw-normal">Marketing Revenue</h6>
+                                            </td>
+
+                                            <td class="cell">
+                                                Sep 21, 2018
+                                            </td>
+
+                                            <td class="cell">
+                                                $978.21
+                                            </td>
+
+                                            <td class="cell">
+                                                <span class="badge bg-soft-warning text-warning">Upcoming</span>
+                                            </td>
+
+                                            <td class="cell">
+                                                <a href="javascript: void(0);" class="btn btn-xs btn-soft-secondary m-0"><i
+                                                        class="fa fa-pencil fs-12"></i></a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div> <!-- end .table-responsive-->
+                        </div> <!-- end card-->
+                    </div>
+
+                    <div class="col-xl-3 mb-30">
+                        <div class="mat-card table_view_card transaction_card rounded-3 p-0 general_table">
+                            <div
+                                class="box-header with-border header-padding d-flex align-items-center justify-content-between">
+                                <div class="align-self-center">
+                                    <h3 class="box-titles m-0">Transactions</h3>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="btn-color m-0" href="#"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Today</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Current Year</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-b"></div>
+
+                            <div class="card-body pb-0 widget-content">
+                                <div class="transactions-list d-flex align-content-center justify-content-between align-items-center">
+                                    <div class="display-position d-flex align-items-center">
+                                        <span class="b-avatar btn-soft-primary me-2 rounded-2">
+                                            <span
+                                                class="b-avatar-text overflow-hidden w-100 h-100 d-flex justify-content-center align-items-center">
+                                                <span>TATA</span>
+                                            </span>
+                                        </span>
+                                        <div class="t-name">
+                                            <h4 class="mb-0">TATAMOTERS</h4>
+                                            <p>20 Jan 03:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="font-color">+$50.50</div>
+                                </div>
+                                <div class="transactions-list d-flex align-content-center justify-content-between align-items-center">
+                                    <div class="display-position d-flex align-items-center">
+                                        <span class="b-avatar btn-soft-warning me-2 rounded-2">
+                                            <span
+                                                class="b-avatar-custom overflow-hidden w-100 h-100 d-flex align-items-center justify-content-center">
+                                                <i class="fa fa-bolt" aria-hidden="true"></i>
+                                            </span>
+                                        </span>
+                                        <div class="t-name">
+                                            <h4 class="mb-0">ELECTRICITY</h4>
+                                            <p>01 Jan 03:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="font-color">+$06.11</div>
+                                </div>
+                                <div class="transactions-list d-flex align-content-center justify-content-between align-items-center">
+                                    <div class="display-position d-flex align-items-center">
+                                        <span class="b-avatar btn-soft-danger me-2 rounded-2">
+                                            <span
+                                                class="b-avatar-text overflow-hidden w-100 h-100 d-flex justify-content-center align-items-center">
+                                                <span>AP</span>
+                                            </span>
+                                        </span>
+                                        <div class="t-name">
+                                            <h4 class="mb-0">ADANIPOWER</h4>
+                                            <p>25 Jan 03:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="font-color">+$70.35</div>
+                                </div>
+                                <div class="transactions-list d-flex align-content-center justify-content-between align-items-center">
+                                    <div class="display-position d-flex align-items-center">
+                                        <span class="b-avatar btn-soft-secondary me-2 rounded-2">
+                                            <span
+                                                class="b-avatar-custom overflow-hidden w-100 h-100 d-flex align-items-center justify-content-center">
+                                                <i class="fa fa-scribd" aria-hidden="true"></i>
+                                            </span>
+                                        </span>
+                                        <div class="t-name">
+                                            <h4 class="mb-0">SONY</h4>
+                                            <p>02 Nov 03:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="font-color">-$21.11</div>
+                                </div>
+                                <div class="transactions-list d-flex align-content-center justify-content-between align-items-center">
+                                    <div class="display-position d-flex align-items-center">
+                                        <span class="b-avatar btn-soft-primary me-2 rounded-2">
+                                            <span
+                                                class="b-avatar-text overflow-hidden w-100 h-100 d-flex justify-content-center align-items-center">
+                                                <span>TATA</span>
+                                            </span>
+                                        </span>
+                                        <div class="t-name">
+                                            <h4 class="mb-0">TATASTEEL</h4>
+                                            <p>15 Nov 03:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="font-color">+$02.18</div>
+                                </div>
+                                <div class="transactions-list d-flex align-content-center justify-content-between align-items-center">
+                                    <div class="display-position d-flex align-items-center">
+                                        <span class="b-avatar btn-soft-danger me-2 rounded-2">
+                                            <span
+                                                class="b-avatar-text overflow-hidden w-100 h-100 d-flex justify-content-center align-items-center">
+                                                <i class="fa fa-bold" aria-hidden="true"></i>
+                                            </span>
+                                        </span>
+                                        <div class="t-name">
+                                            <h4 class="mb-0">BNB</h4>
+                                            <p>20 Oct 03:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="font-color">+$16.10</div>
+                                </div>
+                            </div>
+                            <!-- end table-responsive -->
+                        </div> <!-- end card-->
+                    </div>
+
+                    <div class="col-xl-3 mb-30">
+                        <div class="mat-card left-panel">
+                            <nav class="nav nav-tabs" role="tablist">
+                                <a href="#Today" data-bs-toggle="tab" class="nav-link active">Today</a>
+                                <a href="#This_Week" data-bs-toggle="tab" class="nav-link">This Week</a>
+                                <a href="#This_Month" data-bs-toggle="tab" class="nav-link">This Month</a>
+                            </nav>
+
+                            <div class="tab-content">
+                                <!-- Today -->
+                                <div id="Today" class="tab-pane active">
+                                    <div class="active-visitor-wrapper">
+                                        <h1>560</h1>
+                                        <p class="mt-2">Online Visitors on Site</p>
+                                    </div><!-- active-visitor-wrapper -->
+
+                                    <hr class="mg-t-30 mg-b-40 mb-4 mt-3">
+
+                                    <h6 class="visitor-operating-label p-1">Visitors Operating System</h6>
+
+                                    <label class="mg-b-5 mb-2">Windows (98%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 36%" role="progressbar"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-xs" style="width: 28%" role="progressbar"
+                                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 20%" role="progressbar"
+                                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning progress-bar-xs" style="width: 15%" role="progressbar"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">macOS (58%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 20%" role="progressbar"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-danger progress-bar-xs" style="width: 21%;" role="progressbar"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 19%" role="progressbar"
+                                            aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">Ubuntu (50%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 35%;" role="progressbar"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning progress-bar-xs" style="width: 15%;" role="progressbar"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">Linux (49%)</label>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 49%;" role="progressbar"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+                                </div>
+
+                                <!-- This week -->
+                                <div id="This_Week" class="tab-pane fade">
+                                    <div class="active-visitor-wrapper">
+                                        <h1>670</h1>
+                                        <p class="mt-2">Online Visitors on Site</p>
+                                    </div><!-- active-visitor-wrapper -->
+
+                                    <hr class="mg-t-30 mg-b-40 mb-4 mt-3">
+
+                                    <h6 class="visitor-operating-label p-1">Visitors Operating System</h6>
+
+                                    <label class="mg-b-5 mb-2">Windows (72%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 15%" role="progressbar"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-xs" style="width: 25%" role="progressbar"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 17%" role="progressbar"
+                                                    aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning progress-bar-xs" style="width: 15%" role="progressbar"
+                                            aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">macOS (67%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 30%" role="progressbar"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-xs" style="width: 10%" role="progressbar"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 27%" role="progressbar"
+                                                    aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">Ubuntu (37%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 20%" role="progressbar"
+                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-success progress-bar-xs" style="width: 17%" role="progressbar"
+                                        aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">Linux (27%)</label>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 27%;" role="progressbar"
+                                            aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+                                </div>
+
+                                <!-- This month -->
+                                <div id="This_Month" class="tab-pane fade">
+                                    <div class="active-visitor-wrapper">
+                                        <h1>899</h1>
+                                        <p class="mt-2">Online Visitors on Site</p>
+                                    </div><!-- active-visitor-wrapper -->
+
+                                    <hr class="mg-t-30 mg-b-40 mb-4 mt-3">
+
+                                    <h6 class="visitor-operating-label p-1">Visitors Operating System</h6>
+
+                                    <label class="mg-b-5 mb-2">Windows (89%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 20%" role="progressbar"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-xs" style="width: 20%" role="progressbar"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 20%" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning progress-bar-xs" style="width: 29%" role="progressbar"
+                                            aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">macOS (55%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 10%" role="progressbar"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-xs" style="width: 25%" role="progressbar"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-xs" style="width: 20%" role="progressbar"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">Ubuntu (49%)</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 30%" role="progressbar"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-xs" style="width: 19%" role="progressbar"
+                                            aria-valuenow="19" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+
+                                    <label class="mg-b-5 mb-2">Linux (37%)</label>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-xs bg-primary" style="width: 37%" role="progressbar"
+                                            aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><!-- progress -->
+                                </div>
+                            </div>
+
+                        </div><!-- left-panel -->
+                    </div>
+
+                    <div class="col-xl-6 mb-30">
+                        <div class="mat-card table_view_card right-panel p-0 transaction_card rounded-3 general_table">
+                            <div class="box-header with-border header-padding d-flex align-items-center justify-content-between">
+                                <div class="align-self-center">
+                                    <h3 class="box-titles m-0">Visitor's Locations</h3>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="btn-color m-0 fw-semibold" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Locations
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">World</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">Country</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">State</a>
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item">City</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <h6 class="box-header map-title m-0"></h6> -->
+                            <div class="position-relative pt-0">
+                                <div id="map1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/linechart.js"></script>
+    <!-- map jquery -->
+    <script src="assets/js/plugins/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="assets/js/plugins/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/js/main/vectormap.js"></script>
+
+
+</body>
+
+</html>

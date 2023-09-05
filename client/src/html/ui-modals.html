@@ -1,0 +1,243 @@
+@@include('./partials/main.html')
+
+<head>
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+        
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Modals
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Modals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Basic Modal</h5>
+                            <p class="card-title-desc m-0">Use the prop <code>no-fade</code> on the component to disable animation. Vertically center your modal in the viewport by setting the <code>centered</code> prop. Hide the modal's backdrop via setting the
+                                <code>hide-backdrop</code> prop.</p>
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-1"> Basic Modal </button>
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-2">  Vertically Center   </button>
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-3">  Disabled Click Backdrop  </button>
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-4"> Disabled Animation </button>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Modal Themes</h5>
+                            <p class="card-title-desc m-0">Use class <code>modal-class="modal-{color}"</code> with your to change theme of modal</p>
+                            <!--  Primary  - start -->
+                            <button type="button" class="btn btn-primary border-0 me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-5">  Primary  </button>
+                            <!--  Primary - end -->
+                            <!--   Secondary  - start -->
+                            <button type="button" class="border-0 btn btn-secondary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-6"> Secondary </button>
+                            <!--   Secondary - end -->
+                            <!--    Success - start -->
+                            <button type="button" class="border-0 btn btn-success me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-7"> Success </button>
+                            <!--  Success - end -->
+                            <!-- Danger - start -->
+                            <button type="button" class="border-0 btn btn-danger me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-8"> Danger </button>
+                            <!-- Danger - end -->
+                            <!-- Warning - start -->
+                            <button type="button" class="border-0 btn btn-warning me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-9"> Warning </button>
+                            <!-- Warning - end -->
+                            <!-- Info - start -->
+                            <button type="button" class="border-0 btn btn-info me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-10"> Info </button>
+                            <!-- Info - end -->
+                            <!-- Dark - start -->
+                            <button type="button" class="border-0 btn btn-dark me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-11"> Dark </button>
+                            <!-- Dark - end -->
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Modal Sizes</h5>
+                            <p class="card-title-desc m-0">Modals have three optional sizes, available via the prop <code>size</code> . These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports. Valid optional sizes are <code> xs,sm, lg and xl</code>                                .</p>
+                            <!-- Extra Small - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-12"> Extra Small </button>
+                            <!-- Extra Small - end -->
+                            <!--  Small Modal  - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-13"> Small Modal </button>
+                            <!-- Small Modal - end -->
+                            <!-- Default Modal - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-14"> Default Modal </button>
+                            <!-- Default Modal - end -->
+                            <!-- Large Modal - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-15"> Large Modal </button>
+                            <!-- Large Modal - end -->
+                            <!-- Extra Large Modal - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-16"> Extra Large Modal </button>
+                            <!-- Extra Large Modal - end -->
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Form & Scrolling Modals</h5>
+                            <p class="card-title-desc m-0"></p>
+                            <!-- Login Form - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-17"> Login Form </button>
+                            <!-- Login Form - end -->
+                            <!-- Scrolling Long Content  - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-18">Scrolling Long Content</button>
+                            <!-- Scrolling Long Content - end -->
+                            <!--  Scrolling Content inside Modal - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-19"> Scrolling Content inside Modal </button>
+                            <!-- Scrolling Content inside Modal - end -->
+                            <!-- Select2 With Modal - start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-20"> Select2 With Modal </button>
+                            <!-- Select2 With Modal - end -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Variants</h5>
+                            <p class="card-title-desc">Control the header, footer, and body background and text variants by setting the <code>header-bg-variant, header-text-variant, body-bg-variant, body-text-variant, footer-bg-variant, and footer-text-variant</code> props.</p>
+                            <!-- basic-model-start -->
+                            <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal-21"> Show Modal</button>
+                            <!-- basic-model - end -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Using v-model property</h5>
+                            <p class="card-title-desc"><code>v-model</code> property is always automatically synced with visible state and you can show/hide using <code>v-model</code>. </p>
+                            <!-- basic-model-start -->
+                            <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal-22"> Launch Modal </button>
+                            <!-- basic-model - end -->
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Prevent closing</h5>
+                            <p class="card-title-desc">To prevent from closing (for example when validation fails). you can call the <code>.preventDefault()</code> method of the event object passed to your <code>ok</code> (OK button),<code>cancel</code> (Cancel
+                                button),
+                                <code>close</code> (modal header close button) and <code>hide</code> event handlers.</p>
+                            <!-- basic-model-start -->
+                            <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal-23"> Open Modal </button>
+                            <!-- basic-model - end -->
+                            <div  class="mt-3">
+                                <p  class="mb-1">Submitted Names:</p>
+                                <div  class="list-group">
+                                    <div  class="list-group-item">Teresa</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Disabling built-in footer buttons</h5>
+                            <p class="card-title-desc">You can disable the Cancel and OK buttons individually by setting the <code>cancel-disabled</code> and <code>ok-disabled</code> props, respectively, to <code>true</code> . Set the prop to <code>false</code> to re-enable the
+                                button.
+                            </p>
+                            <!-- basic-model-start -->
+                            <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal-24"> Launch Modal </button>
+                            <!-- basic-model-end -->
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Confirm message box</h5>
+                            <p class="card-title-desc m-0">BootstrapVue provides a few built in Message Box methods on the exposed <code>this.$bvModal</code> object. These methods provide a way to generate simple OK and Confirm style modal messages, from anywhere in your app without
+                                having to explicitly place a component in your pages.</p>
+                            <!--  Simple msgBoxConfirm -start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-25"> Simple msgBoxConfirm </button>
+                            <!--  Simple msgBoxConfirm -end -->
+                            <!--  Simple msgBoxConfirm -start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-26"> msgBoxConfirm with options </button>
+                            <p class="mb-1 mt-2 mt-3"> First modal return value: </p>
+                            <p class="mb-0"> Second modal return value: </p>
+                            <!--  Simple msgBoxConfirm -end -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Footer button size</h5>
+                            <p class="card-title-desc m-0">Fancy smaller or larger buttons in the default footer? Simply set the <code>button-size</code> prop to <code>'sm'</code> for small buttons, or <code>'lg'</code> for larger buttons.</p>
+                            <!--  Small Footer Buttons -start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-27"> Small Footer Buttons </button>
+                            <!--  Small Footer Buttons  - end -->
+                            <!--  Small Footer Buttons -start -->
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-28"> Large Footer Buttons </button>
+                            <!--  Small Footer Buttons  - end -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Multiple modal support</h5>
+                            <p class="card-title-desc">To disable stacking for a specific modal, just set the prop <code>no-stacking</code> on the component. This will hide the modal before another modal is shown.</p>
+                            <!-- Multiple modal support-start -->
+                            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+                            <!-- Multiple modal support - end -->
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Modal Method</h5>
+                            <p class="card-title-desc m-0">You can access modal using <code>ref</code> attribute and then call the <code>show(), hide()</code> or <code>toggle()</code> methods.</p>
+
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-29"> Open Modal </button>
+
+                            <button type="button" class="btn btn-primary me-3 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal-30"> Toggle Modal </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+    
+        <!-- page-wrapper -->
+        <!-- modals -->
+        @@include('./partials/modals.html')
+    
+        @@include('./partials/vendor-scripts.html')
+    
+        <script  src="assets/js/plugins/select2.min.js"></script>
+        <script >
+            $(".single_select").select2({
+                placeholder: "Select",
+                allowClear: true
+            });
+        </script>
+</body>
+
+</html>

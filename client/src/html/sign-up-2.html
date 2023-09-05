@@ -1,0 +1,106 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue overflow-auto user-page">
+
+    @@include('./partials/page-loader.html')
+
+    <div class="login-page">
+        <div class="container">
+            <div class="d-flex flex-column min-vh-100 px-sm-3 pt-4">
+                <div class="row justify-content-center my-auto">
+                    <div class="col-sm-9">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-10">
+                                <div class="login_container m-auto">
+                                    <div class="auth-inner py-2 position-relative mx-auto">
+                                        <div class="mat-card">
+                                            <h4 class="text-center"> Welcome to Axis Themes! 👋 </h4>
+                                            <p class="choose-package text-center mb-4">
+                                                Sign Up </p>
+                    
+                                            <form action="/axis/diamond/" id="UserLoginForm" method="post" accept-charset="utf-8"
+                                                novalidate="novalidate">
+                                                <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group required">
+                                                                    <label for="Useremail">E-mail </label>
+                                                                    <input name="data[User][phone_no]" class="form-control valid"
+                                                                        placeholder="E-mail" type="email" id="Useremail"
+                                                                        required="required">
+                                                                    <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 pt-2">
+                                                                <div class="form-group required">
+                                                                    <label for="UserPhoneNo">Mobile Number</label>
+                                                                    <input name="data[User][phone_no]" class="form-control valid" placeholder="Mobile No." maxlength="15" type="text" id="UserPhoneNo" required="required">
+                                                                    <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 pt-2">
+                                                                <div class="form-group required">
+                                                                    <label for="floatingPassword">Password</label>
+                                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-5 col-md-12 pt-3">
+                                                                <div class="checkbox icheck login_text">
+                                                                    <input type="checkbox" name="data[User][remember_me]"
+                                                                        class="me-3 form-check-input" value="1" id="UserRememberMe"><label
+                                                                        for="UserRememberMe">Remember Me</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 col-md-12 pt-3 text-lg-end">
+                                                                <a href="login-2.html" class="login_text new-account">Already have an
+                                                                    account?</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 pt-sm-5 pt-3">
+                                                                <div class="w-100 d-flex justify-content-center p-0"><a href="index.html"
+                                                                        class="btn btn-primary button w-100"
+                                                                        style="line-height: 28px;"> Sign UP </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+    <!-- using online scripts -->
+
+    @@include('./partials/vendor-scripts.html')
+
+
+    <script  src="assets/js/dragula.min.js"></script>
+    <script  src="assets/js/main/common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+#donut-chart svg text {
+  fill: var(--theme-dark-text-rgb);
+}
+
+#visit-area-chart canvas,
+#site-area-chart canvas {
+  width: 100% !important;
+}
+
+#simple-pie-chart .apexcharts-canvas,
+#donut-pie-chart .apexcharts-canvas,
+#monochrome-pie-chart .apexcharts-canvas,
+#semi-radial-bar-chart .apexcharts-canvas {
+  margin: 0 auto;
+}
+
+#custom-angle-bar-chart .apexcharts-legend {
+  left: 13% !important;
+  top: 10px !important;
+  width: 160px;
+  height: 132px;
+}
+
+.morris-hover {
+  position: absolute;
+  z-index: 1000;
+}
+
+.morris-hover.morris-default-style {
+  border-radius: 10px;
+  padding: 6px;
+  color: #666;
+  background: rgba(255, 255, 255, 0.8);
+  border: solid 2px rgba(230, 230, 230, 0.8);
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+  font-weight: bold;
+  margin: 0.25em 0;
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+  white-space: nowrap;
+  margin: 0.1em 0;
+}/*# sourceMappingURL=chart.css.map */

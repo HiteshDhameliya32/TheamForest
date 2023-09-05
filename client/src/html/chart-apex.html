@@ -1,0 +1,193 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+    
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+                    
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Apex Chart
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Apex Chart</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb breadcrumb-block" id="contentSection">
+                <div class="row">
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Line With Data Label Chart</h5>
+                                <div id="chart-line-with-data-label"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Area Chart</h5>
+                                <div id="X-area-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Spline Area Chart</h5>
+                                <div id="spline-area-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Bar Chart</h5>
+                                <div id="basic-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Stacked Bar Chart</h5>
+                                <div id="stacked-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Simple Pie Chart</h5>
+                                <div id="simple-pie-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Donut Pie Chart</h5>
+                                <div id="donut-pie-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Monochrome Pie Chart</h5>
+                                <div id="monochrome-pie-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Radial Bar Chart</h5>
+                                <div id="basic-radial-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Multiple Radial Bar Chart</h5>
+                                <div id="multiple-radial-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Custom Angle Bar Chart</h5>
+                                <div id="custom-angle-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Gradient Radial Bar Chart</h5>
+                                <div id="gradial-radial-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Stroked Gauge Radial Bar Chart</h5>
+                                <div id="stroked-radial-bar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Semi Circle Radial Bar Chart</h5>
+                                <div id="semi-radial-bar-chart" class="mt-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Radar Chart</h5>
+                                <div id="basic-radar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Multiple Series Radar Chart</h5>
+                                <div id="maltiple-radar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Polygon Fill Radar Chart</h5>
+                                <div id="polygon-radar-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+
+    @@include('./partials/vendor-scripts.html')
+    
+
+    <script src="assets/js/main/apexcharts.js"></script>
+</body>
+
+</html>

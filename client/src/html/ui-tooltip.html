@@ -1,0 +1,129 @@
+@@include('./partials/main.html')
+
+<head>
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Tooltip
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Tooltip</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Tooltip Positions</h5>
+                            <p class="card-title-desc">Add tag <code>data-bs-toggle="tooltip" title="Default tooltip"</code> </p>
+                            <div class="align-items-center button-group d-flex flex-wrap">
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-success text-success font-weight-medium" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Tooltip on right">Tooltip on right</button>
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-primary text-primary font-weight-medium" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Tooltip on top">Tooltip on top</button>
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-info text-info font-weight-medium" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Tooltip on left">Tooltip on left</button>
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-danger text-danger font-weight-medium" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Tooltip on bottom">Tooltip on bottom</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Basic Popover</h5>
+                            <p class="card-title-desc">Add tag <code>data-container="body" title="Popover title" data-bs-toggle="popover" data-bs-placement="top" data-content="..."</code> </p>
+                            <div class="align-items-center button-group d-flex flex-wrap">
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-success text-success d-flex align-items-center font-weight-medium" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                    data-bs-original-title="" title="">
+                                    <i class="fa fa-angle-right me-2"></i>
+                                    Popover on right
+                                </button>
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-primary text-primary d-flex align-items-center font-weight-medium" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                    data-bs-original-title="" title="">
+                                    <i class="fa fa-angle-up me-2"></i>
+                                    Popover on top
+                                </button>
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-info text-info d-flex align-items-center font-weight-medium" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                    data-bs-original-title="" title="">
+                                    <i class="fa fa-angle-left me-2"></i>
+                                    Popover on left
+                                </button>
+                                <button type="button" class="me-2 mb-2 btn btn-inverse-danger text-danger d-flex align-items-center font-weight-medium" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                    data-bs-original-title="" title="">
+                                    <i class="fa fa-angle-down me-2"></i>
+                                    Popover on bottom
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Popover Dismiss on next click</h5>
+                            <p class="card-title-desc">Add tag <code>data-bs-trigger="focus" title="Popover title" data-bs-toggle="popover" data-content="..."</code> </p>
+                            <div>
+                                <a tabindex="0" class="btn btn-inverse-danger d-inline-flex align-items-center text-danger font-weight-medium" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                                    <i class="fa fa-exclamation-triangle me-2"></i> Dismissible popover</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Disabled elements</h5>
+                            <p class="card-title-desc">Add tag <code>data-bs-toggle="popover" data-bs-content="Disabled popover"</code> </p>
+                            <div>
+                                <span class="d-inline-block" data-bs-toggle="popover" data-bs-content="Disabled popover" data-bs-original-title="" title="">
+                                    <button class="btn btn-inverse-primary text-primary font-weight-medium d-inline-flex align-items-center" style="pointer-events: none" type="button" disabled="">
+                                        <i class="fa fa-exclamation-triangle me-2"></i> Disabled button
+                                    </button>
+                                  </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+    
+
+    @@include('./partials/vendor-scripts.html')
+
+
+    <script >
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        $(function() {
+            [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')).map(function(e) {
+                return new bootstrap.Popover(e)
+            })
+        });
+    </script>
+</body>
+
+</html>

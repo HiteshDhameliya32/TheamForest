@@ -1,0 +1,71 @@
+//Fonts
+@import "./fonts/fonts";
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./settings/variables.scss";
+@import "./node_modules/bootstrap/scss/mixins";
+
+@import "./config/default/theme-dark";
+@import "./config/default/theme-light";
+
+// Structure
+@import "themes/layouts/pc-right-sidebar";
+@import "themes/layouts/pc-left-sidebar";
+@import "themes/layouts/pc-header";
+@import "themes/layouts/page-loader";
+@import "themes/layouts/footer";
+
+// components
+@import "components/avatar";
+@import "components/card";
+@import "components/button";
+@import "components/badge";
+@import "components/table.scss";
+@import "components/tablesaw.scss";
+@import "components/dropdown";
+@import "components/color";
+@import "components/ui-breadcrumb.scss";
+@import "components/ui-typography.scss";
+@import "components/ui-buttons.scss";
+@import "components/ui-alert.scss";
+@import "components/ui-card-customs.scss";
+@import "components/ui-modals.scss";
+@import "components/ui-toastification.scss";
+@import "components/ui-tooltip.scss";
+@import "components/ui-accordions.scss";
+@import "components/ui-grid.scss";
+@import "components/ui-tabs.scss";
+@import "components/modal-popup.scss";
+@import "components/configuration.scss";
+@import "components/datepicker.scss";
+@import "components/scrollbar.scss";
+@import "components/animation.scss";
+@import "components/jquery.bootstrap-touchspin.scss";
+@import "components/bootstrap-switch.scss";
+@import "components/morris.scss";
+
+@import "components/helper";
+
+// pages
+@import "pages/dashboard.scss";
+@import "pages/gallery.scss";
+@import "pages/login.scss";
+@import "pages/error.scss";
+@import "pages/responsive.scss";
+
+// plugins
+@import "plugins/apexchart";
+@import "plugins/jquery-jvectormap.scss";
+@import "plugins/profile.scss";
+@import "plugins/invoice.scss";
+@import "plugins/portfolio.scss";
+@import "plugins/input.scss";
+@import "plugins/chart.scss";
+@import "plugins/form-check.scss";
+@import "plugins/select2.min.scss";
+@import "plugins/jquery.bootstrap-touchspin.scss";
+@import "settings/variables.scss";
+
+@import "./icon.scss";
