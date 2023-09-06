@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Light_able", "Light_able.csproj", "{3AE72A1A-2AFF-48BF-8DA9-86B0902A1BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AE72A1A-2AFF-48BF-8DA9-86B0902A1BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE72A1A-2AFF-48BF-8DA9-86B0902A1BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE72A1A-2AFF-48BF-8DA9-86B0902A1BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE72A1A-2AFF-48BF-8DA9-86B0902A1BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B60A101-9C31-4619-B738-7C10CB55BB97}
+	EndGlobalSection
+EndGlobal
