@@ -1,3 +1,33 @@
+.sidebar {
+  width: 240px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  background-color: var(--theme-dark-rgb);
+  box-shadow: var(--theme-shadow);
+  ul {
+    list-style: none;
+    padding: 0 10px;
+    li {
+      border-radius: 6px;
+      padding: 6px 16px;
+      a {
+        font-size: 14px;
+      }
+      &.active,
+      &:hover {
+        background-color: rgba($secondary, 0.2);
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+
+
+
 .pace-done {
   &.sidebar-brand,
   &.sidebar-black,
@@ -471,7 +501,7 @@
               margin: 0 !important;
 
               a {
-                padding: 0.25rem 1rem 0.25rem 2.25rem;
+                padding: 0.25rem 0rem 0.25rem 0.25rem;
                 display: block;
                 font-size: 14px;
                 margin: 0 !important;
