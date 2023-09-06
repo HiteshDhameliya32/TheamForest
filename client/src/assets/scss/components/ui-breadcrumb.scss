@@ -1,0 +1,238 @@
+.breadcrumb-block {
+    .mat-card {
+        .breadcrumb {
+            padding: 10px 15px;
+            border-radius: 6px;
+            background-color: var(--theme-body-rgb);
+            color: var(--theme-dark-text-rgb);
+            nav:last-child .breadcrumb {
+                margin-bottom: 0;
+            }
+        }
+        .btn-inverse-primary {
+            background-color: #cfe2ff;
+            .breadcrumb-item {
+                color: $primary !important;
+                a {
+                    color: $primary;
+                }
+                &.active {
+                    color: #beb9b9 !important;
+                }
+            }
+            .breadcrumb-item+.breadcrumb-item {
+                &:before {
+                    color: $primary;
+                }
+            }
+            &:hover {
+                .breadcrumb-item {
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-inverse-success {
+            background-color: #cfe2ff;
+            .breadcrumb-item {
+                color: $success !important;
+                a {
+                    color: $success;
+                }
+                &.active {
+                    color: #beb9b9 !important;
+                }
+            }
+            .breadcrumb-item+.breadcrumb-item {
+                &:before {
+                    color: $success;
+                }
+            }
+            &:hover {
+                .breadcrumb-item {
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-inverse-danger {
+            background-color: #cfe2ff;
+            .breadcrumb-item {
+                color: $danger !important;
+                a {
+                    color: $danger;
+                }
+                &.active {
+                    color: #beb9b9 !important;
+                }
+            }
+            .breadcrumb-item+.breadcrumb-item {
+                &:before {
+                    color: $danger;
+                }
+            }
+            &:hover {
+                .breadcrumb-item {
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-inverse-warning {
+            background-color: #cfe2ff;
+            .breadcrumb-item {
+                color: $warning !important;
+                a {
+                    color: $warning;
+                }
+                &.active {
+                    color: #beb9b9 !important;
+                }
+            }
+            .breadcrumb-item+.breadcrumb-item {
+                &:before {
+                    color: $warning;
+                }
+            }
+            &:hover {
+                .breadcrumb-item {
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-inverse-info {
+            background-color: #cfe2ff;
+            .breadcrumb-item {
+                color: $info !important;
+                a {
+                    color: $info;
+                }
+                &.active {
+                    color: #beb9b9 !important;
+                }
+            }
+            .breadcrumb-item+.breadcrumb-item {
+                &:before {
+                    color: $info;
+                }
+            }
+            &:hover {
+                .breadcrumb-item {
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-outline-primary {
+            border: 1px solid $primary !important;
+            background-color: transparent;
+            .breadcrumb-item {
+                a {
+                    color: $primary;
+                }
+                &::before {
+                    color: $primary;
+                }
+            }
+            &:hover {
+                background-color: $primary;
+                .breadcrumb-item {
+                    color: $white;
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-outline-success {
+            border: 1px solid $success !important;
+            background-color: transparent;
+            .breadcrumb-item {
+                a {
+                    color: $success;
+                }
+                &::before {
+                    color: $success;
+                }
+            }
+            &:hover {
+                background-color: $success;
+                .breadcrumb-item {
+                    color: $white;
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-outline-danger {
+            border: 1px solid $danger !important;
+            background-color: transparent;
+            .breadcrumb-item {
+                a {
+                    color: $danger;
+                }
+                &::before {
+                    color: $danger;
+                }
+            }
+            &:hover {
+                background-color: $danger;
+                .breadcrumb-item {
+                    color: $white;
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-outline-warning {
+            border: 1px solid $warning !important;
+            background-color: transparent;
+            .breadcrumb-item {
+                a {
+                    color: $warning;
+                }
+                &::before {
+                    color: $warning;
+                }
+            }
+            &:hover {
+                background-color: $warning;
+                .breadcrumb-item {
+                    color: $white;
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .btn-outline-info {
+            border: 1px solid $info !important;
+            background-color: transparent;
+            .breadcrumb-item {
+                a {
+                    color: $info;
+                }
+                &::before {
+                    color: $info;
+                }
+            }
+            &:hover {
+                background-color: $info;
+                .breadcrumb-item {
+                    color: $white;
+                    &:before, a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

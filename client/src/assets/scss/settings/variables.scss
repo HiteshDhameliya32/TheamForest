@@ -1,0 +1,271 @@
+    // Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+:root {
+    --theme-light--text-color: #f6f6f6;
+    --theme-light--button-text: #fff;
+    --theme-secondary-rgb: #999;
+    --theme-placeholder-color: #999;
+    --theme-input--text-color: #6a69f5;
+    --theme-button-small-radius: 6px;
+    --theme-button-full-radius: 999px;
+    --theme-bg-red: #f56954;
+    --theme-bg-green: #00a65a;
+    --theme-logo-color: #6a69f5;
+    --theme-party-text-color: #8269b2;
+    --theme-party-bg-color: #e0daec;
+    --theme-invoice-text-color: #6a69f5;
+    --theme-invoice-bg-color: #d6e3f5;
+    --theme-payment-text-color: #06c5bf;
+    --theme-payment-bg-color: #c1f0ef;
+    --theme-online-color: #22c55e;
+    --theme-secondary-text-rgb: #ffffffb3;
+    --theme-header-icon-bc: #fff;
+    --theme-navbar-icon-color: #f6f6f6;
+    --theme-hover-menu-text-rgb: #f6f6f6;
+    --theme-submenu-hover-text-rgb: #f6f6f6;
+    --theme-submenu-active-text-color: #f6f6f6;
+    --theme-info-text-color: #f6f6f6;
+    --theme-info-number-text-color: #ddd;
+    --theme-header-bg: #e6f1f9;
+}
+
+:root {
+  .theme-default {
+    --theme-primary-rgb: #6a69f5;
+    --theme-primary-focas-rgb: #4f46e5cc;
+    --theme-button-shadow: 0px 0px 3px #2196f385;
+  }
+  .theme-brand {
+    --theme-primary-rgb: #2196f3;
+    --theme-primary-focas-rgb: #2196f3cc;
+    --theme-button-shadow: 0px 0px 3px #2196f380;
+  }
+  .theme-indigo {
+    --theme-primary-rgb: #1ca968;
+    --theme-primary-focas-rgb: #0d9488cc;
+    --theme-button-shadow: 0px 0px 3px #1ca96878;
+  }
+  .theme-rose {
+    --theme-primary-rgb: #db4a58;
+    --theme-primary-focas-rgb: #f43f5ecc;
+    --theme-button-shadow: 0px 0px 3px #f43f5e80;
+  }
+  .theme-purple {
+    --theme-primary-rgb: #9333ea;
+    --theme-primary-focas-rgb: #9333eacc;
+    --theme-button-shadow: 0px 0px 3px #9333ea80;
+  }
+  .theme-dark {
+    --theme-primary-rgb: #000;
+    --theme-primary-focas-rgb: #171108cc;
+    --theme-button-shadow: 0px 0px 3px #18181880;
+  }
+  .sidebar-black {
+    --theme-dark-rgb: #0b1324;
+    --theme-sidebar-hover-active--color: #2c3344;
+    --theme-secondary-text-rgb: #999;
+    --theme-info-number-text-color: #999;
+  }
+  .sidebar-default {
+    --theme-dark-rgb: #fff;
+    --theme-sidebar-hover-active--color: #f0f0f0;
+    --theme-secondary-text-rgb: #635d5d;
+    --theme-submenu-hover-text-rgb: #6a69f5;
+    --theme-submenu-active-text-color: #000000cc;
+    --theme-info-text-color: #a6a6a6;
+    --theme-info-number-text-color: #999;
+    .sidebar_section {
+      --theme-light--text-color: var(--theme-input--text-color);
+      --theme-hover-menu-text-rgb: var(--theme-input--text-color);
+      --theme-submenu-active-text-color: var(--theme-input--text-color);
+      .logo_details span {
+        color: var(--theme-input--text-color) !important;
+      }
+    }
+  }
+  .sidebar-gray {
+    --theme-dark-rgb: #f3f3f9;
+    --theme-sidebar-hover-active--color: #fff;
+    --theme-secondary-text-rgb: #4d4d4d;
+    --theme-submenu-hover-text-rgb: #6a69f5;
+    --theme-submenu-active-text-color: #2196f385;
+    --theme-info-text-color: #a6a6a6;
+    --theme-info-number-text-color: #999;
+    .sidebar_section {
+      --theme-light--text-color: var(--theme-primary-rgb);
+      --theme-hover-menu-text-rgb: var(--theme-primary-rgb);
+      --theme-submenu-active-text-color: var(--theme-primary-rgb);
+      --theme-info-text-color: #4d4d4d;
+      .logo_details span {
+        color: var(--theme-input--text-color) !important;
+      }
+    }
+  }
+  .sidebar-blue {
+    --theme-dark-rgb: #6a69f5;
+    --theme-sidebar-hover-active--color: #6793d6;
+  }
+  .sidebar-brand {
+    --theme-dark-rgb: #2196f3;
+    --theme-sidebar-hover-active--color: #4aa8f3;
+  }
+  .sidebar-indigo {
+    --theme-dark-rgb: #1ca968;
+    --theme-sidebar-hover-active--color: #42a59c;
+  }
+  .sidebar-rose {
+    --theme-dark-rgb: #db4a58;
+    --theme-sidebar-hover-active--color: #ef5871;
+  }
+  .sidebar-purple {
+    --theme-dark-rgb: #9333ea;
+    --theme-sidebar-hover-active--color: #a456eb;
+  }
+  .sidebar-dark {
+    --theme-dark-rgb: #000;
+    --theme-sidebar-hover-active--color: #181818;
+  }
+  .header-default {
+    --theme--header--bc: #fff;
+    --theme-header-icon-bc: #878a99;
+    --theme-navbar-icon-color: #64748b;
+  }
+  .header-dark {
+    --theme--header--bc: #000000;
+    --theme-header-form-bg: #151515;
+  }
+  .header-gray {
+    --theme--header--bc: #f3f3f9;
+    --theme-header-icon-bc: #878a99;
+    --theme-navbar-icon-color: #64748b;
+    --theme-header-form-bg: #f4f4f4;
+  }
+  .header-blue {
+    --theme--header--bc: #6a69f5;
+    --theme-header-form-bg: #6793d6;
+  }
+  .header-brand {
+    --theme--header--bc: #2196f3;
+    --theme-header-form-bg: #4aa8f3;
+  }
+  .header-indigo {
+    --theme--header--bc: #1ca968;
+    --theme-header-form-bg: #36b47a;
+  }
+  .header-rose {
+    --theme--header--bc: #db4a58;
+    --theme-header-form-bg: #ef5871;
+  }
+  .header-purple {
+    --theme--header--bc: #9333ea;
+    --theme-header-form-bg: #a456eb;
+  }
+  .header-black {
+    --theme--header--bc: #0b1324;
+    --theme-header-form-bg: #0f172a;
+  }
+
+  .font-sans {
+    --theme-font-family: "Source Sans Pro";
+  }
+  .font-roboto {
+    --theme-font-family: "Roboto";
+  }
+  .font-lato {
+    --theme-font-family: "Lato";
+  }
+  .font-poppins {
+    --theme-font-family: "Poppins";
+  }
+}
+ 
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f3f6f9;
+$gray-200: #eff2f7;
+$gray-300: #e9ebec;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #bfbfc7;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+$blue:       #36dafb;
+$indigo:     #516196;
+$purple:     #8772f9;
+$pink:       #f672a7;
+$red:        #db4a58;
+$orange:     #f1963b;
+$yellow:     #fdc83b;
+$green:      #1ca968;
+$teal:       #02a8b5;
+$cyan:       #9795f7;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary:       $cyan;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+// scss-docs-end theme-colors-map

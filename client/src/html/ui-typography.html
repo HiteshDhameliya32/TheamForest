@@ -1,0 +1,372 @@
+@@include('./partials/main.html')
+
+<head>
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Typography
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Typography</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row ">
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Headings</h5>
+                            <p class="card-title-desc">Add tags <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> or class <code>.h1</code> to <code>.h6</code></p>
+                            <div class="template-demo">
+                                <h1>h1. Heading</h1>
+                                <h2>h2. Heading</h2>
+                                <h3>h3. Heading</h3>
+                                <h4>h4. Heading</h4>
+                                <h5>h5. Heading</h5>
+                                <h6>h6. Heading</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Headings With Secondary Text</h5>
+                            <p class="card-title-desc">Add faded secondary text to headings</p>
+                            <div class="template-demo">
+                                <h1>
+                                    h1. Heading
+                                    <small class="text-muted">
+                                    Secondary text
+                                  </small>
+                                </h1>
+                                <h2>
+                                    h2. Heading
+                                    <small class="text-muted">
+                                    Secondary text
+                                  </small>
+                                </h2>
+                                <h3>
+                                    h3. Heading
+                                    <small class="text-muted">
+                                    Secondary text
+                                  </small>
+                                </h3>
+                                <h4>
+                                    h4. Heading
+                                    <small class="text-muted">
+                                    Secondary text
+                                  </small>
+                                </h4>
+                                <h5>
+                                    h5. Heading
+                                    <small class="text-muted">
+                                    Secondary text
+                                  </small>
+                                </h5>
+                                <h6>
+                                    h6. Heading
+                                    <small class="text-muted">
+                                    Secondary text
+                                  </small>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Display headings</h5>
+                            <p class="card-title-desc">Add class <code>.display-1</code> to <code>.display-6</code></p>
+                            <div class="template-demo">
+                                <h1 class="display-1">Display 1</h1>
+                                <h1 class="display-2">Display 2</h1>
+                                <h1 class="display-3">Display 3</h1>
+                                <h1 class="display-4">Display 4</h1>
+                                <h1 class="display-5">Display 5</h1>
+                                <h1 class="display-6">Display 6</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="row">
+                            <div class="col-md-12 mb-30">
+                                <div class="mat-card typography-block">
+                                    <h5 class="card-title">Paragraph</h5>
+                                    <p class="card-title-desc">Write text in <code>&lt;p&gt;</code> tag</p>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley not only five centuries,
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mat-card typography-block">
+                                    <h5 class="card-title">Icon Size</h5>
+                                    <p class="card-title-desc">Add class <code>.icon-lg</code>, <code>.icon-md</code>, <code>.icon-sm</code></p>
+                                    <div class="row">
+                                        <div class="col-md-4 d-flex align-items-center">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <i class="fa fa-home fs-1 text-warning" aria-hidden="true"></i>
+                                                <p class="mb-0 ms-1 ps-3">
+                                                    Icon-lg
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <i class="fa fa-home fs-2 text-success" aria-hidden="true"></i>
+                                                <p class="mb-0 ms-1 ps-3">
+                                                    Icon-md
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <i class="fa fa-home fs-6 text-danger" aria-hidden="true"></i>
+                                                <p class="mb-0 ms-1 ps-3">
+                                                    Icon-sm
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Blockquote</h5>
+                            <p class="card-title-desc">Wrap content inside<code>&lt;blockquote class="blockquote"&gt;</code></p>
+                            <blockquote class="blockquote border pb-3 pe-3 ps-4 pt-3">
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            </blockquote>
+                            <div class="card-body  border border-primary">
+                                <blockquote class="blockquote blockquote-primary">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer text-primary">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Address</h5>
+                            <p class="card-title-desc">Use <code>&lt;address&gt;</code> tag</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <address>
+                                    <p class="fw-bold m-0">Star Admin2  inc.</p>
+                                    <p class="m-0">
+                                      695 lsom Ave,
+                                    </p>
+                                    <p class="m-0">
+                                       Suite 00
+                                    </p>
+                                    <p class="m-0">
+                                      San Francisco, CA 94107
+                                    </p>
+                                  </address>
+                                </div>
+                                <div class="col-md-6">
+                                    <address class="text-primary">
+                                    <p class="fw-bold m-0 text-primary">
+                                      E-mail
+                                    </p>
+                                    <p class="mb-2 text-primary">
+                                        support@axisthemes.in
+                                    </p>
+                                    <p class="fw-bold m-0 text-primary">
+                                      Web Address
+                                    </p>
+                                    <p class="m-0 text-primary">
+                                      www.axisthemes.in
+                                    </p>
+                                  </address>
+                                </div>
+                            </div>
+                            <div class="card-body ps-0">
+                                <h5 class="card-title">Lead</h5>
+                                <p class="card-title-desc m-0 mb-1">
+                                    Use class <code>.lead</code>
+                                </p>
+                                <p class="lead">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Text colors</h5>
+                            <p class="card-title-desc">Use class <code>.text-primary</code>, <code>.text-secondary</code> etc. for text in theme colors</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-primary m-0">.text-primary</p>
+                                    <p class="text-success m-0">.text-success</p>
+                                    <p class="text-danger m-0">.text-danger</p>
+                                    <p class="text-warning m-0">.text-warning</p>
+                                    <p class="text-info m-0">.text-info</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-light bg-dark pl-1 m-0">.text-light</p>
+                                    <p class="text-secondary m-0">.text-secondary</p>
+                                    <p class="text-dark bg-secondary m-0">.text-dark</p>
+                                    <p class="text-muted m-0">.text-muted</p>
+                                    <p class="text-white bg-dark pl-1 m-0">.text-white</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title mb-3">Align Items Start</h5>
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fa fa-globe fs-2 text-info" aria-hidden="true"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="card-text ps-3">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title mb-3">Align Items Center</h5>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fa fa-globe fs-2 text-info" aria-hidden="true"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="card-text ps-3">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title mb-3">Align Items End</h5>
+                            <div class="d-flex align-items-end">
+                                <div class="flex-shrink-0">
+                                    <i class="fa fa-globe fs-2 text-info" aria-hidden="true"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="card-text ps-3">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Highlighted Text</h5>
+                            <p class="card-title-desc">Wrap the text in <code>&lt;mark&gt;</code> to highlight text</p>
+                            <p>
+                                It is a long <mark class="bg-warning text-white">established</mark> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                                normal distribution
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title mb-3">List Unordered</h5>
+                            <ul class="m-0 ps-3">
+                                <li class="mb-2">Lorem ipsum dolor sit amet</li>
+                                <li class="mb-2">Consectetur adipiscing elit</li>
+                                <li class="mb-2">Integer molestie lorem at massa</li>
+                                <li class="mb-2">Facilisis in pretium nisl aliquet</li>
+                                <li class="mb-2">Nulla volutpat aliquam velit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Bold text</h5>
+                            <p class="card-title-desc">Use class<code>.fw-bold</code></p>
+                            <p>
+                                It is a long <span class="fw-bold">established fact</span> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                distribution
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title mb-3">List Ordered</h5>
+                            <ol class="m-0 ps-3">
+                                <li class="mb-2">Lorem ipsum dolor sit amet</li>
+                                <li class="mb-2">Consectetur adipiscing elit</li>
+                                <li class="mb-2">Integer molestie lorem at massa</li>
+                                <li class="mb-2">Facilisis in pretium nisl aliquet</li>
+                                <li class="mb-2">Nulla volutpat aliquam velit></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title  text-primary"><u></u></h5>
+                            <p class="card-title-desc  mb-2">Wrap in <code>&lt;u&gt;</code> tag for underline</p>
+                            <p class="pb-4"><u>lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</u></p>
+
+                            <h5 class="card-title text-danger">Lowercase</h5>
+                            <p class="card-title-desc  mb-2">Use class <code>.text-lowercase</code></p>
+                            <p class="text-lowercase pb-4">lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                            <h5 class="card-title text-success">Uppercase</h5>
+                            <p class="card-title-desc  mb-2">Use class <code>.text-uppercase</code></p>
+                            <p class="text-uppercase m-0">lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card typography-block">
+                            <h5 class="card-title">Mute</h5>
+                            <p class="card-title-desc  mb-2">Use class <code>.text-muted</code></p>
+                            <p class="text-muted pb-4">lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                            <h5 class="card-title text-danger">Strike</h5>
+                            <p class="card-title-desc  mb-2">Wrap content in <code>&lt;del&gt;</code> tag</p>
+                            <p class="text-lowercase pb-4"><del>lorem ipsum dolor sit amet, consectetur  mod tempor incididunt ut labore et dolore  magna aliqua.</del></p>
+
+                            <h5 class="card-title text-info">Capitalized</h5>
+                            <p class="card-title-desc  mb-2">Use class <code>.text-capitalize</code></p>
+                            <p class="text-capitalize m-0">lorem ipsum dolor sit amet, consectetur mod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+    
+
+    @@include('./partials/vendor-scripts.html')
+
+
+</body>
+
+</html>

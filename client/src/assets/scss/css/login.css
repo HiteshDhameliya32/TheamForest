@@ -1,0 +1,131 @@
+.user-page {
+  background-color: var(--theme-light-header--bc);
+}
+
+.login-page {
+  height: 100vh;
+}
+.login-page .login {
+  position: relative;
+  padding-top: 30px !important;
+}
+.login-page .midle-main {
+  position: relative;
+  margin: 0 auto;
+}
+.login-page .login_container {
+  width: 88%;
+  position: relative;
+  z-index: 9;
+  padding-bottom: 30px !important;
+}
+.login-page .login_container h2 {
+  color: var(--theme-dark--text-color);
+  margin: 0 0 5px;
+}
+.login-page .login_container p {
+  color: var(--theme-dark--text-color);
+  font-size: 22px;
+  font-weight: 400;
+}
+.login-page .login_container .login_text {
+  color: var(--theme-label--text-color);
+  text-decoration: none;
+}
+.login-page .login_img_block {
+  background-color: #EAF7FF;
+}
+.login-page .login_img_inner {
+  height: 100%;
+  background-size: cover;
+  background-repeat: round;
+  margin: 0 auto;
+}
+.login-page .login_img {
+  max-width: 60%;
+  background-image: url("../../assets/img/registration.svg");
+}
+.login-page .button {
+  height: 48px;
+}
+.login-page .forgot_password_img {
+  max-width: 60%;
+  background-image: url("../../assets/img/forget-password.svg");
+}
+.login-page .login_image {
+  max-width: 60%;
+  background-image: url("../../assets/img/sign-up-image1.svg");
+}
+.login-page .reset_password {
+  max-width: 80%;
+  background-image: url("../../assets/img/reset-password.svg");
+}
+
+.logo_details {
+  padding-left: 10px;
+}
+.logo_details h1 {
+  font-size: 29px;
+  color: var(--theme-logo-color);
+  font-weight: bold;
+}
+.logo_details p {
+  font-size: 10px !important;
+  color: var(--theme-dark--text-color);
+}
+
+.auth-wrapper .auth-inner {
+  width: 100%;
+  max-width: 400px;
+}
+.auth-wrapper .auth-inner:before {
+  width: 244px;
+  height: 243px;
+  content: " ";
+  position: absolute;
+  top: -54px;
+  left: -46px;
+  z-index: -1;
+  background-image: url("../../img/auth-2.png");
+}
+.auth-wrapper .auth-inner:after {
+  width: 272px;
+  height: 272px;
+  content: " ";
+  position: absolute;
+  bottom: -55px;
+  right: -75px;
+  z-index: -1;
+  background-image: url("../../img/auth-1.png");
+}
+.auth-wrapper .auth-inner .mat-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+.auth-wrapper .auth-inner .mat-card .logo_details h1 {
+  color: #128b43 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .login_img_block {
+    position: absolute;
+    height: 100% !important;
+  }
+  .login_img_block .login_image,
+.login_img,
+.login_img_block .forgot_password_img,
+.login_img_block .reset_password {
+    display: none;
+  }
+  .scheme-dark .login_img_block {
+    background-color: var(--theme-light-header--bc);
+  }
+  .choose-package {
+    font-size: 16px !important;
+  }
+  .auth-inner::after {
+    display: none;
+  }
+  .auth-inner::before {
+    display: none;
+  }
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,685 @@
+body {
+    /**
+      * Start: Sidebar BG css
+      */
+    &.sidebar-bg-1 {
+      .sidebar-background {
+        background-image: url(../img/sidebar-img1.png);
+      }
+    }
+    &.sidebar-bg-2 {
+      .sidebar-background {
+        background-image: url(../img/sidebar-img2.png);
+      }
+    }
+    &.sidebar-bg-3 {
+      .sidebar-background {
+        background-image: url(../img/sidebar-img3.png);
+      }
+    }
+    &.sidebar-bg-4 {
+      .sidebar-background {
+        background-image: url(../img/sidebar-img4.png);
+      }
+    }
+    &.sidebar-bg-default {
+      .sidebar-background {
+        background-image: none;
+      }
+    }
+    /**
+      * End: Sidebar BG css
+      */
+    /**
+      * Start: Light Theme css
+      */
+    &.scheme-light {
+      .visitor_chart_inner {
+        .button.btn-default {
+          color: var(--theme-light--text-color) !important;
+          &:hover,
+          &:focus {
+            color: #212529 !important;
+          }
+        }
+      }
+      .select2-search__field {
+        outline: none !important;
+      }
+    }
+    /**
+      * End: Light Theme css
+      */
+    /**
+      * Start: Dark Theme css
+      */
+    &.scheme-dark {
+      .select2-search__field {
+        outline: none !important;
+      }
+      .form-check-input {
+        background-color: var(--theme-input--bc) !important;
+        border-color: #ffffff40 !important;
+      }
+    }
+    /**
+      * End: Dark Theme css
+      */
+    /**
+      * Start: Empty Layout css
+      */
+    &.layout-empty {
+      .sidebar_section,
+      .header {
+        display: none;
+      }
+      .right-side {
+        margin: 0 !important;
+        min-height: 100vh !important;
+      }
+    }
+    /**
+      * End: Empty Layout css
+      */
+    /**
+      * Start: Classic Layout css
+      */
+    &.layout-classic {
+      .sidebar_section .user-panel {
+        display: none;
+      }
+    }
+    /**
+      * End: Classic Layout css
+      */
+    /**
+      * Start: Compact Layout css
+      */
+    &.layout-compact {
+      .sidebar_section .user-panel .info,
+      .logo_details {
+        display: none;
+      }
+      .header .navbar_block,
+      .row-offcanvas-left .right-side {
+        margin-left: 136px;
+      }
+      .row-offcanvas-left .sidebar_section {
+        width: 136px;
+        .sidebar .sidebar-menu li a {
+          flex-direction: column;
+          width: 106px;
+          span {
+            display: block !important;
+            .icon-tags {
+              margin: 0 auto !important;
+              text-align: center;
+            }
+            .title-tag {
+              display: block !important;
+              text-align: center;
+              font-size: 14px;
+              width: auto;
+            }
+          }
+          .pull-right {
+            display: none;
+          }
+        }
+        .sidebar .sidebar-menu {
+          li .treeview-menu {
+            display: none !important;
+            li {
+              a {
+                &:hover {
+                  background-color: var(--theme-sidebar-hover-active--color) !important;
+                }
+              }
+            }
+          }
+        .treeview-menu.active {
+          li.active {
+            a.active {
+              background-color: var(--theme-sidebar-hover-active--color) !important;
+            }
+          }
+        }
+        }
+        .sidebar .sidebar-menu li.active .treeview-menu {
+          position: fixed;
+          display: block !important;
+          width: 230px;
+          height: 100% !important;
+          top: 0;
+          left: 137px;
+          padding: 24px 10px !important;
+          margin: 0 !important;
+          background-color: var(--theme-dark-rgb);
+          z-index: 9991;
+          overflow: visible !important;
+          animation-name: moveInleft;
+          animation-duration: 0.3s;
+          a {
+            margin: 0 !important;
+            margin-bottom: 5px !important;
+            padding: 10px !important;
+            width: 100%;
+            .icon-tags {
+              display: flex !important;
+            }
+            .fa {
+              display: none;
+            }
+          }
+        }
+        .treeview {
+          .menu-drawer-overlay {
+            display: none;
+            z-index: 999;
+          }
+          &.active {
+            .menu-drawer-overlay {
+              display: block !important;
+              left: 136px !important;
+            }
+          }
+        }
+        &.collapse-left {
+          display: none !important;
+        }
+      }
+      .header.collapse-left .navbar_block,
+      .row-offcanvas-left .right-side.strech {
+        margin-left: 0px !important;
+      }
+      &.close_treeview {
+        .treeview-menu {
+          display: none !important;
+        }
+        .row-offcanvas-left
+          .sidebar_section
+          .treeview.active
+          .menu-drawer-overlay {
+          display: none !important;
+        }
+      }
+    }
+    /**
+      * End: Compact Layout css
+      */
+    /**
+      * Start: Dense Layout css
+      */
+    &.layout-dense {
+      .row-offcanvas-left {
+        .sidebar_section {
+          width: 60px;
+          .logo_div img {
+            max-width: 50px;
+          }
+          .sidebar-menu {
+            li {
+              margin: 0 5px 5px;
+              a {
+                width: 50px;
+              }
+            }
+            .icon-tags {
+              margin: auto !important;
+            }
+          }
+          .logo_details,
+          .user-panel,
+          .title-tag,
+          .fa-angle-up,
+          .fa-angle-down,
+          .treeview-menu,
+          .close_sidebar {
+            display: none !important;
+          }
+          &:hover {
+            width: 250px;
+            .logo_details,
+            .title-tag,
+            .fa-angle-up,
+            .fa-angle-down {
+              display: block !important;
+            }
+            .sidebar-menu {
+              li {
+                margin: 0 15px 5px;
+                a {
+                  width: 220px;
+                }
+              }
+              .icon-tags {
+                margin: 0 10px 0 0 !important;
+              }
+              .treeview.active .treeview-menu {
+                display: block !important;
+              }
+            }
+          }
+          &.collapse-left {
+            display: none;
+          }
+        }
+        .right-side {
+          margin-left: 60px;
+          &.strech {
+            margin-left: 0px !important;
+          }
+        }
+      }
+      header .navbar_block,
+      .right-side {
+        margin-left: 60px;
+      }
+      .header.collapse-left .navbar_block,
+      .row-offcanvas-left .right-side.strech {
+        margin-left: 0px !important;
+      }
+    }
+    /**
+    * End: Dense Layout css
+    */
+    /**
+    * Start: Futuristic Layout css
+    */
+    &.layout-futuristic {
+      .user-panel {
+        display: none;
+      }
+      .user_panel_div {
+        display: block !important;
+        width: 250px;
+        padding: 20px 15px;
+        border-top: 1px solid var(--theme-info-number-text-color);
+        background-color: var(--theme-dark-rgb);
+        box-shadow: var(--theme-shadow);
+        .user_panel_img {
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          .online_indication {
+            width: 8px;
+            height: 8px;
+            background-color: var(--theme-online-color);
+          }
+        }
+        .user_info_div {
+          width: 164px;
+          p a {
+            color: var(--theme-info-text-color);
+          }
+          span {
+            color: var(--theme-info-number-text-color);
+          }
+        }
+      }
+      .sidebar_section {
+        max-height: calc(100vh - 88px) !important;
+        &.collapse-left {
+          display: none;
+        }
+      }
+      .right-side.strech,
+      header.collapse-left .navbar_block {
+        margin-left: 0px !important;
+      }
+    }
+    /**
+      * End: Futuristic Layout css
+      */
+    /**
+      * Start: Thin Layout css
+      */
+    &.layout-thin {
+      .row-offcanvas-left {
+        .sidebar_section {
+          width: 81px;
+          .logo_div img {
+            max-width: 50px;
+          }
+          .sidebar .sidebar-menu li {
+            &.active a {
+              background-color: var(--theme-sidebar-hover-active--color);
+            }
+            a:hover {
+              background-color: var(--theme-sidebar-hover-active--color);
+            }
+            &.active .treeview-menu {
+              position: fixed;
+              display: block !important;
+              width: 230px;
+              height: 100% !important;
+              top: 0;
+              left: 82px;
+              padding: 24px 10px !important;
+              margin: 0 !important;
+              background-color: var(--theme-dark-rgb) !important;
+              z-index: 9991;
+              overflow: visible !important;
+              animation-name: moveInleft;
+              animation-duration: 0.3s;
+              a {
+                margin: 0 !important;
+                margin-bottom: 5px !important;
+                padding: 10px !important;
+                width: 100%;
+                &:hover {
+                  background-color: var(--theme-sidebar-hover-active--color) !important;
+                  color: var(--theme-light--text-color) !important;
+                }
+                .fa {
+                  display: none;
+                }
+              }
+              li.active a {
+                background-color: var(--theme-sidebar-hover-active--color) !important;
+                color: var(--theme-light--text-color) !important;
+              }
+            }
+          }
+          .sidebar-menu {
+            li {
+              margin: 0 15px 5px;
+              a {
+                width: 50px;
+              }
+            }
+            .icon-tags {
+              margin: auto !important;
+            }
+          }
+          .logo_details,
+          .user-panel,
+          .title-tag,
+          .fa-angle-up,
+          .fa-angle-down,
+          .treeview-menu,
+          .close_sidebar {
+            display: none !important;
+          }
+          &.collapse-left {
+            display: none;
+          }
+        }
+        .right-side {
+          margin-left: 78px;
+          &.strech {
+            margin-left: 0px !important;
+          }
+        }
+        .treeview {
+          .menu-drawer-overlay {
+            display: none;
+            z-index: 999;
+          }
+          &.active {
+            .menu-drawer-overlay {
+              display: block !important;
+              left: 136px !important;
+            }
+          }
+        }
+        .treeview-menu.active {
+          li.active {
+            a.active {
+              background-color: var(--theme-sidebar-hover-active--color) !important;
+            }
+          }
+        }
+      }
+      header .navbar_block,
+      .right-side {
+        margin-left: 78px;
+      }
+      .header.collapse-left .navbar_block,
+      .row-offcanvas-left .right-side.strech {
+        margin-left: 0px !important;
+      }
+    }
+    /**
+      * End: Thin Layout css
+      */
+    /**
+      * Start: Simple Table css
+      */
+    &.table-simple {
+      th.header-cell:first-child,
+      td.cell:first-child {
+        padding-left: 24px !important;
+      }
+      th {
+        padding: 15px 10px;
+        font-weight: 400;
+      }
+      td {
+        font-size: 15px;
+      }
+      table thead tr {
+        border-top: 0;
+      }
+      .table tbody tr {
+        transition: background-color 150ms ease-out;
+      }
+    }
+    /**
+    * End: Simple Table css
+    */
+    /**
+      * Start: Fancy Table css
+      */
+    &.table-fancy {
+      .border_style {
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead {
+          border-style: unset;
+        }
+        .table-hover > tbody > tr:hover {
+          --bs-table-accent-bg: none !important;
+        }
+      }
+      th.header-cell:first-child,
+      td.cell:first-child {
+        padding-left: 24px !important;
+      }
+      .table tbody tr {
+        transition: background-color 150ms ease-out;
+      }
+      th {
+        font-weight: 400;
+      }
+      .general_table {
+        .table-responsive {
+          border-radius: 6px;
+        }
+        tbody > tr:nth-child(odd) {
+          background-color: var(--theme-light--bc);
+        }
+        tbody > tr:nth-child(even) {
+          background-color: var(--theme-even--tr-bc);
+        }
+        .table > thead tr {
+          border: none !important;
+          background-color: var(--theme-table-header--bc);
+          height: 56px;
+          vertical-align: middle;
+        }
+      }
+      .expence-income_table tbody tr {
+        border: none !important;
+      }
+    }
+    /**
+    * End: Fancy Table css
+    */
+    /**
+      * Start: Simple-1 Button css
+      */
+      &.buttons-simple-1 {
+        .button,
+        .button-sm {
+          --theme-button-small-radius: 0;
+          border-radius: var(--theme-button-small-radius);
+        }
+      }
+    /**
+      * Start: Simple-2 Button css
+      */
+    &.buttons-simple-2 {
+      .button,
+      .button-sm {
+        border-radius: var(--theme-button-small-radius);
+      }
+    }
+    /**
+      * End: Simple-2 Button css
+      */
+    /**
+      * Start: Simple-3 Button css
+      */
+    &.buttons-simple-3 {
+      .button,
+      .button-sm {
+        border-radius: var(--theme-button-full-radius);
+      }
+    }
+    /**
+      * End: Simple-3 Button css
+      */
+    /**
+      * Start: Fancy Radius Button css
+      */
+    &.buttons-radius {
+      .button,
+      .button-sm {
+        box-shadow: var(--theme-button-shadow);
+        border-radius: var(--theme-button-small-radius);
+      }
+    }
+    /**
+      * End: Fancy Radius Button css
+      */
+    /**
+      * Start: Rectangle Button css
+      */
+    &.buttons-rectangle {
+      .button,
+      .button-sm {
+        --theme-button-small-radius: 0;
+          border-radius: var(--theme-button-small-radius);
+        box-shadow: var(--theme-button-shadow);
+      }
+    }
+    /**
+      * End: Rectangle Button css
+      */
+    /**
+      * Start: Round Button css
+      */
+    &.buttons-round {
+      .button,
+      .button-sm {
+        border-radius: var(--theme-button-full-radius);
+        box-shadow: var(--theme-button-shadow);
+      }
+    }
+    /**
+      * End: Round Button css
+      */
+    /**
+      * Start: Input setting: withbackgroud css
+      */
+    &.input-background {
+      .form-control,
+      .select2-container--default .select2-selection--single,
+      .input-group-text,
+      .select2-container--default
+        .select2-selection--single
+        .select2-selection__rendered {
+        background-color: var(--theme-input--bc) !important;
+        color: var(--theme-label--text-color);
+        &:focus {
+          color: var(--theme-label--text-color);
+        }
+      }
+    }
+    /**
+      * End: Input setting: withbackgroud css
+      */
+    /**
+      * Start: Customize Fontawesome
+      */
+    .fa {
+      &.fa-square-view-o {
+        position: relative;
+        &:before {
+          content: "\f096";
+        }
+        &:after {
+          content: "\f111";
+          position: absolute;
+          right: 7.5px;
+          bottom: 6px;
+          font-size: 9px;
+        }
+      }
+    }
+    /**
+      * End: Customize Fontawesome
+      */
+    /**
+      * Start: Common css
+      */
+    
+      p {
+        color: var(--theme-light--text-color);
+      }
+    a {
+      color: var(--theme-label--text-color);
+      text-decoration: none;
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+        text-decoration: none !important;
+        color: var(--theme-primary-rgb);
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    .flex-col {
+      flex-direction: column;
+    }
+    .margin-right10 {
+      margin-right: 10px !important;
+    }
+    .mb-30 {
+      margin-bottom: 1.5rem;
+    }
+    .pb-30 {
+      padding-bottom: 30px;
+    }
+    &.modal-open .row-offcanvas-left .right-side {
+      overflow: visible !important;
+    }
+    /**
+      * End: Common css
+      */
+  }
+
+  [dir="rtl"] {
+    .setting_layout {
+      .setting_layout_icon {
+        left: 0;
+        right: auto;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }

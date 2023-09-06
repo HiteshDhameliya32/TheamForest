@@ -1,0 +1,342 @@
+<header class="header w-100 position-fixed top-0">
+    <nav class="navbar navbar-static-top navbar_block animation">
+        <div class="d-flex align-items-center">
+            <div class="navbar_header_inner">
+                <a href="#" class="navbar-btn sidebar-toggle d-flex align-items-center justify-content-center" data-toggle="offcanvas" role="button">
+                    <span class="icon-bar d-block"></span>
+                </a>
+            </div>
+            <div class="search-bar p-0 d-none d-md-block ms-2">
+                <div id="search" class="menu-search mb-0">
+                    <form role="search" method="get" id="searchform" class="searchform position-relative">
+                        <div>
+                            <input type="text" class="form-control border rounded" name="s" id="s" placeholder="Search...">
+                            <input type="submit" id="searchsubmit" value="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav d-flex align-items-center">
+                <li class="d-none d-sm-block">
+                    <a href="#" class="btn-topbar icon_header expand-screen" id="goFS" onclick="toggleFullScreen()">
+                        <i class="fa fa-expand"></i>
+                        <i class="fa fa-compress"></i>
+                    </a>
+                </li>
+                <li>
+                  <div class="light-dark-btn">
+                    <div class="mode-switch">
+                        <input type="checkbox" class="checkbox not-bootstrap" data-darkmode="scheme-dark" data-appconfigname="scheme" 
+                        data-lightmode="scheme-light" id="modeSwitchChk">
+                        <label for="modeSwitchChk" class="label">
+                          <i class="fa fa-moon-o me-1"></i>
+                          <i class="fa fa-sun-o"></i>
+                          <span class="ball"></span>
+                        </label>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                    <div class="dropdown topbar-head-dropdown ms-1 header-item">
+                        <a href="#" class="btn btn-topbar rounded-circle m-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 mx-auto">
+                                    <path d="M5 18H19V11.0314C19 7.14806 15.866 4 12 4C8.13401 4 5 7.14806 5 11.0314V18ZM12 2C16.9706 2 21 6.04348 21 11.0314V20H3V11.0314C3 6.04348 7.02944 2 12 2ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z" fill="currentColor"></path>
+                                </svg>
+                            <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger"><span class="visually-hidden">unread messages</span></span>
+                        </a>
+                        <div class="notification-menu dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" data-popper-placement="bottom-end"
+                        style="position: absolute; inset: 0px 0px auto auto; margin: 0px;">
+                            <div class="dropdown-head bg-pattern">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0 fs-16 fw-semibold"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto dropdown-tabs">
+                                            <span class="badge btn-soft-primary fs-13"> 3 New</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="pt-2">
+                                    <ul class="nav nav-tabs nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" 
+                                          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" 
+                                          aria-selected="true">Home</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" 
+                                          data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" 
+                                          aria-selected="false">Profile</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                           data-bs-target="#pills-contact" type="button" role="tab" 
+                                           aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                            <div data-simplebar="init" style="max-height: 300px;">
+                                                <div class="simplebar-wrapper" style="margin: 0px -8px 0px 0px;">
+                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                        <div class="simplebar-height-auto-observer"></div>
+                                                    </div>
+                                                    <div class="simplebar-mask">
+                                                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                                            <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden scroll;">
+                                                                <div class="simplebar-content">
+                                                                    <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                                        <div class="d-flex">
+                                                                            <div class="flex-shrink-0 avatar-xs me-3">
+                                                                                <span class="avatar-title btn-soft-info rounded-circle fs-16">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="flex-1">
+                                                                                <h6 class="mt-0 mb-2 lh-base fs-13"> Lorem <b>ipsum</b> dolor sit amet
+                                                                                    consectetur <span class="text-primary">adipisicing</span> elit.
+                                                                                </h6>
+                                                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i class="mdi mdi-clock-outline"></i> Just 15 sec ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div class="form-check notification-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check01">
+                                                                                    <label class="form-check-label" for="all-notification-check01"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+        
+                                                                    <div class="text-reset notification-item d-block dropdown-item position-relative active">
+                                                                        <div class="d-flex">
+                                                                            <div class="flex-shrink-0">
+                                                                                <img src="assets/img/user/avatar-10.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                                            </div>
+                                                                            <div class="flex-1">
+                                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Tavel Uerni</h6>
+                                                                                <div class="fs-13">
+                                                                                    <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.  🔔.</p>
+                                                                                </div>
+                                                                                <p class="mb-0 fs-11 fw-medium text-uppercase">
+                                                                                    <span><i class="mdi mdi-clock-outline"></i> 50 min ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div class="form-check notification-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check02" checked="">
+                                                                                    <label class="form-check-label" for="all-notification-check02"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                
+                                                                    <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                                        <div class="d-flex">
+                                                                            <img src="assets/img/user/avatar-11.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">aurin Aibjon</h6>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">We talked about a project on Mail.</p>
+                                                                                </div>
+                                                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div class="form-check notification-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check04">
+                                                                                    <label class="form-check-label" for="all-notification-check04"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                
+                                                                    <div class="my-3 text-center">
+                                                                        <button type="button" class="btn btn-primary waves-effect waves-light">View
+                                                                            All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="simplebar-placeholder" style="width: auto; height: 510px;"></div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                                    <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                                    <div class="simplebar-scrollbar" style="height: 176px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" 
+                                            aria-labelledby="pills-profile-tab" tabindex="0">
+                                            <div data-simplebar="init" style="max-height: 300px;">
+                                                <div class="simplebar-wrapper">
+                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                        <div class="simplebar-height-auto-observer"></div>
+                                                    </div>
+                                                    <div class="simplebar-mask">
+                                                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                                            <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden scroll;">
+                                                                <div class="simplebar-content">
+                                                                    <div class="text-reset notification-item d-block dropdown-item">
+                                                                        <div class="d-flex">
+                                                                            <img src="assets/img/user/avatar-1.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Josem Amato</h6>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">We talked about a project on Mail 🔔</p>
+                                                                                </div>
+                                                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i class="mdi mdi-clock-outline"></i> 15 min ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div class="form-check notification-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check01">
+                                                                                    <label class="form-check-label" for="messages-notification-check01"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-reset notification-item d-block dropdown-item">
+                                                                        <div class="d-flex">
+                                                                            <img src="assets/img/user/avatar-4.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Tegli Banty</h6>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">Answered to your comment on the cash flow forecast's
+                                                                                        graph .</p>
+                                                                                </div>
+                                                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div class="form-check notification-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check02">
+                                                                                    <label class="form-check-label" for="messages-notification-check02"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-reset notification-item d-block dropdown-item">
+                                                                        <div class="d-flex">
+                                                                            <img src="assets/img/user/avatar-5.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Kedar Unde</h6>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">Mentionned you in his comment on 📃 invoice #8502.
+                                                                                    </p>
+                                                                                </div>
+                                                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i class="mdi mdi-clock-outline"></i> 5 hrs ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div class="form-check notification-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check03">
+                                                                                    <label class="form-check-label" for="messages-notification-check03"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-reset notification-item d-block dropdown-item">
+                                                                        <div class="d-flex">
+                                                                            <img src="assets/img/user/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                                            <div class="flex-1">
+                                                                                <h6 class="mt-0 mb-1 fs-13 fw-semibold">Ruin Gabo</h6>
+                                                                                <div class="fs-13 text-muted">
+                                                                                    <p class="mb-1">We talked about a project on Mail.</p>
+                                                                                </div>
+                                                                                <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                                                    <span><i class="mdi mdi-clock-outline"></i> 5 days ago</span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="px-2 fs-15">
+                                                                                <div class="form-check notification-check">
+                                                                                    <input class="form-check-input" type="checkbox" value="" id="messages-notification-check04">
+                                                                                    <label class="form-check-label" for="messages-notification-check04"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="my-3 text-center">
+                                                                        <button type="button" class="btn btn-primary waves-effect waves-light">View
+                                                                            All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="simplebar-placeholder" style="width: auto; height: 522px;"></div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                                    <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                                                </div>
+                                                <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                                    <div class="simplebar-scrollbar" style="height: 172px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" 
+                                            aria-labelledby="pills-contact-tab" tabindex="0">
+                                            <div class="w-25 w-sm-50 pt-3 mx-auto">
+                                                <img src="assets/img/bell-ring-dark.png" class="img-fluid bell-dark" alt="user-pic">
+                                                <img src="assets/img/bell-ring-light.png" class="img-fluid bell-light" alt="user-pic">
+                                            </div>
+                                            <div class="text-center pb-5 mt-2">
+                                                <h6 class="fs-18 fw-semibold lh-base">Hey! You have no any notifications </h6>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle icon_header d-flex align-items-center" 
+                    data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                        <div class="image">
+                            <img src="assets/img/user/avatar-1.jpg" class="img-circle1 rounded-circle" alt="">
+                        </div>
+                        <span> Stevens L.</span>
+                    </a>
+                    <ul class="dropdown-menu rounded-3 moveInRight" style="transform: translate(0px, 60px);">
+                        <li class="user-header d-flex flex-col align-items-center bg-danger">
+                            <div class="user_img">
+                                <img src="assets/img/user/avatar-1.jpg" class="img-circle1 rounded-3" alt="">
+                            </div>
+                            <p class="text-center">
+                                Teresa D. Lankford
+                                <small>Last login 28<sup>th</sup> April, 2022</small>
+                            </p>
+                        </li>
+                        <li>
+                            <ul class="menu_body d-flex p-0 list-unstyled">
+                                <li class="align-items-center border-end border-top">
+                                    <a href="profile.html" class="w-100 d-flex text-center my-1" style="line-height: 1;">
+                                        <span class="icon-tags"><i class="fa fa-user">&nbsp;</i></span>Profile
+                                    </a> 
+                                </li>
+                                <li class="align-items-center border-top">
+                                    <a href="login-1.html" class="w-100 d-flex text-center my-1" style="line-height: 1;">
+                                        <span class="icon-tags"><i class="fa fa-sign-out">&nbsp;</i></span>Sign out
+                                    </a> 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

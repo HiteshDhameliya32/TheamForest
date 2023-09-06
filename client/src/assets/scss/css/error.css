@@ -1,0 +1,69 @@
+body {
+  background-color: #ffffff;
+  overflow: hidden !important;
+}
+
+#notfound {
+  height: 72vh;
+}
+#notfound .notfound {
+  max-width: 535px;
+  line-height: 1.4;
+}
+#notfound .notfound .notfound-error {
+  height: 285px;
+  margin: 0 auto 5px;
+  z-index: -1;
+}
+#notfound .notfound .notfound-error h1 {
+  font-family: montserrat, sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  color: var(--theme-dark-text-rgb);
+  top: 125px !important;
+  margin-top: 79px !important;
+}
+#notfound .notfound .notfound-error h2 {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--theme-dark-text-rgb);
+  padding: 15px 5px;
+}
+#notfound .notfound img {
+  width: 100vh;
+  height: auto;
+}
+#notfound .notfound p {
+  color: var(--theme-secondary-rgb);
+}
+
+.error-logo {
+  text-align: right;
+  width: 100%;
+  display: block;
+}
+.error-logo i {
+  position: absolute;
+  right: 38px;
+  top: 26px;
+  font-size: 28px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 579px) {
+  #notfound .notfound {
+    max-width: 300px !important;
+  }
+  #notfound .notfound .notfound-error {
+    height: 180px !important;
+  }
+  #notfound .notfound .notfound-error h1 {
+    font-size: 30px !important;
+    top: 45px !important;
+    margin-top: 52px !important;
+  }
+  #notfound .notfound .notfound-error h2 {
+    font-size: 20px !important;
+  }
+}/*# sourceMappingURL=error.css.map */

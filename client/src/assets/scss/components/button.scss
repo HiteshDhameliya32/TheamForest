@@ -1,0 +1,367 @@
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+      background-color: ($value) !important;
+      border-color: ($value) !important;
+      color: ($white) !important;
+      &:hover {
+        background-color: rgba($value, 0.9) !important;
+        border-color: rgba($value, 0.9) !important;
+      }
+    }
+  } 
+  
+.btn-light {
+    color: $dark !important;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba($primary, .25);
+    color: $white;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+    pointer-events: none;
+    opacity: .65
+}
+
+@each $color, $value in $theme-colors {
+    .btn-inverse-#{$color} {
+      background-color: rgba(($value), 0.2) !important;
+      color: ($value) !important;
+      &:hover,
+      &:focus {
+        background-color: ($value) !important;
+        color: ($white) !important;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(($value), 0.5);
+        border-color: ($value);
+      }
+    }
+  } 
+
+.btn-inverse-dark {
+  color: var(--theme-dark-text-rgb) !important;
+}
+
+.btn-inverse-primary:not(.btn-inverse-light) {
+    color: $primary;
+}
+
+.btn-inverse-light {
+  color: $dark !important;
+  &:hover {
+    color: $dark !important;
+  }
+}
+
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    border: 1px solid ($value) !important;
+    color: ($value) !important;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: ($value) !important;
+      box-shadow: 0 8px 25px -8px rgba(($value), 1) !important;
+      color: ($white) !important;
+    }
+    &:focus {
+      border-color: ($value) !important;
+      background-color: ($value) !important;
+      box-shadow: 0 8px 25px -8px rgba(($value), 1) !important;
+    }
+  }
+} 
+
+.btn-outline-dark {
+  color: var(--theme-dark-text-rgb) !important;
+}
+
+.btn-outline-light {
+  &:hover,
+  &:focus {
+    color: #000 !important;
+  }
+}
+
+.btn-outline-light {
+  color: var(--theme-dark-text-rgb) !important;
+}
+
+.alert-light-primary {
+    background-color: #deebff;
+    border-color: #deebff !important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: white;
+    background-color: $primary;
+    border-color: $primary
+}
+
+.alert-light-secondary {
+    background-color: #ebebeb;
+    border-color: #ebebeb !important;
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+    color: white;
+    background-color: $gray-600;
+    border-color: $gray-600
+}
+
+
+.btn-inverse-success:not(.btn-inverse-light) {
+    color: $success;
+}
+
+.alert-light-success {
+    background-color: #dfede7;
+    border-color: #dfede7 !important;
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+    color: white;
+    background-color: $success;
+    border-color: $success
+}
+
+.btn-inverse-info:not(.btn-inverse-light) {
+    color: $info;
+}
+
+.alert-light-info {
+    background-color: #e4faff;
+    border-color: #e4faff !important;
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+    color: #000;
+    background-color: $info;
+    border-color: $info
+}
+
+.btn-inverse-warning:not(.btn-inverse-light) {
+    color: $warning;
+}
+
+.alert-light-warning {
+    background-color: #fff9e5;
+    border-color: #fff9e5 !important;
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled {
+    color: #000;
+    background-color: $warning;
+    border-color: $warning
+}
+
+.btn-inverse-danger:not(.btn-inverse-light) {
+    color: $danger;
+}
+
+.alert-light-danger {
+    background-color: #ffedef;
+    border-color: #ffedef !important;
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled {
+    color: white;
+    background-color: $danger;
+    border-color: $danger
+}
+
+.btn-light {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa
+}
+
+.btn-light.disabled,
+.btn-light:disabled {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa
+}
+
+.btn-inverse-dark:not(.btn-inverse-light) {
+    color: $dark;
+}
+
+.btn-dark.disabled,
+.btn-dark:disabled {
+    color: white;
+    background-color: $dark;
+    border-color: $dark
+}
+
+.btn-link {
+    font-weight: 400;
+    color: $primary;
+    text-decoration: underline
+}
+
+.btn-link:hover {
+    color: rgba($primary, 0.9)
+}
+
+.btn-link.disabled,
+.btn-link:disabled {
+    color: $gray-600
+}
+
+.template-demo {
+    .btn-icon {
+        border-radius: 50%;
+        width: 40px !important;
+        height: 40px !important;
+        padding: 0 !important;
+    }
+    .btn-icon-prepend {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 2rem;
+        }
+        span {
+            line-height: 1;
+        }
+    }
+}
+
+/**
+ * Start: Button css
+ */
+ .button {
+    min-width: 100px;
+  }
+  
+  .button.btn-default {
+    color: var(--theme-default-button-rgb) !important;
+    background-color: transparent;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    min-width: auto;
+  }
+  
+  .button.btn-default:focus {
+    background-color: var(--theme-default-button--hover-rgb) !important;
+  }
+  
+  .button.btn-default:hover {
+    background-color: var(--theme-default-button--hover-rgb) !important;
+  }
+  
+  .button.btn-danger {
+    color: var(--theme-light--button-text) !important;
+    background-color: $danger;
+    box-shadow: 0 4px 8px rgba($danger, 0.5) !important;
+    min-width: auto;
+  }
+  
+  .button-success {
+    background-color: $success;
+    border-color: $success !important;
+    box-shadow: 0 4px 8px rgba($success, 0.5) !important;
+  }
+  
+  .button-success:hover {
+    background-color: $success !important;
+  }
+  
+  .button-success:focus {
+    background-color: $success !important;
+  }
+  
+  .button.btn-default,
+  .button.btn-danger,
+  .button {
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 40px;
+    padding: 10px 15px;
+    border: 0;
+    outline: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .button.ripper input {
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
+  
+  .buttons-rectangle .ripper,
+  .buttons-round .ripper,
+  .buttons-radius .ripper {
+    z-index: 1;
+  }
+  
+  .buttons-rectangle .ripper:after,
+  .buttons-round .ripper:after,
+  .buttons-radius .ripper:after {
+    background: white;
+    content: "";
+    height: 130px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  
+  .buttons-rectangle .ripper:hover:after,
+  .buttons-round .ripper:hover:after,
+  .buttons-radius .ripper:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(90deg, $primary 36%, rgba($primary, 0.5) 100%) !important;
+  }
+  
+  .bg-gradient-success {
+    background: linear-gradient(90deg, $success 36%, rgba($success, 0.5) 100%) !important;
+  }
+  
+  .bg-gradient-danger {
+    background: linear-gradient(90deg, $danger 36%, rgba($danger, 0.5) 100%) !important;
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(90deg, $secondary, rgba($secondary, 0.5) 100%) !important;
+  }
+  
+  .bg-gradient-warning {
+    background: linear-gradient(90deg, $warning, rgba($warning, 0.5) 100%) !important;
+  }
+  
+  .bg-gradient-info {
+    background: linear-gradient(90deg, $info, rgba($info, 0.5) 100%) !important;
+  }
+
+  /**
+   * End: Button css
+   */

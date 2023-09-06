@@ -1,0 +1,162 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+    
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+                    
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Echart
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Echart</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb breadcrumb-block" id="contentSection">
+                <div class="row">
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Line Chart</h5>
+                                <div id="basic-line-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Line Chart</h5>
+                                <div id="basic-area-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Stacked Line Chart</h5>
+                                <div id="stacked-line-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Stacked Area Chart</h5>
+                                <div id="stacked-area-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Gradiant Line Chart</h5>
+                                <div id="gradiant-line-chart" class="mt-3" style="height: 700px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Bar Chart</h5>
+                                <div id="basic-bar-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Stacked Bar Chart</h5>
+                                <div id="stacked-bar-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Pie chart</h5>
+                                <div id="basic-pie-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Doughnut Chart</h5>
+                                <div id="basic-doughnut-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Customized Chart</h5>
+                                <div id="customized-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Nested Pie Chart</h5>
+                                <div id="nested-pie-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Pole Chart</h5>
+                                <div id="pole-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-6 mb-30">
+                        <div class="mat-card p-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Nightingale Rose Chart</h5>
+                                <div id="nightingale-rose-chart" class="mt-3" style="height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+
+    @@include('./partials/vendor-scripts.html')
+    
+
+    <script  src="assets/js/plugins/echarts-en.min.js"></script>
+    <script  src="assets/js/main/echart.js"></script>
+</body>
+
+</html>

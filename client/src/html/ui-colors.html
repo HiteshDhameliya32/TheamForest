@@ -1,0 +1,148 @@
+@@include('./partials/main.html')
+
+<head>
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Colors
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Colors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-xxl-6 col-12 mb-30">
+                        <div class="mat-card" style="height: auto;">
+                            <h5 class="card-title">Default Colors</h5>
+                            <div role="alert" aria-live="polite" aria-atomic="true" class="alert alert-primary mt-3">
+                                <div class="alert-body"> For more color classes options please read the <a href="/documentation" rel="noopener" target="_blank" class="alert-link"> documentation. </a></div>
+                            </div>
+                            <p class="card-title-desc mb-2"> We have a series of colors that are used by default. They include: </p>
+                            <ul class="colors-list list-unstyled mb-0">
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">Primary</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">Secondary</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">Success</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">Warning</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">Danger</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">Info</span></li>
+                            </ul>
+                            <p class="card-title-desc"> For each color, we think has its functionality in the application as alerts of errors <b>(danger)</b>, warnings to the user <b>(warning)</b>, communications of approval <b>(success)</b>, or main color of the application <b>(primary)</b>.
+                            </p>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <a data-clone="bg-primary" href="javascript:void(0);" class="text-center bg-primary rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> primary</span></a>
+                                <a data-clone="bg-secondary" href="javascript:void(0);" class="text-center bg-secondary rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> secondary</span></a>
+                                <a data-clone="bg-success" href="javascript:void(0);" class="text-center bg-success rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> success</span></a>
+                                <a data-clone="bg-warning" href="javascript:void(0);" class="text-center bg-warning rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> warning</span></a>
+                                <a data-clone="bg-danger" href="javascript:void(0);" class="text-center bg-danger rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> danger</span></a>
+                                <a data-clone="bg-info" href="javascript:void(0);" class="text-center bg-info rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mt-3 mb-3 ms-1 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> info</span></a>
+                            </div>
+                            <h6 class="mt-1">Lighten Variant </h6>
+                            <p class="card-title-desc mb-0"> Use <code>.bg-{color}.bg-lighten-{1 | 2 | 3 | 4 | 5}</code> classes for lighten background color. </p>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <a data-clone="bg-primary bg-lighten-2" href="javascript:void(0);" class="text-center bg-primary bg-lighten-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> lighten</span></a>
+                                <a data-clone="bg-secondary bg-lighten-2" href="javascript:void(0);" class="text-center bg-secondary bg-lighten-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> lighten</span></a>
+                                <a data-clone="bg-success bg-lighten-2" href="javascript:void(0);" class="text-center bg-success bg-lighten-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> lighten</span></a>
+                                <a data-clone="bg-warning bg-lighten-2" href="javascript:void(0);" class="text-center bg-warning bg-lighten-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> lighten</span></a>
+                                <a data-clone="bg-danger bg-lighten-2" href="javascript:void(0);" class="text-center bg-danger bg-lighten-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> lighten</span></a>
+                                <a data-clone="bg-info bg-lighten-2" href="javascript:void(0);" class="text-center bg-info bg-lighten-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> lighten</span></a>
+                            </div>
+                            <h6 class="mt-1">Darken Variant </h6>
+                            <p class="card-title-desc mb-0"> Use <code>.bg-{color}.bg-darken-{1 | 2 | 3 | 4 | 5}</code> classes for darken background color. </p>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <a data-clone="bg-primary bg-darken-2" href="javascript:void(0);" class="text-center bg-primary bg-darken-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> Darken</span></a>
+                                <a data-clone="bg-secondary bg-darken-2" href="javascript:void(0);" class="text-center bg-secondary bg-darken-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> Darken</span></a>
+                                <a data-clone="bg-success bg-darken-2" href="javascript:void(0);" class="text-center bg-success bg-darken-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> Darken</span></a>
+                                <a data-clone="bg-warning bg-darken-2" href="javascript:void(0);" class="text-center bg-warning bg-darken-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> Darken</span></a>
+                                <a data-clone="bg-danger bg-darken-2" href="javascript:void(0);" class="text-center bg-danger bg-darken-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> Darken</span></a>
+                                <a data-clone="bg-info bg-darken-2" href="javascript:void(0);" class="text-center bg-info bg-darken-2 rounded text-white width-100 height-100 d-flex align-items-center justify-content-center ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> Darken</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-12 mb-30">
+                        <div class="mat-card mb-30" style="height: auto;">
+                            <h5 class="card-title">Gradient Colors</h5>
+                            <p class="card-title-desc mb-2"> We have make gradient color based on our default color: </p>
+                            <ul class="colors-list list-unstyled mb-0">
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">bg-gradient-primary</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">bg-gradient-secondary</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">bg-gradient-success</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">bg-gradient-warning</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">bg-gradient-danger</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">bg-gradient-info</span></li>
+                            </ul>
+                            <p class="card-title-desc m-0"> For each color, we think has its functionality in the application as alerts of errors <b>(danger)</b>, warnings to the user <b>(warning)</b>, communications of approval <b>(success)</b>, or main color of the application <b>(primary)</b>.
+                            </p>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <a data-clone="bg-gradient-primary" href="javascript:void(0);" class="text-center bg-gradient-primary btn-bg-gradient rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> primary gradient</span></a>
+                                <a data-clone="bg-gradient-secondary" href="javascript:void(0);" class="text-center bg-gradient-secondary btn-bg-gradient rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> secondary gradient</span></a>
+                                <a data-clone="bg-gradient-success" href="javascript:void(0);" class="text-center bg-gradient-success btn-bg-gradient rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> success gradient</span></a>
+                                <a data-clone="bg-gradient-warning" href="javascript:void(0);" class="text-center bg-gradient-warning btn-bg-gradient rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> warning gradient</span></a>
+                                <a data-clone="bg-gradient-danger" href="javascript:void(0);" class="text-center bg-gradient-danger btn-bg-gradient rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> danger gradient</span></a>
+                                <a data-clone="bg-gradient-info" href="javascript:void(0);" class="text-center bg-gradient-info btn-bg-gradient rounded text-white width-100 height-100 d-flex align-items-center justify-content-center ms-1 mt-3 mb-3 shadow btn-hover px-1"><span> <i class="mdi mdi-content-copy"></i> info gradient</span></a>
+                            </div>
+                        </div>
+
+                        <div class="mat-card" style="height: auto;">
+                            <h5 class="card-title">Text Colors</h5>
+                            <p class="card-title-desc mb-2"> We have make text color based on our default color: </p>
+                            <ul class="colors-list list-unstyled mb-0">
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">text-primary</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">text-secondary</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">text-success</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">text-warning</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">text-danger</span></li>
+                                <li class="py-1"><i class="fa fa fa-angle-double-right">&nbsp;</i><span class="card-title-desc">text-info</span></li>
+                            </ul>
+                            <p class="card-title-desc m-0"> For each color, we think has its functionality in the application as alerts of errors <b>(danger)</b>, warnings to the user <b>(warning)</b>, communications of approval <b>(success)</b>, or main color of the application <b>(primary)</b>.
+                            </p>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <a data-clone="text-primary" href="javascript:void(0);" class="text-center text-primary btn-text rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> primary</span></a>
+                                <a data-clone="text-secondary" href="javascript:void(0);" class="text-center text-secondary btn-text rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> secondary</span></a>
+                                <a data-clone="text-success" href="javascript:void(0);" class="text-center text-success btn-text rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> success</span></a>
+                                <a data-clone="text-warning" href="javascript:void(0);" class="text-center text-warning btn-text rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> warning</span></a>
+                                <a data-clone="text-danger" href="javascript:void(0);" class="text-center text-danger btn-text rounded text-white width-100 height-100 d-flex align-items-center justify-content-center me-3 ms-1 mt-3 mb-3 shadow btn-hover"><span> <i class="mdi mdi-content-copy"></i> danger</span></a>
+                                <a data-clone="text-info" href="javascript:void(0);" class="text-center text-info btn-text rounded text-white width-100 height-100 d-flex align-items-center justify-content-center ms-1 mt-3 mb-3 shadow btn-hover px-1"><span> <i class="mdi mdi-content-copy"></i> info</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        @@include('./partials/footer.html') 
+    </div>
+</div>
+
+    <!-- page-wrapper -->
+
+    @@include('./partials/vendor-scripts.html')
+
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+    
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+         @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Bootstrap Switch
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Bootstrap Switch</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb form_switch-block" id="contentSection">
+                <div class="row">
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap 5 Default Switch</h5>
+                            <div class="mt-3 theme-color_check">
+                                <div class="form-check form-switch p-0">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" data-size="mini">
+                                    <label class="form-check-label ms-2" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                                </div>
+                                <div class="form-check form-switch p-0 mt-1">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="" data-size="mini">
+                                    <label class="form-check-label ms-2" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                                </div>
+                                <div class="form-check form-switch p-0 mt-1">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled="" data-size="mini">
+                                    <label class="form-check-label ms-2" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                                </div>
+                                <div class="form-check form-switch p-0 mt-1">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked="" disabled="" data-size="mini">
+                                    <label class="form-check-label ms-2" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap Switch - Size</h5>
+                            <p class="card-title-desc mb-1">Add attribute <code>data-size="Size"</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>. Size values: <code>mini, small, normal, large.</code></p>
+                            <div class="bt-switch theme-color_check">
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input id="switch-size1" type="checkbox" checked="checked" data-size="mini">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input id="switch-size2" type="checkbox" checked="checked" data-size="small">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input id="switch-size3" type="checkbox" checked="checked" data-size="normal">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input id="switch-size4" type="checkbox" checked="checked" data-size="large">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap switch - Disabled/Readonly</h5>
+                            <p class="card-title-desc mb-1">Add attribute <code>disabled</code> or <code>readonly</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>.</p>
+                            <div class="bt-switch">
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" disabled="" data-on-color="primary" data-off-color="info">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" data-on-color="info" data-off-color="success">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap Switch - Colors</h5>
+                            <p class="card-title-desc mb-1">Add <code>data-on-color="Color"</code> & <code>data-off-color="Color"</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>. Color values: <code>primary, secondary, success, danger, warning, info</code>.</p>
+                            <div class="bt-switch">
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="primary" data-off-color="secondary">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="secondary" data-off-color="success">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="success" data-off-color="danger">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="danger" data-off-color="warning">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="warning" data-off-color="info">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="info" data-off-color="primary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap switch - Radio Buttons</h5>
+                            <p class="card-title-desc mb-1">Add class <code>radio-switch</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>. If you want to change the class name, you have to change jquery according to that.</p>
+                            <div class="bt-switch">
+                                <div class="mt-2">
+                                    <label for="option1" class="me-2">Option 1</label>
+                                    <input id="option1" type="radio" name="radiobt" value="option1" class="radio-switch" data-off-color="secondary">
+                                </div>
+                                <div class="mt-2">
+                                    <label for="option2" class="me-2">Option 2</label>
+                                    <input id="option2" type="radio" name="radiobt" value="option2" class="radio-switch" data-off-color="secondary">
+                                </div>
+                                <div class="mt-2">
+                                    <label for="option3" class="me-2">Option 3</label>
+                                    <input id="option3" type="radio" name="radiobt" value="option3" class="radio-switch" data-off-color="secondary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap switch - With Text</h5>
+                            <p class="card-title-desc mb-1">Add <code>data-on-text="Text"</code> & <code>data-off-text="Text"</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>.</p>
+                            <div class="bt-switch">
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="success" data-off-color="info" data-on-text="Yes" data-off-text="No">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="info" data-off-color="success" data-on-text="1" data-off-text="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap switch - With Long Text</h5>
+                            <p class="card-title-desc mb-1">Add <code>data-on-text="Long Text"</code> & <code>data-off-text="Long Text"</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>.</p>
+                            <div class="bt-switch">
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="danger" data-off-color="warning" data-on-text="Explicit" data-off-text="Implicit">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="warning" data-off-color="danger" data-on-text="Enabled" data-off-text="Disabled">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap switch - With Label Text</h5>
+                            <p class="card-title-desc mb-1">Add <code>data-on-text="Text"</code> or <code>data-off-text="Text"</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>.</p>
+                            <div class="bt-switch">
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="danger" data-off-color="success" data-on-text="Radio">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="success" data-off-color="danger" data-off-text="Waves">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Bootstrap switch - With HTML</h5>
+                            <p class="card-title-desc mb-1">Add <code>data-on-text="HTML Text"</code> & <code>data-off-text="HTML Text"</code> to the <mark class="bg-transparent p-0"><code>&lt;input type="checkbox"...&gt;</code></mark>.</p>
+                            <div class="bt-switch">
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="primary" data-off-color="info" data-on-text="<i class='fa fa-sun-o fill-white'></i>" data-off-text="<i class='fa fa-moon-o fill-white'></i>">
+                                </div>
+                                <div class="me-2 mt-2 d-inline-block">
+                                    <input type="checkbox" checked="" data-on-color="info" data-off-color="success" data-on-text="<i class='fa fa-phone fill-white'></i>" data-off-text="<i class='fa fa-envelope-o fill-white'></i>">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+
+    @@include('./partials/vendor-scripts.html')
+    
+
+
+    <script src="assets/js/plugins/bootstrap-switch.min.js"></script>
+    <script src="assets/js/plugins/highlight.js"></script>
+
+    <script >
+        var $ = window.jQuery
+        var $window = $(window)
+        var sectionTop = $('.top').outerHeight() + 20
+        var $createDestroy = $('#switch-create-destroy')
+
+        function capitalize(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1)
+        }
+        window.hljs.initHighlightingOnLoad()
+        $('input[type="checkbox"]:not(.not-bootstrap), input[type="radio"]')
+            .not('[data-switch-no-init]')
+            .bootstrapSwitch()
+        $(function() {
+            $('[data-switch-set]').on('click', function() {
+                var type
+                type = $(this).data('switch-set')
+                $('#switch-' + type).bootstrapSwitch(type, $(this).data('switch-value'))
+            })
+        })
+    </script>
+
+</body>
+
+</html>

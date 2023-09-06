@@ -1,0 +1,171 @@
+.mat-card-hover {
+  transition: all .25s ease;
+    &:hover {
+      webkit-transform: translateY(-4px) scale(1.01);
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 14px 24px rgba(62, 57, 107, 0.10);
+    }
+}
+
+.mt-n2 {
+    margin-top: -0.5rem !important;
+}
+
+.dropdown-menu {
+    -webkit-box-shadow: 0 5px 25px rgba(34, 41, 47, 0.1);
+    box-shadow: 0 5px 25px rgba(34, 41, 47, 0.1);
+    border: 1px solid rgba(34, 41, 47, .05);
+}
+
+.dashboard_chart {
+    margin: 0 -1rem -1rem !important;
+}
+
+.ui-card-customs_block {
+  .btn-close {
+    background-color: $white;
+    padding: 12px 7px !important;
+    opacity: 1 !important;
+  }
+    h1,
+    h2,
+    h4,
+    h5 {
+        color: var(--theme-dark-text-rgb);
+    }
+    .css-bar {
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50%;
+        background-color: transparent;
+        margin-bottom: 20px;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 80px;
+        height: 80px;
+        font-size: 18px;
+        z-index: 9;
+        i {
+            width: 70px;
+            height: 70px;
+            background: #fff;
+            line-height: 70px;
+            position: absolute;
+            border-radius: 100%;
+            text-align: center;
+            margin-left: 5px;
+            margin-top: 5px;
+            left: 0px;
+            right: 0px;
+            z-index: 2;
+            font-size: 27px;
+            color: #a6b7bf;
+        }
+    }
+    .css-bar-primary.css-bar-20 {
+        background-image: linear-gradient( 90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient( 162deg, #2c63ff 50%, #fafafa 50%, #fafafa);
+    }
+    .css-bar-danger.css-bar-20 {
+        background-image: linear-gradient( 90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient( 162deg, #fc4b6c 50%, #fafafa 50%, #fafafa);
+    }
+    .css-bar-warning.css-bar-40 {
+        background-image: linear-gradient( 90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient( 234deg, #ffbc34 50%, #fafafa 50%, #fafafa);
+    }
+    .css-bar-info.css-bar-60 {
+        background-image: linear-gradient( 306deg, #1e88e5 50%, transparent 50%, transparent), linear-gradient( 270deg, #1e88e5 50%, #fafafa 50%, #fafafa);
+    }
+    .round {
+        line-height: 45px;
+        width: 45px;
+        height: 45px;
+    }
+    .bg-theme-color {
+        background-color: var(--theme-body-rgb);
+    }
+}
+
+//  card
+
+
+//   card custom
+
+.ui-card_block .h4,
+.ui-card_block h5,
+.ui-card-customs_block h1,
+.ui-card-customs_block h2,
+.ui-card-customs_block h4,
+.ui-card-customs_block h5 {
+  color: var(--theme-dark-text-rgb);
+  .list-group-item {
+    background-color: transparent;
+  }
+  .collapse:not(.show) {
+    display: none;
+  }
+  .card-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    z-index: 9999;
+    overflow: auto;
+  }
+  .dropdown-menu {
+    box-shadow: 0 5px 25px rgba(34, 41, 47, 0.1);
+    border: 1px solid rgba(34, 41, 47, 0.05);
+  }
+}
+
+.list-group-flush {
+  .list-group-item {
+    background-color: transparent;
+  }
+}
+
+.draggable-cards {
+  .card-header {
+    cursor: move;
+  }
+  .card-body {
+    .btn-inverse {
+      color: var(--theme-dark-text-rgb);
+      border-color: var(--theme-dark-text-rgb);
+    }
+  }
+}
+
+.card-moved .mat-card {
+  background: #1e88e5;
+  color: #fff !important;
+}
+
+.card-moved .mat-card h5,
+.card-moved .mat-card p {
+  color: #fff !important;
+}
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}

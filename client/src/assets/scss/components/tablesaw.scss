@@ -1,0 +1,56 @@
+.tablesaw-btn-select:after {
+  padding-left: 0em !important;
+  left: 65% !important;
+  top: 5px !important;
+}
+
+  label {
+    .tablesaw-btn {
+      color: var(--theme-dark-text-rgb);
+    }
+  }
+
+  .tablesaw-advance-dots {
+    li {
+      i {
+        background-color: var(--theme-dark-text-rgb) !important; 
+      }
+    }
+  }
+
+  .tablesaw-columntoggle-btnwrap {
+    .tablesaw-columntoggle-popup {
+      background-color: var(--theme-body-rgb) !important;
+      color: var(--theme-dark-text-rgb) !important;
+    }
+  }
+
+  // jsgrid
+
+  #basicgrid,
+  #staticgrid,
+  #exampleSorting {
+    .jsgrid-grid-header {
+      background-color: var(--theme-light--bc) !important;
+      .jsgrid-header-row {
+        .jsgrid-header-cell {
+          background-color: var(--theme-body-rgb) !important;
+        }
+      }
+    }
+    .jsgrid-filter-row,
+    .jsgrid-edit-row {
+      .jsgrid-cell {
+        background-color: var(--theme-light--bc) !important;
+      }
+    }
+    .jsgrid-grid-body {
+      .jsgrid-table {
+        .jsgrid-row {
+          .jsgrid-cell {
+            background-color: var(--theme-even--tr-bc) !important;
+          }
+        }
+      }
+    }
+  }

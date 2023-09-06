@@ -1,0 +1,541 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+    
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+         @@include('./partials/left-sidebar.html')
+         
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Input Groups
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Input Groups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Input Addons Left</h5>
+                            <p class="card-title-desc">Add span with class <code>.input-group-text</code> before <mark class="bg-transparent"><code>&lt;input&gt;</code></mark></p>
+                            <div>
+                                <div class="input-group">
+                                    <span class="input-group-text px-3" id="left_side">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="left_side">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Input Addons Both Side</h5>
+                            <p class="card-title-desc">Add span with class <code>.input-group-text</code> before & after <mark class="bg-transparent"><code>&lt;input&gt;</code></mark></p>
+                            <div class="input-group">
+                                <div class="input-group-prepend d-flex">
+                                    <span class="input-group-text px-3">
+                                        <i class="fa fa-inr"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append d-flex">
+                                    <span class="input-group-text px-3">.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Input Addons Right</h5>
+                            <p class="card-title-desc">Add span with class <code>.input-group-text</code> after <mark class="bg-transparent"><code>&lt;input&gt;</code></mark></p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="right_side">
+                                <span class="input-group-text px-3" id="right_side">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Addons With Checkbox</h5>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Right Checkbox</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-prepend</code> before input field.</p>
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <div class="form-check p-0 m-0">
+                                        <input type="checkbox" class="form-check-input mx-2" id="checkbox1" value="check">
+                                        <label class="form-check-label" for="checkbox1"></label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Checkbox & Button</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-prepend & append</code> before and after input field.</p>
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <div class="form-check p-0 m-0">
+                                        <input type="checkbox" class="form-check-input mx-2" id="checkbox2" value="check">
+                                        <label class="form-check-label" for="checkbox2"></label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                <button class="btn btn-inverse-info font-medium mb-1 mt-1 text-info" type="button">
+                                  Go!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Left Checkbox</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-append</code> after input field.</p>
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                    <div class="input-group-text">
+                                        <div class="form-check p-0 m-0">
+                                            <input type="checkbox" class="form-check-input mx-2" id="checkbox3" value="check">
+                                            <label class="form-check-label" for="checkbox3"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Addons With Radio</h5>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Left Radio</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-prepend</code> before input field.</p>
+                            <form>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <div class="form-check p-0 m-0">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="form-check-input mx-2">
+                                            <label class="form-check-label" for="customRadio5"></label>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with radio button">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Radio & Button</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-prepend & append</code> before and afetr input field.</p>
+                            <form>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <div class="form-check p-0 m-0">
+                                            <input type="radio" id="customRadio6" name="customRadio" class="form-check-input mx-2">
+                                            <label class="form-check-label" for="customRadio6"></label>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with radio button">
+                                    <button class="btn btn-inverse-info text-info font-medium mt-1 mb-1" type="button">
+                                        Go!
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Left Checkbox</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-append</code> after input field.</p>
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Text input with radio button">
+                                    <div class="input-group-text">
+                                        <div class="form-check p-0 m-0">
+                                            <input type="radio" id="customRadio7" name="customRadio" class="form-check-input mx-2">
+                                            <label class="form-check-label" for="customRadio7"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Addons With Buttons</h5>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Color Button Left</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the prepend div.</p>
+                            <form class="mt-3">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-inverse-info text-info font-medium mt-1 mb-1 m-0" type="button">
+                                        Go!
+                                    </button>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Color Buttons Both</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the prepend and append div.</p>
+                            <form class="mt-3">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-inverse-danger text-danger font-medium d-flex align-items-center mt-1 mb-1 m-0" type="button">
+                                        <i class="fa fa-heart-o me-1" aria-hidden="true"></i>
+                                        <span>Love</span>
+                                    </button>
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-inverse-info text-info font-medium  d-flex align-items-center mt-1 mb-1" type="button">
+                                        <i class="fa fa-ban me-1" aria-hidden="true"></i>
+                                        <span>Hate</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Color Button Right</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the append div.</p>
+                            <form class="mt-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-inverse-info text-info font-medium mt-1 mb-1" type="button">
+                                        Go!
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With icon Button Left</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the prepend div.</p>
+                            <form class="mt-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend d-flex">
+                                        <button class="btn btn-inverse-info text-info mt-1 mb-1 m-0" type="button">
+                                            <i class="fa fa-cog fs-5" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With icon Buttons Both</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the prepend and append div.</p>
+                            <form class="mt-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend d-flex">
+                                        <button class="btn btn-inverse-info text-info mt-1 mb-1 m-0" type="button">
+                                            <i class="fa fa-pencil fs-5" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-inverse-danger text-danger mt-1 mb-1" type="button">
+                                        <i class="fa fa-trash-o fs-5" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xxl-4 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With icon Button Right</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the append div.</p>
+                            <form class="mt-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-inverse-danger text-danger mt-1 mb-1" type="button">
+                                        <i class="fa fa-heart-o me-1" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Multiple Addons</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Left Side</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-text</code> in the input-group-prepend class.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <span class="input-group-text px-3">
+                                        <i class="fa fa-inr"></i>
+                                    </span>
+                                    <span class="input-group-text">0.00</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Right Side</h5>
+                            <p class="card-title-desc">To use add class <code>.input-group-text</code> in the input-group-append class.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text px-3">
+                                        <i class="fa fa-inr"></i>
+                                    </span>
+                                    <span class="input-group-text">0.00</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Multiple Inputs with Addons</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Input With Right Side</h5>
+                            <p class="card-title-desc">To use add <code>.form-control</code> two times.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <span class="input-group-text">First and last name</span>
+                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Input With Left Side</h5>
+                            <p class="card-title-desc">To use add <code>.form-control</code> two times.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-text">First and last name</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Button Addons</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Button With Left Side</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the prepend class.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <button class="btn btn-inverse-secondary text-secondary font-medium mt-1 mb-1 m-0" type="button">Button</button>
+                                    <input type="text" class="form-control" placeholder="Left Side">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Button With Right Side</h5>
+                            <p class="card-title-desc">To use add <code>button</code> in the append class.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Right Side">
+                                    <button class="btn btn-inverse-secondary text-secondary font-medium mt-1 mb-1" type="button">Button</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Multiple Buttons With Left Side</h5>
+                            <p class="card-title-desc">To use Two add <code>button</code> in the prepend class.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <button class="btn btn-inverse-secondary text-secondary font-medium  mt-1 mb-1 m-0" type="button">
+                                        Button
+                                    </button>
+                                    <button class="btn btn-inverse-secondary text-secondary font-medium mt-1 mb-1 m-0" type="button">
+                                        Button
+                                    </button>
+                                    <input type="text" class="form-control" placeholder="Left Side">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Multiple Buttons With Right Side</h5>
+                            <p class="card-title-desc">To use Two add <code>button</code> in the append class.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Right Side">
+                                    <button class="btn btn-inverse-secondary text-secondary font-medium  mt-1 mb-1 m-0" type="button">
+                                        Button
+                                    </button>
+                                    <button class="btn btn-inverse-secondary text-secondary font-medium  mt-1 mb-1" type="button">
+                                        Button
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Addons With Dropdown Buttons</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Left Side Dropdown</h5>
+                            <p class="card-title-desc">To use add <code>dropdown</code> in the prepend class div.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <button class="btn btn-inverse-info text-info font-medium dropdown-toggle  mt-1 mb-1 m-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                        <a class="dropdown-item" href="#">Option 2</a>
+                                        <a class="dropdown-item" href="#">Option 3</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Right Side Dropdown</h5>
+                            <p class="card-title-desc">To use add <code>dropdown</code> in the append class div.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                    <button class="btn btn-inverse-info text-info font-medium  dropdown-toggle  mt-1 mb-1" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                        <a class="dropdown-item" href="#">Option 2</a>
+                                        <a class="dropdown-item" href="#">Option 3</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Left Side Dropdown Segments</h5>
+                            <p class="card-title-desc">To use add <code>dropdown</code> in the prepend class div.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-inverse-secondary text-secondary  font-medium  mt-1 mb-1 m-0">Action</button>
+                                    <button type="button" class="btn btn-inverse-secondary text-secondary dropdown-toggle dropdown-toggle-split  mt-1 mb-1 m-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                        <a class="dropdown-item" href="#">Option 2</a>
+                                        <a class="dropdown-item" href="#">Option 3</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Addons With Right Side Dropdown Segments</h5>
+                            <p class="card-title-desc">To use add <code>dropdown</code> in the append class div.</p>
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                    <button type="button" class="btn btn-inverse-secondary text-secondary font-medium  mt-1 mb-1 m-0">Action</button>
+                                    <button type="button" class="btn btn-inverse-secondary text-secondary dropdown-toggle dropdown-toggle-split  mt-1 mb-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                        <a class="dropdown-item" href="#">Option 2</a>
+                                        <a class="dropdown-item" href="#">Option 3</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+
+    @@include('./partials/vendor-scripts.html')
+
+</body>
+
+</html>

@@ -1,0 +1,1279 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Profile
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="/dashboard/index"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Profile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12  mb-30">
+                        <div class="mat-card">
+                            <div class="card mb-2 profile-header">
+                                <img src="assets/img/night-nature.png" class="card-img-top opacity-50" alt="">
+                                <div class="card-body p-0">
+                                    <div class="position-relative">
+                                        <div class="align-items-center d-flex position-absolute profile-img-container">
+                                            <div class="profile-img">
+                                                <img src="assets/img/admin-img12.jpg" alt="profile photo" class="img-fluid rounded">
+                                            </div>
+                                            <div class="profile-title ms-4">
+                                                <h2 class="text-dark fw-semibold mb-0">Italie</h2>
+                                                <p class="text-dark"> UI/UX Designer </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row profile-header-nav pt-md-3 pt-lg-0 ps-lg-5 ps-sm-5 ">
+                                        <div class="col-10 d-flex justify-content-center">
+                                            <ul class="nav nav-pills mb-2 mt-2" id="pills-tabs" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tabs" data-bs-toggle="pill" 
+                                                    data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" 
+                                                    aria-selected="true">
+                                                        <span class="d-none d-md-block">Feed</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block d-md-none feather feather-rss">
+                                                            <path d="M4 11a9 9 0 0 1 9 9"></path>
+                                                            <path d="M4 4a16 16 0 0 1 16 16"></path>
+                                                            <circle cx="5" cy="19" r="1"></circle>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-contact-tabs" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">
+                                                        <span class="d-none d-md-block">Photos</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block d-md-none feather feather-info">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <line x1="12" y1="16" x2="12" y2="12">
+                                                            </line>
+                                                            <line x1="12" y1="8" x2="12.01" y2="8">
+                                                            </line>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tabs" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false">
+                                                        <span class="d-none d-md-block">About</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block d-md-none feather feather-image">
+                                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                                            <circle cx="8.5" cy="8.5" r="1.5">
+                                                            </circle>
+                                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-four-tabs" data-bs-toggle="pill" data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                                        <span class="d-none d-md-block">Friends</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block d-md-none feather feather-users">
+                                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                            </path>
+                                                            <circle cx="9" cy="7" r="4">
+                                                            </circle>
+                                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-center align-items-center ">
+                                            <a href="#" class="btn btn-primary m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <span class="d-none d-md-block">Edit</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block d-md-none feather feather-edit">
+                                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
+                                                    </path>
+                                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="pills-tabContents">
+                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-home-tabs" tabindex="0">
+                        <div class="row m-0 p-0">
+                            <div class="col-xl-3 col-lg-6 order-lg-1 col-12 order-2 mb-30">
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <div class="">
+                                            <h5 class="text-capitalize mb-75"> about </h5>
+                                            <p class="card-text">Tart I love sugar plum I love oat cake. Sweet roll ⭐️ caramels I love jujubes. Topping cake wafer.</p>
+                                        </div>
+                                        <div class="mt-2">
+                                            <h5 class="text-capitalize mb-75"> joined </h5>
+                                            <p class="card-text">November 15, 2015 </p>
+                                        </div>
+                                        <div class="mt-2">
+                                            <h5 class="text-capitalize mb-75"> lives </h5>
+                                            <p class="card-text"> Kowloon,HONG-KONG </p>
+                                        </div>
+                                        <div class="mt-2">
+                                            <h5 class="text-capitalize mb-75"> email </h5>
+                                            <p class="card-text"> bucketful@fiendhead.org </p>
+                                        </div>
+                                        <div class="mt-2">
+                                            <h5 class="text-capitalize mb-75"> website </h5>
+                                            <p class="card-text"> www.pixinvent.com </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <h5 class="mb-3"> Suggested Pages </h5>
+                                        <div class="d-flex justify-content-start align-items-center mt-2">
+                                            <div class="me-3">
+                                                <span class="b-avatar badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img1.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-user-info">
+                                                <h6 class="mb-0"> Kosovon </h6>
+                                                <small class="text-muted">Company</small>
+                                            </div>
+                                            <div class="profile-star ms-auto">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star ">
+                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                    </polygon>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <div class="me-3">
+                                                <span class="b-avatar badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img2.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-user-info">
+                                                <h6 class="mb-0"> Libyan </h6>
+                                                <small class="text-muted">Company</small>
+                                            </div>
+                                            <div class="profile-star ms-auto">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star ">
+                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                    </polygon>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <div class="me-3">
+                                                <span class="b-avatar badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img3.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-user-info">
+                                                <h6 class="mb-0"> Brazil </h6>
+                                                <small class="text-muted">Company</small>
+                                            </div>
+                                            <div class="profile-star ms-auto">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star ">
+                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                    </polygon>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <div class="me-3">
+                                                <span class="b-avatar badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img4.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-user-info">
+                                                <h6 class="mb-0"> Australian </h6>
+                                                <small class="text-muted">Company</small>
+                                            </div>
+                                            <div class="profile-star ms-auto">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star ">
+                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                    </polygon>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <div class="me-3">
+                                                <span class="b-avatar badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img5.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-user-info">
+                                                <h6 class="mb-0"> Chechen </h6>
+                                                <small class="text-muted">Company</small>
+                                            </div>
+                                            <div class="profile-star ms-auto">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star profile-favorite">
+                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                    </polygon>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <div class="me-3">
+                                                <span class="b-avatar badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img6.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="profile-user-info">
+                                                <h6 class="mb-0"> Hobbits </h6>
+                                                <small class="text-muted">Beauty Store</small>
+                                            </div>
+                                            <div class="profile-star ms-auto">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star ">
+                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                    </polygon>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <h5>Twitter Feeds</h5>
+                                        <div class="profile-twitter-feed mt-3">
+                                            <div class="d-flex justify-content-start align-items-center mb-1">
+                                                <span class="b-avatar me-3 badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img7.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                                <div class="profile-user-info">
+                                                    <h6 class="mb-0"> Nepalian </h6>
+                                                    <a href="#" target="_self" class="">
+                                                        <small class="text-muted">@tiana59 </small>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
+                                                            </path>
+                                                            <polyline points="22 4 12 14.01 9 11.01">
+                                                            </polyline>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                                <div class="profile-star ms-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star ">
+                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                        </polygon>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="card-text mb-0"> I love cookie chupa chups
+                                                sweet tart apple pie <br> ⭐️
+                                                chocolate bar. </p>
+                                            <a href="#" target="_self" class="">
+                                                <small> #design #fasion </small>
+                                            </a>
+                                        </div>
+                                        <div class="profile-twitter-feed mt-3">
+                                            <div class="d-flex justify-content-start align-items-center mb-1">
+                                                <span class="b-avatar me-3 badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img8.png" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                                <div class="profile-user-info">
+                                                    <h6 class="mb-0"> Australian </h6>
+                                                    <a href="#" target="_self" class="">
+                                                        <small class="text-muted">@tiana59 </small>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
+                                                            </path>
+                                                            <polyline points="22 4 12 14.01 9 11.01">
+                                                            </polyline>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                                <div class="profile-star ms-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star profile-favorite">
+                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                        </polygon>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="card-text mb-0"> Halvah I love powder jelly I
+                                                love cheesecake cotton
+                                                candy. 😍 </p>
+                                            <a href="#" target="_self" class="">
+                                                <small> #vuejs #code #coffeez </small>
+                                            </a>
+                                        </div>
+                                        <div class="profile-twitter-feed mt-3">
+                                            <div class="d-flex justify-content-start align-items-center mb-1">
+                                                <span class="b-avatar me-3 badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img9.jpg" alt="avatar" width="40" height="40">
+                                                    </span>
+                                                </span>
+                                                <div class="profile-user-info">
+                                                    <h6 class="mb-0"> Angolan </h6>
+                                                    <a href="#" target="_self" class="">
+                                                        <small class="text-muted">@tiana59 </small>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
+                                                            </path>
+                                                            <polyline points="22 4 12 14.01 9 11.01">
+                                                            </polyline>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                                <div class="profile-star ms-auto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star ">
+                                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                        </polygon>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="card-text mb-0"> Candy jelly beans powder
+                                                brownie biscuit. Jelly marzipan
+                                                oat cake cake. </p>
+                                            <a href="#" target="_self" class="">
+                                                <small> #sketch #uiux #figma </small>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 order-lg-2 col-12 order-1">
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <div class="d-flex justify-content-start align-items-center mb-1">
+                                            <span class="b-avatar me-3 badge-secondary rounded-circle">
+                                                <span class="b-avatar-img main">
+                                                    <img src="assets/img/admin-img6.png" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="profile-user-info">
+                                                <h6 class="mb-0"> Dutch </h6>
+                                                <small class="text-muted">12 Dec 2018 at 1:16
+                                                    AM</small>
+                                            </div>
+                                        </div>
+                                        <p class="card-text"> Wonderful Machine· A well-written bio
+                                            allows viewers to get to
+                                            know a photographer beyond the work. This can make the
+                                            difference when presenting to
+                                            clients who are looking for the perfect fit. </p>
+                                        <img src="assets/img/card-img2.jpg" class="mb-25 img-fluid rounded" alt="">
+                                        <div class="row pb-50 mt-50">
+                                            <div class="col-sm-8 d-flex justify-content-between justify-content-sm-start mb-2 mt-2">
+                                                <a href="#" target="_self" class="d-flex align-items-center text-muted text-nowrap">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-50 feather feather-heart profile-likes">
+                                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>1.2k</span>
+                                                </a>
+                                                <div class="d-flex align-item-center">
+                                                    <div role="group" class="b-avatar-group ml-1">
+                                                        <div class="b-avatar-group-inner ms-2" style="padding-left: calc(3.9px); padding-right: calc(3.9px);">
+                                                            <div class="d-flex align-items-center">
+                                                                <a href="#" class="me-l2"><img src="assets/img/admin-img2.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                <a href="#" class="me-l2"><img src="assets/img/admin-img3.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                <a href="#" class="me-l2"><img src="assets/img/admin-img4.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                <a href="#" class="me-l2"><img src="assets/img/admin-img5.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                <a href="#"><img src="assets/img/admin-img6.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" target="_self" class="ml-50 ms-2 mt-1 mt-2 mt-50 text-muted text-nowrap">
+                                                        +140 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between justify-content-sm-end align-items-center mb-2 col-sm-4">
+                                                <a href="#" target="_self" class="text-nowrap">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon mr-50 feather feather-message-square">
+                                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                                                        </path>
+                                                    </svg>
+                                                    <span class="text-muted mr-1">1.2k</span>
+                                                </a>
+                                                <a href="#" target="_self" class="ms-3 text-nowrap">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon mr-50 feather feather-share-2">
+                                                        <circle cx="18" cy="5" r="3">
+                                                        </circle>
+                                                        <circle cx="6" cy="12" r="3">
+                                                        </circle>
+                                                        <circle cx="18" cy="19" r="3">
+                                                        </circle>
+                                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49">
+                                                        </line>
+                                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49">
+                                                        </line>
+                                                    </svg>
+                                                    <span class="text-muted">1.2k</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="align-items-center d-flex mb-2 mt-2">
+                                            <span class="b-avatar badge-secondary mr-75 mt-25 rounded-circle" style="width: 34px; height: 34px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img7.png" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="ms-3 profile-user-info w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <h6 class="mb-0">Italie</h6>
+                                                    <a href="#" target="_self">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-25 feather feather-heart profile-icon">
+                                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-muted align-middle">34</span>
+                                                    </a>
+                                                </div>
+                                                <small>Easy &amp; smart fuzzy search🕵🏻
+                                                    functionality which enables users to
+                                                    search quickly.</small>
+                                            </div>
+                                        </div>
+                                        <div class="align-items-center d-flex mb-2">
+                                            <span class="b-avatar mt-25 mr-75 badge-secondary rounded-circle" style="width: 34px; height: 34px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img8.png" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="ms-3 profile-user-info w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <h6 class="mb-0"> Canadian </h6><a href="#" target="_self">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-25 feather feather-heart profile-likes">
+                                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-muted align-middle">61</span>
+                                                    </a>
+                                                </div>
+                                                <small>Unlimited color🖌 options allows you to set
+                                                    your application color as per
+                                                    your branding 🤪.</small>
+                                            </div>
+                                        </div>
+                                        <fieldset class="form-group">
+                                            <div>
+                                                <textarea placeholder="Add Comment" rows="3" wrap="soft" class="form-control" spellcheck="false"></textarea>
+                                            </div>
+                                        </fieldset>
+                                        <button type="button" class="btn btn-primary btn-sm mt-2"> Post Comment
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <div class="">
+                                            <div class="d-flex justify-content-start align-items-center mb-1">
+                                                <span class="b-avatar me-3 badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img main">
+                                                        <img src="assets/img/admin-img6.png" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="profile-user-info">
+                                                    <h6 class="mb-0"> Dutch </h6>
+                                                    <small class="text-muted">12 Dec 2018 at 1:16
+                                                        AM</small>
+                                                </div>
+                                            </div>
+                                            <p class="card-text"> Wonderful Machine· A well-written
+                                                bio allows viewers to get
+                                                to know a photographer beyond the work. This can
+                                                make the difference when
+                                                presenting to clients who are looking for the
+                                                perfect fit. </p>
+                                            <img src="assets/img/sidebar-img4.jpg" class="mb-25 img-fluid rounded w-100" alt="">
+                                            <div class="row pb-50 mt-50">
+                                                <div class="col-sm-8 d-flex justify-content-between justify-content-sm-start mb-2 mt-2">
+                                                    <a href="#" target="_self" class="d-flex align-items-center text-muted text-nowrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-50 feather feather-heart profile-likes">
+                                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                            </path>
+                                                        </svg>
+                                                        <span>1.2k</span>
+                                                    </a>
+                                                    <div class="d-flex align-item-center">
+                                                        <div role="group" class="b-avatar-group ml-1">
+                                                            <div class="b-avatar-group-inner ms-2" style="padding-left: calc(3.9px); padding-right: calc(3.9px);">
+                                                                <div class="d-flex align-items-center">
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img2.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img3.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img4.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img5.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#"><img src="assets/img/admin-img6.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" target="_self" class="ml-50 ms-2 mt-1 mt-2 mt-50 text-muted text-nowrap">
+                                                            +140
+                                                            more </a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between justify-content-sm-end align-items-center mb-2 col-sm-4">
+                                                    <a href="#" target="_self" class="text-nowrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon mr-50 feather feather-message-square">
+                                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-muted mr-1">1.2k</span>
+                                                    </a>
+                                                    <a href="#" target="_self" class="ms-3 text-nowrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon mr-50 feather feather-share-2">
+                                                            <circle cx="18" cy="5" r="3">
+                                                            </circle>
+                                                            <circle cx="6" cy="12" r="3">
+                                                            </circle>
+                                                            <circle cx="18" cy="19" r="3">
+                                                            </circle>
+                                                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49">
+                                                            </line>
+                                                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49">
+                                                            </line>
+                                                        </svg>
+                                                        <span class="text-muted">1.2k</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="align-items-center d-flex mb-2 mt-2">
+                                                <span class="b-avatar badge-secondary mr-75 mt-25 rounded-circle" style="width: 34px; height: 34px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img7.png" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="ms-3 profile-user-info w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0">Italie</h6>
+                                                        <a href="#" target="_self">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-25 feather feather-heart profile-icon">
+                                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                                </path>
+                                                            </svg>
+                                                            <span class="text-muted align-middle">34</span>
+                                                        </a>
+                                                    </div>
+                                                    <small>Easy &amp; smart fuzzy search🕵🏻
+                                                        functionality which enables users
+                                                        to search quickly.</small>
+                                                </div>
+                                            </div>
+                                            <fieldset class="form-group">
+                                                <div>
+                                                    <textarea placeholder="Add Comment" rows="3" wrap="soft" class="form-control" spellcheck="false"></textarea>
+                                                </div>
+                                            </fieldset>
+                                            <button type="button" class="btn btn-primary btn-sm mt-2"> Post Comment
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <div class="">
+                                            <div class="d-flex justify-content-start align-items-center mb-1">
+                                                <span class="b-avatar me-3 badge-secondary rounded-circle">
+                                                    <span class="b-avatar-img main">
+                                                        <img src="assets/img/admin-img6.png" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="profile-user-info">
+                                                    <h6 class="mb-0"> Dutch </h6>
+                                                    <small class="text-muted">12 Dec 2018 at 1:16
+                                                        AM</small>
+                                                </div>
+                                            </div>
+                                            <p class="card-text"> Wonderful Machine· A well-written
+                                                bio allows viewers to get
+                                                to know a photographer beyond the work. This can
+                                                make the difference when
+                                                presenting to clients who are looking for the
+                                                perfect fit. </p>
+
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe src="https://www.youtube.com/embed/6stlCkUDG_s" allowfullscreen="allowfullscreen" class="embed-responsive-item mb-50 rounded w-100"></iframe>
+                                            </div>
+
+                                            <div class="row pb-50 mt-50">
+                                                <div class="col-sm-8 d-flex justify-content-between justify-content-sm-start mb-2 mt-2">
+                                                    <a href="#" target="_self" class="d-flex align-items-center text-muted text-nowrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-50 feather feather-heart profile-likes">
+                                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                            </path>
+                                                        </svg>
+                                                        <span>1.2k</span>
+                                                    </a>
+                                                    <div class="d-flex align-item-center">
+                                                        <div role="group" class="b-avatar-group ml-1">
+                                                            <div class="b-avatar-group-inner ms-2" style="padding-left: calc(3.9px); padding-right: calc(3.9px);">
+                                                                <div class="d-flex align-items-center">
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img2.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img3.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img4.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#" class="me-l2"><img src="assets/img/admin-img5.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                    <a href="#"><img src="assets/img/admin-img6.png" alt="avatar" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" target="_self" class="ml-50 ms-2 mt-1 mt-2 mt-50 text-muted text-nowrap">
+                                                            +140
+                                                            more </a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between justify-content-sm-end align-items-center mb-2 col-sm-4">
+                                                    <a href="#" target="_self" class="text-nowrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon mr-50 feather feather-message-square">
+                                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-muted mr-1">1.2k</span>
+                                                    </a>
+                                                    <a href="#" target="_self" class="ms-3 text-nowrap">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-icon mr-50 feather feather-share-2">
+                                                            <circle cx="18" cy="5" r="3">
+                                                            </circle>
+                                                            <circle cx="6" cy="12" r="3">
+                                                            </circle>
+                                                            <circle cx="18" cy="19" r="3">
+                                                            </circle>
+                                                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49">
+                                                            </line>
+                                                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49">
+                                                            </line>
+                                                        </svg>
+                                                        <span class="text-muted">1.2k</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="align-items-center d-flex mb-2 mt-2">
+                                                <span class="b-avatar badge-secondary mr-75 mt-25 rounded-circle" style="width: 34px; height: 34px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img7.png" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="ms-3 profile-user-info w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0">Italie</h6>
+                                                        <a href="#" target="_self">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-25 feather feather-heart profile-icon">
+                                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                                </path>
+                                                            </svg>
+                                                            <span class="text-muted align-middle">34</span>
+                                                        </a>
+                                                    </div>
+                                                    <small>Easy &amp; smart fuzzy search🕵🏻
+                                                        functionality which enables users
+                                                        to search quickly.</small>
+                                                </div>
+                                            </div>
+                                            <fieldset class="form-group">
+                                                <div>
+                                                    <textarea placeholder="Add Comment" rows="3" wrap="soft" class="form-control" spellcheck="false"></textarea>
+                                                </div>
+                                            </fieldset>
+                                            <button type="button" class="btn btn-primary btn-sm mt-2"> Post Comment
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="offset-lg-6 offset-xl-0 col-xl-3 col-lg-6 col-12 order-3 mb-30">
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <div class="">
+                                            <h5 class="mb-0"> Latest Photos </h5>
+                                            <div class="row">
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img1.png" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-13.005c80e1.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img10.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-02.8342b4cb.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img11.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-03.0fc73648.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img12.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-04.3ac7ddd3.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img13.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-05.d2e52538.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img14.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-06.74a75a96.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img15.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-07.c63e602a.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img2.png" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-08.d01a17e3.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                                <div class="profile-latest-img col-md-4 col-6">
+                                                    <a href="#" target="_self" class="">
+                                                        <img src="assets/img/admin-img15.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-09.ed018c7b.jpg" class="img-fluid rounded">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <div class="">
+                                            <h5>Suggestions</h5>
+                                            <div class="d-flex justify-content-start align-items-center mt-3">
+                                                <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img1.png" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="user-page-info ms-3">
+                                                    <h6 class="mb-0">	Italy </h6>
+                                                    <small class="text-muted">6 Mutual
+                                                        Friends</small>
+                                                </div>
+                                                <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                        </path>
+                                                        <circle cx="8.5" cy="7" r="4">
+                                                        </circle>
+                                                        <line x1="20" y1="8" x2="20" y2="14">
+                                                        </line>
+                                                        <line x1="23" y1="11" x2="17" y2="11">
+                                                        </line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center mt-3">
+                                                <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img10.jpg" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="user-page-info ms-3">
+                                                    <h6 class="mb-0"> Japanies </h6>
+                                                    <small class="text-muted">3 Mutual
+                                                        Friends</small>
+                                                </div>
+                                                <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                        </path>
+                                                        <circle cx="8.5" cy="7" r="4">
+                                                        </circle>
+                                                        <line x1="20" y1="8" x2="20" y2="14">
+                                                        </line>
+                                                        <line x1="23" y1="11" x2="17" y2="11">
+                                                        </line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center mt-3">
+                                                <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img11.jpg" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="user-page-info ms-3">
+                                                    <h6 class="mb-0"> Finnish </h6>
+                                                    <small class="text-muted">1 Mutual
+                                                        Friends</small>
+                                                </div>
+                                                <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                        </path>
+                                                        <circle cx="8.5" cy="7" r="4">
+                                                        </circle>
+                                                        <line x1="20" y1="8" x2="20" y2="14">
+                                                        </line>
+                                                        <line x1="23" y1="11" x2="17" y2="11">
+                                                        </line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center mt-3">
+                                                <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img13.jpg" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="user-page-info ms-3">
+                                                    <h6 class="mb-0"> Hobbits </h6>
+                                                    <small class="text-muted">16 Mutual
+                                                        Friends</small>
+                                                </div>
+                                                <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                        </path>
+                                                        <circle cx="8.5" cy="7" r="4">
+                                                        </circle>
+                                                        <line x1="20" y1="8" x2="20" y2="14">
+                                                        </line>
+                                                        <line x1="23" y1="11" x2="17" y2="11">
+                                                        </line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center mt-3">
+                                                <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img14.jpg" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="user-page-info ms-3">
+                                                    <h6 class="mb-0"> Ninja </h6>
+                                                    <small class="text-muted">4 Mutual
+                                                        Friends</small>
+                                                </div>
+                                                <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                        </path>
+                                                        <circle cx="8.5" cy="7" r="4">
+                                                        </circle>
+                                                        <line x1="20" y1="8" x2="20" y2="14">
+                                                        </line>
+                                                        <line x1="23" y1="11" x2="17" y2="11">
+                                                        </line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center mt-3">
+                                                <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                    <span class="b-avatar-img">
+                                                        <img src="assets/img/admin-img15.jpg" alt="avatar">
+                                                    </span>
+                                                </span>
+                                                <div class="user-page-info ms-3">
+                                                    <h6 class="mb-0"> Lgbo </h6>
+                                                    <small class="text-muted">25 Mutual
+                                                        Friends</small>
+                                                </div>
+                                                <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                        </path>
+                                                        <circle cx="8.5" cy="7" r="4">
+                                                        </circle>
+                                                        <line x1="20" y1="8" x2="20" y2="14">
+                                                        </line>
+                                                        <line x1="23" y1="11" x2="17" y2="11">
+                                                        </line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mat-card mb-30">
+                                        <div class="">
+                                            <h5 class="mb-1"> Polls </h5>
+                                            <p class="card-text">Who is the best actor in Marvel
+                                                Cinematic Universe?</p>
+                                            <div class="polls-info mt-2">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="align-items-center custom-control custom-radio d-flex mb-25">
+                                                        <input type="radio" name="polls" class="custom-control-input" value="" id="__BVID__759">
+                                                        <label class="custom-control-label ms-2" for="__BVID__759">
+                                                            RDJ
+                                                        </label>
+                                                    </div>
+                                                    <div class="text-right"> 82% </div>
+                                                </div>
+                                                <div class="progress my-50" style="height: 6px;">
+                                                    <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82" class="progress-bar" style="width: 82%;">
+                                                    </div>
+                                                </div>
+                                                <div role="group" class="b-avatar-group mt-2">
+                                                    <div class="b-avatar-group-inner" style="padding-left: calc(3.9px); padding-right: calc(3.9px);">
+                                                        <div class="d-flex align-items-center">
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img2.png" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30" alt="avatar"></a>
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img3.png" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30" alt="avatar"></a>
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img4.png" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30" alt="avatar"></a>
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img5.png" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30" alt="avatar"></a>
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img6.png" class="rounded-circle mat-card-hover border border-2 border-white" width="30" height="30" alt="avatar"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="polls-info mt-2">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="align-items-center custom-control custom-radio d-flex mb-25">
+                                                        <input type="radio" name="polls" class="custom-control-input" value="" id="__BVID__773">
+                                                        <label class="custom-control-label ms-2" for="__BVID__773">
+                                                            Chris
+                                                            Hemswort </label>
+                                                    </div>
+                                                    <div class="text-right"> 67% </div>
+                                                </div>
+                                                <div class="progress my-50" style="height: 6px;">
+                                                    <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="67" class="progress-bar" style="width: 67%;">
+                                                    </div>
+                                                </div>
+                                                <div role="group" class="b-avatar-group mt-2">
+                                                    <div class="b-avatar-group-inner">
+                                                        <div class="d-flex align-items-center">
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img9.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="30" alt=""></a>
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img10.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="30" alt=""></a>
+                                                            <a href="#" class="me-l2"><img src="assets/img/admin-img11.jpg" class="rounded-circle mat-card-hover border border-2 border-white" width="30" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 order-4 mb-30">
+                                <div class="text-center mb-2">
+                                    <div class="profile-btn">
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                            Load More </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-profile-tabs" tabindex="0">
+                        <div class="mat-card mb-30">
+                            <div class="">
+                                <h5 class="mb-0"> Latest Photos </h5>
+                                <div class="row">
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img1.png" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-13.005c80e1.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img10.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-02.8342b4cb.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img11.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-03.0fc73648.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img12.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-04.3ac7ddd3.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img13.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-05.d2e52538.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img14.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-06.74a75a96.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img15.jpg" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-07.c63e602a.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="profile-latest-img col-md-3 col-4">
+                                        <a href="#" target="_self" class="">
+                                            <img src="assets/img/admin-img1.png" alt="/vuexy-vuejs-admin-dashboard-template/demo-1/img/user-09.ed018c7b.jpg" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-contact-tabs" tabindex="0">
+                        <div class="row pb-4">
+                            <div class="col-12 col-sm-8 col-lg-6">
+                                <div class="mat-card mb-30">
+                                    <div class="">
+                                        <h5 class="text-capitalize mb-75"> about </h5>
+                                        <p class="card-text">Tart I love sugar plum I love oat cake. Sweet roll ⭐️ caramels I love jujubes. Topping cake wafer.</p>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h5 class="text-capitalize mb-75"> joined </h5>
+                                        <p class="card-text"> November 15, 2015 </p>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h5 class="text-capitalize mb-75"> lives </h5>
+                                        <p class="card-text"> Kowloon,HONG-KONG </p>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h5 class="text-capitalize mb-75"> email </h5>
+                                        <p class="card-text"> bucketful@fiendhead.org </p>
+                                    </div>
+                                    <div class="mt-2">
+                                        <h5 class="text-capitalize mb-75"> website </h5>
+                                        <p class="card-text"> www.pixinvent.com </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tabs" tabindex="0">
+                        <div class=" mb-4">
+                            <div class="row mb-4">
+                                <div class=" col-12 col-sm-7 col-md-6 col-xl-4 ">
+                                    <div class="mat-card">
+                                        <h5>Suggestions</h5>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img1.png" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="user-page-info ms-3">
+                                                <h6 class="mb-0">	Italy </h6>
+                                                <small class="text-muted">6 Mutual Friends</small>
+                                            </div>
+                                            <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                                    <line x1="20" y1="8" x2="20" y2="14">
+                                                    </line>
+                                                    <line x1="23" y1="11" x2="17" y2="11">
+                                                    </line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img10.jpg" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="user-page-info ms-3">
+                                                <h6 class="mb-0"> Japanies </h6>
+                                                <small class="text-muted">3 Mutual Friends</small>
+                                            </div>
+                                            <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                                    <line x1="20" y1="8" x2="20" y2="14">
+                                                    </line>
+                                                    <line x1="23" y1="11" x2="17" y2="11">
+                                                    </line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img11.jpg" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="user-page-info ms-3">
+                                                <h6 class="mb-0"> Finnish </h6>
+                                                <small class="text-muted">1 Mutual Friends</small>
+                                            </div>
+                                            <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                                    <line x1="20" y1="8" x2="20" y2="14">
+                                                    </line>
+                                                    <line x1="23" y1="11" x2="17" y2="11">
+                                                    </line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img13.jpg" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="user-page-info ms-3">
+                                                <h6 class="mb-0"> Hobbits </h6>
+                                                <small class="text-muted">16 Mutual Friends</small>
+                                            </div>
+                                            <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                                    <line x1="20" y1="8" x2="20" y2="14">
+                                                    </line>
+                                                    <line x1="23" y1="11" x2="17" y2="11">
+                                                    </line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img14.jpg" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="user-page-info ms-3">
+                                                <h6 class="mb-0"> Ninja </h6>
+                                                <small class="text-muted">4 Mutual Friends</small>
+                                            </div>
+                                            <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                                    <line x1="20" y1="8" x2="20" y2="14">
+                                                    </line>
+                                                    <line x1="23" y1="11" x2="17" y2="11">
+                                                    </line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <span class="b-avatar mr-50 badge-secondary rounded-circle" style="width: 40px; height: 40px;">
+                                                <span class="b-avatar-img">
+                                                    <img src="assets/img/admin-img15.jpg" alt="avatar">
+                                                </span>
+                                            </span>
+                                            <div class="user-page-info ms-3">
+                                                <h6 class="mb-0"> Lgbo </h6>
+                                                <small class="text-muted">25 Mutual Friends</small>
+                                            </div>
+                                            <button type="button" class="btn btn-primary ms-auto btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                                    <line x1="20" y1="8" x2="20" y2="14">
+                                                    </line>
+                                                    <line x1="23" y1="11" x2="17" y2="11">
+                                                    </line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+    <!-- page-wrapper -->
+
+    <!-- Modal -->
+    <div class="modal modal-lg fade" style="z-index: 9999999" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                </div>
+                <div class="modal-body mb-4">
+                   
+                    <form   id="createNewsForm" method="get">
+                        <div class="row mat-card p-0" >
+                            <div class="col-5 d-flex justify-content-center align-items-center pt-2">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar-xxl rounded-circle" alt="">
+                            </div>
+                            <div class="col-7 pt-2">
+                                <label for="about" class="form-label">About</label>
+                                <textarea name="about" class="form-control" id="about" cols="10" rows="3" placeholder="About your like , favorite ....."></textarea>
+                            </div>
+                            <div class="col-5 pt-2">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="col-7 pt-2">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-5">
+                                        <label for="date_of_join" class="form-label">Date of Join</label>
+                                        <input type="text" class="form-control" id="date_of_join" placeholder="Date of Join">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 pt-2">
+                                <label for="designation" class="form-label">Designation</label>
+                                <input type="text" name="designation" class="form-control" id="designation" placeholder="Designation">
+                            </div>
+                            <div class="col-7 pt-2">
+                                <label for="website" class="form-label">Website</label>
+                                <input type="text" name="website" class="form-control" id="website" placeholder="Website">
+                            </div>
+                            <div class="col-12 pt-2 pb-3 d-flex justify-content-center">
+                                <input class="submit btn btn-primary" type="submit" value="save">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    @@include('./partials/vendor-scripts.html')
+
+
+</body>
+
+</html>

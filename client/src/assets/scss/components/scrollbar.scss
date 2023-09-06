@@ -1,0 +1,17 @@
+//
+// _custom-scrollbar.scss
+//
+
+.simplebar-scrollbar {
+  position: absolute;
+  right: 2px;
+  width: 6px;
+  min-height: 10px;
+}
+
+.simplebar-scrollbar {
+  width: 10px;
+  &:before {
+    background-color: rgba($dark, 0.4) !important;
+  }  
+}

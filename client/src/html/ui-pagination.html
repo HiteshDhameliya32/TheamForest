@@ -1,0 +1,197 @@
+@@include('./partials/main.html')
+
+<head>
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+        @@include('./partials/left-sidebar.html')
+
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Pagination
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Pagination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Basic</h5>
+                            <p class="card-title-desc">Default bordered pagination</p>
+                            <nav>
+                                <ul class="pagination flex-wrap">
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item active"><a class="page-link bg-primary border-primary text-white" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Flat</h5>
+                            <p class="card-title-desc">Add class <code>.pagination-flat</code></p>
+                            <nav>
+                                <ul class="pagination flex-wrap pagination-flat">
+                                    <li class="page-item me-1"><a class="page-link border-0 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item  me-1 active"><a class="page-link border-0 bg-success rounded-1" href="#">1</a></li>
+                                    <li class="page-item me-1"><a class="page-link border-0 bg-primary border-primary text-white rounded-1" href="#">2</a></li>
+                                    <li class="page-item me-1"><a class="border-0 page-link rounded-1 bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item me-1"><a class="border-0 page-link rounded-1 bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item me-1"><a class="border-0 page-link rounded-1 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Separated</h5>
+                            <p class="card-title-desc">Add class <code>.pagination-separated</code></p>
+                            <nav>
+                                <ul class="pagination flex-wrap pagination-separated">
+                                    <li class="page-item me-1 "><a class="page-link pe-3 ps-3 bg-primary border-primary text-white rounded-1" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item active me-1 "><a class="bg-danger border-danger page-link rounded-1" href="#">1</a></li>
+                                    <li class="page-item me-1 "><a class="page-link rounded-1 bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item me-1 "><a class="page-link rounded-1 bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item me-1 "><a class="page-link rounded-1 bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item me-1 "><a class="page-link pe-3 ps-3 bg-primary border-primary text-white rounded-1" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Bordered Rounded</h5>
+                            <p class="card-title-desc">Add class <code>.pagination-rounded</code></p>
+                            <nav>
+                                <ul class="pagination flex-wrap pagination-rounded">
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item active"><a class="page-link bg-primary border-primary text-white" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Flat Rounded</h5>
+                            <p class="card-title-desc">Add class <code>.pagination-rounded-flat</code></p>
+                            <nav>
+                                <ul class="pagination flex-wrap pagination-rounded-flat">
+                                    <li class="page-item me-1"><a class="page-link bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left p-1" aria-hidden="true"></i></a></li>
+                                    <li class="page-item  me-1 active"><a class="page-link bg-success border-success" href="#">1</a></li>
+                                    <li class="page-item me-1"><a class="page-link bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item me-1"><a class="page-link bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item me-1"><a class="page-link bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item me-1"><a class="page-link bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right p-1" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Separated Rounded</h5>
+                            <p class="card-title-desc">Add class <code>.pagination-rounded-separated</code></p>
+                            <nav>
+                                <ul class="pagination flex-wrap pagination-rounded-separated">
+                                    <li class="page-item me-1 "><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item active me-1 "><a class="bg-danger border-danger page-link rounded-1" href="#">1</a></li>
+                                    <li class="page-item me-1 "><a class="page-link rounded-1 bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item me-1 "><a class="page-link rounded-1 bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item me-1 "><a class="page-link rounded-1 bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item me-1 "><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Left Position</h5>
+                            <p class="card-title-desc">Left Position</p>
+                            <nav>
+                                <ul class="pagination flex-wrap">
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item active"><a class="page-link bg-primary border-primary text-white" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Center Position</h5>
+                            <p class="card-title-desc">Center Position</p>
+                            <nav>
+                                <ul class="flex-wrap justify-content-center pagination">
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item active"><a class="page-link bg-primary border-primary text-white" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xxl-4 mb-30">
+                        <div class="mat-card tabs_content_block">
+                            <h5 class="card-title">Right Position</h5>
+                            <p class="card-title-desc">Right Position</p>
+                            <nav>
+                                <ul class="flex-wrap justify-content-end pagination">
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                                    <li class="page-item active"><a class="page-link bg-primary border-primary text-white" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link bg-primary border-primary text-white" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link pe-3 ps-3 bg-primary border-primary text-white" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+    
+        <!-- page-wrapper -->
+    
+        @@include('./partials/vendor-scripts.html')
+
+</body>
+
+</html>

@@ -1,0 +1,854 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+    
+</head>
+
+<body class="pace-done skin-blue">
+
+    @@include('./partials/right-sidebar.html')
+
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    <!--end page Loader -->
+    <div class="wrapper row-offcanvas row-offcanvas-left responsive_view_set">
+
+         @@include('./partials/left-sidebar.html')
+         
+        <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
+        <div data-simplebar class="right-side animation d-block">
+            <div class="row m-0">
+                <div class="admin_page_block d-flex justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="admin_page_inner d-flex flex-col">
+                            <h1 style="float: left">
+                                Checkbox & Radio
+                            </h1>
+                            <ul class="breadcrumb">
+                                <li class="first"><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                                <li class="last">Checkbox & Radio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="content content-breadcrumb" id="contentSection">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Checkboxes</h5>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Checks</h5>
+                            <div class="mt-3">
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                                </div>
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                    <label class="form-check-label" for="flexCheckChecked">Checked checkbox</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Checks - Disabled</h5>
+                            <div class="mt-3">
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled="">
+                                    <label class="form-check-label" for="flexCheckDisabled">Disabled checkbox</label>
+                                </div>
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked="" disabled="">
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">Disabled checked checkbox</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Checks - Colors</h5>
+                            <div class="mt-3">
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Primary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary" type="checkbox" id="primary-check" value="option1">
+                                            <label class="form-check-label" for="primary-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary" type="checkbox" id="primary2-check" value="option1" checked="">
+                                            <label class="form-check-label" for="primary2-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary" type="checkbox" id="primary3-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="primary3-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Secondary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary" type="checkbox" id="secondary-check" value="option1">
+                                            <label class="form-check-label" for="secondary-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary" type="checkbox" id="secondary2-check" value="option1" checked="">
+                                            <label class="form-check-label" for="secondary2-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary" type="checkbox" id="secondary3-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="secondary3-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Success</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success" type="checkbox" id="success-check" value="option1">
+                                            <label class="form-check-label" for="success-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success" type="checkbox" id="success2-check" value="option1" checked="">
+                                            <label class="form-check-label" for="success2-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success" type="checkbox" id="success3-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="success3-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Danger</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger" type="checkbox" id="danger-check" value="option1">
+                                            <label class="form-check-label" for="danger-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger" type="checkbox" id="danger2-check" value="option1" checked="">
+                                            <label class="form-check-label" for="danger2-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger" type="checkbox" id="danger3-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="danger3-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Warning</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning" type="checkbox" id="warning-check" value="option1">
+                                            <label class="form-check-label" for="warning-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning" type="checkbox" id="warning2-check" value="option1" checked="">
+                                            <label class="form-check-label" for="warning2-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning" type="checkbox" id="warning3-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="warning3-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Info</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info" type="checkbox" id="info-check" value="option1">
+                                            <label class="form-check-label" for="info-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info" type="checkbox" id="info2-check" value="option1" checked="">
+                                            <label class="form-check-label" for="info2-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info" type="checkbox" id="info3-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="info3-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Checks - Light Colors</h5>
+                            <div class="mt-3">
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Primary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-inverse-primary" type="checkbox" id="primary-inverse-check" value="option1">
+                                            <label class="form-check-label" for="primary-inverse-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-inverse-primary" type="checkbox" id="primary2-inverse-check" value="option1" checked="">
+                                            <label class="form-check-label" for="primary2-inverse-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-inverse-primary" type="checkbox" id="primary3-inverse-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="primary3-inverse-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Secondary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-inverse-secondary" type="checkbox" id="secondary-inverse-check" value="option1">
+                                            <label class="form-check-label" for="secondary-inverse-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-inverse-secondary" type="checkbox" id="secondary2-inverse-check" value="option1" checked="">
+                                            <label class="form-check-label" for="secondary2-inverse-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-inverse-secondary" type="checkbox" id="secondary3-inverse-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="secondary3-inverse-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Success</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-inverse-success" type="checkbox" id="success-inverse-check" value="option1">
+                                            <label class="form-check-label" for="success-inverse-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-inverse-success" type="checkbox" id="success2-inverse-check" value="option1" checked="">
+                                            <label class="form-check-label" for="success2-inverse-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-inverse-success" type="checkbox" id="success3-radio-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="success3-radio-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Danger</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-inverse-danger" type="checkbox" id="danger-inverse-check" value="option1">
+                                            <label class="form-check-label" for="danger-inverse-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-inverse-danger" type="checkbox" id="danger2-inverse-check" value="option1" checked="">
+                                            <label class="form-check-label" for="danger2-inverse-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-inverse-danger" type="checkbox" id="danger3-inverse-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="danger3-inverse-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Warning</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-inverse-warning" type="checkbox" id="warning-inverse-check" value="option1">
+                                            <label class="form-check-label" for="warning-inverse-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-inverse-warning" type="checkbox" id="warning2-inverse-check" value="option1" checked="">
+                                            <label class="form-check-label" for="warning2-inverse-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-inverse-warning" type="checkbox" id="warning3-inverse-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="warning3-inverse-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Info</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-inverse-info" type="checkbox" id="info-inverse-check" value="option1">
+                                            <label class="form-check-label" for="info-inverse-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-inverse-info" type="checkbox" id="info2-inverse-check" value="option1" checked="">
+                                            <label class="form-check-label" for="info2-inverse-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-inverse-info" type="checkbox" id="info3-inverse-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="info3-inverse-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Checks - Outline Border Colors</h5>
+                            <div class="mt-3">
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Primary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-outline outline-primary" type="checkbox" id="primary-outline-check" value="option1">
+                                            <label class="form-check-label" for="primary-outline-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-outline outline-primary" type="checkbox" id="primary2-outline-check" value="option1" checked="">
+                                            <label class="form-check-label" for="primary2-outline-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-outline outline-primary" type="checkbox" id="primary3-outline-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="primary3-outline-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Secondary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-outline outline-secondary" type="checkbox" id="secondary-outline-check" value="option1">
+                                            <label class="form-check-label" for="secondary-outline-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-outline outline-secondary" type="checkbox" id="secondary2-outline-check" value="option1" checked="">
+                                            <label class="form-check-label" for="secondary2-outline-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-outline outline-secondary" type="checkbox" id="secondary3-outline-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="secondary3-outline-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Success</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class=" form-check-input success check-outline outline-success" type="checkbox" id="success-outline-check" value="option1">
+                                            <label class="form-check-label" for="success-outline-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-outline outline-success" type="checkbox" id="success2-outline-check" value="option1" checked="">
+                                            <label class="form-check-label" for="success2-outline-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-outline outline-success" type="checkbox" id="success3-outline--check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="success3-outline--check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Danger</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-outline outline-danger" type="checkbox" id="danger-outline-check" value="option1">
+                                            <label class="form-check-label" for="danger-outline-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-outline outline-danger" type="checkbox" id="danger2-outline-check" value="option1" checked="">
+                                            <label class="form-check-label" for="danger2-outline-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-outline outline-danger" type="checkbox" id="danger3-outline-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="danger3-outline-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Warning</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-outline outline-warning" type="checkbox" id="warning-outline-check" value="option1">
+                                            <label class="form-check-label" for="warning-outline-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-outline outline-warning" type="checkbox" id="warning2-outline-check" value="option1" checked="">
+                                            <label class="form-check-label" for="warning2-outline-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-outline outline-warning" type="checkbox" id="warning3-outline-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="warning3-outline-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Info</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-outline outline-info" type="checkbox" id="info-outline-check" value="option1">
+                                            <label class="form-check-label" for="info-outline-check">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-outline outline-info" type="checkbox" id="info2-outline-check" value="option1" checked="">
+                                            <label class="form-check-label" for="info2-outline-check">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-outline outline-info" type="checkbox" id="info3-outline-check" value="option1" disabled="" checked="">
+                                            <label class="form-check-label" for="info3-outline-check">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="border-bottom pb-3 mb-3 card-title">Radios</h5>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Radios - Default</h5>
+                            <div class="mt-3">
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input default" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                                    <label class="form-check-label" for="exampleRadios1">Default radio</label>
+                                </div>
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input default" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">Second default radio</label>
+                                </div>
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input default" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
+                                    <label class="form-check-label" for="exampleRadios3">Disabled radio</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Radios - Disabled</h5>
+                            <div class="mt-3">
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input default" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled="">
+                                    <label class="form-check-label" for="flexRadioDisabled">Disabled radio</label>
+                                </div>
+                                <div class="form-check position-relative">
+                                    <input class="form-check-input default" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked="" disabled="">
+                                    <label class="form-check-label" for="flexRadioCheckedDisabled">Disabled checked radio</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Radio - Colors</h5>
+                            <div class="mt-3">
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Primary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary" type="radio" name="radio-solid-primary" id="primary-radio" value="option1">
+                                            <label class="form-check-label" for="primary-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary" type="radio" name="radio-solid-primary" id="primary2-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="primary2-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary" type="radio" name="radio-solid-primary" id="primary3-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="primary3-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Secondary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary" type="radio" name="radio-solid-secondary" id="secondary-radio" value="option1">
+                                            <label class="form-check-label" for="secondary-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary" type="radio" name="radio-solid-secondary" id="secondary2-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="secondary2-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary" type="radio" name="radio-solid-secondary" id="secondary3-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="secondary3-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Success</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success" type="radio" name="radio-solid-success" id="success-radio" value="option1">
+                                            <label class="form-check-label" for="success-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success" type="radio" name="radio-solid-success" id="success2-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="success2-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success" type="radio" name="radio-solid-success" id="success3-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="success3-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Danger</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger" type="radio" name="radio-solid-danger" id="danger-radio" value="option1">
+                                            <label class="form-check-label" for="danger-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger" type="radio" name="radio-solid-danger" id="danger2-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="danger2-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger" type="radio" name="radio-solid-danger" id="danger3-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="danger3-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Warning</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning" type="radio" name="radio-solid-warning" id="warning-radio" value="option1">
+                                            <label class="form-check-label" for="warning-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning" type="radio" name="radio-solid-warning" id="warning2-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="warning2-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning" type="radio" name="radio-solid-warning" id="warning3-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="warning3-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Info</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info" type="radio" name="radio-solid-info" id="info-radio" value="option1">
+                                            <label class="form-check-label" for="info-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info" type="radio" name="radio-solid-info" id="info2-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="info2-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info" type="radio" name="radio-solid-info" id="info3-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="info3-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Radios - Light Colors</h5>
+                            <div class="mt-3">
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Primary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-inverse-primary" type="radio" name="radio-inverse-primary" id="primary-inverse-radio" value="option1">
+                                            <label class="form-check-label" for="primary-inverse-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-inverse-primary" type="radio" name="radio-inverse-primary" id="primary2-inverse-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="primary2-inverse-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-inverse-primary" type="radio" name="radio-inverse-primary" id="primary3-inverse-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="primary3-inverse-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Secondary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-inverse-secondary" type="radio" name="radio-inverse-secondary" id="secondary-inverse-radio" value="option1">
+                                            <label class="form-check-label" for="secondary-inverse-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-inverse-secondary" type="radio" name="radio-inverse-secondary" id="secondary2-inverse-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="secondary2-inverse-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-inverse-secondary" type="radio" name="radio-inverse-secondary" id="secondary3-inverse-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="secondary3-inverse-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Success</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-inverse-success" type="radio" name="radio-inverse-success" id="success-inverse-radio" value="option1">
+                                            <label class="form-check-label" for="success-inverse-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-inverse-success" type="radio" name="radio-inverse-success" id="success2-inverse-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="success2-inverse-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-inverse-success" type="radio" name="radio-inverse-success" id="success3-inverse-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="success3-inverse-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Danger</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-inverse-danger" type="radio" name="radio-inverse-danger" id="danger-inverse-radio" value="option1">
+                                            <label class="form-check-label" for="danger-inverse-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-inverse-danger" type="radio" name="radio-inverse-danger" id="danger2-inverse-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="danger2-inverse-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-inverse-danger" type="radio" name="radio-inverse-danger" id="danger3-inverse-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="danger3-inverse-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Warning</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-inverse-warning" type="radio" name="radio-inverse-warning" id="warning-inverse-radio" value="option1">
+                                            <label class="form-check-label" for="warning-inverse-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-inverse-warning" type="radio" name="radio-inverse-warning" id="warning2-inverse-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="warning2-inverse-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-inverse-warning" type="radio" name="radio-inverse-warning" id="warning3-inverse-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="warning3-inverse-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Info</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-inverse-info" type="radio" name="radio-inverse-info" id="info-inverse-radio" value="option1">
+                                            <label class="form-check-label" for="info-inverse-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-inverse-info" type="radio" name="radio-inverse-info" id="info2-inverse-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="info2-inverse-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-inverse-info" type="radio" name="radio-inverse-info" id="info3-inverse-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="info3-inverse-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                        <div class="mat-card">
+                            <h5 class="card-title">Radios - Outline Border Colors</h5>
+                            <div class="mt-3">
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Primary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-outline outline-primary" type="radio" name="radio-primary" id="primary-outline-radio" value="option1">
+                                            <label class="form-check-label" for="primary-outline-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-outline outline-primary" type="radio" name="radio-primary" id="primary2-outline-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="primary2-outline-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input primary check-outline outline-primary" type="radio" name="radio-primary" id="primary3-outline-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="primary3-outline-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Secondary</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-outline outline-secondary" type="radio" id="secondary-outline-radio" name="radio-secondary" value="option1">
+                                            <label class="form-check-label" for="secondary-outline-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-outline outline-secondary" type="radio" id="secondary2-outline-radio" name="radio-secondary" value="option1" checked="">
+                                            <label class="form-check-label" for="secondary2-outline-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input secondary check-outline outline-secondary" type="radio" id="secondary3-outline-radio" name="radio-secondary" value="option1" disabled="">
+                                            <label class="form-check-label" for="secondary3-outline-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Success</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-outline outline-success" type="radio" id="success-outline-radio" name="radio-success" value="option1">
+                                            <label class="form-check-label" for="success-outline-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-outline outline-success" type="radio" id="success2-outline-radio" name="radio-success" value="option1" checked="">
+                                            <label class="form-check-label" for="success2-outline-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input success check-outline outline-success" type="radio" id="success3-outline-radio" value="option1" name="radio-success" disabled="">
+                                            <label class="form-check-label" for="success3-outline-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Danger</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-outline outline-danger" type="radio" id="danger-outline-radio" name="radio-danger" value="option1">
+                                            <label class="form-check-label" for="danger-outline-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-outline outline-danger" type="radio" id="danger2-outline-radio" name="radio-danger" value="option1" checked="">
+                                            <label class="form-check-label" for="danger2-outline-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input danger check-outline outline-danger" type="radio" id="danger3-outline-radio" name="radio-danger" value="option1" disabled="">
+                                            <label class="form-check-label" for="danger3-outline-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Warning</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-outline outline-warning" type="radio" name="radio-warning" id="warning-outline-radio" value="option1">
+                                            <label class="form-check-label" for="warning-outline-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-outline outline-warning" type="radio" name="radio-warning" id="warning2-outline-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="warning2-outline-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input warning check-outline outline-warning" type="radio" name="radio-warning" id="warning3-outline-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="warning3-outline-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-md-4 col-xl-3">
+                                        <span class="fs-6 text-muted">Info</span>
+                                    </div>
+                                    <div class="col-md-8 col-xl-9">
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-outline outline-info" type="radio" name="radio-info" id="info-outline-radio" value="option1">
+                                            <label class="form-check-label" for="info-outline-radio">Default</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-outline outline-info" type="radio" name="radio-info" id="info2-outline-radio" value="option1" checked="">
+                                            <label class="form-check-label" for="info2-outline-radio">Checked</label>
+                                        </div>
+                                        <div class="form-check form-check-inline position-relative">
+                                            <input class="form-check-input info check-outline outline-info" type="radio" name="radio-info" id="info3-outline-radio" value="option1" disabled="">
+                                            <label class="form-check-label" for="info3-outline-radio">Disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./partials/footer.html')
+        </div>
+    </div>
+
+    <!-- page-wrapper -->
+
+    @@include('./partials/vendor-scripts.html')
+
+</body>
+
+</html>

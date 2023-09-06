@@ -1,0 +1,268 @@
+.accordion {
+    background: var(--theme-light--bc);
+    .accordion-item {
+      border-radius: 10px;
+      border: none;
+      .accordion-header {
+        .accordion-button {
+          background-color: var(--theme-light--bc);
+          box-shadow: none;
+          padding: 1rem 1.25rem;
+          &::after {
+            background-image: none;
+          }
+        }
+        .collapsed {
+          color: var(--theme-dark-text-rgb);
+        }
+        .card-header {
+          background-color: var(--theme-body-rgb);
+        }
+        &:hover {
+          .accordion-button {
+            h6 {
+              color: #2196f3 !important;
+            }
+          }
+        }
+      }
+    }
+    .accordion-collapse {
+      .accordion-body {
+        background-color: var(--theme-light--bc);
+      }
+    }
+  }
+  
+  .dropdown-menu {
+    background-color: var(--theme-light--bc);
+    border-color: var(--theme-body-rgb);
+    .dropdown-item {
+      background-color: var(--theme-light--bc);
+      color: $secondary;
+      &:hover {
+        background-color: var(--theme-body-rgb);
+      }
+    }
+  }
+
+  .accordion .card {
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+  }
+  
+  .accordion .card .card-body {
+    font-size: 14px;
+    padding: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--theme-card-text-color);
+  }
+  
+  .accordion .card .card-body li {
+    color: var(--theme-card-text-color);
+  }
+  
+  .accordion .card .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .accordion .card .card-header a {
+    position: relative;
+    display: block;
+    padding-right: 1.5rem;
+    color: var(--theme-dark-text-rgb);
+  }
+  
+  .accordion .card .card-header a:before {
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 7px;
+    top: 0;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .accordion .card .card-header a[aria-expanded="false"]:before {
+    content: "\f067";
+  }
+  
+  .accordion .card .card-header a[aria-expanded="true"]:before {
+    content: "\f068";
+  }
+  
+  .accordion.accordion-bordered {
+    -webkit-box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+            box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+  }
+  
+  .accordion.accordion-bordered .card:first-child {
+    border-top: 0;
+  }
+  
+  .accordion.accordion-bordered .card:last-child {
+    border-bottom: 0;
+  }
+  
+  .accordion.accordion-bordered .card {
+    margin: 0 2rem;
+    border-top: 1px solid #dee2e6;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  
+  .accordion.accordion-bordered .card .card-header a[aria-expanded="false"]:before {
+    content: "\f13a";
+  }
+  
+  .accordion.accordion-bordered .card .card-header a[aria-expanded="true"]:before {
+    content: "\f139";
+  }
+  
+  .accordion.accordion-filled .card .card-header a {
+    padding: 2rem 4.5rem 2rem 2rem;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .accordion.accordion-filled .card .card-header a:before {
+    top: 40%;
+    right: 40px;
+  }
+  
+  .accordion.accordion-filled .card .card-header a[aria-expanded="false"]:before {
+    content: "\f078";
+  }
+  
+  .accordion.accordion-filled .card .card-header a[aria-expanded="true"] {
+    background: var(--theme-primary-rgb);
+    color: $white;
+  }
+  
+  .accordion.accordion-filled .card .card-header a[aria-expanded="true"]:before {
+    content: "\f077";
+  }
+  
+  .accordion.accordion-filled .card .card-body {
+    color: $white;
+    background: var(--theme-primary-rgb);
+  }
+  
+  .accordion.accordion-filled .card .card-body p,
+  .accordion.accordion-filled .card .card-body li {
+    color: $white;
+  }
+  
+  .accordion.accordion-solid-header .card .card-header a {
+    padding: 2rem 4.5rem 2rem 2rem;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .accordion.accordion-solid-header .card .card-header a[aria-expanded="true"] {
+    background: var(--theme-primary-rgb);
+    color: $white;
+    border-radius: 8px;
+  }
+  
+  .accordion.accordion-solid-header .card .card-header a:before {
+    top: 40%;
+    right: 40px;
+  }
+  
+  .accordion.accordion-solid-header .card .card-header a[aria-expanded="false"]:before {
+    content: "\f078";
+  }
+  
+  .accordion.accordion-solid-header .card .card-header a[aria-expanded="true"]:before {
+    content: "\f077";
+  }
+  
+  .accordion.accordion-solid-content .card .card-header a {
+    padding: 2rem 4.5rem 2rem 2rem;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .accordion.accordion-solid-content .card .card-header a:before {
+    top: 40%;
+    right: 40px;
+  }
+  
+  .accordion.accordion-solid-content .card .card-header a[aria-expanded="false"]:before {
+    content: "\f078";
+  }
+  
+  .accordion.accordion-solid-content .card .card-header a[aria-expanded="true"]:before {
+    content: "\f077";
+  }
+  
+  .accordion.accordion-solid-content .card .card-body {
+    color: $white;
+    background: var(--theme-primary-rgb);
+  }
+  
+  .accordion.accordion-solid-content .card .card-body p,
+  .accordion.accordion-solid-content .card .card-body li {
+    color: $white;
+  }
+  
+  .accordion.accordion-multi-colored .card .card-header a {
+    padding: 2rem 4.5rem 2rem 2rem;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    color: $white;
+  }
+  
+  .accordion.accordion-multi-colored .card .card-header a:before {
+    top: 40%;
+    right: 40px;
+  }
+  
+  .accordion.accordion-multi-colored .card .card-header a[aria-expanded="false"]:before {
+    content: "\f078";
+  }
+  
+  .accordion.accordion-multi-colored .card .card-header a[aria-expanded="true"]:before {
+    content: "\f077";
+  }
+  
+  .accordion.accordion-multi-colored .card .card-body {
+    color: $white;
+    border-radius: 8px;
+  }
+  
+  .accordion.accordion-multi-colored .card .card-body p,
+  .accordion.accordion-multi-colored .card .card-body li {
+    color: $white;
+  }
+  
+  .accordion.accordion-multi-colored {
+    .card:nth-child(1) {
+      background: $primary;
+    }
+    .card:nth-child(1) .card-body {
+      background: $primary;
+    }
+    .card:nth-child(2) {
+      background: $info;
+    }
+    .card:nth-child(2) .card-body {
+      background: $info;
+    }
+    .card:nth-child(3) {
+      background: $danger;
+    }
+    .card:nth-child(3) .card-body {
+      background: $danger;
+    }
+  }
+  
+  /*# sourceMappingURL=ui-accordions.css.map */
