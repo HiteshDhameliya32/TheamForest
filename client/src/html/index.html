@@ -26,18 +26,32 @@
             <section class="content content-breadcrumb" id="contentSection">
                 <div class="row">
                     <div class="col-12">
-                        <!-- Filter buttons -->
-                        <button class="btn btn-primary m-0 filter-button active" data-filter="lunch">Lunch</button>
-                        <button class="btn btn-primary m-0 filter-button" data-filter="breakfast">Breakfast</button>
+                        <div class="des-heading d-flex justify-content-between align-items-center">
+                            <h4 id="basic-retention-metrics" class="mb-0">Basic Retention Metrics</h4>
+                            <!-- Example single danger button -->
+                            <div>
+                                <button type="button" class="btn btn-soft-primary btn-sm m-0">
+                                    ALL
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Weekly
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Month
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Year
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- end row -->
                 <div class="row">
                     <div class="col-md-4 col-12 mb-30">
-                        <div class="admin_page_inner d-flex flex-col">
-                            <h1 class="mb-1 fs-5 mt-2" style="float: left">
-                                Basic Retention Metrics
-                            </h1>
-                            <header id="home">
+                        <div>
+                            <h5 class="mb-1 fs-5 mt-1"> Merchant Retention Rate </h5>
+                            <header>
                                 <nav class="navbar mb-2">
                                     <div class="navbar-links">
                                         <ul class="links">
@@ -46,7 +60,7 @@
                                             <i class="fa fa-angle-down ms-2 text-white"></i>
                                             <ul class="sub-menu">
                                                 <li class="more-submenu"><a href="#">By Industry</a>
-                                                <i class="fa fa-angle-down ms-2 text-white"></i>
+                                                <span class="fa fa-angle-down ms-2"></span>
                                                 <ul class="sub-menu more-sub-menu">
                                                     <li><a href="#">Retail</a></li>
                                                     <li><a href="#">Healthcare</a></li>
@@ -58,7 +72,7 @@
                                                 </ul>
                                                 </li>
                                                 <li class="more-submenu"><a href="#">By Geography</a>
-                                                <i class="fa fa-angle-down ms-2 text-white"></i>
+                                                <span class="fa fa-angle-down ms-2"></span>
                                                 <ul class="sub-menu more-sub-menu">
                                                     <li><a href="#">North America</a></li>
                                                     <li><a href="#">Europe</a></li>
@@ -69,7 +83,7 @@
                                                 </ul>
                                                 </li>
                                                 <li class="more-submenu"><a href="#">By Subscription Level</a>
-                                                <i class="fa fa-angle-down ms-2 text-white"></i>
+                                                <span class="fa fa-angle-down ms-2"></span>
                                                 <ul class="sub-menu more-sub-menu">
                                                     <li><a href="#">Free</a></li>
                                                     <li><a href="#">Basic</a></li>
@@ -85,441 +99,985 @@
                                 </nav>
                             </header>
                         </div>
-                        <div class="party_chart border-success mat-card rounded-3" data-hrefclick="#">
-                            <div>
-                                <div class="wrapper">
-                                    <div class="items-center justify-between gap-4 mb-4">
-                                        <h2 class="text-uppercase fw-bold text-truncate box-title fs-5">Merchant Retention Rate</h2>
-                                        <div class="border-0 align-items-center d-flex">
-                                            <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
-                                        </div>
-                                    </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
                                 </div>
-                                <div id="chartdiv" class="menu-item" data-category="breakfast"></div>
-                                <div id="line-chart" class="menu-item" data-category="lunch"></div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-md-4 col-12 mb-30">
-                        <div class="admin_page_inner d-flex flex-col">
-                            <h1 class="mb-1 fs-5 mt-2" style="float: left">
-                                Churn Rate
-                            </h1>
+                        <div>
+                            <h5 class="mb-1 fs-5"> Churn Rate </h5>
                             <header id="home">
                                 <nav class="navbar mb-2">
-                                  <div class="navbar-links">
-                                    <ul class="links">
-                                      <li>
-                                        <a href="#">Segmentation</a>
-                                        <i class="fa fa-angle-down ms-2 text-white"></i>
-                                        <ul class="sub-menu">
-                                          <li class="more-submenu"><a href="#">By Industry</a>
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
                                             <i class="fa fa-angle-down ms-2 text-white"></i>
-                                            <ul class="sub-menu more-sub-menu">
-                                              <li><a href="#">Retail</a></li>
-                                              <li><a href="#">Healthcare</a></li>
-                                              <li><a href="#">Finance</a></li>
-                                              <li><a href="#">Technology</a></li>
-                                              <li><a href="#">Hospitality</a></li>
-                                              <li><a href="#">Education</a></li>
-                                              <li><a href="#">Manufacturing</a></li>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
                                             </ul>
-                                          </li>
-                                          <li class="more-submenu"><a href="#">By Geography</a>
-                                            <i class="fa fa-angle-down ms-2 text-white"></i>
-                                            <ul class="sub-menu more-sub-menu">
-                                              <li><a href="#">North America</a></li>
-                                              <li><a href="#">Europe</a></li>
-                                              <li><a href="#">Asia</a></li>
-                                              <li><a href="#">South America</a></li>
-                                              <li><a href="#">Africa</a></li>
-                                              <li><a href="#">Australia</a></li>
-                                            </ul>
-                                          </li>
-                                          <li class="more-submenu"><a href="#">By Subscription Level</a>
-                                            <i class="fa fa-angle-down ms-2 text-white"></i>
-                                            <ul class="sub-menu more-sub-menu">
-                                              <li><a href="#">Free</a></li>
-                                              <li><a href="#">Basic</a></li>
-                                              <li><a href="#">Premium</a></li>
-                                              <li><a href="#">Pro</a></li>
-                                              <li><a href="#">Enterprise</a></li>
-                                            </ul>
-                                          </li>
+                                            </li>
                                         </ul>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </nav>
-                              </header>
-                        </div>
-                        <div class="party_chart border-success mat-card rounded-3" data-hrefclick="#">
-                            <div>
-                                <div class="wrapper">
-                                    <div class="items-center justify-between gap-4 mb-4">
-                                        <h2 class="text-uppercase fw-bold text-truncate box-title fs-5">Merchant Retention Rate</h2>
-                                        <div class="border-0 align-items-center d-flex">
-                                            <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
-                                        </div>
                                     </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
                                 </div>
-                                <div id="chartdiv" class="menu-item" data-category="breakfast"></div>
-                                <div id="line-chart2" class="menu-item" data-category="lunch"></div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart1" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge1" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart1" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge1" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-md-4 col-12 mb-30">
-                        <div class="admin_page_inner d-flex flex-col">
-                            <h1 class="mb-1 fs-5 mt-2" style="float: left">
-                                Merchant Lifetime Value (MLV)
-                            </h1>
+                        <div>
+                            <h5 class="mb-1 fs-5"> Merchant Lifetime Value (MLV) </h5>
                             <header id="home">
                                 <nav class="navbar mb-2">
-                                  <div class="navbar-links">
-                                    <ul class="links">
-                                      <li>
-                                        <a href="#">Segmentation</a>
-                                        <i class="fa fa-angle-down ms-2 text-white"></i>
-                                        <ul class="sub-menu">
-                                          <li class="more-submenu"><a href="#">By Industry</a>
-                                            <i class="fa fa-angle-down ms-2 text-white"></i>
-                                            <ul class="sub-menu more-sub-menu">
-                                              <li><a href="#">Retail</a></li>
-                                              <li><a href="#">Healthcare</a></li>
-                                              <li><a href="#">Finance</a></li>
-                                              <li><a href="#">Technology</a></li>
-                                              <li><a href="#">Hospitality</a></li>
-                                              <li><a href="#">Education</a></li>
-                                              <li><a href="#">Manufacturing</a></li>
-                                            </ul>
-                                          </li>
-                                          <li class="more-submenu"><a href="#">By Geography</a>
-                                            <i class="fa fa-angle-down ms-2 text-white"></i>
-                                            <ul class="sub-menu more-sub-menu">
-                                              <li><a href="#">North America</a></li>
-                                              <li><a href="#">Europe</a></li>
-                                              <li><a href="#">Asia</a></li>
-                                              <li><a href="#">South America</a></li>
-                                              <li><a href="#">Africa</a></li>
-                                              <li><a href="#">Australia</a></li>
-                                            </ul>
-                                          </li>
-                                          <li class="more-submenu"><a href="#">By Subscription Level</a>
-                                            <i class="fa fa-angle-down ms-2 text-white"></i>
-                                            <ul class="sub-menu more-sub-menu">
-                                              <li><a href="#">Free</a></li>
-                                              <li><a href="#">Basic</a></li>
-                                              <li><a href="#">Premium</a></li>
-                                              <li><a href="#">Pro</a></li>
-                                              <li><a href="#">Enterprise</a></li>
-                                            </ul>
-                                          </li>
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                                <a href="#">Segmentation</a>
+                                                <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            </li>
                                         </ul>
-                                      </li>
-                                    </ul>
-                                  </div>
+                                    </div>
                                 </nav>
-                              </header>
+                            </header>
                         </div>
-                        <div class="party_chart border-success mat-card rounded-3" data-hrefclick="#">
-                            <div>
-                                <div class="wrapper">
-                                    <div class="items-center justify-between gap-4 mb-4">
-                                        <h2 class="text-uppercase fw-bold text-truncate box-title fs-5">Merchant Retention Rate</h2>
-                                        <div class="border-0 align-items-center d-flex">
-                                            <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
-                                        </div>
-                                    </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
                                 </div>
-                                <div id="chartdiv" class="menu-item" data-category="breakfast"></div>
-                                <div id="line-chart3" class="menu-item" data-category="lunch"></div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart2" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge2" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart2" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge2" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5"> Customer Acquisition Cost (CAC) </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart3" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge3" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart3" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge3" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5"> MLV:CAC Ratio </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart4" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge4" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart4" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge4" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 col-12 mb-30">
-                        <div class="party_chart border-success mat-card rounded-3" data-hrefclick="#">
-                            <div>
-                                <div class="wrapper">
-                                    <div class="items-center justify-between gap-4 mb-4">
-                                        <h2 class="text-uppercase fw-bold text-truncate box-title fs-5">Merchant Retention Rate</h2>
-                                        <div class="border-0 align-items-center d-flex">
-                                            <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
-                                        </div>
+                        <div>
+                            <h5 class="mb-1 fs-5"> Time-to-Churn </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
                                     </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
                                 </div>
-                                <div id="chartdiv" class="menu-item" data-category="breakfast"></div>
-                                <div id="line-chart4" class="menu-item" data-category="lunch"></div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart5" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge5" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart5" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge5" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 col-12 mb-30">
-                        <div class="party_chart border-success mat-card rounded-3" data-hrefclick="#">
-                            <div>
-                                <div class="wrapper">
-                                    <div class="items-center justify-between gap-4 mb-4">
-                                        <h2 class="text-uppercase fw-bold text-truncate box-title fs-5">Merchant Retention Rate</h2>
-                                        <div class="border-0 align-items-center d-flex">
-                                            <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="chartdiv" class="menu-item" data-category="breakfast"></div>
-                                <div id="line-chart5" class="menu-item" data-category="lunch"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-12 mb-30">
-                        <div class="party_chart border-success mat-card rounded-3" data-hrefclick="#">
-                            <div>
-                                <div class="wrapper">
-                                    <div class="items-center justify-between gap-4 mb-4">
-                                        <h2 class="text-uppercase fw-bold text-truncate box-title fs-5">Merchant Retention Rate</h2>
-                                        <div class="border-0 align-items-center d-flex">
-                                            <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="chartdiv" class="menu-item" data-category="breakfast"></div>
-                                <div id="line-chart6" class="menu-item" data-category="lunch"></div>
-                            </div>
-                        </div>
-                    </div>
-<!-- 
-
-                    <div class="col-md-4 col-12 mb-30">
-                        <div class="party_chart border-danger mat-card rounded-3" data-hrefclick="#">
-                            <div class="">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1 overflow-hidden visitor_header">
-                                        <p class="text-uppercase fw-bold text-truncate mb-0 box-title"> Portfolio</p>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <h5 class="text-danger fs-14 mb-0">
-                                            <i class="ri-arrow-right-up-line fs-13 align-middle"></i> +02.24 %
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-end justify-content-between mt-4">
-                                    <div>
-                                        <h4 class="fs-22 fw-semibold mb-4">$ <span class="counter_value" data-target="700">0</span></h4>
-                                        <a href="#">View net earnings</a>
-                                    </div>
-                                    <div class="avatar-sm flex-shrink-0">
-                                        <span class="avatar-title bg-soft-danger rounded fs-5 d-flex float-none align-items-center justify-content-center">
-                                            <i class="fa fa-google-wallet text-danger"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-md-6 col-12 mb-30">
-                        <div class="party_chart border-warning mat-card rounded-3" data-hrefclick="#">
-                            <div class="inner">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1 overflow-hidden visitor_header">
-                                        <p class="text-uppercase fw-bold text-truncate mb-0 box-title"> Customers</p>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <h5 class="text-warning fs-14 mb-0">
-                                            <i class="ri-arrow-right-up-line fs-13 align-middle"></i> +12.24 %
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-end justify-content-between mt-4">
-                                    <div>
-                                        <h4 class="fs-22 fw-semibold mb-4">$<span class="counter_value" data-target="1400">0</span></h4>
-                                        <a href="#">View net earnings</a>
-                                    </div>
-                                    <div class="avatar-sm flex-shrink-0">
-                                        <span class="avatar-title bg-soft-warning rounded fs-5 d-flex float-none align-items-center justify-content-center">
-                                            <i class="fa fa-user-circle-o text-warning"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-9 mb-30">
-                        <div class="mat-card">
-                            <div id="revenue_chart"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 mb-30">
-                        <div class="mat-card">
-                            <div id="success_chart"></div>
-
-                            <div class="border rounded-2 p-0 task mt-3">
-                                <div class="py-3 px-3 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h6 class="fw-bold mb-0">Media Files</h6>
-                                        <span class="fs-12 text-muted">Dashboard</span>
-                                    </div>
-                                    <div>
-                                        <h6 class="mb-0 text-muted">5h</h6>
-                                    </div>
-                                </div>
-                                <div class="card-body py-3 border-top justify-content-center d-flex">
-                                    <div class="avatar-group">
-                                        <div class="avatar-group-item">
-                                            <a href="#">
-                                                <img class="avatar-sm rounded-circle" src="assets/img/user/avatar-13.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="avatar-group-item">
-                                            <a href="#">
-                                                <img class="avatar-sm rounded-circle" src="assets/img/user/avatar-12.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="avatar-group-item">
-                                            <a href="#">
-                                                <img class="avatar-sm rounded-circle" src="assets/img/user/avatar-11.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="avatar-group-item">
-                                            <a href="#">
-                                                <img class="avatar-sm rounded-circle" src="assets/img/user/avatar-10.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="avatar-group-item">
-                                            <a href="#">
-                                                <div class="avatar-sm">
-                                                    <span class="avatar-title rounded-circle bg-primary text-white">
-                                                        4+
-                                                    </span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 mb-30">
-                        <div class="mat-card p-0 bg-soft-primary">
-                            <img src="assets/img/dashbard-2.png" style="border-radius:  5px 5px 0 0;" class="img-fluid" alt="">
-                            <div class="d-block">
-                                <div class="cal-main">
-                                    <span class="background"></span>
-                                    <span class="background1"></span>
-                                    <span class="background2"></span>
-                                    <div class="cal-container">
-                                        <div class="calendar-top">
-                                            <span class="arrow" id="back__arrow">
-                                                <i class="mdi mdi-arrow-left-circle-outline fs-22"></i>
-                                            </span>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="calendar-day">
-                                                    <span class="cal-month" id="cal__month"></span>
-                                                    <span class="cal-date" id="cal__date"></span>
-                                                </div>
-                                                <div class="calendar-time ms-4">
-                                                    <span class="text-end cal-time" id="cal__time"></span>
-                                                </div>
-                                            </div>
-                                            <span class="arrow" id="next__arrow">
-                                                <i class="mdi mdi-arrow-right-circle-outline fs-22"></i>
-                                            </span>
-                                        </div>
-                                        <div class="calendar-bottom">
-                                            <div class="cal-weekdays mb-2" id="cal__weekdays">
-                                                <span>Sun</span>
-                                                <span>Mon</span>
-                                                <span>Tue</span>
-                                                <span>Wed</span>
-                                                <span>Thu</span>
-                                                <span>Fri</span>
-                                                <span>Sat</span>
-                                            </div>
-                                            <div class="cal-days" id="cal__days"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-12 mb-30">
-                        <div class="mat-card">
-                            <div class=" table_view_card rounded-3 general_table">
-                                <div class="inner" style="position: relative;">
-                                    <div class="box-header p-0 d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <div class="with-border">
-                                                <h3 class="box-title m-0">Order Stats</h3>
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-0">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Monthly
-                                                </a>
-
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="#">Yearly</a>
-                                                    <a class="dropdown-item" href="#">Monthly</a>
-                                                    <a class="dropdown-item" href="#">Weekly</a>
-                                                    <a class="dropdown-item" href="#">Today</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="order-chart" class="apex-charts"></div>
-
-                                    <div class="mt-2 px-2">
-                                        <div class="order-wid-list d-flex justify-content-between border-bottom">
-                                            <p class="mb-0">
-                                                <i class="mdi mdi-square-rounded font-size-10 text-primary me-2"></i>Earnings
-                                            </p>
-                                            <div>
-                                                <span class="pe-5 text-muted">1950</span>
-                                                <span class="badge bg-primary"> + 5.84% </span>
-                                            </div>
-                                        </div>
-                                        <div class="order-wid-list d-flex justify-content-between border-bottom">
-                                            <p class="mb-0">
-                                                <i class="mdi mdi-square-rounded font-size-10 text-success me-2"></i>Order
-                                            </p>
-                                            <div>
-                                                <span class="pe-5 text-muted">12,596</span>
-                                                <span class="badge bg-success"> - 0.7% </span>
-                                            </div>
-                                        </div>
-                                        <div class="order-wid-list d-flex justify-content-between border-bottom">
-                                            <p class="mb-0">
-                                                <i class="mdi mdi-square-rounded font-size-10 text-warning me-2"></i>Portfolio
-                                            </p>
-                                            <div>
-                                                <span class="pe-5 text-muted">1,568</span>
-                                                <span class="badge bg-warning"> + 0.4% </span>
-                                            </div>
-                                        </div>
-                                        <div class="order-wid-list d-flex justify-content-between border-bottom">
-                                            <p class="mb-0">
-                                                <i class="mdi mdi-square-rounded font-size-10 text-danger me-2"></i> Loss
-                                            </p>
-                                            <div>
-                                                <span class="pe-5 text-muted">826</span>
-                                                <span class="badge bg-danger"> - 2.8% </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="des-heading d-flex justify-content-between align-items-center">
+                            <h4 id="" class="mb-0">Satisfaction and Loyalty Metrics</h4>
+                            <!-- Example single danger button -->
+                            <div>
+                                <button type="button" class="btn btn-soft-primary btn-sm m-0">
+                                    ALL
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Weekly
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Month
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Year
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+                
+                <div class="row">
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5 mt-1"> NPS </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart6" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge6" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart6" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge6" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5"> Customer Support Rating </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart7" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge7" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart7" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge7" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5"> Repeat Transaction Rate </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart8" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge8" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart8" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge8" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5"> Satisfaction Score </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart9" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge9" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart9" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge9" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="des-heading d-flex justify-content-between align-items-center">
+                            <h4 id="" class="mb-0">Revenue Expansion Metrics</h4>
+                            <!-- Example single danger button -->
+                            <div>
+                                <button type="button" class="btn btn-soft-primary btn-sm m-0">
+                                    ALL
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Weekly
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Month
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Year
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+                
+                <div class="row">
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5 mt-1"> Average Revenue Per Merchant (ARPM) </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart10" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge10" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart10" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge10" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5"> Upsell/Cross-Sell Rate </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart11" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge11" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart11" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge11" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="des-heading d-flex justify-content-between align-items-center">
+                            <h4 id="" class="mb-0">Reactivation Metrics</h4>
+                            <!-- Example single danger button -->
+                            <div>
+                                <button type="button" class="btn btn-soft-primary btn-sm m-0">
+                                    ALL
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Weekly
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Month
+                                </button>
+                                <button type="button" class="btn btn-soft-secondary btn-sm m-0">
+                                    Year
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+                
+                <div class="row">
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5 mt-1"> Reactivation Rate </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart12" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge12" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart12" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge12" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-12 mb-30">
+                        <div>
+                            <h5 class="mb-1 fs-5"> Time-to-Reactivation </h5>
+                            <header id="home">
+                                <nav class="navbar mb-2">
+                                    <div class="navbar-links">
+                                        <ul class="links">
+                                            <li>
+                                            <a href="#">Segmentation</a>
+                                            <i class="fa fa-angle-down ms-2 text-white"></i>
+                                            <ul class="sub-menu">
+                                                <li class="more-submenu"><a href="#">By Industry</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Retail</a></li>
+                                                    <li><a href="#">Healthcare</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Technology</a></li>
+                                                    <li><a href="#">Hospitality</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Manufacturing</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Geography</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">North America</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">South America</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Australia</a></li>
+                                                </ul>
+                                                </li>
+                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
+                                                <span class="fa fa-angle-down ms-2"></span>
+                                                <ul class="sub-menu more-sub-menu">
+                                                    <li><a href="#">Free</a></li>
+                                                    <li><a href="#">Basic</a></li>
+                                                    <li><a href="#">Premium</a></li>
+                                                    <li><a href="#">Pro</a></li>
+                                                    <li><a href="#">Enterprise</a></li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <div class="party_chart border-success mat-card rounded-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="border-0 align-items-center d-flex">
+                                    <h6 class="card-title fw-bold mb-0 flex-grow-1">Unit: Precentage (%)</h6>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart13" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge13" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="line-chart13" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0"></div>
+                                <div class="tab-pane fade gauge-chart" id="gauge13" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
             </section>
             @@include('./partials/footer.html')
         </div>
@@ -533,38 +1091,6 @@
     <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="assets/js/main/client-chart.js"></script>
-    <script>
-        const filterButtons = document.querySelectorAll('.filter-button');
-        const menuItems = document.querySelectorAll('.menu-item');
-
-        function filterItems(category) {
-            filterButtons.forEach(button => {
-                if (button.getAttribute('data-filter') === category) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-
-            menuItems.forEach(item => {
-                if (item.getAttribute('data-category') === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                const category = this.getAttribute('data-filter');
-                filterItems(category);
-            });
-        });
-
-        // Initial filter by the first button when the page loads
-        filterItems(filterButtons[0].getAttribute('data-filter'));
-    </script>
 </body>
 
 </html>

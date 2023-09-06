@@ -30,7 +30,12 @@ $font-size-mixing: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 3
   }
   .btn-soft-#{$color} {
     background-color: rgba(($value), 0.2) !important;
-    color:  ($value)!important;
+    color: ($value)!important;
+    &:hover,
+    &.active {
+      background-color: ($value) !important;
+      color: ($white) !important;
+    }
   }
   .border-#{$color} {
     border-color: ($value) !important;
