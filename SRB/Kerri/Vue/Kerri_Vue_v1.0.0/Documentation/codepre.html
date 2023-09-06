@@ -1,0 +1,23 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #f5f5f5; overflow:auto;width:auto;border:solid gray;border-width:0px;padding:1.6em;">
+    <pre style="margin: 0; line-height: 125%">
+import { createApp } from 'vue'
+import App from './App.vue'
+import routes from './routes/routes.js'
+import VueWriter from "vue-writer";
+import BootstrapVueNext from 'bootstrap-vue-next'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
+import "@/assets/css/materialdesignicons.min.css"
+import '@/assets/css/service.css'
+
+import '@/assets/scss/style.scss'
+import '@/assets/css/style.css'
+import '@/assets/css/color/default.css'
+
+createApp(App)
+    .use(VueWriter)
+    .use(BootstrapVueNext)
+    .use(routes)
+    .mount('#app')
+</div>
