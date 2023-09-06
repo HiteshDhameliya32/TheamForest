@@ -21,6 +21,38 @@
 
         @@include('./partials/left-sidebar.html')
 
+        <!-- start sidebar -->
+        <nav class="sidebar position-fixed top-0 bottom-0 flex-none d-md-block overflow-hidden">
+            <div class="">
+                <!-- Start Logo -->
+                <div class="d-flex justify-content-center px-4 py-4">
+                    <a href="javascript:void(0)" class="">
+                        <img src="../assets/img/menu-logo.svg" class="mx-auto" alt="logo">
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <!-- Start Menu -->
+                <ul class="">
+                    <h6 class="fw-bold fs-5">Dashboard</h6>
+                    <li class="mb-2 active">
+                        <a href="#basic-retention-metrics" class="overflow-hidden">Basic Retention Metrics</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#satisfaction-loyalty-metrics" class="overflow-hidden">Satisfaction and Loyalty Metrics</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#revenue-expansion-metrics" class="overflow-hidden">Revenue Expansion Metrics</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#reactivation-metrics" class="overflow-hidden">Reactivation Metrics</a>
+                    </li>
+                </ul>
+                <!-- End Menu -->
+                  
+            </div>
+        </nav>
+        <!-- end sidebar -->
+        
         <div class="drawer-overlay sidebar-close-overlay position-fixed top-0 bottom-0 end-0 start-0 h-100"></div>
         <div data-simplebar class="right-side animation d-block">
             <section class="content content-breadcrumb" id="contentSection">
@@ -106,8 +138,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -176,8 +208,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart1" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge1" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart1" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge1" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -211,8 +243,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart2" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge2" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart2" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge2" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -281,8 +313,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart3" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge3" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart3" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge3" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -351,8 +383,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart4" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge4" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart4" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge4" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -421,8 +453,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart5" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge5" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart5" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge5" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -438,7 +470,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="des-heading d-flex justify-content-between align-items-center">
-                            <h4 id="" class="mb-0">Satisfaction and Loyalty Metrics</h4>
+                            <h4 id="satisfaction-loyalty-metrics" class="mb-0">Satisfaction and Loyalty Metrics</h4>
                             <!-- Example single danger button -->
                             <div>
                                 <button type="button" class="btn btn-soft-primary btn-sm m-0">
@@ -518,8 +550,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart6" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge6" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart6" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge6" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -588,8 +620,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart7" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge7" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart7" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge7" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -658,8 +690,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart8" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge8" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart8" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge8" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -728,8 +760,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart9" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge9" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart9" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge9" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -747,7 +779,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="des-heading d-flex justify-content-between align-items-center">
-                            <h4 id="" class="mb-0">Revenue Expansion Metrics</h4>
+                            <h4 id="revenue-expansion-metrics" class="mb-0">Revenue Expansion Metrics</h4>
                             <!-- Example single danger button -->
                             <div>
                                 <button type="button" class="btn btn-soft-primary btn-sm m-0">
@@ -827,8 +859,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart10" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge10" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart10" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge10" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -897,8 +929,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart11" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge11" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart11" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge11" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -914,7 +946,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="des-heading d-flex justify-content-between align-items-center">
-                            <h4 id="" class="mb-0">Reactivation Metrics</h4>
+                            <h4 id="reactivation-metrics" class="mb-0">Reactivation Metrics</h4>
                             <!-- Example single danger button -->
                             <div>
                                 <button type="button" class="btn btn-soft-primary btn-sm m-0">
@@ -994,8 +1026,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart12" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge12" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart12" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge12" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -1064,8 +1096,8 @@
                                 </div>
                                 <nav>
                                     <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                      <button class="btn btn-soft-primary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart13" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
-                                      <button class="btn btn-soft-primary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge13" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
+                                      <button class="btn btn-soft-secondary btn-sm mt-0 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#line-chart13" type="button" role="tab" aria-controls="line-chart" aria-selected="true">Line Chart</button>
+                                      <button class="btn btn-soft-secondary btn-sm m-0" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge13" type="button" role="tab" aria-controls="gauge" aria-selected="false">Gauge</button>
                                     </div>
                                 </nav>
                             </div>
@@ -1091,6 +1123,19 @@
     <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="assets/js/main/client-chart.js"></script>
+
+    <script>
+        $(document).ready(function() {
+  $('.sidebar li').click(function() {
+    // Remove "active" class from all links
+    $('.sidebar li').removeClass('active');
+
+    // Add "active" class to the clicked link
+    $(this).addClass('active');
+  });
+});
+
+    </script>
 </body>
 
 </html>
