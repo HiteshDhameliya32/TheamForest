@@ -123,7 +123,7 @@ var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
 labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
-labelMetricValue.paddingBottom = 15;
+labelMetricValue.paddingBottom = 0;
 labelMetricValue.horizontalCenter = "middle";
 labelMetricValue.verticalCenter = "bottom";
 labelMetricValue.text = data.score.toFixed(1);
@@ -469,20 +469,6 @@ for (let grading of data.gradingData) {
 var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 /**
- * Metric Value
- */
-
-var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
-labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "2em";
-labelMetricValue.x = am4core.percent(50);
-labelMetricValue.paddingBottom = 15;
-labelMetricValue.horizontalCenter = "middle";
-labelMetricValue.verticalCenter = "bottom";
-labelMetricValue.text = data.score.toFixed(1);
-labelMetricValue.fill = am4core.color(matchingGrade.color);
-
-/**
  * Hand
  */
 var hand = chart.hands.push(new am4charts.ClockHand());
@@ -645,20 +631,6 @@ for (let grading of data.gradingData) {
 var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 /**
- * Metric Value
- */
-
-var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
-labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "2em";
-labelMetricValue.x = am4core.percent(50);
-labelMetricValue.paddingBottom = 15;
-labelMetricValue.horizontalCenter = "middle";
-labelMetricValue.verticalCenter = "bottom";
-labelMetricValue.text = data.score.toFixed(1);
-labelMetricValue.fill = am4core.color(matchingGrade.color);
-
-/**
  * Hand
  */
 var hand = chart.hands.push(new am4charts.ClockHand());
@@ -719,7 +691,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -821,20 +793,6 @@ for (let grading of data.gradingData) {
 var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 /**
- * Metric Value
- */
-
-var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
-labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
-labelMetricValue.x = am4core.percent(50);
-labelMetricValue.paddingBottom = 15;
-labelMetricValue.horizontalCenter = "middle";
-labelMetricValue.verticalCenter = "bottom";
-labelMetricValue.text = data.score.toFixed(1);
-labelMetricValue.fill = am4core.color(matchingGrade.color);
-
-/**
  * Hand
  */
 var hand = chart.hands.push(new am4charts.ClockHand());
@@ -895,7 +853,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -1002,7 +960,7 @@ var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
+labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
 labelMetricValue.paddingBottom = 15;
 labelMetricValue.horizontalCenter = "middle";
@@ -1071,7 +1029,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -1178,7 +1136,7 @@ var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
+labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
 labelMetricValue.paddingBottom = 15;
 labelMetricValue.horizontalCenter = "middle";
@@ -1247,7 +1205,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -1354,7 +1312,7 @@ var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
+labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
 labelMetricValue.paddingBottom = 15;
 labelMetricValue.horizontalCenter = "middle";
@@ -1423,7 +1381,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -1530,7 +1488,7 @@ var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
+labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
 labelMetricValue.paddingBottom = 15;
 labelMetricValue.horizontalCenter = "middle";
@@ -1600,7 +1558,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -1702,20 +1660,6 @@ for (let grading of data.gradingData) {
 var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 /**
- * Metric Value
- */
-
-var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
-labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
-labelMetricValue.x = am4core.percent(50);
-labelMetricValue.paddingBottom = 15;
-labelMetricValue.horizontalCenter = "middle";
-labelMetricValue.verticalCenter = "bottom";
-labelMetricValue.text = data.score.toFixed(1);
-labelMetricValue.fill = am4core.color(matchingGrade.color);
-
-/**
  * Hand
  */
 var hand = chart.hands.push(new am4charts.ClockHand());
@@ -1777,7 +1721,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -1879,20 +1823,6 @@ for (let grading of data.gradingData) {
 var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 /**
- * Metric Value
- */
-
-var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
-labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
-labelMetricValue.x = am4core.percent(50);
-labelMetricValue.paddingBottom = 15;
-labelMetricValue.horizontalCenter = "middle";
-labelMetricValue.verticalCenter = "bottom";
-labelMetricValue.text = data.score.toFixed(1);
-labelMetricValue.fill = am4core.color(matchingGrade.color);
-
-/**
  * Hand
  */
 var hand = chart.hands.push(new am4charts.ClockHand());
@@ -1954,7 +1884,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -2061,7 +1991,7 @@ var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
+labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
 labelMetricValue.paddingBottom = 15;
 labelMetricValue.horizontalCenter = "middle";
@@ -2130,7 +2060,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -2237,7 +2167,7 @@ var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
+labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
 labelMetricValue.paddingBottom = 15;
 labelMetricValue.horizontalCenter = "middle";
@@ -2306,7 +2236,7 @@ var data = {
     {
       title: "Warning",
       advice: "Warning - revenue to workforce performance not good",
-      color: "#6a69f5",
+      color: "#9696f8",
       lowScore: 20,
       highScore: 50
     },
@@ -2413,7 +2343,7 @@ var matchingGrade = lookUpGrade(data.score, data.gradingData);
 
 var labelMetricValue = chart.radarContainer.createChild(am4core.Label);
 labelMetricValue.isMeasured = false;
-labelMetricValue.fontSize = "6em";
+labelMetricValue.fontSize = "2em";
 labelMetricValue.x = am4core.percent(50);
 labelMetricValue.paddingBottom = 15;
 labelMetricValue.horizontalCenter = "middle";
@@ -2464,153 +2394,10 @@ setInterval(function() {
     axis2.axisRanges.values[0].axisFill.fillOpacity = 0.2;
     axis2.axisRanges.values[1].axisFill.fillOpacity = 0.2;
 }, 100);
+// end guage chart
 
-//  line chart
-// Chart Widget 
-// var userchart = {
-//     chart: {
-//         height: 300,
-//         type: "area",
-//         zoom: {
-//             enabled: false,
-//         },
-//         toolbar: {
-//             show: false,
-//         },
-//         selection: {
-//             enabled: true,
-//             type: 'x',
-//             fill: {
-//               color: '#24292e',
-//               opacity: 0.1
-//             },
-//             stroke: {
-//               width: 1,
-//               dashArray: 3,
-//               color: '#24292e',
-//               opacity: 0.4
-//             },
-//             xaxis: {
-//               min: undefined,
-//               max: undefined
-//             },
-//             yaxis: {
-//               min: undefined,
-//               max: undefined
-//             }
-//           }
-//     },
-//     series: [
-//         {
-//             name: "Current Week",
-//             data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-//         },
-//     ],
-//     dataLabels: {
-//         enabled: false,
-//     },
-//     dropShadow: {
-//         enabled: false,
-//     },
-//     colors: ["#6a69f5"],
-//     markers: {
-//         discrete: [
-//             {
-//                 seriesIndex: 0,
-//                 dataPointIndex: 4,
-//                 fillColor: "#6a69f5",
-//                 strokeColor: "#fff",
-//                 size: 6,
-//             },
-//             {
-//                 seriesIndex: 1,
-//                 dataPointIndex: 5,
-//                 fillColor: "#323a46",
-//                 strokeColor: "#fff",
-//                 size: 6,
-//             },
-//         ],
-//     },
-//     // labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-//     xaxis: {
-//         axisBorder: {
-//             show: false,
-//         },
-//         axisTicks: {
-//             show: false,
-//         },
-//         crosshairs: {
-//             show: true,
-//         },
-//         labels: {
-//             offsetX: 0,
-//             offsetY: 5,
-//             style: {
-//                 fontSize: "12px",
-//                 cssClass: "apexcharts-xaxis-title",
-//             },
-//         },
-//     },
-//     yaxis: {
-//         tickAmount: 7,
-//         labels: {
-//             formatter: (value) => {
-//                 return value / 100 + "%";
-//             },
-//             offsetX: -10,
-//             offsetY: 0,
-//             style: {
-//                 fontSize: "12px",
-//                 cssClass: "apexcharts-yaxis-title",
-//             },
-//         },
-//         opposite: false,
-//     },
-//     grid: {
-//         borderColor: "#e0e6ed",
-//         strokeDashArray: 7,
-//         xaxis: {
-//             lines: {
-//                 show: false,
-//             },
-//         },
-//         yaxis: {
-//             lines: {
-//                 show: true,
-//             },
-//         },
-//         padding: {
-//             top: 0,
-//             right: 0,
-//             bottom: 0,
-//             left: 0,
-//         },
-//     },
-//     legend: {
-//         show: false,
-//     },
-//     tooltip: {
-//         marker: {
-//             show: true,
-//         },
-//         x: {
-//             show: false,
-//         },
-//     },
-//     fill: {
-//         type: "gradient",
-//         gradient: {
-//             shadeIntensity: 1,
-//             inverseColors: !1,
-//             opacityFrom: 0,
-//             opacityTo: 0,
-//             stops: [100, 100],
-//         },
-//     },
-// };
-// var chart = new ApexCharts(document.querySelector("#line-chart"), userchart);
-// chart.render();
 
+// line-chart
 var options = {
     series: [
         {
@@ -2657,7 +2444,7 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#line-chart"), options);
 chart.render();
 
-
+// line-chart1
 var options = {
     series: [
         {
@@ -2704,6 +2491,117 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#line-chart1"), options);
 chart.render();
 
+// bar-chart5
+var options = {
+  series: [{
+  data: [80, 40, 63, 100, 80],
+  }],
+    chart: {
+    type: 'bar',
+    height: 80,
+      toolbar: {
+        show: false,
+      }
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: '40%',
+      endingShape: 'rounded',
+      borderRadius: 5
+    },
+  },
+  dataLabels: {
+    enabled: false
+  },
+  stroke: {
+    show: false,
+    width: 2,
+    colors: ['transparent']
+  },
+  fill: {
+    opacity: 1
+  },
+  tooltip: {
+    y: {
+      formatter: function (val) {
+        return "$ " + val + " thousands"
+      }
+    }
+  },
+  yaxis: {
+    show: false,
+  },
+  xaxis: {      
+    labels: {
+      show: false,
+    }
+  },
+  grid: {
+    show: false,
+  },
+  fill: {
+    colors: ['#9795f7']
+  },
+};
+var chart = new ApexCharts(document.querySelector("#bar-chart5"), options);
+chart.render();
+
+// line-chart6
+var options = {
+  series: [44, 55, 13, 43, 22],
+  chart: {
+  width: 140,
+  type: 'pie',
+  colors: ['#9795f7', '#66DA26', '#546E7A', '#E91E63', '#FF9800']
+},
+labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+responsive: [{
+  breakpoint: 480,
+  options: {
+    chart: {
+      width: 150
+    },
+  }
+}],
+value: {
+  show: false,
+},
+legend: {
+  show: false,
+}
+};
+var chart = new ApexCharts(document.querySelector("#pie-chart6"), options);
+chart.render();
+
+// line-chart7
+var options = {
+  series: [44, 55, 13, 43, 22],
+  chart: {
+  width: 140,
+  type: 'pie',
+  colors: ['#9795f7', '#66DA26', '#546E7A', '#E91E63', '#FF9800']
+},
+labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+responsive: [{
+  breakpoint: 480,
+  options: {
+    chart: {
+      width: 150
+    },
+  }
+}],
+value: {
+  show: false,
+},
+legend: {
+  show: false,
+}
+};
+var chart = new ApexCharts(document.querySelector("#pie-chart7"), options);
+chart.render();
+
+// line-chart8
 var options = {
     series: [
         {
@@ -2747,9 +2645,10 @@ var options = {
         },
     },
 };
-var chart = new ApexCharts(document.querySelector("#line-chart2"), options);
+var chart = new ApexCharts(document.querySelector("#line-chart8"), options);
 chart.render();
 
+// line-chart11
 var options = {
     series: [
         {
@@ -2793,2099 +2692,167 @@ var options = {
         },
     },
 };
-var chart = new ApexCharts(document.querySelector("#line-chart3"), options);
+var chart = new ApexCharts(document.querySelector("#line-chart11"), options);
 chart.render();
-// 
-// Chart Widget 1
-// var userchart = {
-//   chart: {
-//       height: 300,
-//       type: "area",
-//       fontFamily: "Inter, sans-serif",
-//       zoom: {
-//           enabled: false,
-//       },
-//       toolbar: {
-//           show: false,
-//       },
-//       selection: {
-//           enabled: true,
-//           type: 'x',
-//           fill: {
-//             color: '#24292e',
-//             opacity: 0.1
-//           },
-//           stroke: {
-//             width: 1,
-//             dashArray: 3,
-//             color: '#24292e',
-//             opacity: 0.4
-//           },
-//           xaxis: {
-//             min: undefined,
-//             max: undefined
-//           },
-//           yaxis: {
-//             min: undefined,
-//             max: undefined
-//           }
-//         }
-//   },
-//   series: [
-//       {
-//           name: "Current Week",
-//           data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-//       },
-//       {
-//           name: "Previous Week",
-//           data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-//       },
-//   ],
-//   dataLabels: {
-//       enabled: false,
-//   },
-//   stroke: {
-//       show: true,
-//       curve: "smooth",
-//       width: 3,
-//       lineCap: "square",
-//   },
-//   dropShadow: {
-//       enabled: false,
-//   },
-//   colors: ["#6a69f5", "#323a46"],
-//   markers: {
-//       discrete: [
-//           {
-//               seriesIndex: 0,
-//               dataPointIndex: 4,
-//               fillColor: "#6a69f5",
-//               strokeColor: "#fff",
-//               size: 6,
-//           },
-//           {
-//               seriesIndex: 1,
-//               dataPointIndex: 5,
-//               fillColor: "#323a46",
-//               strokeColor: "#fff",
-//               size: 6,
-//           },
-//       ],
-//   },
-//   labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-//   xaxis: {
-//       axisBorder: {
-//           show: false,
-//       },
-//       axisTicks: {
-//           show: false,
-//       },
-//       crosshairs: {
-//           show: true,
-//       },
-//       labels: {
-//           offsetX: 0,
-//           offsetY: 5,
-//           style: {
-//               fontSize: "12px",
-//               cssClass: "apexcharts-xaxis-title",
-//           },
-//       },
-//   },
-//   yaxis: {
-//       tickAmount: 7,
-//       labels: {
-//           formatter: (value) => {
-//               return value / 100 + "%";
-//           },
-//           offsetX: -10,
-//           offsetY: 0,
-//           style: {
-//               fontSize: "12px",
-//               cssClass: "apexcharts-yaxis-title",
-//           },
-//       },
-//       opposite: false,
-//   },
-//   grid: {
-//       borderColor: "#e0e6ed",
-//       strokeDashArray: 7,
-//       xaxis: {
-//           lines: {
-//               show: false,
-//           },
-//       },
-//       yaxis: {
-//           lines: {
-//               show: true,
-//           },
-//       },
-//       padding: {
-//           top: 0,
-//           right: 0,
-//           bottom: 0,
-//           left: 0,
-//       },
-//   },
-//   legend: {
-//       show: false,
-//   },
-//   tooltip: {
-//       marker: {
-//           show: true,
-//       },
-//       x: {
-//           show: false,
-//       },
-//   },
-//   fill: {
-//       type: "gradient",
-//       gradient: {
-//           shadeIntensity: 1,
-//           inverseColors: !1,
-//           opacityFrom: 0,
-//           opacityTo: 0,
-//           stops: [100, 100],
-//       },
-//   },
-// };
-// var chart = new ApexCharts(document.querySelector("#line-chart1"), userchart);
-// chart.render();
 
-// Chart Widget 2
-// var userchart = {
-//   chart: {
-//       height: 300,
-//       type: "area",
-//       fontFamily: "Inter, sans-serif",
-//       zoom: {
-//           enabled: false,
-//       },
-//       toolbar: {
-//           show: false,
-//       },
-//       selection: {
-//           enabled: true,
-//           type: 'x',
-//           fill: {
-//             color: '#24292e',
-//             opacity: 0.1
-//           },
-//           stroke: {
-//             width: 1,
-//             dashArray: 3,
-//             color: '#24292e',
-//             opacity: 0.4
-//           },
-//           xaxis: {
-//             min: undefined,
-//             max: undefined
-//           },
-//           yaxis: {
-//             min: undefined,
-//             max: undefined
-//           }
-//         }
-//   },
-//   series: [
-//       {
-//           name: "Current Week",
-//           data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-//       },
-//       {
-//           name: "Previous Week",
-//           data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-//       },
-//   ],
-//   dataLabels: {
-//       enabled: false,
-//   },
-//   stroke: {
-//       show: true,
-//       curve: "smooth",
-//       width: 3,
-//       lineCap: "square",
-//   },
-//   dropShadow: {
-//       enabled: false,
-//   },
-//   colors: ["#6a69f5", "#323a46"],
-//   markers: {
-//       discrete: [
-//           {
-//               seriesIndex: 0,
-//               dataPointIndex: 4,
-//               fillColor: "#6a69f5",
-//               strokeColor: "#fff",
-//               size: 6,
-//           },
-//           {
-//               seriesIndex: 1,
-//               dataPointIndex: 5,
-//               fillColor: "#323a46",
-//               strokeColor: "#fff",
-//               size: 6,
-//           },
-//       ],
-//   },
-//   labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-//   xaxis: {
-//       axisBorder: {
-//           show: false,
-//       },
-//       axisTicks: {
-//           show: false,
-//       },
-//       crosshairs: {
-//           show: true,
-//       },
-//       labels: {
-//           offsetX: 0,
-//           offsetY: 5,
-//           style: {
-//               fontSize: "12px",
-//               cssClass: "apexcharts-xaxis-title",
-//           },
-//       },
-//   },
-//   yaxis: {
-//       tickAmount: 7,
-//       labels: {
-//           formatter: (value) => {
-//               return value / 100 + "%";
-//           },
-//           offsetX: -10,
-//           offsetY: 0,
-//           style: {
-//               fontSize: "12px",
-//               cssClass: "apexcharts-yaxis-title",
-//           },
-//       },
-//       opposite: false,
-//   },
-//   grid: {
-//       borderColor: "#e0e6ed",
-//       strokeDashArray: 7,
-//       xaxis: {
-//           lines: {
-//               show: false,
-//           },
-//       },
-//       yaxis: {
-//           lines: {
-//               show: true,
-//           },
-//       },
-//       padding: {
-//           top: 0,
-//           right: 0,
-//           bottom: 0,
-//           left: 0,
-//       },
-//   },
-//   legend: {
-//       show: false,
-//   },
-//   tooltip: {
-//       marker: {
-//           show: true,
-//       },
-//       x: {
-//           show: false,
-//       },
-//   },
-//   fill: {
-//       type: "gradient",
-//       gradient: {
-//           shadeIntensity: 1,
-//           inverseColors: !1,
-//           opacityFrom: 0,
-//           opacityTo: 0,
-//           stops: [100, 100],
-//       },
-//   },
-// };
-// var chart = new ApexCharts(document.querySelector("#line-chart2"), userchart);
-// chart.render();
-
-// Chart Widget 3
-// var userchart = {
-//   chart: {
-//       height: 300,
-//       type: "area",
-//       fontFamily: "Inter, sans-serif",
-//       zoom: {
-//           enabled: false,
-//       },
-//       toolbar: {
-//           show: false,
-//       },
-//       selection: {
-//           enabled: true,
-//           type: 'x',
-//           fill: {
-//             color: '#24292e',
-//             opacity: 0.1
-//           },
-//           stroke: {
-//             width: 1,
-//             dashArray: 3,
-//             color: '#24292e',
-//             opacity: 0.4
-//           },
-//           xaxis: {
-//             min: undefined,
-//             max: undefined
-//           },
-//           yaxis: {
-//             min: undefined,
-//             max: undefined
-//           }
-//         }
-//   },
-//   series: [
-//       {
-//           name: "Current Week",
-//           data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-//       },
-//       {
-//           name: "Previous Week",
-//           data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-//       },
-//   ],
-//   dataLabels: {
-//       enabled: false,
-//   },
-//   stroke: {
-//       show: true,
-//       curve: "smooth",
-//       width: 3,
-//       lineCap: "square",
-//   },
-//   dropShadow: {
-//       enabled: false,
-//   },
-//   colors: ["#6a69f5", "#323a46"],
-//   markers: {
-//       discrete: [
-//           {
-//               seriesIndex: 0,
-//               dataPointIndex: 4,
-//               fillColor: "#6a69f5",
-//               strokeColor: "#fff",
-//               size: 6,
-//           },
-//           {
-//               seriesIndex: 1,
-//               dataPointIndex: 5,
-//               fillColor: "#323a46",
-//               strokeColor: "#fff",
-//               size: 6,
-//           },
-//       ],
-//   },
-//   labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-//   xaxis: {
-//       axisBorder: {
-//           show: false,
-//       },
-//       axisTicks: {
-//           show: false,
-//       },
-//       crosshairs: {
-//           show: true,
-//       },
-//       labels: {
-//           offsetX: 0,
-//           offsetY: 5,
-//           style: {
-//               fontSize: "12px",
-//               cssClass: "apexcharts-xaxis-title",
-//           },
-//       },
-//   },
-//   yaxis: {
-//       tickAmount: 7,
-//       labels: {
-//           formatter: (value) => {
-//               return value / 100 + "%";
-//           },
-//           offsetX: -10,
-//           offsetY: 0,
-//           style: {
-//               fontSize: "12px",
-//               cssClass: "apexcharts-yaxis-title",
-//           },
-//       },
-//       opposite: false,
-//   },
-//   grid: {
-//       borderColor: "#e0e6ed",
-//       strokeDashArray: 7,
-//       xaxis: {
-//           lines: {
-//               show: false,
-//           },
-//       },
-//       yaxis: {
-//           lines: {
-//               show: true,
-//           },
-//       },
-//       padding: {
-//           top: 0,
-//           right: 0,
-//           bottom: 0,
-//           left: 0,
-//       },
-//   },
-//   legend: {
-//       show: false,
-//   },
-//   tooltip: {
-//       marker: {
-//           show: true,
-//       },
-//       x: {
-//           show: false,
-//       },
-//   },
-//   fill: {
-//       type: "gradient",
-//       gradient: {
-//           shadeIntensity: 1,
-//           inverseColors: !1,
-//           opacityFrom: 0,
-//           opacityTo: 0,
-//           stops: [100, 100],
-//       },
-//   },
-// };
-// var chart = new ApexCharts(document.querySelector("#line-chart3"), userchart);
-// chart.render();
-
-// Chart Widget 4
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
+// line-chart12
+var options = {
+    series: [
+        {
+            data: [10, 82, 40, 65, 20, 89, 40, 20, 70, 98],
+        },
+    ],
+    chart: {
+        height: 60,
+        type: "line",
+        fontFamily: "Nunito, sans-serif",
+        sparkline: {
+            enabled: true,
+        },
+        dropShadow: {
+            enabled: false,
+        },
+    },
+    stroke: {
+        curve: "smooth",
+        width: 2,
+    },
+    colors: ["#6a69f5"],
+    grid: {
+        padding: {
+            top: 5,
+            bottom: 5,
+            left: 5,
+            right: 5,
+        },
+    },
+    tooltip: {
+        x: {
+            show: false,
+        },
+        y: {
+            title: {
+                formatter: (formatter = () => {
+                    return "";
+                }),
+            },
+        },
+    },
 };
-var chart = new ApexCharts(document.querySelector("#line-chart4"), userchart);
+var chart = new ApexCharts(document.querySelector("#line-chart12"), options);
 chart.render();
 
-// Chart Widget 5
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
+// line-chart13
+var options = {
+    series: [
+        {
+            data: [10, 82, 40, 65, 20, 89, 40, 20, 70, 98],
+        },
+    ],
+    chart: {
+        height: 60,
+        type: "line",
+        fontFamily: "Nunito, sans-serif",
+        sparkline: {
+            enabled: true,
+        },
+        dropShadow: {
+            enabled: false,
+        },
+    },
+    stroke: {
+        curve: "smooth",
+        width: 2,
+    },
+    colors: ["#6a69f5"],
+    grid: {
+        padding: {
+            top: 5,
+            bottom: 5,
+            left: 5,
+            right: 5,
+        },
+    },
+    tooltip: {
+        x: {
+            show: false,
+        },
+        y: {
+            title: {
+                formatter: (formatter = () => {
+                    return "";
+                }),
+            },
+        },
+    },
 };
-var chart = new ApexCharts(document.querySelector("#line-chart5"), userchart);
+var chart = new ApexCharts(document.querySelector("#line-chart13"), options);
 chart.render();
+// line-chart end
 
-// Chart Widget 6
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart6"), userchart);
-chart.render();
+// // dropdown 
+// const navMenuClose = document.getElementById("menu-close");
+// const sideMenuClose = document.getElementById("sidebar-close");
+// const links = document.querySelector("header .navbar .navbar-links");
+// const menuLi = document.querySelectorAll(
+//   "header .navbar .navbar-links .links > li"
+// );
+// const submenu = document.querySelectorAll(
+//   "header .navbar .navbar-links .links li ul > li"
+// );
 
-// Chart Widget 7
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart7"), userchart);
-chart.render();
+// navMenuClose.addEventListener("click", () => {
+//   links.style.left = "0";
+// });
 
-// Chart Widget 8
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart8"), userchart);
-chart.render();
+// sideMenuClose.addEventListener("click", () => {
+//   links.style.left = "-100%";
+// });
 
-// Chart Widget 9
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart9"), userchart);
-chart.render();
+// document.addEventListener("click", (event) => {
+//   if (!links.contains(event.target) && !navMenuClose.contains(event.target)) {
+//     links.style.left = "-100%";
+//   }
+// });
 
-// Chart Widget 10
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart10"), userchart);
-chart.render();
+// menuLi.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     menuLi.forEach((li) => {
+//       li.classList.remove("active");
+//     });
 
-// Chart Widget 11
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart11"), userchart);
-chart.render();
+//     e.currentTarget.classList.toggle("active");
+//   });
+// });
 
-// Chart Widget 12
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart12"), userchart);
-chart.render();
+// submenu.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.currentTarget.classList.toggle("show-menu");
+//   });
+// });
 
-// Chart Widget 13
-var userchart = {
-  chart: {
-      height: 300,
-      type: "area",
-      fontFamily: "Inter, sans-serif",
-      zoom: {
-          enabled: false,
-      },
-      toolbar: {
-          show: false,
-      },
-      selection: {
-          enabled: true,
-          type: 'x',
-          fill: {
-            color: '#24292e',
-            opacity: 0.1
-          },
-          stroke: {
-            width: 1,
-            dashArray: 3,
-            color: '#24292e',
-            opacity: 0.4
-          },
-          xaxis: {
-            min: undefined,
-            max: undefined
-          },
-          yaxis: {
-            min: undefined,
-            max: undefined
-          }
-        }
-  },
-  series: [
-      {
-          name: "Current Week",
-          data: [0, 2000, 3000, 5000, 8000, 8500, 9999],
-      },
-      {
-          name: "Previous Week",
-          data: [0, 3000, 6000, 5500, 9000, 8650, 9999],
-      },
-  ],
-  dataLabels: {
-      enabled: false,
-  },
-  stroke: {
-      show: true,
-      curve: "smooth",
-      width: 3,
-      lineCap: "square",
-  },
-  dropShadow: {
-      enabled: false,
-  },
-  colors: ["#6a69f5", "#323a46"],
-  markers: {
-      discrete: [
-          {
-              seriesIndex: 0,
-              dataPointIndex: 4,
-              fillColor: "#6a69f5",
-              strokeColor: "#fff",
-              size: 6,
-          },
-          {
-              seriesIndex: 1,
-              dataPointIndex: 5,
-              fillColor: "#323a46",
-              strokeColor: "#fff",
-              size: 6,
-          },
-      ],
-  },
-  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-  xaxis: {
-      axisBorder: {
-          show: false,
-      },
-      axisTicks: {
-          show: false,
-      },
-      crosshairs: {
-          show: true,
-      },
-      labels: {
-          offsetX: 0,
-          offsetY: 5,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-xaxis-title",
-          },
-      },
-  },
-  yaxis: {
-      tickAmount: 7,
-      labels: {
-          formatter: (value) => {
-              return value / 100 + "%";
-          },
-          offsetX: -10,
-          offsetY: 0,
-          style: {
-              fontSize: "12px",
-              cssClass: "apexcharts-yaxis-title",
-          },
-      },
-      opposite: false,
-  },
-  grid: {
-      borderColor: "#e0e6ed",
-      strokeDashArray: 7,
-      xaxis: {
-          lines: {
-              show: false,
-          },
-      },
-      yaxis: {
-          lines: {
-              show: true,
-          },
-      },
-      padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-      },
-  },
-  legend: {
-      show: false,
-  },
-  tooltip: {
-      marker: {
-          show: true,
-      },
-      x: {
-          show: false,
-      },
-  },
-  fill: {
-      type: "gradient",
-      gradient: {
-          shadeIntensity: 1,
-          inverseColors: !1,
-          opacityFrom: 0,
-          opacityTo: 0,
-          stops: [100, 100],
-      },
-  },
-};
-var chart = new ApexCharts(document.querySelector("#line-chart13"), userchart);
-chart.render();
-// dropdown 
-const navMenuClose = document.getElementById("menu-close");
-const sideMenuClose = document.getElementById("sidebar-close");
-const links = document.querySelector("header .navbar .navbar-links");
-const menuLi = document.querySelectorAll(
-  "header .navbar .navbar-links .links > li"
-);
-const submenu = document.querySelectorAll(
-  "header .navbar .navbar-links .links li ul > li"
-);
+// const navbar = document.querySelector("header");
+// const topMenu = document.querySelector(".top-menu");
 
-navMenuClose.addEventListener("click", () => {
-  links.style.left = "0";
-});
+// window.addEventListener("scroll", () => {
+//   const scrollHeight = window.scrollY;
+//   const navbarHeight = navbar.getBoundingClientRect().height;
 
-sideMenuClose.addEventListener("click", () => {
-  links.style.left = "-100%";
-});
+//   if (scrollHeight > navbarHeight) {
+//     navbar.classList.add("nav-fix");
+//   } else {
+//     navbar.classList.remove("nav-fix");
+//   }
 
-document.addEventListener("click", (event) => {
-  if (!links.contains(event.target) && !navMenuClose.contains(event.target)) {
-    links.style.left = "-100%";
-  }
-});
+//   console.log(scrollHeight);
 
-menuLi.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    menuLi.forEach((li) => {
-      li.classList.remove("active");
-    });
+//   if (scrollHeight > 200) {
+//     topMenu.classList.add("show-btn");
+//   } else {
+//     topMenu.classList.remove("show-btn");
+//   }
+// });
 
-    e.currentTarget.classList.toggle("active");
-  });
-});
-
-submenu.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.currentTarget.classList.toggle("show-menu");
-  });
-});
-
-const navbar = document.querySelector("header");
-const topMenu = document.querySelector(".top-menu");
-
-window.addEventListener("scroll", () => {
-  const scrollHeight = window.scrollY;
-  const navbarHeight = navbar.getBoundingClientRect().height;
-
-  if (scrollHeight > navbarHeight) {
-    navbar.classList.add("nav-fix");
-  } else {
-    navbar.classList.remove("nav-fix");
-  }
-
-  console.log(scrollHeight);
-
-  if (scrollHeight > 200) {
-    topMenu.classList.add("show-btn");
-  } else {
-    topMenu.classList.remove("show-btn");
-  }
-});
-
-topMenu.addEventListener("click", () => {
-  document.documentElement.scrollTop = 0;
-});
+// topMenu.addEventListener("click", () => {
+//   document.documentElement.scrollTop = 0;
+// });

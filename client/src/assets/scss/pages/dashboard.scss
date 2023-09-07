@@ -55,6 +55,10 @@
     width: 100%;
     // height: 315px;
   }
+
+  #home {
+    margin-right: 4px;
+  }
   /**
   * End: content header design css
   */
@@ -63,7 +67,7 @@
   * Start: content page design css
   */
   .content-breadcrumb {
-    padding: 20px 14px 56px;
+    padding: 20px 14px 50px;
     > div {
       padding: 0 10px;
     }
@@ -807,7 +811,7 @@ header {
           position: relative;
           display: flex;
           align-items: center;
-          padding: 8px 14px;
+          padding: 6px 8px;
           &:hover {
 						>.sub-menu {
 							display: block;
@@ -823,7 +827,7 @@ header {
           }
           .sub-menu {
             position: absolute;
-            top: 40px;
+            top: 36px;
             padding: 0;
             left: 0;
             background: #ffffff;
