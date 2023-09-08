@@ -80,6 +80,10 @@ $font-size-mixing: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 3
   background-color: var(--theme--header--bc) !important;
 }
 
+.border {
+  border-color: rgb(50 58 70 / 0.1) !important;
+}
+
 /**
  * Start: Error css
  */

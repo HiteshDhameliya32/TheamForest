@@ -23,20 +23,9 @@
 @import "components/button";
 @import "components/badge";
 @import "components/table.scss";
-@import "components/tablesaw.scss";
 @import "components/dropdown";
 @import "components/color";
-@import "components/ui-breadcrumb.scss";
-@import "components/ui-typography.scss";
 @import "components/ui-buttons.scss";
-@import "components/ui-alert.scss";
-@import "components/ui-card-customs.scss";
-@import "components/ui-modals.scss";
-@import "components/ui-toastification.scss";
-@import "components/ui-tooltip.scss";
-@import "components/ui-accordions.scss";
-@import "components/ui-grid.scss";
-@import "components/ui-tabs.scss";
 @import "components/modal-popup.scss";
 @import "components/configuration.scss";
 @import "components/datepicker.scss";
@@ -69,3 +58,8 @@
 @import "settings/variables.scss";
 
 @import "./icon.scss";
+
+
+.bg-soft-primary {
+    background-color: #eaeafd !important;
+}
