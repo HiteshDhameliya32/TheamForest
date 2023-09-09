@@ -2494,7 +2494,7 @@ chart.render();
 // bar-chart5
 var options = {
   series: [{
-  data: [80, 40, 63, 100, 80],
+  data: [80, 40, 63, 100, 80, 50],
   }],
     chart: {
     type: 'bar',
@@ -2532,10 +2532,14 @@ var options = {
   yaxis: {
     show: false,
   },
-  xaxis: {      
+  xaxis: {
     labels: {
       show: false,
-    }
+    },
+    axisTicks: {
+      color: '#fff',
+      height: 0,
+    },
   },
   grid: {
     show: false,
