@@ -8,11 +8,13 @@
         border-color: rgba($value, 0.9) !important;
       }
     }
+    .btn:focus {
+      box-shadow: none !important;
+      color: ($value) !important;
+    }
   } 
   
-.btn:focus {
-  box-shadow: none !important;
-}
+
 
 .btn-light {
     color: $dark !important;
@@ -289,81 +291,9 @@ fieldset:disabled .btn {
     background-color: $success !important;
   }
   
-  .button.btn-default,
-  .button.btn-danger,
-  .button {
-    font-size: 16px;
-    line-height: 20px;
-    min-height: 40px;
-    padding: 10px 15px;
-    border: 0;
-    outline: 0;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .button.ripper input {
-    padding: 0;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: white;
-  }
-  
-  .buttons-rectangle .ripper,
-  .buttons-round .ripper,
-  .buttons-radius .ripper {
-    z-index: 1;
-  }
-  
-  .buttons-rectangle .ripper:after,
-  .buttons-round .ripper:after,
-  .buttons-radius .ripper:after {
-    background: white;
-    content: "";
-    height: 130px;
-    left: -75px;
-    opacity: .2;
-    position: absolute;
-    top: -50px;
-    transform: rotate(35deg);
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    width: 50px;
-    z-index: -10;
-  }
-  
-  .buttons-rectangle .ripper:hover:after,
-  .buttons-round .ripper:hover:after,
-  .buttons-radius .ripper:hover:after {
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  
-  .bg-gradient-primary {
-    background: linear-gradient(90deg, $primary 36%, rgba($primary, 0.5) 100%) !important;
-  }
-  
-  .bg-gradient-success {
-    background: linear-gradient(90deg, $success 36%, rgba($success, 0.5) 100%) !important;
-  }
-  
-  .bg-gradient-danger {
-    background: linear-gradient(90deg, $danger 36%, rgba($danger, 0.5) 100%) !important;
-  }
-  
-  .bg-gradient-secondary {
-    background: linear-gradient(90deg, $secondary, rgba($secondary, 0.5) 100%) !important;
-  }
-  
-  .bg-gradient-warning {
-    background: linear-gradient(90deg, $warning, rgba($warning, 0.5) 100%) !important;
-  }
-  
-  .bg-gradient-info {
-    background: linear-gradient(90deg, $info, rgba($info, 0.5) 100%) !important;
+  .btn-sm {
+    padding: 0.05rem 0.25rem;
+    font-size: 1rem;
   }
 
   /**

@@ -969,8 +969,11 @@
 // // //  navbar scss
 /* header section start */
 
-header {
+.card-dripdown {
+  display: flex;
+  justify-content: space-between;
   .navbar {
+    padding: 0;
     .navbar-links {
       height: 100%;
       border-radius: 4px;
@@ -984,7 +987,7 @@ header {
           position: relative;
           display: flex;
           align-items: center;
-          padding: 4px 6px;
+          // padding: 4px 6px;
           font-size: 14px;
 
           &:hover {
@@ -1006,7 +1009,7 @@ header {
 
           .sub-menu {
             position: absolute;
-            top: 28px;
+            top: 20px;
             padding: 0;
             left: 0;
             background: #ffffff;
@@ -1072,17 +1075,17 @@ header {
   }
 }
 
-header .navbar .navbar-links .links .sub-menu li>i.fa-chevron-down {
+.card-dripdown .navbar .navbar-links .links .sub-menu li>i.fa-chevron-down {
   font-size: 12px;
   transform: rotate(0);
   line-height: 40px;
 }
 
-header .navbar .navbar-links .links .sub-menu li:hover>i.fa-chevron-down {
+.card-dripdown .navbar .navbar-links .links .sub-menu li:hover>i.fa-chevron-down {
   transform: rotate(-90deg);
 }
 
-header .navbar .navbar-links .links .sub-menu .more-sub-menu {
+.card-dripdown .navbar .navbar-links .links .sub-menu .more-sub-menu {
   position: absolute;
   top: 0;
   left: 100%;
@@ -1095,12 +1098,12 @@ header .navbar .navbar-links .links .sub-menu .more-sub-menu {
   }
 }
 
-header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
+.card-dripdown .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
   display: block;
 }
 
 @media (max-width: 991px) {
-  header {
+  .card-dripdown {
     .navbar {
       width: 100%;
       padding: 0 30px;
@@ -1160,41 +1163,41 @@ header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu
     }
   }
 
-  header .navbar .navbar-links .links li:hover .sub-menu,
-  header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
+  .card-dripdown .navbar .navbar-links .links li:hover .sub-menu,
+  .card-dripdown .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
     display: none;
   }
 
-  header .navbar .navbar-links .links li i.fa-chevron-down,
-  header .navbar .navbar-links .links li:hover i.fa-chevron-down {
+  .card-dripdown .navbar .navbar-links .links li i.fa-chevron-down,
+  .card-dripdown .navbar .navbar-links .links li:hover i.fa-chevron-down {
     transform: rotate(0deg);
   }
 
-  header .navbar .navbar-links .links .sub-menu li i.fa-chevron-down {
+  .card-dripdown .navbar .navbar-links .links .sub-menu li i.fa-chevron-down {
     transform: rotate(-90deg);
   }
 
-  header .navbar .navbar-links .links li.active>i {
+  .card-dripdown .navbar .navbar-links .links li.active>i {
     transform: rotate(-180deg);
   }
 
-  header .navbar .navbar-links .links li.active:hover>i {
+  .card-dripdown .navbar .navbar-links .links li.active:hover>i {
     transform: rotate(-180deg);
   }
 
-  header .navbar .navbar-links .links .sub-menu li .more-sub-menu {
+  .card-dripdown .navbar .navbar-links .links .sub-menu li .more-sub-menu {
     display: none;
   }
 
-  header .navbar .navbar-links .links .sub-menu li i {
+  .card-dripdown .navbar .navbar-links .links .sub-menu li i {
     transform: rotate(-90deg);
   }
 
-  header .navbar .navbar-links .links li.active .sub-menu li.show-menu .more-sub-menu {
+  .card-dripdown .navbar .navbar-links .links li.active .sub-menu li.show-menu .more-sub-menu {
     display: block;
   }
 
-  header {
+  .card-dripdown {
     .navbar {
       .navbar-links {
         .links {
@@ -1212,7 +1215,7 @@ header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu
 }
 
 @media (max-width: 370px) {
-  header {
+  .card-dripdown {
     .navbar {
       .navbar-links {
         max-width: 100%;
