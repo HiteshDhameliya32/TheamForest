@@ -1098,6 +1098,17 @@
   }
 }
 
+.sub-menu-left {
+  transform: translate(-146px, 0px);
+}
+
+.sub-menu-left1 {
+  transform: translate(-310px, 0px);
+  .more-sub-menu {
+    transform: translate(-80px, 31px);
+  }
+}
+
 .card-dripdown .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
   display: block;
 }
