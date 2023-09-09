@@ -152,20 +152,3 @@
     }
   }
 }
-
-[dir="rtl"] {
-  #revenue_chart,
-  #order-chart {
-    .apexcharts-theme-light {
-      .apexcharts-svg {
-        .apexcharts-legend {
-          .apexcharts-legend-series {
-            .apexcharts-legend-marker {
-              margin-left: 3px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-}

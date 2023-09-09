@@ -1,13 +1,3 @@
-@media only screen and (max-height: 600px) {
-    .login-page .midle-main .login_container {
-      margin-top: 70px;
-      padding-bottom: 20px;
-      max-height: calc(100vh - 150px);
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
-  }
-  
   @media ( min-width: 1440px) { 
     .card-atm {
       width: 48%;
@@ -28,13 +18,6 @@
     .dashboard_info_box_inner .info-box-number {
       font-size: 24px !important;
     }
-    .login-page {
-      .login_img,
-      .forgot_password_img,
-      .reset_password {
-        max-width: 85%;
-      }
-    }
   }
   
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -53,13 +36,6 @@
     .mat-card.p-0,
     .theme_sidebar_bg_setting .button {
       padding: 0 !important;
-    }
-    .login-page {
-      .login_img,
-      .forgot_password_img,
-      .reset_password {
-        max-width: 90%;
-      }
     }
     .header {
       .navbar_block  { 
@@ -161,7 +137,7 @@
     .layout-thin {
       .right-side {
         .content-breadcrumb {
-          padding: 24px 14px 120px !important;
+          padding: 24px 14px 60px !important;
         }
       }
     }
@@ -253,14 +229,6 @@
     .profile_edit_block {
       margin: 0 auto;
     }
-    .login-page .main-header .logo {
-      width: 100%;
-      justify-content: center;
-    }
-    .login-page .midle-main .login_container {
-      position: relative;
-      z-index: 1;
-    }
     .theme_setting_div ul li .button {
       min-width: 98px !important;
       padding: 10px !important;
@@ -344,50 +312,9 @@
         }
       }
     }
-    
-    [dir="rtl"] {
-      .layout-classic,
-      .layout-classy,
-      .layout-compact,
-      .layout-dense,
-      .layout-futuristic,
-      .layout-thin {
-        .header {
-          .navbar_block {
-            margin-right: 0px !important;
-          }
-        }
-        .row-offcanvas-left {
-          .left-side {
-            .sidebar {
-              .close_sidebar {
-                right: 270px;
-              }
-            }
-          }
-          .right-side {
-            margin-right: 0px;
-          }
-        }
-      }
-      .layout-compact {
-        .row-offcanvas-left {
-          .left-side {
-            .sidebar {
-              .close_sidebar {
-                right: 158px;
-              }
-            }
-          }
-        }
-      }
-    }
   }
   
   @media only screen and (max-width: 579px) {
-    .login-page .main-header .logo img {
-      max-width: 60px;
-    }
     .box-header {
       .box-title {
         font-size: 12px !important;
@@ -405,10 +332,6 @@
     }
     .modal_popup {
       max-height: 100% !important;
-    }
-    .login-page .midle-main .login_container {
-      max-height: calc(100vh - 100px);
-      margin-top: 30px;
     }
     .pagination_section {
       width: 100%;
@@ -457,34 +380,9 @@
         }
       }
     }
-    [dir="rtl"] {
-      .header {
-        .navbar_block {
-          .navbar-right {
-            .navbar-nav {
-              .topbar-head-dropdown {
-                .dropdown-menu-end {
-                  transform: translate(-74px, 70px);
-                  .form-check-input[type=checkbox]:checked:after {
-                    margin-right: 0.25rem;
-                  }
-                }
-                .lng-flag,
-                .more-app {
-                  transform: translate(-184px, 70px);
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
   
   @media only screen and (max-width: 374px) {
-    .login-page .midle-main .login_container {
-      margin-top: 60px;
-    }
     .header .navbar_block {
       padding: 8px 0px !important;
     }

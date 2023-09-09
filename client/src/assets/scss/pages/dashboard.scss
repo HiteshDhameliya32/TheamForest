@@ -1,5 +1,5 @@
 .right-side {
-  // max-height: calc(100vh - 58px);
+  max-height: calc(100vh - 58px);
   height: 100vh;
   margin-left: 240px;
   margin-top: 60px;
@@ -81,7 +81,7 @@
   * Start: content page design css
   */
   .content-breadcrumb {
-    padding: 46px 14px 94px;
+    padding: 24px 14px 60px;
 
     >div {
       padding: 0 10px;
@@ -1087,6 +1087,12 @@ header .navbar .navbar-links .links .sub-menu .more-sub-menu {
   top: 0;
   left: 100%;
   display: none;
+  &.more-submenu1 {
+    transform: translate(0px, -93px);
+  }
+  &.more-submenu2 {
+    transform: translate(0px, -218px);
+  }
 }
 
 header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {

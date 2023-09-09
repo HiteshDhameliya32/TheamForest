@@ -171,72 +171,72 @@
   }
 }
 
-.layout-dense {
-  .responsive_view_set {
-    .left-side {
-      .simplebar-wrapper {
-        .simplebar-mask {
-          .simplebar-offset {
-            .simplebar-content-wrapper {
-              .simplebar-content {
-                .sidebar {
-                  .sidebar-menu {
-                    .doc {
-                      display: none !important;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      &:hover {
-        .simplebar-wrapper {
-          .simplebar-mask {
-            .simplebar-offset {
-              .simplebar-content-wrapper {
-                .simplebar-content {
-                  .sidebar {
-                    .sidebar-menu {
-                      .doc {
-                        display: block !important;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .layout-dense {
+//   .responsive_view_set {
+//     .left-side {
+//       .simplebar-wrapper {
+//         .simplebar-mask {
+//           .simplebar-offset {
+//             .simplebar-content-wrapper {
+//               .simplebar-content {
+//                 .sidebar {
+//                   .sidebar-menu {
+//                     .doc {
+//                       display: none !important;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//       &:hover {
+//         .simplebar-wrapper {
+//           .simplebar-mask {
+//             .simplebar-offset {
+//               .simplebar-content-wrapper {
+//                 .simplebar-content {
+//                   .sidebar {
+//                     .sidebar-menu {
+//                       .doc {
+//                         display: block !important;
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-.layout-thin {
-  .responsive_view_set {
-    .left-side {
-      .simplebar-wrapper {
-        .simplebar-mask {
-          .simplebar-offset {
-            .simplebar-content-wrapper {
-              .simplebar-content {
-                .sidebar {
-                  .sidebar-menu {
-                    .doc {
-                      display: none !important;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .layout-thin {
+//   .responsive_view_set {
+//     .left-side {
+//       .simplebar-wrapper {
+//         .simplebar-mask {
+//           .simplebar-offset {
+//             .simplebar-content-wrapper {
+//               .simplebar-content {
+//                 .sidebar {
+//                   .sidebar-menu {
+//                     .doc {
+//                       display: none !important;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 .row-offcanvas-left {
@@ -688,158 +688,6 @@
     .collapse-left {
       .navbar_block {
         margin-right: 0px !important;
-      }
-    }
-  }
-}
-
-//  sidebar
-[dir="rtl"] {
-
-  // classic
-  .layout-classic {
-    .row-offcanvas-left {
-      .right-side {
-        margin-right: 240px;
-        margin-left: 0 !important;
-      }
-
-      .left-side,
-      &.collapse-left {
-        right: 0 !important;
-      }
-
-      .strech {
-        margin-right: 60px !important;
-      }
-    }
-  }
-
-  // classy
-  .layout-classy {
-    .right-side {
-      margin-left: 0px;
-      margin-right: 240px;
-    }
-
-    .left-side,
-    &.collapse-left {
-      right: 0 !important;
-    }
-
-    .strech {
-      margin-right: 60px !important;
-      margin-left: 0 !important;
-    }
-  }
-
-  // futuristic
-  .layout-futuristic {
-    .row-offcanvas-left {
-      .right-side {
-        margin-right: 240px;
-        margin-left: 0 !important;
-      }
-      .left-side,
-      &.collapse-left {
-        right: 0 !important;
-      }
-      .strech {
-        margin-right: 60px !important;
-      }
-    }
-  }
-
-  // dence
-  .layout-dense {
-    .row-offcanvas-left {
-      .right-side {
-        margin-left: 0;
-        margin-right: 60px;
-      }
-      .collapse-left {
-        display: none;
-      }
-      .strech {
-        margin-right: 0;
-      }
-    }
-  }
-
-  // compact
-  .layout-compact {
-    .row-offcanvas-left {
-      .sidebar_section {
-        .sidebar {
-          .sidebar-menu {
-            li.active {
-              .treeview-menu {
-                right: 137px;
-              }
-            }
-          }
-        }
-        .treeview.active {
-          .menu-drawer-overlay {
-            right: 136px !important;
-            left: 0 !important;
-          }
-        }
-      }
-      .right-side {
-        margin-right: 136px;
-        margin-left: 0px;
-      }
-      .collapse-left {
-        display: none;
-      }
-      .strech {
-        margin-right: 0;
-      }
-    }
-  }
-
-  //futuristic
-  .layout-futuristic {
-    .row-offcanvas-left {
-      .collapse-left {
-        display: none;
-      }
-      .strech {
-        margin-right: 0 !important;
-      }
-    }
-  }
-
-  // thin
-  .layout-thin {
-    .row-offcanvas-left {
-      .sidebar_section {
-        .sidebar {
-          .sidebar-menu {
-            li.active {
-              .treeview-menu {
-                right: 82px;
-              }
-            }
-          }
-        }
-        .treeview.active {
-          .menu-drawer-overlay {
-            right: 81px !important;
-            left: 0 !important;
-          }
-        }
-      }
-      .right-side {
-        margin-right: 81px;
-        margin-left: 0px;
-      }
-      .collapse-left {
-        display: none;
-      }
-      .strech {
-        margin-right: 0;
       }
     }
   }
