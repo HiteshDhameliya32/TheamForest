@@ -1,0 +1,436 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["breadcrume"] = "Home/Forms/Choices";
+}
+
+<!-- [ Main content ] start -->
+<div class="row">
+    <!-- [ form-element ] start -->
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Text inputs</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Limited to 5 values with remove button</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input class="form-control"
+                                   id="choices-text-remove-button"
+                                   type="text"
+                                   value="preset-1,preset-2"
+                                   placeholder="Enter something">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Unique values only, no pasting</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input class="form-control custom class"
+                                   id="choices-text-unique-values"
+                                   type="text"
+                                   value="preset-1, preset-2"
+                                   placeholder="This is a placeholder">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Email addresses only</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input class="form-control" id="choices-text-email-filter" type="text" placeholder="This is a placeholder">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Disabled</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input class="form-control"
+                                   id="choices-text-disabled"
+                                   type="text"
+                                   value="josh@joshuajohnson.co.uk, joe@bloggs.co.uk"
+                                   placeholder="This is a placeholder">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Prepends and appends a value to each items return value</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input class="form-control"
+                                   id="choices-text-prepend-append-value"
+                                   type="text"
+                                   value="preset-1, preset-2"
+                                   placeholder="This is a placeholder">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Preset values passed through options</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input class="form-control"
+                                   id="choices-text-preset-values"
+                                   type="text"
+                                   value="Michael Smith"
+                                   placeholder="This is a placeholder">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">I18N labels</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input class="form-control" id="choices-text-i18n" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Right-to-left</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <input data-trigger class="form-control" id="choices-text-rtl" type="text" value="Value 1, Value 2" dir="rtl">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5>Multiple select input</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Default</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control"
+                                    data-trigger
+                                    name="choices-multiple-default"
+                                    id="choices-multiple-default"
+                                    multiple>
+                                <option value="Choice 1" selected>Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                                <option value="Choice 4" disabled>Choice 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">With remove button</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control"
+                                    name="choices-multiple-remove-button"
+                                    id="choices-multiple-remove-button"
+                                    multiple>
+                                <option value="Choice 1" selected>Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                                <option value="Choice 4">Choice 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Option groups</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control"
+                                    name="choices-multiple-groups"
+                                    id="choices-multiple-groups"
+                                    multiple>
+                                <option value="">Choose a city</option>
+                                <optgroup label="UK">
+                                    <option value="London">London</option>
+                                    <option value="Manchester">Manchester</option>
+                                    <option value="Liverpool">Liverpool</option>
+                                </optgroup>
+                                <optgroup label="FR">
+                                    <option value="Paris">Paris</option>
+                                    <option value="Lyon">Lyon</option>
+                                    <option value="Marseille">Marseille</option>
+                                </optgroup>
+                                <optgroup label="DE" disabled>
+                                    <option value="Hamburg">Hamburg</option>
+                                    <option value="Munich">Munich</option>
+                                    <option value="Berlin">Berlin</option>
+                                </optgroup>
+                                <optgroup label="US">
+                                    <option value="New York">New York</option>
+                                    <option value="Washington" disabled>Washington</option>
+                                    <option value="Michigan">Michigan</option>
+                                </optgroup>
+                                <optgroup label="SP">
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Malaga">Malaga</option>
+                                </optgroup>
+                                <optgroup label="CA">
+                                    <option value="Montreal">Montreal</option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="Vancouver">Vancouver</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Options from remote source (Fetch API) &amp; limited to 5</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control"
+                                    name="choices-multiple-remote-fetch"
+                                    id="choices-multiple-remote-fetch"
+                                    multiple></select>
+                            <small>If the following example do not load, the  rate limit has probably been reached. Try again later!</small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Right-to-left</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control"
+                                    data-trigger
+                                    name="choices-multiple-rtl"
+                                    id="choices-multiple-rtl"
+                                    multiple
+                                    dir="rtl">
+                                <option value="Choice 1" selected>Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                                <option value="Choice 4" disabled>Choice 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Use label in event (add/remove)</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select id="choices-multiple-labels" multiple></select>
+                            <div id="message"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5>Single select input</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Default</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control"
+                                    data-trigger
+                                    name="choices-single-default"
+                                    id="choices-single-default">
+                                <option value="">This is a placeholder</option>
+                                <option value="Choice 1">Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Options from remote source (Fetch API)</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="choices-single-remote-fetch" id="choices-single-remote-fetch">
+                                <option value="">Pick an Arctic Monkeys' record</option>
+                            </select>
+                            <small>
+                                If the following two examples do not load, the  rate limit has probably been reached. Try again
+                                later!
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Options from remote source (Fetch API) &amp; remove button</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="choices-single-remove-xhr" id="choices-single-remove-xhr">
+                                <option value="">Pick a Smiths' record</option>
+                            </select>
+                            <small>
+                                If the following two examples do not load, the  rate limit has probably been reached. Try again
+                                later!
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Option groups</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" data-trigger name="choices-single-groups" id="choices-single-groups">
+                                <option value="">Choose a city</option>
+                                <optgroup label="UK">
+                                    <option value="London">London</option>
+                                    <option value="Manchester">Manchester</option>
+                                    <option value="Liverpool">Liverpool</option>
+                                </optgroup>
+                                <optgroup label="FR">
+                                    <option value="Paris">Paris</option>
+                                    <option value="Lyon">Lyon</option>
+                                    <option value="Marseille">Marseille</option>
+                                </optgroup>
+                                <optgroup label="DE" disabled>
+                                    <option value="Hamburg">Hamburg</option>
+                                    <option value="Munich">Munich</option>
+                                    <option value="Berlin">Berlin</option>
+                                </optgroup>
+                                <optgroup label="US">
+                                    <option value="New York">New York</option>
+                                    <option value="Washington" disabled>Washington</option>
+                                    <option value="Michigan">Michigan</option>
+                                </optgroup>
+                                <optgroup label="SP">
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Malaga">Malaga</option>
+                                </optgroup>
+                                <optgroup label="CA">
+                                    <option value="Montreal">Montreal</option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="Vancouver">Vancouver</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Right-to-left</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" data-trigger name="choices-single-rtl" id="choices-single-rtl" dir="rtl">
+                                <option value="Choice 1">Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Options added via config with no search</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="choices-single-no-search" id="choices-single-no-search">
+                                <option value="0">Zero</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Option and option groups added via config</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="choices-single-preset-options" id="choices-single-preset-options"></select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Option selected via config with custom properties</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="choices-single-selected-option" id="choices-single-selected-option"></select>
+                            <small>Try searching for 'fantastic', "Label 3" should display</small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Option searchable by custom properties via <code>data-custom-properties</code> attribute</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" id="choices-with-custom-props-via-html">
+                                <option value="Dropdown item 1">Label One</option>
+                                <option value="Dropdown item 2" selected disabled>Label Two</option>
+                                <option value="Dropdown item 3" data-custom-properties="This option is fantastic">Label Three</option>
+                            </select>
+                            <small>Try searching for 'fantastic', "Label 3" should display</small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Options without sorting</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="choices-single-no-sorting" id="choices-single-no-sorting">
+                                <option value="Madrid">Madrid</option>
+                                <option value="Toronto">Toronto</option>
+                                <option value="Vancouver">Vancouver</option>
+                                <option value="London">London</option>
+                                <option value="Manchester">Manchester</option>
+                                <option value="Liverpool">Liverpool</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Malaga">Malaga</option>
+                                <option value="Washington" disabled>Washington</option>
+                                <option value="Lyon">Lyon</option>
+                                <option value="Marseille">Marseille</option>
+                                <option value="Hamburg">Hamburg</option>
+                                <option value="Munich">Munich</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="Montreal">Montreal</option>
+                                <option value="New York">New York</option>
+                                <option value="Michigan">Michigan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Custom templates</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="choices-single-custom-templates" id="choices-single-custom-templates">
+                                <option value="React">React</option>
+                                <option value="Angular">Angular</option>
+                                <option value="Ember">Ember</option>
+                                <option value="Vue">Vue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Cities</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="cities" id="cities">
+                                <option value="">Choose a city</option>
+                                <option value="Leeds">Leeds</option>
+                                <option value="Manchester">Manchester</option>
+                                <option value="London">London</option>
+                                <option value="Sheffield">Sheffield</option>
+                                <option value="Newcastle">Newcastle</option>
+                            </select>
+                            <small>
+                                Below is an example of how you could have two select inputs depend on each other. 'Tube stations' will only be
+                                enabled if the value of 'Cities' is 'London'
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Tube stations</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="tube-stations" id="tube-stations">
+                                <option value="">Choose a tube station</option>
+                                <option value="Moorgate">Moorgate</option>
+                                <option value="St Pauls">St Pauls</option>
+                                <option value="Old Street">Old Street</option>
+                                <option value="Liverpool Street">Liverpool Street</option>
+                                <option value="Kings Cross St. Pancras">Kings Cross St. Pancras</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5>Form interaction</h5>
+                <small>Change the values and press reset to restore to initial state.</small>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Change me!</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="reset-simple" id="reset-simple">
+                                <option value="Option 1">Option 1</option>
+                                <option value="Option 2" selected>Option 2</option>
+                                <option value="Option 3">Option 3</option>
+                                <option value="Option 4">Option 4</option>
+                                <option value="Option 5">Option 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">And me!</label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <select class="form-control" name="reset-multiple" id="reset-multiple" multiple>
+                                <option value="Choice 1" selected>Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                                <option value="Choice 4" disabled>Choice 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-0">
+                        <label class="col-form-label col-lg-4 col-sm-12 text-lg-end"></label>
+                        <div class="col-lg-6 col-md-11 col-sm-12">
+                            <button class="btn btn-light-warning" type="reset"><i class="me-2" data-feather="alert-triangle"></i> Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- [ form-element ] end -->
+</div>
+<!-- [ Main content ] end -->

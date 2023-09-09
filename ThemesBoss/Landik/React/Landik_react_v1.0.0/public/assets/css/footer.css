@@ -1,0 +1,64 @@
+/*FOOTER*/
+.footer_four {
+  background-color: #20262d;
+  padding: 42px 0px 0px;
+}
+
+.footer_four .footer_logo img {
+  height: 30px;
+}
+
+.footer_four .footer_four_menu li a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s;
+}
+
+.footer_four .footer_four_menu li::after {
+  content: "-";
+  margin: 0 20px;
+  color: #fff;
+  position: relative;
+  top: 0px;
+}
+
+.footer_four .footer_four_menu li:last-child:after {
+  content: "";
+  margin: 0;
+}
+
+.footer_four .footer_four_menu li:hover a {
+  color: #fff;
+}
+
+.footer_four .social-icon {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.06);
+  transition: all 0.5s;
+  width: 38px;
+  color: #ffffff;
+  height: 38px;
+  display: block;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.footer_four .social-icon:hover {
+  color: #0aa195;
+  transform: translateY(-4px);
+}
+
+.footer_four .footer_divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  margin: 50px 0 0;
+}
+
+.footer_four .copyright_content p, .footer_four .fot_social span {
+  color: rgba(255, 255, 255, 0.73);
+}
+
+.footer-text-color {
+  color: rgba(255, 255, 255, 0.73);
+}/*# sourceMappingURL=footer.css.map */

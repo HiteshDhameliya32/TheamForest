@@ -1,0 +1,124 @@
+// button scss
+
+.btn {
+    padding: 12px 26px;
+}
+
+.btn-sm {
+    padding: 8px 15px;
+}
+
+.btn:hover.btn-hover{   
+    box-shadow: 0 4px 11px rgba(10,161,149,.1) !important;
+    transform: translateY(-3px);
+}
+
+.btn-rounded {
+    border-radius: 30px !important;
+}
+
+.btn-custom {
+    background-color: #0aa195;
+    border: 2px solid #0aa195;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all 0.2s;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open>.dropdown-toggle.btn-custom {
+    background-color: #0aa195 !important;
+    border: 2px solid #0aa195 !important;
+    color: #fff !important;
+}
+
+.border-radius-none{
+    border-radius: 0px !important;
+}
+
+
+.btn-white {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #0aa195;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all 0.2s;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.btn-white.focus,
+.btn-white:active,
+.btn-white:focus,
+.btn-white:hover,
+.open>.dropdown-toggle.btn-white {
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+    color: #0aa195 !important;
+}
+
+
+.btn-custom-light {
+    background-color: #0aa1951f;
+    border: 2px solid #0aa19500;
+    color: #0aa195;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all 0.2s;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.btn-custom-light:hover,
+.btn-custom-light:focus,
+.btn-custom-light:active,
+.btn-custom-light.active,
+.btn-custom-light.focus,
+.btn-custom-light:active,
+.btn-custom-light:focus,
+.btn-custom-light:hover,
+.open>.dropdown-toggle.btn-custom-light {
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+    color: #0aa195 !important;
+}
+
+.btn-custom-outline {
+    background-color: transparent;
+    border: 2px solid #0aa195;
+    color: #0aa195;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all 0.5s;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.btn-custom-outline:hover,
+.btn-custom-outline:focus,
+.btn-custom-outline:active,
+.btn-custom-outline.active,
+.btn-custom-outline.focus,
+.btn-custom-outline:active,
+.btn-custom-outline:focus,
+.btn-custom-outline:hover,
+.open>.dropdown-toggle.btn-custom-outline {
+    background-color: #0aa195 !important;
+    border: 2px solid #0aa195 !important;
+    color: #fff !important;
+}
