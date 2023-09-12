@@ -83,6 +83,10 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-end">
+                            <span class="fw-bold me-2">From: To</span>
+                            <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
+                                Days
+                            </button>
                             <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
                                 Weekly
                             </button>
@@ -98,86 +102,95 @@
                 <!-- end row -->
 
                 <div class="row row-bg-light ms-1 me-1 border rounded-1 mb-14 mt-3">
+                    <!-- heading -->
                     <h5 id="retention1" class="mb-0 py-2 fw-semibold">Retention</h5>
+
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Retention </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                            <a href="#">
-                                                <!-- Segmentation -->
-                                                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                        <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                        <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                    </svg>
-                                            </a>
-                                            <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            <ul class="sub-menu border">
-                                                <li class="more-submenu"><a href="#">By Industry</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Retail</a></li>
-                                                    <li><a href="#">Healthcare</a></li>
-                                                    <li><a href="#">Finance</a></li>
-                                                    <li><a href="#">Technology</a></li>
-                                                    <li><a href="#">Hospitality</a></li>
-                                                    <li><a href="#">Education</a></li>
-                                                    <li><a href="#">Manufacturing</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Geography</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">North America</a></li>
-                                                    <li><a href="#">Europe</a></li>
-                                                    <li><a href="#">Asia</a></li>
-                                                    <li><a href="#">South America</a></li>
-                                                    <li><a href="#">Africa</a></li>
-                                                    <li><a href="#">Australia</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Free</a></li>
-                                                    <li><a href="#">Basic</a></li>
-                                                    <li><a href="#">Premium</a></li>
-                                                    <li><a href="#">Pro</a></li>
-                                                    <li><a href="#">Enterprise</a></li>
-                                                </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Retention <span class="fw-normal">PER (%)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Industry
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Retail</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Finance</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Technology</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Hospitality</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Education</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Manufacturing</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Geography
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">North America</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Europe</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Asia</a></li>
+                                                                        <li><a class="dropdown-item" href="#">South America</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Africa</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Australia</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Subscription Level
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Free</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Basic</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Premium</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Pro</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Enterprise</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
-                                            </li>
-                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#retention" type="button" role="tab" aria-controls="retention" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge" type="button" role="tab" aria-controls="gauge" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: PER (%)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#retention" type="button" role="tab" aria-controls="retention" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge" type="button" role="tab" aria-controls="gauge" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="retention" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
                                             <div class="d-flex align-items-center">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">15102
-                                                        <span class="bg-soft-success px-1 rounded-1 text-success d-flex align-items-center fs-6">23%</span>
-                                                    </h3>
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
-                                                <div class="ps-5" id="line-chart"></div>
+                                                <div id="line-chart"></div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
@@ -191,75 +204,82 @@
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Churn </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                            <a href="#">
-                                                <!-- Segmentation -->
-                                                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                        <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                        <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                    </svg>
-                                            </a>
-                                            <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            <ul class="sub-menu border">
-                                                <li class="more-submenu"><a href="#">By Reason for Churn </a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">poor customer service</a></li>
-                                                    <li><a href="#">high fees</a></li>
-                                                    <li><a href="#">etc</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Lifetime Value Tier</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">High-Value</a></li>
-                                                    <li><a href="#">Medium-Value</a></li>
-                                                    <li><a href="#">Low-Value</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Season</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Holiday Season</a></li>
-                                                    <li><a href="#">Summer Season</a></li>
-                                                    <li><a href="#">Back-to-School Season</a></li>
-                                                    <li><a href="#">Festival Season</a></li>
-                                                    <li><a href="#">Non-Seasonal</a></li>
-                                                </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Churn <span class="fw-normal">PER (%)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Reason for Churn
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Poor customer service</a></li>
+                                                                        <li><a class="dropdown-item" href="#">High fees</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Etc</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Lifetime Value Tier
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">High-Value</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Medium-Value</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Low-Value</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Season
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Holiday Season</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Summer Season</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Back-to-School Season</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Festival Season</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Non-Seasonal</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
-                                            </li>
-                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#churn" type="button" role="tab" aria-controls="churn" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge1" type="button" role="tab" aria-controls="gauge1" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: PER (%)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#churn" type="button" role="tab" aria-controls="churn" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge1" type="button" role="tab" aria-controls="gauge1" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="churn" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
                                             <div class="d-flex align-items-center">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">8654
-                                                        <span class="bg-soft-danger px-1 rounded-1 text-danger  d-flex align-items-center fs-6">68%</span>
-                                                    </h3>
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">68%</h3>
                                                 </div>
-                                                <div class="ps-5" id="line-chart1"></div>
+                                                <div id="line-chart1"></div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge1" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
@@ -273,45 +293,44 @@
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Lifetime Value (CLV) </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                                <a href="#">
-                                                    <!-- Segmentation -->
-                                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                        <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                        <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                    </svg>
-                                                </a>
-                                                <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            </li>
-                                        </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">Lifetime Value <span class="fw-normal">(CLV)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#lifetime" type="button" role="tab" aria-controls="lifetime" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge2" type="button" role="tab" aria-controls="gauge2" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Currency (USD)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#lifetime" type="button" role="tab" aria-controls="lifetime" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge2" type="button" role="tab" aria-controls="gauge2" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="lifetime" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="text-primary mb-0 fw-bold">52.7</h3>
-                                                </div>
-                                            </div>
+                                            <h3 class="mb-0 fw-bold">52.7</h3>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge2" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
                                     </div>
@@ -320,47 +339,50 @@
                         </div>
                     </div>
                     <!-- end col -->
-                    
+
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Customer Acquisition Cost (CAC) </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                                <a href="#">
-                                                    <!-- Segmentation -->
-                                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                        <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                        <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                    </svg>
-                                                </a>
-                                                <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            </li>
-                                        </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">Customer Acquisition Cost <span class="fw-normal">(CAC)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#acquisition" type="button" role="tab" aria-controls="acquisition" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge3" type="button" role="tab" aria-controls="gauge3" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Currency (USD)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#acquisition" type="button" role="tab" aria-controls="acquisition" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge3" type="button" role="tab" aria-controls="gauge3" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="acquisition" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="text-primary mb-0 fw-bold">52.7</h3>
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52.7</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -374,25 +396,47 @@
                     
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
-                            <div class="party_chart border-success">
-                                <h5 class="mb-0 fs-16 fw-semibold"> CLV:CAC Ratio </h5>
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Ratio</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#ratio" type="button" role="tab" aria-controls="ratio" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge4" type="button" role="tab" aria-controls="gauge4" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
+                            <div class="card-dripdown">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">CLV:CAC Ratio <span class="fw-normal"> Ratio </span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </nav>
+                                    </div>
                                 </div>
-                                <div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#ratio" type="button" role="tab" aria-controls="ratio" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge4" type="button" role="tab" aria-controls="gauge4" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="party_chart border-success">
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="ratio" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="text-primary mb-0 fw-bold">52.7</h3>
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52.7</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -407,45 +451,46 @@
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Time-to-Churn </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                                <a href="#">
-                                                    <!-- Segmentation -->
-                                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                        <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                        <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                    </svg>
-                                                </a>
-                                                <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            </li>
-                                        </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Time-to-Churn <span class="fw-normal"> Period </span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#time-to-churn" type="button" role="tab" aria-controls="time-to-churn" aria-selected="true"><i class="mdi mdi-chart-bar"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge5" type="button" role="tab" aria-controls="gauge5" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Period</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#time-to-churn" type="button" role="tab" aria-controls="time-to-churn" aria-selected="true"><i class="mdi mdi-chart-bar"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge5" type="button" role="tab" aria-controls="gauge5" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="time-to-churn" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">
-                                                        9865
-                                                    </h3>
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">9865</h3>
                                                 </div>
                                                 <div id="bar-chart5" class="ps-4"></div>
                                             </div>
@@ -461,77 +506,86 @@
                 <!-- end row -->
 
                 <div class="row row-bg-light ms-1 me-1 border rounded-1 mb-14">
+                    <!-- heading -->
                     <h5 id="satisfaction-loyalty" class="mb-0 py-2 fw-semibold">Satisfaction and Loyalty</h5>
+
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> NPS </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                            <a href="#">
-                                                <!-- Demographics -->
-                                                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                    <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                    <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                </svg>
-                                            </a>
-                                            <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            <ul class="sub-menu border">
-                                                <li class="more-submenu"><a href="#">By Age of Account</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">New Accounts</a></li>
-                                                    <li><a href="#">Established Accounts</a></li>
-                                                    <li><a href="#">Long-Term Accounts</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Number of Interactions with Customer Service</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Low</a></li>
-                                                    <li><a href="#">Moderate</a></li>
-                                                    <li><a href="#">High</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Subscription Level</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Free</a></li>
-                                                    <li><a href="#">Basic</a></li>
-                                                    <li><a href="#">Premium</a></li>
-                                                    <li><a href="#">Pro</a></li>
-                                                    <li><a href="#">Enterprise</a></li>
-                                                </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> NPS <span class="fw-normal">Score</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Age of Account
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">New Accounts</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Established Accounts</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long-Term Accounts</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Number of Interactions with Customer Service
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Low</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">High</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Subscription Level
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Free</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Basic</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Premium</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Pro</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Enterprise</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
-                                            </li>
-                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#nps" type="button" role="tab" aria-controls="nps" aria-selected="true"><i class="mdi mdi-chart-pie"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge6" type="button" role="tab" aria-controls="gauge6" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Score (-100 to 100 for NPS)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#nps" type="button" role="tab" aria-controls="nps" aria-selected="true"><i class="mdi mdi-chart-pie"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge6" type="button" role="tab" aria-controls="gauge6" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="nps" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">7465
-                                                        <span class="bg-soft-success px-1 rounded-1 text-success d-flex align-items-center fs-6">68%</span>
-                                                    </h3>
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
                                                 <div id="pie-chart6"></div>
                                             </div>
@@ -543,101 +597,76 @@
                         </div>
                     </div>
                     <!-- end col -->
-                    
+
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
-                            <div class="d-flex dropdown-group justify-content-between">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Customer Support Rating </h5>
-                                <div class="d-flex">
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Consumer Behaviour -->
+                            <div class="card-dripdown">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Score <span class="fw-normal">(0-5 or 0-100%)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
                                                         <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
                                                             <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
                                                             <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
                                                         </svg>
                                                     </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Type of Issue Raised</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Technical</a></li>
-                                                            <li><a href="#">Billing</a></li>
-                                                            <li><a href="#">General</a></li>
-                                                        </ul>
-                                                        </li>
-                                                        <li class="more-submenu"><a href="#">By Resolution Time</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Quick</a></li>
-                                                            <li><a href="#">Moderate</a></li>
-                                                            <li><a href="#">Long</a></li>
-                                                        </ul>
-                                                        </li>
-                                                    </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Interaction & Engagement -->
-                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                        </svg>
-                                                    </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Agent or Team</a>
-                                                            <span class="fa fa-angle-down ms-2"></span>
-                                                            <ul class="sub-menu more-sub-menu border">
-                                                                <li><a href="#">Agent A</a></li>
-                                                                <li><a href="#">Agent B</a></li>
-                                                                <li><a href="#">Support Team 1</a></li>
-                                                                <li><a href="#">Support Team 2</a></li>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Consumer Behaviour
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Type of Issue Raised
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">New Accounts</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Technical</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Billing</a></li>
+                                                                        <li><a class="dropdown-item" href="#">General</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Resolution Time
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Low</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">High</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Quick</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long</a></li>
+                                                                    </ul>
+                                                                </li>
                                                             </ul>
                                                         </li>
                                                     </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#customer" type="button" role="tab" aria-controls="customer" aria-selected="true"><i class="mdi mdi-chart-pie"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge7" type="button" role="tab" aria-controls="gauge7" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
+                                    </div>
+                                </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Score (0-5 or 0-100%)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#customer" type="button" role="tab" aria-controls="customer" aria-selected="true"><i class="mdi mdi-chart-pie"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge7" type="button" role="tab" aria-controls="gauge7" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">6543
-                                                        <span class="bg-soft-danger px-1 rounded-1 text-danger  d-flex align-items-center fs-6">68%</span>
-                                                    </h3>
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
                                                 <div id="pie-chart7"></div>
                                             </div>
@@ -653,75 +682,82 @@
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Repeat Transaction Rate </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                            <a href="#">
-                                                <!-- Consumer Behavior -->
-                                                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                    <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                    <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                </svg>
-                                            </a>
-                                            <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            <ul class="sub-menu border">
-                                                <li class="more-submenu"><a href="#">By Payment Method</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Credit Card</a></li>
-                                                    <li><a href="#">PayPal</a></li>
-                                                    <li><a href="#">Bank Transfer</a></li>
-                                                    <li><a href="#">etc.</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Transaction Value</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Low</a></li>
-                                                    <li><a href="#">Moderate</a></li>
-                                                    <li><a href="#">High</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Product/Service Category</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Product A</a></li>
-                                                    <li><a href="#">Product B</a></li>
-                                                    <li><a href="#">Service X</a></li>
-                                                    <li><a href="#">Service Y</a></li>
-                                                </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Transaction <span class="fw-normal">PER (%)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Consumer Behavior
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Payment Method
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Credit Card</a></li>
+                                                                        <li><a class="dropdown-item" href="#">PayPal</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Bank Transfer</a></li>
+                                                                        <li><a class="dropdown-item" href="#">etc.</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Transaction Value
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Low</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate</a></li>
+                                                                        <li><a class="dropdown-item" href="#">High</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Product/Service Category
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Product A</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Product B</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Service X</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Service Y</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
-                                            </li>
-                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#transaction" type="button" role="tab" aria-controls="transaction" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge8" type="button" role="tab" aria-controls="gauge8" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: PER (%)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#transaction" type="button" role="tab" aria-controls="transaction" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge8" type="button" role="tab" aria-controls="gauge8" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="transaction" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">4612
-                                                        <span class="bg-soft-primary px-1 rounded-1 text-primary d-flex align-items-center fs-6">19%</span>
-                                                    </h3>
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
-                                                <div class="mx-4" id="line-chart8"></div>
+                                                <div id="pie-chart8"></div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge8" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
@@ -732,100 +768,73 @@
                     </div>
                     <!-- end col -->
 
+
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
-                            <div class="d-flex dropdown-group justify-content-between">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Satisfaction Score </h5>
-                                <div class="d-flex">
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Segmentation -->
+                            <div class="card-dripdown">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Transaction <span class="fw-normal">PER (%)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
                                                         <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
                                                             <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
                                                             <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
                                                         </svg>
                                                     </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border sub-menu-left">
-                                                        <li class="more-submenu"><a href="#">By Age of Account</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">New Accounts</a></li>
-                                                            <li><a href="#">Established Accounts</a></li>
-                                                            <li><a href="#">Long-Term Accounts</a></li>
-                                                        </ul>
-                                                        </li>
-                                                        <li class="more-submenu"><a href="#">By Subscription Level</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Free</a></li>
-                                                            <li><a href="#">Basic</a></li>
-                                                            <li><a href="#">Premium</a></li>
-                                                            <li><a href="#">Pro</a></li>
-                                                            <li><a href="#">Enterprise</a></li>
-                                                        </ul>
-                                                        </li>
-                                                    </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Consumer Behaviour -->
-                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                        </svg>
-                                                    </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border sub-menu-left1">
-                                                        <li class="more-submenu"><a href="#">By Number of Interactions with Customer Service</a>
-                                                            <span class="fa fa-angle-down ms-2"></span>
-                                                            <ul class="sub-menu more-sub-menu border">
-                                                                <li><a href="#">Low</a></li>
-                                                                <li><a href="#">Moderate</a></li>
-                                                                <li><a href="#">High</a></li>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Age of Account
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">New Accounts</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Established Accounts</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long-Term Accounts</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Subscription Level
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Free</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Basic</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Premium</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Pro</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Enterprise</a></li>
+                                                                    </ul>
+                                                                </li>
                                                             </ul>
                                                         </li>
                                                     </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#satisfaction" type="button" role="tab" aria-controls="satisfaction" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge9" type="button" role="tab" aria-controls="gauge9" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
+                                    </div>
+                                </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Score (0-100)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#satisfaction" type="button" role="tab" aria-controls="satisfaction" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge9" type="button" role="tab" aria-controls="gauge9" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="satisfaction" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="text-primary mb-0 fw-bold">52.7</h3>
-                                                </div>
+                                            <div class="mx-xxl-5 px-4">
+                                                <h3 class="mb-0 fw-bold">52%</h3>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge9" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
@@ -839,108 +848,80 @@
                 <!-- end row -->
                 
                 <div class="row row-bg-light ms-1 me-1 border rounded-1 mb-14">
+                    <!-- heading -->
                     <h5 id="revenuee-xpansion" class="mb-0 py-2 fw-semibold">Revenue Expansion</h5>
+
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
-                            <div class="d-flex dropdown-group justify-content-between">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Average Revenue Per (ARPM) </h5>
-                                <div class="d-flex">
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Segmentation -->
+                            <div class="card-dripdown">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Average Revenue (ARPM) <span class="fw-normal">Currency (USD)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
                                                         <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
                                                             <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
                                                             <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
                                                         </svg>
                                                     </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Industry</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Retail</a></li>
-                                                            <li><a href="#">Healthcare</a></li>
-                                                            <li><a href="#">Finance</a></li>
-                                                            <li><a href="#">Technology</a></li>
-                                                            <li><a href="#">Hospitality</a></li>
-                                                            <li><a href="#">Education</a></li>
-                                                            <li><a href="#">Manufacturing</a></li>
-                                                        </ul>
-                                                        </li>
-                                                        <li class="more-submenu"><a href="#">By Geography</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">North America</a></li>
-                                                            <li><a href="#">Europe</a></li>
-                                                            <li><a href="#">Asia</a></li>
-                                                            <li><a href="#">South America</a></li>
-                                                            <li><a href="#">Africa</a></li>
-                                                            <li><a href="#">Australia</a></li>
-                                                        </ul>
-                                                        </li>
-                                                    </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Interaction and Engagement -->
-                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                        </svg>
-                                                    </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Customer Acquisition Channel</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Referral</a></li>
-                                                            <li><a href="#">Organic</a></li>
-                                                            <li><a href="#">Paid Marketing</a></li>
-                                                            <li><a href="#">Social Media</a></li>
-                                                            <li><a href="#">Direct</a></li>
-                                                        </ul>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Industry
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Retail</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Finance</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Technology</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Hospitality</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Education</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Manufacturing</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Geography
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">North America</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Europe</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Asia</a></li>
+                                                                        <li><a class="dropdown-item" href="#">South America</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Africa</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Australia</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
                                                         </li>
                                                     </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#average-revenue" type="button" role="tab" aria-controls="average-revenue" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge10" type="button" role="tab" aria-controls="gauge10" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
+                                    </div>
+                                </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Currency (USD)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#average-revenue" type="button" role="tab" aria-controls="average-revenue" aria-selected="true"><i class="mdi mdi-numeric"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge10" type="button" role="tab" aria-controls="gauge10" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="average-revenue" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="text-primary mb-0 fw-bold">52.7</h3>
-                                                </div>
+                                            <div class="mx-xxl-5 px-4">
+                                                <h3 class="mb-0 fw-bold">52%</h3>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge10" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
@@ -953,186 +934,209 @@
                     
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
-                            <div class="d-flex dropdown-group justify-content-between">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Upsell/Cross-Sell </h5>
-                                <div class="d-flex">
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Consumer Behaviour -->
+                            <div class="card-dripdown">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Upsell/Cross-Sell <span class="fw-normal">PER (%)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
                                                         <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
                                                             <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
                                                             <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
                                                         </svg>
                                                     </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Type of Upsell/Cross-sell Offer</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Upgrade</a></li>
-                                                            <li><a href="#">Bundle</a></li>
-                                                            <li><a href="#">Add-On</a></li>
-                                                        </ul>
-                                                        </li>
-                                                        <li class="more-submenu"><a href="#">By Time Since the Last Purchase</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Recently</a></li>
-                                                            <li><a href="#">Moderately Long</a></li>
-                                                            <li><a href="#">Long Ago</a></li>
-                                                        </ul>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Consumer Behaviour
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Type of Upsell/Cross-sell Offer
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Retail</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Finance</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Technology</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Hospitality</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Education</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Manufacturing</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Time Since the Last Purchase
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">North America</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Europe</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Asia</a></li>
+                                                                        <li><a class="dropdown-item" href="#">South America</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Africa</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Australia</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
                                                         </li>
                                                     </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Segmentation -->
+                                                </li>
+                                            </ul>
+                                            <!-- end dropdown 1 -->
+
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
                                                         <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
                                                             <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
                                                             <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
                                                         </svg>
                                                     </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Subscription Level</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">Free</a></li>
-                                                            <li><a href="#">Basic</a></li>
-                                                            <li><a href="#">Premium</a></li>
-                                                            <li><a href="#">Pro</a></li>
-                                                            <li><a href="#">Enterprise</a></li>
-                                                        </ul>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                By Subscription Level
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Type of Upsell/Cross-sell Offer
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Free</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Basic</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Premium</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Pro</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Enterprise</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
                                                         </li>
                                                     </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
+                                                </li>
+                                            </ul>
+                                            <!-- end dropdown2 -->
+                                        </div>
                                     </div>
                                 </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#cross-sell" type="button" role="tab" aria-controls="cross-sell" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge11" type="button" role="tab" aria-controls="gauge11" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
+                                    </div>
+                                </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: PER (%)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#upsell" type="button" role="tab" aria-controls="upsell" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge11" type="button" role="tab" aria-controls="gauge11" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
-                                        <div class="tab-pane fade show active" id="upsell" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">6874
-                                                        <span class="bg-soft-success px-1 rounded-1 text-success d-flex align-items-center fs-6">19%</span>
-                                                    </h3>
+                                        <div class="tab-pane fade show active" id="cross-sell" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
-                                                <div class="ps-5" id="line-chart11"></div>
+                                                <div id="line-chart11"></div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge11" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
                                     </div>
                                 </div>
-                            </div>    
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
                     <!-- end col -->
                 </div>
                 <!-- end row -->
 
                 <div class="row row-bg-light ms-1 me-1 border rounded-1 mb-14">
+                    <!-- heading -->
                     <h5 id="reactivation1" class="mb-0 py-2 fw-semibold">Reactivation</h5>
+
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Reactivation </h5>
-                                <nav class="navbar">
-                                    <div class="navbar-links">
-                                        <ul class="links">
-                                            <li>
-                                            <a href="#">
-                                                <!-- Interaction and Engagement -->
-                                                <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
-                                                        <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
-                                                        <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
-                                                    </svg>
-                                            </a>
-                                            <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                            <ul class="sub-menu border">
-                                                <li class="more-submenu"><a href="#">By Time Inactive</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Short Inactivity</a></li>
-                                                    <li><a href="#">Moderate Inactivity</a></li>
-                                                    <li><a href="#">Long Inactivity</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Last Known Activity</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-sub-menu border">
-                                                    <li><a href="#">Recent Activity</a></li>
-                                                    <li><a href="#">Moderate Time Ago</a></li>
-                                                    <li><a href="#">Long Time Ago</a></li>
-                                                </ul>
-                                                </li>
-                                                <li class="more-submenu"><a href="#">By Marketing Campaign</a>
-                                                <span class="fa fa-angle-down ms-2"></span>
-                                                <ul class="sub-menu more-submenu1 more-sub-menu border">
-                                                    <li><a href="#">Campaign A</a></li>
-                                                    <li><a href="#">Campaign B</a></li>
-                                                    <li><a href="#">Newsletter</a></li>
-                                                    <li><a href="#">Holiday Special</a></li>
-                                                </ul>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Reactivation <span class="fw-normal">PER (%)</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
+                                                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
+                                                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
+                                                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Interaction and Engagement
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Time Inactive
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Short Inactivity</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate Inactivity</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long Inactivity</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Last Known Activity
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Recent Activity</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate Time Ago</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long Time Ago</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Marketing Campaign
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Campaign A</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Campaign B</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Holiday Special</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
-                                            </li>
-                                        </ul>
+                                            <!-- end dropdown -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#reactivation" type="button" role="tab" aria-controls="reactivation" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge12" type="button" role="tab" aria-controls="gauge12" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
                                     </div>
                                 </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: PER (%)</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#reactivation" type="button" role="tab" aria-controls="reactivation" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge12" type="button" role="tab" aria-controls="gauge12" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="reactivation" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">2356
-                                                        <span class="bg-soft-danger px-1 rounded-1 text-danger  d-flex align-items-center fs-6">37%</span>
-                                                    </h3>
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
-                                                <div class="ps-5" id="line-chart12"></div>
+                                                <div id="line-chart12"></div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge12" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
@@ -1145,103 +1149,131 @@
                     
                     <div class="col-xl-3 col-md-6 col-12 mb-14">
                         <div class="mat-card border pb-0">
-                            <div class="d-flex dropdown-group justify-content-between">
-                                <h5 class="mb-0 fs-16 fw-semibold"> Time-to-Reactivation </h5>
-                                <div class="d-flex">
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Interaction and Engagement -->
+                            <div class="card-dripdown">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Reactivation <span class="fw-normal">Period</span></h5>
+                                    <div class="navbar-expand-lg">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
                                                         <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
                                                             <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
                                                             <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
                                                         </svg>
                                                     </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Reactivation Trigger </a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">email campaign</a></li>
-                                                            <li><a href="#">product update</a></li>
-                                                            <li><a href="#">etc</a></li>
-                                                        </ul>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Interaction and Engagement
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Time Inactive
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Short Inactivity</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate Inactivity</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long Inactivity</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Last Known Activity
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Recent Activity</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Moderate Time Ago</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long Time Ago</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Marketing Campaign
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Campaign A</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Campaign B</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Holiday Special</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
                                                     </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                    <div class="card-dripdown">
-                                        <nav class="navbar">
-                                            <div class="navbar-links">
-                                                <ul class="links">
-                                                    <li>
-                                                    <a href="#">
-                                                        <!-- Segmentation -->
+                                                </li>
+                                            </ul>
+                                            <!-- end dropdown -->
+
+                                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                                <li class="dropdown1">
+                                                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <!-- Dropdown -->
                                                         <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="currentColor"></path>
                                                             <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="currentColor"></path>
                                                             <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="currentColor"></path>
                                                         </svg>
                                                     </a>
-                                                    <!-- <i class="fa fa-angle-down ms-2"></i> -->
-                                                    <ul class="sub-menu border">
-                                                        <li class="more-submenu"><a href="#">By Age of Account</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-sub-menu border">
-                                                            <li><a href="#">New Accounts</a></li>
-                                                            <li><a href="#">Established Accounts</a></li>
-                                                            <li><a href="#">Long-Term Accounts</a></li>
-                                                        </ul>
-                                                        </li>
-                                                        <li class="more-submenu"><a href="#">By Industry</a>
-                                                        <span class="fa fa-angle-down ms-2"></span>
-                                                        <ul class="sub-menu more-submenu2 more-sub-menu border">
-                                                            <li><a href="#">Retail</a></li>
-                                                            <li><a href="#">Healthcare</a></li>
-                                                            <li><a href="#">Finance</a></li>
-                                                            <li><a href="#">Technology</a></li>
-                                                            <li><a href="#">Hospitality</a></li>
-                                                            <li><a href="#">Education</a></li>
-                                                            <li><a href="#">Manufacturing</a></li>
-                                                            <li><a href="#">Other</a></li>
-                                                        </ul>
+                                                    <ul class="dropdown-menu py-0">
+                                                        <li class="dropend">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Segmentation
+                                                            </a>
+                                                            <ul class="dropdown-menu py-0 m-0">
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Age of Account
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">New Accounts</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Established Accounts</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Long-Term Accounts</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="dropend">
+                                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        By Industry
+                                                                    </a>
+                                                                    <ul class="dropdown-menu py-0 m-0">
+                                                                        <li><a class="dropdown-item" href="#">Retail</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Finance</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Technology</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Hospitality</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Education</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Manufacturing</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Other</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
                                                         </li>
                                                     </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
+                                                </li>
+                                            </ul>
+                                            <!-- end dropdown -->
+                                        </div>
                                     </div>
                                 </div>
+                                <nav>
+                                    <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                        <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#time-to-reactivation" type="button" role="tab" aria-controls="time-to-reactivation" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
+                                        <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge13" type="button" role="tab" aria-controls="gauge13" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
+                                    </div>
+                                </nav>
                             </div>
                             <div class="party_chart border-success">
-                                <div class="d-flex justify-content-between mt-1">
-                                    <div class="border-0">
-                                        <h6 class="mb-0 fs-14">Unit: Period</h6>
-                                    </div>
-                                    <nav>
-                                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                                            <button class="btn bg-soft-secondary btn-sm border-0 mt-0 mb-1 me-1 active" id="line-chart-tab" data-bs-toggle="tab" data-bs-target="#time-to-reactivation" type="button" role="tab" aria-controls="time-to-reactivation" aria-selected="true"><i class="mdi mdi-chart-line-variant"></i></button>
-                                            <button class="btn bg-soft-secondary btn-sm border-0 m-0 mb-1" id="gauge-tab" data-bs-toggle="tab" data-bs-target="#gauge13" type="button" role="tab" aria-controls="gauge13" aria-selected="false"><i class="mdi mdi-gauge"></i></button>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div>
+                                <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="time-to-reactivation" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h3 class="items-center d-flex gap-4 mb-0">8652
-                                                        <span class="bg-soft-primary px-1 rounded-1 text-primary d-flex align-items-center fs-6">64%</span>
-                                                    </h3>
+                                            <div class="d-flex align-items-center">
+                                                <div class="mx-xxl-5 px-4">
+                                                    <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
-                                                <div class="ps-5" id="line-chart13"></div>
+                                                <div id="line-chart13"></div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge13" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>

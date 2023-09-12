@@ -1,7 +1,7 @@
 // @charset "UTF-8";
 /*!
-* Axis-Themes v1.0.0 (https://axisthemes.in/)
-* Copyright 2022 The Axis-Themes Authors * Designed & Develop By Axis-Themes
+* Slice v1.0.0
+* Copyright 2022 The Slice Authors * Designed & Develop By Slice
 */
 
 /*
