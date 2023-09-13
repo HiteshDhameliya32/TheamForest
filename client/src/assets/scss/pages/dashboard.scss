@@ -973,6 +973,17 @@
 // // // //
 // // //  navbar scss
 /* header section start */
+.apexcharts-datalabel-label {
+  display: none;
+}
+#gauge2,
+#gauge3,
+#gauge4 {
+  .apexcharts-datalabel-value {
+    display: none;
+  }
+}
+
 .card-dripdown {
   display: flex;
   justify-content: space-between;
@@ -993,6 +1004,25 @@
       }
     }
   }
+}
+
+.dropdown-menu-left {
+  transform: translate(-318px, -32px);
+}
+
+.dropdown-menu-top {
+  transform: translate(-50px, -94px);
+}
+
+.dropdown-menu-top2 {
+  transform: translate(-317px, -0px);
+}
+.dropdown-menu-top-sec {
+  transform: translate(-114px, -64px);
+}
+
+.dropdown-menu-top-third {
+  transform: translate(-318px, -202px);
 }
 
 .dropdown-toggle {

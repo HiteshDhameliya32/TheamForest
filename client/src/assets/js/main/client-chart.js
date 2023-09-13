@@ -1,13 +1,14 @@
 var options = {
-  series: [67],
-  chart: {
+  series: [52.7],
+  
+  colors: ["#8c8aff"],chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -38,6 +39,15 @@ var options = {
   stroke: {
     dashArray: 4
   },
+
+
+  dataLabels: {
+    enabled: true,
+    enabledOnSeries: undefined,
+    formatter: function (val, opts) {
+        return val
+    },
+  }
 };
 var chart = new ApexCharts(document.querySelector("#gauge"), options);
 chart.render();
@@ -45,15 +55,16 @@ chart.render();
 
 // chart1
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -90,15 +101,16 @@ chart.render();
 
 // chart2
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -135,15 +147,16 @@ chart.render();
 
 // chart3
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -180,15 +193,16 @@ chart.render();
 
 // chart4
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -223,17 +237,64 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#gauge4"), options);
 chart.render();
 
-// chart6
+// chart5
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
+      dataLabels: {
+        name: {
+          fontSize: '16px',
+          color: undefined,
+        },
+        value: {
+          offsetY: -10,
+          fontSize: '14px',
+          color: undefined,
+          formatter: function (val) {
+            return val + "%";
+          }
+        }
+      }
+    }
+  },
+  fill: {
+    type: 'gradient',
+    gradient: {
+        shade: 'dark',
+        shadeIntensity: 0.15,
+        inverseColors: false,
+        opacityFrom: 1,
+        opacityTo: 1,
+        stops: [0, 50, 65, 91]
+    },
+  },
+  stroke: {
+    dashArray: 4
+  },
+};
+var chart = new ApexCharts(document.querySelector("#gauge5"), options);
+chart.render();
+
+// chart6
+var options = {
+  series: [52.7],
+  colors: ["#8c8aff"],
+  chart: {
+    height: 150,
+    type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -270,15 +331,16 @@ chart.render();
 
 // chart7
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -315,15 +377,16 @@ chart.render();
 
 // chart8
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -360,15 +423,16 @@ chart.render();
 
 // chart9
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -405,15 +469,16 @@ chart.render();
 
 // chart10
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -450,15 +515,16 @@ chart.render();
 
 // chart11
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -495,15 +561,16 @@ chart.render();
 
 // cart12
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -540,15 +607,16 @@ chart.render();
 
 // chart13
 var options = {
-  series: [67],
+  series: [52.7],
+  colors: ["#8c8aff"],
   chart: {
     height: 150,
     type: 'radialBar',
   },
   plotOptions: {
     radialBar: {
-      startAngle: -135,
-      endAngle: 135,
+      startAngle: -100,
+      endAngle: 100,
       dataLabels: {
         name: {
           fontSize: '16px',
@@ -744,7 +812,11 @@ var options = {
   series: [25, 15, 44, 55, 41, 17],
   chart: {
   width: '100%',
+  height: '100',
   type: 'pie',
+},
+fill: {
+  colors: ['#8c8aff', '#a6a5f8', '#CFCEFA']
 },
 theme: {
   monochrome: {
@@ -779,7 +851,11 @@ var options = {
   series: [25, 15, 44, 55, 41, 17],
   chart: {
   width: '100%',
+  height: '100',
   type: 'pie',
+},
+fill: {
+  colors: ['#8c8aff', '#a6a5f8', '#CFCEFA']
 },
 theme: {
   monochrome: {
