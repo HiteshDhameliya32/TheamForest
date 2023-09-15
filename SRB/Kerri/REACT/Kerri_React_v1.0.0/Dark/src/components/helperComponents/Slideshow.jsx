@@ -24,6 +24,7 @@ const Slideshow = () => {
     }, 3000); // Change images every 3 seconds (adjust as needed)
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[index]);
 
   return (
