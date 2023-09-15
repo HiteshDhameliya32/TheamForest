@@ -29,3 +29,33 @@ E:\Themforest Converted Products\Light_able\MVC\Light_able\obj\Debug\net7.0\refi
 E:\Themforest Converted Products\Light_able\MVC\Light_able\obj\Debug\net7.0\Light_able.pdb
 E:\Themforest Converted Products\Light_able\MVC\Light_able\obj\Debug\net7.0\Light_able.genruntimeconfig.cache
 E:\Themforest Converted Products\Light_able\MVC\Light_able\obj\Debug\net7.0\ref\Light_able.dll
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.GeneratedMSBuildEditorConfig.editorconfig
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.AssemblyInfoInputs.cache
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.AssemblyInfo.cs
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.csproj.CoreCompileInputs.cache
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.MvcApplicationPartsAssemblyInfo.cache
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.RazorAssemblyInfo.cache
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.RazorAssemblyInfo.cs
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.dll
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\refint\Light_able.dll
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.pdb
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\appsettings.Development.json
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\appsettings.json
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\Light_able.staticwebassets.runtime.json
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\Light_able.exe
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\Light_able.deps.json
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\Light_able.runtimeconfig.json
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\Light_able.dll
+D:\GorwCode\Om\MVC\Light_able\bin\Debug\net7.0\Light_able.pdb
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\staticwebassets\msbuild.Light_able.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\staticwebassets\msbuild.build.Light_able.props
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Light_able.props
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Light_able.props
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\staticwebassets.pack.json
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\staticwebassets.build.json
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\staticwebassets.development.json
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\scopedcss\bundle\Light_able.styles.css
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\scopedcss\projectbundle\Light_able.bundle.scp.css
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\Light_able.genruntimeconfig.cache
+D:\GorwCode\Om\MVC\Light_able\obj\Debug\net7.0\ref\Light_able.dll

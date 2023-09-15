@@ -11,22 +11,22 @@ function Footer() {
               <div className="text-center text-white footer-alt">
                 <ul className="list-unstyled list-inline mb-0">
                   <li className="list-inline-item">
-                    <a href="#">
+                   <a href="/#"  onClick={(e) => e.preventDefault()}>
                       <i className="mdi mdi-facebook"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                   <a href="/#"  onClick={(e) => e.preventDefault()}>
                       <i className="mdi mdi-linkedin"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                   <a href="/#"  onClick={(e) => e.preventDefault()}>
                       <i className="mdi mdi-pinterest"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                   <a href="/#"  onClick={(e) => e.preventDefault()}>
                       <i className="mdi mdi-twitter"></i>
                     </a>
                   </li>
@@ -35,7 +35,7 @@ function Footer() {
                   {new Date().getFullYear()} &copy; Kerri. Design by{" "}
                   <a
                     className="copyright_content"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                     href="https://themeforest.net/user/srbthemes"
                   >
                     SRBThemes.

@@ -3,6 +3,7 @@ import { jarallax } from "jarallax";
 import Typed from "react-typed";
 import "jarallax/dist/jarallax.css";
 import { useEffect } from "react";
+import imgHeaderbg from "../../assets/images/header-bg.jpg"
 
 function Index11() {
   useEffect(() => {
@@ -14,7 +15,7 @@ function Index11() {
     <section
       className="section h-100vh align-items-center jarallax d-flex"
       data-jarallax='{"speed": 0.2}'
-      style={{ backgroundImage: "url('assets/images/header-bg.jpg')" }}
+      style={{ backgroundImage: `url(${imgHeaderbg})` }}
       id="home"
     >
       <div className="bg-overlay"></div>
@@ -45,7 +46,7 @@ function Index11() {
                 when established fact looking at its layout.
               </p>
               <div className="mt-4 pt-2">
-                <a href="#" className="btn btn-outline-custom btn-round">
+               <a href="/#"  onClick={(e) => e.preventDefault()} className="btn btn-outline-custom btn-round">
                   Download Cv
                 </a>
               </div>

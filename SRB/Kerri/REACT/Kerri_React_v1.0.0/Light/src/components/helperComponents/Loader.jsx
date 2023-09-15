@@ -9,7 +9,7 @@ function Loader() {
       status.style.display = "none";
       preloader.style.display = "none";
       document.body.style.overflow = "visible";
-    }, 350); 
+    }, 350);
   }, []);
   return (
     <>
@@ -19,7 +19,6 @@ function Loader() {
           <div className="spinner">Loading...</div>
         </div>
       </div>
-      {/* End Loader  */}
     </>
   );
 }

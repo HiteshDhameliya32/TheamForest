@@ -33,44 +33,16 @@
       $(window).on("load", function () {
         var $container = $(".work-filter");
         var $filter = $("#menu-filter");
-        $container.isotope({
-          filter: "*",
-          layoutMode: "masonry",
-          animationOptions: {
-            duration: 750,
-            easing: "linear",
-          },
-        });
-
+       
         $filter.find("a").on("click", function () {
           var selector = $(this).attr("data-filter");
           $filter.find("a").removeClass("active");
           $(this).addClass("active");
-          $container.isotope({
-            filter: selector,
-            animationOptions: {
-              animationDuration: 750,
-              easing: "linear",
-              queue: false,
-            },
-          });
           return false;
         });
       });
     }),
-    //Magnificpop
-    (KerriApp.prototype.initMagnificPopup = function () {
-      $(".img-zoom").magnificPopup({
-        type: "image",
-        closeOnContentClick: true,
-        mainClass: "mfp-fade",
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 1],
-        },
-      });
-    }),
+   
     // BACK TO TOP
     (KerriApp.prototype.initBackToTop = function () {
       $(window).on("scroll", function () {
@@ -85,28 +57,16 @@
         return false;
       });
     }),
-    //Client
-    (KerriApp.prototype.initTestimonial = function () {
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        nav: false,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        autoHeight: false,
-        autoHeightClass: "owl-height",
-      });
-    });
+    
 
   (KerriApp.prototype.init = function () {
     this.initPreLoader();
 
     this.initScrollspy();
     this.initWork();
-    this.initMagnificPopup();
+    // this.initMagnificPopup();
     this.initBackToTop();
-    this.initTestimonial();
+    // this.initTestimonial();
   }),
     //init
     ($.KerriApp = new KerriApp()),

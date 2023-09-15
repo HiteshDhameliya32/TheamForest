@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./helperComponents/Footer";
 import Navbar from "./helperComponents/Navbar";
 import { Outlet } from "react-router-dom";
+
 import AllContent from "./helperComponents/AllContent";
 import Loader from "./helperComponents/Loader";
 

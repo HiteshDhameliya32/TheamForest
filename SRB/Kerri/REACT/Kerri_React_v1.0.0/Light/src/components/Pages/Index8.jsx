@@ -45,7 +45,7 @@ function Index8() {
                 when established fact looking at its layout.
               </p>
               <div className="mt-4 pt-2">
-                <a href="#" className="btn btn-outline-custom btn-round">
+               <a href="/#"  onClick={(e) => e.preventDefault()} className="btn btn-outline-custom btn-round">
                   Download Cv
                 </a>
               </div>

@@ -1,0 +1,103 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["breadcrume"] = "Home/Forms/Uppy";
+
+}
+<!-- [Page specific CSS] start -->
+<link rel="stylesheet" href="~/css/plugins/uppy.min.css">
+<!-- [Page specific CSS] end -->
+<!-- [ Main Content ] start -->
+<div class="row">
+    <!-- [ form-element ] start -->
+    <div class="col-sm-12">
+        <div class="alert alert-primary" role="alert">
+            <div class="alert-text">
+                Uppy is a sleek, modular open source JavaScript file uploader.
+                <br>
+                For more info please visit the plugin's <a class="" href="https://uppy.io/" target="_blank">Demo Page</a> or
+                <a class="" href="https://github.com/transloadit/uppy" target="_blank">GitHub</a>.
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Dashboard Example</h5>
+            </div>
+            <div class="card-body">
+                <div class="pc-uppy" id="pc-uppy-1">
+                    <div class="pc-uppy-dashboard"></div>
+                    <div class="pc-uppy-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Drag and Drop [ autoProceed is on ]</h5>
+            </div>
+            <div class="card-body">
+                <div class="pc-uppy-3">
+                    <div class="for-DragDrop"></div>
+                    <div class="for-ProgressBar"></div>
+                    <div class="uploaded-files mt-3">
+                        <h5>Uploaded files:</h5>
+                        <ol></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Drag and Drop [ autoProceed is off ]</h5>
+            </div>
+            <div class="card-body">
+                <div class="pc-uppy-4">
+                    <div class="for-DragDrop"></div>
+                    <div class="for-ProgressBar"></div>
+                    <div class="text-center my-3">
+                        <button class="upload-button btn btn-light-primary">Upload</button>
+                    </div>
+                    <div class="uploaded-files">
+                        <h5>Uploaded files:</h5>
+                        <ol></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Status Bar Example</h5>
+            </div>
+            <div class="card-body">
+                <div class="UppyInput form"></div>
+                <div class="UppyInput-Progress"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Popup Upload</h5>
+            </div>
+            <div class="card-body">
+                <div class="pc-uppy" id="pc-uppy-6">
+                    <div class="text-center">
+                        <button class="pc-uppy-btn btn btn-light-primary">Open Popup Window</button>
+                    </div>
+                    <div class="pc-uppy-dashboard"></div>
+                    <div class="pc-uppy-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+<!-- [ form-element ] end -->

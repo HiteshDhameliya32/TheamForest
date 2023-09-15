@@ -8,13 +8,28 @@ import { animateScroll as scroll } from "react-scroll";
 
 import "magnific-popup";
 import imagesLoaded from "imagesloaded";
+
+import imgAbout from "../../assets/images/about.jpg"
+import imgWorks1 from "../../assets/images/works/1.jpg"
+import imgWorks2 from "../../assets/images/works/2.jpg"
+import imgWorks3 from "../../assets/images/works/3.jpg"
+import imgWorks4 from "../../assets/images/works/4.jpg"
+import imgWorks5 from "../../assets/images/works/5.jpg"
+import imgWorks6 from "../../assets/images/works/6.jpg"
+import imgBlog1 from "../../assets/images/blog/blog-1.jpg"
+import imgBlog2 from "../../assets/images/blog/blog-2.jpg"
+import imgBlog3 from "../../assets/images/blog/blog-3.jpg"
+import imgTesti1 from "../../assets/images/testi/testi-1.jpg"
+import imgTesti2 from "../../assets/images/testi/testi-2.jpg"
+import imgTesti3 from "../../assets/images/testi/testi-3.jpg"
+
+
 function AllContent() {
-  const [showBackToTop, setShowBackToTop] = useState(false);
   const owlOptions = {
     items: 1,
     loop: true,
-    nav: false,
-    dots: true,
+    autoplay: true,        
+    autoplayTimeout: 5000, 
   };
   const clients = [
     {
@@ -23,7 +38,7 @@ function AllContent() {
       company: "Envato",
       review:
         "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
-      image: "assets/images/testi/testi-1.jpg",
+      image: imgTesti1,
     },
     {
       id: 2,
@@ -31,7 +46,7 @@ function AllContent() {
       company: "Another Company",
       review:
         "Another review text goes here. Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-      image: "assets/images/testi/testi-2.jpg",
+      image: imgTesti2,
     },
     {
       id: 3,
@@ -39,7 +54,7 @@ function AllContent() {
       company: "Another Company",
       review:
         "Another review text goes here. Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-      image: "assets/images/testi/testi-3.jpg",
+      image: imgTesti3,
     },
   ];
   const [activeFilter, setActiveFilter] = useState("*");
@@ -47,13 +62,7 @@ function AllContent() {
     const $container = document.querySelector(".work-filter");
     const $filter = document.querySelector("#menu-filter");
 
-    function handleScroll() {
-      if (window.scrollY > 100) {
-        setShowBackToTop(true);
-      } else {
-        setShowBackToTop(false);
-      }
-    }
+    
     imagesLoaded($container, () => {
       const iso = new Isotope($container, {
         itemSelector: ".work_item",
@@ -76,11 +85,8 @@ function AllContent() {
         });
       });
     });
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+
+  });
   function scrollToTop() {
     scroll.scrollToTop({
       duration: 1000,
@@ -97,7 +103,7 @@ function AllContent() {
             <div className="col-lg-6">
               <div className="mt-3">
                 <img
-                  src="assets/images/about.jpg"
+                  src={imgAbout}
                   alt=""
                   className="img-fluid mx-auto d-block img-thumbnail"
                 />
@@ -130,22 +136,22 @@ function AllContent() {
                 <div>
                   <ul className="mb-0 about-social list-inline mt-4">
                     <li className="list-inline-item">
-                      <a href="#">
+                     <a href="/#"  onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-dribbble"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
+                     <a href="/#"  onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-facebook"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
+                     <a href="/#"  onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-linkedin"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
+                     <a href="/#"  onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-twitter"></i>
                       </a>
                     </li>
@@ -281,7 +287,7 @@ function AllContent() {
                 <h2 className="fw-bold">I Am Available For Freelancer.</h2>
               </div>
               <div className="text-center mt-4">
-                <a href="#" className="btn btn-custom">
+               <a href="/#"  onClick={(e) => e.preventDefault()} className="btn btn-custom">
                   Hire Me!
                 </a>
               </div>
@@ -309,7 +315,7 @@ function AllContent() {
           </div>
           <div className="row mt-4 pt-4">
             <div className="col-lg-12">
-              <OwlCarousel className="owl-carousel" {...owlOptions}>
+              <OwlCarousel className="owl-carousel"  dots={true} nav={false}  {...owlOptions}>
                 {clients.map((client) => (
                   <div
                     key={client.id}
@@ -368,7 +374,7 @@ function AllContent() {
                 <a
                   className={activeFilter === "*" ? "active" : ""}
                   data-filter="*"
-                  href="#"
+                  href="!#"
                 >
                   All
                 </a>
@@ -377,7 +383,7 @@ function AllContent() {
                 <a
                   className={activeFilter === ".seo" ? "active" : ""}
                   data-filter=".seo"
-                  href="#"
+                  href="!#"
                 >
                   Seo
                 </a>
@@ -386,25 +392,25 @@ function AllContent() {
                 <a
                   className={activeFilter === ".webdesign" ? "active" : ""}
                   data-filter=".webdesign"
-                  href="#"
+                  href="!#"
                 >
                   Webdesign
                 </a>
               </li>
               <li className="list-inline-item">
                 <a
+                href="!#"
                   className={activeFilter === ".WORK" ? "active" : ""}
                   data-filter=".WORK"
-                  href="#"
                 >
                   WORK
                 </a>
               </li>
               <li className="list-inline-item">
                 <a
+                href="!#"
                   className={activeFilter === ".wordpress" ? "active" : ""}
                   data-filter=".wordpress"
-                  href="#"
                 >
                   Wordpress
                 </a>
@@ -415,11 +421,11 @@ function AllContent() {
         <div className="container">
           <div className="row mt-4 work-filter">
             <div className="col-lg-4 work_item webdesign wordpress">
-              <a href="assets/images/works/1.jpg" className="img-zoom">
+              <a href={imgWorks1} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/1.jpg"
+                      src={imgWorks1}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -433,11 +439,11 @@ function AllContent() {
             </div>
 
             <div className="col-lg-4 work_item WORK webdesign seo">
-              <a href="assets/images/works/2.jpg" className="img-zoom">
+              <a href={imgWorks2} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/2.jpg"
+                      src={imgWorks2}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -451,11 +457,11 @@ function AllContent() {
             </div>
 
             <div className="col-lg-4 work_item seo wordpress">
-              <a href="assets/images/works/3.jpg" className="img-zoom">
+              <a href={imgWorks3} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/3.jpg"
+                      src={imgWorks3}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -469,11 +475,11 @@ function AllContent() {
             </div>
 
             <div className="col-lg-4 work_item wordpress WORK webdesign">
-              <a href="assets/images/works/4.jpg" className="img-zoom">
+              <a href={imgWorks4} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/4.jpg"
+                      src={imgWorks4}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -487,11 +493,11 @@ function AllContent() {
             </div>
 
             <div className="col-lg-4 work_item seo webdesign">
-              <a href="assets/images/works/5.jpg" className="img-zoom">
+              <a href={imgWorks5} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/5.jpg"
+                      src={imgWorks5}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -505,11 +511,11 @@ function AllContent() {
             </div>
 
             <div className="col-lg-4 work_item devlopment webdesign">
-              <a href="assets/images/works/6.jpg" className="img-zoom">
+              <a href={imgWorks6} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/6.jpg"
+                      src={imgWorks6}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -547,7 +553,7 @@ function AllContent() {
               <div className="rounded blog_color p-2">
                 <div className="img_blog">
                   <img
-                    src="assets/images/blog/blog-1.jpg"
+                    src={imgBlog1}
                     alt=""
                     className="img-fluid rounded mx-auto d-block"
                   />
@@ -555,7 +561,7 @@ function AllContent() {
                 <div className="content_blog p-3">
                   <div>
                     <h5 className="font-weight-bold mb-0">
-                      <a href="#" className="text-white">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-white">
                         There are many variations
                       </a>
                     </h5>
@@ -563,7 +569,7 @@ function AllContent() {
                   <div className="mt-3">
                     <p className="h6 text-muted date_blog mb-0">
                       11 March 2018{" "}
-                      <a href="#" className="text-custom font-weight-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-custom font-weight-bold">
                         By Kerri
                       </a>
                     </p>
@@ -572,7 +578,7 @@ function AllContent() {
                       lobortis bibendum netus primis fames. Lobortis ultricies.
                     </p>
                     <p className="h6 mb-0">
-                      <a href="#" className="text-muted font-weight-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-muted font-weight-bold">
                         Read More...
                       </a>
                     </p>
@@ -584,7 +590,7 @@ function AllContent() {
               <div className="rounded blog_color p-2">
                 <div className="img_blog">
                   <img
-                    src="assets/images/blog/blog-2.jpg"
+                    src={imgBlog2}
                     alt=""
                     className="img-fluid rounded mx-auto d-block"
                   />
@@ -592,7 +598,7 @@ function AllContent() {
                 <div className="content_blog p-3">
                   <div>
                     <h5 className="fw-bold mb-0">
-                      <a href="#" className="text-white">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-white">
                         Contrary to popular belief
                       </a>
                     </h5>
@@ -600,7 +606,7 @@ function AllContent() {
                   <div className="mt-3">
                     <p className="h6 text-muted date_blog mb-0">
                       18 March 2018{" "}
-                      <a href="#" className="text-custom fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-custom fw-bold">
                         By Kerri
                       </a>
                     </p>
@@ -609,7 +615,7 @@ function AllContent() {
                       lobortis bibendum netus primis fames. Lobortis ultricies.
                     </p>
                     <p className="h6 mb-0">
-                      <a href="#" className="text-muted fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-muted fw-bold">
                         Read More...
                       </a>
                     </p>
@@ -621,7 +627,7 @@ function AllContent() {
               <div className="rounded blog_color p-2">
                 <div className="img_blog">
                   <img
-                    src="assets/images/blog/blog-3.jpg"
+                    src={imgBlog3}
                     alt=""
                     className="img-fluid rounded mx-auto d-block"
                   />
@@ -629,7 +635,7 @@ function AllContent() {
                 <div className="content_blog p-3">
                   <div>
                     <h5 className="fw-bold mb-0">
-                      <a href="#" className="text-white">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-white">
                         Lorem Ipsum is not simply
                       </a>
                     </h5>
@@ -637,7 +643,7 @@ function AllContent() {
                   <div className="mt-3">
                     <p className="h6 text-muted date_blog mb-0">
                       22 March 2018{" "}
-                      <a href="#" className="text-custom fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-custom fw-bold">
                         By Kerri
                       </a>
                     </p>
@@ -646,7 +652,7 @@ function AllContent() {
                       lobortis bibendum netus primis fames. Lobortis ultricies.
                     </p>
                     <p className="h6 mb-0">
-                      <a href="#" className="text-muted fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-muted fw-bold">
                         Read More...
                       </a>
                     </p>
@@ -796,7 +802,7 @@ function AllContent() {
         </div>
       </section>
       {/*  END CONTACT  */}
-      <a href="#" className="back_top" onClick={scrollToTop}>
+     <a href="/#"  className="back_top" onClick={scrollToTop}>
         <i className="mdi mdi-chevron-up"> </i>
       </a>
 
@@ -805,22 +811,22 @@ function AllContent() {
           <h3 className="fw-bold text-center">Select your color</h3>
           <ul className="pattern">
             <li>
-              <a className="color1" href="/"></a>
+              <a className="color1" href="/"> </a>
             </li>
             <li>
-              <a className="color2" href="/"></a>
+              <a className="color2" href="/"> </a>
             </li>
             <li>
-              <a className="color3 active" href="/"></a>
+              <a className="color3 active" href="/"> </a>
             </li>
             <li>
-              <a className="color4" href="/"></a>
+              <a className="color4" href="/"> </a>
             </li>
             <li>
-              <a className="color5" href="/"></a>
+              <a className="color5" href="/"> </a>
             </li>
             <li>
-              <a className="color6" href="/"></a>
+              <a className="color6" href="/"> </a>
             </li>
           </ul>
         </div>
