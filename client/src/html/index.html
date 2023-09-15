@@ -82,20 +82,32 @@
             <section class="content content-breadcrumb" id="contentSection">
                 <div class="row">
                     <div class="col-12">
-                        <div class="text-end">
-                            <span class="fw-bold me-2">From: To</span>
-                            <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
-                                Days
-                            </button>
-                            <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
-                                Weekly
-                            </button>
-                            <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
-                                Month
-                            </button>
-                            <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
-                                Year
-                            </button>
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex me-3">
+                                <form action="/action_page.php">
+                                    <label class="fw-bold pe-2" for="from">From</label>
+                                    <input class="border shadow-0 rounded-1 px-1" type="date" id="from" name="from">
+                                  </form>
+    
+                                  <form action="/action_page.php">
+                                    <label class="fw-bold px-2" for="to">To</label>
+                                    <input class="border shadow-0 rounded-1 px-1" type="date" id="to" name="to">
+                                  </form>
+                            </div>
+                            <div>
+                                <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
+                                    Days
+                                </button>
+                                <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
+                                    Weekly
+                                </button>
+                                <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
+                                    Month
+                                </button>
+                                <button type="button" class="btn bg-soft-secondary btn-sm px-2 py-1 fs-14 border-0 m-0">
+                                    Year
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +121,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Retention <span class="fw-normal">PER (%)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Retention </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -182,7 +194,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="retention" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -205,7 +217,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Churn <span class="fw-normal">PER (%)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Churn </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -271,7 +283,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="churn" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -294,7 +306,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">Lifetime Value <span class="fw-normal">(CLV)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">Lifetime Value </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -326,7 +338,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="lifetime" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -344,7 +356,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">Customer Acquisition Cost <span class="fw-normal">(CAC)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">Customer Acquisition Cost </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -376,7 +388,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="acquisition" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -398,7 +410,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">CLV:CAC Ratio <span class="fw-normal"> Ratio </span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold">CLV:CAC Ratio </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -430,7 +442,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="ratio" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -452,7 +464,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Time-to-Churn <span class="fw-normal"> Period </span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Time-to-Churn </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -484,15 +496,15 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="time-to-churn" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <div class="mx-xxl-5 px-4">
+                                                <div class="mx-xxl-5">
                                                     <h3 class="mb-0 fw-bold">9865</h3>
                                                 </div>
-                                                <div id="bar-chart5" class="ps-4"></div>
+                                                <div id="bar-chart5"></div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade gauge-chart" id="gauge5" role="tabpanel" aria-labelledby="gauge-tab" tabindex="0"></div>
@@ -579,12 +591,12 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="nps" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
                                             <div class="d-flex align-items-center">
-                                                <div class="mx-xxl-5 px-4">
+                                                <div class="mx-xxl-5 px-3">
                                                     <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
                                                 <div id="pie-chart6"></div>
@@ -602,7 +614,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Score <span class="fw-normal">(0-5 or 0-100%)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Score </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -660,12 +672,12 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
                                             <div class="d-flex align-items-center">
-                                                <div class="mx-xxl-5 px-4">
+                                                <div class="mx-xxl-5 px-3">
                                                     <h3 class="mb-0 fw-bold">52%</h3>
                                                 </div>
                                                 <div id="pie-chart7"></div>
@@ -683,7 +695,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Transaction <span class="fw-normal">PER (%)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Transaction </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -749,7 +761,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="transaction" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -773,7 +785,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Transaction <span class="fw-normal">PER (%)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Transaction </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -829,7 +841,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="satisfaction" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -855,7 +867,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Average Revenue (ARPM) <span class="fw-normal">Currency (USD)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Average Revenue (ARPM) </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -916,7 +928,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="average-revenue" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -936,7 +948,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Upsell/Cross-Sell <span class="fw-normal">PER (%)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Upsell/Cross-Sell </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -1033,7 +1045,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="cross-sell" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -1062,7 +1074,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Reactivation <span class="fw-normal">PER (%)</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Reactivation </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -1128,7 +1140,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="reactivation" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">
@@ -1151,7 +1163,7 @@
                         <div class="mat-card border pb-0">
                             <div class="card-dripdown">
                                 <div class="d-flex align-items-center">
-                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Reactivation <span class="fw-normal">Period</span></h5>
+                                    <h5 class="mb-0 fs-16 me-2 fw-semibold"> Reactivation </h5>
                                     <div class="navbar-expand-lg">
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -1265,7 +1277,7 @@
                                     </div>
                                 </nav>
                             </div>
-                            <div class="party_chart border-success">
+                            <div class="party_chart">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="time-to-reactivation" role="tabpanel" aria-labelledby="line-chart-tab" tabindex="0">

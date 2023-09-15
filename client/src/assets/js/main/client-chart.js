@@ -661,7 +661,7 @@ var options = {
         },
     ],
     chart: {
-        height: 60,
+        height: 40,
         type: "line",
         fontFamily: "Nunito, sans-serif",
         sparkline: {
@@ -708,7 +708,7 @@ var options = {
         },
     ],
     chart: {
-        height: 60,
+        height: 40,
         type: "line",
         fontFamily: "Nunito, sans-serif",
         sparkline: {
@@ -893,7 +893,7 @@ var options = {
         },
     ],
     chart: {
-        height: 60,
+        height: 40,
         type: "line",
         fontFamily: "Nunito, sans-serif",
         sparkline: {
@@ -940,7 +940,7 @@ var options = {
         },
     ],
     chart: {
-        height: 60,
+        height: 40,
         type: "line",
         fontFamily: "Nunito, sans-serif",
         sparkline: {
@@ -987,7 +987,7 @@ var options = {
         },
     ],
     chart: {
-        height: 60,
+        height: 40,
         type: "line",
         fontFamily: "Nunito, sans-serif",
         sparkline: {
@@ -1034,7 +1034,7 @@ var options = {
         },
     ],
     chart: {
-        height: 60,
+        height: 40,
         type: "line",
         fontFamily: "Nunito, sans-serif",
         sparkline: {
