@@ -136,6 +136,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFR5cG9ncmFwaHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FileUplode/Dropzone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9kZVxEcm9wem9uZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FileUplode/Uppy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9kZVxVcHB5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Checkbox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXENoZWNrYm94LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -152,6 +160,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXEZvcm1PcHRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/ImageCrop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXEltYWdlQ3JvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/InputGroups.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXElucHV0R3JvdXBzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -166,6 +178,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Switch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXFN3aXRjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Validation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXFZhbGlkYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/Actionbars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcQWN0aW9uYmFycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/FormLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcRm9ybUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/Multicolumn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcTXVsdGljb2x1bW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/StickyActionbars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcU3RpY2t5QWN0aW9uYmFycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/BootstrapSwitch.cshtml]
@@ -264,6 +296,50 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Basictable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcQmFzaWN0YWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Bordertable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcQm9yZGVydGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Sizingtable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcU2l6aW5ndGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Stylingtable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcU3R5bGluZ3RhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Balloon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxCYWxsb29uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/classic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxjbGFzc2ljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Document.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxEb2N1bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Inline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxJbmxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Markdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxNYXJrZG93bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Quill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxRdWlsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Tinymce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxUaW55bWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/AffiliateDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XEFmZmlsaWF0ZURhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -302,6 +378,34 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/Team.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XFRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/AddRows.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXEFkZFJvd3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/BasicInitialization.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXEJhc2ljSW5pdGlhbGl6YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/ColumnManipulation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXENvbHVtbk1hbmlwdWxhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/DatetimeSorting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXERhdGV0aW1lU29ydGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/DynamicImport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXER5bmFtaWNJbXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/Methods.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXE1ldGhvZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/RenderColumnCells.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXFJlbmRlckNvbHVtbkNlbGxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Widget/Chart.cshtml]

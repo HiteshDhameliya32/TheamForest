@@ -1,22 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Isotope from "isotope-layout";
-import $ from "jquery"; // Import jQuery
+import $ from "jquery";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import { animateScroll as scroll } from "react-scroll";
-import "magnific-popup"; 
-import imagesLoaded from "imagesloaded"; 
+import "magnific-popup";
+import imagesLoaded from "imagesloaded";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import imgAbout from "../../assets/images/about.jpg"
+import imgWorks1 from "../../assets/images/works/1.jpg"
+import imgWorks2 from "../../assets/images/works/2.jpg"
+import imgWorks3 from "../../assets/images/works/3.jpg"
+import imgWorks4 from "../../assets/images/works/4.jpg"
+import imgWorks5 from "../../assets/images/works/5.jpg"
+import imgWorks6 from "../../assets/images/works/6.jpg"
+import imgBlog1 from "../../assets/images/blog/blog-1.jpg"
+import imgBlog2 from "../../assets/images/blog/blog-2.jpg"
+import imgBlog3 from "../../assets/images/blog/blog-3.jpg"
+import imgTesti1 from "../../assets/images/testi/testi-1.jpg"
+import imgTesti2 from "../../assets/images/testi/testi-2.jpg"
+import imgTesti3 from "../../assets/images/testi/testi-3.jpg"
+
+
 function AosAllcontent() {
-  const [showBackToTop, setShowBackToTop] = useState(false);
+
   const owlOptions = {
-    items: 1, 
-    loop: true, 
-    nav: false, 
-    dots: true, 
+    items: 1,
+    loop: true,
+    autoplay: true,        
+    autoplayTimeout: 5000, 
   };
   const clients = [
     {
@@ -25,7 +39,7 @@ function AosAllcontent() {
       company: "Envato",
       review:
         "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
-      image: "assets/images/testi/testi-1.jpg",
+      image: imgTesti1,
     },
     {
       id: 2,
@@ -33,7 +47,7 @@ function AosAllcontent() {
       company: "Another Company",
       review:
         "Another review text goes here. Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-      image: "assets/images/testi/testi-2.jpg",
+      image: imgTesti2,
     },
     {
       id: 3,
@@ -41,22 +55,14 @@ function AosAllcontent() {
       company: "Another Company",
       review:
         "Another review text goes here. Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-      image: "assets/images/testi/testi-3.jpg",
+      image: imgTesti3,
     },
   ];
-  const [activeFilter, setActiveFilter] = useState("*");
+  
   useEffect(() => {
     const $container = document.querySelector(".work-filter");
     const $filter = document.querySelector("#menu-filter");
-
-    //  back to top scroll code
-    function handleScroll() {
-      if (window.scrollY > 100) {
-        setShowBackToTop(true);
-      } else {
-        setShowBackToTop(false);
-      }
-    }
+   
     imagesLoaded($container, () => {
       const iso = new Isotope($container, {
         itemSelector: ".work_item",
@@ -74,15 +80,10 @@ function AosAllcontent() {
         link.addEventListener("click", (event) => {
           event.preventDefault();
           const selector = link.getAttribute("data-filter");
-          setActiveFilter(selector);
           iso.arrange({ filter: selector });
         });
       });
     });
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
   function scrollToTop() {
     scroll.scrollToTop({
@@ -105,7 +106,7 @@ function AosAllcontent() {
             <div className="col-lg-6">
               <div className="mt-3">
                 <img
-                  src="assets/images/about.jpg"
+                  src={imgAbout}
                   alt=""
                   className="img-fluid mx-auto d-block img-thumbnail"
                 />
@@ -138,22 +139,22 @@ function AosAllcontent() {
                 <div>
                   <ul className="mb-0 about-social list-inline mt-4">
                     <li className="list-inline-item">
-                      <a href="#">
+                      <a href="/#" onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-dribbble"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
+                      <a href="/#" onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-facebook"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
+                      <a href="/#" onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-linkedin"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
+                      <a href="/#" onClick={(e) => e.preventDefault()}>
                         <i className="mdi mdi-twitter"></i>
                       </a>
                     </li>
@@ -305,7 +306,11 @@ function AosAllcontent() {
                 <h2 className="fw-bold">I Am Available For Freelancer.</h2>
               </div>
               <div className="text-center mt-4" data-aos="fade-up">
-                <a href="#" className="btn btn-custom">
+                <a
+                  href="/#"
+                  onClick={(e) => e.preventDefault()}
+                  className="btn btn-custom"
+                >
                   Hire Me!
                 </a>
               </div>
@@ -333,7 +338,12 @@ function AosAllcontent() {
           </div>
           <div className="row mt-4 pt-4">
             <div className="col-lg-12">
-              <OwlCarousel className="owl-carousel" {...owlOptions}>
+              <OwlCarousel
+                className="owl-carousel"
+                dots={true}
+                nav={false}
+                {...owlOptions}
+              >
                 {clients.map((client) => (
                   <div
                     key={client.id}
@@ -388,27 +398,52 @@ function AosAllcontent() {
               id="menu-filter"
             >
               <li className="list-inline-item">
-                <a className="active" data-filter="*">
+                <a
+                  href="/#"
+                  onClick={(e) => e.preventDefault()}
+                  className="active"
+                  data-filter="*"
+                >
                   All
                 </a>
               </li>
               <li className="list-inline-item">
-                <a className="" data-filter=".seo">
+                <a
+                  href="/#"
+                  onClick={(e) => e.preventDefault()}
+                  className=""
+                  data-filter=".seo"
+                >
                   Seo
                 </a>
               </li>
               <li className="list-inline-item">
-                <a className="" data-filter=".webdesign">
+                <a
+                  href="/#"
+                  onClick={(e) => e.preventDefault()}
+                  className=""
+                  data-filter=".webdesign"
+                >
                   Webdesign
                 </a>
               </li>
               <li className="list-inline-item">
-                <a className="" data-filter=".WORK">
+                <a
+                  href="/#"
+                  onClick={(e) => e.preventDefault()}
+                  className=""
+                  data-filter=".WORK"
+                >
                   WORK
                 </a>
               </li>
               <li className="list-inline-item">
-                <a className="" data-filter=".wordpress">
+                <a
+                  href="/#"
+                  onClick={(e) => e.preventDefault()}
+                  className=""
+                  data-filter=".wordpress"
+                >
                   Wordpress
                 </a>
               </li>
@@ -417,15 +452,12 @@ function AosAllcontent() {
         </div>
         <div className="container">
           <div className="row mt-4 work-filter">
-            <div
-              className="col-lg-4 work_item webdesign wordpress"
-              data-aos="fade-up"
-            >
-              <a href="assets/images/works/1.jpg" className="img-zoom">
+            <div className="col-lg-4 work_item webdesign wordpress">
+              <a href={imgWorks1} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/1.jpg"
+                      src={imgWorks1}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -438,15 +470,12 @@ function AosAllcontent() {
               </a>
             </div>
 
-            <div
-              className="col-lg-4 work_item WORK webdesign seo"
-              data-aos="fade-up"
-            >
-              <a href="assets/images/works/2.jpg" className="img-zoom">
+            <div className="col-lg-4 work_item WORK webdesign seo">
+              <a href={imgWorks2} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/2.jpg"
+                      src={imgWorks2}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -459,15 +488,12 @@ function AosAllcontent() {
               </a>
             </div>
 
-            <div
-              className="col-lg-4 work_item seo wordpress"
-              data-aos="fade-up"
-            >
-              <a href="assets/images/works/3.jpg" className="img-zoom">
+            <div className="col-lg-4 work_item seo wordpress">
+              <a href={imgWorks3} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/3.jpg"
+                      src={imgWorks3}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -480,15 +506,12 @@ function AosAllcontent() {
               </a>
             </div>
 
-            <div
-              className="col-lg-4 work_item wordpress WORK webdesign"
-              data-aos="fade-up"
-            >
-              <a href="assets/images/works/4.jpg" className="img-zoom">
+            <div className="col-lg-4 work_item wordpress WORK webdesign">
+              <a href={imgWorks4} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/4.jpg"
+                      src={imgWorks4}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -501,15 +524,12 @@ function AosAllcontent() {
               </a>
             </div>
 
-            <div
-              className="col-lg-4 work_item seo webdesign"
-              data-aos="fade-up"
-            >
-              <a href="assets/images/works/5.jpg" className="img-zoom">
+            <div className="col-lg-4 work_item seo webdesign">
+              <a href={imgWorks5} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/5.jpg"
+                      src={imgWorks5}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -522,15 +542,12 @@ function AosAllcontent() {
               </a>
             </div>
 
-            <div
-              className="col-lg-4 work_item devlopment webdesign"
-              data-aos="fade-up"
-            >
-              <a href="assets/images/works/6.jpg" className="img-zoom">
+            <div className="col-lg-4 work_item devlopment webdesign">
+              <a href={imgWorks6} className="img-zoom">
                 <div className="work_box">
                   <div className="work_img">
                     <img
-                      src="assets/images/works/6.jpg"
+                      src={imgWorks6}
                       className="img-fluid mx-auto d-block rounded"
                       alt="work-img"
                     />
@@ -546,12 +563,12 @@ function AosAllcontent() {
         </div>
       </section>
       {/* <!-- END WORK --> */}
-      {/* <!-- START BLOG --> */}
-      <section className="section bg-light" id="blog">
+       {/*  START BLOG  */}
+       <section className="section bg-light" id="blog">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-12">
-              <div className="text-center" data-aos="fade-up">
+              <div className="text-center">
                 <h2>
                   Our <span className="fw-bold">Blog</span>
                 </h2>
@@ -564,18 +581,18 @@ function AosAllcontent() {
           </div>
           <div className="row mt-5">
             <div className="col-lg-4 mt-3">
-              <div className="rounded blog_color p-2" data-aos="fade-up">
+              <div className="rounded blog_color p-2">
                 <div className="img_blog">
                   <img
-                    src="assets/images/blog/blog-1.jpg"
+                    src={imgBlog1}
                     alt=""
                     className="img-fluid rounded mx-auto d-block"
                   />
                 </div>
                 <div className="content_blog p-3">
                   <div>
-                    <h5 className="fw-bold mb-0">
-                      <a href="#" className="text-white">
+                    <h5 className="font-weight-bold mb-0">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-white">
                         There are many variations
                       </a>
                     </h5>
@@ -583,7 +600,7 @@ function AosAllcontent() {
                   <div className="mt-3">
                     <p className="h6 text-muted date_blog mb-0">
                       11 March 2018{" "}
-                      <a href="#" className="text-custom fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-custom font-weight-bold">
                         By Kerri
                       </a>
                     </p>
@@ -592,7 +609,7 @@ function AosAllcontent() {
                       lobortis bibendum netus primis fames. Lobortis ultricies.
                     </p>
                     <p className="h6 mb-0">
-                      <a href="#" className="text-muted fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-muted font-weight-bold">
                         Read More...
                       </a>
                     </p>
@@ -601,10 +618,10 @@ function AosAllcontent() {
               </div>
             </div>
             <div className="col-lg-4 mt-3">
-              <div className="rounded blog_color p-2" data-aos="fade-up">
+              <div className="rounded blog_color p-2">
                 <div className="img_blog">
                   <img
-                    src="assets/images/blog/blog-2.jpg"
+                    src={imgBlog2}
                     alt=""
                     className="img-fluid rounded mx-auto d-block"
                   />
@@ -612,7 +629,7 @@ function AosAllcontent() {
                 <div className="content_blog p-3">
                   <div>
                     <h5 className="fw-bold mb-0">
-                      <a href="#" className="text-white">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-white">
                         Contrary to popular belief
                       </a>
                     </h5>
@@ -620,7 +637,7 @@ function AosAllcontent() {
                   <div className="mt-3">
                     <p className="h6 text-muted date_blog mb-0">
                       18 March 2018{" "}
-                      <a href="#" className="text-custom fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-custom fw-bold">
                         By Kerri
                       </a>
                     </p>
@@ -629,7 +646,7 @@ function AosAllcontent() {
                       lobortis bibendum netus primis fames. Lobortis ultricies.
                     </p>
                     <p className="h6 mb-0">
-                      <a href="#" className="text-muted fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-muted fw-bold">
                         Read More...
                       </a>
                     </p>
@@ -638,10 +655,10 @@ function AosAllcontent() {
               </div>
             </div>
             <div className="col-lg-4 mt-3">
-              <div className="rounded blog_color p-2" data-aos="fade-up">
+              <div className="rounded blog_color p-2">
                 <div className="img_blog">
                   <img
-                    src="assets/images/blog/blog-3.jpg"
+                    src={imgBlog3}
                     alt=""
                     className="img-fluid rounded mx-auto d-block"
                   />
@@ -649,7 +666,7 @@ function AosAllcontent() {
                 <div className="content_blog p-3">
                   <div>
                     <h5 className="fw-bold mb-0">
-                      <a href="#" className="text-white">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-white">
                         Lorem Ipsum is not simply
                       </a>
                     </h5>
@@ -657,7 +674,7 @@ function AosAllcontent() {
                   <div className="mt-3">
                     <p className="h6 text-muted date_blog mb-0">
                       22 March 2018{" "}
-                      <a href="#" className="text-custom fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-custom fw-bold">
                         By Kerri
                       </a>
                     </p>
@@ -666,7 +683,7 @@ function AosAllcontent() {
                       lobortis bibendum netus primis fames. Lobortis ultricies.
                     </p>
                     <p className="h6 mb-0">
-                      <a href="#" className="text-muted fw-bold">
+                     <a href="/#"  onClick={(e) => e.preventDefault()} className="text-muted fw-bold">
                         Read More...
                       </a>
                     </p>
@@ -677,7 +694,7 @@ function AosAllcontent() {
           </div>
         </div>
       </section>
-      {/* <!-- END BLOG --> */}
+      {/*  END BLOG  */}
       {/* <!-- START CONTACT --> */}
       <section className="section" id="contact">
         <div className="container">
@@ -805,7 +822,7 @@ function AosAllcontent() {
                       >
                         Send Massage
                       </button>
-                      <div id="simple-msg"></div>
+                      <div id="simple-msg"> </div>
                     </div>
                   </div>
                 </form>
@@ -815,8 +832,8 @@ function AosAllcontent() {
         </div>
       </section>
       {/* <!-- END CONTACT --> */}
-      <a href="#" className="back_top" onClick={scrollToTop}>
-        <i className="mdi mdi-chevron-up"> </i>
+      <a href="/#" className="back_top" onClick={scrollToTop}>
+        <i className="mdi mdi-chevron-up"> </i>{" "}
       </a>
 
       <div id="color-switcher" style={{ left: "0px" }}>
@@ -824,22 +841,34 @@ function AosAllcontent() {
           <h3 className="fw-bold text-center">Select your color</h3>
           <ul className="pattern">
             <li>
-              <a className="color1" href="/"></a>
+              <a href="/" className="color1">
+                {" "}
+              </a>
             </li>
             <li>
-              <a className="color2" href="/"></a>
+              <a href="/" className="color2">
+                {" "}
+              </a>
             </li>
             <li>
-              <a className="color3 active" href="/"></a>
+              <a href="/" className="color3 active">
+                {" "}
+              </a>
             </li>
             <li>
-              <a className="color4" href="/"></a>
+              <a href="/" className="color4">
+                {" "}
+              </a>
             </li>
             <li>
-              <a className="color5" href="/"></a>
+              <a href="/" className="color5">
+                {" "}
+              </a>
             </li>
             <li>
-              <a className="color6" href="/"></a>
+              <a href="/" className="color6">
+                {" "}
+              </a>
             </li>
           </ul>
         </div>

@@ -35,6 +35,15 @@ namespace Light_able.Controllers
         public IActionResult Megaoption()
         {
             return View();
+        }       
+        public IActionResult Validation()
+        {
+            return View();
         }
+        public IActionResult ImageCrop()
+        {
+            return View();
+        }
+
     }
 }

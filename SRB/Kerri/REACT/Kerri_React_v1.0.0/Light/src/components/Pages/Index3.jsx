@@ -40,7 +40,7 @@ function Index3() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 1.8 }}
+                      transition={{ duration: 3.8 }}
                     >
                       {textItems[currentIndex]}
                     </motion.span>
@@ -51,7 +51,7 @@ function Index3() {
                   when established fact looking at its layout.
                 </p>
                 <div className="mt-4 pt-2">
-                  <a href="#" className="btn btn-outline-custom btn-round">
+                 <a href="/#"  onClick={(e) => e.preventDefault()} className="btn btn-outline-custom btn-round">
                     Download Cv
                   </a>
                 </div>

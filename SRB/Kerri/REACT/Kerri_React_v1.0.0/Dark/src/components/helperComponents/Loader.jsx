@@ -5,12 +5,11 @@ function Loader() {
     const preloader = document.getElementById("preloader");
     const status = document.getElementById("status");
 
-    // Simulate loading delay (you can replace this with actual loading logic)
     setTimeout(() => {
       status.style.display = "none";
       preloader.style.display = "none";
       document.body.style.overflow = "visible";
-    }, 350); // Adjust the delay time as needed
+    }, 350);
   }, []);
   return (
     <>

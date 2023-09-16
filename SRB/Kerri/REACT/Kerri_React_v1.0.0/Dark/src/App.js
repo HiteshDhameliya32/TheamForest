@@ -1,4 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./assets/css/materialdesignicons.min.css";
+import "./assets/css/mobiriseicons.css";
+import 'magnific-popup/dist/magnific-popup.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import "./assets/css/style.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+
 import Layout from "./components/Layout";
 import Index2 from "./components/Pages/Index2";
 import Index1 from "./components/Pages/Index1";
@@ -43,7 +52,6 @@ function App() {
           <Route path="/Index16" index element={<Index16 />} />
           <Route path="/Index17" index element={<Index17 />} />
           <Route path="/Index18" index element={<Index18 />} />
-          <Route path="*" index element={<Index1 />} />
         </Route>
         <Route path="/Index15" element={<Layout1 />}>
           <Route path="/Index15" index element={<Index15 />} />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Slideshow from "../helperComponents/Slideshow";
 
 function Index14() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,12 +10,16 @@ function Index14() {
       setCurrentIndex((prevIndex) =>
         prevIndex === textItems.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3600);
+    }, 3000);
     return () => clearInterval(interval);
   });
+
+
+
   return (
-    <section className="h-100vh align-items-center d-flex" id="home">
-      <div className="bg-overlay"></div>
+    <section className="h-100vh align-items-center d-flex position-relative header-bg-img" id="home">
+     <Slideshow/>
+     <div class="bg-overlay"></div>
       <div className="container z-index">
         <div className="row justify-content-center">
           <div className="col-lg-12">
@@ -40,7 +45,7 @@ function Index14() {
                 when established fact looking at its layout.
               </p>
               <div className="mt-4 pt-2">
-                <a href="#" className="btn btn-outline-custom btn-round">
+               <a href="/#"  onClick={(e) => e.preventDefault()} className="btn btn-outline-custom btn-round">
                   Download Cv
                 </a>
               </div>

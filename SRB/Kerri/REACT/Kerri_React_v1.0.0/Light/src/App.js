@@ -1,24 +1,35 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./assets/css/materialdesignicons.min.css";
+import "./assets/css/mobiriseicons.css";
+import 'magnific-popup/dist/magnific-popup.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import "./assets/css/style.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import Layout from "./components/Layout";
-import Index2 from "./components/Pages/Index2";
+import Layout1 from "./components/Layout1";
+
 import Index1 from "./components/Pages/Index1";
+import Index2 from "./components/Pages/Index2";
 import Index3 from "./components/Pages/Index3";
 import Index4 from "./components/Pages/Index4";
 import Index5 from "./components/Pages/Index5";
+import Index6 from "./components/Pages/Index6";
 import Index7 from "./components/Pages/Index7";
-import Index15 from "./components/Pages/Index15";
 import Index8 from "./components/Pages/Index8";
+import Index9 from "./components/Pages/Index9";
 import Index10 from "./components/Pages/Index10";
 import Index11 from "./components/Pages/Index11";
 import Index12 from "./components/Pages/Index12";
+import Index13 from "./components/Pages/Index13";
 import Index14 from "./components/Pages/Index14";
+import Index15 from "./components/Pages/Index15";
 import Index16 from "./components/Pages/Index16";
 import Index17 from "./components/Pages/Index17";
 import Index18 from "./components/Pages/Index18";
-import Index9 from "./components/Pages/Index9";
-import Index13 from "./components/Pages/Index13";
-import Index6 from "./components/Pages/Index6";
-import Layout1 from "./components/Layout1";
+
+
 
 function App() {
   return (

@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import logo from "../../assets/images/logo.png"
+import logodark from "../../assets/images/logo-dark.png"
+
 
 function Navbar() {
   useEffect(() => {
@@ -28,7 +31,7 @@ function Navbar() {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.7, 
+      threshold: 0.7,
     };
 
     const sectionObserver = new IntersectionObserver((entries) => {
@@ -64,14 +67,14 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg custom-nav navbar-light fixed-top sticky">
         <div className="container">
-          <a className="navbar-brand pt-0 logo" href="#">
+          <a href="/#" onClick={(e) => e.preventDefault()} className="navbar-brand pt-0 logo" >
             <img
-              src="assets/images/logo.png"
+              src={logo}
               alt=""
               className="img-fluid logo-light"
             />
             <img
-              src="assets/images/logo-dark.png"
+              src={logodark}
               alt=""
               className="img-fluid logo-dark"
             />

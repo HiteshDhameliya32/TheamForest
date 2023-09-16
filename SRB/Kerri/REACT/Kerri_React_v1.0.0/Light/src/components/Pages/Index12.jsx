@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { jarallax } from "jarallax";
 import "jarallax/dist/jarallax.css";
+import imgHeaderbg from "../../assets/images/header-bg.jpg"
 
 function Index12() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,7 +24,7 @@ function Index12() {
     <section
       className="section h-100vh align-items-center d-flex clip-home jarallax"
       data-jarallax='{"speed": 0.2}'
-      style={{ backgroundImage: "url('assets/images/header-bg.jpg')" }}
+      style={{ backgroundImage: `url(${imgHeaderbg})` }}
       id="home"
     >
       <div className="bg-overlay"></div>
@@ -52,7 +53,7 @@ function Index12() {
                 when established fact looking at its layout.
               </p>
               <div className="mt-4 pt-2">
-                <a href="#" className="btn btn-outline-custom btn-round">
+               <a href="/#"  onClick={(e) => e.preventDefault()} className="btn btn-outline-custom btn-round">
                   Download Cv
                 </a>
               </div>
