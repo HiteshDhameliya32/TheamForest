@@ -1,0 +1,68 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+
+    <!-- maintenance-1 page -->
+    <section class="section maintenance maintenance-1">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-10">
+                    <a href="javascript:void(0)" class="d-flex justify-content-center fs-20 text-white mb-3"> 
+                        <img src="assets/images/dark-logo.png" class="" height="34" alt="">    
+                    </a>
+                    <div class="maintenance-content text-center">
+                        <h1 class="display-3 text-white"> Oops! </h1>
+                        <h4 class="display-5 text-uppercase text-white">site Under maintenance </h4>
+                        <p class="m-0 fs-20">So sorry, but our site is under maintenance rigth now. </p>
+                        <p class="m-0 fs-20">we're doing our best and we'll back soon.</p>
+
+                        <!-- start countdown -->
+                        <p id="end" class="mb-0 display-4 text-center"></p>
+                        <div class="d-flex justify-content-center" id="timer">
+                            <h1 class="mt-3 me-2 text-white" id="days">d</h1>
+                            <h1 class="mt-3 me-2 text-white" id="hours">h</h1>
+                            <h1 class="mt-3 me-2 text-white" id="mins">m</h1>
+                            <h1 class="mt-3 me-2 text-white" id="secs">s</h1>
+                        </div><!-- END countdown -->
+
+                        <div class="maintenance-form d-inline-block">
+                            <form action="javascript:void(0)" name="form1">
+                                <input type="email" name="email" class="email" placeholder="Your Email..."
+                                    autocomplete="off" required>
+                                <button type="submit" class="btn btn-primary subscribe">
+                                    NOTIFY US <i class="mdi mdi-bell-ring"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="d-block mt-4">
+                            <a href="index.html" class="btn btn-primary"> <i class="mdi mdi-home"></i> Go Back Home </a>
+                        </div>
+                    </div><!-- END maintenance-content -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            @@include('./partials/footer-description.html')
+
+        </div><!-- END container -->
+    </section>
+
+    @@include('./partials/vendor-scripts.html')
+
+    <!-- countdown Js -->
+    <script src="assets/js/main/countdown.js"></script>
+
+</body>
+
+</html>

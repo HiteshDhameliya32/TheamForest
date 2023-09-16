@@ -1,0 +1,432 @@
+//
+// About.scss
+//
+
+// about sec
+.about-section {
+    .about-img {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        &::after {
+            background: rgba($white, 0.3);
+            bottom: 0;
+            content: "";
+            left: 50%;
+            position: absolute;
+            right: 51%;
+            top: 0;
+            opacity: 1;
+            pointer-events: none;
+            transition: all 400ms linear;
+        }
+        img {
+            border-radius: 20px;
+            border: 2px solid #ced4da;
+            padding: 5px;
+        }
+        &:hover {
+            &:after {
+                left: 0;
+                right: 0;
+                opacity: 0;
+                transition: all 400ms linear;
+            }
+        }
+    }
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            padding: 5px 0px;
+            i {
+                margin: 0px 10px 0px 0px;
+                color: $info;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// feature sec
+.feature {
+    .feature-card {
+        transition: all 0.5s ease;
+        border-radius: 20px;
+        background: var(--light);
+        box-shadow: $shadow-sm;
+        &:hover {
+            box-shadow: 0 5px 10px rgba($black, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.5s ease;
+        }
+        i {
+            font-size: 56px;
+            color: rgba($blue, 0.5);
+        }
+    }
+}
+
+// Service sec
+.service {
+    padding-bottom: 70px;
+    .service-icon {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background: $primary;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .after,
+        .before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $primary;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .before {
+            transform: scale(1.35);
+            opacity: 0.1;
+        }
+        .after {
+            opacity: 0.2;
+        }
+        i {
+            font-size: 30px;
+        }
+    }
+    .service-icon-1 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition-property: width, height;
+        transition-duration: 0.3s;
+        z-index: 2;
+    }
+    .service-box {
+        background-color: transparent;
+        border: none;
+        transition: all 0.5s ease;
+        .read-btn {
+            position: absolute;
+            left: 32%;
+            text-align: center;
+            padding: 6px 28px;
+            opacity: 0;
+            z-index: 1;
+            transition: opacity 0.35s ease;
+        }
+        &:hover {
+            box-shadow: 1px 1px 10px rgba($black, 0.3);
+            border-radius: 20px;
+            transform: translateY(-6px);
+            transition: all 0.5s ease;
+            .service-icon {
+                .after {
+                    animation: pulse 1.5s infinite;
+                }
+                .before {
+                    animation: 1.5s pulse 0.3s infinite;
+                }
+            }
+            .read-btn {
+                opacity: 1;
+            }
+        }
+    }
+    .active {
+        box-shadow: 1px 1px 10px rgba($black, 0.3);
+        border-radius: 20px;
+        transform: translateY(-6px);
+        .service-icon {
+            .after {
+                animation: pulse 1.5s infinite;
+            }
+            .before {
+                animation: 1.5s pulse 0.3s infinite;
+            }
+        }
+        .read-btn {
+            opacity: 1;
+        }
+    }
+}
+
+// team sec
+.team {
+    .shape-box {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 4px 16px 0 rgba($black, 0.3);
+        overflow: hidden;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            background: var(--light);
+            right: 0;
+            bottom: 0;
+            height: 90px;
+            z-index: 1;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            background: var(--light);
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            transform-origin: top left;
+            transform: rotate(90deg);
+            transition: 0.4s;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+        .img-overlay {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background-color: rgba($black, 0.3);
+        }
+        .member-detail {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: 0.4s;
+            transform: translateY(100%);
+            z-index: 3;
+            a {
+                color: var(--gray-900);
+            }
+            .show-cont {
+                position: absolute;
+                bottom: calc(100% + 26px);
+                transition: bottom 0.4s;
+                border-top: 2px solid transparent;
+                width: 100%;
+                h5 {
+                    margin-top: 8px;
+                }
+            }
+            .member-contact {
+                display: flex;
+                justify-content: center;
+                border-bottom: 1px solid $muted;
+                ul {
+                    li {
+                        padding: 5px 0;
+                        display: flex;
+                        align-items: center;
+                        line-height: 30px;
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            &:after {
+                transform: rotate(0);
+            }
+            .member-detail {
+                transform: translateY(0);
+                // top: 20%;
+                top: 26%;
+            }
+            .show-cont {
+                bottom: 100%;
+                border-top: 1px solid $muted;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// customer review sec
+.customer {
+    .mySwiper-1 {
+        .swiper-pagination-bullet-active {
+            transition: all 0.5s ease;
+            background-color: $primary;
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: auto;
+            left: 4rem;
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: 0rem;
+            right: auto;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 93%;
+            color: $primary !important;
+            width: 36px;
+            height: 36px;
+            background: rgba($primary, 0.2);
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font: normal normal normal 24px/1 "Material Design Icons";
+            font-size: 30px;
+        }
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: "\f0141";
+        }
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: "\f0142";
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 52px;
+            .slider-p {
+                margin: 24px 0px 43px 0px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// KEY-FRAME
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    to {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+// MEDIA
+@media (max-width: 1200px) {
+    .team {
+        .shape-box {
+            .member-detail {
+                .member-contact {
+                    ul {
+                        li {
+                            padding: 2px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .service {
+        padding-bottom: 50px;
+    }
+    .customer {
+        .mySwiper-1 {
+            padding: 20px 0;
+            .swiper-slide {
+                .slider-p {
+                    margin: 25px 0;
+                }
+            }
+        }
+    }
+    .team {
+        .shape-box {
+            .member-detail {
+                .member-contact {
+                    ul {
+                        li {
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .member-detail {
+                    top: 31%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        text-align: center !important;
+    }
+    .feature {
+        text-align: center;
+    }
+    // .customer {
+    //     .row,
+    //     .swiper-slide {
+    //         text-align: center !important;
+    //     }
+    // }
+    .team {
+        .shape-box {
+            &:hover {
+                .member-detail {
+                    top: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .team {
+        .shape-box {
+            &:hover {
+                .member-detail {
+                    top: 34%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .team {
+        .shape-box {
+            &:hover {
+                .member-detail {
+                    top: 28%;
+                }
+            }
+        }
+    }
+}

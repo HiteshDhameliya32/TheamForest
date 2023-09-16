@@ -1,0 +1,218 @@
+/********** Home Section Css **********/
+.photography-home {
+    background: url("../images/photography/photography-home-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    min-height: 900px;
+    color: $white;
+    .home-box {
+        .title {
+            line-height: 1em;
+            flex-direction: column;
+            color: $white;
+            animation-delay: 3s;
+            animation: colorFlip 3.5s infinite;
+            overflow: hidden;
+            .deserve {
+                color: $white;
+                animation: colorFlip 3.5s infinite;
+            }
+            .picture {
+                color: $success;
+                animation-delay: 3s;
+                animation: colorFlipInverse 3.5s infinite;
+            }
+            .from-right,
+            .from-bottom {
+                position: absolute;
+                width: 10em;
+                height: 2em;
+                margin-left: -5em;
+                left: 50%;
+                top: 50%;
+                text-align: center;
+            }
+            .from-right {
+                margin-top: -1em;
+                animation: fadeInLeft 2s 1;
+            }
+            .from-bottom {
+                animation: fadeInBottom 2s 1;
+            }
+        }
+    }
+}
+
+/********** Service Section Css **********/
+.photography-service {
+    .photography-service-box {
+        padding: 2rem 1.5rem;
+        border: 5px double var(--bs-gray-400);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.5s ease;
+        &:hover {
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-6px);
+            transition: all 0.5s ease;
+        }
+    }
+    .read-btn {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+}
+
+/********** About Me Section Css **********/
+.about-photographer {
+    background: var(--light);
+    .about-me-img {
+        img {
+            border-radius: 20px;
+            border: 2px solid $gray-400;
+            padding: 5px;
+        }
+    }
+}
+
+/********** Gallery Section Css **********/
+.photography-gallery {
+    img,
+    .card-img-top {
+        border-radius: 0em;
+    }
+    .card {
+        border: none;
+        margin: 26px 5px;
+        background-color: transparent;
+    }
+    .gallery-img {
+        overflow: hidden;
+        img {
+            transition: all 0.5s ease;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+
+.leFadeInBottom span {
+    animation-name: leFadeInBottom;
+}
+
+/********** KEY FRAME **********/
+@keyframes leFadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes colorFlip {
+    0% {
+        color: $white;
+    }
+    49% {
+        color: $white;
+    }
+    50% {
+        color: $success;
+    }
+    100% {
+        color: $success;
+    }
+}
+
+@keyframes colorFlipInverse {
+    0% {
+        color: $success;
+    }
+    49% {
+        color: $success;
+    }
+    50% {
+        color: $white;
+    }
+    100% {
+        color: $white;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+/********** MEDIA **********/
+@media (min-width: 576px) {
+    .photography-gallery {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .photography-gallery {
+        .card-columns {
+            column-count: 3;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .photography-gallery {
+        .card-columns {
+            column-count: 4;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .photography-gallery {
+        .card-columns {
+            column-count: 5;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .photography-home {
+        min-height: 400px;
+        .home-box {
+            .title {
+                .from-right,
+                .from-bottom {
+                    width: 7.5em;
+                    height: 2em;
+                    margin-left: -4em;
+                }
+            }
+        }
+    }
+}

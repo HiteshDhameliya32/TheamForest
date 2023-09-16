@@ -1,0 +1,858 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+</head>
+
+<body>
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    @@include('./partials/right-sidebar.html')
+    
+    <section class="section food-home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-1 text-white">Are you starving?</h1>
+            <h1 class="mb-5 fs-4 text-white"> Good food choices are good investments.</h1>
+            <div class="card">
+              <div class="card-body">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="delivery" data-bs-toggle="pill" 
+                    data-bs-target="#pills-delivery" type="button" role="tab" aria-controls="pills-delivery" 
+                    aria-selected="true">
+                      <i class="mdi mdi-bike"></i> &nbsp; Delivery</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pickup" data-bs-toggle="pill" data-bs-target="#pills-pickup" 
+                    type="button" role="tab" aria-controls="pills-pickup" aria-selected="false">
+                    <i class="mdi mdi-briefcase-variant"></i> &nbsp; Pickup
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-delivery" role="tabpanel" aria-labelledby="delivery" tabindex="0">
+                    <form class="row align-items-center">
+                      <div class="col">
+                        <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                          <label class="visually-hidden" for="inputDelivery">Address</label>
+                          <input class="form-control input-box form-foodwagon-control" id="inputDelivery" type="text" placeholder="Enter Your Address" />
+                        </div>
+                      </div>
+                      <div class="d-grid gap-3 col-sm-auto">
+                        <button class="btn btn-danger" type="submit">Find Food</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="pills-pickup" role="tabpanel" aria-labelledby="pickup" tabindex="0">
+                    <form class="row align-items-center">
+                      <div class="col">
+                        <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                          <label class="visually-hidden" for="inputPickup">Address</label>
+                          <input class="form-control input-box form-foodwagon-control" id="inputPickup" type="text" placeholder="Enter Your Address" />
+                        </div>
+                      </div>
+                      <div class="d-grid gap-3 col-sm-auto">
+                        <button class="btn btn-danger" type="submit">Find Food</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-6">
+            <a class="home-img" href="">
+              <img src="assets/images/food/home-img.png" class="img-fluid" alt="">
+            </a>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-6">
+            <div class="swiper food-homeslider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="assets/images/food/burger.png" class="img-fluid" alt="">
+                      <h6 class="mt-3 mb-1">burger</h6>
+                      <h6> <span class="text-danger"> $ </span> 5.49 </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="assets/images/food/chinese.png" class="img-fluid" alt="">
+                      <h6 class="mt-3 mb-1">Chinese</h6>
+                      <h6> <span class="text-danger"> $ </span> 6.51 </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="assets/images/food/cake.png" class="img-fluid" alt="">
+                      <h6 class="mt-3 mb-1">Cake</h6>
+                      <h6> <span class="text-danger"> $ </span> 4.26 </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="assets/images/food/salad.png" class="img-fluid" alt="">
+                      <h6 class="mt-3 mb-1">Salad</h6>
+                      <h6> <span class="text-danger"> $ </span> 89.45 </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="assets/images/food/biryani.png" class="img-fluid" alt="">
+                      <h6 class="mt-3 mb-1">Biryani</h6>
+                      <h6> <span class="text-danger"> $ </span> 46.55 </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end -->
+      </div>
+      <!-- end container -->
+    </section>                            
+    <!-- end home -->
+
+    <!-- start featuers -->
+    <section class="section food-featuers">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-6">
+            <div class="text-center">
+              <p>About burger</p>
+              <h1>Why do you like?</h1>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <div class="row align-items-center g-4">
+          <div class="col-lg-4 col-sm-6">
+            <div class="card food-card">
+              <img src="assets/images/food/biryani.png" class="img-fluid" alt="">
+              <div class="card-body">
+                <h4>Biryani</h4>
+                <p class="text-muted">
+                  Biryani, an evergreen classic.
+                  It's aromatic, it's heavenly and one of the most loved delicacies
+                  not just in India
+                </p>
+                <h4 class="text-danger">$99.98</h4>
+                <a href="javascript:void(0)" class="btn btn-danger">Add</a>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card food-card">
+              <img src="assets/images/food/about/img-1.png" class="img-fluid" alt="">
+              <div class="card-body">
+                <h4>Shawarma with Fried</h4>
+                <p class="text-muted">
+                  Marinate the chicken for up to 24 hours and then either grill,
+                  bake, or air fry (my newest obsession) for those perfect charred edges.
+                </p>
+                <h4 class="text-danger">$16.57</h4>
+                <a href="javascript:void(0)" class="btn btn-danger">Add</a>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card food-card">
+              <img src="assets/images/food/cake.png" class="img-fluid" alt="">
+              <div class="card-body">
+                <h4>Cake</h4>
+                <p class="text-muted">
+                  Cakes are special. Every celebration ends with
+                   something sweet, a cake, and people remember. It's all about the memories.
+                </p>
+                <h4 class="text-danger">$43.20</h4>
+                <a href="javascript:void(0)" class="btn btn-danger">Add</a>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card food-card">
+              <img src="assets/images/food/about/img-3.png" class="img-fluid" alt="">
+              <div class="card-body">
+                <h4>Chicken Bolls</h4>
+                <p class="text-muted">
+                  Combine chicken, egg yolk, spring onion, coriander, chilli flakes,
+                  herb mix, garlic, salt and pepper in a bowl. Mix nicely
+                </p>
+                <h4 class="text-danger">$36.16</h4>
+                <a href="javascript:void(0)" class="btn btn-danger">Add</a>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card food-card">
+              <img src="assets/images/food/salad.png" class="img-fluid" alt="">
+              <div class="card-body">
+                <h4>Fresh Salad</h4>
+                <p class="text-muted">
+                  Let food be thy medicine and medicine be thy food."
+                   "The greatest wealth is health." - Virgil ·"Salad can get a bad rap 
+                </p>
+                <h4 class="text-danger">$26.62</h4>
+                <a href="javascript:void(0)" class="btn btn-danger">Add</a>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="card food-card">
+              <img src="assets/images/food/about/img-4.png" class="img-fluid" alt="">
+              <div class="card-body">
+                <h4>Noodles</h4>
+                <p class="text-muted">
+                  Noodles are a type of food made from unleavened dough which is either
+                  rolled flat and cut, stretched, or extruded, strips.
+                </p>
+                <h4 class="text-danger">$62.90</h4>
+                <a href="javascript:void(0)" class="btn btn-danger">Add</a>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end featuers -->
+
+    <!-- start recipe-->
+    <section class="section food-recipe">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="text-center">
+              <h1 class="text-danger">Special Recipes</h1>
+              <p class="p-color">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+              </p>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper recipe-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card text-center border-0 border-top border-danger border-5 rounded-0">
+                    <div class="card-body">
+                      <img src="assets/images/food/about/img-7.png" class="img-fluid" alt="">
+                      <h4 class="text-danger mt-3"> Tortilla Wrap </h4>
+                      <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                      </ul>
+                      <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos
+                      </p>
+                      <h5 class="text-danger">$61</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card text-center border-0 border-top border-danger border-5 rounded-0">
+                    <div class="card-body">
+                      <img src="assets/images/food/about/img-2.png" class="img-fluid" alt="">
+                      <h4 class="text-danger mt-3">panniers</h4>
+                      <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                      </ul>
+                      <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos
+                      </p>
+                      <h5 class="text-danger">$59</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card text-center border-0 border-top border-danger border-5 rounded-0">
+                    <div class="card-body">
+                      <img src="assets/images/food/about/img-8.png" class="img-fluid" alt="">
+                      <h4 class="text-danger mt-3">Chicken Ball</h4>
+                      <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                      </ul>
+                      <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos
+                      </p>
+                      <h5 class="text-danger">$85</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card text-center border-0 border-top border-danger border-5 rounded-0">
+                    <div class="card-body">
+                      <img src="assets/images/food/about/img-5.png" class="img-fluid" alt="">
+                      <h4 class="text-danger mt-3">Hot Burger</h4>
+                      <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                      </ul>
+                      <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos
+                      </p>
+                      <h5 class="text-danger">$49</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card text-center border-0 border-top border-danger border-5 rounded-0">
+                    <div class="card-body">
+                      <img src="assets/images/food/about/img-9.png" class="img-fluid" alt="">
+                      <h4 class="text-danger mt-3">Noodles</h4>
+                      <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                      </ul>
+                      <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos
+                      </p>
+                      <h5 class="text-danger">$54</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card text-center border-0 border-top border-danger border-5 rounded-0">
+                    <div class="card-body">
+                      <img src="assets/images/food/about/img-6.png" class="img-fluid" alt="">
+                      <h4 class="text-danger mt-3">Chicken Stick</h4>
+                      <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                        <li class="list-inline-items text-warning"><i class="mdi mdi-star"></i></li>
+                      </ul>
+                      <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos
+                      </p>
+                      <h5 class="text-danger">$98</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end recipe-->
+
+    <!-- start cta -->
+    <section class="section food-cta">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="text-center">
+              <h2 class="text-danger fw-bold mb-0">When a man's stomach is full it makes no
+                difference whether he is rich or poor.</h2>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-8">
+            <div class="text-center">
+                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum 
+                  enim ut saepe fuga fugit voluptatibus sapiente possimus</p>
+                  <a href="javascript:void(0)" class="btn btn-danger"><i class="mdi mdi-play"></i> Watch Story</a>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end cta -->
+
+    <!-- start Pricing  -->
+    <section class="section pricing-4">
+      <div class="container">
+          <h2 class="text-center text-uppercase m-0">Pricing Plan</h2>
+          <div class="heading-lines mb-4">
+              <span class="line"></span>
+              <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+              <span class="line"></span>
+          </div>
+          <div class="row text-center">
+              <div class="col-md-4">
+                  <div class="card mt-5 px-3 pricing-box-4">
+                      <div class="pricing-box-icon">
+                          <span class="before"></span>
+                          <i class="mdi mdi-home pricing-box-icon-i" aria-hidden="true"></i>
+                          <span class="after"></span>
+                      </div>
+                      <div class="card-head border-bottom">
+                          <h2> startup </h2>
+                          <p class="price">$29.99</p>
+                          <p class="period text-muted">Per Month</p>
+                          <button class="btn pricing-btn-dark rounded-pill"> Purchase Now </button>
+                      </div>
+                      <div class="pricing-detail">
+                          <ul class="list-unstyled mt-3 p-0">
+                              <li> Monthly Subscription </li>
+                              <li> Access only 1 item </li>
+                              <li> Static Website </li>
+                              <li> Domain Extra </li>
+                              <li> 3 Month Support </li>
+                          </ul>
+                      </div>
+                  </div><!-- END card -->
+              </div><!-- END col -->
+
+              <div class="col-md-4">
+                  <div class="card mt-5 px-3 pricing-box-4 backgroung-box">
+                      <div class="pricing-box-icon pricing-box-icon-warning">
+                          <span class="before"></span>
+                          <i class="mdi mdi-store pricing-box-icon-i" aria-hidden="true"></i>
+                          <span class="after"></span>
+                      </div>
+                      <div class="card-head border-bottom">
+                          <h2> Agency </h2>
+                          <p class="price">$66.99</p>
+                          <p class="period text-muted">Per Month</p>
+                          <button class="btn pricing-btn-warning rounded-pill"> Purchase Now </button>
+                      </div>
+                      <div class="pricing-detail">
+                          <ul class="list-unstyled mt-3 p-0">
+                              <li> Monthly Subscription </li>
+                              <li> Access only 1 item </li>
+                              <li> Static Website </li>
+                              <li> Domain Extra </li>
+                              <li> 8 Month Support </li>
+                          </ul>
+                      </div>
+                  </div><!-- END card -->
+              </div><!-- END col -->
+
+              <div class="col-md-4">
+                  <div class="card mt-5 px-3 pricing-box-4">
+                      <div class="pricing-box-icon">
+                          <span class="before"></span>
+                          <i class="mdi mdi-office-building pricing-box-icon-i" aria-hidden="true"></i>
+                          <span class="after"></span>
+                      </div>
+                      <div class="card-head border-bottom">
+                          <h2> Enterprise </h2>
+                          <p class="price">$86.99</p>
+                          <p class="period text-muted">Per Month</p>
+                          <button class="btn pricing-btn-dark rounded-pill"> Purchase Now </button>
+                      </div>
+                      <div class="pricing-detail">
+                          <ul class="list-unstyled mt-3 p-0">
+                              <li> Monthly Subscription </li>
+                              <li> Access only 1 item </li>
+                              <li> Static Website </li>
+                              <li> Domain Extra </li>
+                              <li> 1 Year Support </li>
+                          </ul>
+                      </div>
+                  </div><!-- END card -->
+              </div><!-- END col -->
+          </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+    <!-- end pricing -->
+
+    <!-- start review -->
+    <section class="section food-review">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2 class="text-center"> Customer Review </h2>
+            <div class="heading-lines mb-4">
+              <span class="line"></span>
+              <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+              <span class="line"></span>
+            </div>
+          </div><!-- END col -->
+        </div><!-- END row -->
+
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-8">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="card blog-box-content">
+                  <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                      <div class="blog-box-img text-center">
+                        <img src="assets/images/food/about/paneer.png" class="img-fluid"
+                          alt="">
+                      </div>
+                    </div><!-- END col -->
+
+                    <div class="col-md-7">
+                      <div class="blog-content">
+                        <ul class="list-unstyled d-flex blog-box-list">
+                          <li class="ps-0">
+                            <span class="review-icon"> <i class="mdi mdi-calendar-month-outline me-2"></i> </span>
+                            <span> 5 May 2022 </span>
+                          </li>
+                          <li class="border-0">
+                            <span> <i class="mdi mdi-chat-outline me-2"></i> </span>
+                            <span> 2 (Comments) </span>
+                          </li>
+                        </ul>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Cupiditate doloremque deserunt eaque aspernatur aliquid expedita
+                        </p>
+                        <a href="javascript:void(0)" class="read-btn">
+                          <span> Read More </span>
+                          <span class="mt-1"> <i class="mdi mdi-chevron-double-right"></i> </span>
+                        </a>
+                      </div>
+                    </div><!-- END col -->
+                  </div><!-- END row -->
+                </div><!-- END card -->
+              </div><!-- END col -->
+
+              <div class="col-12">
+                <div class="card blog-box-content">
+                  <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                      <div class="blog-box-img text-center">
+                        <img src="assets/images/food/about/pasta.png" class="img-fluid"
+                            alt="">
+                      </div>
+                    </div><!-- END col -->
+
+                    <div class="col-md-7">
+                      <div class="blog-content">
+                        <ul class="list-unstyled d-flex blog-box-list">
+                          <li class="ps-0">
+                            <span> <i class="mdi mdi-calendar-month-outline me-2"></i> </span>
+                            <span> 12 May 2022 </span>
+                          </li>
+                          <li class="border-0">
+                            <span> <i class="mdi mdi-chat-outline me-2"></i> </span>
+                            <span> 2 (Comments) </span>
+                          </li>
+                        </ul>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Cupiditate doloremque deserunt eaque aspernatur aliquid expedita
+                        </p>
+                       <a href="javascript:void(0)" class="read-btn">
+                          <span> Read More </span>
+                          <span class="mt-1"> <i class="mdi mdi-chevron-double-right"></i> </span>
+                        </a>
+                      </div>
+                    </div><!-- END col -->
+                  </div><!-- END row -->
+                </div><!-- END card -->
+              </div><!-- END col -->
+
+              <div class="col-12">
+                <div class="card blog-box-content">
+                  <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                      <div class="blog-box-img text-center">
+                        <img src="assets/images/food/about/chicken.png" class="img-fluid"
+                            alt="">
+                      </div>
+                    </div><!-- END col -->
+
+                    <div class="col-md-7">
+                      <div class="blog-content">
+                        <ul class="list-unstyled d-flex blog-box-list">
+                          <li class="ps-0">
+                            <span> <i class="mdi mdi-calendar-month-outline me-2"></i> </span>
+                            <span> 23 May 2022 </span>
+                          </li>
+                          <li class="border-0">
+                            <span> <i class="mdi mdi-chat-outline me-2"></i> </span>
+                            <span> 2 (Comments) </span>
+                          </li>
+                        </ul>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Cupiditate doloremque deserunt eaque aspernatur aliquid expedita
+                        </p>
+                       <a href="javascript:void(0)" class="read-btn">
+                          <span> Read More </span>
+                          <span class="mt-1"> <i class="mdi mdi-chevron-double-right"></i> </span>
+                        </a>
+                      </div>
+                    </div><!-- END col -->
+                  </div><!-- END row -->
+                </div><!-- END card -->
+              </div><!-- END col -->
+            </div><!-- END row -->
+          </div><!-- END col -->
+
+          <div class="col-lg-4 col-md-10">
+            <div class="search">
+              <i class="mdi mdi-magnify"></i>
+              <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="recent-posts">
+                <ul class="recent-news list-unstyled">
+                  <li class="d-flex align-items-center justify-content-evenly mb-3">
+                    <div class="image overflow-hidden">
+                      <img class="avatar-xl outline-primary" src="assets/images/food/about/recent-post-1.png" alt="article-1">
+                    </div>
+                    <div class="ms-3">
+                      <h6>Lorem ipsum dolor sit amet</h6>
+                      <ul class="list-unstyled recent-post-list p-0">
+                        <li class="ps-0">
+                          <span> <i class="mdi mdi-calendar-month-outline me-2"></i> </span>
+                          <span> 10 May 2022</span>
+                        </li>
+                        <li>
+                          <span> <i class="mdi mdi-chat-outline me-2"></i> </span>
+                          <span> 2 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li><!-- END li -->
+
+                  <li class="d-flex align-items-center justify-content-evenly mb-3">
+                    <div class="image overflow-hidden">
+                      <img class="avatar-xl outline-primary" src="assets/images/food/about/recent-post-2.png" alt="article-1">
+                    </div>
+                    <div class="ms-3">
+                      <h6>Lorem ipsum dolor sit amet</h6>
+                      <ul class="list-unstyled recent-post-list p-0">
+                        <li class="ps-0">
+                          <span> <i class="mdi mdi-calendar-month-outline me-2"></i> </span>
+                          <span> 04 May 2022</span>
+                        </li>
+                        <li>
+                          <span> <i class="mdi mdi-chat-outline me-2"></i> </span>
+                          <span> 2 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li><!-- END li -->
+
+                  <li class="d-flex align-items-center justify-content-evenly mb-3">
+                    <div class="image overflow-hidden">
+                      <img class="avatar-xl outline-primary" src="assets/images/food/about/recent-post-3.png" alt="article-1">
+                    </div>
+                    <div class="ms-3">
+                      <h6>Lorem ipsum dolor sit amet</h6>
+                      <ul class="list-unstyled recent-post-list p-0">
+                        <li class="ps-0">
+                          <span> <i class="mdi mdi-calendar-month-outline me-2"></i> </span>
+                          <span> 08 May 2022</span>
+                        </li>
+                        <li>
+                          <span> <i class="mdi mdi-chat-outline me-2"></i> </span>
+                          <span> 2 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li><!-- END li -->
+                </ul><!-- END recent-news -->
+            </div><!-- END recent-post -->
+            <h2>Tags</h2>
+            <div class="tags">
+              <span class="badge bg-soft-primary">Breakfast</span>
+              <span class="badge bg-soft-primary">Dinner</span>
+              <span class="badge bg-soft-primary">Lunch</span>
+              <span class="badge bg-soft-primary">Pizza</span>
+              <span class="badge bg-soft-primary">Cold drink</span>
+              <span class="badge bg-soft-primary">Coffee</span>
+              <span class="badge bg-soft-primary">Snacks</span>
+              <span class="badge bg-soft-primary">Tea</span>
+            </div>
+          </div><!-- END col -->
+        </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+    <!-- end review -->
+
+    <!-- start blog -->
+    <section class="section food-blog">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2 class="text-center">Our Experts Chief</h2>
+            <div class="heading-lines mb-4">
+              <span class="line"></span>
+              <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-6 col-8">
+            <div class="card food-card">
+              <div class="team-icon">
+                <img src="assets/images/food/chef/img-1.png" class="img-fluid" alt="">
+                <div class="icon">
+                  <ul class="list-inline p-0">
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-facebook"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-instagram"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-twitter"></i></li>
+                    <li class="list-inline-item avatar-sm me-0"><i class="mdi mdi-skype-business"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body food-card-body">
+                <div class="team-detail">
+                  <h3 class="mb-0"><a href="javascript:void(0)" class="site-text-white">Shahinoor</a></h3>
+                  <span class="text-muted">kabab Chef</span>
+                </div>
+              </div>
+              <!-- end body -->
+            </div>
+            <!-- end card -->
+          </div>
+          <!-- end col -->
+          <div class="col-lg-3 col-sm-6 col-8">
+            <div class="card food-card">
+              <div class="team-icon">
+                <img src="assets/images/food/chef/img-2.png" class="img-fluid" alt="">
+                <div class="icon">
+                  <ul class="list-inline p-0">
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-facebook"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-instagram"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-twitter"></i></li>
+                    <li class="list-inline-item avatar-sm me-0"><i class="mdi mdi-skype-business"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body food-card-body">
+                <div class="team-detail">
+                  <h3 class="mb-0">
+                    <a href="javascript:void(0)" class="site-text-white">Islam Uddin</a>
+                  </h3>
+                  <span class="text-muted">Hot dog Chef</span>
+                </div>
+              </div>
+              <!-- end body -->
+            </div>
+            <!-- end card -->
+          </div>
+          <!-- end col -->
+          <div class="col-lg-3 col-sm-6 col-8">
+            <div class="card food-card">
+              <div class="team-icon">
+                <img src="assets/images/food/chef/img-3.png" class="img-fluid" alt="">
+                <div class="icon">
+                  <ul class="list-inline p-0">
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-facebook"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-instagram"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-twitter"></i></li>
+                    <li class="list-inline-item avatar-sm me-0"><i class="mdi mdi-skype-business"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body food-card-body">
+                <div class="team-detail">
+                  <h3 class="mb-0"><a href="javascript:void(0)" class="site-text-white">Mahinoor</a></h3>
+                  <span class="text-muted">Grill & Nun Chef</span>
+                </div>
+              </div>
+              <!-- end body -->
+            </div>
+            <!-- end card -->
+          </div>
+          <!-- end col -->
+          <div class="col-lg-3 col-sm-6 col-8">
+            <div class="card food-card">
+              <div class="team-icon">
+                <img src="assets/images/food/chef/img-4.png" class="img-fluid" alt="">
+                <div class="icon">
+                  <ul class="list-inline p-0">
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-facebook"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-instagram"></i></li>
+                    <li class="list-inline-item avatar-sm me-1"><i class="mdi mdi-twitter"></i></li>
+                    <li class="list-inline-item avatar-sm me-0"><i class="mdi mdi-skype-business"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body food-card-body">
+                <div class="team-detail">
+                  <h3 class="mb-0"><a href="javascript:void(0)" class="site-text-white">Habib Ullah</a></h3>
+                  <span class="text-muted">Ribs Chef</span>
+                </div>
+              </div>
+              <!-- end body -->
+            </div>
+            <!-- end card -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end blog -->
+    
+    @@include('./partials/footer.html')
+
+    @@include('./partials/vendor-scripts.html')
+
+    <!--swiper js-->
+    <script src="assets/js/main/swiper.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+//
+// Coffee and Tea scss
+//
+
+// hero section
+.cosmetic {
+  .container-fluid {
+    height: inherit;
+    .cosmeticswiper {
+      height: inherit;
+      .swiper-wrapper {
+        .slide-1 {
+          background-image: url(../images/cosmetic/background1.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .slide-2 {
+          background-image: url(../images/cosmetic/background2.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .slide-3 {
+          background-image: url(../images/cosmetic/background3.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .swiper-slide {
+          min-height: 800px;
+          display: flex;
+          align-items: center;
+          .cosmetic-header {
+            color: $white;
+            font-size: 60px;
+          }
+          .cosmetic-subheader {
+            color: $white;
+            margin: 20px 0;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 40%);
+          }
+        }
+      }
+      .swiper-pagination {
+        .swiper-pagination-bullet-active {
+          background-color: var(--theme-light--bc);
+        }
+      }
+    }
+  }
+}
+
+// offer section
+.offer {
+  .container {
+    .col-card {
+      .offer-card {
+        background-image: url(../images/cosmetic/menu-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .btn {
+          background-color: #b49561;
+        }
+        h2 {
+          color: #b49561;
+          font-size: 36px;
+        }
+        .free-text {
+          color: #b49561;
+        }
+      }
+    }
+    .modal {
+      .modal-content {
+        background-color: var(--gray-200) !important;
+        .modal-body {
+          .code-bg {
+            background-color: var(--gray);
+            input {
+              &:focus-visible {
+                outline: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// our-products section
+.our-products {
+  background-color: var(--light);
+  .container {
+    .card {
+      .card-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(209 171 107 / 40%);
+        transform: scale(0);
+        transition: 0.7s;
+      }
+      &:hover .card-overlay {
+        transform: scale(1);
+      }
+      .card-body {
+        box-shadow: var(--shadow-sm);
+      }
+    }
+  }
+}
+
+// cosmetic-counter section
+.cosmetic-counter {
+  .container {
+    .back-img {
+      background-color: var(--gray-200);
+      .card {
+        .card-body {
+          color: #b49561;
+        }
+      }
+    }
+  }
+}
+
+// cosmetic-review section
+.cosmetic-review {
+  background-color: var(--light);
+  .container {
+    .cosmeticreviewSwiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .card {
+            .cosmetic-img {
+              margin: 16px auto;
+              img {
+                object-fit: cover;
+              }
+            }
+            .name-content {
+              margin: 16px auto !important;
+            }
+          }
+        }
+        .swiper-slide-active {
+          background-color: #f7b84b5c !important;
+          color: $white !important;
+          .card {
+            .cosmetic-img {
+              border: 3px dotted $white;
+              border-radius: 50%;
+            }
+          }
+          .card-body {
+            h3 {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-prev {
+      position: absolute;
+      top: 54%;
+      border: 1px solid;
+      border-radius: 100%;
+      padding: 27px 27px;
+      border-color: $warning;
+      &::after {
+        font-size: 28px;
+        color: $warning;
+      }
+    }
+    .swiper-button-next {
+      position: absolute;
+      top: 54%;
+      border: 1px solid;
+      border-radius: 100%;
+      padding: 28px 28px;
+      border-color: $warning;
+      &::after {
+        font-size: 28px;
+        color: $warning;
+      }
+    }
+  }
+}
+
+// local-delivery section
+.delivery {
+  .container {
+    background-color: var(--gray-200);
+  }
+}
+
+@media (max-width: 576px) {
+  .cosmetic {
+    .container-fluid {
+      .cosmeticswiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            .cosmetic-header {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // offer section
+  .offer {
+    .container {
+      .modal {
+        .modal-content {
+          background-color: var(--gray-200) !important;
+          .modal-body {
+            .code-bg {
+              button {
+                left: -27px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

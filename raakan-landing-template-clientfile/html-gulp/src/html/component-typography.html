@@ -1,0 +1,315 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Typography',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Typography',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+  <section class="section component-page pt-120">
+    <div class="container">
+          <div class="row g-4">
+                 <div class="border-bottom mb-4">
+                <h1 class="display-6">Typography</h1>
+                <p class="text-muted">Documentation and examples for
+                  <a href="javascript:void(0)">typography</a>
+                  including global settings, headings, body text, lists, and more.
+                </p>
+              </div>
+              
+            <!-- Heading -->
+            <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+              <div class="hk-sec-title">
+                <h4>Headings</h4>
+                <p class="text-muted">
+                  All HTML headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are
+                  available, <code>.h1</code> through <code>.h6</code> classes are also available.
+                </p>
+              </div>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#typography-text"
+                      aria-controls="typography-text">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#typography-html"
+                      aria-controls="typography-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top">
+                  <div class="tab-pane fade animated show active" id="typography-text">
+                    <div class="p-4">
+                      <h1 class="text-lowercase"> h1 heading </h1>
+                      <hr>
+                      <h2 class="text-lowercase"> h2 heading </h2>
+                      <hr>
+                      <h3 class="text-lowercase"> h3 heading </h3>
+                      <hr>
+                      <h4 class="text-lowercase"> h4 heading </h4>
+                      <hr>
+                      <h5 class="text-lowercase"> h5 heading </h5>
+                      <hr>
+                      <h6 class="text-lowercase"> h6 heading </h6>
+                    </div>
+                  </div><!-- END teb-pane -->
+
+                  <div class="tab-pane fade animated" id="typography-html">
+                    <pre class="px-4 mb-0">
+                                                      <code class="text-dark">
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> h1 tag Heading <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> h2 tag Heading <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span> h3 tag Heading <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span> h4 tag Heading <span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span> h5 tag Heading <span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span> h6 tag Heading <span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+
+<span class="text-success">&lt;!-- .h1 through .h6 classes are also available --&gt;</span>
+  
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h1"</span><span class="p">&gt;</span> h1 Class Heading <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h2"</span><span class="p">&gt;</span> h2 Class Heading <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h3"</span><span class="p">&gt;</span> h3 Class Heading <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h4"</span><span class="p">&gt;</span> h4 Class Heading <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h5"</span><span class="p">&gt;</span> h5 Class Heading <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"h6"</span><span class="p">&gt;</span> h6 Class Heading <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                                      </code></pre>
+                  </div><!-- END col -->
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END col -->
+
+             <!-- Display Heading -->
+            <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+              <div class="hk-sec-title">
+                <h4>Display headings</h4>
+                <p class="text-muted">
+                  Add class <code> .display1 </code> to <code>.display-4 </code>
+                </p>
+              </div>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#display-text"
+                      aria-controls="display-text">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#display-html"
+                      aria-controls="display-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top">
+                  <div class="tab-pane fade animated show active" id="display-text">
+                    <div class="p-4">
+                      <p class="display-1"> Display-1 </p>
+                      <hr>
+                      <p class="display-2"> Display-2 </p>
+                      <hr>
+                      <p class="display-3"> Display-3 </p>
+                      <hr>
+                      <p class="display-4"> Display-4 </p>
+                    </div>
+                  </div><!-- END teb-pane -->
+
+                  <div class="tab-pane fade animated" id="display-html">
+                    <pre class="px-4 mb-0">
+                                              <code class="text-dark">
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-1"</span><span class="p">&gt;</span> display-1 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-2"</span><span class="p">&gt;</span> display-2 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-3"</span><span class="p">&gt;</span> display-3 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-4"</span><span class="p">&gt;</span> display-4 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-5"</span><span class="p">&gt;</span> display-5 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-6"</span><span class="p">&gt;</span> display-6 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                                  </code></pre>
+                  </div><!-- END teb-pane -->
+                </div><!-- END tab-content -->
+              </div><!-- END wrapper -->
+            </div><!-- END col -->
+
+            <!-- Heading Icon -->
+            <div class="col-lg-6 col-md-10 mt-auto">
+              <div class="hk-sec-title">
+                <h4>Headings Icon</h4>
+              </div>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#heading-icon-text"
+                      aria-controls="heading-icon-text">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#heading-icon-html"
+                      aria-controls="heading-icon-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top">
+                  <div class="tab-pane fade animated show active" id="heading-icon-text">
+                    <div class="p-4">
+                      <h1 class="text-lowercase">
+                        <span class="mdi mdi-monitor-cellphone"></span> h1 icon with
+                        heading
+                      </h1>
+                      <hr>
+                      <h2 class="text-lowercase">
+                        <span class="mdi mdi-monitor-cellphone"></span> h2 icon with
+                        heading
+                      </h2>
+                      <hr>
+                      <h3 class="text-lowercase">
+                        <span class="mdi mdi-monitor-cellphone"></span> h3 icon with
+                        heading
+                      </h3>
+                      <hr>
+                      <h4 class="text-lowercase">
+                        <span class="mdi mdi-monitor-cellphone"></span> h4 icon with
+                        heading
+                      </h4>
+                      <hr>
+                      <h5 class="text-lowercase">
+                        <span class="mdi mdi-monitor-cellphone"></span> h5 icon with
+                        heading
+                      </h5>
+                      <hr>
+                      <h6 class="text-lowercase">
+                        <span class="mdi mdi-monitor-cellphone"></span> h6 icon with
+                        heading
+                      </h6>
+                    </div>
+                  </div><!-- END teb-pane -->
+
+                  <div class="tab-pane fade animated" id="heading-icon-html">
+                    <pre class="px-4 mb-0">
+                                              <code class="text-dark">
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-monitor-cellphone"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+   h1 icon with heading
+<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-monitor-cellphone"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+   h2 icon with heading
+<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-monitor-cellphone"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+   h3 icon with heading
+<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                                                  </code></pre>
+                  </div><!-- END teb-pane -->
+                </div><!-- END tab-content -->
+              </div><!-- END wrapper -->
+            </div><!-- END col -->
+
+            <!-- List -->
+            <div class="col-lg-6 col-md-10 mt-auto">
+              <div class="hk-sec-title">
+                <h4>list</h4>
+                <p class="text-muted">
+                  Remove the default list-style and left margin on list items (immediate children
+                  only). This only applies to immediate children list items, meaning you will need
+                  to
+                  add the class for any nested lists as well.
+                </p>
+              </div>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#list-text"
+                      aria-controls="list-text">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#list-html"
+                      aria-controls="list-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top">
+                  <div class="tab-pane fade animated show active" id="list-text">
+                    <div class="p-4">
+                      <ul class="list-unstyled p-0">
+                        <li>
+                          <span> <i class="mdi mdi-check-circle-outline text-primary">
+                            </i> </span>
+                          This is a list.
+                        </li>
+                        <li>
+                          <span> <i class="mdi mdi-check-circle-outline text-primary">
+                            </i> </span>
+                          It appears completely unstyled.
+                        </li>
+                        <li>
+                          <span> <i class="mdi mdi-check-circle-outline text-primary">
+                            </i> </span>
+                          Structurally, it's still a list.
+                        </li>
+                        <li>
+                          <span> <i class="mdi mdi-check-circle-outline text-primary">
+                            </i> </span>
+                          However, this style only applies to immediate child
+                          elements.
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- END teb-pane -->
+
+                  <div class="tab-pane fade animated" id="list-html">
+                    <pre class="px-4 mb-0">
+                      <code class="text-dark">
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-unstyled"</span><span class="p">&gt;</span>
+<span class="p ps-4">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-monitor-cellphone"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+      This is a list.
+  <span class="p"> &lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p ps-4">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-monitor-cellphone"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+      It appears completely unstyled.
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p ps-4">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-monitor-cellphone"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+      Structurally, it's still a list.
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p ps-4">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-monitor-cellphone"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+      However, this style only applies to immediate child elements.
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+                                                  </code></pre>
+                  </div><!-- END teb-pane -->
+                </div><!-- END tab-content -->
+              </div><!-- END wrapper -->
+            </div><!-- END col -->
+          </div><!-- END row -->
+    </div><!-- END container -->
+  </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+
+.coming-soon-2 {
+    background-image: url(../images/coming-soon/coming-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    display: flex;
+    padding: 3rem 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba($black, 0.5);
+    }
+  
+    .welcome-text {
+      .clock-countdown {
+        margin: 0 auto 30px;
+        background: #19191a;
+        max-width: 530px;
+        opacity: 0.9;
+  
+        .days-counter {
+          position: relative;
+          text-align: center;
+          .digit {
+            font-size: 92px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            line-height: 1;
+          }
+          .txt {
+            font-size: 20px;
+            letter-spacing: 2px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 0.4rem;
+          }
+        }
+        .hour-counter {
+          font-size: 24px;
+          font-weight: 700;
+          position: relative;
+          text-align: center;
+          margin: 1rem 0;
+          letter-spacing: 2px;
+          word-spacing: 8px;
+          :before {
+            left: 81%;
+            right: 0;
+            position: absolute;
+            content: "";
+            border-bottom: 1px solid $white;
+            height: 1px;
+            bottom: 10px;
+          }
+          .border:before {
+            position: absolute;
+            content: "";
+            border: 1px solid $white;
+            width: 20px;
+            height: 125px;
+            bottom: 10px;
+            left: 0;
+            right: auto;
+            border-right: none;
+            border-bottom: none;
+          }
+          .border:after {
+            position: absolute;
+            content: "";
+            border: 1px solid $white;
+            width: 20px;
+            height: 125px;
+            bottom: 10px;
+            right: 0;
+            left: auto;
+            border-left: none;
+            border-bottom: none;
+          }
+          :after {
+            left: 0;
+            right: 81%;
+            position: absolute;
+            content: "";
+            border-bottom: 1px solid $white;
+            height: 1px;
+            bottom: 10px;
+          }
+        }
+      }
+  
+      h3,
+      p {
+        color: $white;
+      }
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .coming-soon-2 {
+      padding: 3.5rem 0;
+    }
+  }
+  
+  @media (max-width: 766px) {
+    .coming-soon-2 {
+      .welcome-text {
+        .clock-countdown {
+          padding: 55px;
+          .heder-font {
+            font-size: 23px;
+          }
+          h3 {
+            font-size: 17px;
+          }
+          p {
+            font-size: 11px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 766px) {
+    .coming-soon-2 {
+      .welcome-text {
+        .clock-countdown {
+          .days-counter {
+            .digit {
+              font-size: 42px;
+            }
+            .txt {
+              font-size: 10px;
+            }
+          }
+          .hour-counter {
+            font-size: 11px;
+            :before {
+              left: 86%;
+            }
+            .border:before {
+              // right: 80%;
+              height: 80px;
+            }
+            .border:after {
+              height: 80px; 
+            }
+            :after {
+              right: 86%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 700px) and (max-width: 1500px) {
+    .welcome-text {
+      .clock-countdown {
+        .heder-font {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+  

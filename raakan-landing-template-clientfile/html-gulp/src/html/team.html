@@ -1,0 +1,295 @@
+@@include('./partials/main.html')
+
+<head>
+
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+  @@include('./partials/navbar.html')
+  @@include('./partials/right-sidebar.html')
+  @@include('./partials/breadcrumb.html', {
+  'title': 'Team',
+  'breadcrumb1': {
+  'title': 'Pages',
+  'link': '#',
+  'icon': 'cog',
+  'active_class': ''
+  },
+  'breadcrumb2': {
+  'title': 'Company',
+  'link': '#',
+  'icon': 'account-multiple',
+  'active_class': ''
+  },
+  'breadcrumb3': {
+  'title': 'Team',
+  'link': '#',
+  'icon': 'cog',
+  'active_class': 'active'
+  }
+  })
+
+  <main class="section section-team pb-0">
+    <section>
+      <div class="container">
+        <div class="row g-3 align-items-center justify-content-between">
+          <div class="col-md-6">
+            <div class="about-img">
+              <img src="assets/images/team-img/teamwork.png" class="img-fluid"
+                alt="teamwork-img">
+            </div>
+          </div>
+          <!--end col-->
+
+          <div class="col-md-6">
+            <div class="about-content">
+              <h4>Increase Your Productivity By Doing Team Work</h4>
+              <p>
+                Workplace messaging addresses both of these issues by enabling employees to quickly communicate with
+                their
+                peers whether they’re in the office, at home, or on the road.
+              </p>
+              <p>
+                According to McKinsey, the average worker spends 20% of each week trying to find their colleagues and
+                track down internal information. We’ve already learned that workplace messaging solves the first
+                issue.
+              </p>
+              <button class="btn btn-primary">LEARN MORE</button>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+  </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="subheading mb-3 ">
+          <h3>Our Expert Team Member</h3>
+        </div>
+        <div class="row g-0 g-sm-4">
+          <div class="col-md-4">
+            <div class="team-card card text-center bg-transparent border-0">
+              <div class="team-img">
+                <img src="assets/images/team-img/6.jpg" alt="Member-1" class="img-fluid">
+                <div class="card-body team-card-body team-content">
+                  <h5><a href="profile.html">Peter Bross</a></h5>
+                  <small>Senior Marketer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+  
+          <div class="col-md-4">
+            <div class="team-card card text-center bg-transparent border-0">
+              <div class="team-img">
+                <img src="assets/images/team-img/3.jpg" alt="Member-2" class="img-fluid">
+                <div class="card-body team-card-body team-content">
+                  <h5><a href="profile.html">Gail Nolan</a></h5>
+                  <small>Web Designer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+  
+          <div class="col-md-4">
+            <div class="team-card card text-center bg-transparent border-0">
+              <div class="team-img">
+                <img src="assets/images/team-img/11.jpg" alt="Member-3" class="img-fluid">
+                <div class="card-body team-card-body team-content">
+                  <h5><a href="profile.html">Amy Bell</a></h5>
+                  <small>Digital Marketer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+  
+          <div class="col-md-4">
+            <div class="team-card card text-center bg-transparent border-0">
+              <div class="team-img">
+                <img src="assets/images/team-img/1.jpg" alt="Member-4" class="img-fluid">
+                <div class="card-body team-card-body team-content">
+                  <h5><a href="profile.html">Mark James</a></h5>
+                  <small>UI/UX Designer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+  
+          <div class="col-md-4">
+            <div class="team-card card text-center bg-transparent border-0">
+              <div class="team-img">
+                <img src="assets/images/team-img/4.jpg" alt="Member-5" class="img-fluid">
+                <div class="card-body team-card-body team-content">
+                  <h5><a href="profile.html">Jont Herry</a></h5>
+                  <small>Senior Consultant</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+  
+          <div class="col-md-4">
+            <div class="team-card card text-center bg-transparent border-0">
+              <div class="team-img">
+                <img src="assets/images/team-img/5.jpg" alt="Member-6" class="img-fluid">
+                <div class="card-body team-card-body team-content">
+                  <h5><a href="profile.html">Emma Alice</a></h5>
+                  <small>Content Writer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+    </section>
+
+    <section class="section team-member">
+        <div class="container member-progress">
+          <div class="subheading mb-3">
+            <h3>Our Team Member Detail</h3>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-6 col-md-5">
+              <div class="member-img text-center">
+                <img src="assets/images/team-img/girl-img.jpg" alt="girl-img" class="img-fluid">
+                <div class="progress">
+                  <p class="mb-0">Figma - <strong>99%</strong></p>
+                  <div data-progress="99"></div>
+                  <p class="mb-0 mt-3">Photoshop - <strong>90%</strong></p>
+                  <div data-progress="90"></div>
+                  <p class="mb-0 mt-3">Illustrtor - <strong>80%</strong></p>
+                  <div data-progress="80"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-7">
+              <div class="team-con px-sm-4">
+                <div class="team-meta">
+                  <span class="team-designation">UI/UX Designer</span>
+                  <h4>Mark James</h4>
+                  <div class="social-icon my-2 d-flex">
+                    <a href="javascript:void(0)" class="avatar-sm mx-2"><i class="mdi mdi-whatsapp avatar-title bg-transparent rounded-circle"></i></a>
+                    <a href="javascript:void(0)" class="avatar-sm mx-2"><i class="mdi mdi-twitter avatar-title bg-transparent rounded-circle"></i></a>
+                    <a href="javascript:void(0)" class="avatar-sm mx-2"><i class="mdi mdi-instagram avatar-title bg-transparent rounded-circle"></i></a>
+                </div>
+                </div>
+                <p class="text-muted">
+                  Pawandeep has been helping the new intern, Shruti, with his training. You want to tell Pawandeep he is
+                  helping both Shruti and the entire team by being a great leader.
+                </p>
+                <ul class="team-meta-1 list-unstyled">
+                  <li>
+                    <i class="mdi mdi-calendar-month me-2"></i>
+                    <strong>Experience :</strong> <span class="ms-2"> 2 +Years </span>
+                  </li>
+                  <li>
+                    <i class="mdi mdi-border-all me-2"></i>
+                    <strong>Job-Category :</strong> <span class="ms-2"> IT & Software </span>
+                  </li>
+                  <li>
+                    <i class="mdi mdi-account-tie me-2"></i>
+                    <strong>Qualification :</strong> <span class="ms-2"> BTech </span>
+                  </li>
+                  <li>
+                    <i class="mdi mdi-phone me-2"></i>
+                    <strong>Phone :</strong> <span class="ms-2"> +123 45678 9100 </span>
+                  </li>
+                  <li>
+                    <i class="mdi mdi-at me-2"></i>
+                    <strong>Email :</strong> <span class="ms-2"> marksorkar@gmail.com </span>
+                  </li>
+                </ul>
+                <p class="text-muted">
+                  Consider letting your coworkers know they can go to you with questions about their job. Though it can
+                  always be helpful to provide answers, try to only offer advice on your area of expertise.
+                </p>
+                <p class="text-muted">
+                  Consider fostering the interest an employee has in learning a new skill for their position. For example,
+                  if you work in a kitchen and the professional who is usually responsible for preparing the food
+                  ingredients becomes interested in cooking the meals as well, try to create opportunities for them to do
+                  so.
+                </p>
+              </div>
+              <!--end team-con-->
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+  
+          <div class="row detail-card mt-5 g-4">
+            <div class="col-lg-4 col-md-4">
+              <div class="service_item_07 p-4 h-100 text-center">
+                <div class="ibMeta">
+                  <i class="mdi mdi-chart-donut"></i>
+                </div>
+                <h5>Advanced Analytic</h5>
+                <h6>Growth, Focus</h6>
+                <p>
+                  Building big data collection and analytics capabilities to uncover customer, product, and operational
+                  insights.
+                </p>
+              </div>
+            </div>
+            <!--end col-->
+            <div class="col-lg-4 col-md-4">
+              <div class="service_item_07 p-4 h-100 text-center">
+                <div class="ibMeta">
+                  <i class="mdi mdi-vector-square"></i>
+                </div>
+                <h5>Corporate Finance</h5>
+                <h6>Strategy Foundation.</h6>
+                <p>
+                  The capital budgeting process discloses the viability of investment proposals and helps invest in
+                  profitable projects.
+                </p>
+              </div>
+            </div>
+            <!--end col-->
+            <div class="col-lg-4 col-md-4">
+              <div class="service_item_07 p-4 h-100 text-center">
+                <div class="ibMeta">
+                  <i class="mdi mdi-chart-scatter-plot-hexbin"></i>
+                </div>
+                <h5>Professional skilled Team.</h5>
+                <h6>Business Consultation</h6>
+                <p>
+                  Businesses are starting to understand SMS marketing’s power in the digital age.
+                </p>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+  </main>
+
+  <!-- Footer Start -->
+
+  @@include('./partials/footer.html')
+
+  <!-- Footer End -->
+
+  @@include('./partials/vendor-scripts.html')
+
+  <script src="assets/js/main/progress-bar.js"></script>
+</body>
+
+</html>

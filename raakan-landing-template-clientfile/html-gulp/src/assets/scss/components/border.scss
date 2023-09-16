@@ -1,0 +1,23 @@
+//  border scss
+
+@each $color, $value in $theme-colors { 
+    .border-#{$color} {
+        border-color: ($value) !important;
+    }
+}
+
+.rounded-sm {
+    border-radius: 6px !important;
+}
+
+.rounded-md {
+    border-radius: 10px !important
+}
+
+.rounded-lg {
+    border-radius: 20px !important
+}
+
+.rounded-xl {
+    border-radius: 30px !important
+}

@@ -1,0 +1,357 @@
+/********** Home css **********/
+.spa-massage-home {
+    background-image: url(../images/spa-massage/spa-massage-home-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    position: relative;
+    background-position: center center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+    padding: 90px 0;
+    color: $white;
+    z-index: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($primary, 0.6);
+    }
+    .hero-title {
+        font-size: 40px;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .appointment-box {
+        padding: 30px;
+        border-radius: 15px;
+        color: var(--gray-900);
+        // background: var(--bs-body-bg);
+        box-shadow: 0px 40px 80px -40px $black !important;
+        position: relative;
+        z-index: 1;
+        h4 {
+            color: var(--text-primary);
+        }
+        form {
+            .form-group {
+                margin-bottom: 12px;
+                position: relative;
+                .form-control {
+                    background-color: transparent;
+                    border: 1px solid $gray-400;
+                    height: 48px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    color: var(--gray-900);
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    &::placeholder {
+                        color: var(--gray-900);
+                    }
+                }
+            }
+            textarea {
+                border-radius: 0.375rem;
+                margin-bottom: 12px;
+                padding: 10px 20px;
+                border: 1px solid $gray-400;
+                color: var(--gray-900);
+                box-shadow: none;
+                background-color: transparent;
+                &:focus-visible {
+                    outline: 0px;
+                }
+                &::placeholder {
+                    color: var(--gray-900);
+                }
+            }
+        }
+    }
+}
+
+/********** Feature css **********/
+.spa-massage-feature {
+    .feature-box {
+        padding: 1.5rem;
+        border: none;
+        background-color: transparent;
+        // box-shadow: 0px 0px 10px $gray-400;
+        box-shadow: var(--shadow-sm);
+        .feature-img {
+            width: 140px;
+            height: 140px;
+            // background-color: rgba($pink, 0.08);
+            background-color: rgba($gray-300 , 0.5);
+            // background-color: rgba($primary, 0.4);
+            color: $gray-300;
+            border-radius: 70px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .feature-content {
+            margin-top: 42px;
+            text-align: center;
+        }
+        a {
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+}
+
+/********** Service css **********/
+.spa-massage-service {
+    background: var(--light);
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        .nav {
+            width: 100%;
+            .nav-link {
+                width: 14%;
+                // height: 60px;
+                margin: 10px 6px;
+                padding: 16px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                background-color: rgba($primary, 0.08);
+                color: var(--text-primary);
+                border: 6px double var(--bs-gray-400);
+                border-radius: 10px;
+                transition: all 0.5s ease;
+                &:hover {
+                    background-color: $primary;
+                    // border: 6px double var(--bs-gray-400);
+                    color: $white;
+                    transition: all 0.5s ease;
+                }
+            }
+            .active {
+                background-color: $primary;
+                // border: 6px double var(--bs-gray-400);
+                color: $white;
+            }
+        }
+    }
+    .service-box {
+        border: none;
+        padding: 30px;
+        background: var(--bs-gray-200);
+        border-radius: 10px;
+        .service-img {
+            img {
+                border-radius: 10px;
+            }
+        }
+        .service-content {
+            .content-title,
+            .price {
+                margin-bottom: 0;
+                padding: 10px 20px;
+                height: 66px;
+                display: flex;
+                align-items: center;
+            }
+            .content-title {
+                background-color: var(--light);
+                font-size: 1.25em;
+            }
+            .price {
+                background-color: $orange;
+                color: $white;
+                font-weight: 500;
+                font-size: 24px;
+                justify-content: center;
+            }
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    i {
+                        margin: 0px 10px 0px 0px;
+                        transform: rotateZ(45deg);
+                        background-image: linear-gradient(to top, $primary 34%, transparent 100%);
+                        color: transparent;
+                        background-clip: text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/********** Gallery css **********/
+.spa-massage-gallery {
+    img,
+    .card-img-top {
+        border-radius: 0em;
+    }
+    .card {
+        border: none;
+        margin: 26px 5px;
+        background-color: transparent;
+    }
+    .gallery-img {
+        overflow: hidden;
+        // box-shadow: 0px 0px 10px $gray-400;
+        box-shadow: $shadow-sm;
+        border-radius: 10px;
+        img {
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+
+/********** counter css **********/
+.spa-massage-counter {
+    background: url("../images/spa-massage/counter-bg-img-1.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 90px 10px;
+    z-index: 1;
+    color: $white;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($black, 0.3);
+        z-index: -1;
+    }
+    .counter-box {
+        height: 140px;
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba($white, 0.09);
+        border-radius: 50%;
+        margin: 30px auto;
+        backdrop-filter: blur(14px);
+        .counter-content {
+            .counter-num {
+                font-size: 32px;
+            }
+            .counter-name {
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/********** Review css **********/
+.spa-massage-review {
+    .clients-review-box {
+        // box-shadow: 2px 2px 10px rgba($black, .075);
+        box-shadow: $shadow-sm;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--theme-light--bc);
+        display: flex;
+        justify-content: space-between;
+        h5 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .description {
+            line-height: 24px;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+}
+
+/********** card-column MEDIA **********/
+@media (min-width: 576px) {
+    .spa-massage-gallery {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .spa-massage-gallery {
+        .card-columns {
+            column-count: 3;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .spa-massage-gallery {
+        .card-columns {
+            column-count: 4;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .spa-massage-gallery {
+        .card-columns {
+            column-count: 5;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .spa-massage-service {
+        .nav-item {
+            .nav {
+                width: 80%;
+                .nav-link {
+                    width: 26%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .spa-massage-home {
+        .appointment-box {
+            padding: 16px;
+        }
+    }
+    .spa-massage-service {
+        .nav-item {
+            .nav {
+                width: 80%;
+                .nav-link {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .spa-massage-service {
+         .service-box {
+            padding: 14px;
+        }
+    }
+}

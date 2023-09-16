@@ -1,0 +1,1757 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+
+</head>
+
+<body>
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a><!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-shop.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="collectionpage.html" class="sub-mega-menu">Women</a></li>
+                    <li><a href="collectionpage.html" class="sub-mega-menu">Men</a></li>
+                    <li><a href="single-product-page.html" class="sub-mega-menu">Product</a></li>
+                    
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="about-page.html" class="sub-mega-menu">About Us</a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="help-center.html" class="sub-mega-menu">help center</a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">Account</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+                </ul><!--end navigation menu-->
+            </div><!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="list-inline d-flex align-items-center mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul><!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div><!-- end container-->
+    </header><!-- END navbar -->
+    
+    @@include('./partials/breadcrumb.html', {
+        'title': 'collection',
+        'breadcrumb1': {
+            'title': 'E-Commerce',
+            'link': '#',
+            'icon': 'cog',
+            'active_class': ''
+        },
+        'breadcrumb2': {
+            'title': '',
+            'link': '#',
+            'icon': 'account-multiple',
+            'active_class': ''
+        },
+        'breadcrumb3': {
+            'title': 'Collection',
+            'link': '#',
+            'icon': 'cog',
+            'active_class': 'active'
+        }
+    })
+
+    <!-- start collection-page section -->
+    <section class="section collection-page">
+        <div class="container">
+            <h2 class="mb-4">Men's</h2>
+            <div class="open-filter">
+                <div class=" mb-5">
+                    <div class=" row d-flex justify-content-between align-items-center mb-2">
+                        <div class="col-sm-6">
+                            <button type="button"
+                                class="btn btn-outline-dark d-flex align-items-center py-1"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                                <span class="mdi mdi-format-list-bulleted pe-1 fs-5"></span>
+                                <span> Filter </span> (<span id="filter_countdown"></span>)
+                            </button>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-sm-end justify-content-start 
+                            mt-3 mt-sm-0">
+                                <div class="shorting-item bg-light">
+                                    <span class="ps-2">Sort By :</span>
+                                    <select name="Featured" id="Product-list" class="ps-1 btn-dark">
+                                        <option value="sort by"> Best Selling </option>
+                                        <option value="sort by A-Z" id="ascending">sort by A-Z </option>
+                                        <option value="sort by Z-A"> sort by Z-A</option>
+                                        <option value="sort by "> sort by l2h</option>
+                                        <option value="sort by"> sort h2l</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- <span class="mdi mdi-dots-grid fs-3"></span> -->
+                        </div>
+
+                    </div>
+                    <!-- end column -->
+                </div>
+                <!--end row  -->
+            </div>
+            <!-- end open filter -->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Filters</h5>
+                    <button type="button" class="btn btn-close pe-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <span class="mdi mdi-window-close fs-4  m-0"></span>
+                    </button>
+                </div>
+                <div class="offcanvas-body p-0">
+
+                    <!-- <div class="selected-product ">
+                        Red <span class="close">&times;</span>
+                    </div> -->
+
+                    <div class="filter-offcanvas">
+                        <div class="Product-filter border-top d-flex justify-content-between align-items-center mb-2">
+                            Colors
+                            <span class="mdi mdi-chevron-down fs-5"></span>
+                        </div>
+                        <div class="show-Material">
+
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckbox" id="Material1" name="Material1" value="Red">
+                                <label for="Material1"> Red </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckbox" id="Material2" name="Material2"
+                                    value="Yellow">
+                                <label for="Material2"> Yellow </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckbox" id="Material3" name="Material3"
+                                    value="Green">
+                                <label for="Material3"> Green </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckbox" id="Material4" name="Material4"
+                                    value="Lightblue">
+                                <label for="Material4"> Lightblue </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckbox" id="Material5" name="Material5"
+                                    value="Black">
+                                <label for="Material5"> Black </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckbox" id="Material6" name="Material6"
+                                    value="Blue">
+                                <label for="Material6"> Blue </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Color section -->
+
+                    <div class="filter-offcanvas">
+                        <div class="Product-filter  border-top d-flex justify-content-between align-items-center mb-2">
+                            Materials
+                            <span class="mdi mdi-chevron-down fs-5"></span>
+                        </div>
+                        <div class="show-Material">
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material7" name="Material7"
+                                    value="Braided">
+                                <label for="Material7"> Braided (17) </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material8" name="Material8"
+                                    value="Embossed Leather">
+                                <label for="Material8"> Embossed Leather (14)</label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material9" name="Material9"
+                                    value="Leather">
+                                <label for="Material9"> Leather (100) </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material10" name="Material10"
+                                    value="Luxury American Buffalo Leather">
+                                <label for="Material10"> Luxury American Buffalo Leather (2)
+                                </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material11" name="Material11"
+                                    value="Luxury Italian Calfskin">
+                                <label for="Material11"> Luxury Italian Calfskin (9) </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material12" name="Material12"
+                                    value="Nylon">
+                                <label for="Material12"> Nylon (36) </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material13" name="Material13"
+                                    value="Suede">
+                                <label for="Material13"> Suede (1) </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material14" name="Material14"
+                                    value="Vegan Leader">
+                                <label for="Material14"> Vegan Leader (5) </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Material section -->
+
+                    <div class="filter-offcanvas">
+                        <div class="Product-filter border-top  d-flex justify-content-between align-items-center mb-2">
+                            Availability
+                            <span class="mdi mdi-chevron-down fs-5"></span>
+                        </div>
+                        <div class="show-Material">
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material15" name="Material15"
+                                    value="In stock">
+                                <label for="Material15"> In stock (140) </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="cardCheckBox" id="Material16" name="Material16"
+                                    value="Out of stock">
+                                <label for="Material16"> Out of stock (42) </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Availability section -->
+
+                    <div class="filter-offcanvas">
+                        <div class="Product-filter border-top  d-flex justify-content-between align-items-center mb-2">
+                            Price
+                            <span class="mdi mdi-chevron-down fs-5"></span>
+                        </div>
+                        <div class="show-Material">
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="CardCheckBox" id="Material17" name="Material17"
+                                    value="$.1 - $.50">
+                                <label for="Material17"> $.1 - $.50 </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="CardCheckBox" id="Material18" name="Material18"
+                                    value="$.50 - $.100">
+                                <label for="Material18"> $.50 - $.100 </label>
+                            </div>
+                            <div class="Product-Materials">
+                                <input type="checkbox" class="CardCheckBox" id="Material19" name="Material19"
+                                    value="$.100 - $.150">
+                                <label for="Material19"> $.100 - $.150 </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end price section -->
+                </div>
+            </div>
+            <!-- end canvas -->
+
+            <div class="row g-4 collection-section">
+                <div class="col-12 col-sm-6 col-lg-3" data-color="Red" data-category="In stock"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/tshits.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Plain t-shirt</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $98.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle" 
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5"></span>
+                                </a>
+
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end card -->
+
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Yellow" data-category="In stock"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/blue-shirt.png" class="img img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Blue-Shirt</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $80.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle" 
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Red" data-category="Embossed Leather"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/yellow-sneaker.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">sneakers.</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $68.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                    <span class="mdi mdi-star-outline fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Green" data-category="Braided"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/multiple-shirts.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">multiple-shirts.</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $50.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Yellow" data-category="In stock"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/multiple-tshirt.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">multiple-T-shirts</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $100.00 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Red" data-category="Leather"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/pair.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Pair</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $90.00 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                    <span class="mdi mdi-star-outline fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Yellow" data-category="Leather"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/printed-shirts.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">printed-shirts</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $55.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3" data-color="Green" data-category="Embossed Leather"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/white.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Black & white Shirt.</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $67.54 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3" data-color="Lightblue"
+                    data-category="Luxury American Buffalo Leather" data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/yellow-tshirt.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">yellow-T-shirts</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $60.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                    <span class="mdi mdi-star-outline fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Black" data-category="Luxury Italian Calfskin"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/printed-tshirt.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">white-T-shirt</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $70.00 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Blue" data-category="Luxury American Buffalo Leather"
+                    data-price="$.1 - $.50">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/color-sneaker.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Jordan Shoes</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $40.00 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 " data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal11"></span></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="modal fade pe-0" id="exampleModal11" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel1">Branded Shoes
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 ">
+                                                <div id="carouselExampleIndicators11" class="carousel slide">
+                                                    <div class="carousel-indicators mb-0">
+                                                        <button type="button" class="page-button rounded-circle active"
+                                                            data-bs-target="#carouselExampleIndicators11"
+                                                            data-bs-slide-to="0" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button" class="rounded-circle page-button"
+                                                            data-bs-target="#carouselExampleIndicators11"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" class="rounded-circle page-button"
+                                                            data-bs-target="#carouselExampleIndicators11"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" class="rounded-circle page-button"
+                                                            data-bs-target="#carouselExampleIndicators11"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="assets/images/demos/color-sneaker.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="assets/images/demos/sneakers.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="assets/images/demos/party-wear.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="assets/images/demos/yellow-sneaker.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button"
+                                                        data-bs-target="#carouselExampleIndicators11"
+                                                        data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button"
+                                                        data-bs-target="#carouselExampleIndicators11"
+                                                        data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- end column -->
+
+                                            <div class="col-lg-7">
+                                                <h1 class="fs-4 mb-2">Branded Shoes</h1>
+                                                <h5 class="mb-2"><span class="text-muted"> $30.00</span><span
+                                                        class="text-danger ms-2"><s>$45.00</s></span> </h5>
+                                                <div class="rating mb-2">
+                                                    <div class="stars">
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                    </div>
+                                                </div>
+                                                <h5 class="mt-4 mb-2">Overview</h5>
+                                                <p class="text-muted">Runners will love the stability and heel support.
+                                                    Athletes of all kinds will appreciate the cushioned fit. These
+                                                    adidas running shoes are made for life on the move.
+                                                </p>
+
+                                                <div class="d-flex align-items-center mt-4">
+                                                    <h6 class="mb-0">Your Size:</h6>
+                                                    <ul class="list-unstyled mb-0 ms-3">
+
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">6</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn  btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">7</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">8</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary active d-flex justify-content-center align-items-center p-0">9</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn  btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">10</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">11</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="d-flex shop-list align-items-center mt-4">
+                                                    <h6 class="mb-0">Quantity:</h6>
+                                                    <div class="qty-icon ms-3">
+                                                        <button class="btn me-2 minus p-0" onclick="decreaseValue()"
+                                                            value="Decrease Value"><span
+                                                                class="mdi mdi-minus fs-4"></button>
+                                                        <input type="number" id="number" min="0" name="quantity"
+                                                            value="0" class="btn qty-btn quantity border-0 p-0">
+                                                        <button class="btn ms-2 plus p-0" onclick="increaseValue()"
+                                                            value="Increase Value"><span
+                                                                class="mdi mdi-plus fs-4"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end column -->
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end modal-body -->
+
+                                    <div class="modal-footer d-flex justify-content-center border-0">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Shop
+                                            Now</button>
+                                        <!-- <button type="button" class="btn btn-primary">Add to Cart</button> -->
+                                    </div>
+                                </div>
+                                <!-- modal-content -->
+                            </div>
+                            <!-- end modal-dialog -->
+                        </div>
+                        <!-- end modal -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Blue" data-category="Luxury Italian Calfskin"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/white-tshirt.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">white-T-shirt</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $75.00 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Green" data-category="Nylon" data-price="$.1 - $.50">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/sports.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Black shoes</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $25.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Lightblue" data-category="Nylon"
+                    data-price="$.1 - $.50">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/party-wear.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">party-wear Shoes</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $20.9 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Red" data-category="Suede" data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/sneakers.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Jordan-sneakers shoes</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $65.00 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                    <span class="mdi mdi-star-outline fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Black" data-category="Nylon"
+                    data-price="$.100 - $.150">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/black-jeans.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Black-Pants</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $105.4 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 " data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal15"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="modal fade pe-0" id="exampleModal15" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel1">Branded Jeans
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-4">
+                                        <div class="row">
+                                            <div class="col-lg-5 ">
+                                                <div id="carouselExampleIndicators15" class="carousel slide">
+                                                    <div class="carousel-indicators mb-0">
+                                                        <button type="button" class="page-button rounded-circle active"
+                                                            data-bs-target="#carouselExampleIndicators15"
+                                                            data-bs-slide-to="0" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button" class="rounded-circle page-button"
+                                                            data-bs-target="#carouselExampleIndicators15"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" class="rounded-circle page-button"
+                                                            data-bs-target="#carouselExampleIndicators15"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" class="rounded-circle page-button"
+                                                            data-bs-target="#carouselExampleIndicators15"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="assets/images/demos/black-jeans.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="assets/images/demos/color-jeans.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="assets/images/demos/lightblue-jeans.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="assets/images/demos/darkblue-jeans.png"
+                                                                class="img-fluid" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button"
+                                                        data-bs-target="#carouselExampleIndicators15"
+                                                        data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button"
+                                                        data-bs-target="#carouselExampleIndicators15"
+                                                        data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- end column -->
+
+                                            <div class="col-lg-7">
+                                                <h1 class="fs-4 mb-2">Branded Jeans</h1>
+                                                <h5 class="mb-2"><span class="text-muted"> $15.00</span><span
+                                                        class="text-danger ms-2"><s>$20.00</s></span> </h5>
+                                                <div class="rating mb-2">
+                                                    <div class="stars">
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                        <i class="mdi mdi-star fs-5"></i>
+                                                    </div>
+                                                </div>
+                                                <h5 class="mt-4 mb-2">Overview</h5>
+                                                <p class="text-muted">
+                                                    Black dark wash 5-pocket mid-rise jeans, clean look with no fade,
+                                                    has a button and zip closure, waistband with belt loops
+                                                    This garment contains LYCRA fiber. It moves with you throughout the
+                                                    day for a comfortable, flexible fit
+                                                </p>
+
+                                                <div class="d-flex align-items-center mt-4">
+                                                    <h6 class="mb-0">Your Size:</h6>
+                                                    <ul class="list-unstyled mb-0 ms-3">
+
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">28</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn  btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">30</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">32</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary active d-flex justify-content-center align-items-center p-0">34</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn  btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">36</a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="javascript:void(0)"
+                                                                class="btn btn-icon1 btn-soft-primary d-flex justify-content-center align-items-center p-0">38</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="d-flex shop-list align-items-center mt-4">
+                                                    <h6 class="mb-0">Quantity:</h6>
+                                                    <div class="qty-icon ms-3">
+                                                        <button class="btn me-2 minus p-0" onclick="decreaseValue()"
+                                                            value="Decrease Value"><span
+                                                                class="mdi mdi-minus fs-4"></button>
+                                                        <input type="number" id="number" min="0" name="quantity"
+                                                            value="0" class="btn qty-btn quantity border-0 p-0">
+                                                        <button class="btn ms-2 plus p-0" onclick="increaseValue()"
+                                                            value="Increase Value"><span
+                                                                class="mdi mdi-plus fs-4"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end modal-body -->
+
+                                    <div class="modal-footer d-flex justify-content-center border-0">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Shop
+                                            Now</button>
+                                        <!-- <button type="button" class="btn btn-primary">Add to Cart</button> -->
+                                    </div>
+                                </div>
+                                <!-- modal-content -->
+                            </div>
+                            <!-- end modal-dialog -->
+                        </div>
+                        <!-- end modal -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Blue" data-category="Suede"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/lightblue-jeans.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Lightblue pants</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $98.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Black" data-category="Vegan Leader"
+                    data-price="$.1 - $.50">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/color-jeans.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Multiple pants</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $39.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Blue" data-category="Suede"
+                    data-price="$.50 - $.100">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/blue-jeans.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">darkblue-jeans</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $95.02 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                    <span class="mdi mdi-star-outline fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12 col-sm-6 col-lg-3 " data-color="Lightblue" data-category="Vegan Leader"
+                    data-price="$.1 - $.50">
+                    <div class="card rounded-2">
+                        <a href="single-product-page.html">
+                            <img src="assets/images/demos/darkblue-jeans.png" class="img-fluid" alt="...">
+                        </a>
+                        <div class="card-body px-2 py-2">
+                            <p class="product-name mb-2">Blue jeans</p>
+                            <p class="d-flex justify-content-between align-items-center mb-2"><span> $19.5 <span
+                                        class="text-danger ms-2"><s>$125.00</s></span></span>
+                                <span class="stars">
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star fs-6"></span>
+                                    <span class="mdi mdi-star-half-full fs-6"></span>
+                                </span>
+                            </p>
+                            <!-- end product review rating -->
+                        </div>
+                        <ul class="shop-icons list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="btn btn-soft-danger btn-icon d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-heart-outline fs-5"></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="javascript:void(0)"
+                                    class="btn btn-icon1 btn-soft-primary  d-inline-flex justify-content-center align-items-center rounded-circle"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span class="mdi mdi-eye-outline fs-5 "></span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="shop-cart.html"
+                                    class="btn btn-soft-warning btn-icon2  d-inline-flex justify-content-center align-items-center rounded-circle">
+                                    <span class="mdi mdi-cart-outline fs-5 "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <div class="pagination d-flex justify-content-center align-items-center">
+                <a href="javascript:void(0)" class="m-1">&laquo;</a>
+                <a href="javascript:void(0)" class="m-1">1</a>
+                <a href="javascript:void(0)" class="m-1 bg-dark text-light">2</a>
+                <a href="javascript:void(0)" class="m-1">3</a>
+                <a href="javascript:void(0)" class="m-1">4</a>
+                <a href="javascript:void(0)" class="m-1">5</a>
+                <a href="javascript:void(0)" class="m-1">&raquo;</a>
+            </div>
+            <!-- end pagination section -->
+
+            <h4 class="mb-5 text-center">Recommended For You</h4>
+            <div class="recommended">
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card bg-transparent">
+                                <img src="assets/images/demos/color-jeans.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="text-center text-normal">Product name</h5>
+                                    <h5 class="text-center text-muted mb-3">$50</h5>
+                                    <button class="btn btn-outline-dark">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end recommended-card item -->
+
+                        <div class="swiper-slide">
+                            <div class="card bg-transparent">
+                                <img src="assets/images/demos/color-sneaker.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="text-center text-normal">Product name</h5>
+                                    <h5 class="text-center text-muted mb-3">$50</h5>
+                                    <button class="btn btn-outline-dark">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end recommended-card item -->
+                        <div class="swiper-slide">
+                            <div class="card bg-transparent">
+                                <img src="assets/images/demos/darkblue-jeans.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="text-center text-normal">Product name</h5>
+                                    <h5 class="text-center text-muted mb-3">$50</h5>
+                                    <button class="btn btn-outline-dark">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end recommended-card item -->
+
+                        <div class="swiper-slide">
+                            <div class="card bg-transparent">
+                                <img src="assets/images/demos/white-tshirt.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="text-center text-normal">Product name</h5>
+                                    <h5 class="text-center text-muted mb-3">$50</h5>
+                                    <button class="btn btn-outline-dark">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end recommended-card item -->
+
+                        <div class="swiper-slide">
+                            <div class="card bg-transparent">
+                                <img src="assets/images/demos/sneakers.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="text-center text-normal">Product name</h5>
+                                    <h5 class="text-center text-muted mb-3">$50</h5>
+                                    <button class="btn btn-outline-dark">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end recommended-card item -->
+
+                        <div class="swiper-slide">
+                            <div class="card bg-transparent">
+                                <img src="assets/images/demos/white.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="text-center text-normal">Product name</h5>
+                                    <h5 class="text-center text-muted mb-3">$50</h5>
+                                    <button class="btn btn-outline-dark">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end recommended-card item -->
+                    </div>
+                    <!-- end swiper wrapper -->
+
+                    <div class="swiper-button-next text-white"></div>
+                    <div class="swiper-button-prev text-white"></div>
+
+                </div>
+                <!-- end swiper slider -->
+            </div>
+            <!-- end recommended -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end collection-page section -->
+
+    <!-- model -->
+    <div class="collection-modal modal fade pe-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content card">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Branded T-Shirts
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators mb-0">
+                                    <button type="button" class="page-button rounded-circle active"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" class="rounded-circle page-button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" class="rounded-circle page-button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" class="rounded-circle page-button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/demos/black-jeans.png"
+                                            class="img-fluid rounded" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/demos/color-jeans.png"
+                                            class="img-fluid rounded" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/demos/color-sneaker.png"
+                                            class="img-fluid rounded" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/demos/darkblue-jeans.png"
+                                            class="img-fluid rounded" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"
+                                        aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end column -->
+
+                        <div class="col-lg-7">
+                            <h1 class="fs-4 mb-2">Branded T-Shirts</h1>
+                            <h5 class="mb-2"><span class="text-muted"> $21.00</span><span
+                                    class="text-danger ms-2"><s>$25.00</s></span> </h5>
+                            <div class="rating mb-2">
+                                <div class="icons">
+                                    <i class="mdi mdi-star fs-5"></i>
+                                    <i class="mdi mdi-star fs-5"></i>
+                                    <i class="mdi mdi-star fs-5"></i>
+                                    <i class="mdi mdi-star fs-5"></i>
+                                    <i class="mdi mdi-star fs-5"></i>
+                                </div>
+                            </div>
+                            <h5 class="mt-4 mb-2">Overview</h5>
+                            <p class="text-muted">Men Beige & Black Typography Printed Sustainable
+                                T-shirt.
+                                Men Pack of 6 Solid Pure Cotton T-shirts.
+                            </p>
+
+                            <div class="d-flex align-items-center mt-4">
+                                <h6 class="mb-0">Your Size:</h6>
+                                <ul class="list-unstyled mb-0 ms-3">
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-primary d-flex justify-content-center align-items-center">S</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-primary d-flex justify-content-center align-items-center">M</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-primary d-flex justify-content-center align-items-center">L</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-primary d-flex justify-content-center align-items-center">XL</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="d-flex shop-list align-items-center mt-4">
+                                <h6 class="mb-0">Quantity:</h6>
+                                <div class="qty-icon ms-3">
+                                    <button type="button" class="btn btn-outline-primary me-2 minus"
+                                        onclick="decreaseValue()" value="Decrease Value"><span
+                                            class="mdi mdi-minus"></span>
+                                    </button>
+                                    <input type="number" id="number" min="0" name="quantity"
+                                        value="0" class="btn qty-btn quantity">
+                                    <button type="button" class="btn btn-outline-primary ms-2 plus"
+                                        onclick="increaseValue()" value="Increase Value"><span
+                                            class="mdi mdi-plus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 pe-0 pb-0">
+                                <button type="button" class="btn btn-primary m-0"
+                                    data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Add to Cart</button> -->
+                            </div>
+                        </div>
+                        <!-- end column -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end modal-body -->
+
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- end modal-dialog -->
+    </div>
+    <!-- end modal -->
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="assets/js/main/collectionpage.js"></script>
+
+
+</body>
+
+</html>

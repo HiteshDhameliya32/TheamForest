@@ -1,0 +1,130 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Background',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Background',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+    <section class="section component-page">
+      <div class="container">
+        <div class="row g-4">
+          <div class="border-bottom mb-4">
+            <h1 class="display-6">Background</h1>
+            <p class="lead text-muted">
+              Convey meaning through <code>background-color</code> and add
+              decoration with gradients.
+            </p>
+          </div>
+  
+          <!-- Background Color -->
+          <div class="col-12">
+            <div class="hk-sec-title">
+              <h5>Background Color</h5>
+              <p>
+                Similar to the contextual text color classes, set the background of an element to
+                any contextual class. Background utilities <strong>do not set <code>color</code></strong>,
+                so in some cases you’ll want to use <code>.text-*</code> 
+                <a href="javascript:void(0)">color utilities</a>.
+              </p>
+            </div>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#background-box"
+                    aria-controls="background-box">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#background-box-html"
+                    aria-controls="background-box-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="background-box">
+                  <div class="p-4 hstack flex-wrap gap-3">
+                    <div class="background-box bg-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-primary"></div>
+                    <div class="background-box bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-secondary"></div>
+                    <div class="background-box bg-success" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-success"></div>
+                    <div class="background-box bg-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-danger"></div>
+                    <div class="background-box bg-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-info"></div>
+                    <div class="background-box bg-light border" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-light"></div>
+                    <div class="background-box bg-white border" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-white"></div>
+                    <div class="background-box bg-black" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-black"></div>
+                    <div class="background-box bg-body border" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-body"></div>
+                    <div class="background-box bg-transparent border" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=".bg-transparent"></div>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="background-box-html">
+                  <pre class="px-4 mb-0 crome">
+                    <code class="text-dark">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-primary"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-secondary"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-success"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-danger"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-info"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-light"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-white"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-black"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-body"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"bg-transparent"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+        </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

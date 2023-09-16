@@ -1,0 +1,363 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-hospital.html" class="sub-mega-menu">Home</a></li>
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">Doctor</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Cardiology </a>
+                                <span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="hospital-doctor-1.html" class="sub-mega-menu">Dr. Braswell</a></li>
+                                    <li><a href="hospital-doctor-2.html" class="sub-mega-menu">Dr. Jesus</a></li>
+                                    <li><a href="hospital-doctor-3.html" class="sub-mega-menu">Dr. Alvee</a></li>
+                                    <li><a href="hospital-doctor-4.html" class="sub-mega-menu">Dr. Elena</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Dantal </a>
+                                <span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="hospital-doctor-5.html" class="sub-mega-menu">Dr. Crystal </a></li>
+                                    <li><a href="hospital-doctor-6.html" class="sub-mega-menu">Dr. Sabia</a></li>
+                                    <li><a href="hospital-doctor-4.html" class="sub-mega-menu"> Dr. Elena</a></li>
+                                    <li><a href="hospital-doctor-7.html" class="sub-mega-menu">Dr. Keith</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Neurologist </a>
+                                <span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="hospital-doctor-1.html" class="sub-mega-menu">Dr. Braswell</a></li>
+                                    <li><a href="hospital-doctor-2.html" class="sub-mega-menu"> Dr. Jesus</a></li>
+                                    <li><a href="hospital-doctor-6.html" class="sub-mega-menu">Dr. Sabia</a></li>
+                                    <li><a href="hospital-doctor-3.html" class="sub-mega-menu">Dr. Alvee</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> pediatric </a>
+                                <span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="hospital-doctor-7.html" class="sub-mega-menu"> Dr. Keith </a></li>
+                                    <li><a href="hospital-doctor-1.html" class="sub-mega-menu"> Dr. Braswell</a></li>
+                                    <li><a href="hospital-doctor-6.html" class="sub-mega-menu">Dr. Sabia</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> traumatology </a>
+                                <span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="hospital-doctor-5.html" class="sub-mega-menu">Dr. Crystal</a></li>
+                                    <li><a href="hospital-doctor-4.html" class="sub-mega-menu">Dr. Elena</a></li>
+                                    <li><a href="hospital-doctor-3.html" class="sub-mega-menu">Dr. Alvee</a></li>
+                                    <li><a href="hospital-doctor-2.html" class="sub-mega-menu">Dr. Jesus</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> x-ray </a>
+                                <span class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="hospital-doctor-1.html" class="sub-mega-menu">Dr. Braswell </a></li>
+                                    <li><a href="hospital-doctor-7.html" class="sub-mega-menu"> Dr. Keith</a></li>
+                                    <li><a href="hospital-doctor-5.html" class="sub-mega-menu">Dr. Crystal </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="hospital-gallery.html" class="sub-mega-menu">gallery</a></li>
+                    <li><a href="hospital-service.html" class="sub-mega-menu">service</a></li>
+
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="list-inline d-flex align-items-center mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul><!-- Login button End -->
+            </div><!-- end login & collapse -->
+        </div><!-- end container -->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+    'title': 'Service',
+    'breadcrumb1': {
+    'title': 'hospital',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': '',
+    'status': ''
+    },
+    'breadcrumb3': {
+    'title': 'Service',
+    'link': '#',
+    'icon': '',
+    'active_class': 'active'
+    }
+    })
+
+    <!-- /********** Service Section **********/ -->
+    <section class="section service-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <h2 class="text-center text-uppercase m-0"> Our Services </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-5">
+                        Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-robot-outline"></i>
+                                <p>01</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Robotic Surgery</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                Robotic surgery, also called robot-assisted surgery, allows doctors to perform many
+                                types of complex procedures with more precision.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-bacteria-outline"></i>
+                                <p>02</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Cancer Services</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                Cancer Treatment · Surgery · Chemotherapy · Radiation Therapy · Targeted Therapy ·
+                                Immunotherapy · Stem Cell or Bone Marrow Transplant · Hormone Therapy.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-truck-plus-outline"></i>
+                                <p>03</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Emergency Services</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                the first point of contact for any critically ill patient, needing immediate medical
+                                attention.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-pill"></i>
+                                <p>04</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Wellness Center</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                The wellness center focuses on prevention, improved patient access to diagnostic and
+                                therapeutic outpatient services, increased primary and specialty physician.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-hospital-building"></i>
+                                <p>05</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Orthopaedic & Spine Institute</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                We developed a specialized hospital to provide advanced orthopaedic and spine care for
+                                every patient's needs. The facility is designed for both outpatient.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-brain"></i>
+                                <p>06</p>
+                            </div>
+                            <h4 class="position-relative fs-bold"> Brain Checkup </h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                The brain checkup program aims to detect unrecognized diseases of the brain and brain
+                                vessels (like cerebral infarction, aneurysm, tumor) and to prevent the development of
+                                these diseases.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-heart-outline"></i>
+                                <p>07</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Heart Care Services</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                best heart care hospital in India offering facilities like Non-invasive Cardiac
+                                Laboratory, Electrophysiology, Cardiothoracic CCUs.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-human-female"></i>
+                                <p>08</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Women’s Care</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                The health of women and girls is of particular concern because, in many societies, they
+                                are disadvantaged by discrimination rooted in sociocultural factors.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box h-100">
+                        <div class="service-box-inner">
+                            <div class="icon">
+                                <i class="mdi mdi-tooth-outline"></i>
+                                <p>09</p>
+                            </div>
+                            <h4 class="position-relative fs-bold">Tooth Care</h4>
+                            <p class="fs-14 text-muted lh-lg">
+                                Dentists and oral surgeons are often appointed to a hospital's medical staff to provide
+                                dental services to emergency department patients and inpatients.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <nav class="navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- END navigation -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

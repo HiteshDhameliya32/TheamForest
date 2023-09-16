@@ -1,0 +1,161 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Badge',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Badge',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+    <section class="section component-page">
+      <div class="container">
+        <div class="row g-4">
+          <div class="border-bottom mb-4">
+            <h1 class="display-6">Badges</h1>
+            <p class="text-muted lead">
+              Documentation and examples for badges, our small count and labeling component.
+            </p>
+          </div>
+              
+          <!-- Badges Background colors -->
+          <div class="col-lg-6 col-md-10 mt-auto">
+            <div class="hk-sec-title">
+              <h5> Badges Background colors </h5>
+            </div>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#badge"
+                    aria-controls="badge">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#badge-html"
+                    aria-controls="badge-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="badge">
+                  <div class="hstack flex-wrap gap-3 p-4">
+                    <span class="badge bg-primary">Primary</span>
+                    <span class="badge bg-secondary">Secondary</span>
+                    <span class="badge bg-success">Success</span>
+                    <span class="badge bg-danger">Danger</span>
+                    <span class="badge bg-warning text-dark">Warning</span>
+                    <span class="badge bg-info text-dark">Info</span>
+                    <span class="badge bg-light text-dark">Light</span>
+                    <span class="badge bg-dark" style="color: var(--gray-100);">Dark</span>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="badge-html">
+                  <pre class="chroma mb-0 px-4">
+                    <code class="text-dark">
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-primary"</span><span class="p">&gt;</span>Primary<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-secondary"</span><span class="p">&gt;</span>Secondary<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-success"</span><span class="p">&gt;</span>Success<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-danger"</span><span class="p">&gt;</span>Danger<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-warning text-dark"</span><span class="p">&gt;</span>Warning<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-info text-dark"</span><span class="p">&gt;</span>Info<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-light text-dark"</span><span class="p">&gt;</span>Light<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-dark"</span><span class="p">&gt;</span>Dark<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- Badge Pill -->
+          <div class="col-lg-6 col-md-10 mt-auto">
+            <div class="hk-sec-title">
+              <h5> Badge Pill </h5>
+            </div>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#badge-pill"
+                    aria-controls="badge-pill">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#badge-pill-html"
+                    aria-controls="badge-pill-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="badge-pill">
+                  <div class="hstack flex-wrap gap-3 p-4">
+                    <span class="badge bg-primary rounded-pill">Primary</span>
+                    <span class="badge bg-secondary rounded-pill">Secondary</span>
+                    <span class="badge bg-success rounded-pill">Success</span>
+                    <span class="badge bg-danger rounded-pill">Danger</span>
+                    <span class="badge bg-warning text-dark rounded-pill">Warning</span>
+                    <span class="badge bg-info text-dark rounded-pill">Info</span>
+                    <span class="badge bg-light text-dark rounded-pill">Light</span>
+                    <span class="badge bg-dark rounded-pill" style="color: var(--gray-100);">Dark</span>
+                  </div>
+                </div><!-- END teb-pane -->
+    
+                <div class="tab-pane fade animated" id="badge-pill-html">
+                  <pre class="chroma mb-0 px-4">
+                    <code class="text-dark">
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-primary rounded-pill"</span><span class="p">&gt;</span>Primary<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-secondary rounded-pill"</span><span class="p">&gt;</span>Secondary<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-success rounded-pill"</span><span class="p">&gt;</span>Success<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-danger rounded-pill"</span><span class="p">&gt;</span>Danger<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-warning text-dark rounded-pill"</span><span class="p">&gt;</span>Warning<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-info text-dark rounded-pill"</span><span class="p">&gt;</span>Info<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-light text-dark rounded-pill"</span><span class="p">&gt;</span>Light<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"badge bg-dark rounded-pill"</span><span class="p">&gt;</span>Dark<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+        </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+
+<!-- start ( = &#40; -->
+<!-- end ( = &#41; -->
+<!-- start { = &#x2774; -->
+<!-- end } = &#x2775; -->
+
+
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/progress-bar.js"></script>
+
+</body>
+
+</html>

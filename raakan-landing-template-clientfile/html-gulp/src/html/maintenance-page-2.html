@@ -1,0 +1,111 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- maintenance-2 page -->
+    <section class="section maintenance maintenance-2">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <a href="javascript:void(0)" class="d-flex justify-content-center fs-20 text-white mb-3"> 
+                        <img src="assets/images/dark-logo.png" class="" height="34" alt="">    
+                    </a>
+                    <h1 class="text-uppercase display-6 text-white"> under maintenance </h1>
+                    <p class="m-0">we're doing our best and we'll back soon.</p>
+                </div><!-- END col -->
+
+                <div class="col-md-6 mt-2">
+                    <div class="maintenance-form d-inline-block">
+                        <form action="javascript:void(0)" name="form1">
+                            <input type="email" name="email" class="email" placeholder="Your Email..."
+                                autocomplete="off" required>
+                            <button type="submit" class="btn btn-primary subscribe">
+                                NOTIFY US <i class="mdi mdi-bell-ring"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="d-block mt-4">
+                        <a href="index.html" class="btn btn-primary"> <i class="mdi mdi-home"></i> Go Back Home </a>
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row align-items-center">
+
+                <p id="end" class="mb-0 display-4 text-center"></p>
+
+                <div class="col-md-2 col-sm-3 col-3 order-md-1 order-2">
+                    <div class="d-flex justify-content-center">
+                        <div class="timer">
+                            <div class="">
+                                <h1 class="m-0 text-white" id="days">d</h1>
+                                <p class="m-0">Day</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-md-2 col-sm-3 col-3 order-md-2 order-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="timer">
+                            <div class="">
+                            <h1 class="m-0 text-white" id="hours">h</h1>
+                            <p class="m-0">Hours</p>
+                        </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-md-4 order-md-3 order-1">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/images/maintenance/img-2.png" class="img-fluid mt-4" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-3 order-md-4 order-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="timer">
+                            <div class="">
+                            <h1 class="m-0 text-white" id="mins">m</h1>
+                            <p class="m-0">Minutes</p>
+                        </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-md-2 col-sm-3 col-3 order-md-5 order-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="timer">
+                            <div class="">
+                            <h1 class="m-0 text-white" id="secs">s</h1>
+                            <p class="m-0">Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            @@include('./partials/footer-description.html')
+
+        </div><!-- END container -->
+    </section>
+
+    @@include('./partials/vendor-scripts.html')
+
+    <!-- countdown Js -->
+    <script src="assets/js/main/countdown.js"></script>
+
+</body>
+
+</html>

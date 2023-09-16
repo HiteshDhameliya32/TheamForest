@@ -1,0 +1,406 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+    
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-app.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="app-service.html" class="sub-mega-menu">service</a></li>
+                    <li><a href="app-pricing.html" class="sub-mega-menu">pricing</a></li>
+                    <li><a href="app-profile.html" class="sub-mega-menu">profile</a></li>
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">maintenance</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="maintenance-page-1.html"> maintenance-1 </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="maintenance-page-2.html"> maintenance-2 </a>
+                            </li>
+                        </ul>
+                    </li><!-- END maintenace menu -->
+
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END maintenace menu -->
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content p-0">
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0 p-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul>
+                <!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div>
+        <!--end container-->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+    'title': 'Pricing',
+    'breadcrumb1': {
+    'title': 'App',
+    'link': 'index-app.html',
+    'icon': 'hospital-building',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Pricing',
+    'link': '#',
+    'icon': 'doctor',
+    'active_class': 'active'
+    }
+    })
+
+    <!-- /********** Pricing Section **********/ -->
+    <section class="section pricing-6">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-7">
+                    <h2 class="text-uppercase text-center m-0"> Our Best Pricing Plan </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted text-center">
+                        Professional hosting at an affordable price. Distinctively recaptiualize principle-centered core
+                        competencies through client-centered core competencies.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card pricing-plan-box">
+                        <div class="pricing-box-head">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h5> Lite </h5>
+                                    <h4> $30.99/mo </h4>
+                                </div>
+                                <div class="flex-shrink-0 ms-2 pricing-box-i avatar-lg">
+                                    <i class="mdi mdi-home"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box-detail border-bottom">
+                            <ul class="list-unstyled mt-3 p-0">
+                                <li>
+                                    <span>One Year Standard Access</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Limited Courses</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>30+ Lessons</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary mt-4 me-auto"> Read More </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4">
+                    <div class="card pricing-plan-box">
+
+                        <div class="pricing-box-head">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h5> Pro </h5>
+                                    <h4> $69.99/mo </h4>
+                                </div>
+                                <div class="flex-shrink-0 ms-2 pricing-box-i avatar-lg">
+                                    <i class="mdi mdi-shield-account-outline"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box-detail border-bottom">
+                            <ul class="list-unstyled mt-3 p-0">
+                                <li>
+                                    <span>One Year Standard Access</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Limited Courses</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>30+ Lessons</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Standard Tutorials</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary mt-4 me-auto"> Read More </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4">
+                    <div class="card pricing-plan-box">
+                        <div class="pricing-box-head">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h5> Platinum </h5>
+                                    <h4> $99.99/mo </h4>
+                                </div>
+                                <div class="flex-shrink-0 ms-2 pricing-box-i avatar-lg">
+                                    <i class="mdi mdi-office-building"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box-detail border-bottom">
+                            <ul class="list-unstyled mt-3 p-0">
+                                <li>
+                                    <span>One Year Standard Access</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Limited Courses</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>30+ Lessons</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Standard Tutorials</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Unlimited Registered User</span>
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary mt-4 me-auto"> Read More </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** Get The App Now Section **********/ -->
+    <section class="section download-app">
+        <div class="bg-img-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center text-center available-app-btn">
+                <div class="col-lg-6">
+                    <h2 class="mb-3 text-white"> Download Our Apps </h2>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    </p>
+                    <p class="m-0 fw-semibold"> AVAILABLE ON - </p>
+                    <a href="javascript:void(0)"
+                        class="custom-btn btn-light text-dark d-inline-flex align-items-center">
+                        <i class="mdi mdi-apple mb-0 me-2"></i>
+                        <p class="text-start"><span class="d-block">Available On</span>Play Store</p>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="custom-btn btn-light text-dark d-inline-flex align-items-center">
+                        <i class="mdi mdi-google-play mb-0 me-2"></i>
+                        <p class="text-start"><span class="d-block">Androide App On</span>Google Play</p>
+                    </a>
+                    <i class="d-block fs-5"> Available on iPhone, iPad and all Android devices</i>
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div> <!-- END container -->
+    </section>
+
+    <!-- /********** FAQ Section **********/ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="text-uppercase text-center m-0"> Frequently Asked Questions </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted text-center">
+                        We help startups, corporations and nonprofits.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/images/application/faq-img.png" class="img-fluid" alt="">
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-box">
+                            <div class="accordion-head" id="faqHeadingOne">
+                                <button class="btn accordion-button faq-btn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                    Getting started with us
+                                </button>
+                            </div>
+                            <div id="faqOne" class="collapse show" aria-labelledby="faqHeadingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="p-3">
+                                    <p class="text-muted">
+                                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                                        Nullam pulvinar felis at metus malesuada, nec convallis lacus commodo. Duis
+                                        blandit neque purus, nec auctor mi sollicitudin nec.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- END box-->
+
+                        <div class="accordion-box">
+                            <div class="accordion-head" id="faqHeadingTwo">
+                                <button class="btn accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false"
+                                    aria-controls="faqTwo">
+                                    How to manage my account?
+                                </button>
+                            </div>
+                            <div id="faqTwo" class="collapse" aria-labelledby="faqHeadingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="p-3">
+                                    <p class="text-muted">
+                                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                                        Nullam pulvinar felis at metus malesuada, nec convallis lacus commodo. Duis
+                                        blandit neque purus, nec auctor mi sollicitudin nec.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- END box-->
+
+                        <div class="accordion-box">
+                            <div class="accordion-head" id="faqHeadingThree">
+                                <button class="btn accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false"
+                                    aria-controls="faqThree">
+                                    Do you have a free trail?
+                                </button>
+                            </div>
+                            <div id="faqThree" class="collapse" aria-labelledby="faqHeadingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="p-3">
+                                    <p class="text-muted">
+                                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                                        Nullam pulvinar felis at metus malesuada, nec convallis lacus commodo. Duis
+                                        blandit neque purus, nec auctor mi sollicitudin nec.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- END box-->
+
+                        <div class="accordion-box">
+                            <div class="accordion-head" id="faqHeadingFour">
+                                <button class="btn accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false"
+                                    aria-controls="faqFour">
+                                    Contact form isn't working?
+                                </button>
+                            </div>
+                            <div id="faqFour" class="collapse" aria-labelledby="faqHeadingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="p-3">
+                                    <p class="text-muted">
+                                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                                        Nullam pulvinar felis at metus malesuada, nec convallis lacus commodo. Duis
+                                        blandit neque purus, nec auctor mi sollicitudin nec.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- END box-->
+                    </div><!-- END accordion -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

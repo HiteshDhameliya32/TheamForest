@@ -1,0 +1,85 @@
+// right sidebar scss
+
+.switcher-btn {
+    position: fixed;
+    z-index: 105;
+    bottom: 40px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+  }
+[dir="rtl"] {
+    .switcher-btn {
+        left: 50px;
+        right: auto;
+    }
+    .offcanvas {
+        .offcanvas-body {
+            .form-check {
+                padding-right: 1.5rem;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.offcanvas.offcanvas-start {
+    width: 340px;
+}
+
+.offcanvas {
+    background-color: var(--bs-body-bg);
+    .offcanvas-header {
+        .btn-close {
+            background: 0 0;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    
+}
+
+ul.pattern {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 0;
+    list-style: none;
+    li {
+        margin: 2px;
+        .color-list {
+            display: block;
+            height: 35px;
+            width: auto;
+            margin: 5px;
+        }
+    }
+}
+
+.offcanvas {
+    z-index: 1045;
+    .offcanvas-body {
+        .form-check-wrapper {
+            border-radius: 0.625rem;
+            border: 2px solid transparent;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            overflow: hidden;
+            margin-bottom: 0.75rem;
+        }
+        .form-check-custom {
+            display: inline-flex;
+            align-items: center;
+            .form-input:checked {
+                height: 1.55rem;
+                width: 1.55rem;
+                border: 0;
+                background-color: var(--kt-success);
+            }
+            .form-check-label {
+                font-weight: 600
+            }
+        }
+    }
+}
+  

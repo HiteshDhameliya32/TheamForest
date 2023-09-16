@@ -1,0 +1,256 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Avatar',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Avatar',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+    <section class="section component-page">
+      <div class="container">
+        <div class="row g-4">
+          <div class="border-bottom mb-4">
+            <h1 class="display-6">Avatar</h1>
+            <p class="text-muted lead">
+              The Avatar component is used to represent a user, and displays the profile picture, initials
+              or fallback icon.
+            </p>
+          </div>
+  
+          <!-- /* Avatar Shape */ -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5> Shapes </h5>
+            <p>
+              Default avatar is square in shape. For rounded and circle avatar add
+              <code> .avatar-rounded </code> modifier classes respectively.
+            </p>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#avatar-shape"
+                    aria-controls="avatar-shape">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#avatar-shape-html"
+                    aria-controls="avatar-shape-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="avatar-shape">
+                  <div class="hstack flex-wrap gap-3 p-4">
+                    <img src="assets/images/component/avatar-img-1.png"
+                      class="avatar-lg rounded-circle" alt="">
+                    <img src="assets/images/component/avatar-img-1.png" class="avatar-lg rounded"
+                      alt="">
+                    <img src="assets/images/component/avatar-img-1.png"
+                      class="avatar-lg rounded-0" alt="">
+                  </div><!-- END div -->
+                </div><!-- END tab-pane -->
+  
+                <div class="tab-pane fade animated" id="avatar-shape-html">
+                  <pre class="px-4 mb-0">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-lg rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-lg rounded"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-lg rounded-0"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- /* Avatar Size */ -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5> Sizing </h5>
+            <p>
+              Fancy larger or smaller avatar? Add <code>.avatar-xxl </code>, <code>.avatar-xl</code> ,
+              <code>.avatar-lg</code> , <code>.avatar-md</code> , <code>.avatar-sm </code> , or
+              <code>.avatar-xs </code> for additional sizes.
+            </p>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#avatar-size"
+                    aria-controls="avatar-size">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#avatar-size-html"
+                    aria-controls="avatar-size-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="avatar-size">
+                  <div class="hstack flex-wrap gap-3 p-4">
+                    <img src="assets/images/component/avatar-img-3.png"
+                      class="avatar-xxl rounded-circle" alt="">
+                    <img src="assets/images/component/avatar-img-3.png"
+                      class="avatar-xl rounded-circle" alt="">
+                    <img src="assets/images/component/avatar-img-3.png"
+                      class="avatar-lg rounded-circle" alt="">
+                    <img src="assets/images/component/avatar-img-3.png"
+                      class="avatar-md rounded-circle" alt="">
+                    <img src="assets/images/component/avatar-img-3.png"
+                      class="avatar-sm rounded-circle" alt="">
+                    <img src="assets/images/component/avatar-img-3.png"
+                      class="avatar-xs rounded-circle" alt="">
+                  </div><!-- END div -->
+                </div><!-- END tab-pane -->
+  
+                <div class="tab-pane fade animated" id="avatar-size-html">
+                  <pre class="px-4 mb-0">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xxl rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xl rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-lg rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-md rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-sm rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xs rounded-circle"</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- /* Avatar Size */ -->
+          <div class="col-lg-6 col-md-10 mt-auto">
+            <h5> Avatar with initials </h5>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#avatar-initials"
+                    aria-controls="avatar-initials">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#avatar-initials-html"
+                    aria-controls="avatar-initials-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="avatar-initials">
+                  <div class="p-4 hstack flex-wrap gap-3 avatar-initial">
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-xxl">ic</span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-xl">ic</span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-lg">ic</span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-md">ic</span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-sm">ic</span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-xs">ic</span>
+                  </div><!-- END div -->
+                </div><!-- END tab-pane -->
+  
+                <div class="tab-pane fade animated" id="avatar-initials-html">
+                  <pre class="px-4 mb-0">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xxl rounded-circle"</span><span class="p">&gt;</span> ic <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xl rounded-circle"</span><span class="p">&gt;</span> ic <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-lg rounded-circle"</span><span class="p">&gt;</span> ic <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-md rounded-circle"</span><span class="p">&gt;</span> ic <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-sm rounded-circle"</span><span class="p">&gt;</span> ic <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xs rounded-circle"</span><span class="p">&gt;</span> ic <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- Avatar with Icons -->
+          <div class="col-lg-6 col-md-10 mt-auto">
+            <h5> Avatar with Icons </h5>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#avatar-icons"
+                    aria-controls="avatar-icons">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#avatar-icons-html"
+                    aria-controls="avatar-icons-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="avatar-icons">
+                  <div class="p-4 hstack flex-wrap gap-3 avatar-initial">
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-xxl">
+                      <i class="mdi mdi-facebook"> </i>
+                    </span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-xl">
+                      <i class="mdi mdi-facebook"> </i>
+                    </span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-lg">
+                      <i class="mdi mdi-facebook"> </i>
+                    </span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-md">
+                      <i class="mdi mdi-facebook"> </i>
+                    </span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-sm">
+                      <i class="mdi mdi-facebook"> </i>
+                    </span>
+                    <span class="comp-avtar-icon rounded-circle bg-primary text-white avatar-xs">
+                      <i class="mdi mdi-facebook"> </i>
+                    </span>
+                  </div><!-- END div -->
+                </div><!-- END tab-pane -->
+  
+                <div class="tab-pane fade animated" id="avatar-icons-html">
+                  <pre class="px-4 mb-0">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xxl rounded-circle bg-primary"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-facebook"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xl rounded-circle bg-primary"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-facebook"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-lg rounded-circle bg-primary"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-facebook"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-md rounded-circle bg-primary"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-facebook"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-sm rounded-circle bg-primary"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-facebook"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"avatar-xs rounded-circle bg-primary"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-facebook"</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+        </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+</body>
+
+</html>

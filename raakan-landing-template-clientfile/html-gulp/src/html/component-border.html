@@ -1,0 +1,296 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Border',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Border',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+    <section class="section component-page">
+      <div class="container">
+        <div class="row g-4">
+          <div class="border-bottom mb-4">
+            <h1 class="display-6">Border</h1>
+            <p class="text-muted lead">
+              Use border utilities to quickly style the border and border-radius of an element. Great for
+              images, buttons, or any other element.
+            </p>
+          </div>
+  
+          <!-- /********** BORDER - WIDTH **********/ -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5>Border-width</h5>
+            <p>
+              Add classes to an element to easily change border width.
+            </p>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#border-width"
+                    aria-controls="border-width">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#border-width-html"
+                    aria-controls="border-width-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="border-width">
+                  <div class="hstack flex-wrap gap-4 p-4">
+                    <div class="border-box border border-1" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="1px boder"></div>
+                    <div class="border-box border border-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="2px boder"></div>
+                    <div class="border-box border border-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="3px boder"></div>
+                    <div class="border-box border border-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="4px boder"></div>
+                    <div class="border-box border border-5" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="5px boder"></div>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="border-width-html">
+                  <pre class="mb-0 px-4">
+                    <code class="text-dark">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-1"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-3"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-4"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- /********** BORDER - COLOR **********/ -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5>Border color</h5>
+            <p>
+              Change the border color using utilities built on our theme colors.
+            </p>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#border-color"
+                    aria-controls="border-color">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#border-color-html"
+                    aria-controls="border-color-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="border-color">
+                  <div class="hstack flex-wrap gap-4 p-4">
+                    <div class="border-box border border-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="border primary"></div>
+                    <div class="border-box border border-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="border secondary"></div>
+                    <div class="border-box border border-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title=" Border Info"></div>
+                    <div class="border-box border border-success" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="Border Success"></div>
+                    <div class="border-box border border-2 border-light" data-bs-toggle="tooltip"
+                      data-bs-placement="top" title="Border light"></div>
+                    <div class="border-box border border-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="Border danger"></div>
+                    <div class="border-box border border-warning" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="Border warning"></div>
+                    <div class="border-box border border-black" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="Border black"></div>
+                    <div class="border-box border border-white" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="Border white"></div>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="border-color-html">
+                  <pre class="mb-0 px-4">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-primary"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-secondary"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-info"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-success"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-light"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-danger"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-warning"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-black"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-white"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- /********** BORDER - ADDITIVE **********/ -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5>Additive</h5>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#border-additive"
+                    aria-controls="border-additive">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#border-additive-html"
+                    aria-controls="border-additive-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="border-additive">
+                  <div class="hstack flex-wrap gap-4 p-4">
+                    <div class="border-box border-2 border"></div>
+                    <div class="border-box border-2 border-top"></div>
+                    <div class="border-box border-2 border-end"></div>
+                    <div class="border-box border-2 border-bottom"></div>
+                    <div class="border-box border-2 border-start"></div>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="border-additive-html">
+                  <pre class="mb-0 px-4">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-top"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-end"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-bottom"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border-start"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- /********** BORDER - SUBTRACTIVE **********/ -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5>Subtractive</h5>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#border-subtractive"
+                    aria-controls="border-subtractive">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#border-subtractive-html"
+                    aria-controls="border-subtractive-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="border-subtractive">
+                  <div class="hstack flex-wrap gap-4 p-4">
+                    <div class="border-box border border-2 border-0"></div>
+                    <div class="border-box border border-2 border-top-0"></div>
+                    <div class="border-box border border-2 border-end-0"></div>
+                    <div class="border-box border border-2 border-bottom-0"></div>
+                    <div class="border-box border border-2 border-start-0"></div>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="border-subtractive-html">
+                  <pre class="mb-0 px-4">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-0"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-top-0"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-end-0"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-bottom-0"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border border-start-0"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- /********** BORDER - RADIUS **********/ -->
+          <div class="col-lg-6 col-md-10 mt-auto">
+            <h5>border radius</h5>
+            <p class="text-muted">
+              Add classes to an element to easily round its corners.
+            </p>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#border-radius"
+                    aria-controls="border-radius">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#border-radius-html"
+                    aria-controls="border-radius-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="border-radius">
+                  <div class="hstack flex-wrap gap-4 p-4"> Rounded-corner-size :-
+                    <div class="border-box border rounded-0"></div>
+                    <div class="border-box border rounded-1"></div>
+                    <div class="border-box border rounded-2"></div>
+                    <div class="border-box border rounded-3"></div>
+                  </div>
+                  <div class="hstack flex-wrap gap-4 p-4"> Border-radius :-
+                    <div class="border-box border rounded"></div>
+                    <div class="border-box border rounded-top"></div>
+                    <div class="border-box border rounded-end"></div>
+                    <div class="border-box border rounded-bottom"></div>
+                    <div class="border-box border rounded-start"></div>
+                    <div class="border-box border rounded-circle"></div>
+                    <div class="border-box border rounded-pill"></div>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="border-radius-html">
+                  <pre class="mb-0 px-4">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-0"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-1"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-3"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  
+  <span class="text-success my-3">&lt;!-- Border Radius --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-top"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-end"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-bottom"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-start"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-circle"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"border rounded-pill"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+        </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

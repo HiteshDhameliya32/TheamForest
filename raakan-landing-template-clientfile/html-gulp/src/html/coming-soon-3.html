@@ -1,0 +1,216 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+<body>
+
+  @@include('./partials/page-loader.html')
+  @@include('./partials/right-sidebar.html')
+
+  <section class="section coming-soon-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="text-content mt-4">
+            <a href="javascript:void(0)" class="d-flex fs-20 text-white mb-5">
+              <img src="assets/images/dark-logo.png" class="" height="34" alt=""> 
+            </a>
+            <h2> Our Website is Coming Soon, Follow Us For Update Now </h2>
+          </div>
+          <div class="maintenance-form d-inline-block">
+            <form action="javascript:void(0)" name="form1">
+                <input type="email" name="email" class="email" placeholder="Your Email..."
+                    autocomplete="off" required>
+                <button type="submit" class="btn btn-primary subscribe">
+                    NOTIFY US <i class="mdi mdi-bell-ring"></i>
+                </button>
+            </form>
+          </div>
+        </div><!-- END col -->
+      </div><!-- END row -->
+
+      <div class="circle">
+        <div class="row">
+          <div class="col-xl-10">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-6 hours">
+                <div class="card card-shadow text-center py-auto d-flex align-items-center justify-content-center">
+                  <div>
+                    <h2 class="card-header p-0 header-font display-5 border-0" id="days"></h2>
+                    <div class="card-body p-0">
+                      <h6 class="text-white card-title text-uppercase">days</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- end col -->
+
+              <div class="col-lg-2 col-md-3 col-6 hours">
+                <div class="card card-shadow text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <h2 class="card-header p-0 header-font display-5 border-0" id="hours"></h2>
+                    <div class="card-body p-0">
+                      <h6 class="text-white card-title text-uppercase">hours</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end col-->
+
+              <div class="col-lg-2 col-md-3 col-6 hours">
+                <div class="card card-shadow text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <h2 class="card-header p-0 header-font display-5 border-0" id="mins"></h2>
+                    <div class="card-body p-0">
+                      <h6 class="text-white card-title text-uppercase">minutes</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end col-->
+
+              <div class="col-lg-2 col-md-3 col-6 hours">
+                <div class="card card-shadow text-center d-flex align-items-center justify-content-center">
+                  <div>
+                    <h2 class="card-header p-0 header-font display-5 border-0" id="secs"></h2>
+                    <div class="card-body p-0">
+                      <h6 class="text-white card-title text-uppercase">seconds</h6>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- end col -->
+            </div><!-- end row -->
+          </div><!-- end col -->
+        </div><!-- end row -->
+      </div><!-- end circle -->
+
+      <div class="home-button align-items-center">
+        <button class="btn btn-light text-dark me-3" onclick="openNav()"> Contact Us</button>
+        <div class="d-block">
+          <a href="index.html" class="btn btn-light text-dark"> <i class="mdi mdi-home"></i> Go Back Home </a>
+        </div>
+      </div>
+    </div>
+    <!--end container-->
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a
+      >
+      <div class="overlay-content">
+        <div class="subheading">
+          <h3>Contect Us</h3>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="ls-inputicon-box">
+                  <input
+                    class="form-control-1"
+                    name="company_name"
+                    type="text"
+                    placeholder="Your Name"
+                  >
+                  <i class="mdi mdi-account user-icon-1"></i>
+                </div>
+              </div>
+            </div>
+             <!--end col-->
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="ls-inputicon-box">
+                  <input
+                    class="form-control-1"
+                    name="company_phone"
+                    type="text"
+                    placeholder="Phone"
+                  >
+                  <i class="mdi mdi-phone user-icon-1"></i>
+                </div>
+              </div>
+            </div>
+             <!--end col-->
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="ls-inputicon-box">
+                  <input
+                    class="form-control-1"
+                    name="company_Email"
+                    type="email"
+                    placeholder="Email Address"
+                  >
+                  <i class="mdi mdi-at user-icon-1"></i>
+                </div>
+              </div>
+            </div>
+             <!--end col-->
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="ls-inputicon-box">
+                  <input
+                    class="form-control-1"
+                    name="company_website"
+                    type="text"
+                    placeholder="Address"
+                  >
+                  <i class="mdi mdi-map-marker user-icon-1"></i>
+                </div>
+              </div>
+            </div>
+             <!--end col-->
+
+            <textarea
+              id="w3review"
+              name="w3review"
+              rows="4"
+              cols="50"
+              class="text-area" placeholder="Your Message Heae......"></textarea>
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <i class="mdi mdi-send-circle-outline social-icon"></i>
+              <p>Sarah@example.com</p>
+            </div>
+             <!--end col-->
+
+            <div class="col-md-4">
+              <i class="mdi mdi-map-marker social-icon"></i>
+              <p>San Francisco, CA 90026 ,USA</p>
+            </div>
+            <!--end col-->
+
+            <div class="col-md-4">
+              <i class="mdi mdi-phone social-icon"></i>
+              <p>(251) 1234-456-7890</p>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+      </div>
+      <!--end overlay-content-->
+    </div>
+    <!--end overlay-->
+  </section>
+
+  <script src="assets/js/main/text-animation.js"></script>
+  @@include('./partials/vendor-scripts.html')
+
+  <script src="assets/js/main/countdown.js"></script>
+ 
+
+</body>
+</html>

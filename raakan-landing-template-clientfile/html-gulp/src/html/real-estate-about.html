@@ -1,0 +1,526 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-real-estate.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="real-estate-about.html" class="sub-mega-menu">about</a></li>
+                    <li><a href="real-estate-portfolio.html" class="sub-mega-menu">portfolio</a></li>
+                    <li><a href="real-estate-agent.html" class="sub-mega-menu">agent</a></li>
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END maintenace menu -->
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul>
+                <!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div>
+        <!--end container-->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+    'title': 'About Us',
+    'breadcrumb1': {
+    'title': 'Real Estate',
+    'link': 'index-real-estate.html',
+    'icon': 'hospital-building',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'About Us',
+    'link': '#',
+    'icon': 'doctor',
+    'active_class': 'active'
+    }
+    })
+
+    <!-- /********** about Section **********/ -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-between g-4">
+                <div class="col-lg-5 pb-5 pb-lg-0">
+                    <div class="about-img">
+                        <img src="assets/images/real-estate/about-construction-img.png" class="img-fluid" alt="">
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-6">
+                    <h2 class="fw-semibold">Efficiency. Transparency. Control.</h2>
+                    <p class="text-muted">
+                        Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                        texts.
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                        ocean.Far far away, behind the word mountains, far from the countries there live the blind
+                        texts.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0 p-0">
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> Office </span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> Kitchen Remodling </span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span>Patio Construction</span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> New Construction</span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span>High Resolution</span>
+                                </li>
+                            </ul>
+                        </div><!-- END col -->
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0 p-0">
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> Water Damage Repair </span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> Roofing Services </span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> Landscaping & Lawns </span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> Plumbing Services </span>
+                                </li>
+                                <li>
+                                    <span> <i class="mdi mdi-check-all"></i> </span>
+                                    <span> Real-Time Inspections </span>
+                                </li>
+                            </ul>
+                        </div><!-- END col -->
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- feature sec. -->
+    <section class="section feature" style="background: var(--light);">
+            <div class="container">
+                <h2 class="text-center text-uppercase m-0">our best Features</h2>
+                <div class="heading-lines">
+                    <span class="line"></span>
+                    <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                    <span class="line"></span>
+                </div>
+                <div class="row justify-content-center g-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="border-0 p-4 feature-card h-100">
+                            <div class="ftr-head">
+                                <i class="mdi mdi-office-building h1"></i>
+                            </div>
+                            <h4 class="ftr-title"> Great View </h4>
+                            <p class="mb-2 text-muted">
+                                Homes With the Best Views You Can Buy · Peak Architecture in Queenstown, New Zealand ·
+                                Natural Elegance in Jackson, Wyoming · A Seaside Sanctuary .
+                            </p>
+                        </div><!-- END card -->
+                    </div><!-- END col -->
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="border-0 p-4 feature-card h-100">
+                            <div class="ftr-head">
+                                <i class="mdi mdi-diamond-outline h1"></i>
+                            </div>
+                            <h4 class="ftr-title"> Luxury </h4>
+                            <p class="mb-2 text-muted">
+                                luxury real estate in India with Sotheby's International Realty. 
+                                View our exclusive listings of India homes and connect with an agent today.
+                            </p>
+                        </div><!-- END card -->
+                    </div><!-- END col -->
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="border-0 p-4 feature-card h-100">
+                            <div class="ftr-head">
+                                <i class="mdi mdi-lock-outline h1"></i>
+                            </div>
+                            <h4 class="ftr-title"> Secuity </h4>
+                            <p class="mb-2 text-muted">
+                                Real estate security is often treated as a public good. As a property manager, 
+                                you might have some leeway in how you handle maintenance and budget spending.
+                            </p>
+                        </div><!-- END card -->
+                    </div><!-- END col -->
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="border-0 p-4 feature-card h-100">
+                            <div class="ftr-head">
+                                <i class="mdi mdi-tree-outline h1"></i>
+                            </div>
+                            <h4 class="ftr-title"> Nature All Around You </h4>
+                            <p class="mb-2 text-muted">
+                                Alembic Real Estate has been known for the diligence and dedication towards creating beautiful, 
+                                sustainable architectural creations for over decades.
+                            </p>
+                        </div><!-- END card -->
+                    </div><!-- END col -->
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="border-0 p-4 feature-card h-100">
+                            <div class="ftr-head">
+                                <i class="mdi mdi-car h1"></i>
+                            </div>
+                            <h4 class="ftr-title"> Get Free Parking Place </h4>
+                            <p class="mb-2 text-muted">
+                                It depends on the property. Single Family Homes it makes logical sense. 
+                                Even some duplex or multi families if there is space and it logically tracks then.
+                            </p>
+                        </div><!-- END card -->
+                    </div><!-- END col -->
+    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="border-0 p-4 feature-card h-100">
+                            <div class="ftr-head">
+                                <i class="mdi mdi-shield-outline h1"></i>
+                            </div>
+                            <h4 class="ftr-title"> You Are Safe. 24/7 Security </h4>
+                            <p class="mb-2 text-muted">
+                                many businesses and organizations use security guard services to protect their property
+                                and ensure the safety of their employees and customers.
+                            </p>
+                        </div><!-- END card -->
+                    </div><!-- END col -->
+                </div><!-- END row -->
+            </div><!-- END container -->
+    </section>
+
+    <!-- /********** service Section **********/ -->
+    <section class="section service">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center text-uppercase m-0">service we provide</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted pb-4">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row">
+                <div class="col-md-4 d-none d-lg-block">
+                    <div class="card text-end p-4 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-semibold"> Property </p>
+                                    <p class="text-muted fs-4 m-0">Evaluate Property</p>
+                                </div>
+                                <div class="flex-shrink-0 service-icon ms-4">
+                                    <span class="after"></span>
+                                    <span class="before"></span>
+                                    <i class="mdi mdi-home-outline"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary read-btn rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-none d-lg-block">
+                    <div class="card text-center p-4 pt-5 mt-4 service-box active">
+                        <div class="card-head">
+                            <!-- <div class=""> -->
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-briefcase-variant-outline"></i>
+                            </div>
+                            <p class="m-0 fw-semibold"> Agent </p>
+                            <p class="text-muted fs-3 m-0">Meeting with Agent</p>
+                            <!-- </div> -->
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary read-btn rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-none d-lg-block">
+                    <div class="card text-start p-4 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="flex-shrink-0 service-icon me-4">
+                                    <span class="after"></span>
+                                    <span class="before"></span>
+                                    <i class="mdi mdi-key-outline"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-semibold"> Deal </p>
+                                    <p class="text-muted fs-4 m-0">Close the Deal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary read-btn rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="col-md-4 d-lg-none d-block">
+                    <div class="card text-center border p-4 pt-5 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-monitor-cellphone"></i>
+                            </div>
+                            <div class=" ms-3">
+                                <p class="m-0 fw-semibold"> web design </p>
+                                <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-lg-none d-block">
+                    <div class="card text-center border p-4 pt-5 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-code-tags"></i>
+                            </div>
+                            <div class=" ms-3">
+                                <p class="m-0 fw-semibold"> illustrations </p>
+                                <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-lg-none d-block">
+                    <div class="card text-center border p-4 pt-5 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-layers-triple-outline"></i>
+                            </div>
+                            <div class=" ms-3">
+                                <p class="m-0 fw-semibold"> SEO </p>
+                                <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** cusromer Section **********/ -->
+    <section class="section customer mt-4">
+        <div class="container">
+            <div class="row d-flex justify-content-center text-start g-4">
+                <div class="col-lg-5 col-md-6">
+                    <p class="text-primary m-0">Testimonial</p>
+                    <h1>What Our Clients Say About Us!</h1>
+                    <p class="text-muted">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
+                        erat ipsum et lorem et sit sed stet lorem sit clita duo justo.
+                    </p>
+                    <a href="javascript:void(0)" class="btn btn-primary"> See More </a>
+                </div><!-- END col -->
+
+                <div class="col-md-6 offset-lg-1">
+                    <div class="swiper mySwiper-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide text-start">
+                                <div class="col-md-12">
+                                    <img src="assets/images/clients/05.png" class="rounded-3 avatar-xl" alt="">
+                                    <p class="my-4 fs-5 text-muted ">
+                                        Cumque dignissimos quis distinctio architecto doloremque delectus, ut magni
+                                        temporibus, eveniet dolores sed libero.
+                                    </p>
+                                    <h4 class="mt-4 text-primary"> Rose Marie </h4>
+                                    <span class="text-muted"> CEO at Intelligent AI </span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide text-start">
+                                <div class="col-md-12">
+                                    <img src="assets/images/clients/03.png" class="rounded-3 avatar-xl" alt="">
+                                    <p class="my-4 fs-5 text-muted">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                    <h4 class="mt-4 text-primary"> Jack Wilson </h4>
+                                    <span class="text-muted"> MD at ForestClub </span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide text-start">
+                                <div class="col-md-12">
+                                    <img src="assets/images/clients/07.png" class="rounded-3 avatar-xl" alt="">
+                                    <p class="my-4 fs-5 text-muted">
+                                        There is now an abundance of readable dummy texts. These are usually used when
+                                        a text is required.
+                                    </p>
+                                    <h4 class="mt-4 text-primary"> Kathryn Murphy </h4>
+                                    <span class="text-muted"> Director Of Finance </span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide text-start">
+                                <div class="col-md-12">
+                                    <img src="assets/images/clients/06.png" class="rounded-3 avatar-xl" alt="">
+                                    <p class="my-4 fs-5 text-muted">
+                                        It seems that only fragments of the original text remain in the Lorem Ipsum
+                                        texts used today.
+                                    </p>
+                                    <h4 class="mt-4 text-primary"> Arnold Burner </h4>
+                                    <span class="text-muted"> Web Expert </span>
+                                </div>
+                            </div><!-- END swiper-slide -->
+                        </div><!-- swiper-wrapper -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div><!-- END swiper -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

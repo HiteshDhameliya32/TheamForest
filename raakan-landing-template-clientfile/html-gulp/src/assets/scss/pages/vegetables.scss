@@ -1,0 +1,313 @@
+/********** Home Section css **********/
+.veletable-home {
+    padding-bottom: 0px;
+    .swiper {
+        min-height: 800px;
+        padding: 0;
+        .swiper-slide {
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 1;
+            color: $white;
+            .home-box {
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+/********** Feature Section css **********/
+.vegetable-feature {
+    .ftr-icon-box {
+        padding: 56px 24px 30px 24px;
+        margin-top: 44px;
+        text-align: center;
+        position: relative;
+        border: none;
+        box-shadow: $shadow-sm;
+        .ftr-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            border: 2px solid $primary;
+            overflow: hidden;
+            background: var(--light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -36px;
+            left: calc(50% - 36px);
+            transition: 0.4s;
+            i {
+                font-size: 36px;
+                line-height: 0.8;
+                margin: 0 auto;
+                color: $primary;
+                transition: 0.4s;
+            }
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 0;
+                background-color: $primary;
+                transition: 0.4s;
+                visibility: hidden;
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+        .title {
+            font-size: 18px;
+        }
+        .description {
+            line-height: 24px;
+            font-size: 14px;
+            margin: 0;
+        }
+        &:hover {
+            .ftr-icon {
+                i {
+                    color: $white;
+                }
+                &:after {
+                    height: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/********** Service Section css **********/
+.vegetable-service {
+    background: var(--light);
+    .service-box {
+        padding: 1rem;
+        position: relative;
+        overflow: hidden;
+        .box-img {
+            margin-bottom: 16px;
+        }
+
+        span:nth-child(6) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, $indigo-600, $info);
+        }
+        span:nth-child(5) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, $indigo-600, $info);
+            // animation-delay: 1s;
+        }
+        span:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to left, $indigo-600, $info);
+        }
+        span:nth-child(4) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to top, $indigo-600, $info);
+            // animation-delay: 1s;
+        }
+        &:hover {
+            span:nth-child(6) {
+                animation: animate1 2s linear infinite;
+            }
+            span:nth-child(5) {
+                animation: animate2 2s linear infinite;
+            }
+            span:nth-child(4) {
+                animation: animate4 2s linear infinite;
+            }
+            span:nth-child(3) {
+                animation: animate3 2s linear infinite;
+            }
+        }
+    }
+}
+
+/********** organic vegetable Section css **********/
+.organic-vegetables {
+    background: var(--light);
+    .swiper {
+        padding: 30px 10px;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            border: 1px solid var(--text-primary);
+            transition: all 0.5s ease;
+        }
+        .swiper-pagination-bullet-active {
+            transition: all 0.5s ease;
+            background-color: var(--text-primary);
+        }
+    }
+    .content-box {
+        text-align: center;
+        overflow: hidden;
+        .content-img {
+            margin: 30px 10px;
+            img {
+                transition: all 0.8s linear;
+                border: 2px solid $gray-400;
+                padding: 5px;
+            }
+        }
+        .content-detail {
+            a {
+                font-size: 26px;
+                color: var(--text-primary);
+            }
+            p {
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+        }
+        &:hover {
+            .content-img {
+                img {
+                    transform: scale(1.04);
+                    transition: all 0.8s linear;
+                }
+            }
+        }
+    }
+}
+
+/********** best product Section css **********/
+.best-product {
+    background: var(--light);
+    .product-name {
+        cursor: pointer;
+        color: $primary;
+    }
+    img {
+        cursor: pointer;
+    }
+    .stars .mdi {
+        color: $warning;
+    }
+    .card {
+        position: relative;
+        border: none;
+        border-radius: 4px;
+        .img {
+            border-radius: 4px 4px 0px 0px;
+        }
+        .shop-icons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: none;
+            animation: fadeInAnimation ease 0.9s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            .btn.btn-icon,
+            .btn.btn-icon1,
+            .btn.btn-icon2 {
+                width: 36px;
+                height: 36px;
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+            .btn.btn-icon {
+                background-color: $danger;
+                border: 1px solid $danger;
+            }
+            .btn.btn-icon1 {
+                background-color: $primary;
+                border: 1px solid $primary;
+            }
+            .btn.btn-icon2 {
+                background-color: $warning;
+                border: 1px solid $warning;
+            }
+        }
+        &:hover .shop-icons {
+            display: block;
+        }
+    }
+    .col-12.is-hidden {
+        display: none;
+    }
+}
+
+/********** KEY-FRAME **********/
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

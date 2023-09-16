@@ -1,0 +1,750 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+    
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a><!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="nft.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="nft-explore.html" class="sub-mega-menu">explore</a></li>
+                    <li><a href="maintenance-page-2.html" class="sub-mega-menu">maintenance</a></li>
+                    <li><a href="help-center.html" class="sub-mega-menu">help center</a></li>
+
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+                </ul><!-- end navigation menu -->
+            </div><!-- end mega navigation -->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!-- Login button Start -->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul><!-- Login button End -->
+            </div><!-- end login & collapse -->
+        </div><!-- end container -->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+    'title': 'explore items',
+    'breadcrumb1': {
+    'title': 'NFT',
+    'link': 'nft.html',
+    'icon': 'hospital-building',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Explore',
+    'link': '#',
+    'icon': 'doctor',
+    'active_class': 'active'
+    }
+    })
+
+    <!-- /********** Live Action Section **********/ -->
+    <section class="section nft-live-action mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/01.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/02.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">rasselmrh</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-5.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 12 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.64 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/03.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/04.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Julian Canne</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-6.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 20 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.90 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/09.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/06.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Elix_Qe</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-7.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 24 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.52 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/08.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/07.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Mimi_Chao </p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-8.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 68 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.98 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/09.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/06.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Elix_Qe</p>
+                            </div>
+                        </div>
+
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-4.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 43 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.76 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/08.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/07.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Mimi_Chao </p>
+                            </div>
+                        </div>
+
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-1.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 98 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.24 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/01.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/02.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">rasselmrh</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-3.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 65 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.90 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/03.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/04.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Julian Canne</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-2.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 88 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.99 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+            <nav class="navigation pagination-item">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- END container -->
+    </section>
+
+      <!-- /********** Top Collection Section **********/ -->
+      <section class="section nft-top-collection">
+        <div class="container">
+            <h2 class="mb-4">Top collections in <span class="text-danger">1 day</span> </h2>
+            <div class="row g-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">1</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-1.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block text-3 fw-bold text-uppercase" href="javascript:void(0)">
+                                    MX Clone
+                                </a>
+                                <span class="text-muted">$3,911,243</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">2</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-2.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block text-3 fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Patterfly Studio -->
+                                    Patterfly
+                                </a>
+                                <span class="text-muted">3,002.98 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">3</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-3.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- NFT Art Official -->
+                                    NFT Art
+                                </a>
+                                <span class="text-muted">$12,002.48</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">4</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-4.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    PhotoLution
+                                </a>
+                                <span class="text-muted">93,002.98 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">5</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-1.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    3D Model
+                                </a>
+                                <span class="text-muted">$23,002.98</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">6</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-2.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    The Artificial
+                                </a>
+                                <span class="text-muted">93,002.98 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">7</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-3.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Paper Bag World -->
+                                    Paper Bag
+                                </a>
+                                <span class="text-muted">$3,002.98</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">8</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-4.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    Liquidities
+                                </a>
+                                <span class="text-muted">826,843 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">9</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-5.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    Sketchbook
+                                </a>
+                                <span class="text-muted">$655,444</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">10</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-6.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    NFT World
+                                </a>
+                                <span class="text-muted">221,416 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">11</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-5.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Zombi Club Tokene -->
+                                    Zombi Club
+                                </a>
+                                <span class="text-muted">$221,416</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">12</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-7.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Tattoo Girl Art -->
+                                    Tattoo Girl
+                                </a>
+                                <span class="text-muted">1,623,703 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** Newsletter Section **********/ -->
+    <section class="section newsletter-section-1 pt-0">
+        <div class="container">
+            <div class="bg-overlay">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fw-normal text-uppercase">SUBSCRIBE OUR NEWSLETTER</h2>
+                        <p>Get Latest News Everyday</p>
+                        <div class="mt-2 mb-4 mb-lg-0">
+                            <i class="mdi mdi-information"></i>
+                            <span>Give it a try: it only takes a click to unsubscribe</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <form action="javascript:void(0)">
+                            <div class="input-group">
+                                <input type="email" placeholder="Enter Your Email" class="form-control"
+                                    autocomplete="off" required>
+                                <button type="submit" class="btn btn-primary input-group-btn">
+                                    SUBSCRIBE <i class="mdi mdi-bell-ring"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+    
+    @@include('./partials/vendor-scripts.html')
+    <script>
+        $('.like-btn').on('click', function() {
+            $(this).toggleClass('is-active');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+.coming-soon-3 {
+    background-image: url(../images/coming-soon/comingsoon-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    display: flex;
+    padding: 3rem 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 1;
+    position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 70%;
+        height: 100%;
+        background: rgba($black, 0.84);
+        clip-path: polygon(0 0, 90% 0, 70% 100%, 0 100%);
+        z-index: -1;
+    }
+
+  
+    .circle {
+      margin-top: 3rem;
+      .card {
+        position: relative;
+        background: transparent;
+        box-sizing: border-box;
+        text-align: center;
+        border: 2px solid;
+        box-shadow: 0 10px 40px rgba($black, 0.7);
+        display: inline-block;
+        padding: 16px;
+        text-align: center;
+        border: 1px solid;
+        border-bottom: 3px solid $warning;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .card-header {
+        background: none;
+        // margin-top: 13px;
+      }
+      .card-shadow {
+        box-shadow: 8px 14px 19px 3px hsla(0, 0%, 0%, 0.478);
+      }
+    }
+    .currently {
+      text-align: center;
+    }
+  
+    h3,
+    h4,
+    p {
+      color: $white;
+    }
+    .home-button {
+      display: flex;
+      margin-top: 3rem;
+      font-size: 19px;
+      cursor: pointer;
+    }
+  
+    .subheading {
+      position: relative;
+      margin-bottom: 30px;
+      text-align: center;
+      h3 {
+        border-color: $primary !important;
+        display: inline-block;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1em;
+        letter-spacing: 0.5px;
+        position: relative;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border-bottom: 2px solid $primary;
+        &:before {
+          content: "";
+          background-color: $primary;
+          left: 0;
+          position: absolute;
+          width: 2px;
+          height: 5px;
+          bottom: 0;
+        }
+        &:after {
+          content: "";
+          background-color: $primary;
+          right: 0;
+          position: absolute;
+          width: 2px;
+          height: 5px;
+          bottom: 0;
+        }
+      }
+    }
+  
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+  
+      a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 21px;
+        color: $muted;
+        display: block;
+        transition: 0.3s;
+        :hover,
+        :focus {
+          color: $white;
+        }
+      }
+      .closebtn {
+        position: absolute;
+        right: 45px;
+        font-size: 60px;
+      }
+  
+      .overlay-content {
+        position: relative;
+        top: 5%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        .form-group {
+          position: relative;
+          font-size: 19px;
+          color: $white;
+  
+          .form-control-1 {
+            width: 100%;
+            height: 45px;
+            padding: 0px 37px;
+            border: 1px solid $gray-300;
+            border-radius: 10px;
+            font-size: 15px;
+            margin: 0 0 28px;
+            color: $white;
+            background: $black;
+          }
+          .user-icon-1 {
+            position: absolute;
+            left: 13px;
+            top: 8px;
+            color: $primary;
+          }
+        }
+        .text-area {
+          color: $muted;
+          background: $black;
+          border: 1px solid $gray-300;
+          margin-bottom: 4rem;
+          border-radius: 10px;
+        }
+        .social-icon {
+          font-size: 43px;
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 426px) {
+    .coming-soon-3 .circle .card {
+      height: 136px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .coming-soon-3 {
+      &:after {
+        width: 100%;
+        height: 100%;
+        background: rgba($black, 0.62);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+      a.text-white {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .col-lg-8 {
+        text-align: center;
+      }
+      .circle {
+        .card {
+          width: 183px;
+          margin: 0;
+          margin-bottom: 2rem;
+          h6 {
+            font-size: 11px;
+          }
+        }
+        .hours {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .home-button {
+        margin: 0;
+        justify-content: center;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .coming-soon-3 {
+      .circle {
+        .card {
+          margin: 0;
+        }
+        .card-header {
+          // background: none;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,112 @@
+/********** Portfolio css **********/
+.real-estate-portfolio {
+    .nav-link {
+        margin: 0px 10px;
+        position: relative;
+        font-weight: 600;
+        border: none;
+        background: transparent;
+        color: var(--text-primary);
+        transition: all 0.5s;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 0px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #7c7f90, transparent);
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.2s;
+        }
+        &.active,
+        &:hover {
+            color: #7c7f90;
+            &::before {
+                width: 80px;
+            }
+        }
+    }
+    .portfolio-box {
+        overflow: hidden;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.5s linear;
+        }
+        h3 {
+            color: $white;
+            position: absolute;
+            width: 100%;
+            padding: 6px 20px;
+            top: 9px;
+            font-size: 16px;
+            opacity: 0;
+            transition: all 1s ease-in;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+            h3 {
+                background-color: $warning;
+                opacity: 1;
+                transition: all 1s ease-in;
+            }
+        }
+    }
+}
+
+/********** Newsletter css **********/
+.newsletter-section {
+    background-image: url(../images/online-learning/newsletter-img-1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: $white;
+    padding: 5rem 0;
+    .newsletter-box {
+        padding: 3rem;
+        // background-color: rgba($white, 0.2);
+        background-color: var(--rgba-light--bc);
+        border: 6px double rgba($white, 0.5);
+        backdrop-filter: blur(14px);
+        border-radius: 30px;
+        form {
+            .form-control:focus {
+                border: $black;
+            }
+            input {
+                height: 50px;
+                box-shadow: none;
+            }
+        }
+        .pera {
+            color: $gray-500;
+            font-style: italic;
+            text-transform: capitalize;
+            letter-spacing: 8px;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .real-estate-portfolio {
+        .nav-link {
+            width: 100%;
+        }
+    }
+    .newsletter-section {
+        .newsletter-box {
+            padding: 1rem;
+        }
+    }
+}

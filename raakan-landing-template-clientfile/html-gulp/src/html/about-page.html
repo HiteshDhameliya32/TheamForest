@@ -1,0 +1,558 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/navbar.html')
+    @@include('./partials/right-sidebar.html')
+    @@include('./partials/breadcrumb.html', {
+    'title': 'About Us',
+    'breadcrumb1': {
+    'title': 'Pages',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': 'Company',
+    'link': '#',
+    'icon': 'account-multiple',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'About Us',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+
+    <!-- about sec. -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-lg-around">
+                <div class="col-lg-4 col-md-6 pb-5 pb-lg-0">
+                    <img src="assets/images/about/about-img-1.png" class="img-fluid" alt="">
+                </div><!-- END col -->
+
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="fw-semibold"> We’re A Creative Design Studios </h2>
+                    <p class="text-muted">
+                        Sed tincidunt nisl in porta hendrerit. Morbi bibendum neque in leo pellentesque, non hendrerit
+                        lectus eleifend. In finibus nibh non mi ullamcorper, non auctor leo consequat. Nunc malesuada,
+                        nisi quis vehicula lacinia, justo neque eleifend quam, ac bibendum turpis risus sed nulla.
+                        Integer augue augue, commodo sed sodales et, lacinia at mauris. Nullam egestas neque ac eleifend
+                        sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+  
+    <!-- feature sec. -->
+    <section class="section feature" style="background: var(--light);">
+        <div class="container">
+            <h2 class="text-center text-uppercase m-0">our best Features</h2>
+            <div class="heading-lines">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row justify-content-center g-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="border-0 p-4 feature-card h-100">
+                        <div class="ftr-head">
+                            <i class="mdi mdi-cog-outline h1"></i>
+                        </div>
+                        <h4 class="ftr-title"> built for speed </h4>
+                        <p class="mb-2 text-muted">
+                            Built for Speed ... A remarkabley fast GMC station wagon. Fully Equiped with plenty of cargo
+                            space for grocieries, fences, etc. Driven by over-protected mothers.
+                        </p>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="border-0 p-4 feature-card h-100">
+                        <div class="ftr-head">
+                            <i class="mdi mdi-chat-outline h1"></i>
+                        </div>
+                        <h4 class="ftr-title"> large community </h4>
+                        <p class="mb-2 text-muted">
+                            A large community [of people] and a big community [of people] both seem to reflect a good
+                            sized quantity, while a huge community seems to imply.
+                        </p>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="border-0 p-4 feature-card h-100">
+                        <div class="ftr-head">
+                            <i class="mdi mdi-xml h1"></i>
+                        </div>
+                        <h4 class="ftr-title"> Well Commented Code </h4>
+                        <p class="mb-2 text-muted">
+                            It describes the intent of the code, not the code itself. It morphs into excellent comments
+                            when you expand it out into full code, and it also.
+                        </p>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="border-0 p-4 feature-card h-100">
+                        <div class="ftr-head">
+                            <i class="mdi mdi-monitor h1"></i>
+                        </div>
+                        <h4 class="ftr-title"> fully Responsive </h4>
+                        <p class="mb-2 text-muted">
+                            A fully responsive website will rescale itself to preserve the user experience and look and
+                            feel across all devices — with no irritating zooming, scrolling or resizing.
+                        </p>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="border-0 p-4 feature-card h-100">
+                        <div class="ftr-head">
+                            <i class="mdi mdi-clock-outline h1"></i>
+                        </div>
+                        <h4 class="ftr-title"> efficient </h4>
+                        <p class="mb-2 text-muted">
+                            The term efficiency can be defined as the ability to achieve an end goal with little to no
+                            waste, effort, or energy.
+                        </p>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="border-0 p-4 feature-card h-100">
+                        <div class="ftr-head">
+                            <i class="mdi mdi-chart-line h1"></i>
+                        </div>
+                        <h4 class="ftr-title"> in-depth statistics </h4>
+                        <p class="mb-2 text-muted">
+                            The depth of a point relative to a given data set measures how deep that point lies in the
+                            data cloud.
+                        </p>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- service sec. -->
+    <section class="section service">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center text-uppercase m-0">service we provide</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted pb-4">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row">
+                <div class="col-md-4 d-none d-lg-block">
+                    <div class="card text-end p-4 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-semibold"> web design </p>
+                                    <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                                </div>
+                                <div class="flex-shrink-0 service-icon ms-4">
+                                    <span class="after"></span>
+                                    <span class="before"></span>
+                                    <i class="mdi mdi-monitor-cellphone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary read-btn rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-none d-lg-block">
+                    <div class="card text-center p-4 pt-5 mt-4 service-box active">
+                        <div class="card-head">
+                            <!-- <div class=""> -->
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-code-tags"></i>
+                            </div>
+                            <p class="m-0 fw-semibold"> illustrations </p>
+                            <p class="text-muted fs-3 m-0">PURPOSEFUL & CREATIVE</p>
+                            <!-- </div> -->
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary read-btn rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-none d-lg-block">
+                    <div class="card text-start p-4 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="flex-shrink-0 service-icon me-4">
+                                    <span class="after"></span>
+                                    <span class="before"></span>
+                                    <i class="mdi mdi-layers-triple-outline"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="m-0 fw-semibold"> SEO </p>
+                                    <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary read-btn rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="col-md-4 d-lg-none d-block">
+                    <div class="card text-center border p-4 pt-5 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-monitor-cellphone"></i>
+                            </div>
+                            <div class=" ms-3">
+                                <p class="m-0 fw-semibold"> web design </p>
+                                <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-lg-none d-block">
+                    <div class="card text-center border p-4 pt-5 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-code-tags"></i>
+                            </div>
+                            <div class=" ms-3">
+                                <p class="m-0 fw-semibold"> illustrations </p>
+                                <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 d-lg-none d-block">
+                    <div class="card text-center border p-4 pt-5 mt-4 service-box">
+                        <div class="card-head">
+                            <div class="service-icon service-icon-1 mx-auto">
+                                <span class="after"></span>
+                                <span class="before"></span>
+                                <i class="mdi mdi-layers-triple-outline"></i>
+                            </div>
+                            <div class=" ms-3">
+                                <p class="m-0 fw-semibold"> SEO </p>
+                                <p class="text-muted fs-4 m-0">PURPOSEFUL & CREATIVE</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 mt-3">
+                            <p class="text-muted">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <button class="btn btn-primary rounded-pill"> Read More </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- team sec. -->
+    <section class="section team" style="background-color: var(--light);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="text-center text-uppercase m-0">Our Expert Team Member</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted pb-4">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="d-flex justify-content-center">
+                        <div class="shape-box">
+                            <img src="assets/images/team/team-img-1.png" class="img-fluid" alt="">
+                            <div class="img-overlay"></div>
+                            <div class="member-detail">
+                                <div class="show-cont">
+                                    <h5 class="text-center"> Samanta J.D </h5>
+                                </div>
+                                <p class="text-muted text-center"> (UX Designer) </p>
+                                <div class="member-contact">
+                                    <ul class="list-unstyled p-0 mb-0">
+                                        <li>
+                                            <i class="mdi mdi-phone text-muted me-2"></i>
+                                            <a href="javascript:void(0)">900 153 XX XX</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-email text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-instagram text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-skype text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="d-flex justify-content-center">
+                        <div class="shape-box">
+                            <img src="assets/images/team/team-img-2.png" class="img-fluid" alt="">
+                            <div class="img-overlay"></div>
+                            <div class="member-detail">
+                                <div class="show-cont">
+                                    <h5 class="text-center"> Mark Heffner </h5>
+                                </div>
+                                <p class="text-muted text-center"> (SEO Specialist) </p>
+                                <div class="member-contact">
+                                    <ul class="list-unstyled p-0 mb-0">
+                                        <li>
+                                            <i class="mdi mdi-phone text-muted me-2"></i>
+                                            <a href="javascript:void(0)">300 653 XX XX</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-email text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-instagram text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-skype text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="d-flex justify-content-center">
+                        <div class="shape-box">
+                            <img src="assets/images/team/team-img-3.png" class="img-fluid" alt="">
+                            <div class="img-overlay"></div>
+                            <div class="member-detail">
+                                <div class="show-cont">
+                                    <h5 class="text-center"> Jackson Robin </h5>
+                                </div>
+                                <p class="text-muted text-center"> (Creative Director) </p>
+                                <div class="member-contact">
+                                    <ul class="list-unstyled p-0 mb-0">
+                                        <li>
+                                            <i class="mdi mdi-phone text-muted me-2"></i>
+                                            <a href="javascript:void(0)"> 900 153 XX XX</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-email text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-instagram text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-skype text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="d-flex justify-content-center">
+                        <div class="shape-box">
+                            <img src="assets/images/team/team-img-4.png" class="img-fluid" alt="">
+                            <div class="img-overlay"></div>
+                            <div class="member-detail">
+                                <div class="show-cont">
+                                    <h5 class="text-center"> Sophia Jones </h5>
+                                </div>
+                                <p class="text-muted text-center"> (Head of Marketting) </p>
+                                <div class="member-contact">
+                                    <ul class="list-unstyled p-0 mb-0">
+                                        <li>
+                                            <i class="mdi mdi-phone text-muted me-2"></i>
+                                            <a href="javascript:void(0)"> 087 454 XX XX</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-email text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-instagram text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                        <li>
+                                            <i class="mdi mdi-skype text-muted me-2"></i>
+                                            <a href="javascript:void(0)">Example</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- cusromer review sec. -->
+    <section class="section customer">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2 class="text-center text-uppercase m-0">our clients Says</h2>
+                <div class="heading-lines">
+                    <span class="line"></span>
+                    <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="swiper mySwiper-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="col-md-8">
+                                <p class="slider-p">
+                                    “Thank you for running the event so smoothly – I had a great time, not only
+                                    presenting, but also watching other sessions and interacting with attendees.”
+                                </p>
+                                <img src="assets/images/clients/05.png" class="rounded-circle avatar-xxl" alt="">
+                                <h4 class="mt-4"> Rose Marie </h4>
+                                <p> CEO at Intelligent AI </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="col-md-8">
+                                <p class="slider-p">
+                                    "Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt
+                                    efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus."
+                                </p>
+                                <img src="assets/images/clients/03.png" class="rounded-circle avatar-xxl" alt="">
+                                <h4 class="mt-4"> Jack Wilson </h4>
+                                <p> MD at ForestClub </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="col-md-8">
+                                <p class="slider-p">
+                                    “Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few
+                                    trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit
+                                    at regular.”
+                                </p>
+                                <img src="assets/images/clients/07.png" class="rounded-circle avatar-xxl" alt="">
+                                <h4 class="mt-4"> Kathryn Murphy </h4>
+                                <p> Director Of Finance </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="col-md-8">
+                                <p class="slider-p">
+                                    “Get your documents out the door fast to keep deals moving with automatic
+                                    notifications, on-the-fly editing, and integrated.”
+                                </p>
+                                <img src="assets/images/clients/06.png" class="rounded-circle avatar-xxl" alt="">
+                                <h4 class="mt-4"> Arnold Burner </h4>
+                                <p> Web Expert </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div><!-- END swiper -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

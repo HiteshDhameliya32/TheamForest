@@ -1,0 +1,87 @@
+.course-home {
+  background-image: url(../images/course-img/home-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  align-items: center;
+  padding-top: 88px;
+  height: 800px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba($black, 0.7);
+  }
+  .hero-style1 {
+    position: relative;
+    z-index: 6;
+    padding: 198px 0 156px 0;
+    max-width: 620px;
+  }
+  .hero-img1 {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+  }
+}
+
+.home-about {
+  background-color: var(--light);
+  .about-award {
+    padding: 14px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    height: 100%;
+    background-color: var(--gray-100);
+  }
+}
+
+.course-popular {
+  .packages-single-item {
+    width: 100%;
+    box-shadow: var(--shadow-sm);
+    transition: 0.3s ease-in-out;
+    .packages-img {
+      img {
+        transition: 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.agency-services-section {
+  background-color: var(--light);
+}
+
+@media (max-width: 1400px) {
+  .course-home .shape2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .course-home .hero-img1,
+  .shape1 img {
+    display: none;
+  }
+}
+
+@media (max-width: 792px) {
+  .course-home {
+    height: auto;
+    .hero-style1 {
+      padding: 7rem 0 2rem;
+    }
+  }
+}

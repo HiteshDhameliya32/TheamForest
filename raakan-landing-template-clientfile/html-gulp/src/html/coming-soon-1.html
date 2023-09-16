@@ -1,0 +1,47 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+
+    <section class="coming-soon-1">
+        <div class="container-fluid">
+            <a href="javascript:void(0)" class="d-flex justify-content-center fs-20 text-white mb-3">
+                <img src="assets/images/light-logo.png" height="34" alt="">
+            </a>
+            <div class="clock">
+                <span id="hours" class="hou"></span>
+                <span class="dot"></span>
+                <span id="minutes" class="min">Loading...</span>
+                <span class="dot"></span>
+                <span id="seconds" class="sec"></span>
+                <span id="session" class="ses"></span>
+                <span id="fy" class="fy"></span>
+            </div>
+            <h1>We Are</h1>
+            <h2 class="fw-bold display-5">"Coming Soon! Be Ready To Connected With Us"</h2>
+            <p>Are you ready for the next big thing? Get ready to be blown away by our revolutionary new product, Coming
+                Soon.</p>
+            <div class="d-block">
+                <a href="index.html" class="btn btn-light text-dark"> <i class="mdi mdi-home"></i> Go Back Home </a>
+            </div>
+            <div class="background-animation"></div>
+        </div>
+    </section>
+    
+    @@include('./partials/vendor-scripts.html')
+    <script src="assets/js/main/coming-soon-1.js"></script>
+
+</body>
+
+</html>

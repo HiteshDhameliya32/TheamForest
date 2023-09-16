@@ -1,0 +1,746 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/navbar.html')
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+
+    <section class="travelbooking">
+        <div class="container">
+            <div class="row row-travelbooking align-items-center">
+                <div class="col-lg-6 py-5">
+                    <h1>Let's make a tour</h1>
+                    <h1 class="display-5 fw-bold text-primary">Discover the beauty</h1>
+                    <div class="pt-3 tab">
+                        <span class="mdi mdi-map-marker fs-4 booking ps-0"></span>
+                        <span class="mdi mdi-airplane fs-4 booking"></span>
+                        <span class="mdi mdi-bed fs-4 booking"></span>
+                    </div>
+                    <!-- end tab -->
+                    <form>
+                        <div class="row g-3 my-3 booking-section">
+                            <div class="col-sm-6">
+                                <div class="input-group py-2 d-flex align-items-center">
+                                    <span class="mdi mdi-map-marker travel-icons fs-5"></span>
+                                    <input type="text" class="form-control rounded-0" placeholder="From where" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group py-2 d-flex align-items-center">
+                                    <span class="mdi mdi-map-marker travel-icons fs-5"></span>
+                                    <input type="text" class="form-control rounded-0" placeholder="To where" required>
+                                </div>
+                            </div>
+                            <!-- end from where - to where  -->
+                            <div class="col-sm-6">
+                                <div class="input-group py-2 d-flex align-items-center">
+                                    <input type="date" class="form-control rounded-0" placeholder="mm/dd/yyyy" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group py-2 d-flex align-items-center">
+                                    <input type="date" class="form-control rounded-0" placeholder="mm/dd/yyyy" required>
+                                </div>
+                            </div>
+                            <!-- end select date -->
+                            <div class="col-sm-6">
+                                <div class="input-group py-2 d-flex align-items-center">
+                                    <span class="mdi mdi-account fs-5 travel-icons"></span>
+                                    <select name="persons" id="person" class="form-control rounded-0">
+                                        <option selected="selected">2 Adult</option>
+                                        <option>2 Adult 1 children</option>
+                                        <option>2 Adult 2 children</option>
+                                        <option>2 Adult 3 children</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end select person -->
+                        </div>
+                        <button type="submit" class="btn btn-warning">Search
+                            Packages</button>
+                    </form>
+                    <!-- end row -->
+                </div>
+                <div class="col-lg-6 px-0 img-remove">
+                    <img src="assets/images/demos/travelbooking/ladakh tourism.png" class="img-fluid">
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+
+        <div class="section container-fluid">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6">
+                    <div class="img-height">
+                        <img src="assets/images/demos/travelbooking/plane.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center justify-content-center bg-success content-height">
+                        <div>
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="mdi mdi-airplane fs-1 text-white me-4"></span>
+                                <h5 class="text-white fw-bold"> Visit the greatest places</h5>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="mdi mdi-clock-outline fs-1 text-white me-4"></span>
+                                <h5 class="text-white fw-bold"> Make your own plans.</h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="mdi mdi-sale fs-1 text-white me-4"></span>
+                                <h5 class="text-white fw-bold"> Save 50% on your next trip</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container-fluid -->
+
+        <div class="section deals">
+            <div class="container">
+                <div class="deal-testinomial overflow-hidden">
+                    <div class="row">
+                        <div class="col-7 mx-auto text-center">
+                            <h2 class="text-center text-uppercase mb-0">Flash Deals</h2>
+                            <div class="heading-lines">
+                                <span class="line"></span>
+                                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Flash-Deals row">
+                        <div class="swiper mySwiper1 pb-3 px-3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card-flashdeals">
+                                        <div class="card-image position-relative">
+                                            <img src="assets/images/demos/travelbooking/merlion-singapur.png"
+                                                class="card-img-top">
+                                            <div class="bottom-0 position-absolute p-3">
+                                                <span class="badge p-2 bg-primary text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-clock-time-five text-white fs-6 me-1"></span>
+                                                        <span>20:54:32:59</span>
+                                                    </span>
+                                                </span>
+                                                <span class="badge p-2 bg-danger text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-lightning-bolt text-white fs-6 me-1"></span>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="top-0 p-3 position-absolute end-0">
+                                                <span class="badge p-2 bg-warning rounded-0">
+                                                    <span class="mdi mdi-tag fs-6"></span>
+                                                    <span class="fw-normal">-15%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <h5 class="fw-bold mb-3 text-truncate">
+                                                merlion singapore Resort: The most joyful way to spend your holiday
+                                            </h5>
+                                            <div
+                                                class="d-flex align-items-center justify-content-start icon-color mb-3">
+                                                <div>
+                                                    <span class="mdi mdi-map-marker"></span>
+                                                    <span class="me-3">Singapore</span>
+                                                </div>
+                                                <div>
+                                                    <span class="mdi mdi-calendar-range"></span>
+                                                    <span>4 Days</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-baseline">
+                                                <h2 class="fw-bold text-primary mb-0">$105</h2>
+                                                <span
+                                                    class="text-decoration-line-through fs-6 ps-2 text-danger">$130</span>
+                                                <span class="text-muted">/Per person</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="card-flashdeals">
+                                        <div class="card-image position-relative">
+                                            <img src="assets/images/demos/travelbooking/colosseum-rome.png"
+                                                class="card-img-top">
+                                            <div class="bottom-0 position-absolute p-3">
+                                                <span class="badge p-2 bg-primary text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-clock-time-five text-white fs-6 me-1"></span>
+                                                        <span>15:05:02:16</span>
+                                                    </span>
+                                                </span>
+                                                <span class="badge p-2 bg-danger text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-lightning-bolt text-white fs-6 me-1"></span>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="top-0 p-3 position-absolute end-0">
+                                                <span class="badge p-2 bg-warning rounded-0">
+                                                    <span class="mdi mdi-tag fs-6"></span>
+                                                    <span class="fw-normal">-10%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <h5 class="fw-bold mb-3 text-truncate">
+                                                Colosseum : Enjoy a colosseum Cruise tour of at the sunny side of life
+                                            </h5>
+                                            <div
+                                                class="d-flex align-items-center justify-content-start icon-color mb-3">
+                                                <div>
+                                                    <span class="mdi mdi-map-marker"></span>
+                                                    <span class="me-3">Italy</span>
+                                                </div>
+                                                <div>
+                                                    <span class="mdi mdi-calendar-range"></span>
+                                                    <span>6 Days</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-baseline">
+                                                <h2 class="fw-bold text-primary mb-0">$150</h2>
+                                                <span
+                                                    class="text-decoration-line-through fs-6 ps-2 text-danger">$125</span>
+                                                <span class="text-muted">/Per person</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="card-flashdeals">
+                                        <div class="card-image position-relative">
+                                            <img src="assets/images/demos/travelbooking/burj-al-arab.png"
+                                                class="card-img-top">
+                                            <div class="bottom-0 position-absolute p-3">
+                                                <span class="badge p-2 bg-primary text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-clock-time-five text-white fs-6 me-1"></span>
+                                                        <span>23:12:05:55</span>
+                                                    </span>
+                                                </span>
+                                                <span class="badge p-2 bg-danger text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-lightning-bolt text-white fs-6 me-1"></span>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="top-0 p-3 position-absolute end-0">
+                                                <span class="badge p-2 bg-warning rounded-0">
+                                                    <span class="mdi mdi-tag fs-6"></span>
+                                                    <span class="fw-normal">-11%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <h5 class="fw-bold mb-3 text-truncate">
+                                                Burj-Al-Arab: Luxury destination without compromise
+                                            </h5>
+                                            <div
+                                                class="d-flex align-items-center justify-content-start icon-color mb-3">
+                                                <div>
+                                                    <span class="mdi mdi-map-marker"></span>
+                                                    <span class="me-3">Dubai</span>
+                                                </div>
+                                                <div>
+                                                    <span class="mdi mdi-calendar-range"></span>
+                                                    <span>8 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-baseline">
+                                                <h2 class="fw-bold text-primary mb-0">$250</h2>
+                                                <span
+                                                    class="text-decoration-line-through fs-6 ps-2 text-danger">$200</span>
+                                                <span class="text-muted">/Per person</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="card-flashdeals">
+                                        <div class="card-image position-relative">
+                                            <img src="assets/images/demos/travelbooking/dock-sunlight.png"
+                                                class="card-img-top">
+                                            <div class="bottom-0 position-absolute p-3">
+                                                <span class="badge p-2 bg-primary text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-clock-time-five text-white fs-6 me-1"></span>
+                                                        <span>01:11:05:22</span>
+                                                    </span>
+                                                </span>
+                                                <span class="badge p-2 bg-danger text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-lightning-bolt text-white fs-6 me-1"></span>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="top-0 p-3 position-absolute end-0">
+                                                <span class="badge p-2 bg-warning rounded-0">
+                                                    <span class="mdi mdi-tag fs-6"></span>
+                                                    <span class="fw-normal">-8%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <h5 class="fw-bold mb-3 text-truncate">
+                                                Dock-Sunlight: Luxury destination without compromise
+                                            </h5>
+                                            <div
+                                                class="d-flex align-items-center justify-content-start icon-color mb-3">
+                                                <div>
+                                                    <span class="mdi mdi-map-marker"></span>
+                                                    <span class="me-3">singapore</span>
+                                                </div>
+                                                <div>
+                                                    <span class="mdi mdi-calendar-range"></span>
+                                                    <span>10 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-baseline">
+                                                <h2 class="fw-bold text-primary mb-0">$170</h2>
+                                                <span
+                                                    class="text-decoration-line-through fs-6 ps-2 text-danger">$155</span>
+                                                <span class="text-muted">/Per person</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="card-flashdeals">
+                                        <div class="card-image position-relative">
+                                            <img src="assets/images/demos/travelbooking/bridge.png"
+                                                class="card-img-top">
+                                            <div class="bottom-0 position-absolute p-3">
+                                                <span class="badge p-2 bg-primary text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-clock-time-five text-white fs-6 me-1"></span>
+                                                        <span>22:35:05:15</span>
+                                                    </span>
+                                                </span>
+                                                <span class="badge p-2 bg-danger text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-lightning-bolt text-white fs-6 me-1"></span>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="top-0 p-3 position-absolute end-0">
+                                                <span class="badge p-2 bg-warning rounded-0">
+                                                    <span class="mdi mdi-tag fs-6"></span>
+                                                    <span class="fw-normal">-5%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <h5 class="fw-bold mb-3 text-truncate">
+                                                Bridge: Enjoy a romantic Cruise tour of at the sunny side of life
+                                            </h5>
+                                            <div
+                                                class="d-flex align-items-center justify-content-start icon-color mb-3">
+                                                <div>
+                                                    <span class="mdi mdi-map-marker"></span>
+                                                    <span class="me-3">Meghalaya</span>
+                                                </div>
+                                                <div>
+                                                    <span class="mdi mdi-calendar-range"></span>
+                                                    <span>5 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-baseline">
+                                                <h2 class="fw-bold text-primary mb-0">$130</h2>
+                                                <span
+                                                    class="text-decoration-line-through fs-6 ps-2 text-danger">$105</span>
+                                                <span class="text-muted">/Per person</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="card-flashdeals">
+                                        <div class="card-image position-relative">
+                                            <img src="assets/images/demos/travelbooking/swing-maldives.png"
+                                                class="card-img-top">
+                                            <div class="bottom-0 position-absolute p-3">
+                                                <span class="badge p-2 bg-primary text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-clock-time-five text-white fs-6 me-1"></span>
+                                                        <span>13:45:59:56</span>
+                                                    </span>
+                                                </span>
+                                                <span class="badge p-2 bg-danger text-white fw-bold rounded-0">
+                                                    <span class="d-flex align-items-center">
+                                                        <span
+                                                            class="mdi mdi-lightning-bolt text-white fs-6 me-1"></span>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="top-0 p-3 position-absolute end-0">
+                                                <span class="badge p-2 bg-warning rounded-0">
+                                                    <span class="mdi mdi-tag fs-6"></span>
+                                                    <span class="fw-normal">-20%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <h5 class="fw-bold mb-3 text-truncate">
+                                                swing maldives Resort: The most joyful way to spend your holiday
+                                            </h5>
+                                            <div
+                                                class="d-flex align-items-center justify-content-start icon-color mb-3">
+                                                <div>
+                                                    <span class="mdi mdi-map-marker"></span>
+                                                    <span class="me-3">Maldives</span>
+                                                </div>
+                                                <div>
+                                                    <span class="mdi mdi-calendar-range"></span>
+                                                    <span>13 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-baseline">
+                                                <h2 class="fw-bold text-primary mb-0">$200</h2>
+                                                <span
+                                                    class="text-decoration-line-through fs-6 ps-2 text-danger">$180</span>
+                                                <span class="text-muted">/Per person</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper -->
+                    </div>
+                    <!-- end flash deals -->
+                </div>
+                <!-- end testimonial -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end deals -->
+
+        <div class="section places">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-8">
+                        <div class="place-swiper h-100 position-relative">
+                            <div class="swiper mySwiper1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card h-100 rounded-0 text-white">
+                                            <img class="img-fluid h-100"
+                                                src="assets/images/demos/travelbooking/Australia.png" alt="" />
+                                            <div
+                                                class="card-img-overlay p-2 d-flex flex-column justify-content-between">
+                                                <div class="pt-3"><span
+                                                        class="badge bg-primary rounded-0 px-3 py-2">$860</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-white">Australia</h5>
+                                                    <h6 class="text-white">6 days</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100 rounded-0 text-white"><img class="img-fluid h-100"
+                                                src="assets/images/demos/travelbooking/Bali.png" alt="" />
+                                            <div
+                                                class="card-img-overlay p-2 d-flex flex-column justify-content-between">
+                                                <div class="pt-3"><span
+                                                        class="badge bg-primary rounded-0 px-3 py-2">$769</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-white">Bali</h5>
+                                                    <h6 class="text-white">8 days</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100 rounded-0 text-white"><img class="img-fluid h-100"
+                                                src="assets/images/demos/travelbooking/phuket.png" alt="" />
+                                            <div
+                                                class="card-img-overlay p-2 d-flex flex-column justify-content-between">
+                                                <div class="pt-3"><span
+                                                        class="badge bg-primary rounded-0 px-3 py-2">$950</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-white">phuket</h5>
+                                                    <h6 class="text-white">10 days</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100 rounded-0 text-white"><img class="img-fluid h-100"
+                                                src="assets/images/demos/travelbooking/Maldives.png" alt="" />
+                                            <div
+                                                class="card-img-overlay p-2 d-flex flex-column justify-content-between">
+                                                <div class="pt-3"><span
+                                                        class="badge bg-primary rounded-0 px-3 py-2">$520</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-white">Maldives</h5>
+                                                    <h6 class="text-white">4 days</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100 rounded-0 text-white"><img class="img-fluid h-100"
+                                                src="assets/images/demos/travelbooking/Sydney.png" alt="" />
+                                            <div
+                                                class="card-img-overlay p-2 d-flex flex-column justify-content-between">
+                                                <div class="pt-3"><span
+                                                        class="badge bg-primary rounded-0 px-3 py-2">$860</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="text-white">Sydney</h5>
+                                                    <h6 class="text-white">6 days</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-md-11 col-lg-4">
+                        <h2>Amazing places to enjoy your travel</h2>
+                        <hr class="text-primary my-4 my-lg-3 my-xl-4">
+                        <p class="text-muted">Vacations are always looked forward to, by
+                            all of us. Every
+                            year, on
+                            our long vacations, we always make plans to go for a trip and this
+                            time we choose it to
+                            be
+                            at some
+                            hill stations.While planning on which hill station to make the
+                            visit, my dad suggested
+                            Nilgiris.
+                        </p>
+                        <a class="btn btn-primary rounded-0" href="javascript:void(0)" role="button">Explore</a>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end places -->
+
+        <div class="section hotel-rooms">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <h2 class="text-center">Our Rooms</h2>
+                        <div class="heading-lines">
+                            <span class="line"></span>
+                            <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/demos/travelbooking/room1.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4><a href="javascript:void(0)" class="text-dark">Classic Bed</a>
+                                </h4>
+                                <p class="m-0">$150 / par night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/demos/travelbooking/room2.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4><a href="javascript:void(0)" class="text-dark">Double Bed</a>
+                                </h4>
+                                <p class="m-0">$120 / par night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/demos/travelbooking/room3.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4><a href="javascript:void(0)" class="text-dark">Royal Room</a>
+                                </h4>
+                                <p class="m-0">$100 / par night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/demos/travelbooking/room4.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4><a href="javascript:void(0)" class="text-dark">Double Bed</a>
+                                </h4>
+                                <p class="m-0">$99 / par night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/demos/travelbooking/room5.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4><a href="javascript:void(0)" class="text-dark">classic Room</a>
+                                </h4>
+                                <p class="m-0">$165 / par night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/demos/travelbooking/room6.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4><a href="javascript:void(0)" class="text-dark">Royal Double Bed</a>
+                                </h4>
+                                <p class="m-0">$100 / par night</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <a href="javascript:void(0)" class="btn btn-warning button-color rounded-0">View
+                                more <span class="mdi mdi-arrow-right-thin"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end hotel-room  -->
+
+        <div class="Restaurant py-5">
+            <div class="restaurant-category left-img pe-sm-5">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-md-8 p-sm-5">
+                            <div class="Restaurant-caption">
+                                <h6 class="text-warning mb-3">OUR RESTAURANT</h6>
+                                <h3 class="mb-3">Dining & Drinks</h3>
+                                <p class="text-muted">A restaurant is a place where people visit
+                                    to eat and drink
+                                    the
+                                    food being prepared
+                                    on the premises and pays for the same. The food is served at
+                                    the table to have a
+                                    comfortable visit for your meals. The restaurant offers a
+                                    menu with various
+                                    options
+                                    for your meal, to choose from.
+
+                                </p>
+                                <a href="#" class="btn btn-outline-warning border-btn">Learn
+                                    More <span class="mdi mdi-chevron-right"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-category right-img">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8 col-md-8 p-sm-5">
+                            <div class="Restaurant-caption text-right">
+                                <h6 class="text-warning mb-3">OUR POOL</h6>
+                                <h3 class=" mb-3">Swimming Pool</h3>
+                                <p class="text-muted">A restaurant is a place where people visit
+                                    to eat and drink
+                                    the
+                                    food being prepared
+                                    on the premises and pays for the same. The food is served at
+                                    the table to have a
+                                    comfortable visit for your meals. The restaurant offers a
+                                    menu with various
+                                    options
+                                    for your meal, to choose from.
+
+                                </p>
+                                <a href="#" class="btn btn-outline-warning border-btn">Learn
+                                    More <span class="mdi mdi-chevron-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- Footer Start -->
+    @@include('./partials/footer.html')
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/travelbooking.js"></script>
+
+
+</body>
+
+</html>

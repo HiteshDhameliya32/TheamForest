@@ -1,0 +1,648 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+    
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-app.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="app-service.html" class="sub-mega-menu">service</a></li>
+                    <li><a href="app-pricing.html" class="sub-mega-menu">pricing</a></li>
+                    <li><a href="app-profile.html" class="sub-mega-menu">profile</a></li>
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">maintenance</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="maintenance-page-1.html"> maintenance-1 </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="maintenance-page-2.html"> maintenance-2 </a>
+                            </li>
+                        </ul>
+                    </li><!-- END maintenace menu -->
+
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END maintenace menu -->
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content p-0">
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0 p-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul>
+                <!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div>
+        <!--end container-->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+    'title': 'Service',
+    'breadcrumb1': {
+    'title': 'App',
+    'link': 'index-app.html',
+    'icon': 'hospital-building',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Service',
+    'link': '#',
+    'icon': 'doctor',
+    'active_class': 'active'
+    }
+    })
+
+    <!-- /********** Service Section **********/ -->
+    <section class="section service-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="text-center text-uppercase m-0">The Best Services We Provide </h2>
+                <div class="heading-lines">
+                    <span class="line"></span>
+                    <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="nav nav-pills my-4 justify-content-around" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link active show" id="web-tab" data-bs-toggle="tab"
+                            data-bs-target="#web-tab-pane" role="tab" aria-controls="web-tab-pane" aria-selected="true">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-1.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Web Design
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital-tab-pane"
+                            role="tab" aria-controls="digital-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-2.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Digital Marketing
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="training-tab" data-bs-toggle="tab" data-bs-target="#training-tab-pane"
+                            role="tab" aria-controls="training-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-3.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Training
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="support-tab" data-bs-toggle="tab" data-bs-target="#support-tab-pane"
+                            role="tab" aria-controls="support-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-4.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Server Support
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="gsuite-tab" data-bs-toggle="tab" data-bs-target="#gsuite-tab-pane"
+                            role="tab" aria-controls="gsuite-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-5.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Gsuite
+                        </div>
+                    </li><!-- END nav-item -->
+                </ul><!-- END nav -->
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fadeTabs animated show active" id="web-tab-pane" role="tabpanel"
+                        aria-labelledby="web-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-1.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Web Design</h4>
+                                                <p class="text-muted">
+                                                    Fast and Secure Core Development - Responsive Design - Easy UI
+                                                    Layout - Beautiful Design. Beautiful Website Design Layout -
+                                                    Responsive Layout - Fully Dynamic with Admin.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="digital-tab-pane" role="tabpanel"
+                        aria-labelledby="digital-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-2.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Digital Marketing</h4>
+                                                <p class="text-muted">
+                                                    Thrive Internet Marketing Agency is a full-service digital marketing
+                                                    agency. Attract, Impress, and Convert more leads online and get
+                                                    results with Thrive.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="training-tab-pane" role="tabpanel"
+                        aria-labelledby="training-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-3.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Training</h4>
+                                                <p class="text-muted">
+                                                    Specialized employee training programs for different functions and
+                                                    roles, designed to address specific learning objectives and
+                                                    delivered by top trainers.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="support-tab-pane" role="tabpanel"
+                        aria-labelledby="support-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-4.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Server Support</h4>
+                                                <p class="text-muted">
+                                                    Renowned server management company with proven expertise in 24/7
+                                                    outsourced server support services, outsourced web hosting support.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="gsuite-tab-pane" role="tabpanel"
+                        aria-labelledby="gsuite-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-5.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Gsuite</h4>
+                                                <p class="text-muted">
+                                                    The primary G Suite tools include Gmail, Drive, Docs, Sheets,
+                                                    Slides, Forms, Calendar, Google+, Sites, Hangouts, and Keep. G Suite
+                                                    was released.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+                </div><!-- END tab-content -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** Latest- Project Section **********/ -->
+    <section class="section latest-project" style="background-color: var(--light);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center text-uppercase m-0">our latest project </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-4">
+                        Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+            <div class="row justify-content-center text-center g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-1.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 01 </h1>
+                        <p>
+                            "There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't
+                            look even slightly believable.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-2.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 02 </h1>
+                        <p>
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-3.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 03 </h1>
+                        <p>
+                            "There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't
+                            look even slightly believable.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-4.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 04 </h1>
+                        <p>
+                            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                            occaecati cupiditate.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+            </div> <!-- END row -->
+        </div> <!-- END container -->
+    </section>
+
+    <!-- /********** Client-Review Section **********/ -->
+    <section class="section clients-review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <h2 class="text-uppercase text-center m-0"> Customers Feedback </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted text-center">
+                        Collaboratively actualize excellent schemas without effective models. Synergistically engineer
+                        functionalized applications rather than backend e-commerce.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper mySwiper-3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card p-4 text-start clients-review-box">
+                                    <span class="text-warning h5">
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                    </span>
+                                    <p class="text-muted">
+                                        “This App is exactly what our business has been lacking. If you aren't sure,
+                                        always go. I would also like to say thank you. It should be nominated
+                                        for service of the year.”
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/images/clients/01.png" class="rounded-circle avatar-lg"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5> Jolly Shie </h5>
+                                            <p class="fs-16 m-0"> CEO at Intelligent AI </p>
+                                        </div>
+                                    </div>
+                                </div><!-- END card -->
+                            </div><!-- END swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="card p-4 text-start clients-review-box">
+                                    <span class="text-warning h5">
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star-half-full"></i>
+                                    </span>
+                                    <p class="text-muted">
+                                        “Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt
+                                        efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus.”
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/images/clients/06.png" class="rounded-circle avatar-lg"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5> Steve Joe </h5>
+                                            <p class="fs-16 m-0"> Director Of Finance </p>
+                                        </div>
+                                    </div>
+                                </div><!-- END card -->
+                            </div><!-- END swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="card p-4 text-start clients-review-box">
+                                    <span class="text-warning h5">
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                    </span>
+                                    <p class="text-muted">
+                                        “Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few
+                                        trifling. Elderly as pursuit at regular do parlors. Rank what has into fond
+                                        pursuit.”
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/images/clients/05.png" class="rounded-circle avatar-lg"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5> Rose Marie </h5>
+                                            <p class="fs-16 m-0"> Web Expert </p>
+                                        </div>
+                                    </div>
+                                </div><!-- END card -->
+                            </div><!-- END swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="card p-4 text-start clients-review-box">
+                                    <span class="text-warning h5">
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star-outline"></i>
+                                    </span>
+                                    <p class="text-muted">
+                                        “This App is exactly what our business has been lacking. If you aren't sure,
+                                        always go. I would also like to say thank you. It should be nominated
+                                        for service of the year.”
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/images/clients/03.png" class="rounded-circle avatar-lg"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5>Martin Doe</h5>
+                                            <p class="fs-16 m-0"> MD at ForestClub </p>
+                                        </div>
+                                    </div>
+                                </div><!-- END card -->
+                            </div><!-- END swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="card p-4 text-start clients-review-box">
+                                    <span class="text-warning h5">
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                    </span>
+                                    <p class="text-muted">
+                                        “I am completely blown away. Thanks guys, keep up the good work! I just can't
+                                        get enough of This App. I want to get a T-Shirt with This App on it so I can
+                                        show it off.”
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/images/clients/08.png" class="rounded-circle avatar-lg"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5> Cyrus Stephen </h5>
+                                            <p class="fs-16 m-0"> Bug Fixing </p>
+                                        </div>
+                                    </div>
+                                </div><!-- END card -->
+                            </div><!-- END swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="card p-4 text-start clients-review-box">
+                                    <span class="text-warning h5">
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star-half-full"></i>
+                                    </span>
+                                    <p class="text-muted">
+                                        “I like This App more and more each day because it makes my life a lot easier.
+                                        It's the perfect solution for our business. This App is worth much more than I
+                                        paid.”
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/images/clients/04.png" class="rounded-circle avatar-lg"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5> Shayna John </h5>
+                                            <p class="fs-16 m-0"> Product Design </p>
+                                        </div>
+                                    </div>
+                                </div><!-- END card -->
+                            </div><!-- END swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="card p-4 text-start clients-review-box">
+                                    <span class="text-warning h5">
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                    </span>
+                                    <p class="text-muted">
+                                        “I was amazed at the quality of This App. I would gladly pay over 600 dollars
+                                        for This App. We've used This App for the last five years. This is the most
+                                        valuable resource.”
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/images/clients/02.png" class="rounded-circle avatar-lg"
+                                                alt="">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5> Cate Gore </h5>
+                                            <p class="fs-16 m-0"> Executive Manager </p>
+                                        </div>
+                                    </div>
+                                </div><!-- END card -->
+                            </div><!-- END swiper-slide -->
+                        </div><!-- END swiper-wrapper -->
+                        <div class="swiper-pagination"></div>
+                    </div><!-- END swiper -->
+                </div>
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

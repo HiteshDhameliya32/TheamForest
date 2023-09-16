@@ -1,0 +1,596 @@
+@@include('./partials/main.html')
+
+<head>
+
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+  @@include('./partials/navbar.html')
+  @@include('./partials/right-sidebar.html')
+  @@include('./partials/breadcrumb.html', {
+  'title': 'profile',
+  'breadcrumb1': {
+  'title': 'Pages',
+  'link': '#',
+  'icon': 'book-open-page-variant',
+  'active_class': ''
+  },
+  'breadcrumb2': {
+  'title': 'Account',
+  'link': '#',
+  'icon': 'account-circle-outline',
+  'active_class': ''
+  },
+  'breadcrumb3': {
+  'title': 'Profile',
+  'link': '#',
+  'icon': 'face-woman-outline',
+  'active_class': 'active'
+  }
+  })
+
+  <section class="section section-profile">
+    <div class="container">
+      <div class="wrapper">
+        <div class="row g-3">
+          <div class="col-md-3">
+            <div class="sidenav">
+              <div class="girl-img">
+                <img src="assets/images/profile-img/profile.png" class="img-fluid rounded-circle" alt="">
+              </div>
+              <h3 class="my-3">Sarah Cruiz</h3>
+              <p class="text-primary">Web Designer</p>
+
+              <p class="profile-letter">
+                Hi! My name is Sarah, is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s :)
+              </p>
+
+              <!-- <h3 class="great-vibes">Sarah Cruiz</h3> -->
+
+              <p class="mb-2 profile-letter">
+                <strong>DOB :</strong><span> october 25, 1998</span>
+              </p>
+              <p class="mb-2 profile-letter">
+                <strong>Address :</strong><span> San Francisco, CA </span>
+              </p>
+              <p class="mb-2 profile-letter">
+                <strong>Phone :</strong><span> (251) 1234-456-7890 </span>
+              </p>
+              <p class="mb-2 profile-letter">
+                <strong>Email :</strong><span> Sarah@example.com </span>
+              </p>
+              <p class="mb-4 profile-letter">
+                <strong>Website :</strong><span> www.Sarah.com </span>
+              </p>
+              <div class="social-icon py-2 d-flex justify-content-md-between mx-md-1">
+                <a href="javascript:void(0)" class="avatar-sm me-3 me-md-0 ms-1 ms-md-0"><i class="mdi mdi-whatsapp avatar-title bg-transparent rounded-circle"></i></a>
+                <a href="javascript:void(0)" class="avatar-sm me-3 me-md-0"><i class="mdi mdi-twitter avatar-title bg-transparent rounded-circle"></i></a>
+                <a href="javascript:void(0)" class="avatar-sm me-3 me-md-0"><i class="mdi mdi-home avatar-title bg-transparent rounded-circle"></i></a>
+                <a href="javascript:void(0)" class="avatar-sm"><i class="mdi mdi-cog-outline avatar-title bg-transparent rounded-circle"></i></a>
+            </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="col-md-9">
+            <div class="main-1">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                  tabindex="0">
+                  <div class="col-lg-12">
+                    <div class="row g-3">
+                      <div class="col-lg-6">
+                        <div class="subheading">
+                          <h3>Experience</h3>
+                        </div>
+                        <ul class="experience">
+                          <li>
+                            <span class="line-left"></span>
+                            <div class="content">
+                              <h4>Senior Web Developer</h4>
+                              <h5>Exis Development, London, UK</h5>
+                              <p class="info">
+                                Sit cupiditate praesentium ex esse nulla Facere
+                                fuga perspiciatis eveniet provident neque Ea
+                                ratione non minus temporibus ipsum Sunt
+                              </p>
+                            </div>
+                            <span class="year">
+                              <span class="to">2018</span>
+                              <span class="from">2019</span>
+                            </span>
+                          </li>
+
+                          <li>
+                            <span class="line-left"></span>
+                            <div class="content">
+                              <h4>Web Designer</h4>
+                              <h5>Design Company, London, UK</h5>
+                              <p class="info">
+                                Dolor id atque accusantium ut impedit odit
+                                provident soluta voluptatem Veritatis ipsam
+                                neque mollitia vero suscipit a laborum
+                              </p>
+                            </div>
+                            <span class="year">
+                              <span class="to">2019</span>
+                              <span class="from">2022</span>
+                            </span>
+                          </li>
+
+                          <li>
+                            <span class="line-left"></span>
+                            <div class="content">
+                              <h4>UI Designer</h4>
+                              <h5>Big Design Company, NY, USA</h5>
+                              <p class="info">
+                                Consectetur pariatur fugiat ipsam aperiam
+                                maiores. Nisi in dignissimos debitis expedita
+                                asperiores delectus vitae corporis ipsam neque
+                              </p>
+                            </div>
+                            <span class="year">
+                              <span class="to">2021</span>
+                              <span class="from">2023</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--END COL-->
+
+                      <div class="col-lg-6">
+                        <div class="subheading">
+                          <h3>Education</h3>
+                        </div>
+
+                        <ul class="experience">
+                          <li>
+                            <span class="line-left"></span>
+                            <div class="content">
+                              <h4>Computer Science</h4>
+                              <h5>International University</h5>
+                              <p class="info">
+                                Consectetur mollitia amet inventore nisi sed.
+                                Provident veritatis exercitationem eum
+                                doloremque itaque expedita? Ex voluptatem
+                              </p>
+                            </div>
+                            <span class="year">
+                              <span class="to">2017</span>
+                              <span class="from">2019</span>
+                            </span>
+                          </li>
+
+                          <li>
+                            <span class="line-left"></span>
+                            <div class="content">
+                              <h4>Bachelor Degree</h4>
+                              <h5>University of California</h5>
+                              <p class="info">
+                                Elit voluptatibus quas necessitatibus ullam
+                                tenetur provident voluptatibus. Ratione delectus
+                                lorem minus ipsa architecto. Saepe officiis
+                              </p>
+                            </div>
+                            <span class="year">
+                              <span class="to">2019</span>
+                              <span class="from">2022</span>
+                            </span>
+                          </li>
+
+                          <li>
+                            <span class="line-left"></span>
+                            <div class="content">
+                              <h4>Master Degree</h4>
+                              <h5>Tech Arts Institute, CA, USA</h5>
+                              <p class="info">
+                                Ipsum ex exercitationem est aliquid eos saepe.
+                                Dolorum aperiam cupiditate labore vero deleniti
+                                Aut unde deserunt neque voluptas.Saepe officiis
+                              </p>
+                            </div>
+                            <span class="year">
+                              <span class="to">2020</span>
+                              <span class="from">2023</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--END COL-->
+                    </div>
+                    <!--END ROW-->
+                  </div>
+                  <!--END COL-->
+
+                  <div class="row g-3">
+                    <div class="col-lg-6 skills">
+                      <div class="subheading">
+                        <h3>Design Skills</h3>
+                      </div>
+                      <div class="skill-item">
+                        <h6 class="progress-title fw-bold">Coral Draw</h6>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress-value="91" style="width: 91%">
+                            <div class="progress-value">91%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <h6 class="progress-title fw-bold">Photoshop</h6>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress-value="82" style="width: 82%">
+                            <div class="progress-value">82%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <h6 class="progress-title fw-bold">Illustrator</h6>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress-value="94" style="width: 94%">
+                            <div class="progress-value">94%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-lg-6 skills">
+                      <div class="subheading">
+                        <h3>Coding Skills</h3>
+                      </div>
+
+                      <div class="skill-item">
+                        <h6 class="progress-title fw-bold">HTML</h6>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress-value="99" style="width: 99%">
+                            <div class="progress-value">99%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <h6 class="progress-title fw-bold">CSS</h6>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress-value="95" style="width: 95%">
+                            <div class="progress-value">95%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <h6 class="progress-title fw-bold">Javascript</h6>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress-value="85" style="width: 85%">
+                            <div class="progress-value">85%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--END COL-->
+                  </div>
+                  <!--END ROW-->
+
+                  <!--Personal Details-->
+
+                  <div class="subheading">
+                    <h3>Personal Details</h3>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-6">
+                      <div class="abut-info">
+                        <ul class="list-unstyled">
+                          <li><i class="mdi mdi-account me-2"></i><strong>First Name</strong> <span class="ps-3"> :
+                              Sarah</span></li>
+                          <li><i class="mdi mdi-account me-2"></i><strong>Last Name</strong><span class="ps-3"> :
+                              Cruiz</span></li>
+                          <li><i class="mdi mdi-calendar-month me-2"></i><strong>Date of birth</strong><span
+                              class="ps-3">
+                              :
+                              25 october 1998</span></li>
+                          <li><i class="mdi mdi-earth me-2"></i><strong>Nationality</strong><span class="ps-3"> :
+                              U.S</span></li>
+                          <li><i class="mdi mdi-angular me-2"></i><strong>Languages</strong><span class="ps-3"> :
+                              English - spanish</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="abut-info-1">
+                        <ul class="list-unstyled">
+                          <li><i class="mdi mdi-tooltip-account me-2"></i><strong>Age</strong><span class="ps-3"> : 25
+                              year</span></li>
+                          <li><i class="mdi mdi-phone me-2"></i><strong>Phone</strong><span class="ps-3"> : (251)
+                              1234-456-7890</span></li>
+                          <li><i class="mdi mdi-map-marker me-2"></i><strong>Address</strong><span class="ps-3"> : San
+                              Francisco, CA</span></li>
+                          <li><i class="mdi mdi-at me-2"></i><strong>Email</strong><span class="ps-3"> :
+                              Sarah@example.com</span></li>
+                          <li><i class="mdi mdi-earth me-2"></i><strong>Website</strong><span class="ps-3"> :
+                              www.Sarah.com</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="container"> -->
+                  <div class="personal-details">
+                    <div class="row g-3">
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="details p-2 h-100">
+                          <h4>16<i class="mdi mdi-alpha-p-box-outline"></i></h4>
+                          <h5>Project Completed</h5>
+                          <p class="mb-0">During the project, you likely faced various challenges and obstacles.</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="details p-2 h-100">
+                          <h4>5<i class="mdi mdi-timer-outline"></i></h4>
+                          <h5>Years Experience</h5>
+
+                          <p class="mb-0">Content requires a combination of skill, expertise, and experience. </p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="details p-2 h-100">
+                          <h4>20<i class="mdi mdi-account-star"></i></h4>
+                          <h5>Happy Customers</h5>
+                          <p class="mb-0">At Happy Customer, we prioritize your satisfaction above all else. </p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="details p-2 h-100">
+                          <h4 class="count-up" data-count="5">5<i class="mdi mdi-medal-outline"></i></h4>
+                          <h5>Winning Awards</h5>
+                          <p class="mb-0">Craft a narrative that engages the reader from the beginning to the end</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+
+
+                  <div class="container p-0">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d520626.7306836697!2d-115.09158150743649!3d55.10015922523403!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1673428312905!5m2!1sen!2sin"
+                      class="map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                  tabindex="0">
+                  <div class="twm-right-section-panel site-bg-gray">
+                    <form>
+                      <!--Basic Information-->
+                      <div class="panel panel-default">
+                        <div class="panel-heading wt-panel-heading subheading p-a20">
+                          <h3 class="panel-tittle m-a0">
+                            Basic Informations
+                            <i class="mdi mdi-account-edit user-icon-1"></i>
+                          </h3>
+                        </div>
+                        <div class="panel-body wt-panel-body p-a20 m-b30">
+                          <div class="row g-3">
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group">
+                                <label>Your Name</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_name" type="text"
+                                    placeholder="Sarah Cruiz">
+                                  <i class="mdi mdi-account user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group">
+                                <label>Phone</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_phone" type="text"
+                                    placeholder="(251) 1234-456-7890">
+                                  <i class="mdi mdi-phone user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group">
+                                <label>Email Address</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_Email" type="email"
+                                    placeholder="Sarah@example.com">
+                                  <i class="mdi mdi-at user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group">
+                                <label>Website</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_website" type="text"
+                                    placeholder="www.Sarah.com">
+                                  <i class="mdi mdi-earth user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group">
+                                <label>Qualification</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="BTech">
+                                  <i class="mdi mdi-account-tie user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group">
+                                <label>Language</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text"
+                                    placeholder="e.x English, Spanish">
+                                  <i class="mdi mdi-angular user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Job Category</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text"
+                                    placeholder="IT &amp; Software">
+                                  <i class="mdi mdi-border-all user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Experience</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="05 Years">
+                                  <i class="mdi mdi-currency-usd user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-4 col-lg-6 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Current Salary</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="65K">
+                                  <i class="mdi mdi-currency-usd user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-4 col-lg-6 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Expected Salary</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="75K">
+                                  <i class="mdi mdi-account-star user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-4 col-lg-12 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Age</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="25 Years">
+                                  <i class="mdi mdi-tooltip-account user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-4 col-lg-6 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Country</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="USA">
+                                  <i class="mdi mdi-earth user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-4 col-lg-6 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>City</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="Texas">
+                                  <i class="mdi mdi-earth user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-4 col-lg-12 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Postcode</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text" placeholder="75462">
+                                  <i class="mdi mdi-leaf-maple user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-xl-12 col-lg-12 col-md-12">
+                              <div class="form-group city-outer-bx has-feedback">
+                                <label>Full Address</label>
+                                <div class="ls-inputicon-box">
+                                  <input class="form-control-1" name="company_since" type="text"
+                                    placeholder="1363-1385 Sunset Blvd Angeles, CA 90026 ,USA">
+                                  <i class="mdi mdi-map-marker user-icon-1"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-lg-12 col-md-12">
+                              <div class="text-left">
+                                <button class="btn btn-primary">
+                                  SAVE CHANGES
+                                </button>
+                              </div>
+                            </div>
+                            <!--end col-->
+                          </div>
+                          <!--end row-->
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END MAIN-->
+        </div>
+        <!--END WRAPPER-->
+      </div>
+      <!--END ROW-->
+    </div>
+    <!--END CONTAINER-->
+  </section>
+
+  <!-- Footer Start -->
+
+  @@include('./partials/footer.html')
+
+  <!-- Footer End -->
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+</body>
+
+</html>

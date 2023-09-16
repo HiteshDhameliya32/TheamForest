@@ -1,0 +1,584 @@
+// Curve-shape
+.curve-shape-1,
+.curve-shape {
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    svg {
+        transform: scale(2);
+        width: 100%;
+        height: auto;
+        transform-origin: top center;
+    }
+}
+.curve-shape {
+    color: var(--bs-body-bg) !important;
+}
+.curve-shape-1 {
+    color: var(--light) !important;
+}
+
+/********** Home css **********/
+.app-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    .bg-shape {
+        position: absolute;
+        height: 185%;
+        width: 100%;
+        display: block;
+        border-radius: 120px;
+        background: var(--light);
+        bottom: 0;
+        right: -40px;
+        transform: translate(35%, -28%) rotate(-35deg);
+        z-index: -1;
+    }
+}
+
+/********** Feature css **********/
+.app-features {
+    background-color: var(--light) !important;
+    .app-features-box {
+        border: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        .features-box-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 74px;
+            width: 74px;
+            color: $primary;
+            font-size: 45px;
+            border: 2px solid $primary;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            position: relative;
+            box-shadow: $shadow-sm;
+            overflow: hidden;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to left, $indigo-300, $indigo-500);
+                z-index: -1;
+                border-radius: 6px;
+                transform: translate(100%, 100%);
+                transition: all 0.4s;
+            }
+        }
+        &:hover {
+            transition: all 0.5s ease;
+            border: 1px solid var(--bs-gray-400);
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-6px);
+            .features-box-icon {
+                color: $white;
+                &::before {
+                    transform: translate(0);
+                    animation: right-top 0.4s linear;
+                }
+            }
+        }
+    }
+    img {
+        animation: upNdown 5s infinite linear;
+    }
+}
+
+/********** App How It Work css **********/
+.how-it-work {
+    background-color: var(--light) !important;
+    .how_it_inner {
+        background-color: var(--light);
+        border: none;
+        padding: 4rem 1rem;
+        border-radius: 30px;
+        box-shadow: 3px 3px 24px rgba($black, 0.2);
+        .how_it_inner-content {
+            padding: 0rem 3rem;
+            .text-container {
+                // position: relative;
+                padding: 2rem 0;
+                .text-number {
+                    // position: absolute;
+                    position: relative;
+                    // top: 40%;
+                    height: 4rem;
+                    width: 4rem;
+                    border-radius: 50%;
+                    background: var(--gray-200);
+                    box-shadow: 0px 0px 8px rgba($black, 0.4);
+                    color: $gray-500;
+                    font-size: 34px;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: var(--gray-200);
+                        box-shadow: 0px 0px 5px $gray-700;
+                        border-radius: 50%;
+                        z-index: -1;
+                        transform: scale(1.25);
+                        opacity: 0.2;
+                    }
+                }
+                .step_img {
+                    display: flex;
+                    justify-content: center;
+                }
+                .step_text {
+                    &:nth-child(odd) {
+                        text-align: left;
+                    }
+                    &:nth-child(even) {
+                        text-align: right;
+                    }
+                    .app_icon {
+                        display: flex;
+                        justify-content: end;
+                        i {
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: $indigo-300;
+                            border-radius: 50%;
+                            font-size: 21px;
+                            color: $white;
+                            margin: 0px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/********** App Showcase css **********/
+.app-showcase {
+    background-color: var(--light) !important;
+    .showcase-img {
+        position: relative;
+        img {
+            animation: upNdown 5s infinite linear;
+            z-index: 1;
+        }
+    }
+    .showcase-tabs {
+        border: 1px solid var(--gray-500);
+        border-radius: 30px;
+        .nav-item {
+            width: 25%;
+            .nav-link {
+                background-color: transparent;
+                color: var(--gray-900);
+                cursor: pointer;
+                border-radius: 30px;
+                width: 100%;
+                height: 46px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .active {
+                background-color: $primary;
+                color: $white;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+    .showcase-content {
+        max-width: 600px;
+        ul {
+            li {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                i {
+                    transform: rotateZ(45deg);
+                    background-image: linear-gradient(to top, $primary 34%, transparent 100%);
+                    color: transparent;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}
+
+/********** Customer Feedback css **********/
+.clients-review {
+    .swiper {
+        padding: 15px;
+        .swiper-wrapper {
+            padding: 46px 0px;
+            .clients-review-box {
+                box-shadow: $shadow-sm;
+                border: none;
+                border-radius: 20px;
+            }
+        }
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            border-radius: 20% !important;
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+            transition: all 0.5s ease;
+        }
+        .swiper-pagination-bullet-active {
+            transform: rotateZ(45deg);
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-color: $primary;
+        }
+    }
+}
+
+/********** Get The App Now css **********/
+.download-app {
+    background-image: url(../images/application/get-app-bg-img.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: $white;
+    padding: 5rem 0;
+    h2 {
+        color: $white;
+    }
+    .available-app-btn {
+        .custom-btn {
+            min-width: 180px;
+            padding: 10px 20px;
+            border-radius: 14px;
+            // background-color: $white;
+            // color: $black !important;
+            background-color: var(--light);
+            color: var(--gray-900) !important;
+            margin: 8px;
+            i {
+                font-size: 34px;
+            }
+          
+            p {
+                font-size: 18px;
+                line-height: 1.4;
+                font-weight: 700;
+                margin: 0;
+                span {
+                    font-style: normal;
+                    font-size: 12px;
+                    margin: 0;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+/********** FAQ css **********/
+.faq {
+    .accordion {
+        padding-top: 30px;
+        text-align: left;
+        .accordion-box {
+            border: none;
+            margin-bottom: 14px;
+            .faq-btn {
+                height: 64px;
+                background: linear-gradient(-47deg, rgba($indigo-500, 0.7) 0%, rgba($indigo-800, 0.8) 100%);
+                color: $white;
+                box-shadow: none;
+                border: none;
+                border-radius: 50px;
+                font-size: 18px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                text-align: left;
+                width: 100%;
+                padding: 10px 30px;
+                transition: all 0.5s ease;
+            }
+            .accordion-button {
+                transition: all 0.5s ease;
+                &:after {
+                    display: none;
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                background: linear-gradient(-47deg, rgba($indigo-800, 0.8) 0%, rgba($indigo-500, 0.7) 100%);
+                transition: all 0.5s ease;
+                &::after {
+                    display: none;
+                }
+            }
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/********** Our-Team css **********/
+.team-member {
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        .team-member-content {
+            box-shadow: 0 3px 6px rgba($black, 0.16), 0 3px 6px rgba($black, 0.23);
+            border-radius: 20px;
+            position: relative;
+            border: none;
+            transform: translateY(0);
+            transform-style: preserve-3d;
+            transition: transform 0.8s ease-in-out;
+            .team-member-img {
+                transform: translateY(0) translateZ(80px);
+                transition: transform 0.8s ease-in-out, opacity 1s ease;
+                pointer-events: none;
+                width: 100%;
+                perspective: inherit;
+                img {
+                    border-radius: 20px;
+                }
+            }
+            .member-detail-content {
+                color: $indigo;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                left: 0;
+                top: 0;
+                transform: rotateY(179deg) translateY(0) translateZ(80px);
+                opacity: 0;
+                z-index: -1;
+                transition: transform 0.8s ease-in-out, opacity 1s ease;
+                width: 100%;
+                height: 100%;
+                .member-detail {
+                    border-top: 1px solid $gray-400;
+                    border-bottom: 1px solid $gray-400;
+                    // width: 100%;
+                    .member-contact-list {
+                        line-height: 36px;
+                        width: fit-content;
+                        margin: 8px auto;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .team-member-content {
+                transform: rotateY(180deg);
+                z-index: 2;
+
+                .img-overlay {
+                    opacity: 0;
+                    transform-style: preserve-3d;
+                    z-index: 1;
+                }
+                .member-detail-content {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/********** KEY-FRAME **********/
+@keyframes upNdown {
+    0% {
+        transform: rotateX(0) translateY(20px);
+    }
+    50% {
+        transform: rotateX(0) translateY(0px);
+    }
+    to {
+        transform: rotateX(0) translateY(20px);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/********** MEDIA **********/
+@media (max-width: 991px) {
+    .app-section {
+        .bg-shape {
+            height: 152%;
+            right: 0px;
+        }
+    }
+    .how-it-work {
+        .how_it_inner {
+            ul {
+                .text-container {
+                    .text-number {
+                        // left: -18px;
+                        top: -14px;
+                        font-size: 26px;
+                        height: 3rem;
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .app-showcase {
+        .showcase-tabs {
+            margin-top: 30px;
+            border-radius: 24px;
+            .nav-item {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .app-section {
+        text-align: center;
+        .bg-shape {
+            right: 3rem;
+        }
+    }
+
+    .how-it-work {
+        .how_it_inner {
+            .how_it_inner-content {
+                .text-container {
+                    .step_text {
+                        &:nth-child(odd),
+                        &:nth-child(even) {
+                            text-align: center;
+                        }
+                        .app_icon {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .curve-shape {
+        bottom: -4px;
+    }
+    .app-features {
+        .app-features-box {
+            .features-box-icon {
+                font-size: 30px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .how-it-work {
+        .how_it_inner {
+            ul {
+                padding: 10px 24px;
+                .text-container {
+                    .text-number {
+                        height: 2.4rem;
+                        width: 2.4rem;
+                        font-size: 20px;
+                        // left: -2rem;
+                        top: 44%;
+                        left: -1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .app-showcase {
+        .showcase-tabs {
+            border-radius: 10px;
+            .nav-item {
+                width: 100%;
+                .nav-link {
+                    border-radius: 0px;
+                    
+                }
+                &:first-child .nav-link {
+                    border-radius: 10px 10px 0px 0px;
+                }
+                &:last-child .nav-link {
+                    border-radius: 0px 0px 10px 10px;
+                }
+            }
+        }
+    }
+}
+
+/********** RTL **********/
+[dir="rtl"] {
+    .app-section {
+        .bg-shape {
+            left: 40px;
+            right: auto;
+            transform: translate(-26%, -28%) rotate(-60deg);
+        }
+    }
+    .how-it-work {
+        .how_it_inner {
+            .how_it_inner-content {
+                .text-container {
+                    .step_text {
+                        &:nth-child(even) {
+                            text-align: left;
+                        }
+                        &:nth-child(odd) {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .how-it-work {
+             .how_it_inner {
+                 .how_it_inner-content {
+                     .text-container {
+                         .step_text {
+                            text-align: center !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+// help-center scss
+
+// start home scss
+.help-center {
+    padding: 140px 0;
+    background-color: var(--light);
+    background-image: url(../images/help-center/mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .title {
+        font-size: 32px!important;
+        letter-spacing: 1px;
+    }
+    .subcribe-form {
+        form {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            input {
+                padding: 12px 20px;
+                width: 100%;
+                border: none;
+                outline: 0!important;
+                padding-right: 160px;
+                padding-left: 30px;
+                height: 50px;
+                background-color: var(--bs-body-bg);
+            }
+            button {
+                position: absolute;
+                top: 2px;
+                bottom: 2px;
+                right: 3px;
+                outline: 0!important;
+            }
+        }
+    }
+}
+
+// end home scss
+
+// start faqs scss
+.help-faqs {
+    .features {
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            box-shadow: var(--shadow-sm);
+            background: var(--light);
+        }
+    }
+    .accordion {
+        .accordion-box {
+            margin: 5px 0;
+            border: 1px solid $gray-500;
+            .accordion-button {
+                box-shadow: none;
+                background-color: var(--theme-light--bc);
+                color: var(--gray-900);
+                font-weight: 500;
+                border-radius: 5px;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                    &::after {
+                        color: $white;
+                    }
+                }
+                &::after {
+                    content: "\F0140";
+                    color: var(--gray-900);
+                    background-image: none;
+                    font: normal normal normal 24px/1 "Material Design Icons";
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: $primary;
+                color: $white;
+                border-bottom: 1px solid $gray-500;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                &:after {
+                    color: $white;
+                }
+            }
+            .card-body {
+                // background-color: $light;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+// end faqs scss
+
+[dir="rtl"] {
+    .help-faqs {
+        .accordion {
+            .accordion-box {
+                .accordion-button {
+                    &::after {
+                        position: absolute;
+                        left: 19px;
+                    }
+                }
+            }
+        }
+    }
+}

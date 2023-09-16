@@ -1,0 +1,1178 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="nft.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="nft-explore.html" class="sub-mega-menu">explore</a></li>
+                    <li><a href="maintenance-page-2.html" class="sub-mega-menu">maintenance</a></li>
+                    <li><a href="help-center.html" class="sub-mega-menu">help center</a></li>
+                    
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+                </ul><!--end navigation menu-->
+            </div><!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="list-inline d-flex align-items-center mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul><!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div>
+        <!--end container-->
+    </header><!-- END navbar -->
+
+    <!-- /********** Home Section **********/ -->
+    <section class="section nft-home-section">
+        <div class="container">
+            <div class="row justify-content-lg-between align-items-center g-4">
+                <div class="col-lg-5">
+                    <p class="text-danger m-0">
+                        NFT Market..
+                    </p>
+                    <h1> Discover best NFT Marketplace </h1>
+                    <p class="text-muted">
+                        Non-fungible tokens, or NFTs, are artworks created on the blockchain with unique encryption
+                        codes that can be validated for ownership.
+                    </p>
+                    <div class="button-group">
+                        <button class="btn btn-info my-2">Get Started</button>
+                        <button class="btn btn-outline-info m-2">Create</button>
+                    </div>
+                    <div class="row py-4">
+                        <div class="col-4">
+                            <div class="box">
+                                <h4>10K+</h4>
+                                <p class="text-muted">Registered Clients</p>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-4">
+                            <div class="box">
+                                <h4>25K+</h4>
+                                <p class="text-muted">Regular Bid</p>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-4">
+                            <div class="box">
+                                <h4>8K+</h4>
+                                <p class="text-muted">Verified Auctions</p>
+                            </div>
+                        </div><!-- END col -->
+                    </div><!-- END row -->
+                </div><!-- END col -->
+
+                <div class="col-lg-6">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-sm-5">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="home-img">
+                                        <img src="assets/images/nft/nft-img-4.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END col -->
+                                <div class="col-12">
+                                    <div class="home-img">
+                                        <img src="assets/images/nft/nft-img-2.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END col -->
+                            </div><!-- END row -->
+                        </div><!-- END col -->
+
+                        <div class="col-sm-5">
+                            <div class="row mt-sm-4 g-4">
+                                <div class="col-12">
+                                    <div class="home-img">
+                                        <img src="assets/images/nft/nft-img-1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END col -->
+                                <div class="col-12">
+                                    <div class="home-img">
+                                        <img src="assets/images/nft/nft-img-3.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END col -->
+                            </div><!-- END row -->
+                        </div><!-- END col -->
+                    </div><!-- END row -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <div class="position-relative">
+        <div class="curve-shape overflow-hidden text-light">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- /********** Category Section **********/ -->
+    <section class="section nft-category">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6 col-md-10">
+                    <p class="text-danger m-0">Category</p>
+                    <h2 class="text-center text-uppercase m-0"> Browse by Category </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-4">
+                        Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-palette-outline"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase">Art Work</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-music"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase">Music</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-web"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase"> utility</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-volleyball"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase">Sports</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-gift-open-outline"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase">Collectibles</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-cards-outline"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase">Cards</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-medal-outline"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase">Metaverse</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="category-box">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <div class="category-icon">
+                                    <i class="mdi mdi-server-network"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="m-0 text-uppercase">Domain</h5>
+                                <p class="m-0">Best collection for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** Live Action Section **********/ -->
+    <section class="section nft-live-action" style="background: var(--light);">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6 col-md-10">
+                    <p class="text-danger m-0">Actions</p>
+                    <h2 class="text-center text-uppercase m-0"> Live Actions </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-4">
+                        Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/01.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/02.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">rasselmrh</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-5.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 12 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.64 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END action box -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/03.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/04.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Julian Canne</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-6.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 20 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.90 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END action box -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/09.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/06.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Elix_Qe</p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-7.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 24 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.52 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END action box -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="action-box">
+                        <div class="d-flex align-items-center grp-img">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-group">
+                                    <span class="avatar-group-item border-0">
+                                        <img src="assets/images/clients/08.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                    <span class="avatar-group-item border-0 check-icon">
+                                        <img src="assets/images/clients/07.png"
+                                            class="img-fluid rounded-circle avatar-sm" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex-grow-0 flex-md-grow-1 ms-3 text-start">
+                                <p class="mb-0 fw-semibold">Mimi_Chao </p>
+                            </div>
+                        </div>
+                        <div class="action-box-img">
+                            <img src="assets/images/nft/nft-img-8.png" class="img-fluid" alt="">
+                            <span class="like-btn"></span>
+                        </div>
+                        <div class="action-content">
+                            <a href="javascript:void(0)">Dream World #50</a>
+                            <div class="nft-status d-flex justify-content-between text-muted py-2">
+                                <span class="nft-view"> <i class="mdi mdi-eye-outline"></i> View History </span>
+                                <span class="nft-stock"> 68 in Stock </span>
+                            </div>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <p class="text-muted">0.98 ETH</p>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END action box -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** pricing Section **********/ -->
+    <section class="section nft-pricing" data-simplebar>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="nft-content text-center">
+                        <!-- <img class="nft-pricing-img"
+                            src="https://smthemebazar.com/bigtech/wp-content/uploads/2022/11/fire.png" alt="" /> -->
+                        <h2 class="nft-first-title">
+                            Join Future of Algorithmic
+                            <span>Crypto</span><br />
+                            Trading Strategies
+                        </h2>
+                    </div>
+                    <div class="nft-progress-wrap">
+                        <ul class="nft-progress-list d-flex justify-content-between align-items-center">
+                            <li>LOSS</li>
+                            <li>AVERAGE</li>
+                            <li>PROFIT</li>
+                        </ul>
+
+                        <div id="estimate">
+                            <div class="form-group range-bar">
+                                <div>
+                                    <input type="range" value="65" option="16" id="customRange"
+                                        class="w-100 prc e-range" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nft-second-title d-flex justify-content-between align-items-center" id="progres">
+                            <h4 class="nft-rangebar-detail">
+                                <span id="move">0</span>% TARGET RAISED
+                            </h4>
+                            <h4 class="nft-rangebar-detail">1
+                                <select name="coins" id="coins" onchange="myCoins()">
+                                    <option value="1040">ETH</option>
+                                    <option value="887,250.9">BTC</option>
+                                    <option value="65.4">BUSD</option>
+                                    <option value="65.4">USDT</option>
+                                    <option value="195.8">BNB</option>
+                                </select> = $<span id="result"></span>
+                            </h4>
+                        </div>
+                    </div>
+                </div><!-- end nft-col -->
+            </div><!-- end nft-row -->
+
+            <!-- start nft-row -->
+            <!-- start nft-col -->
+
+            <div class="nft-countdown-wrap text-center">
+                <h2 class="nft-countdown-title">ICO WILL START IN..</h2>
+                <!-- <div class="d-flex justify-content-center align-items-center"> -->
+                <div class="row g-2 justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="count-time d-flex flex-column justify-content-center align-items-center Days">
+                            <span class="countdown-details" id="demo"></span>
+                            <span class="text-white">Days</span>
+                        </div>
+                    </div>
+                    <!--end nft-col  -->
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="count-time d-flex flex-column justify-content-center align-items-center Hour">
+                            <span class="countdown-details1" id="demo1"></span>
+                            <span class="text-white"> Hour </span>
+                        </div>
+                    </div>
+                    <!--end nft-col  -->
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="count-time d-flex flex-column justify-content-center align-items-center  Minute">
+                            <span class="countdown-details2" id="demo2"></span>
+                            <span class="text-white"> Minute </span>
+                        </div>
+                    </div>
+                    <!--end nft-col  -->
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="count-time d-flex flex-column justify-content-center align-items-center Second">
+                            <span class="countdown-details3" id="demo3"></span>
+                            <span class="text-white"> Second </span>
+                        </div>
+                    </div>
+                    <!--end nft-col  -->
+                </div><!-- end nft-row -->
+            </div>
+        </div><!-- end nft-container -->
+    </section>
+
+    <!-- /********** Top Collection Section **********/ -->
+    <section class="section nft-top-collection" style="background: var(--light);">
+        <div class="container">
+            <h2 class="mb-4">Top collections in <span class="text-danger">1 day</span> </h2>
+            <div class="row g-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">1</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-1.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block text-3 fw-bold text-uppercase" href="javascript:void(0)">
+                                    MX Clone
+                                </a>
+                                <span class="text-muted">$3,911,243</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">2</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-2.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block text-3 fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Patterfly Studio -->
+                                    Patterfly
+                                </a>
+                                <span class="text-muted">3,002.98 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">3</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-3.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- NFT Art Official -->
+                                    NFT Art
+                                </a>
+                                <span class="text-muted">$12,002.48</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">4</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-4.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    PhotoLution
+                                </a>
+                                <span class="text-muted">93,002.98 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">5</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-1.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    3D Model
+                                </a>
+                                <span class="text-muted">$23,002.98</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">6</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-2.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    The Artificial
+                                </a>
+                                <span class="text-muted">93,002.98 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">7</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-3.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Paper Bag World -->
+                                    Paper Bag
+                                </a>
+                                <span class="text-muted">$3,002.98</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">8</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-4.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    Liquidities
+                                </a>
+                                <span class="text-muted">826,843 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">9</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-5.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    Sketchbook
+                                </a>
+                                <span class="text-muted">$655,444</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">10</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-6.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    NFT World
+                                </a>
+                                <span class="text-muted">221,416 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">11</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-collection-img-5.png"
+                                    class="img-fluid avatar-lg rounded-circle" alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Zombi Club Tokene -->
+                                    Zombi Club
+                                </a>
+                                <span class="text-muted">$221,416</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="top-collection-box">
+                        <div class="d-flex align-items-center">
+                            <div class="text-3">12</div>
+                            <a href="javascript:void(0)" class="check-icon d-flex mx-3">
+                                <img src="assets/images/nft/nft-img-7.png" class="img-fluid avatar-lg rounded-circle"
+                                    alt="">
+                            </a>
+                            <div class="overflow-hidden">
+                                <a class="d-block fw-bold text-uppercase" href="javascript:void(0)">
+                                    <!-- Tattoo Girl Art -->
+                                    Tattoo Girl
+                                </a>
+                                <span class="text-muted">1,623,703 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** Popular Collection Section **********/ -->
+    <section class="section nft-popular-collection">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6 col-md-10">
+                    <p class="text-danger m-0">Collection</p>
+                    <h2 class="text-center text-uppercase m-0"> Popular Collection </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-4">
+                        Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card popular-collection-box">
+                        <div class="swiper mySwiper-collection">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-1.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-4.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-2.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-3.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+                            </div><!-- END swiper-wrapper -->
+                        </div><!-- END swiper -->
+                        <div class="collection-box-content">
+                            <a href="javascript:void(0)">Radium Animated Monster</a>
+                            <p class="text-muted">Collection has 13 items</p>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <span class="text-muted">0.64 ETH</span>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card popular-collection-box">
+                        <div class="swiper mySwiper-collection">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-5.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-6.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-7.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-8.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+                            </div><!-- END swiper-wrapper -->
+                        </div><!-- END swiper -->
+                        <div class="collection-box-content">
+                            <a href="javascript:void(0)">Digital CryptoArt</a>
+                            <p class="text-muted">Collection has 20 items</p>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <span class="text-muted">0.87 ETH</span>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card popular-collection-box">
+                        <div class="swiper mySwiper-collection">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-9.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-10.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-12.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <div class="collection-box-img">
+                                        <img src="assets/images/nft/nft-popular-col-11.png" class="img-fluid" alt="">
+                                    </div>
+                                </div><!-- END swiper-slide -->
+                            </div><!-- END swiper-wrapper -->
+                        </div><!-- END swiper -->
+                        <div class="collection-box-content">
+                            <a href="javascript:void(0)">ZombieLand is alive</a>
+                            <p class="text-muted">Collection has 62 items</p>
+                            <div class="price-like d-flex justify-content-between align-items-center pt-3">
+                                <div class="nft-price d-flex align-items-center">
+                                    <span class="currency-icon me-2">
+                                        <i class="mdi mdi-ethereum"></i>
+                                    </span>
+                                    <span class="text-muted">0.90 ETH</span>
+                                </div>
+                                <a href="javascript:void(0)" class="nft-bid">Place Bid</a>
+                            </div>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** blog Section **********/ -->
+    <section class="section nft-blog">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6 col-md-10">
+                    <p class="text-danger m-0">Blog</p>
+                    <h2 class="text-center text-uppercase m-0"> Latest News Update </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-4">
+                        Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4">
+                <div class="swiper mySwiper-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-box">
+                                <div class="blog-img ">
+                                    <img src="assets/images/nft/nft-blog-img-1.png" class="img-fluid" alt="">
+                                    <div class="date"><strong>28</strong> <span>Apr</span></div>
+                                </div>
+                                <div class="blog-content">
+                                    <h4>
+                                        How to find a NFT
+                                    </h4>
+                                    <p class="text-muted m-0 pb-3 border-bottom">
+                                        With so many projects out there, we know it can seem hard to find an NFT you
+                                        love.
+                                    </p>
+                                    <ul class="list-unstyled d-flex blog-box-list p-0">
+                                        <li class="ps-0 d-flex align-items-center">
+                                            <div class="check-icon">
+                                                <img src="assets/images/clients/03.png"
+                                                    class="img-fluid avatar-sm rounded-circle" alt="">
+                                            </div>
+                                            <span class="ms-3"> Andrew Petroy </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- END box -->
+                        </div><!-- END swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="blog-box">
+                                <div class="blog-img ">
+                                    <img src="assets/images/nft/nft-blog-img-2.png" class="img-fluid" alt="">
+                                    <div class="date"><strong>24</strong> <span>Apr</span></div>
+                                </div>
+                                <div class="blog-content">
+                                    <h4>
+                                        Learn More about NFT
+                                    </h4>
+                                    <p class="text-muted m-0 pb-3 border-bottom">
+                                        With so many projects out there, we know it can seem hard to find an NFT you
+                                        love.
+                                    </p>
+                                    <ul class="list-unstyled d-flex blog-box-list p-0">
+                                        <li class="ps-0 d-flex align-items-center">
+                                            <div class="check-icon">
+                                                <img src="assets/images/clients/06.png"
+                                                    class="img-fluid avatar-sm rounded-circle" alt="">
+                                            </div>
+                                            <span class="ms-3"> Jhon doe </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- END box -->
+                        </div><!-- END swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="blog-box">
+                                <div class="blog-img ">
+                                    <img src="assets/images/nft/nft-blog-img-3.png" class="img-fluid" alt="">
+                                    <div class="date"><strong>20</strong> <span>Apr</span></div>
+                                </div>
+                                <div class="blog-content">
+                                    <h4>
+                                        Trending NFT 2022
+                                    </h4>
+                                    <p class="text-muted m-0 pb-3 border-bottom">
+                                        With so many projects out there, we know it can seem hard to find an NFT you
+                                        love.
+                                    </p>
+                                    <ul class="list-unstyled d-flex blog-box-list p-0">
+                                        <li class="ps-0 d-flex align-items-center">
+                                            <div class="check-icon">
+                                                <img src="assets/images/clients/02.png"
+                                                    class="img-fluid avatar-sm rounded-circle" alt="">
+                                            </div>
+                                            <span class="ms-3"> Kristina </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- END box -->
+                        </div><!-- END swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="blog-box">
+                                <div class="blog-img ">
+                                    <img src="assets/images/nft/nft-blog-img-4.png" class="img-fluid" alt="">
+                                    <div class="date"><strong>26</strong> <span>Apr</span></div>
+                                </div>
+                                <div class="blog-content">
+                                    <h4>
+                                        Decentrelize Crypto ...
+                                    </h4>
+                                    <p class="text-muted m-0 pb-3 border-bottom">
+                                        With so many projects out there, we know it can seem hard to find an NFT you
+                                        love.
+                                    </p>
+                                    <ul class="list-unstyled d-flex blog-box-list p-0">
+                                        <li class="ps-0 d-flex align-items-center">
+                                            <div class="check-icon">
+                                                <img src="assets/images/clients/01.png"
+                                                    class="img-fluid avatar-sm rounded-circle" alt="">
+                                            </div>
+                                            <span class="ms-3"> Samanta J.D</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- END box -->
+                        </div><!-- END swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="blog-box">
+                                <div class="blog-img ">
+                                    <img src="assets/images/nft/nft-blog-img-5.png" class="img-fluid" alt="">
+                                    <div class="date"><strong>14</strong> <span>Apr</span></div>
+                                </div>
+                                <div class="blog-content">
+                                    <h4>
+                                        Trending NFT 2022
+                                    </h4>
+                                    <p class="text-muted m-0 pb-3 border-bottom">
+                                        With so many projects out there, we know it can seem hard to find an NFT you
+                                        love.
+                                    </p>
+                                    <ul class="list-unstyled d-flex blog-box-list p-0">
+                                        <li class="ps-0 d-flex align-items-center">
+                                            <div class="check-icon">
+                                                <img src="assets/images/clients/08.png"
+                                                    class="img-fluid avatar-sm rounded-circle" alt="">
+                                            </div>
+                                            <span class="ms-3">Williamson </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- END box -->
+                        </div><!-- END swiper-slide -->
+                    </div><!-- END swiper-wrapper -->
+                    <div class="swiper-pagination"></div>
+                </div><!-- END swiper -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+    <script src="assets/js/main/nft-pricing.js"></script>
+    <script>
+        $('.like-btn').on('click', function() {
+            $(this).toggleClass('is-active');
+        });
+    </script>
+
+</body>
+
+</html>

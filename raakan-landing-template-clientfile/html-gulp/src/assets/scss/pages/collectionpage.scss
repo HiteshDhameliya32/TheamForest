@@ -1,0 +1,234 @@
+// collection-page scss
+.collection-page {
+  .open-filter {
+    #Product-list {
+      padding: 8px 10px 8px 0;
+      max-width: 320px;
+    }
+    .shorting-item {
+      border: 1px solid $dark;
+      border-radius: 6px;
+      select {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  .offcanvas {
+    .offcanvas-title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .offcanvas-header {
+      margin: 20px 0;
+      padding: 16px 40px;
+    }
+    .Product-filter {
+      list-style-type: none;
+      padding: 22px 40px;
+    }
+    .Product-Materials {
+      padding: 0 40px;
+      margin-bottom: 12px;
+    }
+    .show-Material {
+      display: none;
+    }
+    .filter-offcanvas.active .show-Material {
+      display: block;
+      input[type="checkbox"] {
+        accent-color: $black;
+      }
+    }
+    .filter-offcanvas.active > .Product-filter .mdi {
+      transform: rotate(180deg);
+      transition: 0.3s ease-in-out;
+    }
+    .close {
+      cursor: pointer;
+    }
+  }
+
+  // off-canvas section end
+  .collection-section {
+    .product-name {
+      cursor: pointer;
+    }
+    .stars .mdi {
+      color: $warning;
+    }
+
+    .card {
+      position: relative;
+      border: none;
+      border-radius: 4px;
+      a {
+        img {
+          border-radius: 6px 6px 0 0;
+        }
+      }
+
+      .shop-icons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: none;
+        animation: fadeInAnimation ease 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        @keyframes fadeInAnimation {
+          0% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .btn.btn-icon {
+          width: 36px;
+          height: 36px;
+          &:hover {
+            background-color: $danger !important;
+            color: $white !important;
+            transition: all 0.5s;
+          }
+        }
+
+        .btn.btn-icon1 {
+          width: 36px;
+          height: 36px;
+          &:hover {
+            background-color: $primary !important;
+            color: $white !important;
+            transition: all 0.5s;
+          }
+        }
+
+        .btn.btn-icon2 {
+          width: 36px;
+          height: 36px;
+          &:hover {
+            background-color: $warning !important;
+            color: $white !important;
+            transition: all 0.5s;
+          }
+        }
+      }
+
+      &:hover .shop-icons {
+        display: block;
+      }
+    }
+
+    .col-12.is-hidden {
+      display: none;
+    }
+
+    .modal {
+      .modal-body {
+        .page-button {
+          width: 10px;
+          height: 10px;
+        }
+        .btn.btn-icon1 {
+          width: 36px;
+          height: 36px;
+        }
+
+        .btn.qty-btn {
+          width: 60px;
+          height: 36px;
+          // background-color: $color2;
+          color: $primary;
+          pointer-events: none;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  // card section end
+
+  .pagination {
+    padding: 40px 0;
+    a {
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 50%;
+      
+      &:hover {
+        background-color: $dark;
+        color: $white;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .collection-section {
+    .card {
+      .modal {
+        .col-lg-7 {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+[dir="rtl"] {
+  .collection-page {
+    .collection-section {
+      .card {
+        .shop-icons {
+          position: absolute;
+          top: 10px;
+          left: 10px !important;
+          right: auto !important;
+          display: none;
+          animation: fadeInAnimation ease 0.9s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        &:hover .shop-icons {
+          display: block;
+        }
+      }
+      .col-12.is-hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+.collection-modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {}
+      .modal-body {
+        .rating  {
+          .icons {
+            i {
+              color: $warning;
+            }
+          }
+        }
+        .qty-btn {
+          width: 60px;
+          // background-color: $color2;
+          color: $primary;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

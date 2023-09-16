@@ -1,0 +1,374 @@
+/********** Home Section css **********/
+.blog-home {
+    padding-bottom: 0px;
+    .swiper {
+        min-height: 800px;
+        padding: 0;
+        .swiper-slide {
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 1;
+            color: $white;
+            .home-box {
+                padding: 3rem 1rem;
+                // background-color: rgba($white, 0.2);
+                background-color: var(--rgba-light--bc);
+                border: 6px double rgba($white, 0.5);
+                // backdrop-filter: blur(4px);
+                border-radius: 30px;
+                p,
+                ul {
+                    color: var(--gray-400);
+                }
+            }
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: 0rem;
+            left: auto;
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: 0rem;
+            right: auto;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 50%;
+            color: $black !important;
+            background: rgba($white, 0.4);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font: normal normal normal 24px/1 "Material Design Icons";
+            font-size: 40px;
+        }
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: "\f19b1";
+        }
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: "\f19b0";
+        }
+    }
+}
+
+/********** Popular-Blog Section css **********/
+.popular-blog {
+    .popular-blog-box {
+        overflow: hidden;
+        border: none;
+        .blog-box-img {
+            overflow: hidden;
+            position: relative;
+            &:after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 100%;
+                background-color: var(--light);
+                height: 60%;
+                width: 105%;
+                z-index: 10;
+                transform: rotate(12deg);
+                transform-origin: 100% 0 0;
+            }
+        }
+        .box-content {
+            padding: 2rem;
+            background-color: var(--light);
+            .date {
+                color: var(--text-primary);
+                font-style: italic;
+                font-size: 14px;
+            }
+            .read-btn {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+            }
+        }
+    }
+}
+
+/********** Recent-Blog Section css **********/
+.recent-blog {
+    .swiper {
+        padding: 30px 5px;
+        .swiper-pagination-bullet {
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+        }
+        .swiper-pagination-bullet-active {
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-color: $primary;
+        }
+    }
+    .recent-blog-box {
+        border: none;
+        text-align: center;
+        border-radius: 10px;
+        .recent-blog-img {
+            position: relative;
+            padding-bottom: 0;
+            img {
+                border-radius: 10px 10px 0px 0px;
+            }
+            .date {
+                position: absolute;
+                width: 88%;
+                right: 24px;
+                bottom: -18px;
+                margin: 0;
+                border-radius: 8px;
+                padding: 10px;
+                display: inline-block;
+                font-size: 14px;
+                background: var(--bs-body-bg);
+                color: var(--gray-900);
+                text-align: center;
+                box-shadow: 0px 5px 14px rgba($black, 0.3);
+            }
+        }
+        .recent-blog-content {
+            padding-top: 34px;
+            h5 {
+                color: var(--text-primary);
+            }
+            p {
+                font-size: 14px;
+                    color: $muted;
+            }
+        }
+    }
+}
+
+/********** Trendy-News Section css **********/
+.trendy-news {
+    .trendy-blog-box {
+        // border: none;
+        border: 1px solid $gray-400;
+        border-radius: 20px;
+        .blog-box-img,
+        .blog-box-img-1 {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 86%;
+                height: 86%;
+                bottom: 7%;
+                left: 7%;
+                // transform: translateY(110%);
+                text-align: center;
+                opacity: 0;
+                z-index: 4;
+                // backdrop-filter: blur(2px);
+                border-radius: 22px;
+                border: 6px double $white;
+                background-color: rgba($white, 0.4);
+                transition: all 0.5s ease;
+            }
+            img {
+                border-radius: 20px;
+                transition: all 0.5s ease;
+            }
+        }
+        // .blog-box-img {
+        //     &::before {
+        //         top: 0.6rem;
+        //         left: 0.8rem;
+        //     }
+        // }
+        // .blog-box-img-1 {
+        //     &::before {
+        //         top: 1.2rem;
+        //         // left: 2rem;
+        //         left: 1.6rem;
+        //     }
+        // }
+        .blog-box-content {
+            padding: 1rem;
+            // border: 1px solid $gray-400;
+            border-radius: 0px 0px 20px 20px;
+            border-top: none;
+        }
+
+        &:hover {
+            .blog-box-img,
+            .blog-box-img-1 {
+                &::before {
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                    z-index: 4;
+                }
+                img {
+                    transform: scale(1.2) rotate(5deg);
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}
+
+/********** All-Blog & News Section css **********/
+.all-blog-news {
+    .all-blog-box {
+        padding: 10px;
+        border: none;
+        box-shadow: var(--shadow-sm);
+        border-radius: 10px;
+        .all-blog-box-img {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            width: auto;
+            img {
+                border-radius: 10px 10px 0px 0px;
+            }
+            &::after {
+                background: rgba(255, 255, 255, 0.3);
+                bottom: 0;
+                content: "";
+                left: 50%;
+                position: absolute;
+                right: 51%;
+                top: 0;
+                opacity: 1;
+                pointer-events: none;
+                transition: all 400ms linear;
+            }
+            .badge {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 0px;
+                font-size: 14px;
+                padding: 8px 20px;
+            }
+        }
+        .blog-box-content {
+            padding-top: 1rem;
+            h4 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+                color: $muted;
+            }
+            .read-btn {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+            }
+        }
+        &:hover {
+            .all-blog-box-img {
+                &:after {
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    transition: all 400ms linear;
+                }
+            }
+        }
+    }
+}
+
+/********** Pagination css **********/
+.navigation {
+    margin-top: 3rem;
+    .pagination {
+        .page-item {
+            .page-link {
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0px 5px;
+                border-color: var(--bs-gray-400);
+                color: var(--gray-900);
+                background-color: var(--bs-body-bg);
+                &:focus {
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+                &:hover {
+                    transition: all 0.5s ease;
+                    background-image: linear-gradient(0deg, $info 0%, $purple 100%);
+                    color: $white;
+                    border: transparent;
+                }
+            }
+        }
+        .active {
+            .page-link {
+                background-image: linear-gradient(0deg, $info 0%, $purple 100%);
+                color: $white;
+                border: transparent;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .recent-blog {
+         .recent-blog-box {
+             .recent-blog-img {
+                 .date {
+                    position: absolute;
+                    width: 88%;
+                    right: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recent-blog {
+         .recent-blog-box {
+             .recent-blog-img {
+                 .date {
+                    width: 95%;
+                    right: 7px;
+                }
+            }
+        }
+    }
+}
+
+/********** RTL **********/
+[dir="rtl"] {
+    .popular-blog {
+        .popular-blog-box {
+            overflow: hidden;
+            border: none;
+            .blog-box-img {
+                overflow: hidden;
+                position: relative;
+                &:after {
+                    top: 66%;
+                    transform: rotate(-12deg);
+                }
+            }
+        }
+    }
+}

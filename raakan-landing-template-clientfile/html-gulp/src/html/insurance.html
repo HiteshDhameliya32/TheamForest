@@ -1,0 +1,1046 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+
+</head>
+
+<body>
+
+    @@include('./partials/navbar.html')
+
+    @@include('./partials/page-loader.html')
+
+    @@include('./partials/right-sidebar.html')
+
+
+    <!-- start insurance-hero section -->
+    <section class="hero-insurance section">
+        <div class="container h-100">
+            <div class="row g-2 text-center justify-content-center justify-content-lg-start align-items-end h-100">
+                <div class="col-md-10 col-lg-7">
+                    <h1 class="fw-bold display-4 text-white">You don’t need a license to live, 
+                        <span class="text-primary">but a way to protect it.</span>
+                    </h1>
+                    <p class="text-dark">Select a policy type to get quotes</p>
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <a href="javascript:void(0)" class="insurance mx-auto">
+                                <span>
+                                    <i class="mdi mdi-car-back"></i>
+                                    <h6 class="text-black mb-0">Car<br>Insurance</h6>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <a href="javascript:void(0)" class="insurance mx-auto">
+                                <span>
+                                    <i class="mdi mdi-hand-heart-outline"></i>
+                                    <h6 class="text-black mb-0">Health<br>Insurance</h6>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <a href="javascript:void(0)" class="insurance mx-auto">
+                                <span>
+                                    <i class="mdi mdi-home-city"></i>
+                                    <h6 class="text-black mb-0">Home<br>Insurance</h6>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <a href="javascript:void(0)" class="insurance mx-auto"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <span>
+                                    <i class="mdi mdi-search-web"></i>
+                                    <h6 class="fw-bold text-black mb-0">View More</h6>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-12">
+                    <div class="form-design rounded-3 p-2 p-sm-3">
+                        <form class="insurance-form">
+                            <div class="row g-1">
+                                <div class="col-sm-3">
+                                    <div>
+                                        <input type="number" class="form-control border-0"
+                                            id="name" placeholder="Your policy no" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div>
+                                        <input type="email" class="form-control border-0"
+                                            id="email" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div>
+                                        <select class="form-select border-0" id="floatingSelect"
+                                            aria-label="Floating label select example" required>
+                                            <option selected="">Health</option>
+                                            <option value="1">Travel</option>
+                                            <option value="2">Pets</option>
+                                            <option value="3">vehicle</option>
+                                            <option value="4">Home</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <button class="btn btn-lg btn-outline-white" type="submit">New Add</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- end form -->
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <!-- start modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLab"
+                aria-hidden=" true">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h3 class="fw-bold m-0">Insurance List</h3>
+                            <button type="button" class="btn-close bg-white m-0" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-3">
+                                <h4>Term Life Insurance</h4>
+                                <div class="col-6 border border-0 border-2 border-end">
+                                    <div class="text-center">
+                                        <span class="badge text-bg-danger">Save On Tax*</span>
+                                        <div>
+                                            <a href="javascript:void(0)">
+                                                <i class="mdi mdi-umbrella fs-2 text-info"></i>
+                                                <p>Term Insurance</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-bus fs-2 text-info"></i>
+                                            <p>2 cr. Term Life</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4>Health Insurance</h4>
+                                <div class="col-6 border border-0 border-2 border-end">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-hand-heart-outline fs-2 text-info"></i>
+                                            <p>Health Insurance</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-human-male-female-child fs-2 text-info"></i>
+                                            <p>Family Health Insurance</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4>Investment Plans</h4>
+                                <div class="col-6 border border-0 border-2 border-end">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-baby-carriage fs-2 text-info"></i>
+                                            <p>Child Plans</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <span class="mdi mdi-human-wheelchair fs-2 text-info"></span>
+                                            <p>Retirement Plans</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4>Vehicle Insurance</h4>
+                                <div class="col-6 col-sm-3 border border-0 border-2 border-end">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-car fs-2 text-info"></i>
+                                            <p>Car Insurance</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 border border-0 border-2 border-end">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-bike fs-2 text-info"></i>
+                                            <p>Bike Insurance</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 border border-0 border-2 border-end">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-taxi fs-2 text-info"></i>
+                                            <p>Taxi Plans</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)">
+                                            <i class="mdi mdi-bus fs-2 text-info"></i>
+                                            <p>Commercial Vehicle Plans</sp>
+                                            </div>
+                                        </a>
+                                    </div>
+                               
+                                <h4>Other products</h4>
+                                <div class="col-6 border border-0 border-2 border-end">
+                                    <div class="text-center">
+                                        <span class="badge text-bg-danger">New</span>
+                                        <div>
+                                            <a href="javascript:void(0)">
+                                                <i class="mdi mdi-currency-usd fs-2 text-info"></i>
+                                                <p>Investment Plans</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center">
+                                        <span class="badge text-bg-danger">New</span>
+                                        <div>
+                                            <a href="javascript:void(0)">
+                                                <i class="mdi mdi-airplane-landing fs-2 text-info"></i>
+                                                <p>Travel Insurance</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end insurance-hero section -->
+
+    <section class="news-articles section">
+        <div class="container">
+            <h2 class="text-center text-primary text-uppercase">News and Articles</h2>
+            <div class="heading-lines">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="swiper newsSwiper p-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/images/insurance/health-img.png" class="card-img-top" alt="">
+                            <div class="card-body text-center">
+                                <p class="card-title">Health</p>
+                                <h5 class="card-text"><a href="javascript:void(0)">Benefits of Buying
+                                        Health
+                                        Insurance</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end swiper-slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/images/insurance/travel-img.png" class="card-img-top" alt="">
+                            <div class="card-body text-center">
+                                <p class="card-title">Travel</p>
+                                <h5 class="card-text"><a href="javascript:void(0)">The Importance of
+                                        Travel Insurance</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end swiper-slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/images/insurance/pet-img.png" class="card-img-top" alt="">
+                            <div class="card-body text-center">
+                                <p class="card-title">Pets</p>
+                                <h5 class="card-text"><a href="javascript:void(0)">Why You Need
+                                        Insurance for Your Pet</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end swiper-slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/images/insurance/car-img.png" class="card-img-top" alt="">
+                            <div class="card-body text-center">
+                                <p class="card-title">Car</p>
+                                <h5 class="card-text"><a href="javascript:void(0)">Benefits of Buying
+                                        Car
+                                        Insurance</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end swiper-slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="assets/images/insurance/home-img.png" class="card-img-top" alt="">
+                            <div class="card-body text-center">
+                                <p class="card-title">home</p>
+                                <h5 class="card-text"><a href="javascript:void(0)">Tips to Reduce Your
+                                        Home Insurance Cost</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end News and Articles -->
+
+    <section class="insurance-counter section">
+        <div class="container">
+            <h2 class="text-center text-primary text-uppercase">For Client and Company</h2>
+            <div class="heading-lines">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row text-center">
+                <div class="col-6 col-md-3">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-muted">
+                            <i class="mdi mdi-account fs-1"></i>
+                            <h2 class="counter_value" data-target="5862">0</h2>
+                            <p class="mb-0 fw-bold">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-6 col-md-3">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-muted">
+                            <i class="mdi mdi-star fs-1"></i>
+                            <h2 class="counter_value" data-target="4.9">4.9</h2>
+                            <p class="mb-0 fw-bold">Rating</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-6 col-md-3">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-muted">
+                            <i class="mdi mdi-trophy fs-1"></i>
+                            <h2 class="counter_value" data-target="3551">0</h2>
+                            <p class="mb-0 fw-bold">Awards Achieved</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-6 col-md-3">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-muted">
+                            <i class="mdi mdi-account-group fs-1"></i>
+                            <h2 class="counter_value" data-target="856">0</h2>
+                            <p class="mb-0 fw-bold">Team Members</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end count section -->
+
+    <section class="insurance-accordion section">
+        <div class="container">
+            <h2 class="text-center text-primary text-uppercase">FAQ About Insurance</h2>
+            <div class="heading-lines">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="tab mb-3">
+                <button class="btn border-0 rounded-0 px-0 text-muted fw-bold fs-5 tablinks active"
+                    onclick="openCity(event, 'General')">General</button>
+                <button class="btn border-0 rounded-0 px-0 text-muted mx-3 fw-bold fs-5 tablinks"
+                    onclick="openCity(event, 'Health')">Health</button>
+                <button class="btn border-0 rounded-0 px-0 text-muted fw-bold fs-5 tablinks"
+                    onclick="openCity(event, 'vehicle')">vehicle</button>
+            </div>
+            <div id="General" class="tabcontent">
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What Is Insurance?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                Insurance is a contract which is presented as a policy to be used as a risk management
+                                tool
+                                to ensure financial protection at the time of crisis. Insurance helps an individual to
+                                ensure financial protection against losses that may arise during an unforeseen event. An
+                                insurance policy is a contract between an individual (policyholder) and an insurance
+                                company
+                                (Insurance provider), under which, the individual makes regular payments known as
+                                premiums
+                                to the insurance company which in return pays the sum assured in case an unforeseen
+                                event
+                                such as demise of the policyholder, accident, damage to the vehicles or other
+                                possessions.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 1 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How Does Insurance Work
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                As mentioned earlier, insurance is a legal contract between the policyholder and the
+                                insurance provider. The insurance policy carries all the details about the aspects and
+                                conditions under which the insurance provider will pay out the insurance amount to the
+                                policyholder or their nominee in case an unforeseen event occurs. Insurance is a
+                                financial
+                                tool which helps in ensuring financial protection of yourself and your family. Generally
+                                the
+                                person who has purchased the policy also known as policyholder has to pay premiums for
+                                the
+                                coverage available under the insurance policy. Any person can seek insurance from an
+                                insurance company.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 2 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Can I get insurance service at Mycars?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                Yes, we at Mycars specialize in providing insurance services for our customers in.
+                                Users can easily renew their services without having to go through the trouble of making
+                                un-necessary arrangements for the same.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 3 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingFore">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFore" aria-expanded="false" aria-controls="collapseFore">
+                                How do I purchase an insurance policy?
+                            </button>
+                        </h2>
+                        <div id="collapseFore" class="accordion-collapse collapse" aria-labelledby="headingFore"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>TO buy any insurance (Car, Bike, Health, Home, Pet, and Life), you can reach out to
+                                    our
+                                    dedicated
+                                    support team on <a href="javascript:void(0)">9874563210</a> Mon to Sun 9 AM to 7 PM.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 4 -->
+                    <div class="accordion-item m-0 card">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What are the tax benefits on insurance?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                Apart from providing coverage from the unforeseen financial losses, insurance policies
+                                also
+                                lets a person avail income tax benefits. Below mentioned are some tax benefits that one
+                                can
+                                avail by purchasing an insurance policy under the Income Tax Act: Section 80C: Under
+                                Section
+                                80C of the Income Tax Act, premiums paid to purchase life insurance policy qualify for
+                                tax
+                                exemptions for upto Rs. 1.5 Lakh. Section 80D: Under Section 80D of the Income Tax Act,
+                                premiums paid towards health insurance policy qualifies for tax exemptions. Section
+                                10(10D):
+                                Benefits under life insurance policy that shall be receivable by the life insured or the
+                                nominee also qualify for tax exemptions under Section 10(10D) of the Income Tax Act.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 5 -->
+                </div>
+            </div>
+            <!-- end General insurance -->
+
+            <div id="Health" class="tabcontent">
+                <div class="accordion accordion-flush" id="accordionExample2">
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headinghealthOne">
+                            <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsehealthOne" aria-expanded="true"
+                                aria-controls="collapsehealthOne">
+                                What is a health insurance plan?
+                            </button>
+                        </h2>
+                        <div id="collapsehealthOne" class="accordion-collapse collapse show"
+                            aria-labelledby="headinghealthOne" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body text-muted">
+                                Health insurance policy is an agreement whereby an insurance company agrees to undertake
+                                a guarantee to compensate the insured for medical expenses in case of a medical
+                                emergency. A health insurance policy protects the insured for several surgical expenses,
+                                critical illnesses, and daycare expenses, for a policy term, for up to the sum insured
+                                limit.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 1 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headinghealthTwo">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsehealthTwo" aria-expanded="false"
+                                aria-controls="collapsehealthTwo">
+                                How can I renew my health insurance policy?
+                            </button>
+                        </h2>
+                        <div id="collapsehealthTwo" class="accordion-collapse collapse"
+                            aria-labelledby="headinghealthTwo" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body text-muted">
+                                It is imperative to renew your health insurance policy to avail continued coverage, and
+                                save on accumulated benefits such as waiting period benefits and No Claim Bonus (NCB).
+                                You can easily renew your health insurance policy by following the simple steps given
+                                below: Step 1: Visit the website of the insurance company and navigate to the ‘Health
+                                Insurance Renewal’ page.
+                                Step 2: Enter the required details such as health insurance policy number and the
+                                registered mobile number.
+                                Step 3: Check the policy details displayed and renewal premium.
+                                Step 4: Pay the required health insurance premium via Credit card/Debit card or Net
+                                Banking.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 2 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headinghealthThree">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsehealthThree" aria-expanded="false"
+                                aria-controls="collapsehealthThree">
+                                What if I forgot to pay my health insurance premium?
+                            </button>
+                        </h2>
+                        <div id="collapsehealthThree" class="accordion-collapse collapse"
+                            aria-labelledby="headinghealthThree" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body text-muted">
+                                If you could not make the payment for the health insurance premium on time, then your
+                                policy can be cancelled. After paying the first premium, you will be given a grace
+                                period if you do not make the payment for the premium on time. You can renew your health
+                                insurance plan by paying the premium within 15 to 30 days of the grace period, which can
+                                vary from insurer to insurer, but, if you miss this opportunity too, then it could risk
+                                you losing your coverage.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 3 -->
+                </div>
+                <!-- end accordion -->
+            </div>
+            <!-- end Health insurance -->
+
+            <div id="vehicle" class="tabcontent">
+                <div class="accordion accordion-flush" id="accordionExample3">
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingvehicalOne">
+                            <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsevehicleOne" aria-expanded="true"
+                                aria-controls="collapsevehicleOne">
+                                What is a vehicle insurance policy?
+                            </button>
+                        </h2>
+                        <div id="collapsevehicleOne" class="accordion-collapse collapse show"
+                            aria-labelledby="headingvehicalOne" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body text-muted">
+                                vehicle Insurance/Four Wheeler Insurance is an agreement between an insurance company
+                                and a vehicle owner under which the former provides an insurance cover to the
+                                policyholder for financial damages incurred by his/her vehicle in unforeseen events.
+                                Depending on the coverage, there are three types of vehicle insurance plans - third
+                                party vehicle insurance policy, standalone own-damage vehicle insurance and
+                                comprehensive vehicle insurance policy. vehicle insurance renewal online process
+                                provides instant e-Policy.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 1 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingvehicleTwo">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsevehicleTwo" aria-expanded="false"
+                                aria-controls="collapsevehicleTwo">
+                                What are the different types of bike insurance plan?
+                            </button>
+                        </h2>
+                        <div id="collapsevehicleTwo" class="accordion-collapse collapse"
+                            aria-labelledby="headingvehicleTwo" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body text-muted">
+                                There are three types of bike insurance plans such as third party bike insurance plan,
+                                standalone own damage bike insurance plan, and comprehensive bike insurance plan.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 2 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingvehicleThree">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsevehicleThree" aria-expanded="false"
+                                aria-controls="collapsevehicleThree">
+                                How much is car insurance premium?
+                            </button>
+                        </h2>
+                        <div id="collapsevehicleThree" class="accordion-collapse collapse"
+                            aria-labelledby="headingvehicleThree" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body text-muted">
+                                The premium rates for third-party car insurance price depend on the engine capacity of
+                                the car and is fixed by the IRDAI. However, the premium for standalone own-damage and
+                                comprehensive car insurance policies varies from car to car depending on a number of
+                                factors such as car's MMV (Make, Model and Variant), RTO location, engine capacity,
+                                registration city, fuel type,
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 3 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingvehicleFore">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsevehicleFore" aria-expanded="false"
+                                aria-controls="collapsevehicleFore">
+                                What is depreciation in vehical insurance?
+                            </button>
+                        </h2>
+                        <div id="collapsevehicleFore" class="accordion-collapse collapse"
+                            aria-labelledby="headingvehicleFore" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body text-muted">
+                                Depreciation in vehical insurance refers to the loss of the insured vehical’s value with
+                                time
+                                due to wear and tear. The depreciation rate plays a vital part in a vehical insurance
+                                policy
+                                as insurance companies consider, based on the vehical’s age, to determine the value they
+                                agree to provide for your vehical.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 4 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingvehicleFive">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsevehicleFive" aria-expanded="false"
+                                aria-controls="collapsevehicleFive">
+                                Can we insure bikes after 15 years?
+                            </button>
+                        </h2>
+                        <div id="collapsevehicleFive" class="accordion-collapse collapse"
+                            aria-labelledby="headingvehicleFive" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body text-muted">
+                                The insurance of old bikes after 15 years of their age is possible. They can be insured
+                                with the third-party bike insurance plan as it is a compulsory cover. However, when it
+                                comes to own-damage cover, it varies from insurer to insurer.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 5 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingvehicleSix">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsevehicleSix" aria-expanded="false"
+                                aria-controls="collapsevehicleSix">
+                                What is the right time To Renew vehical Insurance?
+                            </button>
+                        </h2>
+                        <div id="collapsevehicleSix" class="accordion-collapse collapse"
+                            aria-labelledby="headingvehicleSix" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body text-muted">
+                                Keeping your best interest in mind, it is usually recommended to renew your vehical
+                                insurance plan at least 45 days prior to the expiry of your two-wheeler insurance
+                                policy. You should not wait for your insurance plan to lapse. This is because in case
+                                your insurance plan lapses, then you might stand to lose all the accumulated insurance
+                                plan benefits so far.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 6 -->
+                    <div class="accordion-item card">
+                        <h2 class="accordion-header" id="headingvehicleSeven">
+                            <button class="accordion-button rounded-0 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsevehicleSeven" aria-expanded="false"
+                                aria-controls="collapsevehicleSeven">
+                                How to find my vehical insurance policy number?
+                            </button>
+                        </h2>
+                        <div id="collapsevehicleSeven" class="accordion-collapse collapse"
+                            aria-labelledby="headingvehicleSeven" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body text-muted">
+                                vehical insurance policy number is a unique 8 to 10 digit number, given by your vehical
+                                insurance company for the identification of your insurance account. It is generally
+                                written on your insurance vehicald or statements issued by the insurance company. The
+                                number
+                                remains the same as long as your policy is active with the respective insurance
+                                provider.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion-item 7 -->
+                </div>
+                <!-- end accordion -->
+            </div>
+            <!-- end vehicle insurance -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end FAQs section -->
+
+    <section class="companies section">
+        <div class="container">
+            <h2 class="text-center text-color text-uppercase">Trusted By <span
+                    class="px-1 text-primary fw-bold">85+</span>Companies</h2>
+            <div class="heading-lines">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <h6 class="text-center mb-5">Our Insurance Partners</h6>
+            <div class="swiper trusted-slider">
+                <div class="swiper-wrapper display-flex align-items-baseline">
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-1.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-2.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-3.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-4.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-5.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-6.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-7.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="assets/images/insurance/companies-8.png" alt="logo" class="grayscale opacity-75">
+                    </div>
+                </div>
+                <!-- end swiper-wrapper -->
+            </div>
+            <!-- end swiper -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end trusted section -->
+
+    <section class="insurance-review section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <h2 class="text-center text-primary text-uppercase">Here is why you can trust our values</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col-md-12 review-circle position-relative pt-3">
+                    <div class="row image-container g-3 p-0">
+                        <div class="col-4 col-sm-3 col-md-1 position-absolute">
+                            <div class="content-title thumbnail active" id="image1">
+                                <img src="assets/images/user-6.png" alt="" class="img-fluid w-100 rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 d-block d-md-none">
+                            <p class="border border-1 border-primary shadow rounded-circle circle-boder"></p>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 d-block d-md-none">
+                            <p class="rounded-circle circle-boder bg-shadow border"></p>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 position-absolute">
+                            <div class="content-title thumbnail" id="image2">
+                                <img src="assets/images/user-7.png" alt="" class="img-fluid w-100 rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 position-absolute">
+                            <div class="content-title thumbnail" id="image3">
+                                <img src="assets/images/user-8.png" alt="" class="img-fluid w-100 rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 position-absolute">
+                            <div class="content-title thumbnail" id="image4">
+                                <img src="assets/images/user-1.png" alt="" class="img-fluid w-100 rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 d-block d-md-none">
+                            <p class="border border-1 rounded-circle circle-boder bg-shadow-2"></p>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 d-block d-md-none">
+                            <p class="border border-1 rounded-circle circle-boder bg-shadow-3"></p>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-1 position-absolute">
+                            <div class="content-title thumbnail" id="image5">
+                                <img src="assets/images/user-5.png" alt="" class="img-fluid w-100 rounded-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <div class="col-md-4 mt-44 mx-auto content-container">
+                        <div class="content active" id="content1">
+                            <div class="d-flex justify-content-center pb-5">
+                                <img src="assets/images/user-6.png" alt="" class="rounded-circle w-25">
+                            </div>
+                            <div class="text-center mb-3">
+                                <h5 class="fs-2 fw-bold">keni Hanlon</h5>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                            </div>
+                            <p>Approve the brief. In some cases, your creative team will come back with a proposal,
+                                outline,
+                                or brief for your approval. Approve it at this stage, or return it for revisions. At
+                                this
+                                point, your creative team will start working on their deliverables.</p>
+                        </div>
+                        <div class="content" id="content2">
+                            <div class="d-flex justify-content-center pb-5">
+                                <img src="assets/images/user-7.png" alt="" class="rounded-circle w-25">
+                            </div>
+                            <div class="text-center mb-3">
+                                <h5 class="fs-2 fw-bold">Gail honva</h5>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star-half text-warning"></span>
+                            </div>
+                            <p>Client review: The client reviews the creative and either approves it or if there are
+                                suggested edits, sends it back for revisions. SmarkLabs’s creative team begins work on
+                                the
+                                revisions.Revisions: The client reviews the revisions and approves them or sends more
+                                feedback.</p>
+                        </div>
+                        <div class="content" id="content3">
+                            <div class="d-flex justify-content-center pb-5">
+                                <img src="assets/images/user-8.png" alt="" class="rounded-circle w-25">
+                            </div>
+                            <div class="text-center mb-3">
+                                <h5 class="fs-2 fw-bold">luvya Smith</h5>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                            </div>
+                            <p>Start by conveying your needs to the creative team. Include a description of the project
+                                audience, deliverables, desired outcome, and due date. This is also known as the project
+                                scope.</p>
+                        </div>
+                        <div class="content" id="content4">
+                            <div class="d-flex justify-content-center pb-5">
+                                <img src="assets/images/user-1.png" alt="" class="rounded-circle w-25">
+                            </div>
+                            <div class="text-center mb-3">
+                                <h5 class="fs-2 fw-bold">Susan hehani</h5>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star-half text-warning"></span>
+                            </div>
+                            <p>Prioritizing projects helps streamline the creative review process and saves you time. It
+                                is
+                                especially critical if you have a lot of content in the pipeline. We suggest
+                                categorizing
+                                low-effort projects or projects that you haven’t made your mind up about yet as
+                                low-priority
+                                reviews.</p>
+                        </div>
+                        <div class="content" id="content5">
+                            <div class="d-flex justify-content-center pb-5">
+                                <img src="assets/images/user-5.png" alt="" class="rounded-circle w-25">
+                            </div>
+                            <div class="text-center mb-3">
+                                <h5 class="fs-2 fw-bold">jevnu Murphy</h5>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                                <span class="mdi mdi-star text-warning"></span>
+                            </div>
+                            <p>Allow for multiple revisions. Revision is the most important part of the creative review
+                                process. Depending on the contract with your creative team, this is a repeatable
+                                step.Provide feedback. Pass the feedback back to the creative team and answer any
+                                subsequent
+                                questions they have.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end review section -->
+
+    <section class="insurance-contact pt-5 pb-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 px-0">
+                    <div class="form-details h-100 p-2 p-md-4">
+                        <div class="text-center">
+                            <h2 class="text-center text-primary text-uppercase">Contact-Us</h2>
+                            <div class="heading-lines">
+                                <span class="line"></span>
+                                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                                <span class="line"></span>
+                            </div>
+                            <p class="text-muted">Any question or remarks? Just write us a message!</p>
+                        </div>
+                        <form class="p-1 p-md-3" autocomplete="on">
+                            <div class="row g-4">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control form-control-lg rounded-0 pb-0"
+                                            id="firstname" required>
+                                        <label for="firstname">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control form-control-lg rounded-0 pb-0"
+                                            id="lastname" required>
+                                        <label for="lastname">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control form-control-lg rounded-0 pb-0"
+                                            id="Mail" required>
+                                        <label for="Mail">Mail</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control form-control-lg rounded-0 pb-0"
+                                            maxlength="10" pattern="[1-9]{1}[0-9]{9}" id="Phone" required>
+                                        <label for="Phone">Phone</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating mb-4">
+                                        <textarea class="form-control pb-0 rounded-0" id="message" rows="3"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check m-0">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="invalidCheck" required>
+                                        <label class="form-check-label w-100" for="invalidCheck">I confirm that all data are
+                                            correct</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 px-0">
+                    <div class="img-gradient p-2 p-sm-5 position-relative h-100">
+                        <div class="img-header top-0 pb-5">
+                            <h2>Contact Information</h2>
+                            <p>File up the form and our team will get back to you within 24 hours.</p>
+                        </div>
+                        <ul class="pb-5 ul-center list-unstyled">
+                            <li class="d-flex mb-3">
+                                <span class="mdi mdi-phone fs-4 me-3"></span>
+                                <a href="javascript:void(0)">
+                                    <p class="m-0 fs-5">+0123 4567 8901</p>
+                                </a>
+                            </li>
+                            <li class="d-flex pb-3">
+                                <span class="mdi mdi-near-me fs-4 me-3"></span>
+                                <a href="javascript:void(0)">
+                                    <p class="m-0 text-break fs-5">support21@gmail.com</p>
+                                </a>
+                            </li>
+                            <li class="d-flex pb-3">
+                                <span class="mdi mdi-map-marker-outline fs-4 me-3"></span>
+                                <a href="javascript:void(0)">
+                                    <p class="m-0 fs-5">102 rona reci,.</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled ul-bottom d-flex position-absolute bottom-0">
+                            <li><a href="javascript:void(0)"><span class="mdi mdi-facebook fs-4"></span></a></li>
+                            <li class="px-3"><a href="javascript:void(0)"><span class="mdi mdi-twitter fs-4"></span></a>
+                            </li>
+                            <li><a href="javascript:void(0)"><span class="mdi mdi-instagram fs-4"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end contact-us section -->
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/insurance.js"></script>
+
+</body>
+
+</html>

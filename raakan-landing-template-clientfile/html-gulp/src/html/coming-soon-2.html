@@ -1,0 +1,76 @@
+@@include('./partials/main.html')
+
+<head>
+
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+  @@include('./partials/right-sidebar.html')
+
+  <section class="section coming-soon-2">
+    <div class="main-area" id="home">
+      <div class="main-area-bg"></div>
+      <div id="surface-shader" data-ambient-color="#00aff0" data-diffuse-color="#666666"></div>
+
+      <div class="welcome-text-area">
+        <div class="container">
+          <div class="welcome-text text-center">
+            <div class="clock-countdown p-sm-4">
+              <div class="days-counter">
+                <div class="digit">
+                  <span id="days">00</span>
+                  <span class="txt">days</span>
+                </div>
+              </div>
+              <!--end days-counter-->
+
+              <div class="hour-counter d-flex justify-content-center">
+                <div class="border border-0"></div>
+                <div>
+                  <span id="hours">00</span><span class="normal">H</span>
+                </div>
+                <div class="mx-3">
+                  <span id="mins">00</span><span class="normal">MN</span>
+                </div>
+                <div>
+                  <span id="secs">0</span><span class="normal">S</span>
+                </div>
+              </div>
+              <!--end hour-counter-->
+
+              <h3>We Are</h3>
+              <p class="fw-bolder display-4">
+                <span class="typewrite heder-font" data-period="2000" data-type='["Coming Soon!"]'>
+                  <span class="wrap"></span>
+                </span>
+              </p>
+              <p>Coming Soon is packed with cutting-edge features and state-of-the-art technology that will exceed your expectations. </p>
+              <div class="d-block mt-4">
+                <a href="index.html" class="btn btn-light text-dark"> <i class="mdi mdi-home"></i> Go Back Home </a>
+              </div>
+            </div>
+            <!--end clock-countdown-->
+
+          </div>
+          <!--end welcome-text-->
+        </div>
+        <!--end container-->
+      </div>
+      <!--end welcome-text-area-->
+    </div>
+    <!--end main-area-->
+  </section>
+
+  <script src="assets/js/main/text-animation.js"></script>
+  @@include('./partials/vendor-scripts.html')
+  <script src="assets/js/main/countdown.js"></script>
+  
+</body>
+
+</html>

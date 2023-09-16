@@ -1,0 +1,313 @@
+// home 
+.food-home {
+    background-color: $warning;
+    padding-top: 180px;
+    background-image: url(../images/food/food-home-bg.png);
+    .nav-pills {
+        .nav-item {
+            .nav-link {
+                color: $muted;
+                display: flex;
+                margin-right: 5px;
+                &.active,
+                &:hover {
+                    background-color: rgba($danger, 0.2);
+                    color: $danger;
+                }
+            }
+        }
+    }
+    .input-group-icon {
+        input {
+            color: var(--gray-700);
+            background-color: var(--light);
+            box-shadow: none;
+        }
+    }
+    .home-img {
+        margin-bottom: 50px;
+        img {
+            transition: all .5s ease;
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+    .food-homeslider {
+        .swiper-wrapper {
+            .swiper-slide {
+                .card {
+                    cursor: grab;
+                    border-radius: 50px;
+                    .card-body {
+                        background-color: rgba($warning, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// food-featuers
+.food-featuers {
+    .food-card {
+        border: none;
+        text-align: center;
+        transition: all .5s ease;
+        img {
+            padding: 1rem 1rem 0rem;
+        }
+        &:hover {
+            box-shadow: $box-shadow;
+            transform: translateY(-5px);
+        }
+    }
+}
+
+// food-recipe
+.food-recipe {
+    background: linear-gradient(180deg, rgba($warning, 0.5) 35%, rgba(49,122,136,0) 100%);
+    .recipe-swiper {
+        cursor: grab;
+        .swiper-pagination {
+            bottom: 0 !important;
+            position: sticky;
+        }
+    }
+}
+
+// food-cta 
+.food-cta {
+    padding: 100px 0;
+    position: relative;
+    background: url(../images/food/cta.jpg) no-repeat center bottom fixed;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: var(--rgba-light);
+    }
+}
+
+// food-review
+.food-review {
+    background-color: var(--light);
+    .blog-box-content {
+        padding: 10px;
+        border-radius: 0px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $gray-400;
+        .blog-box-img {
+            img {
+                border-radius: 10px 0px 0px 10px;
+            }
+        }
+        .p-color {
+            color: var(--gray-600);
+        }
+        .blog-box-list {
+            padding: 10px 0px 14px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                width: 80%;
+                height: 3px;
+                background: linear-gradient(to right, $primary, $primary, transparent);
+                left: 0;
+                transition: all 0.2s;
+            }
+            li {
+                border-right: 1px solid $gray-400;
+                padding: 0px 32px;
+                display: flex;
+                align-items: center;
+                .review-icon {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+        .read-btn {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+        }
+    }
+    .search {
+        position: relative;
+        margin-bottom: 22px;
+        .mdi-magnify {
+            font-size: 15px;
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+        }
+        input {
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            background-color: var(--light);
+            border-radius: 30px;
+            outline: none;
+            &::placeholder {
+                display: flex;
+                align-items: center;
+                color: $muted;
+            }
+        }
+    }
+    .recent-news {
+        margin: 0;
+        padding: 0;
+        // li {
+        //   margin-bottom: 1rem;
+        // }
+        .recent-post-list {
+            display: flex;
+            li {
+                display: flex;
+                align-items: center;
+                padding: 0px 18px;
+                i {
+                    font-size: 16px;
+                    margin: 2px 6px 0px 0px;
+                    display: flex;
+                }
+               
+            }
+        }
+    }
+    .badge.bg-soft-primary {
+        padding: 8px 10px;
+        margin: 6px;
+    }
+}
+
+// food-blog
+.food-blog {
+    .food-card {
+        margin-bottom: 10px;
+        &:hover {
+            .team-icon {
+                .icon {
+                    bottom: 5px;
+                }
+            }
+        }
+        img {
+            border-radius: 6px 6px 0 0;
+        }
+        .team-icon {
+            position: relative;
+            overflow: hidden;
+            .icon {
+                position: absolute;
+                transform: translateY(-5px);
+                position: absolute;
+                top: auto;
+                left: 50%;
+                bottom: 100%;
+                width: 90%;
+                height: 54px;
+                background: var(--bs-gray-300);
+                z-index: 1;
+                transform: translateX(-50%);
+                transition: all 0.5s linear;
+                overflow: hidden;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                ul {
+                    margin-bottom: 0;
+                    display: flex;
+                    justify-content: space-around;
+                    li {
+                        background-color: var(--theme-light--bc);
+                        box-shadow: var(--shadow-sm);
+                        padding: 2px 6px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                            color: $danger;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .food-card-body {
+            .team-detail {
+                text-align: center;
+                .site-text-white {
+                    color: var(--gray-800);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .food-review {
+        .content {
+            display: inline !important;
+            ul {
+                li {
+                    display: block !important;
+                    img {
+                        border-radius: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+    .food-review .blog-box-content .blog-box-img img {
+        border-radius: 10px 10px 10px 10px !important;
+    }
+}
+
+/********** RTL **********/
+[dir="rtl"] {
+    .food-review {
+        .blog-box-content {
+            .blog-box-img {
+                img {
+                    border-radius: 0px 10px 10px 0px;
+                }
+            }
+            .blog-box-list {
+                &::before {
+                    left: auto;
+                    right: 0;
+                    background: linear-gradient(to right, transparent, $primary, $primary);
+                }
+                li {
+                    border-right: none;
+                    border-left: 1px solid $gray-400;
+                    &:first-child {
+                        padding: 0px 0px 0px 32px !important;
+                    }
+                }
+            }
+        }
+    }
+    .search {
+        .ri-search-line {
+            left: 10px;
+            right: auto;
+        }
+    }
+}

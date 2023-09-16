@@ -1,0 +1,107 @@
+.doctor-detail {
+    padding-top: 80px;
+    img {
+        border-radius: 20px;
+        border: 3px solid var(--gray-400);
+        padding: 5px;
+    }
+    h2,
+    h4 {
+        color: var(--text-primary);
+    }
+    .contact-list {
+        li {
+            display: flex;
+            align-items: center;
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+    .social-icon {
+        display: flex;
+        margin: 16px 0px;
+        i {
+            font-size: 20px;
+            margin: 2px 5px;
+        }
+    }
+    .list-box {
+        box-shadow: var(--shadow-sm);
+        padding: 2rem;
+        border-radius: 16px;
+        ul {
+            margin: 0;
+            li {
+                padding: 10px 5px;
+                border-bottom: 4px double $gray-400;
+                margin: 10px 0px;
+                display: flex;
+                justify-content: space-between;
+                p {
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.hospital-team {
+    .swiper {
+        padding: 20px 10px 45px 10px;
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 3px;
+            border-radius: 0% !important;
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+            transition: all 0.5s ease;
+        }
+        .swiper-pagination-bullet-active {
+            width: 24px;
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-color: $primary;
+        }
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: 0px;
+        }
+    }
+}
+
+.service-section {
+    .service-box {
+        border: 4px double var(--bs-gray-400);
+        padding: 40px 30px;
+        border-radius: 20px;
+        p {
+            margin: 0;
+        }
+    }
+    .icon {
+        position: relative;
+
+        i {
+            display: inline-block;
+            color: var(--text-primary);
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            font-size: 100px;
+            z-index: -1;
+            opacity: 0.9;
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: 2px var(--bs-gray-300);
+            line-height: 50px;
+            font-family: sans-serif;
+        }
+    }
+}

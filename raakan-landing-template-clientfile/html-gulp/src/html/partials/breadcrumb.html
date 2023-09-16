@@ -1,0 +1,59 @@
+<section class="breadcrumb-section">
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+
+    <h2 class="breadcrumb-h2">@@title</h2>
+    <div class="container-fluid">
+        <div class="position-breadcrumb">
+            <nav aria-label="breadcrumb" class="d-inline-block">
+                <ul class="breadcrumb rounded">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">
+                            <i class="mdi mdi-home breadcrumb-icone"></i>
+                        </a>
+                    </li>
+                    @@if (context.breadcrumb1 && breadcrumb1.title != '') {
+                        <li class="breadcrumb-item @@breadcrumb1.active_class">
+                            <a href="@@breadcrumb1.link">
+                                <i class="mdi mdi-@@breadcrumb1.icon breadcrumb-icone d-none"></i>
+                                <span>@@breadcrumb1.title </span>
+                            </a>
+                        </li>
+                    }
+
+                    @@if (context.breadcrumb2 && breadcrumb2.title != '') {
+                        <li class="breadcrumb-item @@breadcrumb2.active_class">
+                            <a href="@@breadcrumb2.link">
+                                <i class="mdi mdi-@@breadcrumb2.icon breadcrumb-icone d-none"></i>
+                                <span> @@breadcrumb2.title </span>
+                            </a>
+                        </li>
+                    }
+
+                    @@if (context.breadcrumb3 && breadcrumb3.title != '') {
+                        <li class="breadcrumb-item @@breadcrumb3.active_class" aria-current="page">
+                            <!-- <a href="@@breadcrumb3.link" disabled> -->
+                                <i class="mdi mdi-@@breadcrumb3.icon breadcrumb-icone d-none"></i>
+                                <span> @@breadcrumb3.title </span>
+                            <!-- </a> -->
+                        </li>
+                    }
+                    
+                </ul>
+            </nav>
+        </div><!-- END position-breadcrumb -->
+    </div><!-- END CONTAINER-FLUID -->
+
+    <div class="position-relative">
+        <div class="shape overflow-hidden">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+</section>

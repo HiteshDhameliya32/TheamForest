@@ -1,0 +1,773 @@
+/********** Home css **********/
+.home-medical {
+    background: url("../images/medical/medical-home-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 800px;
+    padding-top: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: $white;
+    .medical-box {
+        padding: 3rem;
+        // background-color: rgba($white, 0.2);
+        background-color: var(--rgba-light--bc);
+        border: 6px double rgba($white, 0.5);
+        backdrop-filter: blur(14px);
+        border-radius: 30px;
+    }
+}
+
+/********** Feature css **********/
+.medical-feature {
+    .featured-box {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        border-color: var(--bs-gray-400);
+        position: relative;
+        padding: 2rem;
+        visibility: visible;
+        animation-duration: 1500ms;
+        animation-delay: 0ms;
+        display: flex;
+        justify-content: space-between;
+        a {
+            width: fit-content;
+        }
+   
+        .image-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-size: cover;
+            transition: all 1000ms ease;
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba($primary, 0.88);
+            }
+        }
+        .icon-box {
+            position: relative;
+            font-size: 40px;
+            color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: rgba($primary, 0.2);
+            transition: all 800ms ease;
+        }
+        h5,
+        p,
+        a {
+            position: relative;
+            transition: all 800ms ease;
+        }
+        &:hover {
+            .image-layer {
+                opacity: 1;
+            }
+            .icon-box {
+                background: rgba($white, 0.2);
+                color: $white;
+            }
+            h5,
+            p,
+            a {
+                color: $white;
+            }
+        }
+    }
+    .radius-1 {
+        border-radius: 50px 3px 50px 3px;
+    }
+    .radius-2 {
+        border-radius: 3px 50px 3px 50px;
+    }
+}
+
+
+/********** about css **********/
+.medical-about {
+    background-color: var(--light);
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            .about-icone {
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $gray-400;
+                border-radius: 50%;
+                font-size: 20px;
+                color: $success;
+            }
+        }
+    }
+}
+
+/********** Service css **********/
+.medical-service {
+    .mySwiper-3 {
+        padding: 20px 10px;
+        .swiper-pagination-bullet {
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+        }
+        .swiper-pagination-bullet-active {
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-color: $primary;
+        }
+    }
+    .medical-service-box {
+        position: relative;
+        margin: 0 0 40px;
+        .medical-service-box-img {
+            border-radius: 3px;
+            margin: auto;
+            overflow: hidden;
+            transition: 0.3s ease-in-out;
+            img {
+                transition: 0.3s ease-in-out;
+            }
+            &:hover img {
+                transform: scale(1.1);
+                transition: 0.3s ease-in-out;
+            }
+        }
+        .medical-service-box-content {
+            position: relative;
+            width: 90%;
+            margin: -50px auto 0;
+            box-shadow: 0px 3px 10px rgba($black, 0.3);
+            padding: 21px 20px;
+            .box-head {
+                display: flex;
+                align-items: center;
+                h5 {
+                    font-size: 18px;
+                }
+                .medical-service-box-icon {
+                    // width: 60px;
+                    // height: 60px;
+                    border-radius: 50%;
+                    font-size: 28px;
+                    z-index: 1;
+                    border: 2px solid $primary;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.4s;
+                    &:after {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        content: "";
+                        height: 100%;
+                        width: 0;
+                        background-color: $primary;
+                        transition: 0.4s;
+                        visibility: hidden;
+                        opacity: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .medical-service-box-img {
+                img {
+                    transform: scale(1.1);
+                    transition: 0.3s ease-in-out;
+                }
+            }
+            .medical-service-box-content {
+                .box-head {
+                    .medical-service-box-icon {
+                        color: $white;
+                        &:after {
+                            width: 100%;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/********** Portfolio css **********/
+.medical-portfolio {
+    background: var(--light);
+    .portfolio-box {
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 20px;
+        border: none;
+        background: transparent;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba($blue-800, 0.5) 0%, rgba($black, 0) 73%);
+            z-index: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.4s;
+        }
+        img {
+            border-radius: 20px;
+        }
+        .portfolio-info {
+            width: calc(100% - 40px);
+            left: 50%;
+            transform: translateX(-50%);
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            z-index: 1;
+            position: absolute;
+            bottom: -100%;
+            background-color: var(--light);
+            padding: 20px 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            transition: 0.4s;
+            .portfolio-info-left {
+                width: calc(100% - 72px);
+                margin-right: 15px;
+                text-align: left;
+                h3 {
+                    font-size: 18px;
+                    margin: 0;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .portfolio-icon {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                background-color: $orange-500;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 22px;
+                color: $white;
+                margin: 0;
+            }
+        }
+        &:hover {
+            &::after {
+                visibility: visible;
+                opacity: 1;
+            }
+            .portfolio-info {
+                bottom: 25px;
+            }
+        }
+    }
+}
+
+/********** Department css **********/
+.medical-department {
+    .nav-item {
+        .nav {
+            width: 100%;
+            .nav-link {
+                width: 14%;
+                height: 62px;
+                margin: 10px 6px;
+                border: none;
+                background-color: rgba($primary, 0.08);
+                box-shadow: 3px 3px 1px $black;
+                border-radius: 5px;
+                transition: all 0.5s ease;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                    transition: all 0.5s ease;
+                }
+            }
+            .active {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+    .dept-box {
+        padding: 20px 20px;
+        border: none;
+        background-color: transparent;
+        .dept-box-img {
+            img {
+                border-radius: 10px;
+            }
+        }
+        .dept-box-content {
+            // position: absolute;
+            padding: 2rem;
+            // border: 6px solid var(--gray);
+            border: 6px solid var(--bs-gray-300);
+            background-color: var(--rgba-light--bc);
+            backdrop-filter: blur(14px);
+            // top: 1.5rem;
+            // bottom: 1.5rem
+        }
+    }
+}
+
+/********** Pricing css **********/
+.pricing-4 {
+    .pricing-box-5 {
+        border-radius: 10px;
+        border: 1px solid $gray-400;
+        padding: 0.5rem;
+        .pricing-box-header {
+            background-image: url("../images/hospital/schedule-bg-img-1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            height: 150px;
+            color: $white;
+            z-index: 1;
+            border-radius: 10px;
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba($primary, 0.75);
+                z-index: -1;
+                border-radius: 10px;
+            }
+            .price {
+                font-size: 2rem;
+                line-height: 12px;
+            }
+            .period {
+                font-size: 14px;
+                margin: 0;
+            }
+            .pricing-btn {
+                background-color: rgba($white, 0.2);
+                color: $white;
+                margin-top: 10px;
+            }
+        }
+        .pricing-detail {
+            ul {
+                li {
+                    padding: 10px 0;
+                }
+                li:nth-child(even) {
+                    background-color: var(--gray);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+/********** FAQ css **********/
+.medical-faq {
+    .accordion {
+        .accordion-box {
+            margin: 10px 0;
+            border: 1px solid $gray-500;
+            .accordion-button {
+                box-shadow: none;
+                background-color: var(--theme-light--bc);
+                color: var(--gray-900);
+                font-weight: 500;
+                border-radius: 5px;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: $primary;
+                color: $white;
+                border-bottom: 1px solid $gray-500;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                &:after {
+                    display: none;
+                }
+            }
+            .card-body {
+                // background-color: $light;
+                border-radius: 5px;
+            }
+        }
+    }
+    .review-heading {
+        position: relative;
+        padding-bottom: 8px;
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0px;
+        //     width: 80%;
+        //     height: 3px;
+        //     background: linear-gradient(to right, $black, transparent, transparent);
+        // }
+    }
+    .swiper {
+        padding: 22px 10px 42px 10px;
+        .swiper-wrapper {
+            .clients-review-box {
+                box-shadow: 0px 0px 10px rgba($black, 0.3);
+                border: none;
+                border-radius: 20px;
+            }
+        }
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 20% !important;
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+            transition: all 0.5s ease;
+        }
+        .swiper-pagination-bullet-active {
+            transform: rotateZ(45deg);
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-color: $primary;
+        }
+    }
+}
+
+/********** ContactUs css **********/
+.contact-us-1 {
+    .contact-form {
+        padding: 3rem 0.5rem;
+        background-image: url(../images/business/world-map.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: var(--form-rgba);
+            z-index: -1;
+        }
+        .form-control {
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid var(--gray-900);
+            margin-bottom: 30px;
+            box-shadow: none;
+            color: var(--gray-900);
+            background: transparent;
+            &:focus {
+                background-color: var(--gray-100);
+                border: 1px solid $gray-300;
+            }
+            &:focus-visible {
+                outline: 0px;
+            }
+            &::placeholder {
+                color: var(--gray-900);
+            }
+        }
+
+        .form-service {
+            position: relative;
+            .select-box__icon {
+                position: absolute;
+                top: 50%;
+                right: 18px;
+                font-size: 24px;
+                transform: translateY(-50%);
+                transition: 0.2s ease;
+                pointer-events: none;
+            }
+            option {
+                color: var(--gray-900);
+            }
+        }
+        textarea {
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid var(--gray-900);
+            margin-bottom: 30px;
+            box-shadow: none;
+            color: var(--gray-900);
+            background: transparent;
+            &:focus {
+                background-color: var(--gray-100);
+                border: 1px solid $gray-300;
+            }
+            &:focus-visible {
+                outline: 0px;
+            }
+            &::placeholder {
+                color: var(--gray-900);
+            }
+        }
+        .btn-style {
+            padding: 10px 20px;
+            border-radius: 0;
+            text-transform: uppercase;
+            position: relative;
+            margin: 12px 0 0 12px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+    }
+    iframe {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, 0.78);
+            z-index: -1;
+        }
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 4s ease backwards;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 4s ease backwards;
+}
+
+/********** KEYFRAME **********/
+@keyframes fadeInUp {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+    .medical-service {
+        .medical-service-box {
+            .medical-service-box-content {
+                .box-head {
+                    .medical-service-box-icon {
+                        margin-right: 10px;
+                    }
+                    h5 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .medical-portfolio {
+        .portfolio-box {
+            .portfolio-info {
+                padding: 20px 20px;
+                .portfolio-info-left {
+                    h3 {
+                        font-size: 16px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .medical-feature {
+        .radius-1 {
+            border-radius: 10px;
+        }
+        .radius-2 {
+            border-radius: 10px;
+        }
+    }
+    .medical-department {
+        .nav-item {
+            .nav {
+                width: 100%;
+                .nav-link {
+                    width: 20%;
+                }
+            }
+        }
+        .dept-box {
+            .dept-box-img {
+                display: flex;
+                justify-content: center;
+            }
+            .dept-box-content {
+                border: 4px solid var(--gray-200);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .contact-us-1 {
+        iframe {
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .medical-department {
+        .nav-item {
+            .nav {
+                width: 100%;
+                .nav-link {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-medical {
+        .medical-box {
+            padding: 2rem;
+        }
+    }
+    .medical-department {
+        .nav-item {
+            .nav {
+                width: 100%;
+                .nav-link {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .medical-feature {
+        .featured-box {
+            .ftr-content {
+                padding: 1rem;
+            }
+        }
+    }
+    .medical-service {
+        .medical-service-box {
+            .medical-service-box-content {
+                .box-head {
+                    .medical-service-box-icon {
+                        margin-right: 10px;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                    }
+                    h5 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .medical-portfolio {
+        .portfolio-box {
+            .portfolio-info {
+                .portfolio-info-left {
+                    h3 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .medical-department {
+        .dept-box {
+            padding: 0;
+        }
+    }
+    .contact-us-1 {
+        iframe {
+            height: 200px;
+        }
+    }
+}
+
+

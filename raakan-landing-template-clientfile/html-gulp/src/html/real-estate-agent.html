@@ -1,0 +1,390 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-real-estate.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="real-estate-about.html" class="sub-mega-menu">about</a></li>
+                    <li><a href="real-estate-portfolio.html" class="sub-mega-menu">portfolio</a></li>
+                    <li><a href="real-estate-agent.html" class="sub-mega-menu">agent</a></li>
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END maintenace menu -->
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul>
+                <!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div>
+        <!--end container-->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+    'title': 'Agent',
+    'breadcrumb1': {
+    'title': 'Real Estate',
+    'link': 'index-real-estate.html',
+    'icon': 'hospital-building',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Agent',
+    'link': '#',
+    'icon': 'doctor',
+    'active_class': 'active'
+    }
+    })
+
+    <!-- start seller section -->
+    <section class="seller section" style="background-color: var(--bs-body-bg);">
+        <div class="container">
+            <div class="row justify-content-center text-center g-4">
+                <div class="col-lg-6">
+                    <h2 class="text-uppercase text-center"> our engineer </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center">
+                            <i class="mdi mdi-window-close"></i>
+                        </span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted text-center mb-4">
+                        Construction and related engineering services team
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row g-4 no-gutters">
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/user-1.png" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Jane O'neil</h5>
+                            <small class="mb-3 text-muted d-block">Chief Financial Offer</small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/user-2.png" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Bob Voss</h5>
+                            <small class="mb-3 text-muted d-block">MD</small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/user-3.png" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Christina Eden</h5>
+                            <small class="mb-3 text-muted d-block">HR</small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/user-4.png" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Eric Mendes</h5>
+                            <small class="mb-3 text-muted d-block">Planning Engineer</small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/team-img/6.jpg" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Marie Sheldon</h5>
+                            <small class="mb-3 text-muted d-block">Design Engineer</small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/team-img/3.jpg" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Eddie Gordo</h5>
+                            <small class="mb-3 text-muted d-block"> Manager </small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/team-img/11.jpg" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Leona Raine</h5>
+                            <small class="mb-3 text-muted d-block">Developer</small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+                    <div class="card border-0 rounded-0">
+                        <figure class="mb-0"><img src="assets/images/team-img/5.jpg" alt="Image" class="img-fluid w-100">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5>Vin Diesel</h5>
+                            <small class="mb-3 text-muted d-block">C.E.O</small>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-twitter px-3"></span></a></li>
+                                <li><a href="javascript:void(0)"><span class="mdi mdi-instagram"></span></a></li>
+                            </ul>
+                        </div><!-- end sales -->
+                    </div><!-- end sales-card -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section>
+    <!-- start seller section -->
+
+    <!-- /********** Newsletter Section **********/ -->
+    <section class="section newsletter-section">
+        <div class="bg-img-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <div class="newsletter-box">
+                        <h2 class="fw-normal text-uppercase text-white">SUBSCRIBE OUR NEWSLETTER</h2>
+                        <p> <i> 1000's of deals near you, straight to your inbox. </i> </p>
+                        <p class="pera">Get Latest News Everyday</p>
+                        <form action="javascript:void(0)">
+                            <div class="input-group">
+                                <input type="email" placeholder="Enter Your Email" class="form-control"
+                                    autocomplete="off" required>
+                                <button type="submit" class="btn btn-primary input-group-btn">
+                                    SUBSCRIBE <i class="mdi mdi-bell-ring"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="mt-4">
+                            <i class="mdi mdi-information"></i>
+                            <span>Give it a try: it only takes a click to unsubscribe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /********** All-Blog & News Section **********/ -->
+    <section class="section all-blog-news">
+        <div class="container">
+            <div class="row justify-content-center text-center g-4">
+                <div class="col-lg-6">
+                    <h2 class="text-uppercase text-center m-0"> latest news </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center">
+                            <i class="mdi mdi-window-close"></i>
+                        </span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted text-center">
+                        Start working with us that can provide everything you need to generate awareness, drive traffic,
+                        connect.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card all-blog-box h-100">
+                        <div class="all-blog-box-img">
+                            <img src="assets/images/real-estate/blog-construction-img.png" class="img-fluid" alt="">
+                            <span class="badge bg-primary">14 / April</span>
+                        </div>
+                        <div class="blog-box-content">
+                            <h4 class="text-uppercase">High quality work for our customer demond.</h4>
+                            <p class="text-muted">
+                                As soon as the jury had a little recovered from the shock of being upset, and their
+                                slates and pencils had been found and handed back to them, they set to work very
+                                diligently to write out a history...
+                            </p>
+                            <a href="javascript:void(0)">
+                                <span> Read More </span>
+                                <i class="mdi mdi-chevron-double-right"></i>
+                            </a>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card all-blog-box h-100">
+                        <div class="all-blog-box-img">
+                            <img src="assets/images/real-estate/about-construction-img.png" class="img-fluid" alt="">
+                            <span class="badge bg-primary">19 / April</span>
+                        </div>
+                        <div class="blog-box-content">
+                            <h4 class="text-uppercase">Industrial and business global company Meeting</h4>
+                            <p class="text-muted">
+                                As soon as the jury had a little recovered from the shock of being upset, and their
+                                slates and pencils had been found and handed back to them, they set to work very
+                                diligently to write out a history...
+                            </p>
+                            <a href="javascript:void(0)">
+                                <span> Read More </span>
+                                <i class="mdi mdi-chevron-double-right"></i>
+                            </a>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card all-blog-box h-100">
+                        <div class="all-blog-box-img">
+                            <img src="assets/images/real-estate/blog-construction-img-1.png" class="img-fluid" alt="">
+                            <span class="badge bg-primary">24 / April</span>
+                        </div>
+                        <div class="blog-box-content">
+                            <h4 class="text-uppercase">Everything you need to know about construction.</h4>
+                            <p class="text-muted">
+                                As soon as the jury had a little recovered from the shock of being upset, and their
+                                slates and pencils had been found and handed back to them, they set to work very
+                                diligently to write out a history...
+                            </p>
+                            <a href="javascript:void(0)">
+                                <span> Read More </span>
+                                <i class="mdi mdi-chevron-double-right"></i>
+                            </a>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END cotainer -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+
+</body>
+
+</html>

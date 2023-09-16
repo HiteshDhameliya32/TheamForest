@@ -1,0 +1,114 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Icons',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Icons',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+    <section class="section component-page">
+      <div class="container">
+        <div class="row g-4">
+          <div class="border-bottom mb-4">
+            <h1 class="display-6">Icons</h1>
+          </div>
+  
+          <!-- Material Design Icons -->
+          <div class="col-12">
+            <div class="hk-sec-title">
+              <h5>Material Design Icons</h5>
+              <p class="text-muted">
+                There are 4400+ Material Design icons and you can get all icons info from here:
+                <a href="https://materialdesignicons.com/" target="_blank">
+                  <code class="text-primary">https://materialdesignicons.com/</code>
+                </a>
+              </p>
+            </div>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#mdiIcons"
+                    aria-controls="mdiIcons">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#mdiIcons-html"
+                    aria-controls="mdiIcons-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="mdiIcons">
+                  <div class="p-4 mdi-icon-size">
+                    <span class="mdi mdi-android h2"></span>
+                    <span class="mdi mdi-apple h2"></span>
+                    <span class="mdi mdi-atlassian h2"></span>
+                    <span class="mdi mdi-basketball h2"></span>
+                    <span class="mdi mdi-drama-masks h2"></span>
+                    <span class="mdi mdi-instagram h2"></span>
+                    <span class="mdi mdi-facebook h2"></span>
+                    <span class="mdi mdi-twitter h2"></span>
+                  </div>
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="mdiIcons-html">
+                  <pre class="px-4 mb-0 crome">
+                    <code class="text-dark">
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-android h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-apple h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-atlassian h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-basketball h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-drama-masks h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-instagram h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-facebook h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"mdi mdi-twitter h2"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+        </div><!-- END row -->  
+      </div><!-- END container -->
+    </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

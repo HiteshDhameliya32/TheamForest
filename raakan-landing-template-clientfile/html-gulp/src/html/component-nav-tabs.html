@@ -1,0 +1,138 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Nav-Tab',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Nav-Tab',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+    <section class="section component-page">
+      <div class="container">
+        <div class="row g-4">
+  
+          <!-- /* Nav Tab */ -->
+          <div class="col-12">
+            <div class="border-bottom mb-4">
+              <h1 class="display-6">Nav Tab</h1>
+              <p class="text-muted lead">
+                Takes the basic nav from above and adds the 
+                <code>.nav-tabs</code> class to generate a tabbed interface.
+              </p>
+            </div>
+  
+            <h5> tabs </h5>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#avatar-shape"
+                    aria-controls="avatar-shape">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#avatar-shape-html"
+                    aria-controls="avatar-shape-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="avatar-shape">
+                  <div class="p-4">
+                    <ul class="nav nav-pills mb-3 p-0" id="pills-tab" role="tablist">
+                      <li class="nav-item p-0" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                      </li>
+                      <li class="nav-item p-0" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                      </li>
+                      <li class="nav-item p-0" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                        Nullam pulvinar felis at metus malesuada, nec convallis lacus commodo. Duis
+                        blandit neque purus, nec auctor mi sollicitudin nec.
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                        Nullam pulvinar felis at metus malesuada, nec convallis lacus commodo. Duis
+                        blandit neque purus, nec auctor mi sollicitudin nec.
+                      </div>
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim.
+                        Nullam pulvinar felis at metus malesuada, nec convallis lacus commodo. Duis
+                        blandit neque purus, nec auctor mi sollicitudin nec.
+                      </div>
+                    </div>
+                  </div><!-- END div -->
+                </div><!-- END tab-pane -->
+  
+                <div class="tab-pane fade animated" id="avatar-shape-html">
+                  <pre class="px-4 mb-0">
+                    <code>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav nav-pills mb-3"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-tab"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tablist"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-home-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#pills-home"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"pills-home"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-profile-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#pills-profile"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"pills-profile"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Profile<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-contact-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#pills-contact"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"pills-contact"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-content"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-tabContent"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade show active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-home"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"pills-home-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-profile"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"pills-profile-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"pills-contact"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"pills-contact-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+        </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+  
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

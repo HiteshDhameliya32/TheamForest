@@ -1,0 +1,175 @@
+//Fonts
+@import "./fonts/fonts";
+
+// settings
+
+//Core files
+// Add your color variables here
+$primary:   #2c48a3;
+$white:     #ffffff;
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f3f6f9;
+$gray-200: #e9eaee;
+$gray-300: #e9ebec;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #878a99;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$card-bg:    $gray-200;
+
+
+[data-theme=light]:root {
+  --light:     #{$gray-100};
+  --gray:     #fcfcfe;
+  --gray-100: #f9faff;
+  --gray-200: #e9eaee;
+  --gray-300: #e9ebec;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #878a99;
+  --gray-700: #343a40;
+  --gray-800: #343a40;
+  --gray-900: #19191a;
+
+
+  --rgba-light--bc: rgba(255, 255, 255, 0.4);
+  --rgba-light: rgba(255, 255, 255, 0.1);
+  
+  --shadow-sm:  0px 0px 3px rgba(000, 000, 000, .3);
+  --shadow-md: 0px 0px 6px rgba(255, 255, 255, .6);
+  --component-bg: #f5f5f5;
+  --text-primary: #2c48a3;
+  --form-rgba: rgba(251, 246, 246, 0.48);
+  
+}
+[data-theme=dark]:root {
+    $white: #000;
+
+    // overwrite dark color variables
+    --bs-primary-rgb: 48, 81, 137;
+    --bs-body-bg: #1a1d21;
+    --light:  $gray-100;
+    --bs-white: #000;
+
+    // Color system - Dark Mode only
+    --gray:     #030303;
+    $gray-100:  #17181a;
+    $gray-200:  #161619;
+    $gray-300:  #212427;
+    $gray-400:  #878a99;
+    $gray-500:  #adb5bd;
+    $gray-600:  #bfc8e2;
+    $gray-700:  #ced4da;
+    $gray-800:  #eff2f7;
+    $gray-900:  #f3f6f9;
+
+    --light:  #{$gray-200};
+    --gray-100: #{$gray-100};
+    --gray-200: #{$gray-200};
+    --gray-300: #{$gray-300};
+    --gray-400: #{$gray-400};
+    --gray-500: #{$gray-500};
+    --gray-600: #{$gray-600};
+    --gray-700: #{$gray-700};
+    --gray-800: #{$gray-800};
+    --gray-900: #{$gray-900};
+
+
+    // body
+    --bs-body-color: #{$gray-700};
+    --bs-secondary-color: #{$gray-400};
+    --rgba-light--bc: rgba(000, 000, 000, 0.4);
+    --rgba-light: rgba(000, 000, 000, 0.8);
+
+    --shadow-sm: 0px 0px 3px rgba(255, 255, 255, .3);
+    --shadow-md: 0px 0px 6px rgba(255, 255, 255, .6);
+    --component-bg: #222326;
+    --text-primary: #ced4da;
+    --form-rgba: rgba(29, 30, 33, 0.7);
+    
+  .card {
+    background-color: $gray-300;
+  }
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "settings/variables";
+
+// Structure
+@import "structure/right-sidebar";
+@import "structure/navbar";
+@import "structure/page-loader";
+@import "structure/footer";
+@import "structure/breadcrumb";
+
+// components
+@import "components/reboot";
+@import "components/avatar";
+@import "components/card";
+@import "components/button";
+@import "components/badge";
+@import "components/table.scss";
+@import "components/dropdown";
+@import "components/color";
+@import "components/helper";
+@import "components/scrollbar.scss";
+@import "components/border.scss";
+
+// pages
+@import "pages/gallery.scss";
+@import "pages/login.scss";
+@import "pages/pricing.scss";
+@import "pages/about-page.scss";
+@import "pages/service-page.scss";
+@import "pages/maintenance-page.scss";
+@import "pages/app-page.scss";
+@import "pages/business-page.scss";
+@import "pages/index.scss";
+/* @import "pages/nexBelt.scss"; TODO: Need to find this css for ecommerce by Sahil*/
+@import "pages/profile.scss";
+@import "pages/team.scss";
+@import "pages/coming-soon-1";
+@import "pages/coming-soon-2";
+@import "pages/coming-soon-3";
+@import "pages/index-agency";
+@import "pages/solution";
+@import "pages/collectionpage.scss";
+@import "pages/travelbooking.scss";
+@import "pages/real-estate.scss";
+@import "pages/real-estate-pages.scss";
+@import "pages/car-service.scss";
+@import "pages/insurance.scss";
+@import "pages/coffee-tea.scss";
+@import "pages/cosmetic.scss";
+@import "pages/finance";
+@import "pages/law-firm.scss";
+@import "pages/sport.scss";
+@import "pages/course.scss";
+@import "pages/hospital.scss";
+@import "pages/hospital-page.scss";
+@import "pages/therapy.scss";
+@import "pages/medical.scss";
+@import "pages/online-learning-page.scss";
+@import "pages/software.scss";
+@import "pages/blog.scss";
+@import "pages/photography.scss";
+@import "pages/vegetables.scss";
+@import "pages/spa-massage.scss";
+@import "pages/help-center";
+@import "pages/food.scss";
+@import "pages/nft.scss";
+@import "pages/components.scss";
+@import "pages/shop.scss";
+@import "pages/shop-cart.scss";
+@import "pages/single-product-page.scss";
+
+// auth pages
+@import "pages/auth-login.scss";
+// plugins
+
+@import "./icon.scss";

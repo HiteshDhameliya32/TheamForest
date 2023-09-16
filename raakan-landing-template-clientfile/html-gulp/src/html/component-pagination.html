@@ -1,0 +1,219 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Pagination',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Pagination',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+  <section class="section component-page pt-120">
+    <div class="container">
+          <div class="row g-4">
+            <div class="border-bottom mb-4">
+              <h1 class="display-6">Pagination</h1>
+              <p class="text-muted lead">
+                Documentation and examples for showing pagination to indicate a series of related content
+                exists
+                across multiple pages.
+              </p>
+            </div>
+
+            <!-- /* Pagination Rounded */ -->
+            <div class="col-lg-6 col-md-10 mt-auto">
+              <h5> circle pagination </h5>
+              <p>
+                Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide
+                proper screen reader support with <code>aria</code> attributes.
+              </p>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#circle-pagination"
+                      aria-controls="circle-pagination">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#circle-pagination-html"
+                      aria-controls="circle-pagination-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top">
+                  <div class="tab-pane fade animated show active" id="circle-pagination">
+                    <div class="p-4">
+                      <nav class="navigation nav-pagination">
+                        <ul class="pagination m-0 p-0">
+                          <li class="page-item">
+                            <a class="page-link rounded-circle" href="javascript:void(0)" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link rounded-circle" href="javascript:void(0)">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link rounded-circle" href="javascript:void(0)">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link rounded-circle" href="javascript:void(0)">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link rounded-circle" href="javascript:void(0)" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav><!-- END nav -->
+                    </div><!-- END div -->
+                  </div><!-- END tab-pane -->
+
+                  <div class="tab-pane fade animated" id="circle-pagination-html">
+                    <pre class="px-4 mb-0">
+                        <code>
+<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Page navigation example"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"pagination"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-circle"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Previous"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span><span class="ni">&amp;laquo;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;
+      &lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-circle"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;
+    &lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;
+      &lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-circle"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;
+    &lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;
+      &lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-circle"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;
+    &lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-circle"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Next"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span><span class="ni">&amp;raquo;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+                    </code></pre>
+                  </div><!-- END teb-pane -->
+                </div><!-- END tab-content -->
+              </div><!-- END wrapper -->
+            </div><!-- END col -->
+
+            <!-- /* Pagination Square */ -->
+            <div class="col-lg-6 col-md-10 mt-auto">
+              <h5> Square pagination </h5>
+              <p>
+                Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide
+                proper screen reader support with <code>aria</code> attributes.
+              </p>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#square-pagination"
+                      aria-controls="square-pagination">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#square-pagination-html"
+                      aria-controls="square-pagination-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top">
+                  <div class="tab-pane fade animated show active" id="square-pagination">
+                    <div class="p-4">
+                      <nav class="navigation nav-pagination">
+                        <ul class="pagination m-0 p-0">
+                          <li class="page-item">
+                            <a class="page-link rounded-0" href="javascript:void(0)" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link rounded-0" href="javascript:void(0)">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link rounded-0" href="javascript:void(0)">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link rounded-0" href="javascript:void(0)">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link rounded-0" href="javascript:void(0)" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav><!-- END nav -->
+                    </div><!-- END div -->
+                  </div><!-- END tab-pane -->
+
+                  <div class="tab-pane fade animated" id="square-pagination-html">
+                    <pre class="px-4 mb-0">
+                        <code>
+<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Page navigation example"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"pagination"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-0"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Previous"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span><span class="ni">&amp;laquo;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;
+      &lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-0"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;
+    &lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;
+      &lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-0"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;
+    &lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;
+      &lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-0"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;
+    &lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-item"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"page-link rounded-0"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Next"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span><span class="ni">&amp;raquo;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+                    </code></pre>
+                  </div><!-- END teb-pane -->
+                </div><!-- END tab-content -->
+              </div><!-- END wrapper -->
+            </div><!-- END col -->
+          </div><!-- END row -->
+    </div><!-- END container -->
+  </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

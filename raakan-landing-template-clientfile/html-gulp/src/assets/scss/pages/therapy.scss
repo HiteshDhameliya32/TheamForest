@@ -1,0 +1,979 @@
+    /********** Home css **********/
+.therapy-home-slider {
+    .slider {
+        color: $white;
+        width: 100%;
+        min-height: 700px;
+        position: relative;
+        padding: 50px 10px;
+        padding-top: 145px;
+        .slider-content {
+            width: 100%;
+            min-height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            h1 {
+                font-size: 3.4rem;
+                margin-bottom: 30px;
+            }
+            .bottom-line {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    bottom: -6px;
+                    left: 0;
+                    background: linear-gradient(to right, transparent, $warning, $warning);
+                }
+            }
+        }
+        .slider-slide {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transition: opacity 1s ease-in-out;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0;
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($darkblue, 0.5);
+            }
+            &.show {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/********** Feature css **********/
+.therapy-feature {
+    padding-top: 50px;
+    .col-md-4 {
+        padding: 0 0;
+    }
+    .therapy-ftr-box {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0px;
+        // background: rgba($white, 0.2);
+        background-color: var(--rgba-light--bc);
+        backdrop-filter: blur(6px);
+        transition: all 0.5s ease;
+        .ftr-icone {
+            // img {
+            //     transition: all 0.5s ease;
+            // }
+            font-size: 58px;
+            color: $warning;
+        }
+        .therapy-ftr-body {
+            h3 {
+                font-size: 1.875em;
+            }
+        }
+    }
+    .rounded-start {
+        border-bottom-left-radius: 20px !important;
+        border-top-left-radius: 20px !important;
+    }
+    .rounded-end {
+        border-bottom-right-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+        // background-color: rgba(43, 44, 46, 0.6);
+    }
+}
+
+/********** About-Us css **********/
+.about-therapy {
+    position: relative;
+    .about-therapy-p {
+        color: $gray-600;
+        font-style: italic;
+        text-transform: capitalize;
+        padding: 20px;
+        border-left: 2px solid $warning;
+        border-right: 2px solid $warning;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    i {
+        font-size: 42px;
+    }
+    .therapy-about-img {
+        position: relative;
+        .image-1 {
+            border-radius: 20px;
+            z-index: 1;
+            img {
+                // border: 8px solid $white;
+                border: 8px solid var(--bs-border-color);
+                border-radius: 20px;
+                box-shadow: -40px 40px 0px $primary;
+            }
+        }
+        .image-2 {
+            position: absolute;
+            bottom: -6rem;
+            left: -3rem;
+            // border: 8px solid $white;
+            border: 8px solid var(--bs-border-color);
+            border-radius: 50px 50px 50px 0px;
+            img {
+                border-radius: 42px 42px 50px 0px;
+            }
+        }
+    }
+}
+
+/********** Service css **********/
+.therapy-service {
+    .nav-item {
+        .nav {
+            width: 100%;
+            .nav-link {
+                width: 14%;
+                height: 62px;
+                margin: 10px 6px;
+                border: none;
+                background-color: rgba($primary, 0.08);
+                box-shadow: 3px 3px 1px $black;
+                border-radius: 5px;
+                transition: all 0.5s ease;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                    transition: all 0.5s ease;
+                }
+            }
+            .active {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+    .service-box {
+        padding: 1.5rem;
+        border: none;
+        background: transparent;
+        border-radius: 30px;
+        .service-images {
+            img {
+                border-radius: 30px;
+                padding: 3px;
+                // box-shadow: -14px 14px 0px $primary;
+                border: 6px double var(--gray-400);
+            }
+        }
+        // .service-content {
+        //     padding: 2rem;
+        // }
+    }
+}
+
+/********** Our-Value css **********/
+.therapy-value {
+    background-image: url(../images/therapy/group-therapy-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: $black;
+    .therapy-value-box {
+        background-color: rgba($black, 0.8);
+        color: $white;
+        padding: 3rem 2.5rem;
+        .therapy-value-icone {
+            width: 55px;
+            height: 55px;
+            background-color: rgba($white, 0.08);
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 30px;
+        }
+    }
+}
+
+/********** Why-Choose-Us css **********/
+.therapy-why-us {
+    .why-us-img {
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        img {
+            // border: 8px solid $white;
+            border: 8px solid var(--bs-border-color);
+            border-radius: 20px;
+            box-shadow: -40px 40px 0px $primary;
+        }
+    }
+    .why-us-content {
+        margin-top: 20px;
+        .why-us-icone {
+            width: 46px;
+            height: 46px;
+            background-color: rgba($primary, 0.08);
+            color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 24px;
+        }
+        .Count:after {
+            content: "%";
+        }
+    }
+}
+
+/********** Testimonial css **********/
+.therapy-testimonial {
+    .mySwiper-3 {
+        padding: 10px;
+        .swiper-slide {
+            .card {
+                border: none;
+                box-shadow: $shadow-sm;
+                padding: 2rem;
+            }
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: 0rem;
+            left: auto;
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: auto;
+            right: 4rem;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 96%;
+            color: var(--gray-900) !important;
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font: normal normal normal 24px/1 "Material Design Icons";
+            font-size: 30px;
+        }
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: "\f004d";
+        }
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: "\f0054";
+        }
+    }
+}
+
+/********** Contact-Us css **********/
+.therapy-contact-us {
+    background-image: url(../images/therapy/contact-us-bg-img.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: $black;
+    padding-bottom: 0;
+    .contact-form {
+        padding: 3.5rem 0rem;
+        min-height: 640px;
+        background-color: rgba($white, 0.1);
+        backdrop-filter: blur(10px);
+        ::placeholder {
+            color: var(--gray-900);
+        }
+        .form-control {
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid $gray-200;
+            margin-bottom: 30px;
+            color: var(--gray-900);
+            background-color: var(--bs-body-bg);
+            box-shadow: none;
+            &:focus-visible {
+                outline: 0px;
+            }
+        }
+        .form-service {
+            position: relative;
+            .select-box__icon {
+                position: absolute;
+                top: 50%;
+                right: 18px;
+                font-size: 24px;
+                transform: translateY(-50%);
+                transition: 0.2s ease;
+                pointer-events: none;
+                color: var(--gray-900);
+            }
+        }
+        textarea {
+            border-radius: 5px;
+            color: var(--gray-900);
+            background-color: var(--bs-body-bg);
+            &:focus-visible {
+                outline: 0px;
+            }
+        }
+        .btn-style {
+            padding: 10px 20px;
+            border-radius: 0;
+            text-transform: uppercase;
+            position: relative;
+            margin-top: 12px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+    }
+    .appointment-content {
+        background-color: $orange-600;
+        color: $white;
+        min-height: 640px;
+        padding: 2.2rem 2rem;
+        .appointment-icone {
+            font-size: 58px;
+        }
+        .appointment-detail {
+            border-left: 1px solid $white;
+            border-color: $white !important;
+            padding-left: 20px;
+        }
+        .social-icone {
+            display: flex;
+            padding-top: 27px;
+            i {
+                width: 44px;
+                height: 44px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                border-radius: 50%;
+                background: $white;
+                color: $orange-600;
+                margin: 0px 5px;
+            }
+        }
+    }
+}
+
+/********** Our-Success-Story css **********/
+.therapy-success-story {
+    .line {
+        width: 100px;
+        height: 1px;
+        margin: 20px auto 40px auto;
+        border-bottom: 1px solid $white;
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+    h5 {
+        color: var(--text-primary);
+    }
+
+    #before-after-slider {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        // border: 12px solid var(--gray);
+        border: 12px solid var(--bs-border-color);
+        border-radius: 20px;
+        #after-image {
+            display: block;
+        }
+        #before-image {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 2;
+        }
+        #resizer {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            z-index: 5;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 4px;
+            background: $white;
+            /*Stop vertical scrolling on touch*/
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            &::after {
+                background: linear-gradient(62deg, $pink 5%, $indigo);
+                font: normal normal normal 24px/1 "Material Design Icons";
+                content: "\f04e1";
+                font-weight: 900;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                position: absolute;
+                margin: 0 0 0 -18px;
+                left: 0rem;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 3px solid $white;
+            }
+        }
+    }
+}
+
+/********** Our-Team css **********/
+.team-section-1 {
+    .mySwiper-4 {
+        padding: 40px 10px;
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 20% !important;
+            transform: rotateZ(45deg);
+            transition: all 0.5s ease;
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+        }
+        .swiper-pagination-bullet-active {
+            transform: rotateZ(0deg);
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-color: $primary;
+        }
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: 0px;
+        }
+    }
+    .our-team {
+        border: none;
+        border-left: 4px solid $indigo-500;
+        border-bottom: 4px solid $indigo-500;
+        margin: 0px 10px;
+        .team-image {
+            position: relative;
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($primary, 0.8);
+                }
+            }
+        }
+        .description {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-color: rgba($primary, 0.4);
+            transition: all 0.5s ease 0s;
+        }
+        .social {
+            padding: 10px 0 0 0;
+            margin: 0;
+            list-style: none;
+            position: absolute;
+            // top: 40px;
+            top: 28px;
+            left: -27px;
+            background: $indigo-500;
+            text-align: center;
+            transform: translate(25px, 0px) rotateY(90deg);
+            transition: all 0.5s ease 0s;
+            li {
+                display: block;
+                margin-bottom: 10px;
+                a {
+                    display: block;
+                    width: 40px;
+                    height: 35px;
+                    font-size: 22px;
+                    color: $white;
+                    line-height: 30px;
+                    transition: all 0.5s ease 0s;
+                }
+            }
+        }
+        .team-info {
+            padding: 16px;
+        }
+        .title {
+            font-size: 18px;
+            color: var(--text-primary);
+            margin-bottom: 0px;
+            transition: all 0.5s ease 0s;
+        }
+        .post {
+            display: block;
+            font-size: 14px;
+            color: var(--text-primary);
+            text-transform: capitalize;
+        }
+        &:hover {
+            .description {
+                opacity: 1;
+            }
+            .social {
+                transform: translate(5px, 0px) rotateY(0deg);
+            }
+            .title,
+            .post {
+                color: $pink;
+            }
+        }
+    }
+}
+
+/********** Our-Blog css **********/
+.blog-section-1 {
+    .blog-content-box {
+        border: none;
+        border-radius: 22px;
+        padding: 10px;
+        .blog-content-img,
+        .blog-content-img-1 {
+            position: relative;
+            overflow: hidden;
+            border-radius: 22px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 86%;
+                height: 86%;
+                bottom: 7%;
+                left: 7%;
+                opacity: 0;
+                z-index: 4;
+                border-radius: 22px;
+                border: 6px double $white;
+                background-color: rgba($white, 0.4);
+                transition: all 0.5s ease;
+            }
+            img {
+                border-radius: 22px;
+                transition: all 0.5s ease;
+            }
+        }
+        .blog-content-text {
+            padding: 24px 0px;
+            h4 {
+                color: var(--text-primary);
+                font-size: 20px;
+            }
+            .blog-content-list {
+                color: $purple;
+                .badge {
+                    font-size: 14px;
+                    padding: 8px 14px;
+                    color: var(--text-primary);
+                }
+            }
+        }
+        &:hover {
+            .blog-content-img,
+            .blog-content-img-1 {
+                &::before {
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                    z-index: 4;
+                }
+                img {
+                    transform: scale(1.2) rotate(5deg);
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}
+
+/*********** Progressbar Css ********/
+.skill-progressbar {
+    .skillbar {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        // background: var(--gray-100);
+        background-color: var(--gray-200);
+        height: 35px;
+        border-radius: 3px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+    .skillbar-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 128px;
+        font-weight: bold;
+        font-size: 14px;
+        color: $white;
+        background: $indigo-600;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        span {
+            display: block;
+            background: rgba($black, 0.1);
+            padding: 0 20px;
+            height: 35px;
+            line-height: 35px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+    }
+    .skillbar-bar {
+        height: 35px;
+        width: 0px;
+        background: $indigo-400;
+        border-radius: 3px;
+    }
+    .skill-bar-percent {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: 12px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+/*********** Date Icone Color Change ********/
+input[type="date"] {
+    position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+}
+input[type="date"]:before {
+    color: var(--gray-700);
+    background: none;
+    display: block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    content: "\F0B68";
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+
+/********** fade in rigth **********/
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+.animated {
+    animation-duration: 1s;
+}
+
+/********** MEDIA **********/
+@media screen and (max-width: 991px) {
+    .therapy-feature {
+        .therapy-ftr-box {
+            .therapy-ftr-body {
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .about-therapy {
+        padding-bottom: 70px;
+        .therapy-about-img {
+            .image-2 {
+                position: absolute;
+                bottom: -4rem;
+                left: -2rem;
+            }
+        }
+    }
+
+    .therapy-service {
+        .nav-item {
+            .nav {
+                width: 100%;
+                .nav-link {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+    .therapy-contact-us {
+        .contact-form {
+            min-height: auto;
+            padding: 3rem;
+        }
+        .appointment-content {
+            min-height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .therapy-home-slider {
+        text-align: center;
+        .slider {
+            min-height: auto;
+            padding-top: 150px;
+            .slider-content {
+                min-height: auto;
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+            .slider-slide {
+                background-position: center;
+            }
+        }
+    }
+    .therapy-feature {
+        margin: 0;
+        .col-md-4 {
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+        }
+        .therapy-ftr-box {
+            border-radius: 20px;
+        }
+    }
+    .therapy-service {
+        .nav-item {
+            .nav {
+                width: 100%;
+                .nav-link {
+                    width: 30%;
+                }
+            }
+        }
+        .service-box {
+            box-shadow: 0px 0px 10px var(--gray-400);
+            border-radius: 30px;
+            padding: 1rem;
+            text-align: center;
+            .service-content {
+                padding: 0rem;
+            }
+        }
+    }
+    .therapy-why-us {
+        .why-us-img {
+            img {
+                box-shadow: -34px 26px 0px $primary;
+            }
+        }
+    }
+    .fadeInRight {
+        animation-name: fadeInUp;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-therapy {
+        .therapy-about-img {
+            .image-1 {
+                img {
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+            .image-2 {
+                display: none;
+            }
+        }
+    }
+    .therapy-value {
+        .therapy-value-box {
+            padding: 2rem 1.5rem;
+            .therapy-value-icone {
+                width: 46px;
+                height: 46px;
+                font-size: 26px;
+            }
+        }
+    }
+    .therapy-service {
+        .nav-item {
+            .nav {
+                width: 100%;
+                .nav-link {
+                    width: 100%;
+                    margin: 5px 4px;
+                }
+            }
+        }
+    }
+    .therapy-why-us {
+        .why-us-img {
+            img {
+                box-shadow: none;
+                border: none;
+            }
+        }
+    }
+    .therapy-testimonial {
+        .mySwiper-3 {
+            .swiper-slide {
+                .card {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    .therapy-contact-us {
+        .contact-form {
+            padding: 1rem;
+        }
+        .appointment-content {
+            padding: 1rem;
+            .appointment-icone {
+                font-size: 40px;
+            }
+        }
+    }
+    .therapy-counter {
+        .counter-box {
+            .counting {
+                font-size: 30px;
+            }
+            span {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/********** RTL **********/
+[dir="rtl"] {
+    .skillbar-title {
+        right: 0;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .skill-bar-percent {
+        right: auto;
+        left: 10px;
+    }
+    .therapy-feature {
+        .rounded-end {
+            border-radius: 20px 0px 0px 20px !important;
+        }
+        .rounded-start {
+            border-radius: 0px 20px 20px 0px !important;
+        }
+    }
+    .about-therapy {
+         .therapy-about-img {
+             .image-1 {
+                 img {
+                    box-shadow: 40px 40px 0px $primary;
+                }
+            }
+            .image-2 {
+                left: auto;
+                right: -3rem;
+                border-radius: 50px 50px 0px 50px;
+                img {
+                    border-radius: 42px 42px 0px 42px;
+                }
+            }
+        }
+    }
+    .therapy-why-us {
+         .why-us-img {
+             img {
+                box-shadow: 40px 40px 0px $primary;
+            }
+        }
+    }
+
+    .therapy-contact-us {
+        .appointment-content {
+            .appointment-detail {
+                border-left: none;
+                border-right: 1px solid $white;
+                padding-left: 0px;
+                padding-right: 20px;
+            }
+        }
+        .contact-form .form-service .select-box__icon {
+            right: auto;
+            left: 18px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .therapy-feature {
+            .rounded-end,
+            .rounded-start {
+                border-radius: 20px !important;
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .about-therapy {
+             .therapy-about-img {
+                 .image-1 {
+                     img {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .therapy-why-us {
+             .why-us-img {
+                 img {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    background-color: ($value);
+    border-color: ($value);
+    color: ($white);
+    &:hover {
+      background-color: rgba($value, 0.9);
+      border-color: rgba($value, 0.9);
+    }
+  }
+
+    //Border Bottom Buttons Style
+  .btn-outline-#{$color} {
+      background-color: (transparent);
+      border-color: ($value);
+      color: ($value);
+      &:hover {
+        background-color: rgba($value, 0.9);
+        border-color: rgba($value, 0.9);
+        color: ($white);
+      }
+   }
+
+   .btn-outline-white {
+    &:hover {
+        border-color: ($dark);
+        color: ($dark);
+      }
+   }
+
+}
+
+  // 
+// _buttons.scss
+// 
+
+button,
+a {
+    outline: none !important;
+    position: relative;
+}
+
+.btn {
+    box-shadow: $element-shadow;
+}
+
+// Rounded Buttons
+.btn-rounded {
+    border-radius: 30px;
+}
+
+
+.btn-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(#{$btn-padding-y * 2} + #{$btn-line-height}em + #{$btn-border-width * 2});
+    width: calc(#{$btn-padding-y * 2} + #{$btn-line-height}em + #{$btn-border-width * 2});
+    padding: 0;
+
+    i,
+    svg,
+    img {
+        vertical-align: middle;
+    }
+
+    &.btn-sm {
+        height: calc(#{$btn-padding-y-sm * 2} + #{$btn-line-height}em + #{$btn-border-width * 2});
+        width: calc(#{$btn-padding-y-sm * 2} + #{$btn-line-height}em + #{$btn-border-width * 2});
+    }
+
+    &.btn-lg {
+        height: calc(#{$btn-padding-y-lg * 2} + #{$btn-line-height}em + #{$btn-border-width * 2});
+        width: calc(#{$btn-padding-y-lg * 2} + #{$btn-line-height}em + #{$btn-border-width * 2});
+    }
+}
+
+//
+// Soft Buttons
+// 
+
+@mixin button-variant-soft($bg) {
+    color: $bg;
+    background-color: rgba($bg, 0.1);
+    border: 1px solid darken($bg, 8%);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background-color: $bg;
+        border: 1px solid darken($bg, 8%);
+    }
+}
+
+@each $color,
+$value in $theme-colors {
+    .btn-soft-#{$color} {
+        @include button-variant-soft($value);
+    }
+}
+
+// theme dark
+[data-theme="dark"] {
+    .btn-light {
+        color: var(--#{$variable-prefix}dark);
+        background-color: var(--#{$variable-prefix}light);
+        border-color: var(--#{$variable-prefix}light);
+
+        &:hover {
+            color: var(--#{$variable-prefix}dark);
+            background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
+            border-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
+        }
+    }
+
+    .btn-dark {
+        color: var(--#{$variable-prefix}light);
+        background-color: var(--#{$variable-prefix}dark);
+        border-color: var(--#{$variable-prefix}dark);
+
+        &:hover {
+            color: var(--#{$variable-prefix}light);
+            background-color: rgba(var(--#{$variable-prefix}dark-rgb), 0.75);
+            border-color: rgba(var(--#{$variable-prefix}dark-rgb), 0.75);
+        }
+    }
+
+    .btn-outline-light {
+        color: var(--#{$variable-prefix}dark);
+        border-color: var(--#{$variable-prefix}light);
+
+        &:hover {
+            color: var(--#{$variable-prefix}dark);
+            background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
+            border-color: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
+        }
+    }
+
+    .btn-outline-dark {
+        color: var(--#{$variable-prefix}dark);
+        border-color: var(--#{$variable-prefix}dark);
+
+        &:hover {
+            color: var(--#{$variable-prefix}light);
+            background-color: rgba(var(--#{$variable-prefix}dark-rgb), 0.75);
+            border-color: rgba(var(--#{$variable-prefix}dark-rgb), 0.75);
+        }
+    }
+}

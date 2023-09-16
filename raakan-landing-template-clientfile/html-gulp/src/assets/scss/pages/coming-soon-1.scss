@@ -1,0 +1,128 @@
+.coming-soon-1 {
+  .container-fluid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #1f363d;
+    //
+    .clock {
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+      font-size: 72px;
+      background-color: #00000000;
+      padding: 20px 5px 60px 5px;
+      color: #fff;
+      font-weight: 700;
+    }
+    .hou {
+      color: $primary;
+      text-shadow: $primary 0px 0px 20px;
+      padding-left: 30px;
+    }
+    .min {
+      color: $primary;
+      text-shadow: $primary 0px 0px 20px;
+    }
+    .sec {
+      color: $primary;
+      text-shadow: $primary 0px 0px 20px;
+    }
+    .ses {
+      color: $primary;
+      text-shadow: $primary 0px 0px 20px;
+      padding-right: 30px;
+      font-size: 36px;
+      top: 0vh;
+    }
+    .fy {
+      color: $primary;
+      text-shadow: $primary 0px 0px 20px;
+      padding-right: 30px;
+      padding-left: 50px;
+      position: absolute;
+      font-size: 36px;
+      bottom: 5vh;
+      left: -19vh;
+    }
+    .dot {
+      color: lightblue;
+      text-shadow: lightblue 0px 0px 20px;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    .background-animation {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vw;
+      z-index: -1;
+      background: conic-gradient(
+        from 180deg at 50% 50%,
+        #bfbfbf 0deg,
+        #ffffff 360deg
+      );
+      animation: rotate-gradient 7s linear infinite;
+    }
+  }
+  @keyframes rotate-gradient {
+    from {
+      transform: rotate(0deg) scale(3);
+    }
+    to {
+      transform: rotate(360deg) scale(3);
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .coming-soon-1 {
+    .container-fluid {
+      .clock {
+        font-size: 52px;
+        font-weight: 600;
+      }
+      .ses {
+        font-size: 26px;
+      }
+      .fy {
+        font-size: 26px;
+        bottom: 7vh;
+        left: -13vh;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px){
+  .coming-soon-1 {
+    .container-fluid {
+      .clock {
+        font-size: 42px;
+        font-weight: 500;
+        padding: 20px 5px 40px 5px;
+      }
+      .ses {
+        font-size: 26px;
+        top: -3vh;
+        position: absolute;
+      }
+      .fy {
+        font-size: 26px;
+        bottom: 2vh;
+        left: -10vh;
+      }
+    }
+  }
+}

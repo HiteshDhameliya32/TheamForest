@@ -1,0 +1,691 @@
+/********** Home css **********/
+.online-learning-home {
+    background-color: var(--light);
+    padding-top: 86px;
+    .col-md-6 {
+        padding: 0;
+    }
+    .col-lg-5 {
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+    ul {
+        li {
+            padding: 5px 0;
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+    form {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        input {
+            height: 50px;
+            width: 60%;
+            padding: 0px 18px;
+            margin-right: 10px;
+            color: var(--gray-900);
+            border: 1px solid $gray-400;
+            background: var(--bs-gray-200);
+            &:focus-visible {
+                outline: 0px;
+            }
+            &::placeholder {
+                color: var(--gray-900);
+            }
+        }
+        button {
+            height: 50px;
+            // width: 25%;
+            border-radius: 0px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+    .swiper {
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: 1rem;
+            left: auto;
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: auto;
+            right: 5rem;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            bottom: 1rem;
+            top: auto;
+            color: $white !important;
+            background: $black;
+            width: 66px;
+            height: 66px;
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font: normal normal normal 24px/1 "Material Design Icons";
+            font-size: 30px;
+        }
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: "\f004d";
+        }
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: "\f0054";
+        }
+    }
+}
+
+/********** About css **********/
+.about-online-learning {
+    .images {
+        position: relative;
+        img {
+            border-radius: 50%;
+        }
+        .img-1 {
+            padding: 4px;
+            border: 10px solid $primary;
+            border-radius: 50%;
+        }
+        .img-2 {
+            position: absolute;
+            bottom: -3rem;
+            right: -2rem;
+            padding: 3px;
+            // border: 10px solid $white;
+            border: 10px solid var(--bs-border-color);
+            border-radius: 50%;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        color: var(--text-primary);
+    }
+}
+
+/********** Service css **********/
+.service-online-learning {
+    background: var(--light);
+    .mySwiper-3 {
+        padding: 40px 20px;
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 3px;
+            border-radius: 0% !important;
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+            transition: all 0.5s ease;
+        }
+        .swiper-pagination-bullet-active {
+            width: 24px;
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-color: $primary;
+        }
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: 0px;
+        }
+    }
+    .service-box {
+        border: none;
+        box-shadow: 0px 0px 10px rgba($black, 0.3);
+        border-radius: 0px;
+        // box-shadow: $shadow-sm;
+        background-color: transparent;
+        .service-box-img {
+            overflow: hidden;
+            img {
+                transition: all 0.5s ease;
+                position: relative;
+            }
+            .service-badge {
+                position: absolute;
+                right: 0.5rem;
+                top: 0.5rem;
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+        .service-box-content {
+            padding: 1.5rem;
+            h4 {
+                font-size: 20px;
+            }
+            .star-icone {
+                font-size: 22px;
+            }
+            .service-box-list {
+                border-bottom: 1px solid $gray-400;
+                padding-bottom: 22px;
+                li {
+                    border-right: 1px solid $gray-400;
+                    padding: 0px 20px;
+                    p {
+                        margin: 0;
+                    }
+                    .list-sub-title {
+                        font-size: 14px;
+                        color: $red;
+                    }
+                }
+            }
+            .packages-days {
+                border: 1px solid var(--bs-gray-500);
+                padding: 15px 0;
+                margin-bottom: 1rem;
+                color: $gray-700;
+                div {
+                    border-right: 1px solid var(--bs-gray-500);
+                    width: 33.33333%;
+                    float: left;
+                    text-align: center;
+                    color: var(--text-primary);
+                    p {
+                        margin: 0;
+                    }
+                    .list-sub-title {
+                        font-size: 14px;
+                        color: $red;
+                    }
+                }
+            }
+            img {
+                border: 2px solid $white;
+                box-shadow: 0px 10px 14px 0px rgb(1 11 60 / 10%);
+            }
+        }
+        &:hover {
+            .service-box-img {
+                img {
+                    filter: grayscale(1);
+                    transform: scale(1.2) rotate(5deg);
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}
+
+/********** Popular-courses css **********/
+.popular-courses {
+    .nav {
+        .nav-link {
+                width: 12%;
+                cursor: pointer;
+                height: 116px;
+                padding: 20px;
+                font-size: 42px;
+                border-radius: 10px;
+                text-align: center;
+                background-color: var(--gray-300);
+                color: var(--gray-900);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s ease;
+            }
+            .active {
+                box-shadow: 2px 2px 5px rgba($black, 0.3);
+                background-color: var(--gray-300);
+                transform: translateY(-6px);
+                transition: all 0.5s ease;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border: 0 solid transparent;
+                    border-right-width: 18px;
+                    border-left-width: 18px;
+                    border-bottom: 15px solid var(--gray-300);
+                    bottom: -1.2rem;
+                    left: 38%;
+                    transform: rotate(180deg);
+                    transition: all 0.5s ease;
+                }
+        }
+    }
+    .tab-pane {
+        margin-top: 26px;
+        .course-box {
+            padding: 1rem;
+            border-radius: 30px;
+            border: none;
+            box-shadow: $shadow-sm;
+            img {
+                border-radius: 30px;
+            }
+            .mySwiper-1 {
+                // left: -40px;
+                // top: -64px;
+                .swiper-button-next,
+                .swiper-rtl .swiper-button-prev {
+                    right: 0rem;
+                    left: auto;
+                }
+                .swiper-button-prev,
+                .swiper-rtl .swiper-button-next {
+                    left: 0rem;
+                    right: auto;
+                }
+                .swiper-button-next,
+                .swiper-button-prev {
+                    position: absolute;
+                    top: 50%;
+                    color: $black !important;
+                    background: rgba($white, 0.4);
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                .swiper-button-next:after,
+                .swiper-button-prev:after {
+                    font: normal normal normal 24px/1 "Material Design Icons";
+                    font-size: 40px;
+                }
+                .swiper-button-prev:after,
+                .swiper-rtl .swiper-button-next:after {
+                    content: "\f19b1";
+                }
+                .swiper-button-next:after,
+                .swiper-rtl .swiper-button-prev:after {
+                    content: "\f19b0";
+                }
+            }
+            .course-box-content {
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        i {
+                            transform: rotateZ(45deg);
+                            background-image: linear-gradient(to top, $primary 34%, transparent 100%);
+                            color: transparent;
+                            background-clip: text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/********** counter css **********/
+.counter-section {
+    background: var(--light);
+    .counter-content {
+        text-align: center;
+        .counter-box {
+            padding: 1rem;
+            border: none;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            background: var(--light);
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .counter-box-content {
+                .counter-box-icon {
+                    font-size: 50px;
+                    line-height: 46px;
+                }
+                .counter-box-num {
+                    .counting {
+                        font-size: 30px;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+    .detail {
+        margin-bottom: 10px;
+        .icone-content {
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: $primary;
+            border-radius: 50%;
+            // box-shadow: 0px 0px 14px rgb($black, 0.3);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to left, $indigo-300, $indigo-500);
+                z-index: -1;
+                border-radius: 50%;
+                transform: translate(100%, 100%);
+                transition: all 0.4s;
+            }
+        }
+        &:hover {
+            .icone-content {
+                color: $white;
+                z-index: 6;
+                &::before {
+                    transform: translate(0);
+                    animation: right-top 0.4s linear;
+                }
+            }
+        }
+    }
+}
+
+/********** team css **********/
+.professor-team {
+    background: var(--light);
+    .our-team {
+        text-align: center;
+        box-shadow: $shadow-sm;
+        .team_img {
+            position: relative;
+            overflow: hidden;
+            &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: rgba($primary, 0.3);
+                position: absolute;
+                bottom: -100%;
+                left: 0;
+                transition: all 0.3s ease 0s;
+            }
+        }
+        .social {
+            padding: 0 0 18px 0;
+            margin: 0;
+            list-style: none;
+            position: absolute;
+            top: -100%;
+            right: 10px;
+            background-color: rgba($white, 0.22);
+            border-radius: 0 0 20px 20px;
+            z-index: 1;
+            transition: all 0.3s ease 0s;
+        }
+        li {
+            a {
+                display: block;
+                padding: 6px 12px;
+                font-size: 20px;
+                color: $white;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+        .team-content {
+            padding: 20px 0;
+            background: var(--light);
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--text-primary);
+            text-transform: capitalize;
+            margin: 0 0 20px;
+            position: relative;
+            &:before,
+            &:after {
+                content: "";
+                width: 25px;
+                height: 1px;
+                background: $success;
+                position: absolute;
+                bottom: -14px;             
+                transition-duration: 0.25s;
+            }
+            &:after {
+                left: 50%;
+                margin-left: 9px;
+            }
+            &::before {
+                right: 50%;
+                margin-right: 9px;
+            }
+        }
+        .post {
+            display: inline-block;
+            font-size: 15px;
+            color: $red;
+            text-transform: capitalize;
+            &:before {
+                content: "";
+                display: block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: $success;
+                margin: 0 auto;
+                position: relative;
+                top: -10px;
+            }
+        }
+        &:hover {
+            .team_img {
+                &:after {
+                    bottom: 0;
+                }
+            }
+            .social {
+                top: 0;
+            }
+            .title {
+                &:after,
+                &:before {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+/********** Student-Feedback css **********/
+.student-feedback {
+    text-align: center;
+    .mySwiper-1 {
+        padding: 18px 10px;
+        .swiper-wrapper {
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: 0rem;
+            left: auto;
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: 0rem;
+            right: auto;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 50%;
+            color: var(--gray-900) !important;
+        }
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font: normal normal normal 24px/1 "Material Design Icons";
+            font-size: 40px;
+        }
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: "\f19b1";
+        }
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: "\f19b0";
+        }
+    }
+    .feedback-box-content {
+        border-radius: 30px;
+        border: none;
+        box-shadow: $shadow-sm;
+        background-color: $white;
+        .feedback-content-head {
+            background: var(--light);
+            padding: 10px 30px;
+            font-size: 20px;
+            width: fit-content;
+            border-radius: 0px 0px 10px 10px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .online-learning-home {
+        h1 {
+            font-size: 28px;
+        }
+    }
+    .about-online-learning {
+        .images {
+            .img-2 {
+                bottom: -1rem;
+            }
+        }
+    }
+    .popular-courses {
+            .nav {
+                    .nav-link {
+                        width: 12%;
+                        height: 82px;
+                        font-size: 36px;
+                    }
+                    .active {
+                        &:after {
+                            border-right-width: 15px;
+                            border-left-width: 15px;
+                            border-bottom: 11px solid var(--gray-300);
+                            bottom: -0.8rem;
+                            left: 35%;
+                        }
+                    }
+            }
+        .tab-pane {
+            margin-top: 10px;
+            .course-box {
+                .mySwiper-1 {
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .online-learning-home {
+        padding-top: 110px;
+    }
+    
+    .popular-courses {
+        .nav {
+                .nav-link {
+                    width: 30%;
+                    margin-bottom: 10px;
+                    height: 82px;
+                    font-size: 36px;
+                }
+                .active {
+                    transform: translateY(0px);
+                    &:after {
+                      display: none;
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .online-learning-home {
+        .home-img {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .about-online-learning {
+        .images {
+            .img-2 {
+                display: none;
+            }
+        }
+    }
+    .popular-courses {
+        .nav-item {
+            .nav {
+                width: 100%;
+                .nav-link {
+                    width: 100%;
+                    transform: rotate(0deg);
+                    .courses-icone {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+    .counter-section {
+        .detail {
+            .icone-content {
+                width: 3rem !important;
+                height: 3rem !important;
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 575px) {
+    .professor-team {
+        .our-team {
+            width: 356px;
+            margin: 0 auto;
+        }
+    }
+}
+
+/********** RTL **********/
+[dir="rtl"] {
+    .popular-courses {
+         .tab-pane {
+             .course-box {
+                 .mySwiper-1 {
+                    left: 40px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .popular-courses {
+            .tab-pane {
+                .course-box {
+                    .mySwiper-1 {
+                        left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

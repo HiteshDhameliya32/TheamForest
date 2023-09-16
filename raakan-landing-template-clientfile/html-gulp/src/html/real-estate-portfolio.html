@@ -1,0 +1,527 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-real-estate.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="real-estate-about.html" class="sub-mega-menu">about</a></li>
+                    <li><a href="real-estate-portfolio.html" class="sub-mega-menu">portfolio</a></li>
+                    <li><a href="real-estate-agent.html" class="sub-mega-menu">agent</a></li>
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END maintenace menu -->
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul>
+                <!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div>
+        <!--end container-->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+    'title': 'Portfolio',
+    'breadcrumb1': {
+    'title': 'Real Estate',
+    'link': 'index-real-estate.html',
+    'icon': 'hospital-building',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Portfolio',
+    'link': '#',
+    'icon': 'doctor',
+    'active_class': 'active'
+    }
+    })
+
+    <!-- /********** portfolio Section **********/ -->
+    <section class="section real-estate-portfolio">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-6 col-lg-8 col-md-10">
+                    <p class="text-muted m-0">Work Sample</p>
+                    <h2 class="text-uppercase m-0"> Our PORTFOLIO</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted">
+                        Pellentesque facilisis hendrerit sem, at consectetur urna egestas a. Sed malesuada leo quis
+                        sollicitudin venenatis. Pellentesque facilisis felis ut massa pharetra finibus ut nec justo
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <nav class="nav-item my-4">
+                <div class="nav justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all-item"
+                        aria-controls="all-item">All</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#house"
+                        aria-controls="house">House</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#building"
+                        aria-controls="building">Building</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#government-contract"
+                        aria-controls="government-contract">Government Contract</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#renovation"
+                        aria-controls="renovation">Renovation</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="all-item">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/house-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>House Hall</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/bilding-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Building</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/contracts-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Road</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/renovation-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Renovation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/house-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Outlook House</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/bilding-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Building Stairs</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/contracts-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Construction Road</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/renovation-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>House Renovation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/house-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Dream House</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/contracts-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Bridge</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/bilding-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Architect Design</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/renovation-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Building Renovation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+                    </div><!-- END row -->
+                </div><!-- END teb-pane -->
+
+                <div class="tab-pane fade" id="house">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/house-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Clinical Surgery</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/house-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Outlook House</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/house-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Dream House</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+                    </div><!-- END row -->
+                </div><!-- END teb-pane -->
+
+                <div class="tab-pane fade" id="building">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/bilding-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Building</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/bilding-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Building Stairs</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/bilding-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Architect Design</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+                    </div><!-- END row -->
+                </div><!-- END teb-pane -->
+
+                <div class="tab-pane fade" id="government-contract">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/contracts-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Road</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/contracts-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Construction Road</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/contracts-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Bridge</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+                    </div><!-- END row -->
+                </div><!-- END teb-pane -->
+
+                <div class="tab-pane fade" id="renovation">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/renovation-1.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Renovation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/renovation-2.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>House Renovation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div class="card portfolio-box">
+                                <img src="assets/images/real-estate/renovation-3.png" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-info-left">
+                                        <h3>Building Renovation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+                    </div><!-- END row -->
+                </div><!-- END teb-pane -->
+            </div><!-- END teb-content -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- /********** faq Section **********/ -->
+    <section class="section accordion-realestate bg-transparent">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <p class="text-muted m-0">FAQ</p>
+                    <h2 class="text-uppercase text-center m-0"> Frequently Asked Questions </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted text-center">
+                        We help startups, corporations and nonprofits.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-md-6">
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Modern Technology we used for you
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    Proptech is also known as CREtech for commercial real estate technology or REtech
+                                    for real estate technology.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    We have Experinced Technician Team
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    Your real estate social media account requires consistent posts, frequent updates,
+                                    and hence lots of creativity.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Completely revolution in Agriculture
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    An agricultural revolution is when farming techniques drastically improve within a
+                                    relatively short period of time.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <!-- col end -->
+                <div class="col-lg-5 col-md-6">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/images/hospital/hospital-faq-img-2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!-- col end -->
+            </div>
+            <!-- row end -->
+        </div>
+        <!-- container-fluid end -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+</body>
+
+</html>

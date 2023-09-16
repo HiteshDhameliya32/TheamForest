@@ -1,0 +1,577 @@
+//
+// construction
+
+// construction-home-page
+.construction-home {
+  padding-top: 90px;
+  .container-fluid {
+    .row > * {
+      position: static;
+    }
+    .carousel-caption {
+      bottom: 7%;
+      right: 0%;
+      z-index: 99;
+      h1 {
+        font-size: 64px;
+        font-weight: 900;
+      }
+      .btn-set {
+        .moving_animation {
+          position: absolute;
+          font-size: 32px;
+          top: 0%;
+          animation: moving_object 5s infinite linear;
+        }
+        @keyframes moving_object {
+          0% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(-20px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+    .carousel-inner {
+      .carousel-item {
+        .gradient-overlay {
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            background: linear-gradient(
+              to bottom,
+              rgba(255, 255, 255, 0%) 0%,
+              rgba(0, 0, 0, 41%) 100%
+            );
+          }
+        }
+      }
+    }
+    #sidePanel {
+      width: 40%;
+      position: fixed;
+      overflow-x: hidden;
+      overflow-y: auto;
+      top: 15%;
+      left: 100%;
+      transition: left 0.9s;
+      z-index: 9999;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: $box-shadow;
+      backdrop-filter: blur(50.5px);
+      text-align: center;
+      .box {
+        position: relative;
+        background: rgb(0 0 0 / 72%);
+        overflow: hidden;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+          border-top: 1px solid $white;
+          border-bottom: 1px solid $white;
+          transition: 0.5s;
+          transform: scaleX(0);
+          opacity: 0;
+        }
+        &:hover {
+          &:before {
+            transform: scaleX(1);
+            opacity: 1;
+          }
+          &:after {
+            transform: scaleY(1);
+            opacity: 1;
+          }
+          .imgBox {
+            img {
+              opacity: 0.2;
+              transform: scale(1.2);
+            }
+          }
+          .content {
+            b {
+              opacity: 1;
+              visibility: visible;
+              font-size: 20px;
+            }
+            P {
+              opacity: 1;
+              visibility: visible;
+              font-size: 14px;
+            }
+          }
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+          border-left: 1px solid $white;
+          border-right: 1px solid $white;
+          transition: 0.5s;
+          transform: scaleY(0);
+          opacity: 0;
+        }
+        .imgBox {
+          img {
+            transition: 0.5s;
+          }
+        }
+        .content {
+          position: absolute;
+          bottom: 0;
+          padding: 20px;
+          b {
+            margin: 0 0 10px;
+            padding: 0;
+            color: $white;
+            visibility: hidden;
+          }
+          p {
+            margin: 0;
+            color: $white;
+            opacity: 0;
+          }
+        }
+      }
+      .close-btn {
+        background: $primary;
+        top: 10px;
+        margin-right: 10px;
+        width: 50px;
+      }
+    }
+    #sidePanel.open {
+      left: 60%;
+    }
+  }
+}
+
+// project
+.construction-project {
+  .container-fluid {
+    background-color: var(--light);
+    .img-gradient {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        background: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0) 0%,
+          rgb(64 81 137 / 40%) 100%
+        );
+      }
+    }
+  }
+}
+
+// gallery section
+.gallery {
+  .container-fluid {
+    .card {
+      flex: 1;
+      transition: all 0.8s ease-in;
+      height: 80vmin;
+      position: relative;
+      overflow: hidden;
+      margin: 0 0 4px 0;
+      &::after {
+        content: "";
+        position: absolute;
+        border: 2px solid $white;
+        bottom: 0;
+        height: 4%;
+        right: 50%;
+      }
+      .card__head {
+        letter-spacing: 10px;
+        color: $white;
+        padding: 0.5em;
+        transform: rotate(-90deg);
+        transition: all 0.8s ease-in;
+        width: 100%;
+        position: absolute;
+        bottom: 16%;
+        left: 0;
+        font-size: 22px;
+        white-space: nowrap;
+      }
+      &:hover {
+        flex-grow: 5;
+        img {
+          filter: grayscale(0);
+          object-fit: fill !important;
+        }
+        .card__head {
+          letter-spacing: 5px;
+          text-align: center;
+          padding: 3%;
+          bottom: 0%;
+          z-index: 9;
+          color: var(--gray-200);
+          background: var(--gray-900);
+          transform: rotate(0deg) skew(0deg);
+        }
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+        transition: all 1.5s ease-in;
+        filter: grayscale(100%);
+      }
+      &:not(:nth-child(9)) {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+// accordion section
+.accordion-realestate {
+  background-color: var(--light);
+  .accordion {
+    .accordion-item {
+      margin: 10px 0;
+      border: 1px solid #adb5bd;
+      .accordion-button {
+        box-shadow: none;
+        background-color: var(--theme-light--bc);
+        color: var(--gray-900);
+        font-weight: 500;
+        &:hover {
+          background-color: $warning;
+          color: $white;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        &.accordion-button:not(.collapsed) {
+          background-color: $warning;
+          color: $white;
+          border-bottom: 1px solid $gray-500;
+        }
+        &::after {
+          content: "\f0143";
+          font-family: "Material Design Icons";
+          flex-shrink: 0;
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-left: auto;
+          background-size: 1.25rem;
+          background-image: none;
+        }
+      }
+    }
+  }
+}
+
+// portfolio section
+.portfolio {
+  .nav-link {
+    margin: 0px 10px;
+    position: relative;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    color: var(--text-primary);
+    transition: all 0.5s;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      width: 0px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #7c7f90, transparent);
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.2s;
+    }
+    &.active,
+    &:hover {
+      color: #7c7f90;
+      &::before {
+        width: 80px;
+      }
+    }
+  }
+  .portfolio-box {
+    overflow: hidden;
+    border: none;
+    border-radius: 0px;
+    position: relative;
+    img {
+      transition: 0.5s linear;
+    }
+    h3 {
+      color: $white;
+      position: absolute;
+      width: 100%;
+      padding: 6px 16px;
+      top: 0px;
+      font-size: 14px;
+      opacity: 0;
+      transition: all 0.5s ease-in;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+      h3 {
+        background-color: $warning;
+        opacity: 1;
+        transition: all 0.5s ease-in;
+      }
+    }
+  }
+}
+
+// seller section
+.seller {
+  background-color: var(--light);
+  .container {
+    .card {
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        transform: translateY(-20px);
+        z-index: 1;
+        .card-body {
+          background-color: $warning;
+          h5,
+          small {
+            color: var(--gray-900);
+          }
+        }
+      }
+      .card-body {
+        width: 100%;
+        display: block;
+        text-align: center;
+        position: relative;
+        box-shadow: var(--shadow-sm);
+        ul {
+          li {
+            a {
+              color: var(--gray-900);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// contact-us page
+.contact-us {
+  .container-fluid {
+    background-color: var(--theme-light--bc) !important;
+    .contact-img {
+      background-image: url(../images/real-estate/contact.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 587px;
+      .ul-center {
+        li {
+          a {
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+      .ul-bottom {
+        z-index: 99;
+        li {
+          a {
+            color: $black;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+            span {
+              width: 40px;
+              height: 40px;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+          &:hover {
+            a {
+              color: $white;
+            }
+            span {
+              background-color: #86beff;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+    }
+    .form-details {
+      background-color: var(--gray-200);
+      form {
+        .form-control {
+          border: none;
+          border-bottom: 1px solid #adb5bd;
+          font-size: 18px;
+          background-color: transparent;
+          color: var(--gray-900);
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        label {
+          width: 118%;
+        }
+        textarea {
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .construction-home {
+    h1 {
+      font-size: 49px !important;
+      font-weight: 700 !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    .container-fluid {
+      .card {
+        &:hover {
+          flex-grow: 8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .construction-home {
+    .carousel-caption {
+      bottom: 0% !important;
+      h1 {
+        font-size: 35px !important;
+        font-weight: 500 !important;
+      }
+      .moving_animation {
+        font-size: 26px !important;
+      }
+    }
+    #sidePanel {
+      .box {
+        .content {
+          b {
+            font-size: 12px !important;
+          }
+          p {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .construction-home {
+    #sidePanel {
+      width: 53% !important;
+      left: 100% !important;
+    }
+    #sidePanel.open {
+      left: 47% !important;
+    }
+  }
+
+  .gallery {
+    .container-fluid {
+      display: block !important;
+      .card {
+        &::after {
+          content: none !important;
+        }
+        .card__head {
+          bottom: 0% !important;
+          margin: 0 !important;
+          transform: rotate(0deg) !important;
+          width: 100% !important;
+          padding: 2%;
+        }
+        &:hover {
+          flex-grow: 5;
+        }
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .construction-home {
+    #sidePanel {
+      width: 62% !important;
+      left: 100% !important;
+      .box {
+        .imgBox {
+          height: 250px !important;
+          img {
+            height: 100% !important;
+          }
+        }
+      }
+      .close-btn {
+        width: 40px !important;
+      }
+    }
+    #sidePanel.open {
+      left: 38% !important;
+    }
+  }
+  .gallery {
+    .container-fluid {
+      .card {
+        &:hover {
+          .card__head {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 506px) {
+  .portfolio {
+    .item {
+      width: 97% !important;
+    }
+  }
+}

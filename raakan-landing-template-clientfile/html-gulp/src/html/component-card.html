@@ -1,0 +1,269 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Cards',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Cards',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+    <section class="section component-page pt-120">
+      <div class="container">
+        <div class="row g-4">
+          <div class="border-bottom mb-4">
+            <h1 class="display-6">Card</h1>
+            <p class="text-muted lead">
+              Bootstrap's <code>card</code> provide a flexible and extensible content container with multiple
+              variants and options.
+            </p>
+          </div>
+  
+          <!-- Basic Card -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5>Card basic</h5>
+            <p>
+              Cards are built with as little markup and styles as possible, but still manage to deliver a ton
+              of control and customization.
+            </p>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#basic-card"
+                    aria-controls="basic-card">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#basic-card-html"
+                    aria-controls="basic-card-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="basic-card">
+                  <div class="row align-items-center">
+                    <div class="p-4">
+                      <div class="card rounded">
+                        <img src="assets/images/blog/trendy-blog-img-6.png" class="img-fluid" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and
+                            make up the bulk of the card's content.</p>
+                          <a href="javascript:void(0)" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- END row -->
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="basic-card-html">
+                  <pre class="px-4 mb-0">
+                    <code class="text-dark">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-md-4"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-img-top"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Card title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Go somewhere<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- Horizontal Card -->
+          <div class="col-lg-6 col-md-10 mb-5 mt-auto">
+            <h5>Horizontal</h5>
+            <p>
+              Using a combination of grid and utility classes, cards can be made horizontal in a
+              mobile-friendly and responsive way.
+            </p>
+  
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#hr-card"
+                    aria-controls="hr-card">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#hr-card-html"
+                    aria-controls="hr-card-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="hr-card">
+                  <div class="row">
+                    <div class="p-4 col-lg-12 col-md-10">
+                      <div class="card rounded-0">
+                        <div class="row align-items-center g-0">
+                          <div class="col-md-4">
+                            <img class="img-fluid" src="assets/images/photography/photography-gallery-img-17.png" alt="Card image cap">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">
+                                This is a wider card with supporting text below
+                                as a natural lead-in to additional content. This content is a
+                                little bit longer.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- END card -->
+                    </div><!-- END col -->
+                  </div><!-- END row -->
+                </div><!-- END teb-pane -->
+  
+                <div class="tab-pane fade animated" id="hr-card-html">
+                  <div class="highlight">
+                    <pre class="px-4 mb-0">
+                      <code class="text-dark">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card mb-3"</span> <span class="na">style</span><span class="o">=</span><span class="s">"max-width: 540px;"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row g-0"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-md-4"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"img-fluid rounded-start"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-md-8"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Card title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>This is a wider card with supporting text below as a natural lead-in to additional content. 
+            This content is a little bit longer.
+          <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span>Last updated 3 mins ago<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    </code></pre>
+                  </div>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+  
+          <!-- Card Background -->
+          <div class="col-lg-6 col-md-10 mt-auto">
+            <h5>Background, color and border</h5>
+            <p>
+              Use <code>text color</code> and <code>background utilities</code> to change the appearance of
+              a card.
+            </p>
+            <div class="component-wrapper shadow">
+              <nav class="nav-item mb-3">
+                <div class="nav" role="tablist">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#card-background"
+                    aria-controls="card-background">Preview</button>
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#card-background-html"
+                    aria-controls="card-background-html">HTML</button>
+                </div>
+              </nav>
+              <div class="tab-content border-top">
+                <div class="tab-pane fade animated show active" id="card-background">
+                  <div class="row align-items-center p-4 mb-3">
+                    <div class="col-md-6">
+                      <div class="card text-white bg-primary">
+                        <div class="card-header">Header</div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and
+                              make up the bulk of the card's content.
+                            </p>
+                          </div>
+                        </div>
+                      </div><!-- END col -->
+  
+                      <div class="col-md-6">
+                        <div class="card border-primary">
+                          <div class="card-header">Header</div>
+                          <div class="card-body text-primary">
+                            <h5 class="card-title text-primary">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and
+                              make up the bulk of the card's content.
+                            </p>
+                          </div>
+                        </div>
+                      </div><!-- END col -->
+                    </div><!-- END row -->
+                  </div><!-- END teb-pane -->
+  
+                  <div class="tab-pane fade animated" id="card-background-html">
+                    <pre class="px-4 mb-0" style="height: 400px;">
+                      <code class="text-dark">
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card text-white bg-primary mb-3"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-header"</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Primary card title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>
+          Some quick example text to build on the card title
+          and make up the bulk of the card's content.
+        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  
+    <span class="text-success">&lt;!-- card border color --&gt;</span>
+  
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card border-primary mb-3"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-header"</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body text-primary"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Primary card title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>
+          Some quick example text to build on the card title 
+          and make up the bulk of the card's content.
+        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                  </code></pre>
+                </div><!-- END teb-pane -->
+              </div><!-- END tab-content -->
+            </div><!-- END wrapper -->
+          </div><!-- END col -->
+        </div><!-- END row -->
+      </div><!-- END container -->
+    </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

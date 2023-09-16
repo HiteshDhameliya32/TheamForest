@@ -1,0 +1,205 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a><!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-shop.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="collectionpage.html" class="sub-mega-menu">Women</a></li>
+                    <li><a href="collectionpage.html" class="sub-mega-menu">Men</a></li>
+                    <li><a href="single-product-page.html" class="sub-mega-menu">Product</a></li>
+                    
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="about-page.html" class="sub-mega-menu">About Us</a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="help-center.html" class="sub-mega-menu">help center</a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">Account</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+                </ul><!--end navigation menu-->
+            </div><!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul><!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div><!-- end container-->
+    </header><!-- END navbar -->
+
+    @@include('./partials/breadcrumb.html', {
+        'title': 'shopping cart',
+        'breadcrumb1': {
+        'title': 'E-Commerce',
+        'link': 'index-shop.html',
+        'icon': 'cog',
+        'active_class': ''
+        },
+        'breadcrumb2': {
+        'title': '',
+        'link': '#',
+        'icon': 'account-multiple',
+        'active_class': ''
+        },
+        'breadcrumb3': {
+        'title': 'Shop-Cart',
+        'link': '#',
+        'icon': 'cog',
+        'active_class': 'active'
+        }
+        })
+
+    <section class="section shopping-cart">
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-6">
+                    <div class="cart-items-conent">
+                            <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Shopping Cart</h4>
+                            <ul class="list-unstyled cart-head border-2 border-bottom">
+                                    <li class="p-2">Img</li>
+                                    <li class="p-2">Products</li>
+                                    <li class="p-2">Price</li>
+                                    <li class="p-2">Qty </li>
+                                    <li class="p-2">Close </li>
+                            </ul>
+                            <div class="cart cart-item-container"></div>
+                        </div>
+                    
+                </div><!-- END col -->
+                <div class="col-lg-6">
+                    <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Products</h4>
+                    <div class="row justify-content-center g-4">
+                        <div class="col-sm-6">
+                            <div class="shadow-sm card product">
+                                <img class="product-img" src="assets/images/shop-cart/cart-img-1.png" alt="prd1" onmouseover="if (!window.__cfRLUnblockHandlers) return false; animateImg(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; normalImg(this)" data-cf-modified-aedabd7866a626db80b2ce2d- />
+                                <div class="card-body">
+                                    <h5 class="product-name">Shoes</h5>
+                                    <span class="d-flex justify-content-center text-success"> &#36 <span><p class="text-success product-price"> 350</p> </span> </span>
+                                    <button class="btn btn-secondary btn-sm default-cart" type="button" data-action="add-to-cart">Add to cart</button>
+                                    <span class="like-btn"></span>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-sm-6">
+                            <div class="shadow-sm card product">
+                                <img class="product-img" src="assets/images/shop-cart/cart-img-2.png" alt="prd3" onmouseover="if (!window.__cfRLUnblockHandlers) return false; animateImg(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; normalImg(this)" data-cf-modified-aedabd7866a626db80b2ce2d- />
+                                <div class="card-body">
+                                    <h5 class="product-name">Sunglasses</h5>
+                                    <span class="d-flex justify-content-center text-success"> &#36 <span><p class="text-success product-price"> 120</p> </span> </span>
+                                    <button class="btn btn-secondary btn-sm default-cart" type="button" data-action="add-to-cart">Add to cart</button>
+                                    <span class="like-btn"></span>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-sm-6">
+                            <div class="shadow-sm card product">
+                                <img class="product-img" src="assets/images/shop-cart/cart-img-3.png" alt="prd6" onmouseover="if (!window.__cfRLUnblockHandlers) return false; animateImg(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; normalImg(this)" data-cf-modified-aedabd7866a626db80b2ce2d- />
+                                <div class="card-body">
+                                    <h5 class="product-name">Women Top</h5>
+                                    <span class="d-flex justify-content-center text-success"> &#36 <span><p class="text-success product-price"> 200</p> </span> </span>
+                                    <button class="btn btn-secondary btn-sm" type="button" data-action="add-to-cart">Add to cart</button>
+                                    <span class="like-btn"></span>
+                                </div>
+                            </div>
+                        </div><!-- END col -->
+
+                        <div class="col-sm-6">
+                            <div class="shadow-sm card product">
+                                <img class="product-img" src="assets/images/shop-cart/cart-img-4.png" alt="prd7" onmouseover="if (!window.__cfRLUnblockHandlers) return false; animateImg(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; normalImg(this)" data-cf-modified-aedabd7866a626db80b2ce2d- />
+                                <div class="card-body">
+                                    <h5 class="product-name">Smart Watch</h5>
+                                    <span class="d-flex justify-content-center text-success"> &#36 <span><p class="text-success product-price"> 500</p> </span> </span>
+                                    <button class="btn btn-secondary btn-sm" type="button" data-action="add-to-cart">Add to cart</button>
+                                    <span class="like-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- END row -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/shop-cart.js"></script>
+  
+</body>
+
+</html>

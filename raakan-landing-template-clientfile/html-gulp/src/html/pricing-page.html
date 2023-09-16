@@ -1,0 +1,846 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/navbar.html')
+    @@include('./partials/right-sidebar.html')
+    @@include('./partials/breadcrumb.html', {
+      'title': 'Pricing',
+      'breadcrumb1': {
+        'title': 'Pages',
+        'link': '#',
+        'icon': 'book-open-page-variant',
+        'active_class': ''
+      },
+      'breadcrumb2': {
+          'title': 'Company',
+          'link': '#',
+          'icon': 'domain',
+          'active_class': ''
+      },
+      'breadcrumb3': {
+          'title': 'Pricing',
+          'link': '#',
+          'icon': 'currency-inr',
+          'active_class': 'active'
+      }
+    })
+
+
+    <!-- Pricing table-1 -->
+    <section class="section pricing-1">
+        <div class="container">
+            <h2 class="text-center text-uppercase m-0">pricing #1</h2>
+            <div class="heading-lines mb-4">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <div class="card pricing-box py-4 px-3">
+                        <div class="mb-3 text-center">
+                            <h3 class="mb-4 text-primary"> Basic </h3>
+                            <h1 class="fw-bold m-0"><sup> $</sup>70</h1>
+                            <p class="fs-15 m-0"> one-time </p>
+                        </div>
+                        <div class="pricing-box-detail">
+                            <ul class="list-unstyled p-0">
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Static Website</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>5 Pages</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Free Domain</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Free Hosting</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>3 Month Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary rounded-3 mx-auto"> Choose Plan </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 mt-4">
+                    <div class="card pricing-box pricing-active py-4 px-3">
+                        <div class="ribbon"><span> Popular </span></div>
+                        <div class="mb-3 text-center">
+                            <h3 class="mb-4 text-primary"> Standard</h3>
+                            <h1 class="fw-bold m-0"><sup> $</sup>119</h1>
+                            <p class="fs-15 m-0"> one-time </p>
+                        </div>
+                        <div class="pricing-box-detail">
+                            <ul class="list-unstyled p-0">
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Dynamic CMS</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span> Unlimited Pages</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Free Domain</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Free Hosting</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>9 Month Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary active rounded-3 mx-auto"> Choose Plan </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4 mt-4">
+                    <div class="card pricing-box py-4 px-3">
+                        <div class="mb-3 text-center">
+                            <h3 class="mb-4 text-primary"> Premium </h3>
+                            <h1 class="fw-bold m-0"><sup> $</sup>150</h1>
+                            <p class="fs-15 m-0"> one-time </p>
+                        </div>
+                        <div class="pricing-box-detail">
+                            <ul class="list-unstyled p-0">
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Dynamic CMS</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Unlimited Pages</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Free Domain</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>Free Hosting</span>
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-arrow-right-circle"></i> <span>1 Year Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary rounded-3 mx-auto"> Choose Plan </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Pricing table-2 -->
+    <section class="section pricing-2">
+        <div class="container">
+            <h2 class="text-center text-uppercase m-0">pricing #2</h2>
+            <div class="heading-lines mb-4">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5 pricing-content">
+                    <h2 class="mb-4"> find the plan that's right for you </h2>
+                    <p class="text-muted">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium
+                    </p>
+                </div><!-- END col -->
+
+                <div class="col-lg-7">
+                    <div class="nav me-3 pricing-tab" id="pricing-2-tab" role="tablist" aria-orientation="vertical">
+                        <div class="nav-link" id="monthly-price" data-bs-toggle="pill" data-bs-target="#monthly"
+                            role="tab" aria-controls="monthly" aria-selected="true">
+                            <button class="btn pricing-btn rounded-pill"> Monthly Plans </button>
+                        </div>
+                        <div class="nav-link active" id="yearly-price" data-bs-toggle="pill" data-bs-target="#yearly"
+                            role="tab" aria-controls="yearly" aria-selected="false">
+                            <button class="btn pricing-btn rounded-pill">Yearly Plans(25% off) </button>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pricing-2content">
+                        <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-price"
+                            tabindex="0">
+                            <div class="row g-4">
+                                <div class="col-sm-6">
+                                    <div class="card p-4 text-white pricing-box-2-active">
+                                        <p class="m-0"> Medium </p>
+                                        <div class="card-head d-flex align-items-center">
+                                            <h1 class="text-white"> $8 </h1><span> /month</span>
+                                        </div>
+                                        <p class="border-bottom pb-3"> Starting from the stages that will be directly
+                                            guided by our design </p>
+                                        <ul class="list-unstyled p-0">
+                                            <li><i class="mdi mdi-check me-2"></i> <span> Static Website </span> </li>
+                                            <li><i class="mdi mdi-check me-2"></i> <span> Job board slot </span> </li>
+                                            <li><i class="mdi mdi-check me-2"></i> <span> 1 Month Support </span> </li>
+                                            <li> <i class="mdi mdi-close me-2"></i> <span> <del> Premium
+                                                        Certificate </del> </span> </li>
+                                            <li> <i class="mdi mdi-close me-2"></i> <span> <del> Unlimited user
+                                                    </del> </span>
+                                            </li>
+                                            <li> <i class="mdi mdi-close me-2"></i> <span> <del> Company
+                                                        Account </del> </span>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-light text-dark rounded-pill mt-2"> Read More
+                                        </button>
+                                    </div><!-- END card -->
+                                </div><!-- END col -->
+
+                                <div class="col-sm-6">
+                                    <div class="card p-4 pricing-box-2">
+                                        <p class="m-0"> Senior </p>
+                                        <div class="card-head d-flex align-items-center">
+                                            <h1> $17 </h1> <span> /month</span>
+                                        </div>
+                                        <p class="border-bottom pb-3"> Starting from the stages that will be directly
+                                            guided by our design </p>
+                                        <ul class="list-unstyled p-0">
+                                            <li><i class="mdi mdi-check me-2"></i> Static Website </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Job board slot </li>
+                                            <li><i class="mdi mdi-check me-2"></i> 6 Month Support </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Premium Certificate </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Unlimited user </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Company Account </li>
+                                        </ul>
+                                        <button class="btn btn-primary rounded-pill mt-2"> Read More </button>
+                                    </div><!-- END card -->
+                                </div><!-- END col -->
+                            </div><!-- END row -->
+                        </div>
+                        <div class="tab-pane fade show active" id="yearly" role="tabpanel"
+                            aria-labelledby="yearly-price" tabindex="0">
+                            <div class="row g-4">
+                                <div class="col-sm-6">
+                                    <div class="card p-4 text-white pricing-box-2-active overflow-hidden">
+                                        <span class="badge pricing-badge-1 text-bg-light"> 25% off </span>
+                                        <p class="m-0"> Medium </p>
+                                        <div class="card-head d-flex align-items-center">
+                                            <h1 class="text-white"> $80 </h1> <span> /Year</span>
+                                        </div>
+                                        <p class="border-bottom pb-3"> Starting from the stages that will be directly
+                                            guided by our design </p>
+                                        <ul class="list-unstyled p-0">
+                                            <li><i class="mdi mdi-check me-2"></i> <span> Static Website </span> </li>
+                                            <li><i class="mdi mdi-check me-2"></i> <span> Job board slot </span> </li>
+                                            <li><i class="mdi mdi-check me-2"></i> <span> 1 Year Support </span> </li>
+                                            <li> <i class="mdi mdi-close me-2"></i> <span> <del> Premium
+                                                        Certificate </del> </span> </li>
+                                            <li> <i class="mdi mdi-close me-2"></i> <span> <del> Unlimited user
+                                                    </del> </span>
+                                            </li>
+                                            <li> <i class="mdi mdi-close me-2"></i> <span> <del> Company
+                                                        Account </del> </span>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-light text-dark rounded-pill mt-2"> Read More
+                                        </button>
+                                    </div><!-- END card -->
+                                </div><!-- END col -->
+
+                                <div class="col-sm-6">
+                                    <div class="card p-4 pricing-box-2 overflow-hidden">
+                                        <span class="badge pricing-badge-1 bg-primary"> 25% off </span>
+                                        <p class="m-0"> Senior </p>
+                                        <div class="card-head d-flex align-items-center">
+                                            <h1> $170 </h1> <span> /Year</span>
+                                        </div>
+                                        <p class="border-bottom pb-3"> Starting from the stages that will be directly
+                                            guided by our design </p>
+                                        <ul class="list-unstyled p-0">
+                                            <li><i class="mdi mdi-check me-2"></i> Static Website </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Job board slot </li>
+                                            <li><i class="mdi mdi-check me-2"></i> 2 Year Support </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Premium Certificate </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Unlimited user </li>
+                                            <li><i class="mdi mdi-check me-2"></i> Company Account </li>
+                                        </ul>
+                                        <button class="btn btn-primary rounded-pill mt-2"> Read More </button>
+                                    </div><!-- END card -->
+                                </div><!-- END col -->
+                            </div><!-- END row -->
+                        </div>
+                    </div><!-- END tab-content -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Pricing table-3 -->
+    <section class="section pricing-3">
+        <div class="container">
+            <h2 class="text-center text-uppercase m-0">pricing #3</h2>
+            <div class="heading-lines mb-4">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="nav flex-column me-md-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <div class="nav-link pricing-box-3 active" id="standard-tab" data-bs-toggle="pill"
+                            data-bs-target="#standard" role="tab" aria-controls="standard" aria-selected="true">
+                            <div class="pricing-list d-flex justify-content-center align-items-center">
+                                <div class="left">
+                                    <h3>lite</h3>
+                                    <p class="text-muted">Sed ut perspiciatis unde omnis iste.</p>
+                                    <button class="btn btn-primary pricing-3-btn rounded-pill"> Get Started </button>
+                                </div>
+                                <div class="right">
+                                    <div class="text-center">
+                                        <span class="m-0"> $ </span> <strong class="h3"> 49.99 </strong>
+                                        <p class="m-0 fs-14 text-muted"> Per Month </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END nav-link -->
+
+                        <div class="nav-link pricing-box-3" id="premium-tab" data-bs-toggle="pill"
+                            data-bs-target="#premium" role="tab" aria-controls="premium" aria-selected="false">
+                            <div class="pricing-list d-flex justify-content-center align-items-center">
+                                <div class="left">
+                                    <h3>pro</h3>
+                                    <p class="text-muted">Sed ut perspiciatis unde omnis iste.</p>
+                                    <button class="btn btn-primary pricing-3-btn rounded-pill"> Get Started </button>
+                                </div>
+                                <div class="right">
+                                    <div class="text-center">
+                                        <span class="m-0"> $ </span> <strong class="h3"> 75.99 </strong>
+                                        <!-- <h3 class="m-0"><sup>$</sup>75<sup>.99</sup></h3> -->
+                                        <p class="m-0 fs-14 text-muted"> Per Month </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END nav-link -->
+
+                        <div class="nav-link pricing-box-3" id="gold-tab" data-bs-toggle="pill" data-bs-target="#gold"
+                            role="tab" aria-controls="gold" aria-selected="false">
+                            <div class="pricing-list d-flex justify-content-center align-items-center">
+                                <div class="left">
+                                    <h3>unlimited</h3>
+                                    <p class="text-muted">Sed ut perspiciatis unde omnis iste.</p>
+                                    <button class="btn btn-primary pricing-3-btn rounded-pill"> Get Started </button>
+                                </div>
+                                <div class="right">
+                                    <div class="text-center">
+                                        <!-- <h3 class="m-0"><sup>$</sup>199<sup>.99</sup></h3> -->
+                                        <span class="m-0"> $ </span> <strong class="h3"> 199.99 </strong>
+                                        <p class="m-0 fs-14 text-muted"> Per Month </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END nav-link -->
+                    </div><!-- END nav -->
+                </div><!-- END col -->
+
+                <div class="col-lg-5">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="standard" role="tabpanel"
+                            aria-labelledby="standard-tab" tabindex="0">
+                            <div class="card pricing-info">
+                                <h3 class="pricing-info-name">Lite</h3>
+                                <ul class="price-feature">
+                                    <li>
+                                        <h4>Domain</h4>
+                                        <p class="text-muted">Free 1 Month Domain</p>
+                                    </li>
+                                    <li>
+                                        <h4> user</h4>
+                                        <p class="text-muted"> Limit For Premium Users. </p>
+                                    </li>
+                                    <li>
+                                        <h4> Hosting </h4>
+                                        <p class="text-muted">Free 1 Month Hosting</p>
+                                    </li>
+                                    <li>
+                                        <h4>support</h4>
+                                        <p class="text-muted">2 Month Support</p>
+                                    </li>
+                                    <li>
+                                        <h4> pages </h4>
+                                        <p class="text-muted"> 5 Pages </p>
+                                    </li>
+                                    <li>
+                                        <h4> security </h4>
+                                        <p class="text-muted">Secure Transfer.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- END tab-pane -->
+
+                        <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab"
+                            tabindex="0">
+                            <div class="card pricing-info">
+                                <h3 class="pricing-info-name">pro</h3>
+                                <ul class="price-feature">
+                                    <li>
+                                        <h4>Domain</h4>
+                                        <p class="text-muted">FREE 6 Month Domain</p>
+                                    </li>
+                                    <li>
+                                        <h4>user</h4>
+                                        <p class="text-muted"> Limit For Premium Users. </p>
+                                    </li>
+                                    <li>
+                                        <h4> Hosting </h4>
+                                        <p class="text-muted">Free 6 Month Hosting</p>
+                                    </li>
+                                    <li>
+                                        <h4>support</h4>
+                                        <p class="text-muted">7 Month Support</p>
+                                    </li>
+                                    <li>
+                                        <h4> pages </h4>
+                                        <p class="text-muted"> 15 Pages </p>
+                                    </li>
+                                    <li>
+                                        <h4> security </h4>
+                                        <p class="text-muted">Secure Transfer.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- END tab-pane -->
+
+                        <div class="tab-pane fade" id="gold" role="tabpanel" aria-labelledby="gold-tab" tabindex="0">
+                            <div class="card pricing-info">
+                                <h3 class="pricing-info-name">Unlimited</h3>
+                                <ul class="price-feature">
+                                    <li>
+                                        <h4>Domain</h4>
+                                        <p class="text-muted">FREE 9 Month Domain</p>
+                                    </li>
+                                    <li>
+                                        <h4>user</h4>
+                                        <p class="text-muted"> Limit For Premium Users. </p>
+                                    </li>
+                                    <li>
+                                        <h4> Hosting </h4>
+                                        <p class="text-muted">Free 9 Month Hosting</p>
+                                    </li>
+                                    <li>
+                                        <h4>support</h4>
+                                        <p class="text-muted">1 Year Support</p>
+                                    </li>
+                                    <li>
+                                        <h4> pages </h4>
+                                        <p class="text-muted"> Unlimited Pages </p>
+                                    </li>
+                                    <li>
+                                        <h4> security </h4>
+                                        <p class="text-muted">Secure Transfer.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- END tab-pane -->
+                    </div><!-- END tab-content -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Pricing table-4 -->
+    <section class="section pricing-4">
+        <div class="container">
+            <h2 class="text-center text-uppercase m-0">pricing #4</h2>
+            <div class="heading-lines mb-4">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card px-3 pricing-box-4">
+                        <div class="pricing-box-icon">
+                            <span class="before"></span>
+                            <i class="mdi mdi-home pricing-box-icon-i" aria-hidden="true"></i>
+                            <span class="after"></span>
+                        </div>
+                        <div class="card-head border-bottom">
+                            <h2> startup </h2>
+                            <p class="price">$29.99</p>
+                            <p class="period text-muted">Per Month</p>
+                            <button class="btn pricing-btn-dark rounded-pill"> Purchase Now </button>
+                        </div>
+                        <div class="pricing-detail">
+                            <ul class="list-unstyled p-0 mt-3">
+                                <li> Monthly Subscription </li>
+                                <li> Access only 1 item </li>
+                                <li> Static Website </li>
+                                <li> Domain Extra </li>
+                                <li> 3 Month Support </li>
+                            </ul>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4">
+                    <div class="card px-3 pricing-box-4 backgroung-box">
+                        <div class="pricing-box-icon pricing-box-icon-warning">
+                            <span class="before"></span>
+                            <i class="mdi mdi-store pricing-box-icon-i" aria-hidden="true"></i>
+                            <span class="after"></span>
+                        </div>
+                        <div class="card-head border-bottom">
+                            <h2> Agency </h2>
+                            <p class="price">$66.99</p>
+                            <p class="period text-muted">Per Month</p>
+                            <button class="btn pricing-btn-warning rounded-pill"> Purchase Now </button>
+                        </div>
+                        <div class="pricing-detail">
+                            <ul class="list-unstyled p-0 mt-3">
+                                <li> Monthly Subscription </li>
+                                <li> Access only 1 item </li>
+                                <li> Static Website </li>
+                                <li> Domain Extra </li>
+                                <li> 8 Month Support </li>
+                            </ul>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4">
+                    <div class="card px-3 pricing-box-4">
+                        <div class="pricing-box-icon">
+                            <span class="before"></span>
+                            <i class="mdi mdi-office-building pricing-box-icon-i" aria-hidden="true"></i>
+                            <span class="after"></span>
+                        </div>
+                        <div class="card-head border-bottom">
+                            <h2> Enterprise </h2>
+                            <p class="price">$86.99</p>
+                            <p class="period text-muted">Per Month</p>
+                            <button class="btn pricing-btn-dark rounded-pill"> Purchase Now </button>
+                        </div>
+                        <div class="pricing-detail">
+                            <ul class="list-unstyled p-0 mt-3">
+                                <li> Monthly Subscription </li>
+                                <li> Access only 1 item </li>
+                                <li> Static Website </li>
+                                <li> Domain Extra </li>
+                                <li> 1 Year Support </li>
+                            </ul>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Pricing table-5 -->
+    <section class="section pricing-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase m-0">pricing #5</h2>
+            <div class="heading-lines mb-4">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row text-center g-4">
+                <div class="col-md-3 d-none d-lg-block">
+                    <div class="card pricing-box-5 border-0">
+                        <div class="card-head py-5" style="background-color: var(--bs-gray-300);">
+                            <h2 class="fw-normal mb-0"> pricing plan </h2>
+                        </div>
+                        <div class="card-body p-4 pricing-box-5-detail">
+                            <ul class="list-unstyled p-0 text-start">
+                                <li> User </li>
+                                <li> Domain </li>
+                                <li> File size limit </li>
+                                <li> Website SEO </li>
+                                <li> Full Support </li>
+                                <li> Messenger Live Chart </li>
+                                <li> ATS integration </li>
+                                <li class="choose-plan"> Choose Plan </li>
+                            </ul>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="card pricing-box-5 shadow border-0">
+                        <div class="card-head pricing-head p-4">
+                            <p> Basic </p>
+                            <h2> $30 </h2>
+                        </div>
+                        <div class="pricing-box-5-detail">
+                            <div class="card-body p-4">
+                                <ul class="list-unstyled p-0">
+                                    <li>
+                                        <p class="d-block d-lg-none"> User </p>
+                                        <p> Up to 20 User </p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none"> Domain </p>
+                                        <p> 2 Month </p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none">File size limit</p>
+                                        <p> 100MB </p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none"> Website SEO </p>
+                                        <p> <i class="mdi mdi-check h5 text-success"></i> </p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none">Full Support </p>
+                                        <p> <i class="mdi mdi-close h5 text-danger"></i></p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none"> Messenger Live Chart </p>
+                                        <p> <i class="mdi mdi-close h5 text-danger"></i> </p>
+                                    </li>
+
+                                    <li>
+                                        <p class="d-block d-lg-none">ATS integration</p>
+                                        <p><i class="mdi mdi-check h5 text-success"></i> </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary"> Choose </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="card pricing-box-5 shadow border-0">
+                        <div class="card-head pricing-head p-4">
+                            <p> Popular </p>
+                            <h2> $50 </h2>
+                        </div>
+                        <div class="pricing-box-5-detail">
+                            <div class="card-body p-4">
+                                <ul class="list-unstyled p-0">
+                                    <li>
+                                        <p class="d-block d-lg-none"> User </p>
+                                        <p> Up to 60 User </p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none"> Domain </p>
+                                        <p> 6 Month </p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none">File size limit</p>
+                                        <p> 200MB</p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none"> Website SEO </p>
+                                        <p> <i class="mdi mdi-check h5 text-success"></i> </p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none">Full Support</p>
+                                        <p> <i class="mdi mdi-check h5 text-success"></i></p>
+                                    </li>
+                                    <li>
+                                        <p class="d-block d-lg-none">Messenger Live Chart</p>
+                                        <p> <i class="mdi mdi-close h5 text-danger"></i> </p>
+                                    </li>
+
+                                    <li>
+                                        <p class="d-block d-lg-none">ATS integration</p>
+                                        <p><i class="mdi mdi-check h5 text-success"></i> </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary"> Choose </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="card pricing-box-5 shadow border-0">
+                        <div class="card-head pricing-head p-4">
+                            <p> Premium </p>
+                            <h2> $100 </h2>
+                        </div>
+                        <div class="pricing-box-5-detail">
+                            <div class="card-body p-4">
+                                <ul class="list-unstyled p-0">
+                                    <ul class="list-unstyled p-0">
+                                        <li>
+                                            <p class="d-block d-lg-none"> User </p>
+                                            <p> Up to 100 User </p>
+                                        </li>
+                                        <li>
+                                            <p class="d-block d-lg-none"> Domain </p>
+                                            <p> 10 Month </p>
+                                        </li>
+                                        <li>
+                                            <p class="d-block d-lg-none">File size limit</p>
+                                            <p> 1GB </p>
+                                        </li>
+                                        <li>
+                                            <p class="d-block d-lg-none"> Website SEO </p>
+                                            <p> <i class="mdi mdi-check h5 text-success"></i> </p>
+                                        </li>
+                                        <li>
+                                            <p class="d-block d-lg-none">Full Support </p>
+                                            <p> <i class="mdi mdi-check h5 text-success"></i></p>
+                                        </li>
+                                        <li>
+                                            <p class="d-block d-lg-none">Messenger Live Chart</p>
+                                            <p> <i class="mdi mdi-check h5 text-success"></i> </p>
+                                        </li>
+    
+                                        <li>
+                                            <p class="d-block d-lg-none">ATS integration</p>
+                                            <p><i class="mdi mdi-check h5 text-success"></i> </p>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary"> Choose </button>
+                        </div>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Pricing table-6 -->
+    <section class="section pricing-6">
+        <div class="container">
+            <h2 class="text-uppercase text-center m-0"> Pricing #6 </h2>
+            <div class="heading-lines mb-4">
+                <span class="line"></span>
+                <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                <span class="line"></span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card pricing-plan-box">
+                        <div class="pricing-box-head">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h5> Lite </h5>
+                                    <h4> $30.99/mo </h4>
+                                </div>
+                                <div class="flex-shrink-0 ms-2 pricing-box-i avatar-lg">
+                                    <i class="mdi mdi-home"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box-detail border-bottom">
+                            <ul class="list-unstyled mt-3 p-0">
+                                <li> 
+                                    <span>One Year Standard Access</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Limited Courses</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>30+ Lessons</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary mt-4 me-auto"> Read More </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4">
+                    <div class="card pricing-plan-box">
+
+                        <div class="pricing-box-head">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h5> Pro </h5>
+                                    <h4> $69.99/mo </h4>
+                                </div>
+                                <div class="flex-shrink-0 ms-2 pricing-box-i avatar-lg">
+                                    <i class="mdi mdi-shield-account-outline"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box-detail border-bottom">
+                            <ul class="list-unstyled mt-3 p-0">
+                                <li> 
+                                    <span>One Year Standard Access</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Limited Courses</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>30+ Lessons</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Standard Tutorials</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary mt-4 me-auto"> Read More </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+
+                <div class="col-md-4">
+                    <div class="card pricing-plan-box">
+                        <div class="pricing-box-head">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h5> Platinum </h5>
+                                    <h4> $99.99/mo </h4>
+                                </div>
+                                <div class="flex-shrink-0 ms-2 pricing-box-i avatar-lg">
+                                    <i class="mdi mdi-office-building"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box-detail border-bottom">
+                            <ul class="list-unstyled mt-3 p-0">
+                                <li> 
+                                    <span>One Year Standard Access</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Limited Courses</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>30+ Lessons</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Standard Tutorials</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                                <li>
+                                    <span>Unlimited Registered User</span> 
+                                    <span> <i class="mdi mdi-check"></i> </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary mt-4 me-auto"> Read More </button>
+                    </div><!-- END card -->
+                </div><!-- END col -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+</body>
+
+</html>

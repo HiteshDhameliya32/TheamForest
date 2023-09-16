@@ -1,0 +1,149 @@
+@@include('./partials/main.html')
+
+<head>
+  @@include('./partials/title-meta.html')
+
+  @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+  @@include('./partials/page-loader.html')
+
+  @@include('./partials/navbar.html')
+
+  @@include('./partials/right-sidebar.html')
+
+  @@include('./partials/breadcrumb.html', {
+    'title': 'Shadow',
+    'breadcrumb1': {
+    'title': 'Components',
+    'link': 'index-hospital.html',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': '',
+    'link': '',
+    'icon': '',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Shadow',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+  <section class="section component-page pt-120">
+    <div class="container">
+          <div class="row g-4">
+            <div class="border-bottom mb-4">
+              <h1 class="display-6">Shadows</h1>
+              <p class="text-muted lead">
+                Add or remove shadows to elements with box-shadow utilities.
+              </p>
+            </div>
+            
+            <!-- Shadow Size -->
+            <div class="col-lg-6 col-md-10 mt-auto">
+              <h5>Shadow</h5>
+              <p>
+                You can also quickly add or remove a shadow with our box-shadow utility classes. Includes support
+                for .shadow-none and three default sizes.
+              </p>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" id="nav-tab" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#shadow"
+                      aria-controls="shadow">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#shadow-html"
+                      aria-controls="shadow-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top" id="nav-tabContent">
+                  <div class="tab-pane fade animated show active" id="shadow">
+                    <div class="hstack flex-wrap gap-4 p-4">
+                      <div class="shadow-box rounded mx-2 shadow-none" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="No Shadow"></div>
+                      <div class="shadow-box rounded mx-2 shadow-lg" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Shadow-lg"></div>
+                      <div class="shadow-box rounded mx-2 shadow" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Shadow-md"></div>
+                      <div class="shadow-box rounded mx-2 shadow-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Shadow-sm"></div>
+                    </div>
+                  </div><!-- END teb-pane -->
+
+                  <div class="tab-pane fade animated" id="shadow-html">
+                      <pre class="px-4 mb-0">
+                        <code class="text-dark">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-none bg-light rounded"</span><span class="p">&gt;</span>No shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-sm rounded"</span><span class="p">&gt;</span>Small shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow rounded"</span><span class="p">&gt;</span>Regular shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-lg rounded"</span><span class="p">&gt;</span>Larger shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                        </code></pre>
+                  </div><!-- END teb-pane -->
+                </div><!-- END tab-content -->
+              </div><!-- END wrapper -->
+            </div><!-- END col -->
+
+            <!-- Shdow Direction -->
+            <div class="col-lg-6 col-md-10 mt-auto">
+              <h5>Shadow Direction</h5>
+              <p>
+                Change the directions of shadow with custom css.
+              </p>
+              <div class="component-wrapper shadow">
+                <nav class="nav-item mb-3">
+                  <div class="nav" id="nav-tab" role="tablist">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#shadow-direction"
+                      aria-controls="shadow-direction">Preview</button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#shadow-direction-html"
+                      aria-controls="shadow-direction-html">HTML</button>
+                  </div>
+                </nav>
+                <div class="tab-content border-top" id="nav-tabContent">
+                  <div class="tab-pane fade animated show active" id="shadow-direction">
+                    <div class="hstack flex-wrap gap-4 p-4">
+                      <div class="shadow-box rounded mx-2 shadow-top" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Shadow Top"></div>
+                      <div class="shadow-box rounded mx-2 shadow-right" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Shadow Right"></div>
+                      <div class="shadow-box rounded mx-2 shadow-bottom" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Shadow-Bottom"></div>
+                      <div class="shadow-box rounded mx-2 shadow-left" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Shadow-Left"></div>
+                    </div>
+                  </div><!-- END teb-pane -->
+
+                  <div class="tab-pane fade animated" id="shadow-direction-html">
+                    <pre class="px-4 mb-0">
+                      <code class="text-dark">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-top rounded"</span><span class="p">&gt;</span> shadow top <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-right rounded"</span><span class="p">&gt;</span> shadow right <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-bottom rounded"</span><span class="p">&gt;</span> shadow bottom <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"shadow-left rounded"</span><span class="p">&gt;</span> shadow left <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                      </code></pre>
+                  </div><!-- END teb-pane -->
+                </div><!-- END tab-content -->
+              </div><!-- END wrapper -->
+            </div><!-- END col -->
+          </div><!-- END row -->
+    </div><!-- END container -->
+  </section>
+
+  @@include('./partials/footer.html')
+
+
+  <!--BOOTSTRAP JS-->
+  @@include('./partials/vendor-scripts.html')
+
+  <!--swiper js-->
+  <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>

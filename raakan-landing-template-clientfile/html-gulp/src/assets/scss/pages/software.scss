@@ -1,0 +1,504 @@
+/********** Home Section css **********/
+.software-home-section {
+    background-image: url(../images/software/software-home-img-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: $white;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(45deg, rgba($black, 0.3) 50%, rgba($black, 0.7) 50%);
+        background-size: 3px 3px;
+        z-index: -1;
+    }
+    .container {
+        z-index: 3;
+    }
+    .content {
+        background-color: var(--rgba-light--bc);
+    }
+    svg {
+        position: absolute;
+        bottom: 0;
+        color: var(--bs-body-bg);
+        right: 0;
+        left: 0;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        input {
+            height: 50px;
+            width: 60%;
+            padding: 0px 18px;
+            margin-right: 10px;
+            border: 1px solid var(--bs-gray-300);
+            background: var(--bs-body-bg);
+            &:focus-visible {
+                outline: 0px;
+            }
+        }
+        button {
+            height: 50px;
+            border-radius: 0px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/********** About-Us Section css **********/
+.about-software {
+    .about-box-content {
+        padding: 1rem;
+        border: 1px solid var(--bs-gray-400);
+        border-radius: 20px;
+        transition: all 0.5s ease;
+        .about-box-icone {
+            font-size: 50px;
+            i {
+                background-image: linear-gradient(to right, $info 24%, $indigo-300 84%);
+                color: transparent;
+                background-clip: text;
+            }
+        }
+        &:hover {
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-6px);
+            transition: all 0.5s ease;
+        }
+    }
+
+    .about-list {
+        li {
+            display: flex;
+            align-items: center;
+            padding: 5px 0px;
+            i {
+                color: $info;
+                font-size: 18px;
+            }
+        }
+    }
+    a {
+        width: fit-content;
+    }
+}
+
+/********** Feature Section css **********/
+.software-feature {
+    background: var(--light);
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            padding: 5px 0px;
+            i {
+                color: $info;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/********** Service Section css **********/
+.software-service {
+    .service-box {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        border-color: var(--bs-gray-400);
+        position: relative;
+        padding: 2rem;
+        visibility: visible;
+        animation-duration: 1500ms;
+        animation-delay: 0ms;
+        display: flex;
+        justify-content: space-between;
+            a {
+                width: fit-content;
+            }
+        .image-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-size: cover;
+            border-radius: 10px;
+            transition: all 1000ms ease;
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba($primary, 0.88);
+                border-radius: 10px;
+            }
+        }
+        .icon-box {
+            position: relative;
+            font-size: 46px;
+            color: $success;
+            transition: all 800ms ease;
+        }
+        h5,
+        p,
+        a {
+            position: relative;
+            transition: all 800ms ease;
+        }
+        &:hover {
+            .image-layer {
+                opacity: 1;
+            }
+            .icon-box,
+            h5,
+            p,
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+/********** Review Section css **********/
+.client-review-1 {
+    position: relative;
+    overflow: hidden;
+    background: var(--light);
+    .testimonial-box {
+        position: relative;
+        padding: 1rem 1rem 2rem 1rem;
+        border-radius: 7px;
+        background-color: var(--light);
+    }
+        .testimonial-content {
+            position: relative;
+            font-size: 18px;
+            margin-bottom: 0;
+            padding: 30px;
+            margin-right: 50px;
+            border-radius: 7px;
+            border: 2px solid var(--gray-300);
+            background: var(--bs-body-bg);
+            box-shadow: 0px 0px 10px rgba($black, 0.2);
+            overflow: hidden;
+            &::before {
+                background: rgba($cyan, 0.1);
+                content: "";
+                height: 260px;
+                left: -45px;
+                position: absolute;
+                top: 10%;
+                transform: rotate(-10deg);
+                width: 132%;
+            }
+            p {
+                font-size: 18px;
+                line-height: 34px;
+                font-weight: 500;
+                margin-bottom: 0;
+                position: relative;
+                z-index: 9;
+                color: var(--gray-900);
+            }
+        }
+        .testimonial-caption {
+            z-index: 9;
+            position: relative;
+            padding-top: 20px;
+            margin-top: 20px;
+            display: inline-block;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0;
+                width: 200px;
+                height: 3px;
+                background: linear-gradient(to right, $primary, $primary, transparent);
+                transition: all 0.2s;
+            }
+            label {
+                margin-bottom: 0;
+                display: block;
+            }
+            h5 {
+                color: $info;
+            }
+        }
+        .client-img {
+            img {
+                border-radius: 7px;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        .mySwiper-1 {
+            padding: 40px 20px;
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 3px;
+                border-radius: 0% !important;
+                background-color: var(--bs-dark);
+                opacity: 0.3;
+                transition: all 0.5s ease;
+            }
+            .swiper-pagination-bullet-active {
+                width: 24px;
+                transition: all 0.5s ease;
+                opacity: 1;
+                background-color: var(--text-primary);
+            }
+        }
+}
+
+/********** BLOG Section css **********/
+.blog-section-1 {
+    .card {
+        border: none;
+    }
+    .swiper {
+        padding: 0px 20px 20px 20px;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 20% !important;
+            background-color: var(--bs-dark);
+            opacity: 0.3;
+            transition: all 0.5s ease;
+        }
+        .swiper-pagination-bullet-active {
+            transform: rotateZ(45deg);
+            transition: all 0.5s ease;
+            opacity: 1;
+            background-image: linear-gradient(to top, $primary 34%, transparent 100%);
+        }
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: -4px;
+        }
+    }
+    .blog-box {
+        border-radius: 10px;
+        background-color: transparent;
+        .blog-img {
+            position: relative;
+            padding-bottom: 0;
+            img {
+                border-radius: 10px 10px 0px 0px;
+            }
+            .date {
+                position: absolute;
+                right: 24px;
+                bottom: -20px;
+                margin: 0;
+                border-radius: 8px;
+                padding: 0;
+                display: inline-block;
+                background: var(--light);
+                color: var(--gray-800);
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+                // box-shadow: 0 0 10px $gray-400;
+                box-shadow: $shadow-sm;
+                strong {
+                    padding: 10px 5px;
+                    display: inline-block;
+                }
+                span {
+                    display: block;
+                    font-size: 14px;
+                    background: $info;
+                    color: $white;
+                    padding: 0 19px;
+                    border-radius: 0 0 8px 8px;
+                    min-width: 70px;
+                }
+            }
+        }
+        .blog-content {
+            padding: 0rem 1rem 1rem;
+            border: 1px solid $gray-400;
+            border-radius: 0px 0px 10px 10px;
+            .blog-box-list {
+                border-bottom: 1px solid $gray-400;
+                padding: 30px 0px 20px;
+                li {
+                    border-right: 1px solid $gray-400;
+                    padding: 0px 32px;
+                    display: flex;
+                    align-items: center;
+                    i {
+                        font-size: 20px;
+                        margin-right: 6px;
+                    }
+                }
+            }
+            h4{
+                color: var(--text-primary);
+            }
+        }
+    }
+    .blog-box-content {
+        padding: 10px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid $gray-400;
+        .blog-box-img {
+            img {
+                border-radius: 10px 0px 0px 10px;
+            }
+        }
+        .blog-box-list {
+            padding: 10px 0px 14px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                width: 80%;
+                height: 3px;
+                background: linear-gradient(to right, $primary, $primary, transparent);
+                left: 0;
+                transition: all 0.2s;
+            }
+            li {
+                border-right: 1px solid $gray-400;
+                padding: 0px 32px;
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                    margin-right: 6px;
+                }
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+/********** ANIMATED CIRCLE CSS START **********/
+.anti-01-holder {
+    width: 110px;
+    height: 110px;
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    animation: rotation 6s infinite linear;
+    .anti-01 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: $info;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
+.anti-02-holder {
+    width: 70px;
+    height: 70px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -35px;
+    animation: rotation 6s infinite linear;
+    animation-delay: 0s;
+    -webkit-animation-delay: 3s;
+    .anti-02 {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: $info;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
+.anti-03-holder {
+    width: 75px;
+    height: 75px;
+    opacity: 0.1;
+    position: absolute;
+    right: 30px;
+    top: 55%;
+    animation: anti-rotation 8s infinite linear;
+    animation-delay: 0s;
+    -webkit-animation-delay: 1s;
+    .anti-03 {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background: linear-gradient(to right, $info, $info);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
+/********** ANIMATED CIRCLE CSS END **********/
+
+/********** MEDIA **********/
+
+@media screen and (max-width: 991px) {
+    .client-review-1 {
+        .testimonial-content {
+             margin-right: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blog-section-1 .blog-box-content .blog-box-img img {
+        border-radius: 10px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .software-home-section {
+        min-height: auto;
+        padding: 120px 5px;
+    }
+    .client-review-1 {
+            .testimonial-content {
+                padding: 10px;
+            }
+        .testimonial-box {
+            padding: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .software-service {
+        .service-box {
+            .service-content {
+                padding: 1rem;
+            }
+        }
+    }
+    .blog-section-1 {
+        .swiper {
+            padding: 0px 0px;
+        }
+    }
+}

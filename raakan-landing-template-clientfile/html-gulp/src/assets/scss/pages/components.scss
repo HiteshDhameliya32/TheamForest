@@ -1,0 +1,566 @@
+$text-secondary: #878a99;
+
+.component-page {
+    padding-top: 120px;
+    .sidebar-nav {
+        position: sticky;
+        top: 100px;
+        z-index: 1;
+        background-color: var(--theme-light--text-color);
+        overflow-x: hidden;
+        .nav-link {
+            border: none;
+            background: transparent;
+            color: var(--gray-900);
+            border-radius: 5px;
+            width: 80%;
+            padding: 6px 10px;
+            margin: 3px;
+            &:hover,
+            &:active {
+                transition: all 0.5s ease-in;
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        // .nav-link.active {
+        //     transition: all 0.5s ease-in;
+        //     background-color: $primary;
+        //     color: $white;
+        // }
+    }
+    .component-wrapper {
+        background: var(--bs-card-bg);
+        .nav-item {
+            padding: 10px 10px 0px 10px;
+        }
+        .nav-link {
+            margin: 0px 10px;
+            position: relative;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: var(--text-primary);
+            transition: all 0.5s;
+            &.active,
+            &:hover {
+                color: #7c7f90;
+                &::before {
+                    width: 80px;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                width: 0px;
+                height: 1px;
+                background: linear-gradient(to right, transparent, #7c7f90, transparent);
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all 0.2s;
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                code {
+                    .nt {
+                        color: $blue-700;
+                    }
+                    .na {
+                        color: $blue;
+                    }
+                    .o {
+                        color: $gray-600;
+                    }
+                    .s {
+                        color: $red-600;
+                    }
+                    .y {
+                        color: $teal-700;
+                    }
+                    .int {
+                        color: $green-600;
+                    }
+                    .funct {
+                        color: var(--text-primary);
+                    }
+                    .circ {
+                        color: $pink-600;
+                    }
+                    .text {
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .btn-white {
+            color: var(--gray-900);
+        }
+        .btn-outline-secondary {
+            border: 1px solid $text-secondary;
+            color: $text-secondary;
+            &:hover {
+                background-color: $text-secondary;
+                color: $white;
+            }
+        }
+        .btn-outline-light,
+        .btn-outline-white {
+            color: var(--gray-900);
+        }
+        .btn-outline-white {
+            &:hover {
+                color: $black;
+            }
+        }
+
+
+        #pill-button {
+            .rounded-pill {
+                padding: 0.375rem 1.3rem;
+            }
+        }
+        #icons-button {
+            button {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 24px;
+                }
+            }
+            .i-primary {
+                color: $primary;
+                &:hover {
+                    color: $white;
+                }
+            }
+            .i-danger {
+                color: $danger;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        // /********** ACCORDION **********/
+        .accordion {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        box-shadow: none;
+                        background-color: var(--bs-body-bg);
+                        color: var(--gray-900);
+                        font-weight: 500;
+                        &:hover {
+                            background-color: $primary;
+                            color: $white;
+                            &::after {
+                                color: $white;
+                            }
+                        }
+                        &::after {
+                            content: "\F0140";
+                            color: var(--gray-900);
+                            background-image: none;
+                            font: normal normal normal 24px/1 "Material Design Icons";
+                        }
+                        &:not(.collapsed) {
+                            background-color: $primary;
+                            color: $white;
+                            border-bottom: 1px solid $gray-500;
+                            &::after {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                .accordion-body {
+                    background-color: var(--bs-body-bg);
+                    color: var(--gray-900);
+                }
+            }
+        }
+
+        /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+        * {
+            scrollbar-width: auto;
+            scrollbar-color: var(--bs-body-bg);
+        }
+
+        /* Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 16px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: var(--bs-body-bg);
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: var(--gray-300);
+            border-radius: 10px;
+            border: 3px solid var(--bs-body-bg);
+        }
+        // /********** BACKGROUND **********/
+        .background-box {
+            height: 65px !important;
+            width: 65px !important;
+            border-radius: 10px;
+        }
+       .bg-light {
+            background-color: var(--light) !important;
+        }
+        // /********** MODAL **********/
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    background: var(--light);
+                    color: var(--gray-900);
+                    .modal-header {
+                        .btn-close {
+                            background-image: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: none;
+                            &:after {
+                                content: "\F05AD";
+                                font-size: 30px;
+                                color: var(--gray-900);
+                                font: normal normal normal 24px/1 "Material Design Icons";
+                            }
+                        }
+                    }
+                    .form-control {
+                        box-shadow: none;
+                        background: var(--light);
+                        color: var(--gray-900);
+                    }
+                }
+            }
+        }
+        // /********** SHADOW **********/
+        .shadow-box {
+            height: 100px;
+            width: 100px;
+            background-color: var(--light);
+        }
+
+        .shadow-top {
+            box-shadow: 0px -4px 10px rgba($black, 0.2) !important;
+        }
+        .shadow-right {
+            box-shadow: 4px 0px 10px rgba($black, 0.2) !important;
+        }
+        .shadow-left {
+            box-shadow: -4px 0px 10px rgba($black, 0.2) !important;
+        }
+        .shadow-bottom {
+            box-shadow: 0px 5px 10px rgba($black, 0.2) !important;
+        }
+
+        // /********** BORDER **********/
+        .border-box {
+            height: 75px;
+            width: 75px;
+            background-color: var(--light);
+        }
+        .border-box.rounded-pill {
+            width: 150px;
+        }
+        .border-box.border-secondary {
+            border: 1px solid $text-secondary !important;
+        }
+
+        // /********** SWIPER_SLIDER **********/
+        .carousel-control-prev,
+        .carousel-control-next {
+            background: $primary;
+            height: 59px;
+            width: 60px;
+            position: absolute;
+            top: 42%;
+        }
+        .swiper {
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+            }
+            .swiper-button-next,
+            .swiper-rtl .swiper-button-prev {
+                right: 20px;
+                left: auto;
+            }
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: 20px;
+                right: auto;
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                position: absolute;
+                top: 50%;
+                color: $white !important;
+            }
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                font: normal normal normal 24px/1 "Material Design Icons";
+                font-size: 40px;
+            }
+            .swiper-button-prev:after,
+            .swiper-rtl .swiper-button-next:after {
+                content: "\F0141";
+            }
+            .swiper-button-next:after,
+            .swiper-rtl .swiper-button-prev:after {
+                content: "\F0142";
+            }
+        }
+        .swiper.mySwiper-3 {
+            .swiper-slide {
+                background-color: var(--light);
+                min-height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                position: absolute;
+                top: 50%;
+                color: var(--gray-900) !important;
+            }
+        }
+
+        // /********** FORM **********/
+        .form-ex {
+            .form-control,
+            select {
+                box-shadow: none;
+                padding: 10px 16px;
+                color: var(--gray-900);
+                background-color: var(--light);
+                &::placeholder {
+                    color: var(--gray-900);
+                }
+            }
+            .form-check-input[type=checkbox] {
+                background-color: var(--bs-gray-300);
+                border: 1px solid var(--bs-gray-500);
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+              .form-check-input:checked[type=checkbox] {
+                background-image: none;
+                position: relative;
+                background-color: $primary;
+                &::after {
+                  content: "\F012C";
+                  font: normal normal normal 24px/1 "Material Design Icons";
+                  font-size: 14px;
+                  position: absolute;
+                  top: 0;
+                  left: 0.5px;
+                  color: $white;
+                }
+              }
+        }
+
+        // /********** Breadcrumb **********/
+        .s-breadcrumb {
+            ol {
+                box-shadow: var(--shadow-sm) !important;
+                border-radius: 5px;
+                padding: 8px 10px;
+                width: fit-content;
+            }
+        }
+        .new-breadcrumb {
+            padding: 10rem 0;
+            position: relative;
+            ol {
+                list-style: none;
+                margin: 0;
+                li {
+                    position: relative;
+                    background: $dark;
+                    color: $white;
+                    height: 40px;
+                    padding: 0 12px 0 32px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    border-radius: 8px 0px 0px 8px;
+                    &:nth-child(1) {
+                        padding: 0 10px 0 18px;
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                    }
+                    a {
+                        color: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &:after,
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        background: $dark;
+                        right: -10px;
+                        z-index: 9;
+                        border-right: 2px solid $white;
+                    }
+                    &::after {
+                        top: 0;
+                        transform: skewX(30deg);
+                    }
+                    &::before {
+                        bottom: 0;
+                        transform: skewX(-30deg);
+                    }
+                    .breadcrumb-icone {
+                        font-size: 22px;
+                        color: $white;
+                        margin-right: 5px;
+                        &:hover {
+                            color: $gray-600;
+                        }
+                    }
+                    &.active {
+                        background-color: $primary;
+                        color: $white;
+                        &:before,
+                        &:after {
+                            background-color: $primary;
+                        }
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        /********** Pagination css **********/
+        .navigation {
+            margin-top: 0px;
+            .pagination {
+                .page-item {
+                    .page-link {
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0px 5px;
+                        color: var(--gray-900);
+                        background-color: var(--bs-body-bg);
+                        transition: all .5s ease;
+                        &:hover {
+                            background-image: linear-gradient(0deg, $info 0%, $purple 100%);
+                            color: $white;
+                            border: transparent; 
+                        }
+                    }
+                }
+                .active {
+                    .page-link {
+                        background-image: linear-gradient(0deg, $info 0%, $purple 100%);
+                        color: $white;
+                        border: transparent;
+                    }
+                }
+            }
+        }
+
+         /********** Avatar css **********/
+
+        .avatar-initial {
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .avatar-xxl {
+                font-size: 54px;
+            }
+            .avatar-xl {
+                font-size: 40px;
+            }
+            .avatar-lg {
+                font-size: 30px;
+            }
+            .avatar-md {
+                font-size: 22px;
+            }
+            .avatar-sm {
+                font-size: 18px;
+            }
+            .avatar-xs {
+                font-size: 16px;
+            }
+        }
+
+         /********** Badge css **********/
+
+        .badge {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+
+        /********** Icons css **********/
+        .mdi-icon-size {
+            span {
+                margin: 0px 5px;
+            }
+        }
+    }
+}
+
+[dir="rtl"] {
+    .component-page {
+        .component-wrapper {
+            .accordion {
+                .accordion-item {
+                    .accordion-header {
+                        .accordion-button {
+                            &::after {
+                                position: absolute;
+                                left: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+            .form-ex {
+                .form-check {
+                    padding-left: 0px;
+                    padding-right: 1.5em;
+                    .form-check-input {
+                        float: right;
+                        margin-left: auto;
+                        margin-right: -1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .component-page {
+        .row.g-4 {
+            justify-content: center;
+        }
+    }
+}

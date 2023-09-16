@@ -1,0 +1,517 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/navbar.html')
+    @@include('./partials/right-sidebar.html')
+    @@include('./partials/breadcrumb.html', {
+    'title': 'Service',
+    'breadcrumb1': {
+    'title': 'Pages',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': ''
+    },
+    'breadcrumb2': {
+    'title': 'Company',
+    'link': '#',
+    'icon': 'account-multiple',
+    'active_class': ''
+    },
+    'breadcrumb3': {
+    'title': 'Service',
+    'link': '#',
+    'icon': 'cog',
+    'active_class': 'active'
+    }
+    })
+
+
+
+
+    <!-- secrvice sec. -->
+    <section class="section service-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="text-center text-uppercase m-0">The Best Services We Provide </h2>
+                <div class="heading-lines">
+                    <span class="line"></span>
+                    <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="nav nav-pills my-4 justify-content-around" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link active show" id="web-tab" data-bs-toggle="tab"
+                            data-bs-target="#web-tab-pane" role="tab" aria-controls="web-tab-pane" aria-selected="true">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-1.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Web Design
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital-tab-pane"
+                            role="tab" aria-controls="digital-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-2.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Digital Marketing
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="training-tab" data-bs-toggle="tab" data-bs-target="#training-tab-pane"
+                            role="tab" aria-controls="training-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-3.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Training
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="support-tab" data-bs-toggle="tab" data-bs-target="#support-tab-pane"
+                            role="tab" aria-controls="support-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-4.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Server Support
+                        </div>
+                    </li><!-- END nav-item -->
+
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link" id="gsuite-tab" data-bs-toggle="tab" data-bs-target="#gsuite-tab-pane"
+                            role="tab" aria-controls="gsuite-tab-pane" aria-selected="false">
+                            <p class="m-0">
+                                <img src="assets/images/service/icon-5.png" class="img-fluid avatar-md" alt="">
+                            </p>
+                            Gsuite
+                        </div>
+                    </li><!-- END nav-item -->
+                </ul><!-- END nav -->
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fadeTabs animated show active" id="web-tab-pane" role="tabpanel"
+                        aria-labelledby="web-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-1.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Web Design</h4>
+                                                <p class="text-muted">
+                                                    Fast and Secure Core Development - Responsive Design - Easy UI
+                                                    Layout - Beautiful Design. Beautiful Website Design Layout -
+                                                    Responsive Layout - Fully Dynamic with Admin.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="digital-tab-pane" role="tabpanel"
+                        aria-labelledby="digital-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-2.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Digital Marketing</h4>
+                                                <p class="text-muted">
+                                                    Thrive Internet Marketing Agency is a full-service digital marketing
+                                                    agency. Attract, Impress, and Convert more leads online and get
+                                                    results with Thrive.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="training-tab-pane" role="tabpanel"
+                        aria-labelledby="training-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-3.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Training</h4>
+                                                <p class="text-muted">
+                                                    Specialized employee training programs for different functions and
+                                                    roles, designed to address specific learning objectives and
+                                                    delivered by top trainers.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="support-tab-pane" role="tabpanel"
+                        aria-labelledby="support-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-4.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Server Support</h4>
+                                                <p class="text-muted">
+                                                    Renowned server management company with proven expertise in 24/7
+                                                    outsourced server support services, outsourced web hosting support.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+
+                    <div class="tab-pane fadeTabs animated" id="gsuite-tab-pane" role="tabpanel"
+                        aria-labelledby="gsuite-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card p-4 border-0 shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="assets/images/service/img-5.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div><!-- END col -->
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h4>Gsuite</h4>
+                                                <p class="text-muted">
+                                                    The primary G Suite tools include Gmail, Drive, Docs, Sheets,
+                                                    Slides, Forms, Calendar, Google+, Sites, Hangouts, and Keep. G Suite
+                                                    was released.
+                                                </p>
+                                                <div class="btn-wraper">
+                                                    <button class="btn btn-primary">Learn more</button>
+                                                </div>
+                                            </div>
+                                        </div><!-- END col -->
+                                    </div><!-- END row -->
+                                </div><!-- END card -->
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+                    </div><!-- END tab-pane -->
+                </div><!-- END tab-content -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- latest project sec. -->
+    <section class="section latest-project">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center text-uppercase m-0">our latest project </h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-4">
+                        Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.
+                    </p>
+                </div><!-- END col -->
+            </div><!-- END row -->
+            <div class="row justify-content-center text-center g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-1.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 01 </h1>
+                        <p>
+                            "There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't
+                            look even slightly believable.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-2.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 02 </h1>
+                        <p>
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-3.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 03 </h1>
+                        <p>
+                            "There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't
+                            look even slightly believable.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-content">
+                        <div class="img-overlay"
+                            style="background-image: url(assets/images/service/project-img-4.png);"></div>
+                        <span class="icon ti-desktop"></span>
+                        <h1 class="mx-auto"> 04 </h1>
+                        <p>
+                            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                            occaecati cupiditate.
+                        </p>
+                        <button class="btn btn-primary mt-2 mx-auto"> Read More.. </button>
+                    </div>
+                </div><!-- END col -->
+            </div> <!-- END row -->
+        </div> <!-- END container -->
+    </section>
+
+    <!-- client review sec. -->
+    <section class="section client-review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center text-uppercase m-0">clients Reviews</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-center text-muted mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis risus mi. Ut placerat
+                        quam lectus. Curabitur dictum velit non.
+                    </p>
+                </div>
+                <!-- END col -->
+
+                <div class="swiper mySwiper-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-5 h-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/clients/01.png" class="rounded-circle avatar-xl"
+                                            alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star-half-full h5 text-warning"></i>
+                                        <p class="fs-18"> Jennifer Lida </p>
+                                    </div>
+                                </div>
+                                <p class="mt-4 mb-0 fs-20 text-muted">
+                                    “Quisque bibendum, felis eu ullamcorper viverra,
+                                    erat quam aliquet libero, id tincidunt nulla lacus elementum diam. Sed sit amet
+                                    lectus dui.Aliquam eget egestas metus, vitae gravida diam.In pretium ipsum at cursus
+                                    scelerisque.”
+                                </p>
+                            </div><!-- END card -->
+                        </div><!-- END swiper-slider -->
+
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-5 h-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/clients/03.png" class="rounded-circle avatar-xl"
+                                            alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star-half-full h5 text-warning"></i>
+                                        <p class="fs-18">Jack Wilson </p>
+                                    </div>
+                                </div>
+                                <p class="mt-4 mb-0 fs-20 text-muted">
+                                    “Thank you for running the event so smoothly – I had a great time, not only
+                                    presenting, but also watching other sessions and interacting with attendees.”
+                                </p>
+                            </div><!-- END card -->
+                        </div><!-- END swiper-slider -->
+
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-5 h-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/clients/07.png" class="rounded-circle avatar-xl"
+                                            alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star-half-full h5 text-warning"></i>
+                                        <p class="fs-18"> Rose Marie </p>
+                                    </div>
+                                </div>
+                                <p class="mt-4 mb-0 fs-20 text-muted">
+                                    “Porttitor integer bibendum odio pulvinar rutrum magnis viverra orci tincidunt
+                                    efficitur. Aptent pharetra est nunc mattis donec per mi porttitor penatibus.”
+                                </p>
+                            </div><!-- END card -->
+                        </div><!-- END swiper-slider -->
+
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-5 h-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/clients/08.png" class="rounded-circle avatar-xl"
+                                            alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <p class="fs-18"> Jackson Robin </p>
+                                    </div>
+                                </div>
+                                <p class="mt-4 mb-0 fs-20 text-muted">
+                                    “Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few
+                                    trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit
+                                    at regular.”
+                                </p>
+                            </div><!-- END card -->
+                        </div><!-- END swiper-slider -->
+
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-5 h-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/clients/02.png" class="rounded-circle avatar-xl"
+                                            alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star-outline h5 text-warning"></i>
+                                        <i class="mdi mdi-star-outline h5 text-warning"></i>
+                                        <p class="fs-18"> Sophia Jones </p>
+                                    </div>
+                                </div>
+                                <p class="mt-4 mb-0 fs-20 text-muted">
+                                    “Get your documents out the door fast to keep deals moving with automatic
+                                    notifications, on-the-fly editing, and integrated.”
+                                </p>
+                            </div><!-- END card -->
+                        </div><!-- END swiper-slider -->
+
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-5 h-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/clients/06.png" class="rounded-circle avatar-xl"
+                                            alt="...">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star h5 text-warning"></i>
+                                        <i class="mdi mdi-star-half-full h5 text-warning"></i>
+                                        <i class="mdi mdi-star-outline h5 text-warning"></i>
+                                        <p class="fs-18"> Michale Clark </p>
+                                    </div>
+                                </div>
+                                <p class="mt-4 mb-0 fs-20 text-muted">
+                                    “It is really refreshing to create the best solutions for clients who are truly
+                                    interested in their client’s needs and preferences. We offer one of the most
+                                    comprehensive sets of laboratory services and quality result.”
+                                </p>
+                            </div><!-- END card -->
+                        </div><!-- END swiper-slider -->
+                    </div><!-- END wrapper -->
+                </div><!-- END swiper -->
+            </div><!-- END row -->
+        </div><!-- END container -->
+    </section>
+
+    <!-- Footer Start -->
+
+    @@include('./partials/footer.html')
+
+    <!-- Footer End -->
+
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+
+</body>
+
+</html>
