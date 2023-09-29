@@ -42,8 +42,8 @@ a:focus {
   text-decoration: none;
 }
 
-.p-t-20 {
-	padding-top: 2em;
+.p-t-10 {
+	padding-top: 1em;
 }
 
 .p-t-50 {
@@ -219,7 +219,7 @@ a:focus {
 }
 
 .com-container {
-	padding-bottom: 5em;
+	padding-bottom: 2em;
 }
 
 #plugin-list li,#plugin-list li a {
