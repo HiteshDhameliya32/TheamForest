@@ -1,0 +1,65 @@
+<!-- Switcher -->
+<a href="javascript:void(0)" class="btn btn-dark switcher-btn" data-bs-toggle="offcanvas" data-bs-target="#switcher-sidebar" aria-controls="offcanvasLeft">
+    <i class="mdi mdi-tune-variant align-middle fs-6 me-2"></i>
+    Customize
+</a>
+
+<div class="offcanvas offcanvas-end shadow border-0 show" tabindex="-1" id="switcher-sidebar" aria-labelledby="offcanvasLeft" aria-modal="true" role="dialog">
+    <div class="offcanvas-header p-4 border-bottom">
+        <div id="offcanvasLeft" class="mb-0">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" height="34" class="logo-light-mode" alt="">
+                <img src="assets/images/dark-logo.png" height="34" class="logo-dark-mode" alt="">
+            </a>
+            <!-- Logo End -->
+        </div>
+        <button type="button" class="btn-close d-flex align-items-center
+            text-dark" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="mdi mdi-window-close fs-4"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body p-4 pb-0">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="text-center mb-4 border-top">
+                    <div class="border-bottom mb-4">
+                        <h6 class="pt-4 mb-0 fw-bold">Theme Mode</h6>
+                        <p class="fs-12 text-muted">Enjoy Dark & Light modes.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label>
+                                <div class="form-check-wrapper">
+                                    <img src="assets/images/demos/light.png" class="mw-100 border border-5 rounded-4" alt="" style="width: 260px;">                      
+                                </div>
+                                <div class="form-check form-check-custom form-check-solid form-check-sm form-check-success">
+                                    <input class="form-check-input" type="radio" value="light" name="theme_mode" data-theme="light" id="kt_layout_builder_theme_mode_light" checked>
+                                    <div class="form-check-label ms-2 text-gray-700"> Light </div>
+                                </div>
+                            </label>  
+                        </div>
+                        <!--end Col-->
+                        <div class="col-12">
+                            <label class="form-check-image form-check-success">
+                                <div class="form-check-wrapper">
+                                    <img src="assets/images/demos/dark.png" class="mw-100 border border-5 rounded-4" alt="" style="width: 260px;">                      
+                                </div>
+                                <div class="form-check form-check-custom form-check-solid form-check-sm form-check-success">
+                                    <input class="form-check-input" type="radio" value="dark" name="theme_mode" data-theme="dark" id="kt_layout_builder_theme_mode_dark">
+                                    <div class="form-check-label ms-2 text-gray-700"> Dark </div>
+                                </div>
+                            </label>              
+                        </div>
+                        <!--end Col-->
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end offcanvas -->
+</div>

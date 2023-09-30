@@ -1,0 +1,837 @@
+@@include('./partials/main.html')
+
+<head>
+
+    @@include('./partials/title-meta.html')
+
+    @@include('./partials/head-css.html')
+
+</head>
+
+<body>
+
+    @@include('./partials/page-loader.html')
+    @@include('./partials/right-sidebar.html')
+
+    <!-- /********** NAVBAR **********/ -->
+    <header id="topnav" class="navbar megamenuscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="assets/images/light-logo.png" class="logo-light-mode" height="34" alt="">
+                <img src="assets/images/dark-logo.png" class="logo-dark-mode" height="34" alt="">
+            </a>
+            <!-- Logo End -->
+
+            <!-- start mega navigation -->
+            <div id="navigation">
+                <!-- Navigation menu-->
+                <ul class="navigation-menu">
+                    <li><a href="index-shop.html" class="sub-mega-menu">Home</a></li>
+                    <li><a href="collectionpage.html" class="sub-mega-menu">Women</a></li>
+                    <li><a href="collectionpage.html" class="sub-mega-menu">Men</a></li>
+                    <li><a href="single-product-page.html" class="sub-mega-menu">Product</a></li>
+                    
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">contact us</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="about-page.html" class="sub-mega-menu">About Us</a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="help-center.html" class="sub-mega-menu">help center</a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+
+                    <li class="has-submenu parent-parent-mega-menu-">
+                        <a href="javascript:void(0)">Account</a><span class="mega-menu"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-login.html"> login </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-signup.html"> signup </a>
+                            </li>
+                            <li class="has-submenu parent-menu-item">
+                                <a href="auth-two-re-password.html"> reset password </a>
+                            </li>
+                        </ul>
+                    </li><!-- END contact menu -->
+                </ul><!--end navigation menu-->
+            </div><!--end mega navigation-->
+
+            <!-- start login & collapse -->
+            <div class="end-content">
+                <!--Login button Start-->
+                <ul class="list-inline d-flex align-items-center mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                            <div class="btn btn-outline-primary">
+                                <i class="mdi mdi-login"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mb-0">
+                        <a class="btn btn-primary me-lg-0 me-2" href="shop-cart.html">
+                            <i class="mdi mdi-cart-minus cart-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu-collapse">
+                        <div class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a><!-- End mobile menu toggle-->
+                        </div>
+                    </li><!-- end collapse -->
+                </ul><!--Login button End-->
+            </div><!-- end login & collapse -->
+        </div>
+        <!--end container-->
+    </header>
+    <!-- END navbar -->
+
+    <!-- /********** Home Section **********/ -->   
+    <section class="shop-home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="home-heading">
+                        <h3 class="v">Falcon - Time to get your designr Cloths</h3>
+                        <h1>The Style</h1>
+                        <div class="home-text">
+                            <span class="line"></span>
+                            <p class="text-center px-sm-4 px-2">Wear Your outfit</p>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home -->
+
+    <!-- start section -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                    <div class="card bg-transparent border-0 rounded text-center">
+                        <div class= p-2>
+                            <img src="assets/images/user-6.png" class="avatar avatar-small rounded-circle shadow-md img-fluid" alt="">
+                            <div class="content mt-3">
+                                <h6 class="mb-0"><span class="title">Men</span></h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                    <div class="card bg-transparent border-0 rounded text-center">
+                        <div class= p-2>
+                            <img src="assets/images/user-5.png" class="avatar avatar-small rounded-circle shadow-md img-fluid" alt="">
+                            <div class="content mt-3">
+                                <h6 class="mb-0"><span class="title">Women</span></h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                    <div class="card bg-transparent border-0 rounded text-center">
+                        <div class="card-body">
+                            <img src="assets/images/shop/children.png" class="avatar avatar-small rounded-circle shadow-md img-fluid" alt="">
+                            <div class="content mt-3">
+                                <h6 class="mb-0"><span class="title">Children</span></h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                    <div class="card bg-transparent border-0 rounded text-center">
+                        <div class="card-body">
+                            <img src="assets/images/shop/dress.png" class="avatar avatar-small rounded-circle shadow-md img-fluid" alt="">
+                            <div class="content mt-3">
+                                <h6 class="mb-0"><span class="title">Dresses</span></h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                    <div class="card bg-transparent border-0 rounded text-center">
+                        <div class="card-body">
+                            <img src="assets/images/shop/shoe.png" class="avatar avatar-small rounded-circle shadow-md img-fluid" alt="">
+                            <div class="content mt-3">
+                                <h6 class="mb-0"><span class="title">Shoes</span></h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end section -->
+
+    <!-- start features-->
+    <section class="section shop-features pt-0">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-6 col-lg-8 col-md-10">
+                    <h2 class="fw-normal text-uppercase m-0">Trending</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper swiper-shop">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card product-card p-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/images/shop/women/g1.png" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="d-flex justify-content-between label list-unstyled mb-0">
+                                        <li>
+                                        <a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">New</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-icon">
+                                                <i class="mdi mdi-heart-outline fs-4"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="javascript:void(0);" class="product-name h6">Girls Half Sleeves T-Shirt</a>
+                                        <div class="mt-1">
+                                            <h6 class="fst-italic mb-0 mt-1">$135.00
+                                                <del class="text-danger ms-2">$325.00</del>
+                                            </h6>
+                                            <ul class="list-unstyled text-warning mb-0">
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card product-card p-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/images/shop/women/g2.png" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="d-flex justify-content-between label list-unstyled mb-0">
+                                        <li>
+                                        <a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">New</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-icon">
+                                                <i class="mdi mdi-heart-outline fs-4"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="javascript:void(0);" class="product-name h6">Girls Black Slim Heels</a>
+                                        <div class="mt-1">
+                                            <h6 class="fst-italic mb-0 mt-1">$986.00
+                                                <del class="text-danger ms-2">$1686.00</del>
+                                            </h6>
+                                            <ul class="list-unstyled text-warning mb-0">
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card product-card p-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/images/shop/women/g3.png" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="d-flex justify-content-between label list-unstyled mb-0">
+                                        <li>
+                                        <a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">New</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-icon">
+                                                <i class="mdi mdi-heart-outline fs-4"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="javascript:void(0);" class="product-name h6">Girls Print T-Shirt</a>
+                                        <div class="mt-1">
+                                            <h6 class="fst-italic mb-0 mt-1">$265.00
+                                                <del class="text-danger ms-2">$899.00</del>
+                                            </h6>
+                                            <ul class="list-unstyled text-warning mb-0">
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card product-card p-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/images/shop/women/g4.png" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="d-flex justify-content-between label list-unstyled mb-0">
+                                        <li>
+                                        <a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">New</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-icon">
+                                                <i class="mdi mdi-heart-outline fs-4"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="javascript:void(0);" class="product-name h6">Girls Half Sleeves T-Shirt</a>
+                                        <div class="mt-1">
+                                            <h6 class="fst-italic mb-0 mt-1">$398.00
+                                                <del class="text-danger ms-2">$799.00</del>
+                                            </h6>
+                                            <ul class="list-unstyled text-warning mb-0">
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card product-card p-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/images/shop/women/g5.png" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="d-flex justify-content-between label list-unstyled mb-0">
+                                        <li>
+                                        <a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">New</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-icon">
+                                                <i class="mdi mdi-heart-outline fs-4"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="javascript:void(0);" class="product-name h6">Girls Silver Designer Juti</a>
+                                        <div class="mt-1">
+                                            <h6 class="fst-italic mb-0 mt-1">$599.00
+                                                <del class="text-danger ms-2">$899.00</del>
+                                            </h6>
+                                            <ul class="list-unstyled text-warning mb-0">
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card product-card p-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/images/shop/women/g6.png" class="img-fluid" alt="">
+                                    </a>
+                                    <ul class="d-flex justify-content-between label list-unstyled mb-0">
+                                        <li>
+                                        <a href="javascript:void(0)" class="badge badge-link rounded-pill bg-warning">New</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="btn btn-icon">
+                                                <i class="mdi mdi-heart-outline fs-4"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="javascript:void(0);" class="product-name h6">Girls Denim Jacket</a>
+                                        <div class="mt-1">
+                                            <h6 class="fst-italic mb-0 mt-1">$699.00
+                                                <del class="text-danger ms-2">$999.00</del>
+                                            </h6>
+                                            <ul class="list-unstyled text-warning mb-0">
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="mdi mdi-star"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                      </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end features -->
+
+    <!-- start about -->
+    <section class="section shop-about">
+        <div class="container">
+            <div class="row align-content-center">
+                <div class="col-lg-6">
+                    <img src="assets/images/shop/men/g2.jpg" class="img-fluid" alt="">
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6 ps-5">
+                    <div class="about-heading">
+                        <h1>Falcon Online Fashion Shop</h1>
+                        <p class="text-muted"> On her way she met a copy. The copy warned the Little Blind Text, 
+                            that where it came from it would have been rewritten a thousand 
+                            times and everything that was left from its origin would be the 
+                            word "and" and the Little Blind Text should turn around and 
+                            return to its own, safe country. But nothing the copy said 
+                            could convince her and so it didn’t take long until a few 
+                            insidious Copy Writers ambushed her, made her drunk with Longe 
+                            and Parole and dragged her into their agency, where they abused her for their.
+                        </p>
+                        <p class="text-muted">When she reached the first hills of the Italic Mountains, she had a last view 
+                            back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet 
+                            Village and the subline of her own road, the Line Lane. Pityful a rethoric 
+                            question ran over her cheek, then she continued her way.</p>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end about -->
+
+    <!-- start collation -->
+    <section class="section shop-collation">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-6 col-lg-8 col-md-10">
+                    <h2 class="fw-normal text-uppercase m-0">Shop By Category</h2>
+                    <div class="heading-lines">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="collation-card">
+                        <a href="collectionpage.html">
+                            <img src="assets/images/shop/men/g1.jpg" class="img-fluid" alt="team-1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold text-white">Denim Jacket</h5>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+                <div class="col-lg-3">
+                    <div class="collation-card">
+                        <a href="collectionpage.html">
+                            <img src="assets/images/shop/men/g3.jpg" class="img-fluid" alt="team-1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold text-white">pink t shirt</h5>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+                <div class="col-lg-3">
+                    <div class="collation-card">
+                        <a href="collectionpage.html">
+                            <img src="assets/images/shop/men/g4.jpg" class="img-fluid" alt="team-1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold text-white">black jacket</h5>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+                <div class="col-lg-3">
+                    <div class="collation-card">
+                        <a href="collectionpage.html">
+                            <img src="assets/images/shop/men/g5.jpg" class="img-fluid" alt="team-1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-text fw-bold text-white">white t shirt</h5>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end collation -->
+
+    <!-- start countdown-->
+    <section class="section shop-countdown">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-5 order-lg-0 order-1">
+                  <div class="text-center">
+                    <h3 class="fst-italic text-muted">Sale UpTo <span class="text-danger">40%</span> </h3>
+                    <h1 class="display-5 fw-semibold text-uppercase">Floral Print Dress</h1>
+                    <p class="text-muted">Affordable shopping during the cool hour! 40% extra discount for you.</p>
+                    <div class="card-card">
+                      <div class="sale-time">
+                        <ul class="p-0">
+                          <li>
+                            <h1 class="mb-0" id="days"></h1>
+                            <p class="mb-0">days</p>
+                          </li>
+                          <li>
+                            <h1 class="mb-0" id="hours"></h1>
+                            <p class="mb-0">hours</p>
+                          </li>
+                          <li>
+                            <h1 class="mb-0" id="mins"></h1>
+                            <p class="mb-0">minutes</p>
+                          </li>
+                          <li>
+                            <h1 class="mb-0" id="secs"></h1>
+                            <p class="mb-0">seconds</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a class="btn btn-outline-primary" href="collectionpage.html">Shop New</a>
+                  </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6 col-9 order-lg-1 order-0">
+                  <div class="sale-img mb-4 mb-lg-0">
+                    <img src="assets/images/shop/countdown-img.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+                <!-- end col -->
+              </div>
+              <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end countdown -->
+    
+    <!-- start Reviews -->
+    <section class="section shop-review">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-6 col-lg-8 col-md-10">
+                    <h2 class="fw-normal text-uppercase m-0">Customer Reviews</h2>
+                    <div class="heading-lines mb-1">
+                        <span class="line"></span>
+                        <span class="cross-icon text-center"><i class="mdi mdi-window-close"></i></span>
+                        <span class="line"></span>
+                    </div>
+                    <p class="text-muted">Start working with <span class="text-primary">Falcon</span> 
+                        that can provide everything you need to generate awareness, drive traffic, connect.
+                    </p>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-12 mt-4">
+                  <div class="swiper mySwiper-3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- William Johnson</h6>
+                                <img src="assets/images/clients/01.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- Joan Patterson</h6>
+                                <img src="assets/images/clients/02.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- Leonel Richardson</h6>
+                                <img src="assets/images/clients/03.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- Willie Hobbs</h6>
+                                <img src="assets/images/clients/04.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- Andrew Williams</h6>
+                                <img src="assets/images/clients/05.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- David Miller</h6>
+                                <img src="assets/images/clients/06.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- Deborah Bennett</h6>
+                                <img src="assets/images/clients/07.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="client-testi d-flex m-2">
+                          <div class="card flex-1 content p-3 rounded position-relative">
+                            <ul class="list-unstyled mb-0">
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                              <li class="list-inline-item me-0"><i class="mdi mdi-star text-warning"></i></li>
+                            </ul>
+                            <p class="text-muted mt-2 mb-0">" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. "</p>
+                            <div class="client-image">
+                                <h6 class="text-primary mb-0">- Anita Harden</h6>
+                                <img src="assets/images/clients/08.png" class="img-fluid rounded" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end Reviews -->
+
+    <!-- Footer Start -->
+    @@include('./partials/footer.html')
+    <!-- Footer End -->
+
+    @@include('./partials/vendor-scripts.html')
+
+    <script src="assets/js/main/swiper.js"></script>
+    <script src="assets/js/main/countdown.js"></script>
+
+</body>
+
+</html>
