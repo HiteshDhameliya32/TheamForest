@@ -4,6 +4,10 @@
 @{
     ViewData["breadcrume"] = "Home/Table/Basic Initialization";
 }
+<!-- data tables css -->
+<link rel="stylesheet" href="~/css/plugins/style.css">
+<!-- [Page specific CSS] end -->
+
 <!-- [ Main Content ] start -->
 <div class="row">
     <!-- [ basic-table ] start -->
@@ -735,3 +739,9 @@
     <!-- [ basic-table ] end -->
 </div>
 <!-- [ Main Content ] end -->
+<!-- [Page Specific JS] start -->
+<script type="module">
+    import { DataTable } from "/js/plugins/module.js"
+    window.dt = new DataTable("#pc-dt-simple");
+</script>
+<!-- [Page Specific JS] end -->

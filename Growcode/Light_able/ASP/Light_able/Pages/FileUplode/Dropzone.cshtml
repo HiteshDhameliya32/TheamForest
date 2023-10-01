@@ -1,0 +1,36 @@
+﻿@page
+@model Light_able.Pages.FileUplode.DropzoneModel
+@{
+    ViewData["breadcrume"] = "Home/Forms/File Upload";
+
+}
+<!-- [Page specific CSS] start -->
+<!-- fileupload-custom css -->
+<link rel="stylesheet" href="~/css/plugins/dropzone.min.css">
+<!-- [Page specific CSS] end -->
+<!-- [ Main Content ] start -->
+<div class="row">
+    <!-- [ file-upload ] start -->
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>File Upload</h5>
+            </div>
+            <div class="card-body">
+                <form action="~/json/file-upload.php" class="dropzone">
+                    <div class="fallback">
+                        <input name="file" type="file" multiple>
+                    </div>
+                </form>
+                <div class="text-center m-t-20">
+                    <button class="btn btn-primary">Upload Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ file-upload ] end -->
+</div>
+<!-- [ Main Content ] end -->
+<!-- file-upload Js -->
+<script src="~/js/plugins/dropzone-amd-module.min.js"></script>
+<!-- [Page Specific JS] end -->

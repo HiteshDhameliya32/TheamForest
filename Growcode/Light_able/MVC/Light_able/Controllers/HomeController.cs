@@ -16,5 +16,13 @@ namespace Light_able.Controllers
         {
             return View();
         }
+        public IActionResult SamplePage()
+        {
+            return View();
+        }
+        public IActionResult Preview()
+        {
+            return View();
+        }
     }
 }

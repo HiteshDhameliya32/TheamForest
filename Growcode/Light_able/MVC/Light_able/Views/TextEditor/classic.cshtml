@@ -49,3 +49,14 @@
     <!-- [ Classic-editor ] end -->
 </div>
 <!-- [ Main Content ] end -->
+<!-- [Page Specific JS] start -->
+<!-- Ckeditor js -->
+<script src="~/js/plugins/ckeditor/classic/ckeditor.js"></script>
+<script>
+    (function () {
+        ClassicEditor.create(document.querySelector('#classic-editor')).catch((error) => {
+            console.error(error);
+        });
+    })();
+</script>
+<!-- [Page Specific JS] end -->

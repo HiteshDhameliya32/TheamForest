@@ -48,6 +48,7 @@ $card-bg:    $gray-150;
   --form-rgba: rgba(251, 246, 246, 0.48);
   
 }
+
 [data-theme=dark]:root {
     $white: #000;
 
@@ -131,7 +132,7 @@ $card-bg:    $gray-150;
 @import "pages/app-page.scss";
 @import "pages/business-page.scss";
 @import "pages/index.scss";
-/* @import "pages/nexBelt.scss"; TODO: Need to find this css for ecommerce by Sahil*/
+
 @import "pages/profile.scss";
 @import "pages/team.scss";
 @import "pages/coming-soon-1";

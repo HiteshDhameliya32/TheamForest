@@ -9,425 +9,641 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Light_able
 build_property.RootNamespace = Light_able
-build_property.ProjectDir = E:\Themforest Converted Products\Light_able\MVC\Light_able\
+build_property.ProjectDir = E:\Themforest Converted Products\Growcode\Light_able\MVC\Light_able\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Themforest Converted Products\Light_able\MVC\Light_able
+build_property.MSBuildProjectDirectory = E:\Themforest Converted Products\Growcode\Light_able\MVC\Light_able
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/DatePicker.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/DatePicker.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcRGF0ZVBpY2tlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/Lightbox.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/Lightbox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcTGlnaHRib3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/Modal.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/Modal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcTW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/Notification.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcTm90aWZpY2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/RangeSlider.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/RangeSlider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcUmFuZ2VTbGlkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/Slider.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/Slider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcU2xpZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/SweetAlert.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/SweetAlert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcU3dlZXRBbGVydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/SyntaxHighlighter.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/SyntaxHighlighter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcU3ludGF4SGlnaGxpZ2h0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/Tour.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/Tour.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcVG91ci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/AdvanceComponents/TreeView.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/AdvanceComponents/TreeView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2YW5jZUNvbXBvbmVudHNcVHJlZVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Alert.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/AccountProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cQWNjb3VudFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/AddNewProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cQWRkTmV3UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cY2FsZW5kYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cY2hhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cQ2hlY2tvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cZ2FsbGVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/InvoiceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cSW52b2ljZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/mail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/Preview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cUHJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/Productdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cUHJvZHVjdGRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cUHJvZHVjdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/SocialMedia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cU29jaWFsTWVkaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/UserCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cVXNlckNhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Application/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25cVXNlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Alert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXEFsZXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Breadcrumb.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Breadcrumb.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXEJyZWFkY3J1bWIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Budges.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Budges.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXEJ1ZGdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Button.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Button.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXEJ1dHRvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Cards.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Cards.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXENhcmRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Carousel.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXENhcm91c2VsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Collapse.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Collapse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXENvbGxhcHNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Color.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Color.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXENvbG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Dropdowns.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Dropdowns.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXERyb3Bkb3ducy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/ListGroup.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/ListGroup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXExpc3RHcm91cC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Modal.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Modal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXE1vZGFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Offcanvas.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Offcanvas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXE9mZmNhbnZhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Other.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Other.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXE90aGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Pagination.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Pagination.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFBhZ2luYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Progress.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Progress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFByb2dyZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Spinner.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Spinner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFNwaW5uZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/TablsAndPills.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/TablsAndPills.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFRhYmxzQW5kUGlsbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Toasts.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Toasts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFRvYXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Tooltips.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Tooltips.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFRvb2x0aXBzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/BasicComponents/Typography.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/BasicComponents/Typography.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzaWNDb21wb25lbnRzXFR5cG9ncmFwaHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FileUplode/Dropzone.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Charts/ApexCharts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRzXEFwZXhDaGFydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Charts/VectorMap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRzXFZlY3Rvck1hcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Datatable/Advanceinitialization.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlXEFkdmFuY2Vpbml0aWFsaXphdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Datatable/API.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlXEFQSS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Datatable/Datasources.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlXERhdGFzb3VyY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Datatable/Plugin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlXFBsdWdpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Datatable/Styling.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YXRhYmxlXFN0eWxpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/Autofill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXEF1dG9maWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/BasicButton.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXEJhc2ljQnV0dG9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/ColReorder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXENvbFJlb3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/DataExport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXERhdGFFeHBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/FixedColumns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXEZpeGVkQ29sdW1ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/FixedHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXEZpeGVkSGVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/KeyTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXEtleVRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/Responsive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXFJlc3BvbnNpdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/RowReorder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXFJvd1Jlb3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/Scroller.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXFNjcm9sbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/DTExtensions/SelectTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFRFeHRlbnNpb25zXFNlbGVjdFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FileUplode/Dropzone.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9kZVxEcm9wem9uZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FileUplode/Uppy.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FileUplode/Uppy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZVVwbG9kZVxVcHB5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Checkbox.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/Checkbox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXENoZWNrYm94LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/FormBasic.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/FormBasic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXEZvcm1CYXNpYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/FormFloating.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/FormFloating.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXEZvcm1GbG9hdGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/FormOptions.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/FormOptions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXEZvcm1PcHRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/ImageCrop.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/ImageCrop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXEltYWdlQ3JvcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/InputGroups.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/InputGroups.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXElucHV0R3JvdXBzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Megaoption.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/Megaoption.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXE1lZ2FvcHRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Radio.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/Radio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXFJhZGlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Switch.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/Switch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXFN3aXRjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormElements/Validation.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormElements/Validation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUVsZW1lbnRzXFZhbGlkYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/Actionbars.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormLayouts/Actionbars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcQWN0aW9uYmFycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/FormLayout.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormLayouts/FormLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcRm9ybUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/Multicolumn.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormLayouts/Multicolumn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcTXVsdGljb2x1bW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormLayouts/StickyActionbars.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormLayouts/StickyActionbars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybUxheW91dHNcU3RpY2t5QWN0aW9uYmFycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/BootstrapSwitch.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/BootstrapSwitch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXEJvb3RzdHJhcFN3aXRjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/Choicesjs.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/Choicesjs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXENob2ljZXNqcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/Clipboard.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/Clipboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXENsaXBib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/Datepicker.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/Datepicker.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXERhdGVwaWNrZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/DateRangePicker.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/DateRangePicker.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXERhdGVSYW5nZVBpY2tlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/GooglereCaptcha.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/GooglereCaptcha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXEdvb2dsZXJlQ2FwdGNoYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/InputMasks.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/InputMasks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXElucHV0TWFza3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/Nouislider.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/Nouislider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXE5vdWlzbGlkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/Timepicker.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/Timepicker.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXFRpbWVwaWNrZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/FormsPlugins/Typeahead.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/FormsPlugins/Typeahead.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNQbHVnaW5zXFR5cGVhaGVhZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Home/Index.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Icons/Custom.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Home/Preview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Home/SamplePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW1wbGVQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Icons/Custom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcQ3VzdG9tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Icons/Feather.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Icons/Feather.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcRmVhdGhlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Icons/FontAwesome5.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Icons/FontAwesome5.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcRm9udEF3ZXNvbWU1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Icons/Material.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Icons/Material.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcTWF0ZXJpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Icons/Phosphor.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Icons/Phosphor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcUGhvc3Bob3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Icons/Tabler.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Icons/Tabler.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcVGFibGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Layouts/Compact.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Layouts/Compact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0c1xDb21wYWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Layouts/Horizontal.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Layouts/Horizontal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0c1xIb3Jpem9udGFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Layouts/Layouts2.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Layouts/Layouts2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0c1xMYXlvdXRzMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Layouts/Tab.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Layouts/Tab.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0c1xUYWIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Layouts/Vertical.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Layouts/Vertical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0c1xWZXJ0aWNhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Shared/_LayoutComponent.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/CodeVerification1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ29kZVZlcmlmaWNhdGlvbjEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/CodeVerification2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ29kZVZlcmlmaWNhdGlvbjIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/ComingSoon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ29taW5nU29vbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/ConnectionLost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ29ubmVjdGlvbkxvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/ForgotPassword1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRm9yZ290UGFzc3dvcmQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/ForgotPassword2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRm9yZ290UGFzc3dvcmQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/Landing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTGFuZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/Login1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTG9naW4xLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/Login2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTG9naW4yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/Register1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUmVnaXN0ZXIxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/Register2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUmVnaXN0ZXIyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/ResetPassword1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUmVzZXRQYXNzd29yZDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/ResetPassword2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUmVzZXRQYXNzd29yZDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Pages/UnderConstruction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcVW5kZXJDb25zdHJ1Y3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Shared/_LayoutComponent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDb21wb25lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Basictable.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Table/Basictable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcQmFzaWN0YWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Bordertable.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Table/Bordertable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcQm9yZGVydGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Sizingtable.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Table/Sizingtable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcU2l6aW5ndGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Table/Stylingtable.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Table/Stylingtable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcU3R5bGluZ3RhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Balloon.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/TextEditor/Balloon.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxCYWxsb29uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/classic.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/TextEditor/classic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxjbGFzc2ljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Document.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/TextEditor/Document.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxEb2N1bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Inline.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/TextEditor/Inline.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxJbmxpbmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Markdown.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/TextEditor/Markdown.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxNYXJrZG93bi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Quill.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/TextEditor/Quill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxRdWlsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/TextEditor/Tinymce.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/TextEditor/Tinymce.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxUaW55bWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/AffiliateDashboard.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/AffiliateDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XEFmZmlsaWF0ZURhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/ContactSearch.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/ContactSearch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XENvbnRhY3RTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/ContactUs.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XENvbnRhY3RVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/Gallery.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/Gallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XEdhbGxlcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/Loading.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/Loading.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XExvYWRpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/LoginModal.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/LoginModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XExvZ2luTW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/Plans.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/Plans.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XFBsYW5zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/SearchPage.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/SearchPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XFNlYXJjaFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/Settings.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XFNldHRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Ui_kit/Team.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Ui_kit/Team.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWlfa2l0XFRlYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/AddRows.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/AddRows.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXEFkZFJvd3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/BasicInitialization.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/BasicInitialization.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXEJhc2ljSW5pdGlhbGl6YXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/ColumnManipulation.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/ColumnManipulation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXENvbHVtbk1hbmlwdWxhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/DatetimeSorting.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/DatetimeSorting.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXERhdGV0aW1lU29ydGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/DynamicImport.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/DynamicImport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXER5bmFtaWNJbXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/Methods.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/Export.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXEV4cG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/FetchAPI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXEZldGNoQVBJLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/Filters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXEZpbHRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/Methods.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXE1ldGhvZHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/VanillaTable/RenderColumnCells.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/VanillaTable/RenderColumnCells.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuaWxsYVRhYmxlXFJlbmRlckNvbHVtbkNlbGxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Widget/Chart.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Widget/Chart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lkZ2V0XENoYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Widget/Data.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Widget/Data.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lkZ2V0XERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Widget/Statistics.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Widget/Statistics.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lkZ2V0XFN0YXRpc3RpY3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Widget/User.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Widget/User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lkZ2V0XFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/_ViewStart.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Themforest Converted Products/Light_able/MVC/Light_able/Views/Shared/_Layout.cshtml]
+[E:/Themforest Converted Products/Growcode/Light_able/MVC/Light_able/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3i3dihxlgz

@@ -7,9 +7,11 @@
 
 'use strict';
 
-let answers = document.querySelectorAll('.filter-offcanvas');
-answers.forEach((event) => {
-  event.addEventListener('click', () => {
+let filters = document.querySelectorAll('.filter-offcanvas');
+filters.forEach((event) => {
+  const productFilter = event.querySelector(".Product-filter");
+  console.log("productFilter", event)
+  productFilter.addEventListener('click', () => {
     if (event.classList.contains('active')) {
       event.classList.remove('active');
     } else {

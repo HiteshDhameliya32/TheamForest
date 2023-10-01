@@ -98,3 +98,69 @@
     <!-- [ form-element ] end -->
 </div>
 <!-- [ Main Content ] end -->
+<!-- [Page Specific JS] start -->
+<!-- bootstrap-datepicker -->
+<script src="~/js/plugins/datepicker-full.min.js"></script>
+<script>
+    // minimum setup
+    (function () {
+        const d_week = new Datepicker(document.querySelector('#pc-datepicker-1'), {
+            buttonClass: 'btn'
+        });
+    })();
+    // input group layout
+    (function () {
+        const d_week = new Datepicker(document.querySelector('#pc-datepicker-2'), {
+            buttonClass: 'btn'
+        });
+    })();
+    // enable clear button
+    (function () {
+        const d_week = new Datepicker(document.querySelector('#pc-datepicker-3'), {
+            buttonClass: 'btn',
+            todayBtn: true,
+            clearBtn: true
+        });
+    })();
+
+    // orientation
+    (function () {
+        const d_week = new Datepicker(document.querySelector('#pc-datepicker-4_1'), {
+            buttonClass: 'btn',
+            orientation: 'top left'
+        });
+    })();
+    (function () {
+        const d_week = new Datepicker(document.querySelector('#pc-datepicker-4_2'), {
+            buttonClass: 'btn',
+            orientation: 'top right'
+        });
+    })();
+    (function () {
+        const d_week = new Datepicker(document.querySelector('#pc-datepicker-4_3'), {
+            buttonClass: 'btn',
+            orientation: 'bottom left'
+        });
+    })();
+    (function () {
+        const d_week = new Datepicker(document.querySelector('#pc-datepicker-4_4'), {
+            buttonClass: 'btn',
+            orientation: 'bottom right'
+        });
+    })();
+
+    // range picker
+    (function () {
+        const datepicker_range = new DateRangePicker(document.querySelector('#pc-datepicker-5'), {
+            buttonClass: 'btn'
+        });
+    })();
+
+    // inline picker
+    (function () {
+        const datepicker_inline = new Datepicker(document.querySelector('#pc-datepicker-6'), {
+            buttonClass: 'btn'
+        });
+    })();
+</script>
+<!-- [Page Specific JS] end -->

@@ -70,4 +70,35 @@
     <!-- [ form-element ] end -->
 </div>
 <!-- [ Main Content ] end -->
-
+<!-- [Page Specific JS] start -->
+<script src="~/js/plugins/quill.min.js"></script>
+<script>
+    (function () {
+        var quill = new Quill('#pc-quil-1', {
+            modules: {
+                toolbar: [
+                    [
+                        {
+                            header: [1, 2, false]
+                        }
+                    ],
+                    ['bold', 'italic', 'underline'],
+                    ['image', 'code-block']
+                ]
+            },
+            placeholder: 'Type your text here...',
+            theme: 'snow'
+        });
+    })();
+    (function () {
+        var Delta = Quill.import('delta');
+        var quill = new Quill('#pc-quil-2', {
+            modules: {
+                toolbar: true
+            },
+            placeholder: 'Type your text here...',
+            theme: 'bubble'
+        });
+    })();
+</script>
+<!-- [Page Specific JS] end -->

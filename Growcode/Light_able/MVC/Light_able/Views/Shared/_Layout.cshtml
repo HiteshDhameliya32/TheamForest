@@ -16,7 +16,9 @@
     <link rel="icon" href="~/images/favicon.svg" type="image/x-icon">
     <!-- [Google Font : Public Sans] icon -->
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+   
+    <link rel="stylesheet" href="~/css/plugins/bootstrap.min.css">
+    
     <!-- [Tabler Icons] https://tablericons.com -->
     <link rel="stylesheet" href="~/fonts/tabler-icons.min.css">
     <!-- [Feather Icons] https://feathericons.com -->
@@ -28,6 +30,12 @@
     <!-- [Template CSS Files] -->
     <link rel="stylesheet" href="~/css/style.css" id="main-style-link">
     <link rel="stylesheet" href="~/css/style-preset.css">
+
+    <script src="~/js/plugins/bootstrap.min.js"></script>
+    <script src="~/js/plugins/bootstrap.bundle.min.js" ></script>
+
+    <script src="~/js/plugins/popper.min.js"></script>
+    <script src="~/js/plugins/simplebar.min.js"></script>
 
 </head>
 <!-- [Head] end -->
@@ -45,7 +53,7 @@
     <nav class="pc-sidebar">
         <div class="navbar-wrapper">
             <div class="m-header">
-                <a href="../dashboard/index.html" class="b-brand text-primary">
+                <a href="~/Home/Preview" class="b-brand text-primary">
                     <!-- ========   Change your logo from here   ============ -->
                     <img src="~/images/logo-dark.svg" alt="logo image" class="logo-lg">
                     <span class="badge bg-brand-color-2 rounded-pill ms-2 theme-version">v1.0</span>
@@ -57,7 +65,7 @@
                         <label>Navigation</label>
                     </li>
                     <li class="pc-item">
-                        <a href="../dashboard/index.html" class="pc-link">
+                        <a href="~/Home/Preview" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-gauge"></i>
                             </span>
@@ -72,11 +80,11 @@
                             </span><span class="pc-mtext">Layouts</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Compact","Layouts")">Compact</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Horizontal","Layouts")">Horizontal</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Layouts2","Layouts")">Layouts 2</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Tab","Layouts")">Tab</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Vertical","Layouts")">Vertical</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Layouts/Compact">Compact</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Layouts/Horizontal">Horizontal</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Layouts/Layouts2">Layouts 2</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Layouts/Tab">Tab</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Layouts/Vertical">Vertical</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -87,16 +95,16 @@
                             <span class="pc-mtext">Ui-kit</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Settings","Ui_kit")">Settings</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Plans","Ui_kit")">Plans</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("LoginModal","Ui_kit")">Login Modal</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("SearchPage","Ui_kit")">Search Page</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("AffiliateDashboard","Ui_kit")">Affiliate Dashboard</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Gallery","Ui_kit")">Gallery</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Team","Ui_kit")">Team</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Loading","Ui_kit")">Loading</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("ContactSearch","Ui_kit")">Contact Search</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("ContactUs","Ui_kit")">Contact Us</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/Settings">Settings</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/Plans">Plans</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/LoginModal">Login Modal</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/SearchPage">Search Page</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/AffiliateDashboard">Affiliate Dashboard</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/Gallery">Gallery</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/Team">Team</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/Loading">Loading</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/ContactSearch">Contact Search</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Ui_kit/ContactUs">Contact Us</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-caption">
@@ -104,7 +112,7 @@
                         <i class="ph-duotone ph-chart-pie"></i>
                     </li>
                     <li class="pc-item">
-                        <a href="@Url.Action("Statistics","Widget")" class="pc-link">
+                        <a href="~/Widget/Statistics" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-projector-screen-chart"></i>
                             </span>
@@ -112,7 +120,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="@Url.Action("User","Widget")" class="pc-link">
+                        <a href="~/Widget/User" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-identification-card"></i>
                             </span>
@@ -120,7 +128,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="@Url.Action("Data","Widget")" class="pc-link">
+                        <a href="~/Widget/Data" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-database"></i>
                             </span>
@@ -128,7 +136,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="@Url.Action("Chart","Widget")" class="pc-link">
+                        <a href="~/Widget/Chart" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-chart-pie"></i>
                             </span>
@@ -140,7 +148,7 @@
                         <i class="ph-duotone ph-compass-tool"></i>
                     </li>
                     <li class="pc-item">
-                        <a href="@Url.Action("Alert","BasicComponents")" class="pc-link" target="_blank">
+                        <a href="~/BasicComponents/Alert" class="pc-link" target="_blank">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-compass-tool"></i>
                             </span><span class="pc-mtext">Components</span>
@@ -153,12 +161,12 @@
                             </span><span class="pc-mtext">Icons</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Feather","Icons")">Feather</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("FontAwesome5","Icons")">Font Awesome 5</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Material","Icons")">Material</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Tabler","Icons")">Tabler</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Phosphor","Icons")">Phosphor</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Custom","Icons")">Custom</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Icons/Feather">Feather</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Icons/FontAwesome5">Font Awesome 5</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Icons/Material">Material</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Icons/Tabler">Tabler</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Icons/Phosphor">Phosphor</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Icons/Custom">Custom</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-caption">
@@ -173,14 +181,14 @@
                             <span class="pc-mtext">Forms Elements</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("FormBasic","FormElements")">Form Basic</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("FormFloating","FormElements")">Form Floating</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("FormOptions","FormElements")">Form Options</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("InputGroups","FormElements")">Input Groups</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Checkbox","FormElements")">Checkbox</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Radio","FormElements")">Radio</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Switch","FormElements")">Switch</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Megaoption","FormElements")">Mega option</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/FormBasic">Form Basic</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/FormFloating">Form Floating</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/FormOptions">Form Options</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/InputGroups">Input Groups</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/Checkbox">Checkbox</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/Radio">Radio</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/Switch">Switch</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormElements/Megaoption">Mega option</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -196,9 +204,9 @@
                                     Date<span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("Datepicker","FormsPlugins")">Datepicker</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("DateRangePicker","FormsPlugins")">Date Range Picker</a> </li>
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("Timepicker","FormsPlugins")">Timepicker</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/Datepicker">Datepicker</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/DateRangePicker">Date Range Picker</a> </li>
+                                    <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/Timepicker">Timepicker</a></li>
                                 </ul>
                             </li>
                             <li class="pc-item pc-hasmenu">
@@ -206,15 +214,15 @@
                                     Select<span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("Choicesjs","FormsPlugins")">Choices js</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/Choicesjs">Choices js</a></li>
                                 </ul>
                             </li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("GooglereCaptcha","FormsPlugins")">Google reCaptcha</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("InputMasks","FormsPlugins")">Input Masks</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Clipboard","FormsPlugins")">Clipboard</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Nouislider","FormsPlugins")">Nouislider</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("BootstrapSwitch","FormsPlugins")">Bootstrap Switch</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Typeahead","FormsPlugins")">Typeahead</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/GooglereCaptcha">Google reCaptcha</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/InputMasks">Input Masks</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/Clipboard">Clipboard</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/Nouislider">Nouislider</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/BootstrapSwitch">Bootstrap Switch</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FormsPlugins/Typeahead">Typeahead</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -225,21 +233,21 @@
                             <span class="pc-mtext">Text Editors</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Tinymce","TextEditor")">Tinymce</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Quill","TextEditor")">Quill</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/TextEditor/Tinymce">Tinymce</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/TextEditor/Quill">Quill</a></li>
                             <li class="pc-item pc-hasmenu">
                                 <a class="pc-link" href="#">
                                     CK editor<span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("classic","TextEditor")">classic</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("Document","TextEditor")">Document</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("Inline","TextEditor")">Inline</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="@Url.Action("Balloon","TextEditor")">Balloon</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/TextEditor/classic">classic</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/TextEditor/Document">Document</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/TextEditor/Inline">Inline</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/TextEditor/Balloon">Balloon</a></li>
 
                                 </ul>
                             </li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Markdown","TextEditor")">Markdown</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/TextEditor/Markdown">Markdown</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -251,16 +259,16 @@
                         </a>
                         <ul class="pc-submenu">
                             <li class="pc-item">
-                                <a class="pc-link" href="@Url.Action("FormLayout","FormLayouts")">Layouts</a>
+                                <a class="pc-link" href="~/FormLayout/FormLayout">Layouts</a>
                             </li>
                             <li class="pc-item">
-                                <a class="pc-link" href="@Url.Action("Multicolumn","FormLayouts")">Multicolumn</a>
+                                <a class="pc-link" href="~/FormLayout/Multicolumn">Multicolumn</a>
                             </li>
                             <li class="pc-item">
-                                <a class="pc-link" href="@Url.Action("Actionbars","FormLayouts")">Actionbars</a>
+                                <a class="pc-link" href="~/FormLayout/Actionbars">Actionbars</a>
                             </li>
                             <li class="pc-item">
-                                <a class="pc-link" href="@Url.Action("StickyActionbars","FormLayouts")">Sticky Action bars</a>
+                                <a class="pc-link" href="~/FormLayout/StickyActionbars">Sticky Action bars</a>
                             </li>
 
                         </ul>
@@ -273,12 +281,12 @@
                             <span class="pc-mtext">File upload</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Dropzone","FileUplode")">Dropzone</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Uppy","FileUplode")">Uppy</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FileUplode/Dropzone">Dropzone</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/FileUplode/Uppy">Uppy</a></li>
                         </ul>
                     </li>
                     <li class="pc-item">
-                        <a href="@Url.Action("Validation","FormElements")" class="pc-link">
+                        <a href="~/FormElements/Validation" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-password"></i>
                             </span>
@@ -286,7 +294,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="@Url.Action("ImageCrop","FormElements")" class="pc-link">
+                        <a href="~/FormElements/ImageCrop" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-crop"></i>
                             </span>
@@ -305,10 +313,10 @@
                             <span class="pc-mtext">Bootstrap Table</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Basictable","Table")">Basic table</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Sizingtable","Table")">Sizing table</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Bordertable","Table")">Border table</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Stylingtable","Table")">Styling table</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Table/Basictable">Basic table</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Table/Sizingtable">Sizing table</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Table/Bordertable">Border table</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Table/Stylingtable">Styling table</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -319,16 +327,16 @@
                             <span class="pc-mtext">Vanilla Table</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("BasicInitialization","VanillaTable")">Basic initialization</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("DynamicImport","VanillaTable")">Dynamic Import</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("RenderColumnCells","VanillaTable")">Render Column Cells</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("ColumnManipulation","VanillaTable")">Column Manipulation</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("DatetimeSorting","VanillaTable")">Datetime Sorting</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Methods","VanillaTable")">Methods</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("AddRows","VanillaTable")">Add Rows</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("FetchAPI","VanillaTable")">Fetch API</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Filters","VanillaTable")">Filters</a></li>
-                            <li class="pc-item"><a class="pc-link" href="@Url.Action("Export","VanillaTable")">Export</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/BasicInitialization">Basic initialization</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/DynamicImport">Dynamic Import</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/RenderColumnCells">Render Column Cells</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/ColumnManipulation">Column Manipulation</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/DatetimeSorting">Datetime Sorting</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/Methods">Methods</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/AddRows">Add Rows</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/FetchAPI">Fetch API</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/Filters">Filters</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/VanillaTable/Export">Export</a></li>
 
                         </ul>
                     </li>
@@ -340,11 +348,11 @@
                             <span class="pc-mtext">Data table</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_advance.html">Advance initialization</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_styling.html">Styling</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_api.html">API</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_plugin.html">Plug-in</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_sources.html">Data sources</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Datatable/Advanceinitialization">Advance initialization</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Datatable/Styling">Styling</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Datatable/API">API</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Datatable/Plugin">Plug-in</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Datatable/Datasources">Data sources</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -355,24 +363,24 @@
                             <span class="pc-mtext">DT extensions</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_autofill.html">Autofill</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/Autofill">Autofill</a></li>
                             <li class="pc-item pc-hasmenu">
                                 <a href="#!" class="pc-link">
                                     Button<span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" href="../table/dt_ext_basic_buttons.html">Basic button</a></li>
-                                    <li class="pc-item"><a class="pc-link" href="../table/dt_ext_export_buttons.html">Data export</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/DTExtensions/BasicButton">Basic button </a></li>
+                                    <li class="pc-item"><a class="pc-link" href="~/DTExtensions/DataExport">Data export </a></li>
                                 </ul>
                             </li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_col_reorder.html">Col reorder</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_fixed_columns.html">Fixed columns</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_fixed_header.html">Fixed header</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_key_table.html">Key table</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_responsive.html">Responsive</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_row_reorder.html">Row reorder</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_scroller.html">Scroller</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../table/dt_ext_select.html">Select table</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/ColReorder">Col reorder </a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/FixedColumns">Fixed columns </a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/FixedHeader">Fixed header </a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/KeyTable">Key table </a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/Responsive">Responsive </a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/RowReorder">Row reorder </a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/Scroller">Scroller </a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/DTExtensions/SelectTable">Select table </a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-caption">
@@ -387,7 +395,7 @@
                             <span class="pc-mtext">Charts</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="../chart/chart-apex.html">Apex Chart</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Charts/ApexCharts">Apex Chart</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -398,7 +406,7 @@
                             <span class="pc-mtext">Maps</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="../chart/map-vector.html">Vector Map</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Charts/VectorMap">Vector Map</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-caption">
@@ -406,7 +414,7 @@
                         <i class="ph-duotone ph-buildings"></i>
                     </li>
                     <li class="pc-item">
-                        <a href="../application/calendar.html" class="pc-link">
+                        <a href="~/Application/calendar" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-calendar-blank"></i>
                             </span>
@@ -414,7 +422,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="../application/chat.html" class="pc-link">
+                        <a href="~/Application/chat" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-chats-circle"></i>
                             </span>
@@ -422,7 +430,7 @@
                         </a>
                     </li>
                     <li class="pc-item">
-                        <a href="../application/gallery.html" class="pc-link">
+                        <a href="~/Application/gallery" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-image"></i>
                             </span>
@@ -437,15 +445,15 @@
                             <span class="pc-mtext">E-commerce</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="../application/ecom_product.html">Product</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/ecom_product-details.html">Product details</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/ecom_product-list.html">Product List</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/ecom_product-add.html">Add New Product</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/ecom_checkout.html">Checkout</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/Product">Product</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/Productdetails~/Application/Productdetails">Product details</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/ProductList">Product List</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/AddNewProduct">Add New Product</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/Checkout">Checkout</a></li>
                         </ul>
                     </li>
                     <li class="pc-item">
-                        <a href="../application/mail.html" class="pc-link">
+                        <a href="~/Application/mail" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-envelope-open"></i>
                             </span>
@@ -460,10 +468,10 @@
                             <span class="pc-mtext">Users</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="../application/account-profile.html">Account Profile</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/social-media.html">Social media</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/user-card.html">User Card</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/user-list.html">User List</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/AccountProfile">Account Profile</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/SocialMedia">Social media</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/UserCard">User Card</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/UserList">User List</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -474,9 +482,9 @@
                             <span class="pc-mtext">Invoice</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="../application/invoice-list.html">Invoice List</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/invoice-create.html">Create</a></li>
-                            <li class="pc-item"><a class="pc-link" href="../application/invoice-view.html">Preview</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/InvoiceList">Invoice List</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/Create">Create</a></li>
+                            <li class="pc-item"><a class="pc-link" href="~/Application/Preview">Preview</a></li>
                         </ul>
                     </li>
 
@@ -497,11 +505,11 @@
                                     Authentication 1<span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/login-v1.html">Login</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/register-v1.html">Register</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/forgot-password-v1.html">Forgot Password</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/reset-password-v1.html">reset password</a> </li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/code-verification-v1.html">code verification</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/Login1">Login</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/Register1">Register</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/ForgotPassword1">Forgot Password</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/ResetPassword1">reset password</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/CodeVerification1">code verification</a></li>
                                 </ul>
                             </li>
                             <li class="pc-item pc-hasmenu">
@@ -509,11 +517,11 @@
                                     Authentication 2<span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                                 </a>
                                 <ul class="pc-submenu">
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/login-v2.html">Login</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/register-v2.html">Register</a></li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/forgot-password-v2.html">Forgot password</a> </li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/reset-password-v2.html">reset password</a> </li>
-                                    <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/code-verification-v2.html">code verification</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/Login2">Login</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/Register2">Register</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/ForgotPassword2">Forgot password</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/ResetPassword2">reset password</a></li>
+                                    <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/CodeVerification2">code verification</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -526,14 +534,14 @@
                             <span class="pc-mtext">Maintenance</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/error-404.html">Error 404</a></li>
-                            <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/connection-lost.html">Connection lost</a></li>
-                            <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/under-construction.html">Under Construction</a></li>
-                            <li class="pc-item"><a class="pc-link" target="_blank" href="../pages/coming-soon.html">Coming soon</a></li>
+                            <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/Error404">Error 404</a></li>
+                            <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/ConnectionLost">Connection lost</a></li>
+                            <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/UnderConstruction">Under Construction</a></li>
+                            <li class="pc-item"><a class="pc-link" target="_blank" href="~/Pages/ComingSoon">Coming soon</a></li>
                         </ul>
                     </li>
                     <li class="pc-item">
-                        <a href="../pages/landing.html" class="pc-link" target="_blank">
+                        <a href="~/Pages/Landing" class="pc-link" target="_blank">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-rocket"></i>
                             </span><span class="pc-mtext">Landing</span>
@@ -591,7 +599,7 @@
                         </ul>
                     </li>
                     <li class="pc-item">
-                        <a href="../other/sample-page.html" class="pc-link">
+                        <a href="~/SamplePage" class="pc-link">
                             <span class="pc-micon">
                                 <i class="ph-duotone ph-desktop"></i>
                             </span>
@@ -601,7 +609,7 @@
 
                 </ul>
                 <div class="card nav-action-card bg-brand-color-4">
-                    <div class="card-body" style="background-image: url('~/images/layout/nav-card-bg.svg')">
+                    <div class="card-body" style="background-image: url('/images/layout/nav-card-bg.svg')">
                         <h5 class="text-dark">Help Center</h5>
                         <p class="text-dark text-opacity-75">Please contact us for more questions.</p>
                         <a href="https://codedthemes.support-hub.io/" class="btn btn-primary" target="_blank">Go to help Center</a>
@@ -1149,7 +1157,7 @@
                 </div>
                 <div class="col-sm-6 ms-auto my-1">
                     <ul class="list-inline footer-link mb-0 justify-content-sm-end d-flex">
-                        <li class="list-inline-item"><a href="../index.html">Home</a></li>
+                        <li class="list-inline-item"><a href="~/Home/Preview">Home</a></li>
                         <li class="list-inline-item">
                             <a href="https://codedthemes-3.gitbook.io/light-able-bootstrap/"
                                target="_blank">Documentation</a>
@@ -1329,9 +1337,6 @@
         </div>
     </div>
     <!-- Required Js -->
-    <script src="~/js/plugins/popper.min.js"></script>
-    <script src="~/js/plugins/simplebar.min.js"></script>
-    <script src="~/js/plugins/bootstrap.min.js"></script>
     <script src="~/js/fonts/custom-font.js"></script>
     <script src="~/js/pcoded.js"></script>
     <script src="~/js/plugins/feather.min.js"></script>

@@ -195,3 +195,17 @@
     <!-- [ Classic-editor ] end -->
 </div>
 <!-- [ Main Content ] end -->
+<!-- [Page Specific JS] start -->
+<!-- Ckeditor js -->
+<script src="~/js/plugins/ckeditor/document/ckeditor.js"></script>
+<script>
+    (function () {
+        DecoupledEditor.create(document.querySelector('.document-editor__editable'))
+            .then((editor) => {
+                const toolbarContainer = document.querySelector('.document-editor__toolbar');
+                toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+            })
+            .catch((error) => { });
+    })();
+</script>
+<!-- [Page Specific JS] end -->

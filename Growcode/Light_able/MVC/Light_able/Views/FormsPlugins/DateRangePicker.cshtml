@@ -53,3 +53,31 @@
     <!-- [ form-element ] end -->
 </div>
 <!-- [ Main Content ] end -->
+<!-- [Page Specific JS] start -->
+<!-- daterangepicker -->
+<script src="~/js/plugins/flatpickr.min.js"></script>
+<script>
+    // minimum setup
+    document.querySelector('#pc-date_range_picker-1').flatpickr({
+        mode: 'range'
+    });
+    document.querySelector('#pc-date_range_picker-2').flatpickr({
+        mode: 'range'
+    });
+    document.querySelector('#pc-date_range_picker-3').flatpickr({
+        mode: 'range',
+        minDate: 'today',
+        dateFormat: 'Y-m-d',
+        disable: [
+            function (date) {
+                return !(date.getDate() % 8);
+            }
+        ]
+    });
+    document.querySelector('#pc-date_range_picker-4').flatpickr({
+        mode: 'range',
+        dateFormat: 'Y-m-d',
+        defaultDate: ['2016-10-10', '2016-10-20']
+    });
+</script>
+<!-- [Page Specific JS] end -->

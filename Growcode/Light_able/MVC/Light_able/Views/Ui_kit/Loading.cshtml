@@ -24,8 +24,6 @@
     <!-- [ sample-page ] end -->
 </div>
 <!-- [ Main Content ] end -->
-    </div>
-  </div>
 <!-- Loader -->
 <div class="loader">
     <div class="p-4 text-center">
@@ -34,17 +32,17 @@
         <p class="mb-0">Please wait while we get your information from the web</p>
     </div>
 </div>
-<!-- [ Main Content ] end -->
 
-<script>
+
+<script>    
 
     var control = document.querySelector('#show-loader');
-    var elem = document.querySelector('.loader'),
-       fadeInInterval,
+    var fadeInInterval,
         fadeOutInterval;
 
     if (control) {
         control.addEventListener('click', function () {
+            var elem = document.querySelector('.loader')
             if (!elem.classList.contains('is-active')) {
                 clearInterval(fadeInInterval);
                 clearInterval(fadeOutInterval);
