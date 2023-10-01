@@ -10,7 +10,8 @@ $white:     #ffffff;
 
 // scss-docs-start gray-color-variables
 $white:    #fff;
-$gray-100: #f3f6f9;
+$gray-100: #fafafe;
+$gray-150: #f5f5fe;
 $gray-200: #e9eaee;
 $gray-300: #e9ebec;
 $gray-400: #ced4da;
@@ -20,7 +21,7 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
-$card-bg:    $gray-200;
+$card-bg:    $gray-150;
 
 
 [data-theme=light]:root {
@@ -93,7 +94,7 @@ $card-bg:    $gray-200;
     --form-rgba: rgba(29, 30, 33, 0.7);
     
   .card {
-    background-color: $gray-300;
+    background-color: $gray-900;
   }
 }
 

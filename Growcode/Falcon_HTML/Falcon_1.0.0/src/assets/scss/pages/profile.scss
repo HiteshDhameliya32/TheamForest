@@ -109,8 +109,9 @@
             box-shadow: 0 5px 13px rgba(60, 72, 88, 0.2) !important;
             background-color: var(--theme-light--bc);
             h5 {
-              background-color: $primary;
-              color: $white;
+              background-color: var(--gray-100);
+              border: 1px solid var(--gray-200);
+              border-radius: 6px;
               transition: all 0.3s ease;
               padding: 5px;
             }
