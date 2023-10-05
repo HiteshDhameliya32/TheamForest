@@ -1,0 +1,129 @@
+/*
+-------------------------------------------------------------------------
+* Template Name    : Faadmin - Admin* 
+* Author           : ThemesBoss                                         *
+* Version          : 2.0.0                                              *
+* Created          : July 2023                                          *
+* File Description : Main scss file of the admin                        *
+*------------------------------------------------------------------------
+*/
+
+// settings
+
+//Core files
+// Add your color variables here
+$primary:   #2c48a3;
+$white:     #ffffff;
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #fcfcfd;
+// $gray-150: #f5f5fe;
+$gray-200: #e9eaee;
+$gray-300: #e9ebec;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #878a99;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$card-bg:    $white;
+
+
+[data-theme=light]:root {
+  --light:     #{$gray-100};
+  --gray:     #fcfcfe;
+  --gray-100: #f9faff;
+  --gray-200: #e9eaee;
+  --gray-300: #e9ebec;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #878a99;
+  --gray-700: #343a40;
+  --gray-800: #343a40;
+  --gray-900: #19191a;
+
+
+  --rgba-light--bc: rgba(255, 255, 255, 0.4);
+  --rgba-light: rgba(255, 255, 255, 0.1);
+  
+  --shadow-sm:  0px 0px 3px rgba(000, 000, 000, .3);
+  --shadow-md: 0px 0px 4px rgba(000, 000, 000, 0.08);
+  --component-bg: #f5f5f5;
+  --text-primary: #2c48a3;
+  --form-rgba: rgba(251, 246, 246, 0.48);
+  
+}
+[data-theme=dark]:root {
+    $white: #000;
+
+    // overwrite dark color variables
+    --bs-primary-rgb: 48, 81, 137;
+    --bs-body-bg: #1a1d21;
+    --light:  $gray-100;
+    --bs-white: #000;
+
+    // Color system - Dark Mode only
+    --gray:     #030303;
+    $gray-100:  #17181a;
+    $gray-200:  #161619;
+    $gray-300:  #212427;
+    $gray-400:  #878a99;
+    $gray-500:  #adb5bd;
+    $gray-600:  #bfc8e2;
+    $gray-700:  #ced4da;
+    $gray-800:  #eff2f7;
+    $gray-900:  #f3f6f9;
+
+    --light:  #{$gray-200};
+    --gray-100: #{$gray-100};
+    --gray-200: #{$gray-200};
+    --gray-300: #{$gray-300};
+    --gray-400: #{$gray-400};
+    --gray-500: #{$gray-500};
+    --gray-600: #{$gray-600};
+    --gray-700: #{$gray-700};
+    --gray-800: #{$gray-800};
+    --gray-900: #{$gray-900};
+
+
+    // body
+    --bs-body-color: #{$gray-700};
+    --bs-secondary-color: #{$gray-400};
+    --rgba-light--bc: rgba(000, 000, 000, 0.4);
+    --rgba-light: rgba(000, 000, 000, 0.8);
+
+    --shadow-sm: 0px 0px 3px rgba(255, 255, 255, .3);
+    --shadow-md: 0px 0px 6px rgba(255, 255, 255, .6);
+    --component-bg: #222326;
+    --text-primary: #ced4da;
+    --form-rgba: rgba(29, 30, 33, 0.7);
+    
+  .card {
+    background-color: $gray-900;
+  }
+}
+
+
+
+
+// components
+// @import "./variables.scss";
+@import "./components/helper.scss";
+@import "./components/button.scss";
+
+@import "alert.scss";
+@import "blank-page.scss";
+@import "custom.scss";
+@import "dashboard.scss";
+@import "extra-page.scss";
+@import "general.scss";
+@import "icon.scss";
+@import "map.scss";
+@import "nav-accordions.scss";
+@import "panel.scss";
+@import "progress.scss";
+@import "table.scss";
+@import "form.scss";
+@import "responsive.scss";
