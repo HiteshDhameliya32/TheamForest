@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Themforest Converted Products\\Light_able\\MVC\\Light_able\\Light_able.csproj",
+      "projectUniqueName": "E:\\Themforest Converted Products\\Growcode\\Light_able\\MVC\\Light_able\\Light_able.csproj",
       "projectName": "Light_able",
-      "projectPath": "E:\\Themforest Converted Products\\Light_able\\MVC\\Light_able\\Light_able.csproj",
+      "projectPath": "E:\\Themforest Converted Products\\Growcode\\Light_able\\MVC\\Light_able\\Light_able.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\Themforest Converted Products\\Light_able\\MVC\\Light_able\\obj\\",
+      "outputPath": "E:\\Themforest Converted Products\\Growcode\\Light_able\\MVC\\Light_able\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

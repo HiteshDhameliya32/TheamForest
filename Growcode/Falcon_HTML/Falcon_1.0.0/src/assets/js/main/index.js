@@ -177,3 +177,10 @@ function activeTestimonial(id, className, hasRemove) {
     contentTitle.classList.add('active');
   }
 }
+
+// Get the current year
+var currentYear = new Date().getFullYear();
+var cyDiv = document.getElementById("currentYear");
+// Display the current year in the specified element
+if(cyDiv)
+  cyDiv.textContent = currentYear;

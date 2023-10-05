@@ -39,3 +39,14 @@
     <!-- [ Classic-editor ] end -->
 </div>
 <!-- [ Main Content ] end -->
+<!-- [Page Specific JS] start -->
+<!-- Ckeditor js -->
+<script src="~/js/plugins/ckeditor/balloon/ckeditor.js"></script>
+<script>
+    (function () {
+        BalloonEditor.create(document.querySelector('#cke5-balloon-block-demo')).catch((error) => {
+            console.error(error);
+        });
+    })();
+</script>
+<!-- [Page Specific JS] end -->

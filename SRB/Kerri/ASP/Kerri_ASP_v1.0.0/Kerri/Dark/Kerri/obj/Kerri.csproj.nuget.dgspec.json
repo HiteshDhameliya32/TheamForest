@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Themforest Converted Products\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj": {}
+    "E:\\Themforest Converted Products\\SRB\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj": {}
   },
   "projects": {
-    "E:\\Themforest Converted Products\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj": {
+    "E:\\Themforest Converted Products\\SRB\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Themforest Converted Products\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj",
+        "projectUniqueName": "E:\\Themforest Converted Products\\SRB\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj",
         "projectName": "Kerri",
-        "projectPath": "E:\\Themforest Converted Products\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj",
+        "projectPath": "E:\\Themforest Converted Products\\SRB\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\Kerri.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\Themforest Converted Products\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\obj\\",
+        "outputPath": "E:\\Themforest Converted Products\\SRB\\Kerri\\ASP\\Kerri_ASP_v1.0.0\\Kerri\\Dark\\Kerri\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -148,6 +148,11 @@ input {
   color: var(--gray-800);
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer; /* Change cursor to a pointer hand */
+}
+
 ::placeholder {
     color: red;
     opacity: 1;

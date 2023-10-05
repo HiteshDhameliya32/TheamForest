@@ -1,0 +1,34 @@
+﻿@page
+@model Light_able.Pages.AdvanceComponents.TreeViewModel
+@{
+    Layout = "_LayoutComponent";
+    ViewData["Title"] = "Tree View";
+    ViewData["Description"] = "Standalone tree view library";
+}
+
+<!-- [Page specific CSS] start -->
+<!-- jstree css -->
+<link rel="stylesheet" href="~/css/plugins/vanillatree.css">
+<!-- Page specific CSS end  -->
+<!-- [ Main Content ] start -->
+<div class="row">
+    <!-- [ rangeslider ] start -->
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>HTML Demo</h5>
+            </div>
+            <div class="card-body">
+                <div id="tree-demo"> </div>
+                <p id="tree-msg"></p>
+            </div>
+        </div>
+    </div>
+    <!-- [ rangeslider ] end -->
+</div>
+<!-- [ Main Content ] end -->
+<!-- [Page Specific JS] start -->
+<!-- jstree Js -->
+<script src="~/js/plugins/vanillatree.min.js"></script>
+<script src="~/js/pages/ac-treeview.js"></script>
+<!-- [Page Specific JS] end -->

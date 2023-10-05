@@ -72,3 +72,14 @@ Lorem ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá ,
     </div>
 </div>
 <!-- [ form-element ] end -->
+<!-- [Page Specific JS] start -->
+<!-- clipboard -->
+<script src="~/js/plugins/clipboard.min.js"></script>
+<script>
+    // basic example
+    new ClipboardJS('[data-clipboard=true]').on('success', function (e) {
+        e.clearSelection();
+        alert('Copied!');
+    });
+</script>
+<!-- [Page Specific JS] end -->
