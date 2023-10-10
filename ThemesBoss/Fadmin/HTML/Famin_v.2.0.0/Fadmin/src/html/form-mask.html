@@ -1,29 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Responsive Bootstrap Admin Dashboard" />
-        <meta name="keywords" content="agency, bootstrap, business, corporate, creative, landing page, marketing, multipurpose, product, product launch, responsive, software, startup, startup landing page" />
-        <meta name="author" content="ThemesBoss" />
+        @@include('./partials/title-meta.html')
 
-        <!-- Site Title -->
-        <title>Fadmin - Responsive Bootstrap Admin Dashboard</title>
-
-        <!-- Site favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-
-        <!-- Icon Css -->
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-
-        <link href="assets/js/plugins/uniform/css/default.css" rel="stylesheet"/>
-        <link href="assets/js/plugins/switchery/switchery.min.css" rel="stylesheet"/>
-
-        <!-- Custom  Css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        @@include('./partials/head-css.html')
 
     </head>    
     <body>
@@ -31,129 +11,7 @@
         <!-- Page Container -->
         <div class="page-container">
             <!-- Page Sidebar -->
-            <div class="page-sidebar">
-                <a class="logo-box" href="index.html">
-                    <span>
-                        <i class="mdi mdi-chemical-weapon" id="fixed-sidebar-toggle-button"></i>
-                        <span>Fadmin</span>
-                    </span>
-                    
-                    <!-- <i class="mdi mdi-close" id="sidebar-toggle-button-close"></i> -->
-                </a>
-                <div class="page-sidebar-inner">
-                    <div class="page-sidebar-menu">
-                        <ul class="accordion-menu">
-                            <li>
-                                <a href="index.html">
-                                    <i class="menu-icon mdi mdi-home"></i><span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-bullseye"></i><span>UI Elements</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="ui-buttons.html">Buttons</a></li>
-                                    <li><a href="ui-panels.html">Panels</a></li>
-                                    <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
-                                    <li><a href="ui-alerts.html">Alerts</a></li>
-                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                                    <li><a href="ui-typography.html">Typography</a></li>
-                                    <li><a href="ui-grid.html">Grid</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-cards-outline"></i><span>Icons</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="icons-material.html">Material Design</a></li>
-                                    <li><a href="icons-ion.html">Ion Icons</a></li>
-                                    <li><a href="icons-fontawesome.html">Font Awesome</a></li>
-                                    <li><a href="icons-feather.html">Feather Icons</a></li>
-                                    <li><a href="icons-themify.html">Themify Icons</a></li>
-                                    <li><a href="icons-dripicons.html">Dripicons</a></li>
-                                    <li><a href="icons-typicons.html">Typicons Icons</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-apple-keyboard-command"></i><span>Layouts</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="blank.html">Blank Page</a></li>
-                                    <li><a href="layout-boxed.html">Boxed Layout</a></li>
-                                    <li><a href="layout-collapsed-sidebar.html">Collapsed Sidebar</a></li>
-                                    <li><a href="layout-fixed-header.html">Fixed Header</a></li>
-                                    <li><a href="layout-fixed-sidebar.html">Fixed Sidebar</a></li>
-                                    <li><a href="layout-fixed-sidebar-header.html">Fixed Sidebar &amp; Header</a></li>
-                                </ul>
-                            </li>
-                            <li class="active-page">
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-clipboard-outline"></i><span>Forms</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">                                  
-                                    <li><a href="form-mask.html" class="active">Form Mask</a></li>
-                                    <li><a href="form-elements.html">Form Elements</a></li>
-                                    <li><a href="form-xeditable.html">Form Xeditable</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-table"></i><span>Tables</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="tables-footable.html">Foo Table</a></li>
-                                    <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                    <li><a href="tables-basic.html">Basic Tables</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-chart-bubble"></i><span>Chart</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="chart-morris.html">Morris Chart</a></li>
-                                    <li><a href="chart-c3.html">C3 Chart</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="maps.html">
-                                    <i class="menu-icon mdi mdi-map-marker-multiple"></i><span>Vector Maps</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-google-pages"></i><span>Extra Pages</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="pages-login.html">Login</a></li>
-                                    <li><a href="pages-register.html">Register</a></li>
-                                    <li><a href="pages-recoverpw.html">Recover Password</a></li>
-                                    <li><a href="pages-lock-screen.html">Lock Screen</a></li>
-                                    <li><a href="pages-400.html">Error 400</a></li>
-                                    <li><a href="pages-403.html">Error 403</a></li>
-                                    <li><a href="pages-404.html">Error 404</a></li>
-                                    <li><a href="pages-500.html">Error 500</a></li>
-                                    <li><a href="pages-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-divider"></li>
-                            <li>
-                                <a href="index.html">
-                                    <i class="menu-icon mdi mdi-incognito"></i><span>Documentation</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html">
-                                    <i class="menu-icon mdi mdi-stackexchange"></i><span>Changelog</span><span class="label label-danger">1.0</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @@include('./partials/left-sidebar.html')
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
@@ -244,23 +102,10 @@
                 <!-- /Page Header -->
                 <!-- Page Inner -->
                 <div class="page-inner">
-                    <div class="page-title mb-15">
-                        <div class="d-flex justify-content-between py-2">
-                            <div>
-                                <h3 class="breadcrumb-header">Form Mask</h3>
-                                <p class="text-muted mb-0">Nam libero tempore, cum soluta nobis</p>
-                            </div>
-                            <div class="pull-right">
-                                <div class="btn-group mx-auto">
-                                    <ol class="breadcrumb hide-phone m-0">
-                                        <li class="breadcrumb-item"><a href="#">Fadmin</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                                        <li class="breadcrumb-item active">Form Mask</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Page Heading -->
+                    @@include('./partials/component/pageHeader.html', {'title': 'Form Mask', 'breadcrumb': 'Fadmin/Forms','description':'Nam libero tempore, cum soluta nobis'})
+                    <!-- Page Heading -->
+                    
                     <div id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-12">

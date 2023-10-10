@@ -59,8 +59,6 @@ gulp.task("build", function () {
     css: [
       "node_modules/bootstrap/dist/css/bootstrap.min.css",
       "node_modules/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "node_modules/bootstrap/dist/css/bootstrap.min.css.map",
-      "node_modules/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "node_modules/simplebar/dist/simplebar.min.css",
     ],
   };

@@ -2,13 +2,12 @@
     <div class="page-right-sidebar-inner">
         <div class="right-sidebar-top">
             <div class="right-sidebar-tabs">
-                <!-- Nav tabs -->
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li role="presentation" class="nav-item">
-                        <a class="nav-link active" href="#chat" id="chat-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls="tab" aria-selected="true">chat</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent border-0 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">chat</button>
                     </li>
-                    <li role="presentation" class="nav-item" id="settings-tab">
-                        <a class="nav-link" href="#settings" id="settings-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls="tab" aria-selected="false">settings</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent border-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">settings</button>
                     </li>
                 </ul>
             </div>
@@ -16,8 +15,8 @@
         </div>
         <div class="right-sidebar-content">
             <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active show" id="chat">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" role="tabpanel"  id="home-tab-pane" aria-labelledby="home-tab" tabindex="0">
                     <div class="chat-list">
                         <span class="chat-title">Recent</span>
                         <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread" data-sidebar-id="chat-right-sidebar">
@@ -76,7 +75,7 @@
                         <a href="javascript:void(0);" class="load-more-messages" data-bs-toggle="tooltip" data-placement="bottom" title="Load More">&bull;&bull;&bull;</a>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="settings">
+                <div class="tab-pane fade" role="tabpanel"  id="profile-tab-pane" aria-labelledby="profile-tab" tabindex="0">
                     <div class="right-sidebar-settings">
                         <span class="settings-title">General Settings</span>
                         <ul class="sidebar-setting-list list-unstyled">

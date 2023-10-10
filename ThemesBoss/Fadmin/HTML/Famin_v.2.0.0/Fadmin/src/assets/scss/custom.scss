@@ -20,7 +20,7 @@
 }
 
 .bg-muted {
-    background-color: #707070 !important;
+    background-color: var(--muted) !important;
 }
 
 .bg-white {
@@ -36,7 +36,7 @@
 }
 
 .text-muted {
-    color: #707070 !important;
+    color: var(--muted) !important;
 }
 
 .text-custom {
