@@ -32,9 +32,6 @@
 .navbar {
     .navbar-collapse {
         .navbar-nav {
-            // li {
-            //     display: flex;
-            // }
             .dropdown {
                 display: flex;
                 .dropdown-toggle {
@@ -753,7 +750,7 @@ _:future,
 
 .page-right-sidebar {
     width: 231px;
-    background: #fff;
+    background: var(--header-bg);
     border-left: 1px solid #efefef;
     height: 100%;
     min-height: 100%;
@@ -778,7 +775,7 @@ _:future,
 }
 
 .right-sidebar-top {
-    background: #fff;
+    background: var(--header-bg);
     display: flex;
     height: 56px;
     border-bottom: 1px solid #efefef;
@@ -800,7 +797,7 @@ _:future,
 
 .page-right-sidebar .right-sidebar-close {
     float: right;
-    color: #4F5862;
+    color: var(--black);
     opacity: 0.6;
     font-size: 16px;
     padding: 10px 20px;
@@ -896,7 +893,7 @@ _:future,
 }
 
 .chat-list .chat-item:hover {
-    background: #f9f9f9;
+    background: var(--bs-body-bg);
 }
 
 .chat-list .chat-item img {
@@ -936,7 +933,7 @@ _:future,
 
 .chat-list .chat-item .chat-info span.chat-author {
     display: block;
-    color: #4F5862;
+    color: var(--black);
     opacity: 0.6;
     font-size: 13px;
     line-height: 15px;
@@ -946,7 +943,7 @@ _:future,
 
 .chat-list .chat-item .chat-info span.chat-text {
     display: block;
-    color: #4F5862;
+    color: var(--muted);
     opacity: 0.6;
     font-size: 13px;
     line-height: 15px;
@@ -959,7 +956,7 @@ _:future,
 
 .chat-list .chat-item .chat-info span.chat-time {
     display: block;
-    color: #4F5862;
+    color: var(--muted);
     opacity: 0.6;
     font-size: 12px;
     line-height: 15px;
@@ -982,12 +979,11 @@ _:future,
     width: 100%;
     margin: 15px auto;
     font-size: 14px;
-    color: #4F5862;
+    color: var(--black);
     opacity: 0.6;
 }
 
 .load-more-messages:hover {
-    color: #4F5862;
     opacity: 1;
 }
 
@@ -1185,7 +1181,7 @@ _:future,
     display: block;
     margin: 5px 0 0 0;
     background: transparent;
-    color: #4F5862;
+    color: var(--muted);
     opacity: 0.6;
 }
 
@@ -1197,14 +1193,14 @@ span.chat-title {
     display: block;
     margin: 5px 0 0 0;
     background: transparent;
-    color: #4F5862;
+    color: var(--black);
     opacity: 0.6;
 }
 
 .sidebar-setting-list li {
     padding: 12px 25px;
     font-size: 13px;
-    color: #4F5862;
+    color: var(--black);
 }
 
 .sidebar-setting-list li:last-child {

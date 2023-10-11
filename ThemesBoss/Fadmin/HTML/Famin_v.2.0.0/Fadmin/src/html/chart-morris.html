@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./partials/main.html')
     @@include('./partials/title-meta.html')
 
     @@include('./partials/head-css.html')
@@ -100,7 +99,7 @@
                 <!-- Page Inner -->
                 <div class="page-inner">
                     <!-- Page Heading -->
-                    @@include('./partials/component/pageHeader.html', {'title': 'Morris Chart', 'breadcrumb': 'Fadmin/Charts','description':'Nam libero tempore, cum soluta nobis'})
+                    @@include('./partials/component/pageHeader.html', {'title': 'Morris Chart', 'breadcrumb': 'Fadmin / Charts','description':'Nam libero tempore, cum soluta nobis'})
                     <!-- Page Heading -->
                     
                     <div id="main-wrapper">
@@ -211,13 +210,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Main Wrapper -->
-                    <div class="page-footer">
-                        <p>&copy; <script>document.write(new Date().getFullYear())</script> Fadmin - Crafted with. 
-                            <i class="mdi mdi-heart text-danger"></i>
-                            <a href="https://themeforest.net/user/themesboss" target="_blank" class="text-dark">ThemesBoss.</a>
-                        </p>
-                    </div>
+                        <!-- Main Wrapper -->
+
+                        <!-- footer -->
+                        @@include('./partials/footer.html')
                 </div>
                 <!-- /Page Inner -->
                 <div class="page-right-sidebar" id="main-right-sidebar">

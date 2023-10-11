@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./partials/main.html')
     <head>
         @@include('./partials/title-meta.html')
         
@@ -103,7 +102,7 @@
                 <!-- Page Inner -->
                 <div class="page-inner">
                     <!-- Page Heading -->
-                    @@include('./partials/component/pageHeader.html', {'title': 'Progressbars', 'breadcrumb': 'Fadmin/Elements','description':'Nam libero tempore, cum soluta nobis'})
+                    @@include('./partials/component/pageHeader.html', {'title': 'Progressbars', 'breadcrumb': 'Fadmin / Elements','description':'Nam libero tempore, cum soluta nobis'})
                     <!-- Page Heading -->
                     
                     <div id="main-wrapper">
@@ -239,13 +238,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Main Wrapper -->
-                    <div class="page-footer">
-                        <p>&copy; <script>document.write(new Date().getFullYear())</script> Fadmin - Crafted with. 
-                            <i class="mdi mdi-heart text-danger"></i>
-                            <a href="https://themeforest.net/user/themesboss" target="_blank" class="text-dark">ThemesBoss.</a>
-                        </p>
-                    </div>
+                        <!-- Main Wrapper -->
+
+                        <!-- footer -->
+                        @@include('./partials/footer.html')
                 </div>
                 <!-- /Page Inner -->
                 <div class="page-right-sidebar" id="main-right-sidebar">
@@ -423,15 +419,7 @@
         </div>
         <!-- /Page Container -->
 
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="assets/js/plugins/uniform/js/jquery.uniform.standalone.js"></script>
-        <script src="assets/js/plugins/switchery/switchery.min.js"></script>
-
-        <!-- Custom Js   -->
-        <script src="assets/js/custom.js"></script>  
+@@include('./partials/vendor-scripts.html') 
 
     </body>
 </html>
