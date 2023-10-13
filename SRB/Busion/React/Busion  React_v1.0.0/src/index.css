@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700|Quattrocento+Sans:400,700");
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif !important;
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quattrocento Sans", sans-serif;
+}

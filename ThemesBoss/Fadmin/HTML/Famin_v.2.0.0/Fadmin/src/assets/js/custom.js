@@ -325,7 +325,93 @@ $(document).ready(function() {
         overlay.addEventListener('click', showOverlay);
         
     };
+
+
+    //Toggle Mode
+    const themeToggleSwitch = document.getElementById("theme-toggle-switch");
+      
+    themeToggleSwitch.addEventListener("change", () => {
+        if (document.documentElement.getAttribute("data-bs-theme") === "light") {
+            document.documentElement.setAttribute("data-bs-theme", "dark");
+          
+        } else {
+            document.documentElement.setAttribute("data-bs-theme", "light");
+           
+        }
+    });
+
+
+    //breadcrumb
+    var setBreadcrumb = function (breadcrumbString) {
+        const breadcrumbArray = breadcrumbString.split('/');
+        const breadcrumbPlaceholder = $('#breadcrumb-placeholder');
+        breadcrumbPlaceholder.empty();
+
+        breadcrumbArray.forEach((item, index) => {
+                const li = $('<li class="breadcrumb-item"></li>');
+                if (index === breadcrumbArray.length - 1) {
+                    li.addClass('active');
+                    li.text(item.trim());
+                } else {
+                    const a = $('<a href="#"></a>');
+                    a.text(item.trim());
+                    li.append(a);
+                }
+                breadcrumbPlaceholder.append(li);
+            });
+    }
     
+    const breadcrumbElement = $('#breadcrumb-placeholder');
+    const breadcrumb = breadcrumbElement.data('breadcrumb');
+    setBreadcrumb(breadcrumb);
+
+
+    //Active Left Sidebar Script 
+
+     // Get the current page's identifier from the data attribute on the div
+     var currentPage = $('.page-sidebar-menu').data('current-page');
+
+     // Select the menu item links in the sidebar (inside the .page-sidebar-menu)
+     var menuItemLinks = $('.page-sidebar-menu ul li a');
+
+     // Loop through each menu item link
+     menuItemLinks.each(function () {
+         var menuItemPage = $(this).data('page');
+
+         // Check if the current page's identifier matches the menu item's data-page attribute
+         if (currentPage === menuItemPage) {
+             // Add the "active-page" class to the parent <li> element
+             $(this).closest('li').addClass('active-page');
+
+             // Add the "active-page" class to the parent <li> element
+             var parentLi = $(this).closest('li');
+
+             parentLi.addClass('active-page');
+         }
+     });
+
+     var activeLi = $('.active-page').closest('ul');
+
+     var closestParent1 = activeLi.get(0).parentNode.closest('li');
+
+     // Add a class to closestParent1
+     $(closestParent1).addClass('open');
+
+     // Set display: block for activeLi
+     activeLi.css('display', 'block');
+
+     // Add "animation" class to all child <li> elements
+     activeLi.find('li').addClass('animation');
+
+
+
+
+
+
+
+
+
+     //Auto run functions
     page_sidebar_init();
     boxed_page();
     accordion_menu();
