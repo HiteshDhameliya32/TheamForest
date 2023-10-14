@@ -1,28 +1,8 @@
 @@include('./partials/main.html')
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Responsive Bootstrap Admin Dashboard" />
-        <meta name="keywords" content="agency, bootstrap, business, corporate, creative, landing page, marketing, multipurpose, product, product launch, responsive, software, startup, startup landing page" />
-        <meta name="author" content="ThemesBoss" />
+        @@include('./partials/title-meta.html')
 
-        <!-- Site Title -->
-        <title>Fadmin - Responsive Bootstrap Admin Dashboard</title>
-
-        <!-- Site favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-
-        <!-- Icon Css -->
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-
-        <link href="assets/js/plugins/uniform/css/default.css" rel="stylesheet"/>
-        <link href="assets/js/plugins/switchery/switchery.min.css" rel="stylesheet"/>
-
-        <!-- Custom  Css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        @@include('./partials/head-css.html')
 
     </head>    
     <body>
@@ -30,217 +10,12 @@
         <!-- Page Container -->
         <div class="page-container container">
             <!-- Page Sidebar -->
-            <div class="page-sidebar">
-                <a class="logo-box" href="index.html">
-                    <span>
-                        <i class="mdi mdi-chemical-weapon" id="fixed-sidebar-toggle-button"></i>
-                        <span>Fadmin</span>
-                    </span>
-                    
-                    <!-- <i class="mdi mdi-close" id="sidebar-toggle-button-close"></i> -->
-                </a>
-                <div class="page-sidebar-inner">
-                    <div class="page-sidebar-menu">
-                        <ul class="accordion-menu">
-                            <li>
-                                <a href="index.html">
-                                    <i class="menu-icon mdi mdi-home"></i><span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-bullseye"></i><span>UI Elements</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="ui-buttons.html">Buttons</a></li>
-                                    <li><a href="ui-panels.html">Panels</a></li>
-                                    <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
-                                    <li><a href="ui-alerts.html">Alerts</a></li>
-                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                                    <li><a href="ui-typography.html">Typography</a></li>
-                                    <li><a href="ui-grid.html">Grid</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-cards-outline"></i><span>Icons</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="icons-material.html">Material Design</a></li>
-                                    <li><a href="icons-ion.html">Ion Icons</a></li>
-                                    <li><a href="icons-fontawesome.html">Font Awesome</a></li>
-                                    <li><a href="icons-feather.html">Feather Icons</a></li>
-                                    <li><a href="icons-themify.html">Themify Icons</a></li>
-                                    <li><a href="icons-dripicons.html">Dripicons</a></li>
-                                    <li><a href="icons-typicons.html">Typicons Icons</a></li>
-                                </ul>
-                            </li>
-                            <li class="active-page">
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-apple-keyboard-command"></i><span>Layouts</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="blank.html">Blank Page</a></li>
-                                    <li><a href="layout-boxed.html" class="active">Boxed Layout</a></li>
-                                    <li><a href="layout-collapsed-sidebar.html">Collapsed Sidebar</a></li>
-                                    <li><a href="layout-fixed-header.html">Fixed Header</a></li>
-                                    <li><a href="layout-fixed-sidebar.html">Fixed Sidebar</a></li>
-                                    <li><a href="layout-fixed-sidebar-header.html">Fixed Sidebar &amp; Header</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-clipboard-outline"></i><span>Forms</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">                                    
-                                    <li><a href="form-mask.html">Form Mask</a></li>
-                                    <li><a href="form-elements.html">Form Elements</a></li>
-                                    <li><a href="form-xeditable.html">Form Xeditable</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-table"></i><span>Tables</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="tables-footable.html">Foo Table</a></li>
-                                    <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                    <li><a href="tables-basic.html">Basic Tables</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-chart-bubble"></i><span>Chart</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="chart-morris.html">Morris Chart</a></li>
-                                    <li><a href="chart-c3.html">C3 Chart</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="maps.html">
-                                    <i class="menu-icon mdi mdi-map-marker-multiple"></i><span>Vector Maps</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="menu-icon mdi mdi-google-pages"></i><span>Extra Pages</span><i class="accordion-icon fa fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="pages-login.html">Login</a></li>
-                                    <li><a href="pages-register.html">Register</a></li>
-                                    <li><a href="pages-recoverpw.html">Recover Password</a></li>
-                                    <li><a href="pages-lock-screen.html">Lock Screen</a></li>
-                                    <li><a href="pages-400.html">Error 400</a></li>
-                                    <li><a href="pages-403.html">Error 403</a></li>
-                                    <li><a href="pages-404.html">Error 404</a></li>
-                                    <li><a href="pages-500.html">Error 500</a></li>
-                                    <li><a href="pages-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-divider"></li>
-                            <li>
-                                <a href="index.html">
-                                    <i class="menu-icon mdi mdi-incognito"></i><span>Documentation</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html">
-                                    <i class="menu-icon mdi mdi-stackexchange"></i><span>Changelog</span><span class="label label-danger">1.0</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @@include('./partials/left-sidebar.html')
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Header -->
-                <div class="page-header">
-                    <div class="search-form">
-                        <form action="#" method="GET">
-                            <div class="input-group">
-                                <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" id="close-search" type="button"><i class="mdi mdi-close"></i></button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                    <nav class="navbar navbar-expand-lg navbar-default bg-body-tertiary">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div class="navbar-header">
-                                    <div class="logo-sm">
-                                        <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
-                                        <a class="logo-box" href="index.html"><span>Fadmin</span></a>
-                                    </div>                                                             
-                                </div>
-                                <div class="d-lg-flex justify-content-between align-items-center">
-                                    <ul class="nav navbar-nav d-none d-lg-flex mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="mdi mdi-menu"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="mdi mdi-fullscreen"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="search-button"><i class="mdi mdi-magnify"></i></a></li>
-                                    </ul>
-                                    <ul class="nav navbar-nav d-md-flex d-none align-items-center navbar-right mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar"><i class="mdi mdi-email-outline"></i></a></li>
-                                        <!-- Default dropstart button -->
-                                        <li class="dropdown">
-                                            <a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-bell-outline"></i></a>
-                                            <ul class="dropdown-menu dropdown-lg dropdown-content dropdown-menu-end">
-                                                <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
-                                                <li class="slimscroll dropdown-notifications">
-                                                    <ul class="list-unstyled dropdown-oc">
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-photo"></i></span>
-                                                            <span class="notification-info">Finished uploading photos to gallery <b>"South Africa"</b>.
-                                                                <small class="notification-date">20:00</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-at"></i></span>
-                                                            <span class="notification-info"><b>John Doe</b> mentioned you in a post "Update v1.5".<br>
-                                                                <small class="notification-date">06:07</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-danger"><i class="fa fa-bolt"></i></span>
-                                                            <span class="notification-info">4 new special offers from the apps you follow!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-success"><i class="fa fa-bullhorn"></i></span>
-                                                            <span class="notification-info">There is a meeting with <b>Ethan</b> in 15 minutes!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown user-dropdown">
-                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"><img src="assets/images/avatar/avatar-1.png" alt="" class="rounded-circle"></a>
-                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a href="#">Profile</a></li>
-                                                <li><a href="#">Calendar</a></li>
-                                                <li><a href="#"><span class="badge pull-right badge-danger">42</span>Messages</a></li>
-                                                <li role="separator" class="divider"></li>
-                                                <li><a href="#">Account Settings</a></li>
-                                                <li><a href="#">Log Out</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- /.navbar-collapse -->
-                        </div>
-                        <!-- /.container-fluid -->
-                    </nav>
-                </div>
-                <!-- /Page Header -->
+            <div class="page-content border-start">
+                @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
                     <div class="page-title mb-15">
@@ -263,10 +38,10 @@
                     <div id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="panel mb-0">
+                                <div class="card panel border mb-0">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Panel</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Panel</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div>

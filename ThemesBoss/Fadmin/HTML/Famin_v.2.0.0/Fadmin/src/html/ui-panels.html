@@ -14,91 +14,8 @@
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Header -->
-                <div class="page-header">
-                    <div class="search-form">
-                        <form action="#" method="GET">
-                            <div class="input-group">
-                                <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" id="close-search" type="button"><i class="mdi mdi-close"></i></button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                    <nav class="navbar navbar-expand-lg navbar-default bg-body-tertiary">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div class="navbar-header">
-                                    <div class="logo-sm">
-                                        <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
-                                        <a class="logo-box" href="index.html"><span>Fadmin</span></a>
-                                    </div>                                                             
-                                </div>
-                                <div class="d-lg-flex justify-content-between align-items-center">
-                                    <ul class="nav navbar-nav d-none d-lg-flex mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="mdi mdi-menu"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="mdi mdi-fullscreen"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="search-button"><i class="mdi mdi-magnify"></i></a></li>
-                                    </ul>
-                                    <ul class="nav navbar-nav d-md-flex d-none align-items-center navbar-right mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar"><i class="mdi mdi-email-outline"></i></a></li>
-                                        <!-- Default dropstart button -->
-                                        <li class="dropdown">
-                                            <a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-bell-outline"></i></a>
-                                            <ul class="dropdown-menu dropdown-lg dropdown-content dropdown-menu-end">
-                                                <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
-                                                <li class="slimscroll dropdown-notifications">
-                                                    <ul class="list-unstyled dropdown-oc">
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-photo"></i></span>
-                                                            <span class="notification-info">Finished uploading photos to gallery <b>"South Africa"</b>.
-                                                                <small class="notification-date">20:00</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-at"></i></span>
-                                                            <span class="notification-info"><b>John Doe</b> mentioned you in a post "Update v1.5".<br>
-                                                                <small class="notification-date">06:07</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-danger"><i class="fa fa-bolt"></i></span>
-                                                            <span class="notification-info">4 new special offers from the apps you follow!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-success"><i class="fa fa-bullhorn"></i></span>
-                                                            <span class="notification-info">There is a meeting with <b>Ethan</b> in 15 minutes!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown user-dropdown">
-                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"><img src="assets/images/avatar/avatar-1.png" alt="" class="rounded-circle"></a>
-                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a href="#">Profile</a></li>
-                                                <li><a href="#">Calendar</a></li>
-                                                <li><a href="#"><span class="badge pull-right badge-danger">42</span>Messages</a></li>
-                                                <li role="separator" class="divider"></li>
-                                                <li><a href="#">Account Settings</a></li>
-                                                <li><a href="#">Log Out</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- /.navbar-collapse -->
-                        </div>
-                        <!-- /.container-fluid -->
-                    </nav>
-                </div>
-                <!-- /Page Header -->
+            <div class="page-content border-start">
+                @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
                       <!-- Page Heading -->
@@ -108,9 +25,9 @@
                     <div id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
-                                        <h4 class="mt-0 header-title">Basic Panel</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Basic Panel</h4>
                                         <p class="text-muted mb-24 font-15">By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
 
                                         <div>
@@ -119,13 +36,13 @@
                                     </div>
                                 </div>
 
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
-                                        <h4 class="mt-0 header-title">Panel with footer</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Panel with footer</h4>
                                         <p class="text-muted mb-24 font-15">Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
 
                                         <div>
-                                            <div class="panel panel-default">
+                                            <div class="card panel border panel-default">
                                                 <div class="panel-body">
                                                 Panel content
                                                 </div>
@@ -135,20 +52,20 @@
                                     </div>
                                 </div>
 
-                                <div class="panel mb-0">
+                                <div class="card panel border mb-0">
                                     <div class="panel-body">
-                                        <h4 class="mt-0 header-title">Panel with heading Panel</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Panel with heading Panel</h4>
                                         <p class="text-muted mb-24 font-15">For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
 
                                         <div>
-                                            <div class="panel panel-default">
+                                            <div class="card panel border panel-default">
                                                 <div class="panel-heading">Panel heading without title</div>
                                                 <div class="panel-body">
                                                 Panel content
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-default">
+                                            <div class="card panel border panel-default">
                                                 <div class="panel-heading">
                                                 <h3 class="panel-title mb-0">Panel title</h3>
                                                 </div>
@@ -161,41 +78,41 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="panel mb-0">
+                                <div class="card panel border mb-0">
                                     <div class="panel-body">
-                                        <h4 class="mt-0 header-title">Contextual alternatives Panel</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Contextual alternatives Panel</h4>
                                         <p class="text-muted mb-24 font-15">Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
 
                                         <div>
-                                            <div class="panel panel-color panel-primary">
+                                            <div class="card panel border panel-color panel-primary">
                                                 <div class="panel-heading">Panel heading without title</div>
                                                 <div class="panel-body">
                                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-color panel-success">
+                                            <div class="card panel border panel-color panel-success">
                                                 <div class="panel-heading">Panel heading without title</div>
                                                 <div class="panel-body">
                                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-color panel-info">
+                                            <div class="card panel border panel-color panel-info">
                                                 <div class="panel-heading">Panel heading without title</div>
                                                 <div class="panel-body">
                                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-color panel-warning">
+                                            <div class="card panel border panel-color panel-warning">
                                                 <div class="panel-heading">Panel heading without title</div>
                                                 <div class="panel-body">
                                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-color panel-danger">
+                                            <div class="card panel border panel-color panel-danger">
                                                 <div class="panel-heading">Panel heading without title</div>
                                                 <div class="panel-body">
                                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

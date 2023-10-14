@@ -13,91 +13,8 @@
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Header -->
-                <div class="page-header">
-                    <div class="search-form">
-                        <form action="#" method="GET">
-                            <div class="input-group">
-                                <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" id="close-search" type="button"><i class="mdi mdi-close"></i></button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                    <nav class="navbar navbar-expand-lg navbar-default bg-body-tertiary">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div class="navbar-header">
-                                    <div class="logo-sm">
-                                        <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
-                                        <a class="logo-box" href="index.html"><span>Fadmin</span></a>
-                                    </div>                                                             
-                                </div>
-                                <div class="d-lg-flex justify-content-between align-items-center">
-                                    <ul class="nav navbar-nav d-none d-lg-flex mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="mdi mdi-menu"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="mdi mdi-fullscreen"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="search-button"><i class="mdi mdi-magnify"></i></a></li>
-                                    </ul>
-                                    <ul class="nav navbar-nav d-md-flex d-none align-items-center navbar-right mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar"><i class="mdi mdi-email-outline"></i></a></li>
-                                        <!-- Default dropstart button -->
-                                        <li class="dropdown">
-                                            <a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-bell-outline"></i></a>
-                                            <ul class="dropdown-menu dropdown-lg dropdown-content dropdown-menu-end">
-                                                <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
-                                                <li class="slimscroll dropdown-notifications">
-                                                    <ul class="list-unstyled dropdown-oc">
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-photo"></i></span>
-                                                            <span class="notification-info">Finished uploading photos to gallery <b>"South Africa"</b>.
-                                                                <small class="notification-date">20:00</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-at"></i></span>
-                                                            <span class="notification-info"><b>John Doe</b> mentioned you in a post "Update v1.5".<br>
-                                                                <small class="notification-date">06:07</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-danger"><i class="fa fa-bolt"></i></span>
-                                                            <span class="notification-info">4 new special offers from the apps you follow!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-success"><i class="fa fa-bullhorn"></i></span>
-                                                            <span class="notification-info">There is a meeting with <b>Ethan</b> in 15 minutes!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown user-dropdown">
-                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"><img src="assets/images/avatar/avatar-1.png" alt="" class="rounded-circle"></a>
-                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a href="#">Profile</a></li>
-                                                <li><a href="#">Calendar</a></li>
-                                                <li><a href="#"><span class="badge pull-right badge-danger">42</span>Messages</a></li>
-                                                <li role="separator" class="divider"></li>
-                                                <li><a href="#">Account Settings</a></li>
-                                                <li><a href="#">Log Out</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- /.navbar-collapse -->
-                        </div>
-                        <!-- /.container-fluid -->
-                    </nav>
-                </div>
-                <!-- /Page Header -->
+            <div class="page-content border-start">
+                @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
                     <!-- Page Heading -->
@@ -107,10 +24,10 @@
                     <div id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Alert example</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Alert example</h4>
                                         <p class="text-muted mb-24 font-15">Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g., <code>.alert-success</code>). For inline dismissal, use the alerts jQuery plugin.</p>
 
                                         <div>
@@ -133,10 +50,10 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Link Color</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Link Color</h4>
                                         <p class="text-muted mb-24 font-15">Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
 
                                         <div>
@@ -162,10 +79,10 @@
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="panel mb-0">
+                                <div class="card panel border mb-0">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Dismissing Alert</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Dismissing Alert</h4>
                                         <p class="text-muted mb-24 font-15">Using the alert JavaScript plugin, it’s possible to dismiss any alert inline.</p>
 
                                         <div>
@@ -193,10 +110,10 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="panel mb-0">
+                                <div class="card panel border mb-0">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Additional content</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Additional content</h4>
                                         <p class="text-muted mb-24 font-15">Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
 
                                         <div>

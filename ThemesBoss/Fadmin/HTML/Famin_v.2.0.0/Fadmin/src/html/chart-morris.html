@@ -11,91 +11,8 @@
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Header -->
-                <div class="page-header">
-                    <div class="search-form">
-                        <form action="#" method="GET">
-                            <div class="input-group">
-                                <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" id="close-search" type="button"><i class="mdi mdi-close"></i></button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                    <nav class="navbar navbar-expand-lg navbar-default bg-body-tertiary">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div class="navbar-header">
-                                    <div class="logo-sm">
-                                        <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
-                                        <a class="logo-box" href="index.html"><span>Fadmin</span></a>
-                                    </div>                                                             
-                                </div>
-                                <div class="d-lg-flex justify-content-between align-items-center">
-                                    <ul class="nav navbar-nav d-none d-lg-flex mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="mdi mdi-menu"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="mdi mdi-fullscreen"></i></a></li>
-                                        <li><a href="javascript:void(0)" id="search-button"><i class="mdi mdi-magnify"></i></a></li>
-                                    </ul>
-                                    <ul class="nav navbar-nav d-md-flex d-none align-items-center navbar-right mb-2 mb-lg-0">
-                                        <li><a href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar"><i class="mdi mdi-email-outline"></i></a></li>
-                                        <!-- Default dropstart button -->
-                                        <li class="dropdown">
-                                            <a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-bell-outline"></i></a>
-                                            <ul class="dropdown-menu dropdown-lg dropdown-content dropdown-menu-end">
-                                                <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
-                                                <li class="slimscroll dropdown-notifications">
-                                                    <ul class="list-unstyled dropdown-oc">
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-photo"></i></span>
-                                                            <span class="notification-info">Finished uploading photos to gallery <b>"South Africa"</b>.
-                                                                <small class="notification-date">20:00</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-primary"><i class="fa fa-at"></i></span>
-                                                            <span class="notification-info"><b>John Doe</b> mentioned you in a post "Update v1.5".<br>
-                                                                <small class="notification-date">06:07</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-danger"><i class="fa fa-bolt"></i></span>
-                                                            <span class="notification-info">4 new special offers from the apps you follow!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><span class="notification-badge bg-success"><i class="fa fa-bullhorn"></i></span>
-                                                            <span class="notification-info">There is a meeting with <b>Ethan</b> in 15 minutes!
-                                                                <small class="notification-date">Yesterday</small>
-                                                            </span></a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown user-dropdown">
-                                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"><img src="assets/images/avatar/avatar-1.png" alt="" class="rounded-circle"></a>
-                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a href="#">Profile</a></li>
-                                                <li><a href="#">Calendar</a></li>
-                                                <li><a href="#"><span class="badge pull-right badge-danger">42</span>Messages</a></li>
-                                                <li role="separator" class="divider"></li>
-                                                <li><a href="#">Account Settings</a></li>
-                                                <li><a href="#">Log Out</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- /.navbar-collapse -->
-                        </div>
-                        <!-- /.container-fluid -->
-                    </nav>
-                </div>
-                <!-- /Page Header -->
+            <div class="page-content border-start">
+                @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
                     <!-- Page Heading -->
@@ -105,10 +22,10 @@
                     <div id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Line Chart</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Line Chart</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-line" style="height: 350px;"></div>
@@ -117,10 +34,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Updating Chart</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Updating Chart</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-updating" style="height: 350px;"></div>
@@ -131,10 +48,10 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Bar Chart</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Bar Chart</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-bar" style="height: 350px;"></div>
@@ -144,10 +61,10 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Stacked Bar Chart</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Stacked Bar Chart</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-stacked-bar" style="height: 350px;"></div>
@@ -156,10 +73,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Area Chart</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Area Chart</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-area" style="height: 350px;"></div>
@@ -171,10 +88,10 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="panel mb-24">
+                                <div class="card panel border mb-24">
                                     <div class="panel-body">
 
-                                        <h4 class="mt-0 header-title">Area Chart without Point & Line</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Area Chart without Point & Line</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-area-without-line-point" style="height: 350px;" ></div>
@@ -185,10 +102,10 @@
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="panel">
+                                <div class="card panel border">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Area Chart without Smooth</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Area Chart without Smooth</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-area-without-smooth" style="height: 350px;"></div>
@@ -197,10 +114,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="panel">
+                                <div class="card panel border">
                                     <div class="panel-body">
         
-                                        <h4 class="mt-0 header-title">Donut Chart</h4>
+                                        <h4 class="mt-0 header-title border-bottom">Donut Chart</h4>
                                         <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div id="morris-donut" style="height: 350px;"></div>
@@ -391,20 +308,11 @@
         </div>
         <!-- /Page Container -->
 
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="assets/js/plugins/uniform/js/jquery.uniform.standalone.js"></script>
-        <script src="assets/js/plugins/switchery/switchery.min.js"></script>
+        @@include('./partials/vendor-scripts.html')
 
         <!--Morris Chart-->
         <script src="assets/js/plugins/morris/morris.min.js"></script>
-        <script src="assets/js/plugins/raphael/raphael-min.js"></script>
         <script src="assets/js/jquery.morris.init.js"></script>
-
-        <!-- Custom Js   -->
-        <script src="assets/js/custom.js"></script>  
-
+        
     </body>
 </html>

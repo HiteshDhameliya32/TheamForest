@@ -15,7 +15,7 @@
             <div class="page-container">
 
                 <!-- Page Content -->
-                <div class="page-content">
+                <div class="page-content border-start">
 
                     @@include('./partials/navbar.html')
 
@@ -40,7 +40,7 @@
                         <div id="main-wrapper">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
-                                    <div class="card panel mb-24">
+                                    <div class="card panel border mb-24">
                                         <div class="panel-body widget-desk">
                                             <div class="pull-right">
                                                 <h4 class="mt-0 mb-0 f-bold">48505 <span><i class="mdi mdi-arrow-up text-success"></i></span></h4>
@@ -54,7 +54,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
-                                    <div class="card panel mb-24">
+                                    <div class="card panel border mb-24">
                                         <div class="panel-body widget-desk">
                                             <div class="pull-right">
                                                 <h4 class="mt-0 mb-0 f-bold">2832 <span><i class="mdi mdi-arrow-down text-danger"></i></span></h4>
@@ -68,7 +68,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
-                                    <div class="card panel mb-24">
+                                    <div class="card panel border mb-24">
                                         <div class="panel-body widget-desk">
                                             <div class="pull-right">
                                                 <h4 class="mt-0 mb-0 f-bold">2658 <span><i class="mdi mdi-arrow-up text-success"></i></span></h4>
@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
-                                    <div class="card panel mb-24">
+                                    <div class="card panel border mb-24">
                                         <div class="panel-body widget-desk">
                                             <div class="pull-right">
                                                 <h4 class="mt-0 mb-0 f-bold">$4926 <span><i class="mdi mdi-arrow-down text-danger"></i></span></h4>
@@ -100,7 +100,7 @@
 
                             <div class="row">
                                 <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8">
-                                    <div class="card panel mb-24">
+                                    <div class="card panel border mb-24">
                                         <div class="panel-body">
                                             <h5 class="header-title mb-24 mt-0">Order Overview</h5>
                                             <div id="morris-area-example" style="height:350px;"></div>
@@ -108,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-                                    <div class="card panel mb-24">
+                                    <div class="card panel border mb-24">
                                         <div class="panel-body">
                                             <h5 class="header-title mb-24 mt-0">Yearly Revenue</h5>
 
@@ -119,7 +119,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-                                    <div class="card panel mb-0">                                        
+                                    <div class="card panel border mb-0">                                        
                                         <div class="panel-body">
                                             <h4 class="header-title mt-0 mb-24">Type gadgets</h4>
 
@@ -128,7 +128,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8">
-                                    <div class="card panel mb-0">
+                                    <div class="card panel border mb-0">
                                         <div class="panel-body">
             
                                             <h4 class="mt-0 mb-24 header-title">Sale status</h4>
@@ -209,9 +209,13 @@
             </div>
             <!-- /Page Container -->
         </div>
-
+        
         @@include('./partials/vendor-scripts.html')
-
+        
+        <!--Morris Chart-->
+        <script src="assets/js/plugins/morris/morris.min.js"></script>
+        <script src="assets/js/plugins/raphael/raphael-min.js"></script>
+        <script src="assets/js/dashborad.js"></script>
 
     </body>
 </html>

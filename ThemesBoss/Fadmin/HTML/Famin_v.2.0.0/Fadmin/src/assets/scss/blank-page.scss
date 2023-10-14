@@ -53,7 +53,7 @@
         font-weight: 400;
         a {
             &:hover {
-                background: var(--bs-body-bg);
+                background: var(--header-bg);
             }
         }
     }
@@ -151,7 +151,6 @@
     display: block;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 1px solid #e5e9ec;
     background: var(--header-bg);
     padding: 12px;
     color: var(--black);
@@ -343,7 +342,6 @@
         li {
             a {
                 padding-right: 0;
-                border-bottom: 1px solid #e5e9ec;
                 span.notification-badge {
                     width: 40px;
                     height: 40px;
@@ -459,10 +457,8 @@
 .page-content {
     min-height: 56px;
     vertical-align: bottom;
-    // background: #fff;
     width: calc(100% - 240px);
     float: right;
-    border-left: 1px solid #ececec;
 }
 
 .page-sidebar-collapsed {
@@ -656,7 +652,6 @@ _:future,
     margin-bottom: 0;
     height: 56px;
     border-radius: 6px;
-    border: 1px solid #ececec;
 }
 
 .page-header .navbar-default .container-fluid,
@@ -750,7 +745,6 @@ _:future,
 .page-right-sidebar {
     width: 231px;
     background: var(--header-bg);
-    border-left: 1px solid #efefef;
     height: 100%;
     min-height: 100%;
     right: -231px;
@@ -776,8 +770,7 @@ _:future,
 .right-sidebar-top {
     background: var(--header-bg);
     display: flex;
-    height: 56px;
-    border-bottom: 1px solid #efefef;
+    justify-content: space-between;
     .nav-tabs {
         .nav-item {
             .nav-link {
@@ -826,34 +819,31 @@ _:future,
 }
 
 .right-sidebar-tabs {
-    display: flex;
-    align-items: center;
-    width: 174px;
-}
-
-.right-sidebar-tabs li {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.right-sidebar-tabs a {
-    height: 55px;
-    line-height: 33px!important;
-    font-size: 12px;
-    color: #4F5862;
-    opacity: 0.6;
-    text-transform: uppercase;
-    font-weight: 700!important;
-    text-align: center;
-    padding-left: 0!important;
-    padding-right: 0!important;
-    border: 0!important;
-    margin-right: 0!important;
-    border-radius: 0!important;
-    transition: all .2s;
-    margin-left: 0!important;
+    .nav-tabs {
+        .nav-link {
+            display: flex;
+            align-items: center;
+            height: 55px;
+            font-size: 12px;
+            opacity: 0.6;
+            font-weight: 700;
+            text-align: center;
+            padding: 0 12px ;
+            border: 0;
+            margin-right: 0;
+            border-radius: 0;
+            transition: all .2s;
+            margin-left: 0;
+            color: var(--muted);
+            &.active {
+                background-color: var(--bs-body-bg);
+                color: var(--black);
+            }
+            &:hover {
+                color: var(--black);
+            }
+        }
+    }
 }
 
 .right-sidebar-tabs .nav-tabs {
@@ -883,7 +873,6 @@ _:future,
     overflow: hidden;
     position: relative;
     display: block;
-    border-bottom: 1px solid #efefef;
     padding: 5px 0;
 }
 
