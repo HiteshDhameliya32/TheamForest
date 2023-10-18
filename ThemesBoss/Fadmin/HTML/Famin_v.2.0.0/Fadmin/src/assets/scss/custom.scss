@@ -1,6 +1,6 @@
 
 .bg-primary {
-    background-color: #3a80e5 !important;
+    background-color: $primary !important;
 }
 
 .bg-success {
@@ -36,15 +36,15 @@
 }
 
 .text-muted {
-    color: var(--muted) !important;
+    color: $muted !important;
 }
 
 .text-custom {
-    color: #3a80e5 !important;
+    color: $primary !important;
 }
 
 .text-primary {
-    color: #2c7be5 !important;
+    color: $primary !important;
 }
 
 .text-warning {
@@ -73,7 +73,7 @@
 }
 
 .badge-primary {
-    background-color: #3a80e5;
+    background-color: $primary;
 }
 
 .badge-success {
@@ -114,7 +114,7 @@
 }
 
 .list-group-item.active:hover .list-group-item-text {
-    color: #3a80e5;
+    color: $primary;
 }
 
 .list-group-item.active:focus {
@@ -125,11 +125,11 @@
 }
 
 .list-group-item.active:focus .list-group-item-text {
-    color: #3a80e5;
+    color: $primary;
 }
 
 .list-group-item.active .list-group-item-text {
-    color: #3a80e5;
+    color: $primary;
 }
 
 .list-group-item {
@@ -149,7 +149,7 @@
 }
 
 .list-group-item.active>.badge {
-    color: #3a80e5;
+    color: $primary;
 }
 
 .popover-header {

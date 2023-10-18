@@ -12,6 +12,8 @@ var gulp = require("gulp"), // main
   fileinclude = require("gulp-file-include"), // include html files
   browsersync = require("browser-sync"), // browser reload
   htmlmin = require("gulp-htmlmin"); // html minify
+  const rtlcss = require('gulp-rtlcss'); // rtl generate
+  const rename = require('gulp-rename');
 
 const layout = {
   layouts: "vertical", // vertical / horizontal
@@ -23,29 +25,34 @@ const layout = {
   headerclass: "",
 };
 
-gulp.task('clean-js', function () {
+gulp.task('clean:dist', function () {
   return del([
-    'dist/assets/js/*.js'
-  ]);
-});
-
-gulp.task('clean-css', function () {
-  return del([
-    'dist/assets/css/*.css'
+    'dist'
   ]);
 });
 
 //  [ scss compiler ] start
 gulp.task("sass", function () {
   // main style css
-  return gulp
-    .src("src/assets/scss/*.scss")
+  gulp
+    .src(["src/assets/scss/style.scss", "src/assets/scss/icons.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssbeautify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("dist/assets/css"));
+
+    return gulp
+      .src(["src/assets/scss/style.scss", "src/assets/scss/icons.scss"])
+      .pipe(sourcemaps.init())
+      .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer())
+      .pipe(rtlcss())
+      // .pipe(gulp.dest("dist/assets/css"))
+      .pipe(rename({suffix: "-rtl.min"}))
+      .pipe(sourcemaps.write("./"))
+      .pipe(gulp.dest("dist/assets/css"));
 });
 //  [ scss compiler ] end
 
@@ -91,7 +98,6 @@ gulp.task("build", function () {
     .pipe(gulp.dest("dist/assets/js/plugins/trumbowyg"));
   return merge(cpyassets, cpytinymceassets, cpytrumbowygassets);
 });
-
 //  [ Copy assets ] end
 
 //  [ build html ] start
@@ -140,13 +146,24 @@ gulp.task("build-locales", function () {
 gulp.task("mincss", function () {
   // main style css
   return gulp
-    .src("src/assets/scss/*.scss")
+    .src(["src/assets/scss/style.scss", "src/assets/scss/icons.scss"])
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssbeautify())
     .pipe(gulp.dest("dist/assets/css"))
     .pipe(cssmin())
     .pipe(gulp.dest("dist/assets/css"));
+
+    return gulp
+      .src(["src/assets/scss/style.scss", "src/assets/scss/icons.scss"])
+      .pipe(sourcemaps.init())
+      .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer())
+      .pipe(rtlcss())
+      .pipe(gulp.dest("dist/assets/css"))
+      .pipe(rename({suffix: "-rtl.min"}))
+      .pipe(cssmin())
+      .pipe(gulp.dest("dist/assets/css"));
 });
 //  [ scss compiler ] end
 
@@ -203,25 +220,34 @@ gulp.task("browserSync", function () {
     server: "dist/",
   });
 });
+
+gulp.task('browsersyncReload', function (callback) {
+  browsersync.reload();
+  callback();
+});
 //  [ browser reload ] end
+
+//  [ watch minify ] start
+gulp.task("watch-minify", function () {
+  gulp.watch("src/assets/scss/**/*.scss", gulp.series("mincss"));
+  gulp.watch("src/assets/js/**/*.js", gulp.series("uglify"));
+  gulp.watch("src/html/**/*.html", gulp.series("htmlmin"));
+  gulp.watch("src/documentation/**/*.html", gulp.series("build"));
+});
+//  [ watch minify ] end
 
 //  [ watch ] start
 gulp.task("watch", function () {
   gulp
-    .watch("src/assets/scss/**/*.scss", gulp.series("sass"))
-    .on("change", browsersync.reload);
+    .watch(["src/assets/scss/**/*.scss", "src/assets/scss/*.scss"], gulp.series("sass", "browsersyncReload"));
   gulp
-    .watch("src/assets/js/**/*.js", gulp.series("build-js"))
-    .on("change", browsersync.reload);
+    .watch(["src/assets/js/**/*.js", "src/assets/js/*.js"], gulp.series("build-js", "browsersyncReload"));
   gulp
-    .watch("src/html/**/*.html", gulp.series("build-html"))
-    .on("change", browsersync.reload);
+    .watch("src/html/**/*.html", gulp.series("build-html", "browsersyncReload"));
   gulp
-    .watch("src/doc/**/*.html", gulp.series("build"))
-    .on("change", browsersync.reload);
+    .watch("src/doc/**/*.html", gulp.series("build", "browsersyncReload"));
   gulp
-    .watch("src/assets/locales/*.json", gulp.series("build-locales"))
-    .on("change", browsersync.reload);
+    .watch("src/assets/locales/*.json", gulp.series("build-locales", "browsersyncReload"));
 });
 const compile = gulp.parallel("browserSync", "watch");
 //  [ watch ] end
@@ -232,15 +258,6 @@ gulp.task(
   gulp.series("build", "sass", "build-js", "build-html", "build-locales",  compile)
 );
 //  [ Default task ] end
-
-//  [ watch minify ] start
-gulp.task("watch-minify", function () {
-  gulp.watch("src/assets/scss/**/*.scss", gulp.series("mincss"));
-  gulp.watch("src/assets/js/**/*.js", gulp.series("uglify"));
-  gulp.watch("src/html/**/*.html", gulp.series("htmlmin"));
-  gulp.watch("src/documentation/**/*.html", gulp.series("build"));
-});
-//  [ watch minify ] start
 
 gulp.task(
   "build-prod",

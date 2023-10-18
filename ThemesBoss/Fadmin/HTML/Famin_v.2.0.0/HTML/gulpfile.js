@@ -83,6 +83,7 @@ gulp.task('watch', function () {
     gulp.watch('src/partials/**/*.html', gulp.series('include-partials')); // Watch partials
     gulp.watch('src/*.html', gulp.series('minify-html', 'include-partials')); // Watch HTML
     gulp.watch('dist/*.html').on('change', browserSync.reload);
+    gulp.watch('dist/assets/css/*.css').on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('watch', 'sass', 'minify-js'));

@@ -9,14 +9,14 @@
 */
 
 // settings
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
 
-//Core files
 // Add your color variables here
-$primary:   #2c48a3;
-$white:     #ffffff;
+// $primary:   #ff0000;
+// $white:     #ff0000;
 
 // scss-docs-start gray-color-variables
-$white:    #fff;
 $gray-100: #f9fafb;
 // $gray-150: #f5f5fe;
 $gray-200: #e9eaee;
@@ -29,6 +29,19 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 // $card-bg:    $white;
+
+$theme-colors: (
+      "primary":    $primary
+  );
+
+  // Create your own map
+$custom-colors: (
+  "custom-color": #900
+);
+
+$theme-colors: map-merge($theme-colors, (
+  "primary": $primary
+));
 
 
 [data-bs-theme=light]:root {
@@ -56,7 +69,7 @@ $black:    #000;
   --shadow-sm:  0px 0px 3px rgba(000, 000, 000, .3);
   --shadow-md: 0px 0px 4px rgba(000, 000, 000, 0.08);
   --component-bg: #f5f5f5;
-  --text-primary: #2c48a3;
+  // --text-primary: #2c48a3;
   --form-rgba: rgba(251, 246, 246, 0.48);
   
   .card {
@@ -120,8 +133,9 @@ $black:    #000;
     background-color: $gray-200;
   }
 }
-
+//Core files
 @import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss/mixins.scss";
 
 // components
 @import "_variables.scss";
