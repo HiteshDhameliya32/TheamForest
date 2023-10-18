@@ -1,0 +1,43 @@
+@@include('./partials/main.html')
+    
+        @@include('./partials/title-meta.html')
+
+        @@include('./partials/head-css.html')
+
+    </head>    
+    <body>
+
+        <!-- Login page -->
+        <div class="account-background">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="bg-form mt-5 rounded">
+                            <div class="text-center">
+                                <h4 class="text-uppercase ac_logo font-weight-bold">Fadmin</h4>
+                                <p class="text-white mt-10 mb-24">Sign into your account</p>
+                            </div>
+                            <form class="login_account">
+                                <div class="row">
+                                    <div class="col-lg-12 mt-1">
+                                        <input type="email" class="form-control" placeholder="Email" required="">
+                                    </div>
+                                    <div class="col-lg-12 mt-10">
+                                        <button class="btn btn-info w-100">Reset Password</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="text-center mt-20">
+                            <p><small class="text-dark me-1">Don't have an account ?</small> <a href="pages-register.html" class="text-dark font-weight-bold">Create an account</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Login Page -->
+
+@@include('./partials/vendor-scripts.html') 
+
+    </body>
+</html>
