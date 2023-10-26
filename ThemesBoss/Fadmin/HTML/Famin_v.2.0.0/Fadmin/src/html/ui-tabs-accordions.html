@@ -14,7 +14,7 @@
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content border-start">
+            <div class="page-content">
                 @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
@@ -22,13 +22,13 @@
                     @@include('./partials/component/pageHeader.html', {'title': 'Tab & Accordions', 'breadcrumb': 'Fadmin / Elements','description':'Nam libero tempore, cum soluta nobis'})
                     <!-- Page Heading -->
     
-                    <div id="main-wrapper">
+                    <div class="container-fluid" id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
                                         <h4 class="mt-0 header-title border-bottom">Default Tabs</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
                                         <div class="tab-default">
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs mb-3" role="tablist">
@@ -48,7 +48,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="nav-item" role="presentation">
-                                                    <a class="nav-link" data-bs-toggle="tab" href="#tab8" role="tab" aria-selected="false" tabindex="-1">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#tab4" role="tab" aria-selected="false" tabindex="-1">
                                                         Tab4
                                                     </a>
                                                 </li>
@@ -74,7 +74,7 @@
                                 <div class="card panel border mb-24">
                                     <div class="panel-body">
                                         <h4 class="mt-0 header-title border-bottom">Left Tabs</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div class="tabs-left d-flex" role="tabpanel">
                                             <!-- Nav tabs -->
@@ -111,10 +111,10 @@
                                         </div>
                                     </div>
                                 </div>                                
-                                <div class="card panel border mb-0">
-                                    <div class="panel-body">
+                                <div class="card border mb-24 mb-lg-0">
+                                    <div class="card-body">
                                         <h4 class="mt-0 header-title border-bottom">Accordion</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div class="accordion-group">
                                             <div class="accordion" id="accordionExample">
@@ -161,10 +161,10 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
                                         <h4 class="mt-0 header-title border-bottom">Fade Effect</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div class="tab-default">
                                             <!-- Nav tabs -->
@@ -208,11 +208,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Right Tabs</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div class="d-flex">
                                             <div class="tabs-right" role="tabpanel">
@@ -252,11 +252,11 @@
 
                                     </div>
                                 </div>
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Justified Tabs</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div class="tab-default">
                                             <div role="tabpanel">
@@ -278,7 +278,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                        <a class="nav-link" data-bs-toggle="tab" href="#tab24" role="tab" aria-selected="false" tabindex="-1">
+                                                        <a class="nav-link me-0" data-bs-toggle="tab" href="#tab24" role="tab" aria-selected="false" tabindex="-1">
                                                             Tab4
                                                         </a>
                                                     </li>
@@ -302,11 +302,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card panel border mb-0">
-                                    <div class="panel-body">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Nav Pills</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div>
                                             <!-- Nav tabs -->
@@ -383,11 +383,10 @@
                             </div>
                         </div>
                     </div>
-                        <!-- Main Wrapper -->
-
-                        <!-- footer -->
-                        @@include('./partials/footer.html')
+                    <!-- Main Wrapper -->
                 </div>
+                <!-- footer -->
+                @@include('./partials/footer.html')
                 <!-- /Page Inner -->
                 @@include('./partials/right-sidebar.html')
             </div>
@@ -395,7 +394,7 @@
         </div>
         <!-- /Page Container -->
 
-@@include('./partials/vendor-scripts.html') 
+        @@include('./partials/vendor-scripts.html') 
 
     </body>
 </html>

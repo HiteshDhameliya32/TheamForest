@@ -1,8 +1,8 @@
 /*
 ------------------------------------------------------------------------
-* Template Name    : Elvish | Responsive Bootstrap 4 Personal Template * 
+* Template Name    : Elvish | Responsive Bootstrap 5.3.2 Personal Template * 
 * Author           : ThemesBoss                                        *
-* Version          : 1.0.0                                             *
+* Version          : 2.0.0                                             *
 * Created          : May 2023                                          *
 * File Description : Main Js file of the template                      *
 *-----------------------------------------------------------------------

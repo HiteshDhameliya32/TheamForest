@@ -151,8 +151,11 @@ $theme-colors: map-merge($theme-colors, (
 @import "icon.scss";
 @import "map.scss";
 @import "nav-accordions.scss";
-@import "panel.scss";
+@import "card.scss";
 @import "progress.scss";
 @import "table.scss";
 @import "form.scss";
 @import "responsive.scss";
+@import "footer.scss";
+@import "card.scss";
+@import "navbar.scss";

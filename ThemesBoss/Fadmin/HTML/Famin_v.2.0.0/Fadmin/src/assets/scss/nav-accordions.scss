@@ -44,7 +44,7 @@
     border-radius: 0!important;
     border-top-left-radius: 3px!important;
     border-top-right-radius: 3px!important;
-    color: #777;
+    color: $muted;
     border-bottom: 1px solid #E2E2E2;
 }
 
@@ -317,27 +317,32 @@
 .accordion-group {
     .accordion {
         border-radius: 3px;
-        background-color: #ffffff;
         box-shadow: none;
         margin-bottom: 20px;
-    }
-    .accordion-heading {
-        padding: 10px 15px;
-        border-bottom: 1px solid transparent;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        .accordion-button {
-            margin-bottom: 0;
-            font-size: 16px;
-            color: #333;
-            background-color: #f5f5f5;
-            border-color: #ddd;
-            padding: 4px 15px;
-            &:focus {
-                box-shadow: none;
+        .accordion-header {
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            .accordion-button {
+                margin-bottom: 0;
+                font-size: 16px;
+                background-color: var(--bs-body-bg);
+                border-color: #ddd;
+                padding: 4px 15px;
+                &:not(.collapsed) {
+                    color: $primary;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                &::after {
+                    background-image: none;
+                }
             }
-            &::after {
-                display: none;
+        }
+        .accordion-collapse {
+            .accordion-body {
+                background-color: var(--header-bg);   
             }
         }
     }
