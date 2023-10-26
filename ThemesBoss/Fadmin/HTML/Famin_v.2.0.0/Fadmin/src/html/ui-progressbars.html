@@ -14,7 +14,7 @@
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content border-start">
+            <div class="page-content">
                 @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
@@ -22,14 +22,14 @@
                     @@include('./partials/component/pageHeader.html', {'title': 'Progressbars', 'breadcrumb': 'Fadmin / Elements','description':'Nam libero tempore, cum soluta nobis'})
                     <!-- Page Heading -->
                     
-                    <div id="main-wrapper">
+                    <div class="container-fluid" id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Basic example</h4>
-                                        <p class="text-muted mb-24 font-15">Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.</p>
+                                        <p class="text-muted mb-24 fs-15">Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.</p>
 
                                         <div>
                                             <div class="progress mb-24">
@@ -60,11 +60,11 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Basic with lable example</h4>
-                                        <p class="text-muted mb-24 font-15">Progress bars use some of the same button and alert classes for consistent styles.</p>
+                                        <p class="text-muted mb-24 fs-15">Progress bars use some of the same button and alert classes for consistent styles.</p>
 
                                         <div>
                                             <div class="mb-24">
@@ -96,11 +96,11 @@
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="card panel border mb-0">
-                                    <div class="panel-body">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Striped example</h4>
-                                        <p class="text-muted mb-24 font-15">Uses a gradient to create a striped effect. Not available in IE9 and below.</p>
+                                        <p class="text-muted mb-24 fs-15">Uses a gradient to create a striped effect. Not available in IE9 and below.</p>
 
                                         <div>
                                             <div class="progress mb-24">
@@ -129,11 +129,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="card panel border mb-0">
-                                    <div class="panel-body">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Animated example</h4>
-                                        <p class="text-muted mb-24 font-15">Add <code>.active</code> to <code>.progress-bar-striped</code> to animate the stripes right to left. Not available in IE9 and below.</p>
+                                        <p class="text-muted mb-24 fs-15">Add <code>.active</code> to <code>.progress-bar-striped</code> to animate the stripes right to left. Not available in IE9 and below.</p>
 
                                         <div>
                                             <div class="progress mb-24" role="progressbar" aria-label="Animated striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -155,11 +155,11 @@
                             </div>
                         </div>
                     </div>
-                        <!-- Main Wrapper -->
+                    <!-- Main Wrapper -->
 
-                        <!-- footer -->
-                        @@include('./partials/footer.html')
                 </div>
+                <!-- footer -->
+                @@include('./partials/footer.html')
                 <!-- /Page Inner -->
                 @@include('./partials/right-sidebar.html')
             </div>

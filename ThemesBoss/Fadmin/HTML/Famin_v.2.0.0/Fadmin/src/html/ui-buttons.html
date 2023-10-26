@@ -15,23 +15,23 @@
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content border-start">
+            <div class="page-content">
                 @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
                     <!-- Page Heading -->
                     @@include('./partials/component/pageHeader.html', {'title': 'Button', 'breadcrumb': 'Fadmin / Elements','description':'Nam libero tempore, cum soluta nobis'})
                     <!-- Page Heading -->
-                    <div id="main-wrapper">
+                    <div class="container-fluid" id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="card panel border mb-24">
                                     <div class="panel-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Default Buttons</h4>
-                                        <p class="text-muted mb-24 font-15">Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+                                        <p class="text-muted mb-24 fs-15">Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
         
-                                        <div class="button-list">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
                                             <button type="button" class="btn btn-default">Default</button>
 
                                             <button type="button" class="btn btn-primary">Primary</button>
@@ -61,9 +61,9 @@
                                     <div class="panel-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Rounded Buttons</h4>
-                                        <p class="text-muted mb-24 font-15">Add <code>.btn-rounded</code> to default button to get rounded corners.</p>
+                                        <p class="text-muted mb-24 fs-15">Add <code>.btn-rounded</code> to default button to get rounded corners.</p>
         
-                                        <div class="button-list">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
                                             <button type="button" class="btn btn-default btn-rounded">Default</button>
 
                                             <button type="button" class="btn btn-primary btn-rounded">Primary</button>
@@ -95,9 +95,9 @@
                                     <div class="panel-body">
 
                                         <h4 class="mt-0 header-title border-bottom">Button tags</h4>
-                                        <p class="text-muted mb-24 font-15">The <code class="highlighter-rouge">.btn</code> classes are designed to be used with the <code class="highlighter-rouge">&lt;button&gt;</code> element. However, you can also use these classes on <code class="highlighter-rouge">&lt;a&gt;</code> or <code class="highlighter-rouge">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+                                        <p class="text-muted mb-24 fs-15">The <code class="highlighter-rouge">.btn</code> classes are designed to be used with the <code class="highlighter-rouge">&lt;button&gt;</code> element. However, you can also use these classes on <code class="highlighter-rouge">&lt;a&gt;</code> or <code class="highlighter-rouge">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
 
-                                        <div class="button-list">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
                                             <a class="btn btn-primary" href="#" role="button">Link</a>
 
                                             <button class="btn btn-primary" type="submit">Button</button>
@@ -121,9 +121,9 @@
                                     <div class="panel-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Sizes</h4>
-                                        <p class="text-muted mb-24 font-15">Fancy larger or smaller buttons? Add <code class="highlighter-rouge">.btn-lg</code> or <code class="highlighter-rouge">.btn-sm</code> for additional sizes.</p>
+                                        <p class="text-muted mb-24 fs-15">Fancy larger or smaller buttons? Add <code class="highlighter-rouge">.btn-lg</code> or <code class="highlighter-rouge">.btn-sm</code> for additional sizes.</p>
         
-                                        <div class="button-items">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
                                             <button type="button" class="btn btn-primary btn-lg mo-mb-2">Large button</button>
                                             <button type="button" class="btn btn-secondary btn-lg mo-mb-2">Large button</button>
                                             <button type="button" class="btn btn-primary btn-sm mo-mb-2">Small button</button>
@@ -138,9 +138,9 @@
                                     <div class="panel-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Disabled Buttons</h4>
-                                        <p class="text-muted mb-24 font-15">Make buttons look inactive by adding the <code class="highlighter-rouge">disabled</code> boolean attribute to any <code class="highlighter-rouge">&lt;button&gt;</code> element.</p>
+                                        <p class="text-muted mb-24 fs-15">Make buttons look inactive by adding the <code class="highlighter-rouge">disabled</code> boolean attribute to any <code class="highlighter-rouge">&lt;button&gt;</code> element.</p>
         
-                                        <div class="button-list">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
                                             <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
 
                                             <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>          
@@ -154,13 +154,13 @@
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Disabled Link</h4>
-                                        <p class="text-muted mb-24 font-15">Disabled buttons using the <code class="highlighter-rouge">&lt;a&gt;</code> element behave a bit different:</p>
+                                        <p class="text-muted mb-24 fs-15">Disabled buttons using the <code class="highlighter-rouge">&lt;a&gt;</code> element behave a bit different:</p>
         
-                                        <div class="button-items">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
                                             <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
 
                                             <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
@@ -170,17 +170,19 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="card panel border mb-24">
-                                    <div class="panel-body">
+                                <div class="card border mb-24">
+                                    <div class="card-body">
                                         <h4 class="header-title mt-0">Button Width</h4>
-                                        <p class="text-muted mb-24 font-15">
+                                        <p class="text-muted mb-24 fs-15">
                                             Create buttons with minimum width by adding add <code>.w-xs</code>, <code>.w-sm</code>, <code>.w-md</code> or <code>.w-lg</code>.
                                         </p>
 
-                                        <button type="button" class="btn btn-primary w-xs">Xs</button>
-                                        <button type="button" class="btn btn-default w-sm">Small</button>
-                                        <button type="button" class="btn btn-dark w-md">Middle</button>
-                                        <button type="button" class="btn btn-secondary w-lg">Large</button>
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
+                                            <button type="button" class="btn btn-primary w-xs">Xs</button>
+                                            <button type="button" class="btn btn-default w-sm">Small</button>
+                                            <button type="button" class="btn btn-dark w-md">Middle</button>
+                                            <button type="button" class="btn btn-secondary w-lg">Large</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -190,15 +192,15 @@
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="card panel border mb-0">
-                                    <div class="panel-body">
+                                <div class="card border mb-lg-0 mb-24">
+                                    <div class="card-body">
 
                                         <h4 class="header-title mt-0">grids Button</h4>
-                                        <p class="text-muted mb-24 font-15">
+                                        <p class="text-muted mb-24 fs-15">
                                             Create block level buttons,with by adding add <code>.d-grid</code>.
                                         </p>
 
-                                        <div class="button-list d-grid">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
                                             <button type="button" class="btn btn-primary">Block Button</button>
                                             <button type="button" class="btn btn-sm btn-default">Block Button</button>
                                         </div>
@@ -207,14 +209,14 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="card panel border mb-0">
-                                    <div class="panel-body">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
                                         <h4 class="header-title mt-0"><b>Social Buttons</b></h4>
-                                        <p class="text-muted mb-24 font-15">
+                                        <p class="text-muted mb-24 fs-15">
                                                 Use class <code>.btn-@yoursocial</code> to the parent.
                                         </p>
 
-                                        <div class="button-list">
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
     
                                             <button type="button" class="btn btn-facebook m-b-10 m-l-10 waves-effect waves-light">
                                                 <i class="fa fa-facebook m-r-5"></i> Facebook
@@ -297,13 +299,12 @@
                         </div>
                         <!-- end row -->
                     </div>
-                        <!-- Main Wrapper -->
-
-                        <!-- footer -->
-                        @@include('./partials/footer.html')
+                    <!-- Main Wrapper -->
                 </div>
-                    <!-- right sidebar -->
-                    @@include('./partials/right-sidebar.html')
+                <!-- footer -->
+                @@include('./partials/footer.html')
+                <!-- right sidebar -->
+                @@include('./partials/right-sidebar.html')
             </div>
             <!-- /Page Content -->
         </div>

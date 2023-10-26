@@ -1,7 +1,6 @@
 
 .icon-demo-content {
     text-align: center;
-    color: #777;
     i {
         display: block;
         font-size: 26px;
@@ -10,10 +9,10 @@
         margin-bottom: 10px;
         border-radius: 5px;
         width: 50px;
-        color: #777;
         height: 50px;
         line-height: 50px;
         transition: all 0.5s;
+        color: var(--muted);
     }
     .col-sm-6 {
         margin-bottom: 30px;

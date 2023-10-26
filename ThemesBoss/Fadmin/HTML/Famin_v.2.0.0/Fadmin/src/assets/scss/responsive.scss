@@ -2,10 +2,6 @@
         RESPONSIVE
 ============================*/
 
-.logo-sm {
-    display: none;
-}
-
 #sidebar-toggle-button-close {
     display: none;
 }
@@ -27,9 +23,15 @@
         left: -240px !important;
         transition: all .2s ease-in-out;
     }
-    .page-inner:not(.login-page) {
-        padding: 5px 20px 42px 20px;
+    .page-header {
+        width: calc(100% - 0px);
     }
+    .page-footer {
+        width: calc(100% - 0px) !important;
+    }
+    // .page-inner:not(.login-page) {
+    //     padding: 0px 12px 24px 12px;
+    // }
     .page-content,
     .page-sidebar-collapsed .page-content {
         width: 100%;
@@ -56,8 +58,7 @@
             margin-left: 15px;
             margin-bottom: 5px;
             vertical-align: middle;
-            line-height: 46px;
-            color: #637282!important;
+            color: var(--black) ;
         }
     }
     .logo-sm {
@@ -100,13 +101,13 @@
             }
         }
     }
-    .navbar {
-        .dropdown:not(.open) {
-            .dropdown-menu {
-                display: none;
-            }
-        }
-    }
+    // .navbar {
+    //     .dropdown:not(.open) {
+    //         .dropdown-menu {
+    //             display: none;
+    //         }
+    //     }
+    // }
     .navbar {
         li {
             display: block;
@@ -170,10 +171,17 @@
 }
 
 @media (max-width: 767px) {
+    .navbar {
+        .navbar-collapse.collapse:not(.show) {
+            display: block !important;
+        }
+    }
     .navbar-right.d-desk-none {
         display: block;
     }
     .logo-sm {
+        display: flex;
+        align-items: center;
         .logo-box {
             display: block;
             position: relative;

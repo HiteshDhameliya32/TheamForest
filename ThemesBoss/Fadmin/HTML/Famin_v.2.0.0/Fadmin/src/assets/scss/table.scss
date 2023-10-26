@@ -13,6 +13,10 @@
     background-color: transparent !important;
 }
 
+// grid table
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: var(--header-bg) !important;
+}
 /*--- Data table---*/
 
 .dt-buttons a.btn {

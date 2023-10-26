@@ -15,7 +15,7 @@
             <!-- /Page Sidebar -->
 
             <!-- Page Content -->
-            <div class="page-content border-start">
+            <div class="page-content">
                 @@include('./partials/navbar.html')
                 <!-- Page Inner -->
                 <div class="page-inner">
@@ -23,14 +23,14 @@
                     @@include('./partials/component/pageHeader.html', {'title': 'Material Design Icons', 'breadcrumb': 'Fadmin / Icon','description':'Nam libero tempore, cum soluta nobis'})
                     <!-- Page Heading -->
                     
-                    <div id="main-wrapper">
+                    <div class="container-fluid" id="main-wrapper">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="card panel border mb-0">
-                                    <div class="panel-body">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
         
                                         <h4 class="mt-0 header-title border-bottom">Material Design Icons</h4>
-                                        <p class="text-muted mb-24 font-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
 
                                         <div class="row icon-demo-content">
                                             <div class="col-sm-6 col-md-4 col-lg-3">
@@ -4996,19 +4996,18 @@
                             </div>
                         </div>
                     </div>
-                        <!-- Main Wrapper -->
-
-                        <!-- footer -->
-                        @@include('./partials/footer.html')
+                    <!-- Main Wrapper -->
                 </div>
-                    <!-- right sidebar -->
-                    @@include('./partials/right-sidebar.html')
+                <!-- footer -->
+                @@include('./partials/footer.html')
+                <!-- right sidebar -->
+                @@include('./partials/right-sidebar.html')
             </div>
             <!-- /Page Content -->
         </div>
         <!-- /Page Container -->
 
-@@include('./partials/vendor-scripts.html') 
+        @@include('./partials/vendor-scripts.html') 
 
     </body>
 </html>

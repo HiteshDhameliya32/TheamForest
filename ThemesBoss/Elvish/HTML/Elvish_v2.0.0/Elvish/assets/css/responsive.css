@@ -49,11 +49,14 @@
   .h-100vh.jarallax,
   .h-100vh.bg-dark,
   .home-bg-slider .carousel-item {
-    padding: 110px 0 170px 0;
+    padding: 170px 0 110px 0;
   }
   .h-100vh,
   .home-bg-slider .carousel-item {
     height: auto;
+  }
+  .scroll_down {
+    display: none;
   }
   .clip-home {
     clip-path: none;
@@ -94,5 +97,8 @@
 @media (max-width: 576px) {
   .section {
     padding: 50px 0;
+  }
+  .home-bg {
+    padding: 70px 0;
   }
 }/*# sourceMappingURL=responsive.css.map */

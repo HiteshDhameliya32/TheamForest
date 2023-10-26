@@ -15,10 +15,19 @@
     padding-top: 8px;
 }
 
-.button-list .btn {
-    margin-bottom: 12px;
-    margin-right: 10px;
+.btn-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(1rem + 1.5em + 2px);
+    width: calc(1rem + 1.5em + 2px);
+    padding: 0;
 }
+
+// .button-list .btn {
+//     margin-bottom: 12px;
+//     margin-right: 10px;
+// }
 
 .btn-primary,
 .btn-primary,
@@ -356,4 +365,12 @@
 .btn-github {
     color: #ffffff !important;
     background-color: #171515 !important;
+}
+
+
+.btn-close {
+    background: none;
+    &:focus {
+        box-shadow: none;
+    }
 }
