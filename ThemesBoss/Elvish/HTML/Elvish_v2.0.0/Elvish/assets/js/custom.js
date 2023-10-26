@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------
 * Template Name    : Elvish | Responsive Bootstrap 5.3.2 Personal Template * 
 * Author           : ThemesBoss                                        *
-* Version          : 2.0.0                                             *
+* Version          : 2.0.1                                             *
 * Created          : May 2023                                          *
 * File Description : Main Js file of the template                      *
 *-----------------------------------------------------------------------
@@ -205,3 +205,22 @@ function($) {
     "use strict";
     $.ElvishApp.init();
 }(window.jQuery);
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the .nav-link elements
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    // Get the navbarCollapse element
+    const navbarCollapse = document.getElementById("navbarCollapse");
+
+    // Add a click event listener to each .nav-link element
+    navLinks.forEach(function (navLink) {
+        navLink.addEventListener("click", function () {
+            // Check if the navbarCollapse element has the 'show' class
+            if (navbarCollapse.classList.contains("show")) {
+                // If it has the 'show' class, remove it to hide the navbar
+                navbarCollapse.classList.remove("show");
+            }
+        });
+    });
+});
