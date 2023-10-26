@@ -9,6 +9,9 @@
     padding: 12px 8px;
 }
 
+.table > :not(caption) > * > * {
+    background-color: transparent !important;
+}
 
 /*--- Data table---*/
 

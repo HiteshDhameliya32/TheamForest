@@ -1,28 +1,27 @@
 .progress-bar {
-    background-color: #3a80e5;
+    background-color: $primary;
     box-shadow: none;
 }
 
 .progress {
     -webkit-box-shadow: none;
-    background-color: #e9ecef;
     box-shadow: none;
     height: 16px;
     overflow: hidden;
 }
 
 .progress-bar-success {
-    background-color: #0acf97;
+    background-color: $success;
 }
 
 .progress-bar-info {
-    background-color: #40a4f1;
+    background-color: $info;
 }
 
 .progress-bar-warning {
-    background-color: #f5b225;
+    background-color: $warning;
 }
 
 .progress-bar-danger {
-    background-color: #ec536c;
+    background-color: $danger;
 }

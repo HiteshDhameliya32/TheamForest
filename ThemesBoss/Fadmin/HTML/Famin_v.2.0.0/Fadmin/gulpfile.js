@@ -10,9 +10,9 @@ var gulp = require("gulp"), // main
   cssbeautify = require("gulp-cssbeautify"), // css cssbeautify
   fileinclude = require("gulp-file-include"), // include html files
   browsersync = require("browser-sync"), // browser reload
-  rtlcss = require('gulp-rtlcss'), // rtl generate
-  rename = require('gulp-rename'),
-  fs = require('fs-extra');
+  htmlmin = require("gulp-htmlmin"); // html minify
+  const rtlcss = require('gulp-rtlcss'); // rtl generate
+  const rename = require('gulp-rename');
 
 const layout = {
   layouts: "vertical", // vertical / horizontal
@@ -24,13 +24,10 @@ const layout = {
   headerclass: "",
 };
 
-gulp.task('clean:dist', function (done) {
-  fs.remove('dist', err => {
-    if (err) {
-      console.error("Error deleting dist", err);
-    }
-    done(); // Signal task completion
-  });
+gulp.task('clean:dist', function () {
+  return del([
+    'dist'
+  ]);
 });
 
 //  [ scss compiler ] start
@@ -42,9 +39,7 @@ gulp.task("sass", function () {
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssbeautify())
-    .pipe(gulp.dest("dist/assets/css"))
-    .pipe(cssmin())
-    .pipe(rename({suffix: ".min"}))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("dist/assets/css"));
 
     return gulp
@@ -53,10 +48,8 @@ gulp.task("sass", function () {
       .pipe(sass().on('error', sass.logError))
       .pipe(autoprefixer())
       .pipe(rtlcss())
-      .pipe(rename({suffix: "-rtl"}))
-      .pipe(gulp.dest("dist/assets/css"))
-      .pipe(cssmin())
-      .pipe(rename({suffix: ".min"}))
+      // .pipe(gulp.dest("dist/assets/css"))
+      .pipe(rename({suffix: "-rtl.min"}))
       .pipe(sourcemaps.write("./"))
       .pipe(gulp.dest("dist/assets/css"));
 });
@@ -123,6 +116,40 @@ gulp.task("build-js", function () {
 });
 //  [ build js ] end
 
+//  [ build locales ] Start
+gulp.task("build-locales", function () {
+  return gulp
+  .src("src/assets/locales/*.{json}")
+  .pipe(gulp.dest("dist/locales"));
+});
+
+//  [ build locales ] end
+
+//  [ scss compiler ] start
+gulp.task("mincss", function () {
+  // main style css
+  return gulp
+    .src(["src/assets/scss/style.scss", "src/assets/scss/icons.scss"])
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(cssbeautify())
+    .pipe(gulp.dest("dist/assets/css"))
+    .pipe(cssmin())
+    .pipe(gulp.dest("dist/assets/css"));
+
+    return gulp
+      .src(["src/assets/scss/style.scss", "src/assets/scss/icons.scss"])
+      .pipe(sourcemaps.init())
+      .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer())
+      .pipe(rtlcss())
+      .pipe(gulp.dest("dist/assets/css"))
+      .pipe(rename({suffix: "-rtl.min"}))
+      .pipe(cssmin())
+      .pipe(gulp.dest("dist/assets/css"));
+});
+//  [ scss compiler ] end
+
 //  [ uglify js ] start
 gulp.task("uglify", function () {
   var layoutjs = gulp
@@ -165,7 +192,21 @@ gulp.task('browsersyncReload', function (callback) {
   browsersync.reload();
   callback();
 });
+
+gulp.task('browsersyncReload', function (callback) {
+  browsersync.reload();
+  callback();
+});
 //  [ browser reload ] end
+
+//  [ watch minify ] start
+gulp.task("watch-minify", function () {
+  gulp.watch("src/assets/scss/**/*.scss", gulp.series("mincss"));
+  gulp.watch("src/assets/js/**/*.js", gulp.series("uglify"));
+  gulp.watch("src/html/**/*.html", gulp.series("htmlmin"));
+  gulp.watch("src/documentation/**/*.html", gulp.series("build"));
+});
+//  [ watch minify ] end
 
 //  [ watch ] start
 gulp.task("watch", function () {
@@ -175,6 +216,10 @@ gulp.task("watch", function () {
     .watch(["src/assets/js/**/*.js", "src/assets/js/*.js"], gulp.series("build-js", "browsersyncReload"));
   gulp
     .watch("src/html/**/*.html", gulp.series("build-html", "browsersyncReload"));
+  gulp
+    .watch("src/doc/**/*.html", gulp.series("build", "browsersyncReload"));
+  gulp
+    .watch("src/assets/locales/*.json", gulp.series("build-locales", "browsersyncReload"));
 });
 const compile = gulp.parallel("browserSync", "watch");
 //  [ watch ] end

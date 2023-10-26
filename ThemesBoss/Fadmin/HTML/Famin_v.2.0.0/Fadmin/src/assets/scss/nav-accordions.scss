@@ -60,11 +60,12 @@
                 position: relative;
                 border-bottom: 1px transparent;
                 &.active {
-                    color: #3a80e5;
+                    color: $primary;
+                    background-color: transparent;
                 }
                 &::after {
                     content: '';
-                    border-bottom: 1px solid #3a80e5;
+                    border-bottom: 1px solid $primary;
                     position: absolute;
                     left: 0;
                     right: 0;
@@ -85,10 +86,10 @@
                 position: relative;
                 border-right: 1px transparent;
                 &.active {
-                    color: #3a80e5;
+                    color: $primary;
                     &::after {
                         content: '';
-                        border-right: 1px solid #3a80e5;
+                        border-right: 1px solid $primary;
                         position: absolute;
                         top: 0;
                         right: 0;
@@ -108,10 +109,10 @@
                 position: relative;
                 border-left: 1px transparent;
                 &.active {
-                    color: #3a80e5;
+                    color: $primary;
                     &::after {
                         content: '';
-                        border-left: 1px solid #3a80e5;
+                        border-left: 1px solid $primary;
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -151,10 +152,10 @@
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #3a80e5;
+    color: $primary;
     /* cursor: default; */
     background-color: #fff;
-    border-bottom-color: #3a80e5;
+    border-bottom-color: $primary;
 }
 
 .nav-pills .nav-link {
@@ -162,7 +163,7 @@
 }
 
 /* .nav-pills .nav-link.active {
-    color: #3a80e5;
+    color: $primary;
     background-color: transparent;
 } */
 
@@ -185,7 +186,7 @@
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #3a80e5;
+    background-color: $primary;
 }
 
 .tabs-left .nav > li:first-child > a {
@@ -253,12 +254,12 @@
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .nav-tabs .active > a:focus {
     border-color: transparent;
-    border-right-color: #3a80e5!important;
+    border-right-color: $primary!important;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 3px!important;
     border-bottom-left-radius: 3px!important;
     border-top-right-radius: 0!important;
-    color: #3a80e5;
+    color: $primary;
 }
 
 .tabs-right > .nav-tabs {
@@ -288,12 +289,12 @@
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .nav-tabs .active > a:focus {
     border-color: transparent;
-    border-left-color: #3a80e5!important;
+    border-left-color: $primary!important;
     border-bottom: none;
     border-top-right-radius: 3px!important;
     border-bottom-right-radius: 3px!important;
     border-top-left-radius: 0!important;
-    color: #3a80e5;
+    color: $primary;
 }
 
 .nav-tabs.nav-justified > li > a {
@@ -305,8 +306,8 @@
 .nav-tabs.nav-justified > .active > a:focus,
 .nav-tabs.nav-justified > .active > a:hover {
     border-color: transparent;
-    border-bottom: 1px solid #3a80e5;
-    color: #3a80e5;
+    border-bottom: 1px solid $primary;
+    color: $primary;
 }
 
 .nav-tabs.nav-justified {

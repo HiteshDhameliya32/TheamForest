@@ -264,7 +264,7 @@
 }
 
 .nav-pills > li > a.active {
-    background-color: #3a80e5 !important;
+    background-color: $primary !important;
     color: #fff;
 }
 
@@ -277,7 +277,7 @@
 }
 
 .nav-pills > li > a:hover {
-    background-color: #3a80e5;
+    background-color: $primary;
     color: #fff;
 }
 
@@ -423,7 +423,7 @@
     }
     li {
         a {
-            color: #3a80e5;
+            color: $primary;
             font-size: 15px;
             font-weight: 500;
             display: inline-block;
@@ -698,7 +698,7 @@ _:future,
 }
 
 .open:not(.active-page) > a {
-    color: #2c7be5;
+    color: $primary;
 }
 
 .active-page.open > a {
@@ -845,6 +845,43 @@ _:future,
         }
     }
 }
+
+.navbar-collapse .form-switch .form-check-input:checked {
+    background-image: none;
+}
+
+.navbar-collapse .form-switch .form-check-input {
+    background-image: none;
+}
+
+.navbar-collapse {
+    .form-switch {
+        .form-check-input {
+            background: transparent;
+            border: none;
+            background-image: none;
+            cursor: pointer;
+            &:focus {
+                background: none;
+                box-shadow: none;
+            }
+            &::before {
+                content: "\F594";
+                font: normal normal normal 24px/1 "Material Design Icons";
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+[data-bs-theme=dark] {
+    .mdi-weather-night {
+        &::before {
+            content: "\f5a8" !important;
+        }
+    }
+}
+
 
 .navbar-collapse .form-switch .form-check-input:checked {
     background-image: none;
@@ -1312,7 +1349,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
     height: 30px;
     color: #fff;
     width: 28px;
-    background-color: #3a80e5;
+    background-color: $primary;
     border-radius: 5px;
     display: inline-block;
     line-height: 30px;
@@ -1363,15 +1400,15 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 }
 
 .page-sidebar-menu ul li.active-page > a i {
-    color: #2c7be5;
+    color: $primary;
 }
 
 .page-sidebar-menu ul li.active-page > a i.accordion-icon {
-    color: #2c7be5;
+    color: $primary;
 }
 
 .page-sidebar-menu ul li.active-page > a {
-    color: #2c7be5;
+    color: $primary;
 }
 
 .page-sidebar-menu ul li.active-page > a {
@@ -1436,12 +1473,12 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    color: #2c7be5;
+    color: $primary;
     // filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=-3);
 }
 
 .page-sidebar-menu ul li .sub-menu a:hover {
-    color: #2c7be5;
+    color: $primary;
 }
 
 .accordion-menu .sub-menu {
@@ -1472,7 +1509,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 }
 
 .accordion-menu .sub-menu li a.active {
-    color: #2c7be5 !important;
+    color: $primary !important;
 }
 
 .accordion-menu .sub-menu li a.active:hover {
@@ -1611,7 +1648,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
     font-weight: 400;
     opacity: 0;
     #close-search {
-        background-color: #3a80e5;
+        background-color: $primary;
         color: #ffffff;
         border: none;
         height: 44px;
@@ -1644,7 +1681,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
 
 .search-form #close-search:hover,
 .search-form #close-search:focus {
-    background-color: #3a80e5!important;
+    background-color: $primary!important;
     opacity: 1;
     border: none;
     outline: 0;
