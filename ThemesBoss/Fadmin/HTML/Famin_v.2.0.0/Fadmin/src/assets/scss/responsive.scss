@@ -29,9 +29,6 @@
     .page-footer {
         width: calc(100% - 0px) !important;
     }
-    // .page-inner:not(.login-page) {
-    //     padding: 0px 12px 24px 12px;
-    // }
     .page-content,
     .page-sidebar-collapsed .page-content {
         width: 100%;
@@ -44,7 +41,7 @@
     .page-header .navbar,
     .page-header .navbar-default .container-fluid,
     .page-header .navbar-default .navbar-collapse {
-        height: auto!important;
+        height: auto;
     }
     .logo-sm {
         display: block;
@@ -171,11 +168,11 @@
 }
 
 @media (max-width: 767px) {
-    .navbar {
-        .navbar-collapse.collapse:not(.show) {
-            display: block !important;
-        }
-    }
+    // .navbar {
+    //     .navbar-collapse.collapse:not(.show) {
+    //         display: block !important;
+    //     }
+    // }
     .navbar-right.d-desk-none {
         display: block;
     }

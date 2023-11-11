@@ -1,0 +1,1 @@
+!function(o){"use strict";function t(){}t.prototype.initFooTable=function(){o("#footable_1").footable({sorting:{enabled:!0}})},t.prototype.init=function(){this.initFooTable()},o.footable=new t,o.footable.Constructor=t}(window.jQuery),function(){"use strict";window.jQuery.footable.init()}();

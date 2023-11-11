@@ -1,0 +1,48 @@
+.progress-bar {
+    background-color: $primary;
+    box-shadow: none;
+}
+
+.progress {
+    box-shadow: none;
+    height: 16px;
+    overflow: hidden;
+}
+
+.progress-bar-success {
+    background-color: $success;
+}
+
+.progress-bar-info {
+    background-color: $info;
+}
+
+.progress-bar-warning {
+    background-color: $warning;
+}
+
+.progress-bar-danger {
+    background-color: $danger;
+}
+
+// @mixin progress-variant($bg) {
+//     .progress-bar {
+//         background-color: $bg;
+//         &::after { 
+//             border-left-color: $bg;
+//         }
+//         &:nth-child(2) {
+//             background-color: rgba($bg, 0.1) !important;
+//             color: $bg !important;
+//             &::after { 
+//                 border-left-color: rgba($bg, 0.1);
+//             }
+//         }
+//     }
+// }
+
+// @each $color, $value in $theme-colors {
+//     .progress-#{$color} {
+//         @include progress-variant($value);
+//     }
+// }

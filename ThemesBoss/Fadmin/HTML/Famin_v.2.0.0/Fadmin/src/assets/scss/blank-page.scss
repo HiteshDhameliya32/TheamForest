@@ -1263,11 +1263,11 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
     height: auto!important;
 }
 
-.page-sidebar-fixed .page-sidebar,
-.page-header-fixed .page-sidebar,
-.page-sidebar-fixed.page-header-fixed .page-sidebar {
-    padding-top: 81px;
-}
+// .page-sidebar-fixed .page-sidebar,
+// .page-header-fixed .page-sidebar,
+// .page-sidebar-fixed.page-header-fixed .page-sidebar {
+//     padding-top: 81px;
+// }
 
 .logo-box {
     max-width: 240px;
@@ -1313,17 +1313,17 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
     margin-right: 8px;
 }
 
-.page-sidebar-fixed .logo-box {
-    position: fixed;
-    left: auto;
-    border-bottom: none;
-    z-index: 9999;
-    top: 0;
-}
+// .page-sidebar-fixed .logo-box {
+//     position: fixed;
+//     left: auto;
+//     border-bottom: none;
+//     z-index: 9999;
+//     top: 0;
+// }
 
-.page-sidebar-fixed .logo-box {
-    color: #fff;
-}
+// .page-sidebar-fixed .logo-box {
+//     color: #fff;
+// }
 
 .page-sidebar-menu {
     margin-top: 10px;

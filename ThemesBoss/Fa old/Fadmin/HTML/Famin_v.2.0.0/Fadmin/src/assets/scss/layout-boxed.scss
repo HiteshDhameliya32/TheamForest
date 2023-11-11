@@ -1,0 +1,31 @@
+// layout boxed
+
+[data-layout=boxed] {
+    .page-header {
+        // left: calc($vertical-menu-width + $vertical-menu-width + 5.1rem);
+        // right: calc(($vertical-menu-width-sm));
+        border-radius: 0.25rem;
+        border: 1px solid var(--#{$variable-prefix}header-border);
+        position: absolute;
+        width: calc(100% - 264px);
+        right: 0;
+    }
+    .page-sidebar {
+        border-radius: var(--#{$variable-prefix}border-radius);
+        left: calc($vertical-menu-width + 6rem);
+    }
+    .page-inner {
+        margin-left: calc($vertical-menu-width + 25px);
+    }
+    .page-content {
+        margin-left: 0;
+    }
+    .page-container {
+        width: 1280px !important;
+        position: relative;
+    }
+    .page-footer {
+        width: calc(100% - 264px);
+        right: 0px;
+    }
+}
