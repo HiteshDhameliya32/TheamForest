@@ -1,0 +1,220 @@
+@@include('./partials/main.html')
+    <head>
+        @@include('./partials/title-meta.html')
+
+        @@include('./partials/head-css.html')
+
+        <!--Page Specific CSS Start-->
+        <!-- jvectormap -->
+        <link href="assets/js/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+        <!--Page Specific CSS End-->
+
+    </head>    
+    <body>
+
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            @@include('./partials/left-sidebar.html',{dataCurrentPage:'maps'})
+            <!-- /Page Sidebar -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Header -->
+                @@include('./partials/navbar.html')
+                <!-- /Page Header -->
+                <!-- Page Inner -->
+                <div class="page-inner">
+                    <!-- Page Heading -->
+                    @@include('./partials/component/pageHeader.html', {'title': 'Vector Maps', 'breadcrumb': 'Fadmin','description':'Nam libero tempore, cum soluta nobis'})
+                    <!-- Page Heading -->
+                    
+                    <div class="container-fluid" id="main-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">World Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="world-map-markers" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">India Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="india" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">USA Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="usa" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">UK Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="uk" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Chicago Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="chicago" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Australia Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="australia" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Germany Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="germany" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Thailand Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="thailand" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Russia Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="russia" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Belgium Map</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div>
+                                            <div id="belgium" class="vector-map-height"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Wrapper -->
+                </div>
+                <!-- footer -->
+                @@include('./partials/footer.html')
+
+                <!-- right sidebar -->
+                @@include('./partials/right-sidebar.html')
+                
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        
+        @@include('./partials/vendor-scripts.html') 
+
+        <!-- google maps api -->
+        <!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyCtSAR45TFgZjOs4nBFFZnII-6mMHLfSYI"></script> -->
+
+        <!-- Jvector Map js -->
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="assets/js/plugins/jvectormap/gdp-data.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-us-aea-en.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-uk-mill-en.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-us-il-chicago-mill-en.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-au-mill.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-de-mill.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-th-mill.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-in-mill.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-ru-mill.js"></script>
+        <script src="assets/js/plugins/jvectormap/jquery-jvectormap-be-mill.js"></script>
+        <script src="assets/js/jvectormap.init.js"></script>
+
+
+
+    </body>
+</html>

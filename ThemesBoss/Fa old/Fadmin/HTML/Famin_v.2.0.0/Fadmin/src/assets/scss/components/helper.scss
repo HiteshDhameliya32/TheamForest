@@ -74,3 +74,10 @@ $font-size-mixing: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 20, 32, 40;
     z-index: 1;
     display: block;
 }
+
+.breadcrumb-item + .breadcrumb-item {
+    &::before {
+        content: '';
+        font-family: "Material Design Icons";
+    } 
+}

@@ -4,13 +4,12 @@ Author: ThemesBoss
 File: Main Js File
 */
 
-
 "use strict";
 $(document).ready(function() {  
 
     //generating chart 
-    var Chart = c3.generate({
-        bindto: '#c3-chart',
+    var Chart1 = c3.generate({
+        bindto: '#c3chart',
         data: {
             columns: [
                 ['data1', 30, 20, 50, 40, 60, 50],
@@ -26,6 +25,15 @@ $(document).ready(function() {
             
         }
     });
+
+    setTimeout(function () {
+        console.log("loaded")
+        Chart1.load({
+            columns: [
+                ['data3', 130, -150, 200, 300, -200, 100]
+            ]
+        });
+    }, 1000);
 
     // Simple Line Chart
     var xpSimpleLineChart = c3.generate({
