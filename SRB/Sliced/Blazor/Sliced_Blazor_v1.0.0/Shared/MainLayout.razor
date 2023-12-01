@@ -1,0 +1,80 @@
+﻿@inherits LayoutComponentBase
+
+<CascadingValue Value="this">
+    <!-- Start Layout -->
+    <div class="bg-[#f9fbfd] dark:bg-dark dark:text-darkmuted text-black">
+        <!-- Start detached bg -->
+        <div class="bg-[url('../images/bg-main.png')] bg-black min-h-[220px] sm:min-h-[250px] bg-bottom fixed hidden w-full -z-50 detached-img"></div>
+        <!-- End detached bg -->
+        <!-- Start Menu Sidebar Olverlay -->
+        <div x-cloak class="fixed inset-0 bg-black/60 dark:bg-dark/90 z-[999] lg:hidden" :class="{'hidden' : !$store.app.sidebar}" @click="$store.app.toggleSidebar()"></div>
+        <!-- End Menu Sidebar Olverlay -->
+        <!-- Start Main Content -->
+        <div class="main-container flex mx-auto">
+            <NavMenu x_data="@x_data" activeMenu="@ActiveMenu" />
+            <!-- Start Content Area -->
+            <div class="main-content flex-1">
+                <TopBar />
+                <!-- Start Content -->
+                <div class="h-[calc(100vh-60px)]  relative overflow-y-auto overflow-x-hidden p-4 space-y-4 detached-content">
+                    <Breadcrumb childTitle="@ChildTitle" headTitle="@HeadTitle" />
+                    @Body
+                    <!-- Start All Card -->
+                    <!-- End All Card -->
+                    <Footer />
+                </div>
+                <!-- End Content -->
+            </div>
+            <!-- End Content Area -->
+        </div>
+    </div>
+</CascadingValue>
+<!-- End Layout -->
+@code {
+
+    private string HeadTitle;
+    private string ChildTitle;
+    private string ActiveMenu;
+    private string x_data;
+
+    public string setHeadTitle
+    {
+        get => HeadTitle;
+        set
+        {
+            HeadTitle = value;
+            InvokeAsync(() => StateHasChanged());
+        }
+    }
+    
+    public string setChildTitle
+    {
+        get => ChildTitle;
+        set
+        {
+            ChildTitle = value;
+            InvokeAsync(() => StateHasChanged());
+        }
+    }
+    
+    public string setActiveMenu
+    {
+        get => ActiveMenu;
+        set
+        {
+            ActiveMenu = value;
+            InvokeAsync(() => StateHasChanged());
+        }
+    }
+
+    public string setx_data
+    {
+        get => x_data;
+        set
+        {
+            x_data = value;
+            InvokeAsync(() => StateHasChanged());
+        }
+    }
+
+}

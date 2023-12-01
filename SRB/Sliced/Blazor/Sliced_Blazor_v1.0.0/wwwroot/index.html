@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Tailwind CSS Admin & Dashboard Template" />
+    <meta name="author" content="SRBThemes" />
+
+    <!-- Site Tiltle -->
+    <title>Sliced - Tailwind CSS Admin & Dashboard Template</title>
+
+
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="~/css/swiper-bundle.min.css" />
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body x-data="main" class="font-cerebri antialiased relative text-black dark:text-white text-sm font-normal overflow-x-hidden vertical" :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.fullscreen ? 'full' : '',$store.app.mode]">
+    <div id="app">
+
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <!-- All javascirpt -->
+    <!-- Alpine js -->
+    <script src="js/alpine-collaspe.min.js"></script>
+    <script src="js/alpine-persist.min.js"></script>
+    <script src="js/alpine.min.js" defer></script>
+
+    <!--Chart Js-->
+    <script src="js/apexcharts.js"></script>
+    <script src="js/appexchart-app.js"></script>
+
+    <!-- Countdown Js -->
+    <script>
+        function timer(expiry) {
+            return {
+                expiry: expiry,
+                remaining: null,
+                init() {
+                    this.setRemaining()
+                    setInterval(() => {
+                        this.setRemaining();
+                    }, 1000);
+                },
+                setRemaining() {
+                    const diff = this.expiry - new Date().getTime();
+                    this.remaining = parseInt(diff / 1000);
+                },
+                days() {
+                    return {
+                        value: this.remaining / 86400,
+                        remaining: this.remaining % 86400
+                    };
+                },
+                hours() {
+                    return {
+                        value: this.days().remaining / 3600,
+                        remaining: this.days().remaining % 3600
+                    };
+                },
+                minutes() {
+                    return {
+                        value: this.hours().remaining / 60,
+                        remaining: this.hours().remaining % 60
+                    };
+                },
+                seconds() {
+                    return {
+                        value: this.minutes().remaining,
+                    };
+                },
+                format(value) {
+                    return ("1" + parseInt(value)).slice(-2)
+                },
+                time() {
+                    return {
+                        days: this.format(this.days().value),
+                        hours: this.format(this.hours().value),
+                        minutes: this.format(this.minutes().value),
+                        seconds: this.format(this.seconds().value),
+                    }
+                },
+            }
+        }
+    </script>
+
+
+    <!-- Swiper Slider Js -->
+    <script src="~/js/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".SwiperDefault", {});
+        var swiper = new Swiper(".SwiperwithArrows", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper = new Swiper(".SwiperwithPagination", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        var swiper = new Swiper(".SwiperwithProgress", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper = new Swiper(".SwiperMultiple", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                }
+            }
+        });
+    </script>
+
+    <!-- Custom js -->
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

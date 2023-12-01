@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Sliced\\Sliced_ASP_v1.0.0\\Sliced\\Sliced.csproj",
+      "projectUniqueName": "E:\\Themforest Converted Products\\SRB\\Sliced\\ASP\\Sliced_ASP_v1.0.0\\Sliced.csproj",
       "projectName": "Sliced",
-      "projectPath": "E:\\Sliced\\Sliced_ASP_v1.0.0\\Sliced\\Sliced.csproj",
+      "projectPath": "E:\\Themforest Converted Products\\SRB\\Sliced\\ASP\\Sliced_ASP_v1.0.0\\Sliced.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\Sliced\\Sliced_ASP_v1.0.0\\Sliced\\obj\\",
+      "outputPath": "E:\\Themforest Converted Products\\SRB\\Sliced\\ASP\\Sliced_ASP_v1.0.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

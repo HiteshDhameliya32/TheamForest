@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Sliced
+build_property.RootNamespace = Sliced
+build_property.ProjectDir = E:\Themforest Converted Products\SRB\Sliced\Blazor\Sliced_Blazor_v1.0.0\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Themforest Converted Products\SRB\Sliced\Blazor\Sliced_Blazor_v1.0.0
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Apps/Chat.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xDaGF0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Apps/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xDb250YWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Apps/Email.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFbWFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Accordions.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xBY2NvcmRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Carousel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xDYXJvdXNlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Clipboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xDbGlwYm9hcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Countdown.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xDb3VudGRvd24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Lightbox.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xMaWdodGJveC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Modals.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xNb2RhbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Notification.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xOb3RpZmljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Pricing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xQcmljaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Components/Tabs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUYWJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Shared/HelperComponents/Breadcrumb.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlbHBlckNvbXBvbmVudHNcQnJlYWRjcnVtYi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Shared/HelperComponents/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlbHBlckNvbXBvbmVudHNcRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Shared/HelperComponents/TopBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlbHBlckNvbXBvbmVudHNcVG9wQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Shared/HelperComponents/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlbHBlckNvbXBvbmVudHNcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-7bnt25012i
+
+[E:/Themforest Converted Products/SRB/Sliced/Blazor/Sliced_Blazor_v1.0.0/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-c7nva7gs3u

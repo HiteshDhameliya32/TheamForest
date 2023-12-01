@@ -1,0 +1,90 @@
+﻿@page "/components/carousel"
+
+<!-- Start All Card -->
+<div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Basic Carousel</h2>
+            <div class="swiper SwiperDefault">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/images-1.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-2.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-3.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-4.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-5.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Basic Carousel With Arrow</h2>
+            <div class="swiper SwiperwithArrows">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/images-6.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-7.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-2.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-4.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-5.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                </div>
+                <div class="swiper-button-next text-white"></div>
+                <div class="swiper-button-prev text-white"></div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Basic Carousel With pagination</h2>
+            <div class="swiper SwiperwithPagination">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/images-5.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-4.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-2.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-6.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-7.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Basic Carousel With progress</h2>
+            <div class="swiper SwiperwithProgress">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/images-4.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-3.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-2.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-6.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-7.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                </div>
+                <div class="swiper-button-next text-white"></div>
+                <div class="swiper-button-prev text-white"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="bg-white border border-black/10 p-5 rounded dark:bg-darklight dark:border-darkborder">
+            <h2 class="text-base font-semibold text-black dark:text-white/80 mb-4 capitalize">Basic Carousel With Multiple slides</h2>
+            <div class="swiper SwiperMultiple">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/images-7.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-6.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-2.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-4.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                    <div class="swiper-slide"><img src="/images/images-3.jpg" alt="slider" class="max-h-96 w-full object-cover" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Card -->
+
+
+
+@code {
+    [CascadingParameter]
+    public MainLayout Layout { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Layout.setHeadTitle = "Components";
+        Layout.setChildTitle = "Carousel";
+        Layout.setActiveMenu = "carousel";
+        Layout.setx_data = "components";
+    }
+}
