@@ -48,105 +48,71 @@
     },
 
     //Work
-    // KerriApp.prototype.initWork = function() {
-    //     $(window).on('load', function () {
-    //         var $container = $('.work-filter');
-    //         var $filter = $('#menu-filter');
-    //         $container.isotope({
-    //             filter: '*',
-    //             layoutMode: 'masonry',
-    //             animationOptions: {
-    //                 duration: 750,
-    //                 easing: 'linear'
-    //             }
-    //         });
-
-    //         $filter.find('a').on("click",function() {
-    //             var selector = $(this).attr('data-filter');
-    //             $filter.find('a').removeClass('active');
-    //             $(this).addClass('active');
-    //             $container.isotope({
-    //                 filter: selector,
-    //                 animationOptions: {
-    //                     animationDuration: 750,
-    //                     easing: 'linear',
-    //                     queue: false,
-    //                 }
-    //             });
-    //             return false;
-    //         });
-    //     });
-    // },
-
-
-    //Work
-  (KerriApp.prototype.initWork = function () {
-    $(window).on("load", function () {
-      var $container = $(".work-filter");
-      var $filter = $("#menu-filter");
-      $container.isotope({
-        filter: "*",
-        layoutMode: "masonry",
-        animationOptions: {
-          duration: 750,
-          easing: "linear",
-        },
-      });
-
-      $filter.find("a").on("click", function () {
-        KerriApp.prototype.currentRunnerIndex++;
-        var currentLocalIndex = KerriApp.prototype.currentRunnerIndex;
-
-        var selector = $(this).attr("data-filter");
-        $filter.find("a").removeClass("active");
-        $(this).addClass("active");
-
-        for (let i = 0; i < $container[0].children.length; i++) {
-          let childItem = $container[0].children[i];
-
-          childItem.removeAttribute("data-aos");
-        }
-
-        AOS.refreshHard();
-
+    (KerriApp.prototype.initWork = function () {
+      $(window).on("load", function () {
+        var $container = $(".work-filter");
+        var $filter = $("#menu-filter");
         $container.isotope({
-          filter: selector,
+          filter: "*",
+          layoutMode: "masonry",
           animationOptions: {
-            animationDuration: 750,
+            duration: 750,
             easing: "linear",
-            queue: false,
           },
         });
 
-        setTimeout(function () {
-          if (currentLocalIndex !== KerriApp.prototype.currentRunnerIndex) {
-            return;
-          }
+        $filter.find("a").on("click", function () {
+          KerriApp.prototype.currentRunnerIndex++;
+          var currentLocalIndex = KerriApp.prototype.currentRunnerIndex;
+
+          var selector = $(this).attr("data-filter");
+          $filter.find("a").removeClass("active");
+          $(this).addClass("active");
 
           for (let i = 0; i < $container[0].children.length; i++) {
             let childItem = $container[0].children[i];
-            let classList = childItem.classList;
 
-            let localSelector = selector.substring(1);
-
-            if (selector === "*" || classList.contains(localSelector)) {
-              childItem.style.display = "initials";
-            } else {
-              childItem.style.display = "none";
-            }
-
-            childItem.setAttribute("data-aos", "fade-up");
+            childItem.removeAttribute("data-aos");
           }
 
           AOS.refreshHard();
-        }, 1000);
 
-        return false;
+          $container.isotope({
+            filter: selector,
+            animationOptions: {
+              animationDuration: 750,
+              easing: "linear",
+              queue: false,
+            },
+          });
+
+          setTimeout(function () {
+            if (currentLocalIndex !== KerriApp.prototype.currentRunnerIndex) {
+              return;
+            }
+
+            for (let i = 0; i < $container[0].children.length; i++) {
+              let childItem = $container[0].children[i];
+              let classList = childItem.classList;
+
+              let localSelector = selector.substring(1);
+
+              if (selector === "*" || classList.contains(localSelector)) {
+                childItem.style.display = "initials";
+              } else {
+                childItem.style.display = "none";
+              }
+
+              childItem.setAttribute("data-aos", "fade-up");
+            }
+
+            AOS.refreshHard();
+          }, 1000);
+
+          return false;
+        });
       });
-    });
-  }),
-
-
+    }),
 
     //Magnificpop
     KerriApp.prototype.initMagnificPopup = function() {
