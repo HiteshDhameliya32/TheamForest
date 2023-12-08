@@ -1,0 +1,35 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "html.format.wrapLineLength": 120,
+    "[javascript][typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[css][scss][less]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "[scss]": {
+        "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+    },
+    "html.format.extraLiners": "",
+    // "cSpell.words": [
+    //     "Swal",
+    //     "sweetalert",
+    //     "Toastr"
+    // ],
+    "editor.formatOnSave": true,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "scss.validate": false,
+    "files.trimTrailingWhitespace": true,
+    "javascript.format.semicolons": "insert",
+    "editor.tabSize": 2
+}

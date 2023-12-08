@@ -30,9 +30,13 @@
 
 }
 
-  // 
+.btn-close {
+    justify-content: center;
+}
+
+//
 // _buttons.scss
-// 
+//
 
 button,
 a {
@@ -77,7 +81,7 @@ a {
 
 //
 // Soft Buttons
-// 
+//
 
 @mixin button-variant-soft($bg) {
     color: $bg;

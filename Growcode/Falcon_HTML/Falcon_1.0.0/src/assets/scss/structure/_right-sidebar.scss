@@ -32,12 +32,13 @@
     .offcanvas-header {
         .btn-close {
             background: 0 0;
+            color: var(--dark) !important;
             &:focus {
                 box-shadow: none;
             }
         }
     }
-    
+
 }
 
 ul.pattern {
@@ -82,4 +83,4 @@ ul.pattern {
         }
     }
 }
-  
+

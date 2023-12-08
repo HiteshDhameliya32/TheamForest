@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   box-shadow: var(--shadow-sm);
+  padding: 0;
   &_scrolled {
     position: fixed;
     animation-name: fadeInUp;
@@ -139,34 +140,8 @@
   }
   .buy-button {
     float: right;
-    line-height: 72px;
     > li {
       line-height: initial;
-      .btn-hover {
-        transition: all 0.7s ease;
-        background-color: rgba(64, 81, 137, 0.2) !important;
-        &:hover {
-          background-color: $primary !important;
-        }
-        .avatar-title {
-          &:hover {
-            color: $white !important;
-          }
-        }
-      }
-      .btn-hover-remove {
-        transition: all 0.7s ease;
-        background-color: $primary;
-        &:hover {
-          background-color: rgba(64, 81, 137, 0.2) !important;
-          border: none;
-        }
-        .avatar-title {
-          &:hover {
-            color: $primary !important;
-          }
-        }
-      }
     }
     .search-bar {
       .menu-search {
@@ -252,16 +227,16 @@
       > a {
         display: block;
         color: var(--gray-800);
-        font-size: 13px;
+        font-size: 14px;
         background-color: transparent !important;
         font-weight: 700;
         letter-spacing: 1px;
         line-height: 24px;
         text-transform: uppercase;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 12px;
+        padding-right: 12px;
         text-decoration: none;
-        &:active, 
+        &:active,
         &:hover {
           color: $primary;
         }
@@ -297,7 +272,7 @@
         position: absolute;
         transition: all 0.5s;
         right: -1px;
-        top: 25px;
+        top: 22px;
       }
       &:hover {
         .mega-menu {
@@ -588,7 +563,7 @@
       > .has-submenu {
         &:hover {
           .mega-menu {
-            top: 25px !important;
+            top: 24px !important;
           }
         }
       }
@@ -705,9 +680,8 @@
           }
         }
         > a {
-          padding-top: 18px;
-          padding-bottom: 18px;
-          min-height: 62px;
+          padding-top: 16px;
+          padding-bottom: 16px;
         }
         &:hover {
           > .mega-menu {
@@ -940,11 +914,10 @@
   }
   #navigation {
     position: absolute;
-    top: 90px;
+    top: 74px;
     left: 0;
     width: 100%;
-    display: none;
-    background-color: var(--gray-200);
+    background-color: var(--light);
     height: auto;
     padding-bottom: 0;
     overflow: auto;
