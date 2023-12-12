@@ -1817,9 +1817,9 @@ span.chat-title {
   overflow: hidden;
 }
 
-body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
+/* body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
   height: auto !important;
-}
+} */
 
 .page-sidebar-fixed .page-sidebar,
 .page-header-fixed .page-sidebar,

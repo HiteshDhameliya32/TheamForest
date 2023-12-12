@@ -17,7 +17,7 @@ let mySwiper = new Swiper('.mySwiper', {
     clickable: true,
   },
   autoplay: {
-    delay: 3000,
+    delay: 5000,
   },
   breakpoints: {
     576: {
@@ -186,8 +186,8 @@ function testimonialcarousel() {
     $('.testimonial-carousel .controls li.active').removeClass('active');
     $(
       '.testimonial-carousel .controls li:eq(' +
-        $(evt.relatedTarget).index() +
-        ')'
+      $(evt.relatedTarget).index() +
+      ')'
     ).addClass('active');
   });
 }

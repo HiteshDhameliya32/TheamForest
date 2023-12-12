@@ -76,8 +76,8 @@ gulp.task("build", function () {
 
   // Scrollbar
   gulp.src("node_modules/simplebar/dist/simplebar.min.css",).pipe(gulp.dest("dist/assets/css/plugins"));
-  gulp.src("node_modules/simplebar/dist/simplebar.min.js").pipe(gulp.dest("dist/assets/js/plugins"));
-  return gulp.src("node_modules/simplebar/dist/simplebar.esm.js").pipe(gulp.dest("dist/assets/js/plugins"));
+  return gulp.src("node_modules/simplebar/dist/simplebar.min.js").pipe(gulp.dest("dist/assets/js/plugins"));
+  // return gulp.src("node_modules/simplebar/dist/simplebar.esm.js").pipe(gulp.dest("dist/assets/js/plugins"));
 
 });
 //  [ Copy assets ] end
