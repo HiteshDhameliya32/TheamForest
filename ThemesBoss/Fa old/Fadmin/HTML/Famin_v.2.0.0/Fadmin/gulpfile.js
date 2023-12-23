@@ -61,6 +61,7 @@ gulp.task("build", function () {
   var required_libs = {
     js: [
       "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/echarts/dist/echarts.min.js",
     ],
     css: [
       "node_modules/simplebar/dist/simplebar.min.css",
@@ -194,10 +195,6 @@ gulp.task('browsersyncReload', function (callback) {
   callback();
 });
 
-gulp.task('browsersyncReload', function (callback) {
-  browsersync.reload();
-  callback();
-});
 //  [ browser reload ] end
 
 //  [ watch minify ] start
