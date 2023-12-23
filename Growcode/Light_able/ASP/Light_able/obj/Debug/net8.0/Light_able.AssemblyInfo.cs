@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Light_able")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f61852c02e28beb611653c6b029b5f3937f22040")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05c541e4443778862e9cbfcc660b5b8b760d9760")]
 [assembly: System.Reflection.AssemblyProductAttribute("Light_able")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Light_able")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

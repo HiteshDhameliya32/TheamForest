@@ -95,7 +95,7 @@
     </div>
 </div>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="calendar-add_edit_event">
+<div class="offcanvas offcanvas-end  cal-event-offcanvas" tabindex="-1" id="calendar-add_edit_event">
     <div class="offcanvas-header">
         <h3 class="f-w-600 text-truncate">Add Events</h3>
         <a href="#" class="avtar avtar-s btn-link-danger btn-pc-default" data-bs-dismiss="offcanvas">
@@ -106,7 +106,7 @@
         <form id="pc-form-event" novalidate>
             <div class="form-group">
                 <label class="form-label">Title</label>
-                <input type="email" class="form-control" id="pc-e-title" placeholder="Enter event title">
+                <input type="email" class="form-control" id="pc-e-title" placeholder="Enter event title" autofocus>
             </div>
             <div class="form-group">
                 <label class="form-label">Venue</label>
@@ -155,4 +155,4 @@
 <!-- Sweet Alert -->
 <script src="~/js/plugins/sweetalert2.all.min.js"></script>
 <script src="~/js/pages/calendar.js"></script>
-<!-- [Page Specific JS] end -->
+<!-- [Page Specific JS] end --

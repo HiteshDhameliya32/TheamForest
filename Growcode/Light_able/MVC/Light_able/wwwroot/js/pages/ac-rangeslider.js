@@ -4,7 +4,7 @@
 (function () {
   var slider = new Slider('#ex1', {
     formatter: function (value) {
-      return 'Current value: ' + value;
+      return 'value: ' + value;
     }
   });
 
@@ -199,7 +199,7 @@
     ticks_positions: [0, 30, 70, 90, 100],
     ticks_snap_bounds: 200,
     formatter: function (value) {
-      return 'Current value: ' + value;
+      return 'value: ' + value;
     },
     ticks_tooltip: true,
     step: 0.01

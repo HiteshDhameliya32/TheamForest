@@ -55,8 +55,7 @@ function set_tab_menu() {
           if (tmp_flag_count == 0) {
             temp_blank_list = pc_new_list;
           }
-          if (tmp_flag_count == 1) {
-            console.log(temp_blank_list);
+          if (tmp_flag_count == 1) {            
             temp_blank_list += pc_new_list;
             pc_new_list = temp_blank_list;
             temp_blank_list = "";

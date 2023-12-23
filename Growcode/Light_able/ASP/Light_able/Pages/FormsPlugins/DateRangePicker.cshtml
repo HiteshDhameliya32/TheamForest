@@ -20,8 +20,8 @@
                     <div class="form-group row">
                         <label class="col-form-label col-lg-3 col-sm-12 text-lg-end">Simple Input</label>
                         <div class="col-lg-4 col-md-9 col-sm-12">
-                            <input type="text" class="form-control" id="pc-
-                      date_range_picker-1" placeholder="Select date range">
+                            <input type="text" class="form-control" id="pc-date_range_picker-1" placeholder="Select date range">
+
                         </div>
                     </div>
                     <div class="form-group row">
@@ -57,13 +57,13 @@
 <script src="~/js/plugins/flatpickr.min.js"></script>
 <script>
     // minimum setup
-    document.querySelector('#pc-date_range_picker-1').flatpickr({
+    flatpickr(document.querySelector('#pc-date_range_picker-1'), {
         mode: 'range'
     });
-    document.querySelector('#pc-date_range_picker-2').flatpickr({
+    flatpickr(document.querySelector('#pc-date_range_picker-2'), {
         mode: 'range'
     });
-    document.querySelector('#pc-date_range_picker-3').flatpickr({
+    flatpickr(document.querySelector('#pc-date_range_picker-3'), {
         mode: 'range',
         minDate: 'today',
         dateFormat: 'Y-m-d',
@@ -73,7 +73,7 @@
             }
         ]
     });
-    document.querySelector('#pc-date_range_picker-4').flatpickr({
+    flatpickr(document.querySelector('#pc-date_range_picker-4'), {
         mode: 'range',
         dateFormat: 'Y-m-d',
         defaultDate: ['2016-10-10', '2016-10-20']

@@ -725,6 +725,26 @@
       "PackagePath": "staticwebassets\\images\\landing\\client-vodafone.svg"
     },
     {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\icons\\figma.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\icons\\figma.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\icons\\js.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\icons\\js.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\icons\\mui.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\icons\\mui.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\icons\\react.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\icons\\react.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\icons\\ts.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\icons\\ts.svg"
+    },
+    {
       "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-board.jpg",
       "PackagePath": "staticwebassets\\images\\landing\\img-board.jpg"
     },
