@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include '../layouts/head-page-meta.html' %}
+  <!-- [Page specific CSS] start -->
+  <link href={% static "/css/plugins/animate.min.css" %} rel="stylesheet" type="text/css">
+  <!-- [Page specific CSS] end -->
+  {% include '../layouts/head-css.html' %}
+  <link rel="stylesheet" href={% static "/css/uikit.css" %}>
+</head>
+
+<body data-pc-preset="preset-1" data-pc-sidebar-theme="light" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme="light" class="component-page">
+  <!-- [ Main Content ] start -->
+  {% include '../layouts/loader.html' %}
+  {% include '../layouts/component/component-header.html' %}
+  <section class="component-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3">
+          {% include '../layouts/component/component-menu-list.html' %}
+        </div>
+        <div class="col-xl-9">
+          <div class="row">
+            {% include '../layouts/component/component-breadcrumb.html' %}
+          </div>
+          <!-- [ Main Content ] start -->
+          <div class="row">
+            <!-- [ rangeslider ] start -->
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5>HTML Demo</h5>
+                </div>
+                <div class="card-body">
+                  <div id="tree-demo"> </div>
+                  <p id="tree-msg"></p>
+                </div>
+              </div>
+            </div>
+            <!-- [ rangeslider ] end -->
+          </div>
+          <!-- [ Main Content ] end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- [ Main Content ] end -->
+  {% include '../layouts/footer-js.html' %}
+  {% include '../layouts/component/layout-component-footer-js.html' %}
+  <!-- [Page Specific JS] start -->
+  <!-- jstree Js -->
+  <script src={% static "/js/plugins/vanillatree.min.js" %}></script>
+  <script src={% static "/js/pages/ac-treeview.js" %}></script>
+  <!-- [Page Specific JS] end -->
+  {% include '../layouts/customizer.html' %}
+</body>
+
+</html>

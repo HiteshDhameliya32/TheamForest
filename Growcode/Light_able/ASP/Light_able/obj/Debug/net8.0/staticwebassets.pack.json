@@ -1,0 +1,2493 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Light_able.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Light_able.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\landing.css",
+      "PackagePath": "staticwebassets\\css\\landing.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\animate.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\autoFill.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\autoFill.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\bootstrap-slider.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\bootstrap-slider.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\bootstrap-switch-button.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\bootstrap-switch-button.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\buttons.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\buttons.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\colReorder.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\colReorder.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\croppr.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\croppr.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\datepicker-bs5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\datepicker-bs5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\dragula.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\dragula.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\dropzone.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\fixedColumns.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\fixedColumns.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\fixedHeader.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\fixedHeader.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\flatpickr.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\introjs.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\introjs.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\jsvectormap.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\jsvectormap.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\keyTable.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\keyTable.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\notifier.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\notifier.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\nouislider.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\prism-coy.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\prism-coy.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\quill.bubble.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\quill.bubble.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\quill.core.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\quill.core.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\quill.snow.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\quill.snow.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\responsive.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\responsive.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\rowReorder.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\rowReorder.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\scroller.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\scroller.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\select.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\select.bootstrap5.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\simplemde.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\simplemde.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\style.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\style.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\swiper-bundle.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\swiper-bundle.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\tiny-slider.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\uppy.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\uppy.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\plugins\\vanillatree.css",
+      "PackagePath": "staticwebassets\\css\\plugins\\vanillatree.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\style-preset.css",
+      "PackagePath": "staticwebassets\\css\\style-preset.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\css\\uikit.css",
+      "PackagePath": "staticwebassets\\css\\uikit.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\feather.css",
+      "PackagePath": "staticwebassets\\fonts\\feather.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\feather\\feather.eot",
+      "PackagePath": "staticwebassets\\fonts\\feather\\feather.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\feather\\feather.svg",
+      "PackagePath": "staticwebassets\\fonts\\feather\\feather.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\feather\\feather.ttf",
+      "PackagePath": "staticwebassets\\fonts\\feather\\feather.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\feather\\feather.woff",
+      "PackagePath": "staticwebassets\\fonts\\feather\\feather.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome.css",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\fontawesome\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\material.css",
+      "PackagePath": "staticwebassets\\fonts\\material.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\material\\material.woff2",
+      "PackagePath": "staticwebassets\\fonts\\material\\material.woff2"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\phosphor\\duotone\\Phosphor-Duotone.svg",
+      "PackagePath": "staticwebassets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\phosphor\\duotone\\Phosphor-Duotone.ttf",
+      "PackagePath": "staticwebassets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\phosphor\\duotone\\Phosphor-Duotone.woff",
+      "PackagePath": "staticwebassets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\phosphor\\duotone\\selection.json",
+      "PackagePath": "staticwebassets\\fonts\\phosphor\\duotone\\selection.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\phosphor\\duotone\\style.css",
+      "PackagePath": "staticwebassets\\fonts\\phosphor\\duotone\\style.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\tabler-icons.min.css",
+      "PackagePath": "staticwebassets\\fonts\\tabler-icons.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\tabler\\tabler-icons.eot",
+      "PackagePath": "staticwebassets\\fonts\\tabler\\tabler-icons.eot"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\tabler\\tabler-icons.svg",
+      "PackagePath": "staticwebassets\\fonts\\tabler\\tabler-icons.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\tabler\\tabler-icons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\tabler\\tabler-icons.ttf"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\tabler\\tabler-icons.woff",
+      "PackagePath": "staticwebassets\\fonts\\tabler\\tabler-icons.woff"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\fonts\\tabler\\tabler-icons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\tabler\\tabler-icons.woff2"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\card.png",
+      "PackagePath": "staticwebassets\\images\\application\\card.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-accout-alert.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-accout-alert.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-accout-password-alert.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-accout-password-alert.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-brand-1.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-brand-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-brand-2.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-brand-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-brand-3.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-brand-3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-brand-4.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-brand-4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-brand-5.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-brand-5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-brand-6.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-brand-6.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-community-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-community-bg.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-coupon.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-coupon.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-empty-mail.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-empty-mail.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-1.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-2.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-3.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-4.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-5.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-6.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-7.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-gallery-8.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-gallery-8.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-mastercard.svg",
+      "PackagePath": "staticwebassets\\images\\application\\img-mastercard.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-pay-card-bg.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-pay-card-bg.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-post-1.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-post-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-post-2.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-post-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-post-3.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-post-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-post-4.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-post-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-post-5.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-post-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-post-6.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-post-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-1.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-2.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-3.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-4.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-5.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-6.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-7.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-8.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-8.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-9.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-9.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-brand-1.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-brand-1.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-brand-2.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-brand-2.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-brand-3.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-brand-3.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-brand-4.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-brand-4.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-prod-brand-5.png",
+      "PackagePath": "staticwebassets\\images\\application\\img-prod-brand-5.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-profile-cover.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-profile-cover.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-1.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-2.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-3.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-4.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-5.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-6.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-7.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-8.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-8.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-soc-gal-9.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-soc-gal-9.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-story-1.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-story-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-story-2.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-story-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-story-3.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-story-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-story-4.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-story-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-story-5.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-story-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-story-6.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-story-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-1.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-2.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-3.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-4.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-5.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-6.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-7.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-8.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-8.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\img-user-cover-9.jpg",
+      "PackagePath": "staticwebassets\\images\\application\\img-user-cover-9.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\mastercard.png",
+      "PackagePath": "staticwebassets\\images\\application\\mastercard.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\paypal.png",
+      "PackagePath": "staticwebassets\\images\\application\\paypal.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\application\\visa.png",
+      "PackagePath": "staticwebassets\\images\\application\\visa.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\authentication\\img-auth-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\authentication\\img-auth-bg.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\authentication\\img-auth-code-varify.png",
+      "PackagePath": "staticwebassets\\images\\authentication\\img-auth-code-varify.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\authentication\\img-auth-fporgot-password.png",
+      "PackagePath": "staticwebassets\\images\\authentication\\img-auth-fporgot-password.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\authentication\\img-auth-login.png",
+      "PackagePath": "staticwebassets\\images\\authentication\\img-auth-login.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\authentication\\img-auth-register.png",
+      "PackagePath": "staticwebassets\\images\\authentication\\img-auth-register.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\authentication\\img-auth-reset-password.png",
+      "PackagePath": "staticwebassets\\images\\authentication\\img-auth-reset-password.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\authentication\\sms.svg",
+      "PackagePath": "staticwebassets\\images\\authentication\\sms.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\component\\img-card.jpg",
+      "PackagePath": "staticwebassets\\images\\component\\img-card.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\component\\img-slide-1.jpg",
+      "PackagePath": "staticwebassets\\images\\component\\img-slide-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\component\\img-slide-2.jpg",
+      "PackagePath": "staticwebassets\\images\\component\\img-slide-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\component\\img-slide-3.jpg",
+      "PackagePath": "staticwebassets\\images\\component\\img-slide-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\customizer\\img-caption-1.svg",
+      "PackagePath": "staticwebassets\\images\\customizer\\img-caption-1.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\customizer\\img-caption-2.svg",
+      "PackagePath": "staticwebassets\\images\\customizer\\img-caption-2.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\customizer\\img-container-1.svg",
+      "PackagePath": "staticwebassets\\images\\customizer\\img-container-1.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\customizer\\img-container-2.svg",
+      "PackagePath": "staticwebassets\\images\\customizer\\img-container-2.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\customizer\\img-layout-1.svg",
+      "PackagePath": "staticwebassets\\images\\customizer\\img-layout-1.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\customizer\\img-layout-2.svg",
+      "PackagePath": "staticwebassets\\images\\customizer\\img-layout-2.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\favicon.svg",
+      "PackagePath": "staticwebassets\\images\\favicon.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-1.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-10.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-10.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-11.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-11.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-12.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-12.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-13.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-13.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-14.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-14.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-15.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-15.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-16.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-16.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-2.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-3.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-4.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-5.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-6.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-7.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-8.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-8.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\gallery-grid\\img-grd-gal-9.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-grid\\img-grd-gal-9.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\client-crystal-1.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\client-crystal-1.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\client-eagames.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\client-eagames.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\client-haswent-2.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\client-haswent-2.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\client-vodafone.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\client-vodafone.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-board.jpg",
+      "PackagePath": "staticwebassets\\images\\landing\\img-board.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-click-prod.png",
+      "PackagePath": "staticwebassets\\images\\landing\\img-click-prod.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-counter-bg.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\img-counter-bg.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-customer-bg.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\img-customer-bg.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-dot-bg.png",
+      "PackagePath": "staticwebassets\\images\\landing\\img-dot-bg.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-h-badge-bg.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\img-h-badge-bg.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-header-bg.svg",
+      "PackagePath": "staticwebassets\\images\\landing\\img-header-bg.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-header-moke.png",
+      "PackagePath": "staticwebassets\\images\\landing\\img-header-moke.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-platform.png",
+      "PackagePath": "staticwebassets\\images\\landing\\img-platform.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\landing\\img-widget.png",
+      "PackagePath": "staticwebassets\\images\\landing\\img-widget.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\layout\\img-profile-card.jpg",
+      "PackagePath": "staticwebassets\\images\\layout\\img-profile-card.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\layout\\nav-card-bg.svg",
+      "PackagePath": "staticwebassets\\images\\layout\\nav-card-bg.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\l1.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\l1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\l2.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\l2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\l3.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\l3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\l4.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\l4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\l5.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\l5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\l6.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\l6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\sl1.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\sl1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\sl2.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\sl2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\sl3.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\sl3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\sl4.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\sl4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\sl5.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\sl5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\light-box\\sl6.jpg",
+      "PackagePath": "staticwebassets\\images\\light-box\\sl6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\logo-dark.svg",
+      "PackagePath": "staticwebassets\\images\\logo-dark.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\logo-white.svg",
+      "PackagePath": "staticwebassets\\images\\logo-white.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\notification\\clock-48.png",
+      "PackagePath": "staticwebassets\\images\\notification\\clock-48.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\notification\\high_priority-48.png",
+      "PackagePath": "staticwebassets\\images\\notification\\high_priority-48.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\notification\\medium_priority-48.png",
+      "PackagePath": "staticwebassets\\images\\notification\\medium_priority-48.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\notification\\ok-48.png",
+      "PackagePath": "staticwebassets\\images\\notification\\ok-48.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\notification\\survey-48.png",
+      "PackagePath": "staticwebassets\\images\\notification\\survey-48.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-connection-lost.png",
+      "PackagePath": "staticwebassets\\images\\pages\\img-connection-lost.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-error-404.png",
+      "PackagePath": "staticwebassets\\images\\pages\\img-error-404.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-1.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-2.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-3.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-4.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-5.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-6.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-7.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-8.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-8.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-gallery-9.jpg",
+      "PackagePath": "staticwebassets\\images\\pages\\img-gallery-9.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-soon.png",
+      "PackagePath": "staticwebassets\\images\\pages\\img-soon.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\pages\\img-under-maintenance.png",
+      "PackagePath": "staticwebassets\\images\\pages\\img-under-maintenance.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\slider\\img-slide-1.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\img-slide-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\slider\\img-slide-2.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\img-slide-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\slider\\img-slide-3.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\img-slide-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\slider\\img-slide-4.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\img-slide-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\slider\\img-slide-5.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\img-slide-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\slider\\img-slide-6.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\img-slide-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\slider\\img-slide-7.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\img-slide-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-1.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-10.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-10.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-2.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-3.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-4.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-5.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-6.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-6.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-7.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-7.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-8.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-8.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\user\\avatar-9.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\avatar-9.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\AUSTRALIA.jpg",
+      "PackagePath": "staticwebassets\\images\\widget\\AUSTRALIA.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\BRAZIL.jpg",
+      "PackagePath": "staticwebassets\\images\\widget\\BRAZIL.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\GERMANY.jpg",
+      "PackagePath": "staticwebassets\\images\\widget\\GERMANY.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\UK.jpg",
+      "PackagePath": "staticwebassets\\images\\widget\\UK.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\USA.jpg",
+      "PackagePath": "staticwebassets\\images\\widget\\USA.jpg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-earning-bg.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-earning-bg.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-facebook.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-facebook.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-google.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-google.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-1.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-1.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-2.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-2.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-3.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-3.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-4.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-4.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-5.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-5.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-6.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-6.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-7.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-7.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-8.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-8.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-status-9.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-status-9.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-twitter.svg",
+      "PackagePath": "staticwebassets\\images\\widget\\img-twitter.svg"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\images\\widget\\img-visitor.png",
+      "PackagePath": "staticwebassets\\images\\widget\\img-visitor.png"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\component.js",
+      "PackagePath": "staticwebassets\\js\\component.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\fonts\\custom-font.js",
+      "PackagePath": "staticwebassets\\js\\fonts\\custom-font.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\layout-compact.js",
+      "PackagePath": "staticwebassets\\js\\layout-compact.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\layout-horizontal.js",
+      "PackagePath": "staticwebassets\\js\\layout-horizontal.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\layout-tab.js",
+      "PackagePath": "staticwebassets\\js\\layout-tab.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\ac-alert.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ac-alert.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\ac-datepicker.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ac-datepicker.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\ac-notification.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ac-notification.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\ac-rangeslider.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ac-rangeslider.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\ac-slider.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ac-slider.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\ac-tour.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ac-tour.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\ac-treeview.js",
+      "PackagePath": "staticwebassets\\js\\pages\\ac-treeview.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\calendar.js",
+      "PackagePath": "staticwebassets\\js\\pages\\calendar.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\canada.js",
+      "PackagePath": "staticwebassets\\js\\pages\\canada.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\chart-apex.js",
+      "PackagePath": "staticwebassets\\js\\pages\\chart-apex.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\dashboard-default.js",
+      "PackagePath": "staticwebassets\\js\\pages\\dashboard-default.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\form-masking-custom.js",
+      "PackagePath": "staticwebassets\\js\\pages\\form-masking-custom.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\form-validation.js",
+      "PackagePath": "staticwebassets\\js\\pages\\form-validation.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\iraq.js",
+      "PackagePath": "staticwebassets\\js\\pages\\iraq.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\italy.js",
+      "PackagePath": "staticwebassets\\js\\pages\\italy.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\map-vector.js",
+      "PackagePath": "staticwebassets\\js\\pages\\map-vector.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\page-croper.js",
+      "PackagePath": "staticwebassets\\js\\pages\\page-croper.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\russia.js",
+      "PackagePath": "staticwebassets\\js\\pages\\russia.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\spain.js",
+      "PackagePath": "staticwebassets\\js\\pages\\spain.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\us-aea-en.js",
+      "PackagePath": "staticwebassets\\js\\pages\\us-aea-en.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\us-lcc-en.js",
+      "PackagePath": "staticwebassets\\js\\pages\\us-lcc-en.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\us-merc-en.js",
+      "PackagePath": "staticwebassets\\js\\pages\\us-merc-en.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\us-mill-en.js",
+      "PackagePath": "staticwebassets\\js\\pages\\us-mill-en.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pages\\w-chart.js",
+      "PackagePath": "staticwebassets\\js\\pages\\w-chart.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\pcoded.js",
+      "PackagePath": "staticwebassets\\js\\pcoded.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\Jarallax.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\Jarallax.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\apexcharts.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\autoFill.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\autoFill.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\bootstrap-slider.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\bootstrap-slider.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\bootstrap-switch-button.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\bootstrap-switch-button.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\bouncer.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\bouncer.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\buttons.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\buttons.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\buttons.colVis.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\buttons.colVis.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\buttons.html5.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\buttons.print.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\choices.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\choices.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\ckeditor\\balloon\\ckeditor.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\ckeditor\\balloon\\ckeditor.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\ckeditor\\classic\\ckeditor.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\ckeditor\\classic\\ckeditor.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\ckeditor\\document\\ckeditor.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\ckeditor\\document\\ckeditor.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\ckeditor\\inline\\ckeditor.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\ckeditor\\inline\\ckeditor.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\clipboard.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\clipboard.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\croppr.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\croppr.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.autoFill.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.autoFill.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.colReorder.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.colReorder.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.fixedColumns.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.fixedColumns.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.fixedHeader.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.fixedHeader.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.keyTable.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.keyTable.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.responsive.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.responsive.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.rowReorder.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.rowReorder.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dataTables.select.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dataTables.select.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\datepicker-full.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\datepicker-full.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dragula.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dragula.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\dropzone-amd-module.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\dropzone-amd-module.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\feather.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\feather.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\flatpickr.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\gmaps.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\imask.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\imask.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\index.global.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\index.global.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\intro.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\intro.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\jsvectormap.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\jsvectormap.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\jszip.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\jszip.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\keyTable.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\keyTable.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\module.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\module.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\notifier.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\notifier.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\nouislider.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\pdfmake.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\pdfmake.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\popper.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\prism.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\prism.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\quill.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\quill.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\responsive.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\responsive.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\scroller.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\scroller.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\simple-datatables.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\simple-datatables.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\simplebar.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\simplebar.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\simplemde.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\simplemde.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\swiper-bundle.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\swiper-bundle.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tiny-slider.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\CHANGELOG.md"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\README.md",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\README.md"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\bower.json",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\bower.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\composer.json",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\composer.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\icons\\default\\icons.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\icons\\default\\icons.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\icons\\default\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\icons\\default\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\license.txt",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\license.txt"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\models\\dom\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\models\\dom\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\models\\dom\\model.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\models\\dom\\model.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\package.json",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\package.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\accordion\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\accordion\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\advlist\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\advlist\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\anchor\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\anchor\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autolink\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autolink\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autoresize\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autoresize\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autosave\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autosave\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\charmap\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\charmap\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\code\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\code\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\code\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\code\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\codesample\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\codesample\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\directionality\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\directionality\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\emoticons\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\emoticons\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\fullscreen\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\fullscreen\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\image\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\image\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\image\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\image\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\importcss\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\importcss\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\insertdatetime\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\link\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\link\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\link\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\link\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\lists\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\lists\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\lists\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\lists\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\media\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\media\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\media\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\media\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\nonbreaking\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\pagebreak\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\pagebreak\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\preview\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\preview\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\preview\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\preview\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\print\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\print\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\quickbars\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\quickbars\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\save\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\save\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\save\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\save\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\searchreplace\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\searchreplace\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\table\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\table\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\table\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\table\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\template\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\template\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\template\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\template\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\template\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\template\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\visualblocks\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\visualblocks\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\visualchars\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\visualchars\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\wordcount\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\wordcount\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\dark\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\default\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\default\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\document\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\document\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\writer\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\themes\\silver\\index.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\themes\\silver\\index.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\themes\\silver\\theme.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\themes\\silver\\theme.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\tinymce.d.ts",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\tinymce.d.ts"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\tinymce.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\tinymce.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\type-ahead.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\type-ahead.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\uppy.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\uppy.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\vanillatree.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\vanillatree.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\vfs_fonts.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\vfs_fonts.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\wNumb.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\wNumb.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\world-merc.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\world-merc.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\world.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\world.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\js\\plugins\\wow.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\wow.min.js"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\2500.txt",
+      "PackagePath": "staticwebassets\\json\\2500.txt"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\datatable.column.json",
+      "PackagePath": "staticwebassets\\json\\datatable.column.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\datatable.json",
+      "PackagePath": "staticwebassets\\json\\datatable.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\file-upload.php",
+      "PackagePath": "staticwebassets\\json\\file-upload.php"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\lazy.json",
+      "PackagePath": "staticwebassets\\json\\lazy.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\root.json",
+      "PackagePath": "staticwebassets\\json\\root.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\typehead\\countries.json",
+      "PackagePath": "staticwebassets\\json\\typehead\\countries.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\typehead\\movies.json",
+      "PackagePath": "staticwebassets\\json\\typehead\\movies.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\typehead\\nba.json",
+      "PackagePath": "staticwebassets\\json\\typehead\\nba.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\json\\typehead\\nhl.json",
+      "PackagePath": "staticwebassets\\json\\typehead\\nhl.json"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\landing.scss",
+      "PackagePath": "staticwebassets\\scss\\landing.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\settings\\_bootstrap-variables.scss",
+      "PackagePath": "staticwebassets\\scss\\settings\\_bootstrap-variables.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\settings\\_color-variables.scss",
+      "PackagePath": "staticwebassets\\scss\\settings\\_color-variables.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\settings\\_theme-variables.scss",
+      "PackagePath": "staticwebassets\\scss\\settings\\_theme-variables.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\style-preset.scss",
+      "PackagePath": "staticwebassets\\scss\\style-preset.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\scss\\style.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\_general.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\_general.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\_generic.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\_generic.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_avtar.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_avtar.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_badge.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_badge.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_button.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_button.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_card.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_card.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_dropdown.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_form.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_form.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_progress.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_progress.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_table.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_table.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_tabs.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_tabs.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\components\\_widget.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\components\\_widget.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_customizer.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_customizer.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_pc-common.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_pc-common.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_pc-compact.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_pc-compact.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_pc-footer.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_pc-footer.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_pc-header.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_pc-header.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_pc-horizontal.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_pc-horizontal.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_pc-sidebar.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_pc-sidebar.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_pc-tab.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_pc-tab.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_style-dark.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_style-dark.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_style-rtl-utility.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_style-rtl-utility.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\layouts\\_style-rtl.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\layouts\\_style-rtl.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_application.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_application.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_authentication.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_authentication.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_calendar.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_calendar.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_chat.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_chat.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_e-commerce.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_e-commerce.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_file-manager.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_file-manager.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_icon-pages.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_icon-pages.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_kanban.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_kanban.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_mail.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_mail.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_maintaince.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_maintaince.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_pages.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_pages.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_price.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_price.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\pages\\_user.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\pages\\_user.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_data-tables.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_data-tables.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_daterange.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_daterange.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_lightbox.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_lightbox.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_modal.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_modal.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_notification.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_notification.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_perfect-scrollbar.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_rangeslider.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_rangeslider.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_slider.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_slider.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_sweatalert.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_sweatalert.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_switches.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_switches.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\themes\\plugins\\_tags-input.scss",
+      "PackagePath": "staticwebassets\\scss\\themes\\plugins\\_tags-input.scss"
+    },
+    {
+      "Id": "E:\\Themforest Converted Products\\Growcode\\Light_able\\ASP\\Light_able\\wwwroot\\scss\\uikit.scss",
+      "PackagePath": "staticwebassets\\scss\\uikit.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Light_able.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Light_able.props",
+      "PackagePath": "build\\Light_able.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Light_able.props",
+      "PackagePath": "buildMultiTargeting\\Light_able.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Light_able.props",
+      "PackagePath": "buildTransitive\\Light_able.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
