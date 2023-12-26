@@ -47,7 +47,9 @@ for (var i = 0; i < pc_link_click.length; i++) {
       if (targetElement.parentNode.classList.contains('pc-trigger')) {
 
         targetElement.parentNode.classList.remove('pc-trigger');
-        document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content').innerHTML = '';
+        if(document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content')){
+          document.querySelector('.pc-compact-submenu > .pc-compact-list .simplebar-content').innerHTML = '';
+        }
         document.querySelector('.pc-sidebar').classList.remove('pc-compact-submenu-active');
         document.querySelector('body').classList.remove('pc-compact-submenu-active');
         

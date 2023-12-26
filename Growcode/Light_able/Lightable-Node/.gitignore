@@ -1,0 +1,15 @@
+public/
+./public/**
+
+node_modules/
+package-lock.json
+*.log
+*.gz
+
+*.env
+
+// /\.html/g, .ejs
+// @@include\((['"])([^'"]*?)\1\) <%- include($2) %>
+convert this into ejs.
+if you found ".html" in a tag replace it with ".ejs"
+// code

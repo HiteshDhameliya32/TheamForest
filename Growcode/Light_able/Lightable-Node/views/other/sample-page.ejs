@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- [Head] start -->
+
+<head>
+  <%- include('../layouts/head-page-meta', {'title': 'Sample Page'}) %>
+  <%- include('../layouts/head-css') %>
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body <%= bodySetup %>>
+  <%- include('../layouts/layout-vertical') %>
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      <%- include('../layouts/breadcrumb', {'breadcrumb_item': 'Other', 'breadcrumb_item_active': 'Sample Page'}) %>
+
+      <!-- [ Main Content ] start -->
+      <div class="row">
+        <!-- [ sample-page ] start -->
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h5>Hello card</h5>
+            </div>
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <!-- [ sample-page ] end -->
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  <%-  include('../layouts/footer-block') %> <%- include('../layouts/footer-js') %>
+  <%- include('../layouts/customizer') %>
+</body>
+<!-- [Body] end -->
+
+</html>
