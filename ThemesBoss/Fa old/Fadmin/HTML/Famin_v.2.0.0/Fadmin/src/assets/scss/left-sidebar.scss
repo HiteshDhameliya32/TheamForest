@@ -9,6 +9,10 @@
     margin-top: 0;
     top: 0;
     border-right: 1px solid var(--#{$variable-prefix}border-color);
+    .page-sidebar-inner {
+        height: calc(100% - 5px);
+        overflow-x: visible!important;
+    }
     .logo-box {
         max-width: 240px;
         padding: 24px;
@@ -225,8 +229,7 @@
     }
     .page-sidebar {
         .page-sidebar-inner {
-            height: 100%;
-            overflow-y: hidden!important;
+            height: calc(100% - 5px);
             overflow-x: visible!important;
         }
         .slimScrollBar {
@@ -297,9 +300,12 @@
 
 .page-sidebar-collapsed {
     .page-sidebar.fixed-sidebar-scroll {
-        .slimScrollDiv {
-            width: 260px!important;
+        .simple-bar {
+            width: 260px !important;
         }
+    }
+    .simplebar-track {
+        position: relative !important;
     }
 }
 
@@ -308,6 +314,7 @@
 @media (max-width: 991px) { 
     .page-sidebar {
         width: 0;
+        display: none;
         .logo-box {
             display: none;
         }
@@ -315,6 +322,7 @@
     .page-sidebar-visible {
         .page-sidebar {
             width: 240px;
+            display: block;
             .logo-box {
                 display: flex;
                 justify-content: space-around;
@@ -322,63 +330,3 @@
         }
     }
 }
-
-// .page-sidebar-fixed {
-//     .page-sidebar {
-//         position: fixed;
-//         top: 0;
-//         bottom: 0;
-//         z-index: 100;
-//         height: 100%!important;
-//         .page-sidebar-inner {
-//             height: 100%!important;
-//             overflow: hidden;
-//         }
-//         .accordion-menu {
-//             margin-top: 10px;
-//         }
-//     }
-//     .logo-box {
-//         position: fixed;
-//         left: auto;
-//         border-bottom: none;
-//         z-index: 9999;
-//         top: 0;
-//         color: #fff;
-//     }
-// }
-
-// body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
-//     height: auto!important;
-// }
-
-// .page-sidebar-fixed .page-sidebar,
-// .page-header-fixed .page-sidebar,
-// .page-sidebar-fixed.page-header-fixed .page-sidebar {
-//     padding-top: 81px;
-// }
-
-// .page-header-fixed {
-//     .logo-box {
-//         position: fixed;
-//         top: 0;
-//     }
-// }
-
-// .logo-box:hover,
-// .logo-box:active,
-// .logo-box:link,
-// .logo-box:focus {
-//     color: #fff;
-//     text-decoration: none;
-// }
-
-// &.page-sidebar-fixed {
-//     .page-sidebar {
-//         height: 100%;
-//     }
-// }
-// .page-sidebar-collapsed:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
-//     overflow: visible!important;
-//     height: calc(100% - 83px)!important;
-// }

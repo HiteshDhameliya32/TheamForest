@@ -49,9 +49,9 @@ $(document).ready(function() {
     var page_sidebar_init = function() {
         
         // Slimscroll
-        $('.page-sidebar-inner').slimScroll({
-            height: '100%'
-        }).mouseover();  
+        // $('.page-sidebar-inner').slimScroll({
+        //     height: '100%'
+        // }).mouseover();  
         
         // Fixed Sidebar
         var fixed_sidebar = function() {
@@ -287,11 +287,11 @@ $(document).ready(function() {
                 } else if(e.which === 13) {
                     return;
                 }
-                var scrollTo_int = $('.right-sidebar-chat').prop('scrollHeight') + 'px';
-                $('.right-sidebar-chat').slimscroll({
-                    allowPageScroll: true,
-                    scrollTo : scrollTo_int
-                });
+                // var scrollTo_int = $('.right-sidebar-chat').prop('scrollHeight') + 'px';
+                // $('.right-sidebar-chat').slimscroll({
+                //     allowPageScroll: true,
+                //     scrollTo : scrollTo_int
+                // });
             });
         };
         write_message();
@@ -300,7 +300,7 @@ $(document).ready(function() {
     // Plugins
     var plugins_init = function(){
         // Slimscroll
-        $('.slimscroll').slimScroll();
+        // $('.slimscroll').slimScroll();
         
         // Uniform
         var checkBox = $("input[type=checkbox]:not(.js-switch), input[type=radio]:not(.no-uniform)");
