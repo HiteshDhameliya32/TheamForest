@@ -198,24 +198,6 @@
                 }
             }
         }
-
-        // .dropdown-menu {
-        //     li.drop-all {
-        //         padding: 7px 10px 7px 10px;
-        //         a {
-        //             padding: 10px;
-        //             border-bottom-left-radius: 5px;
-        //             border-bottom-right-radius: 5px;
-        //             color: #707070;
-        //             background: #FFF;
-        //             font-size: 14px;
-        //             &:hover {
-        //                 background: #f7f7f7;
-        //             }
-        //         }
-        //     }
-        // }
-
     }
     .dropdown-lg {
         width: 280px;
@@ -829,15 +811,7 @@
 }
 
 .right-sidebar-content {
-    height: calc(100% - 56px);
-    .slimScrollDiv {
-        height: calc(100% - 56px) !important;
-        width: 100% !important;
-    }    
-}
-
-body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv {
-    height: 100% !important;
+    height: calc(100% - 56px);   
 }
 
 .right-sidebar-settings {

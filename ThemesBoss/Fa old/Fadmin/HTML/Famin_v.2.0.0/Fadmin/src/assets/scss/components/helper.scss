@@ -77,7 +77,7 @@ $font-size-mixing: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 20, 32, 40;
 
 .simplebar-scrollbar {
     &::before {
-        background-color: black;
+        background-color: $gray-400;
     }
 }
 
