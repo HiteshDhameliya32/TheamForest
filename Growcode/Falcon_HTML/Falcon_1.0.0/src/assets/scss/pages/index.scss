@@ -163,19 +163,6 @@
             border: 2px solid rgba(64, 81, 137, 75%);
             border-radius: 100%;
             padding: 5px !important;
-            &.past-active {
-              border: none;
-              &.hover-active {
-                border: 2px solid rgba(64, 81, 137, 75%);
-                border-radius: 100%;
-                padding: 5px !important;
-              }
-            }
-          }
-          &.hover-active {
-            border: 2px solid rgba(64, 81, 137, 75%);
-            border-radius: 100%;
-            padding: 5px !important;
           }
         }
       }
@@ -203,7 +190,6 @@
 // contect-us section
 .contect-us {
   background-color: var(--light);
-  .container {
     background-color: rgba(64, 81, 137, 0.1) !important;
     .contect-icons {
       transition: all 0.7s ease;
@@ -232,7 +218,6 @@
           }
       }
     }
-  }
 }
 
 @media (max-width: 1024px) {

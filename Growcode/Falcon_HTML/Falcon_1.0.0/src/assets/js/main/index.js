@@ -69,9 +69,9 @@ images.forEach((image) => {
     activeTestimonial(this.id);
   });
 
-  image.addEventListener('mouseover', function () {
-    activeTestimonial(this.id, 'hover-active');
-  });
+  // image.addEventListener('mouseover', function () {
+  //   activeTestimonial(this.id, 'hover-active');
+  // });
 
   image.addEventListener('mouseleave', function () {
     activeTestimonial(this.id, 'hover-active', true);
@@ -182,5 +182,5 @@ function activeTestimonial(id, className, hasRemove) {
 var currentYear = new Date().getFullYear();
 var cyDiv = document.getElementById("currentYear");
 // Display the current year in the specified element
-if(cyDiv)
+if (cyDiv)
   cyDiv.textContent = currentYear;

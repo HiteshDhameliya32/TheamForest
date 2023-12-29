@@ -324,7 +324,7 @@
     }
   }
 }
-.navbar.nav-sticky {
+.navbar.sticky {
   box-shadow: $box-shadow;
   .navigation-menu.nav-light {
     > li {
@@ -473,7 +473,7 @@
   }
 }
 // end modal
-.navbar.nav-sticky.tagline-height {
+.navbar.sticky.tagline-height {
   top: 0 !important;
 }
 
@@ -627,7 +627,6 @@
           > li {
             overflow: hidden;
             vertical-align: top;
-            // width: 20%;
             .submenu {
               left: 100%;
               top: 0;
