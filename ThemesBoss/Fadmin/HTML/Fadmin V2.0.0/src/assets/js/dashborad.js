@@ -4,98 +4,161 @@ Author: ThemesBoss
 File: Main Js File
 */
 
-!function($) {
-    "use strict";
+// Area Charts
+function createAreaCharts(id) {
+    var options = {
+        series: [{
+            name: "series1",
+            data: [10, 85, 60, 85, 60, 88, 95],
+      }, {
+        name: "series2",
+        data: [15, 60, 35, 60, 35, 55, 65],
+      }],
+        chart: {
+        height: 350,
+        type: 'area',
+          toolbar: {
+            show: false
+        },
+      },
+      legend: {
+        show: false,
+      },
+      fill:{
+        type:"solid",
+        colors:['#f7f8fc','#518ce5'],
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        show:false,
+        curve: "smooth",
+      },
+      xaxis: {
+        type: 'datetime',
+        categories: ["2018-09-19T00:00:00.000Z", 
+        "2018-09-19T01:30:00.000Z", 
+        "2018-09-19T02:30:00.000Z", 
+        "2018-09-19T03:30:00.000Z", 
+        "2018-09-19T04:30:00.000Z", 
+        "2018-09-19T05:30:00.000Z", 
+        "2018-09-19T06:30:00.000Z"]
+      },
+      tooltip: {
+        x: {
+          format: 'dd/MM/yy HH:mm'
+        },
+      },
+    };
+    return new ApexCharts(document.querySelector(id), options);
+}
 
-    var Dashboard = function() {};
-
-    //creates area chart
-    Dashboard.prototype.createAreaChart = function(element, pointSize, lineWidth, data, xkey, ykeys, labels, lineColors) {
-        Morris.Area({
-            element: element,
-            pointSize: 0,
-            lineWidth: 0,
-            data: data,
-            xkey: xkey,
-            ykeys: ykeys,
-            labels: labels,
-            hideHover: 'auto',
-            resize: true,
-            gridLineColor: '#f6f8f9',
-            lineColors: lineColors
-        });
+// Bar Chart
+function createBarCharts(id) {
+    var options = {
+        series: [{
+        name: 'Net Profit',
+        data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+    }, {
+        name: 'Revenue',
+        data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+    }, {
+        name: 'Free Cash Flow',
+        data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+    }],
+    colors: ['#518ce5', 'rgb(84, 144, 229)','rgb(174, 202, 242)'],
+        chart: {
+        type: 'bar',
+        height: 350,
+        toolbar: {
+          show: false
+      },
     },
-
-    //creates Bar chart
-    Dashboard.prototype.createBarChart  = function(element, data, xkey, ykeys, labels, lineColors) {
-        Morris.Bar({
-            element: element,
-            data: data,
-            xkey: xkey,
-            ykeys: ykeys,
-            labels: labels,
-            hideHover: 'auto',
-            resize: true, //defaulted to true
-            gridLineColor: '#f6f8f9',
-            barSizeRatio: 0.4,
-            xLabelAngle: 35,
-            barColors: lineColors
-        });
+    plotOptions: {
+        bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded'
+        },
     },
-
-    //creates Donut chart
-    Dashboard.prototype.createDonutChart = function(element, data, colors) {
-        Morris.Donut({
-            element: element,
-            data: data,
-            barSize: 0.4,
-            resize: true, //defaulted to true
-            colors: colors
-        });
+    legend: {
+      show: false,
     },
-
-    Dashboard.prototype.init = function() {
-
-        //creating area chart
-        var $areaData = [
-            { y: '2009', a: 10, b: 20 },
-            { y: '2010', a: 75,  b: 65 },
-            { y: '2011', a: 50,  b: 40 },
-            { y: '2012', a: 75,  b: 65 },
-            { y: '2013', a: 50,  b: 40 },
-            { y: '2014', a: 75,  b: 65 },
-            { y: '2015', a: 90, b: 60 }
-        ];
-        this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#3a80e5', "#abb2e7"]);
-    
-        //creating bar chart
-        var $barData  = [
-            { y: '2009', a: 100, b: 90 , c: 40 },
-            { y: '2010', a: 75,  b: 65 , c: 20 },
-            { y: '2011', a: 50,  b: 40 , c: 50 },
-            { y: '2012', a: 75,  b: 65 , c: 95 },
-            { y: '2013', a: 50,  b: 40 , c: 22 },
-            { y: '2014', a: 75,  b: 65 , c: 56 },
-            { y: '2015', a: 100, b: 90 , c: 60 }
-        ];
-        this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b', 'c'], ['Series A', 'Series B', 'Series C'], ['#3a80e5', '#5490e5','#aecaf2']);
-        
-        //creating donut chart
-        var $donutData = [
-                {label: "Apple", value: 45,},
-                {label: "Sony", value: 28,},
-                {label: "Samsung", value:27,},
-                {label: "Dell", value:27,}
-            ];
-        this.createDonutChart('morris-donut-example', $donutData, ['#3a80e5','#5490e5', '#7ba6e5','#aecaf2']);
+    dataLabels: {
+        enabled: false
     },
+    stroke: {
+        show: true,
+        width: 2,
+        colors: ['transparent']
+    },
+    xaxis: {
+        categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    },
+    fill: {
+        opacity: 1
+    },
+    tooltip: {
+        y: {
+        formatter: function (val) {
+            return "$ " + val + " thousands"
+        }
+        }
+    }
+    };
+    return new ApexCharts(document.querySelector(id), options);
+}
 
-    //init
-    $.Dashboard = new Dashboard, $.Dashboard.Constructor = Dashboard
-}(window.jQuery),
+// Donut Charts
+function createDonutCharts(id) {
+    var options = {
+    series: [40, 50, 33, 30],
+    chart: {
+    type: 'donut',
+    height: '91%',
+    width: '100%',
+  },
+  plotOptions: {
+    pie:{
+      donut:{
+        size: "70%",
+        background: "transparent",
+        labels: {
+          show: true,
+          name:{
+            show: true,
+            fontSize: "23px",
+            fontWeight: 800,
+            color: "#518ce5",
+            offsetY: -10,
+          },
+          value: {
+            fontSize: "28px",
+            fontWeight: 600,
+            color: "#518ce5",
+            offsetY: 10,
+            show: true,
+          },
+          total: {
+            fontSize: "23px",
+            fontWeight: 800,
+            color: "#518ce5",
+            offsetY: -10,
+            show: true,
+          },
+        },
+      }
+    }
+  },
+  colors: ["#518ce5", "#6da5f0", "#7bb2f1", "#8cbef3"],
+  legend: {
+    show: false,
+  },
+  };
+    return new ApexCharts(document.querySelector(id), options);
+}
 
-//initializing 
-function($) {
-    "use strict";
-    $.Dashboard.init();
-}(window.jQuery);
+createAreaCharts('#areachart').render()
+createBarCharts('#barchart').render()
+createDonutCharts('#donutchart').render()

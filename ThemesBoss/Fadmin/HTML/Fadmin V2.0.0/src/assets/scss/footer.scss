@@ -12,8 +12,9 @@
 .page-sidebar-collapsed {
     .page-footer {
         left: $vertical-menu-width-sm;
+        width: calc(100% - 60px);
     }
-}  
+}
 
 @media (max-width: 991px) {
     .page-footer {

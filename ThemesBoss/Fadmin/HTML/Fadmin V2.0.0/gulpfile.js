@@ -62,9 +62,11 @@ gulp.task("build", function () {
     js: [
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/echarts/dist/echarts.min.js",
+      "node_modules/apexcharts/dist/apexcharts.min.js",
     ],
     css: [
       "node_modules/simplebar/dist/simplebar.min.css",
+      "node_modules/apexcharts/dist/apexcharts.css",
     ],
   };
   npmlodash(required_libs).forEach(function (assets, type) {

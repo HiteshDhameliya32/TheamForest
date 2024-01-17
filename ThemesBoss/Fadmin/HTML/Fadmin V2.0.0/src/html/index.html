@@ -5,6 +5,9 @@
 
         @@include('./partials/head-css.html')
 
+        <!-- Apex Chart Css -->
+        <link  type="text/html" href="assets/css/plugins/apexcharts.css" rel="stylesheet" />
+
     </head>
     <body>
 
@@ -20,7 +23,7 @@
                 <!-- Page Heading -->
                 <div class="container-fluid" id="main-wrapper">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                        <div class="col-sm-6 col-xl-3">
                             <div class="card border">
                                 <div class="card-body widget-desk">
                                     <div class="pull-right">
@@ -34,7 +37,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                        <div class="col-sm-6 col-xl-3">
                             <div class="card border">
                                 <div class="card-body widget-desk">
                                     <div class="pull-right">
@@ -48,7 +51,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                        <div class="col-sm-6 col-xl-3">
                             <div class="card border">
                                 <div class="card-body widget-desk">
                                     <div class="pull-right">
@@ -62,7 +65,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                        <div class="col-sm-6 col-xl-3">
                             <div class="card border">
                                 <div class="card-body widget-desk">
                                     <div class="pull-right">
@@ -79,36 +82,36 @@
                     </div>
                     <!-- end row -->
                     <div class="row">
-                        <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8">
+                        <div class="col-xl-8">
                             <div class="card border">
                                 <div class="card-body">
                                     <h5 class="header-title border-bottom mb-24 mt-0">Order Overview</h5>
-                                    <div id="morris-area-example" style="height:350px;"></div>
+                                    <div id="areachart" style="height:350px;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+                        <div class="col-xl-4">
                             <div class="card border">
                                 <div class="card-body">
                                     <h5 class="header-title border-bottom mb-24 mt-0">Yearly Revenue</h5>
 
-                                    <div id="morris-bar-example" style="height: 350px;"></div>
+                                    <div id="barchart" style="height: 350px;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- end row -->
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-                            <div class="card border mb-md-0">                                        
+                        <div class="col-xl-4">
+                            <div class="card border mb-xl-0">                                        
                                 <div class="card-body">
                                     <h4 class="header-title border-bottom mb-24 mt-0">Type gadgets</h4>
 
-                                    <div id="morris-donut-example" style="height: 332px;"></div>
+                                    <div id="donutchart" style="height: 332px;"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8">
+                        <div class="col-xl-8">
                             <div class="card border mb-0">
                                 <div class="card-body">
     
@@ -192,9 +195,9 @@
         
         @@include('./partials/vendor-scripts.html')
         
-        <!--Morris Chart-->
-        <script src="assets/js/plugins/morris/morris.min.js"></script>
-        <script src="assets/js/plugins/raphael/raphael-min.js"></script>
+        <!--apexcharts Chart-->
+        <script src="assets/js/plugins/apexcharts.min.js"></script>
+        <!-- <script src="assets/js/plugins/raphael/raphael-min.js"></script> -->
         <script src="assets/js/dashborad.js"></script>
 
     </body>
