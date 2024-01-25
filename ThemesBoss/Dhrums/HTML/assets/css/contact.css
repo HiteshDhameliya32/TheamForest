@@ -1,0 +1,18 @@
+.contact_form {
+  max-width: 480px;
+  padding: 20px;
+  border: 6px solid #17191e;
+}
+.contact_form .form-control {
+  box-shadow: none !important;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #fff;
+}
+.contact_form .form-control:focus {
+  border-color: #3648ff;
+}
+.contact_form textarea.form-control {
+  height: auto;
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,50 @@
+
+.footer_bg {
+    background-color: #1d1f25;
+    .text-muted {
+        color: rgba(255, 255, 255, 0.42) !important;
+    }
+}
+
+.contact-icon {
+    i {
+        font-size: 32px;
+        background-color: rgba(16, 14, 14, 0.32941176470588235);
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        line-height: 60px;
+        border-radius: 10px;
+    }
+}
+
+.error {
+    margin: 8px 0px;
+    display: none;
+    color: #ff5d48;
+}
+
+.error_msg {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #806027;
+    background-color: #fdf1db;
+    border-color: #fdebcd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.gig_loader {
+    display: none;
+}
+
+#success_msg {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#success_msg h3 {
+    color: #10c469;
+    font-size: 22px;
+}

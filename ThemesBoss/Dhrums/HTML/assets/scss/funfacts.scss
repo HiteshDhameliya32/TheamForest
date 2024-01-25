@@ -1,0 +1,24 @@
+.bg-funfacts {
+    background-size: cover;
+    background-image: url('../images/bg-funfact.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.lan_fun_icon {
+    i {
+        font-size: 50px;
+    }
+}
+
+.border_left {
+    border-left: 1px dotted rgba(255, 255, 255, 0.27);
+}
+
+.lan_funfact {
+    .lan_fun_name {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}

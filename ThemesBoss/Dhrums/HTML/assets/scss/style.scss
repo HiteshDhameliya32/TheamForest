@@ -1,0 +1,27 @@
+/*
+------------------------------------------------------------------------
+* Template Name    : Dhrums | Responsive Bootstrap 5.3.2 Personal Template * 
+* Author           : ThemesBoss                                        *
+* Version          : 2.0.0                                             *
+* Created          : October 2018                                      *
+* File Description : Main Css file of the template                     *
+*-----------------------------------------------------------------------
+*/
+
+// components
+@import "./components/helper.scss";
+@import "./components/button.scss";
+
+@import "about.scss";
+@import "blog.scss";
+@import "client.scss";
+@import "contact.scss";
+@import "cta.scss";
+@import "education.scss";
+@import "footer.scss";
+@import "funfacts.scss";
+@import "index.scss";
+@import "navbar.scss";
+@import "responsive.scss";
+@import "service.scss";
+@import "portfolio.scss";

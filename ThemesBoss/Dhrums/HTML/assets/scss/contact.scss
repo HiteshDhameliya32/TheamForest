@@ -1,0 +1,22 @@
+// contact
+
+.contact_form {
+    max-width: 480px;
+    padding: 20px;
+    border: 6px solid #17191e;
+    .form-control {
+        box-shadow: none !important;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        color: #fff;
+        &:focus {
+            border-color: #3648ff;
+        }
+    }
+    textarea {
+        &.form-control {
+            height: auto;
+        }
+    }
+}
