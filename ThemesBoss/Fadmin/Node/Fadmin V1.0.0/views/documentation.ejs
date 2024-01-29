@@ -1,0 +1,36 @@
+<%- include('./partials/main') %>
+    <head>
+       
+       <%- include('./partials/title-meta') %>
+
+       <%- include('./partials/head-css') %>
+
+    </head>    
+    <body>   
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <%- include('./partials/left-sidebar') %>
+            <!-- /Page Sidebar -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <%- include('./partials/navbar') %> 
+                <!-- Page Inner -->
+                <div class="page-inner">
+                    <!-- Page Heading -->
+                    <%- include('./partials/component/pageHeader') %>
+                    <!-- Page Heading --> 
+                </div>
+                <!-- footer -->
+                <%- include('./partials/footer') %>
+                <!-- right sidebar -->
+                <%- include('./partials/right-sidebar') %>
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <%- include('./partials/vendor-scripts') %>
+    
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<%- include('./partials/main') %>
+    <head>
+       <%- include('./partials/title-meta') %>
+
+       <%- include('./partials/head-css') %>
+
+    </head>    
+    <body>
+
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <%- include('./partials/left-sidebar') %>
+            <!-- /Page Sidebar -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <%- include('./partials/navbar') %>
+                <!-- Page Inner -->
+                <div class="page-inner">
+                      <!-- Page Heading -->
+                      <%- include('./partials/component/pageHeader') %>
+                      <!-- Page Heading -->
+                   
+                    <div class="container-fluid" id="main-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Basic Card</h4>
+                                        <p class="text-muted mb-24 fs-15">By default, all the <code>.card</code> does is apply some basic border and padding to contain some content.</p>
+                                        <div>
+                                            <p class="text-muted">Basic card example</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Card with footer</h4>
+                                        <p class="text-muted mb-24 fs-15">Wrap buttons or secondary text in <code>.card-footer</code>. Note that card footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
+
+                                        <div>
+                                            <div class="card border mb-0">
+                                                <div class="card-body">
+                                                Card content
+                                                </div>
+                                                <div class="card-footer">Card footer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border mb-lg-0">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Card with header Card</h4>
+                                        <p class="text-muted mb-24 fs-15">For proper link coloring, be sure to place links in header within <code>.card-title</code>.</p>
+
+                                        <div>
+                                            <div class="card border card-default">
+                                                <div class="card-header">card header without title</div>
+                                                <div class="card-body">
+                                                    Card content
+                                                </div>
+                                            </div>
+
+                                            <div class="card border card-default mb-0">
+                                                <div class="card-header">
+                                                    <h3 class="card-title mb-0">card title</h3>
+                                                </div>
+                                                <div class="card-body">
+                                                    Card content
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Contextual alternatives Card</h4>
+                                        <p class="text-muted mb-24 fs-15">Like other components, easily make a card more meaningful to a particular context by adding any of the contextual state classes.</p>
+
+                                        <div>
+                                            <div class="card border text-bg-primary">
+                                                <div class="card-header">Card header without title</div>
+                                                <div class="card-body">
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+
+                                            <div class="card border text-bg-success">
+                                                <div class="card-header">Card header without title</div>
+                                                <div class="card-body">
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+
+                                            <div class="card border text-bg-info">
+                                                <div class="card-header">Card header without title</div>
+                                                <div class="card-body">
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+
+                                            <div class="card border text-bg-warning">
+                                                <div class="card-header">Card header without title</div>
+                                                <div class="card-body">
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+
+                                            <div class="card border text-bg-danger mb-0">
+                                                <div class="card-header">Card header without title</div>
+                                                <div class="card-body">
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>  
+                    <!-- Main Wrapper -->
+                </div>
+                <!-- footer -->
+                <%- include('./partials/footer') %>
+                <!-- /Page Inner -->
+                <%- include('./partials/right-sidebar') %>
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+
+        <%- include('./partials/vendor-scripts') %> 
+
+    </body>
+</html>
