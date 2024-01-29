@@ -1,0 +1,207 @@
+{% load static %}
+{% include './partials/main.html' %}
+    <head>
+       
+        {% include './partials/title-meta.html' %}
+
+        {% include './partials/head-css.html' %}
+        
+        <!-- Apex Chart Css -->
+        <link  type="text/html" href={% static "/css/plugins/apexcharts/dist/apexcharts.css" %} rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            {% include './partials/left-sidebar.html' %}
+            <!-- /Page Sidebar -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+                {% include './partials/navbar.html' %} 
+                <!-- Page Inner -->
+                <div class="page-inner">
+                    <!-- Page Heading -->
+                    {% include './partials/component/pageHeader.html' %}
+                    <!-- Page Heading -->
+                    
+                    <div class="container-fluid" id="main-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card border ">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Line Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="linchart" style="height: 350px;min-width: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Area Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="areacharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Column Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="columncharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Bar Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="barchart" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Mixed Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="mixedcharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Range Area Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="rangeareacharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Timeline Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="timelinecharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Funnel Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="funnelcharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Candlestick Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="candlestickcharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Whisker Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="boxplotcharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Scatter Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="scattercharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Treemap Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="treemapcharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Pie Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="piecharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Radial Bar Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="radialbarcharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+                                        <h4 class="mt-0 header-title border-bottom">Polar Area Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="polarareacharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body mb-0">
+                                        <h4 class="mt-0 header-title border-bottom">Radar Charts</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+                                        <div id="radarcharts" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Wrapper -->
+                </div>
+                <!-- footer -->
+                {% include './partials/footer.html' %}
+
+                <!-- right sidebar -->
+                {% include './partials/right-sidebar.html' %}
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        
+        {% include './partials/vendor-scripts.html' %}
+        
+        <!--apexchart-->
+        <script src={% static "/js/plugins/apexcharts/dist/apexcharts.min.js" %}></script>
+        <script src={% static "/js/apexchart.js" %}></script>
+    
+    </body>
+</html>

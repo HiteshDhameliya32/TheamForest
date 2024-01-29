@@ -1,0 +1,127 @@
+{% load static %}
+<!-- Page Sidebar -->
+<div class="page-sidebar">
+    <a class="logo-box" href="#">
+        <span>
+            <i class="mdi mdi-chemical-weapon" id="fixed-sidebar-toggle-button"></i>
+            <span>Fadmin</span>
+        </span>
+        <i class="mdi mdi-close" id="sidebar-toggle-button-close"></i>
+    </a>
+    <div class="page-sidebar-inner simple-bar">
+        <div class="page-sidebar-menu" data-Current-Page= {{dataCurrentPage}}>
+            <ul class="accordion-menu">
+                <li>
+                    <a href="#" data-page="index">
+                        <i class="menu-icon mdi mdi-home"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="menu-icon mdi mdi-bullseye"></i><span>UI Elements</span><i
+                            class="accordion-icon fa fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="ui-buttons" data-page="ui-buttons">Buttons</a></li>
+                        <li><a href="ui-cards" data-page="ui-cards">Cards</a></li>
+                        <li><a href="ui-tabs-accordions" data-page="ui-tabs">Tabs &amp; Accordions</a></li>
+                        <li><a href="ui-alerts" data-page="ui-alerts">Alerts</a></li>
+                        <li><a href="ui-progressbars" data-page="ui-progressbars">Progress Bars</a></li>
+                        <li><a href="ui-typography" data-page="ui-typography">Typography</a></li>
+                        <li><a href="ui-grid" data-page="ui-grid">Grid</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="menu-icon mdi mdi-cards-outline"></i><span>Icons</span><i class="accordion-icon fa fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="icons-material" data-page="icons-material">Material Design</a></li>
+                        <li><a href="icons-ion" data-page="icons-ion">Ion Icons</a></li>
+                        <li><a href="icons-fontawesome" data-page="icons-fontawesome">Font Awesome</a></li>
+                        <li><a href="icons-feather" data-page="icons-feather">Feather Icons</a></li>
+                        <li><a href="icons-themify" data-page="icons-themify">Themify Icons</a></li>
+                        <li><a href="icons-dripicons" data-page="icons-dripicons">Dripicons</a></li>
+                        <li><a href="icons-typicons" data-page="icons-typicons">Typicons Icons</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="menu-icon mdi mdi-apple-keyboard-command"></i><span>Layouts</span><i class="accordion-icon fa fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="layout-blank" data-page="layout-blank">Blank Page</a></li>
+                        <li><a href="layout-boxed" data-page="layout-boxed">Boxed Layout</a></li>
+                        <li><a href="layout-collapsed-sidebar" data-page="layout-collapsed-sidebar">Collapsed Sidebar</a></li>
+                        <li><a href="layout-fixed-header" data-page="layout-fixed-header">Fixed Header</a></li>
+                        <li><a href="layout-fixed-sidebar" data-page="layout-fixed-sidebar">Fixed Sidebar</a></li>
+                        <li><a href="layout-fixed-sidebar-header" data-page="layout-fixed-sidebar-header">Fixed Sidebar &amp; Header</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="menu-icon mdi mdi-clipboard-outline"></i><span>Forms</span><i class="accordion-icon fa fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="form-mask" data-page="form-mask">Form Mask</a></li>
+                        <li><a href="form-elements" data-page="form-elements">Form Elements</a></li>
+                        <li><a href="form-xeditable" data-page="form-xeditable">Form Xeditable</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="menu-icon mdi mdi-table"></i><span>Tables</span><i class="accordion-icon fa fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="tables-footable" data-page="tables-footable">Foo Table</a></li>
+                        <li><a href="tables-responsive" data-page="tables-responsive">Responsive Table</a></li>
+                        <li><a href="tables-basic" data-page="tables-basic">Basic Tables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="menu-icon mdi mdi-chart-bubble"></i><span>Chart</span><i class="accordion-icon fa fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="chart-morris" data-page="chart-morris">Morris Chart</a></li>
+                        <li><a href="apexcharts" data-page="apexcharts">Apexcharts</a></li>
+                        <li><a href="echarts" data-page="echats">Echarts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="maps" data-page="maps">
+                        <i class="menu-icon mdi mdi-map-marker-multiple"></i><span>Vector Maps</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="menu-icon mdi mdi-google-pages"></i><span>Extra Pages</span><i class="accordion-icon fa fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="pages-login" data-page="pages-login">Login</a></li>
+                        <li><a href="pages-register" data-page="pages-register">Register</a></li>
+                        <li><a href="pages-recoverpw" data-page="pages-recoverpw">Recover Password</a></li>
+                        <li><a href="pages-lock-screen" data-page="pages-lock-screen">Lock Screen</a></li>
+                        <li><a href="pages-400" data-page="pages-400">Error 400</a></li>
+                        <li><a href="pages-403" data-page="pages-403">Error 403</a></li>
+                        <li><a href="pages-404" data-page="pages-404">Error 404</a></li>
+                        <li><a href="pages-500" data-page="pages-500">Error 500</a></li>
+                        <li><a href="pages-503" data-page="pages-503">Error 503</a></li>
+                    </ul>
+                </li>
+                <li class="menu-divider"></li>
+                <li>
+                    <a href="documentation" data-page="documentation">
+                        <i class="menu-icon mdi mdi-incognito"></i><span>Documentation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="changelog" data-page="changelog">
+                        <i class="menu-icon mdi mdi-stackexchange"></i><span>Changelog</span><span class="label label-danger">1.0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Page Sidebar -->

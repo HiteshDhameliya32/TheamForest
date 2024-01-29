@@ -1,0 +1,12 @@
+// apexchart scss
+.chart-container{
+    width:100%;
+    height:480px;
+    margin: auto;
+}
+.pie-chart-container,
+.doughnut-chart-container {
+    height:360px;
+    width:360px;
+    float:left;
+}

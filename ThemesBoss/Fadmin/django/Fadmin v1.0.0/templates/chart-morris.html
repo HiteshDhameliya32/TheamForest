@@ -1,0 +1,151 @@
+{% load static %}
+{% include './partials/main.html' %}
+    {% include './partials/title-meta.html' %}
+
+    {% include './partials/head-css.html' %}
+    <body>
+
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            {% include './partials/left-sidebar.html' %}
+            <!-- /Page Sidebar -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+                {% include './partials/navbar.html' %}
+                <!-- Page Inner -->
+                <div class="page-inner">
+                    <!-- Page Heading -->
+                    {% include './partials/component/pageHeader.html' %}
+                    <!-- Page Heading -->
+                    
+                    <div class="container-fluid" id="main-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Line Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-line" style="height: 350px;"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Updating Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-updating" style="height: 350px;"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Bar Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-bar" style="height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Stacked Bar Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-stacked-bar" style="height: 350px;"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Area Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-area" style="height: 350px;"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card border">
+                                    <div class="card-body">
+
+                                        <h4 class="mt-0 header-title border-bottom">Area Chart without Point & Line</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-area-without-line-point" style="height: 350px;" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card border mb-md-0">
+                                    <div class="card-body">
+
+                                        <h4 class="mt-0 header-title border-bottom">Area Chart without Smooth</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-area-without-smooth" style="height: 350px;"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card border mb-0">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title border-bottom">Donut Chart</h4>
+                                        <p class="text-muted mb-24 fs-15">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
+
+                                        <div id="morris-donut" style="height: 350px;"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Wrapper -->
+                </div>
+                <!-- footer -->
+                {% include './partials/footer.html' %}
+
+                <!-- right sidebar -->
+                {% include './partials/right-sidebar.html' %}
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+
+        {% include './partials/vendor-scripts.html' %}
+
+        <!--Morris Chart-->
+        <script src={% static "/js/plugins/morris/morris.min.js" %}></script>
+        <script src={% static "/js/plugins/raphael/raphael-min.js" %}></script>
+        <script src={% static "/js/jquery.morris.init.js" %}></script>
+        
+    </body>
+</html>
