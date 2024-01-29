@@ -1,0 +1,32 @@
+// apexchart scss
+.chart-container{
+    width:100%;
+    height:480px;
+    margin: auto;
+}
+.pie-chart-container,
+.doughnut-chart-container {
+    height:360px;
+    width:360px;
+    float:left;
+}
+
+.apexcharts-yaxis-label {
+    fill: $muted;
+}
+
+.apexcharts-xaxis-label{
+    fill: $muted;
+}
+
+.apexcharts-theme-light {
+    background: var(--#{$variable-prefix}header-bg) !important;
+}
+
+.apexcharts-tooltip-title {
+    background: var(--#{$variable-prefix}body-bg) !important;
+}
+
+.apexcharts-xaxistooltip {
+    color: $muted !important;
+}

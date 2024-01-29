@@ -1,0 +1,28 @@
+{
+    "statCardsData":[
+        {
+            "total": "48505",
+            "title": "Total Visits",
+            "trendIcon": {    "iconFamily":"md",  "icon":"MdArrowUpward",  "className":"text-success" },
+            "widgetIcon":  {    "iconFamily":"io5",  "icon":"IoEye" }
+        },
+        {
+            "total": "2832",
+            "title": "Sales Analytics",
+            "trendIcon": {    "iconFamily":"md",  "icon":"MdArrowDownward",  "className":"text-danger" },
+            "widgetIcon":  {    "iconFamily":"fa6",  "icon":"FaChartLine" }
+        },
+        {
+            "total": "2658",
+            "title": "Daily Sales",
+            "trendIcon": {    "iconFamily":"md",  "icon":"MdArrowUpward",  "className":"text-success" },
+            "widgetIcon":  {    "iconFamily":"lu",  "icon":"LuBadgePercent"  }
+        },
+        {
+            "total": "$4926",
+            "title": "Total Revenue",
+            "trendIcon":  {    "iconFamily":"md",  "icon":"MdArrowDownward",  "className":"text-danger" },
+            "widgetIcon": {    "iconFamily":"fa",  "icon":"FaDollarSign"  }
+        }
+    ]
+}
